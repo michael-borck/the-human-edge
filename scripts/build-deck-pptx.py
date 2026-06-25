@@ -236,6 +236,16 @@ def activity(minutes, title, brief):
     text(s, ML, 2.5, CW, 1.8, [(title, dict(font=FS, size=38, color=INK, bold=True, spacing=0.98))])
     text(s, ML, 4.4, CW, 1.8, [(brief, dict(font=FN, size=16, color=INKSOFT, spacing=1.3))])
 
+def wide(label, title, img_name, caption):
+    s, n = newslide(); bignum(s, n); kicker(s, label)
+    text(s, ML, 1.4, CW, 1.0, [(title, dict(font=FS, size=38, color=INK, bold=True))])
+    iw, ih = img_fit(img_name, 11.6, 3.5)
+    l = (SW - iw) / 2; t = 3.7
+    rect(s, l + 0.12, t + 0.12, iw, ih, fill=INK)
+    pic = s.shapes.add_picture(str(IMG / img_name), Inches(l), Inches(t), Inches(iw), Inches(ih))
+    pic.line.color.rgb = INK; pic.line.width = Pt(1.5); pic.shadow.inherit = False
+    text(s, ML, t + ih + 0.32, CW, 0.5, [(caption, dict(font=FM, size=11, color=INKSOFT))], align=PP_ALIGN.CENTER)
+
 def close_deck():
     s, n = newslide(); bignum(s, n)
     text(s, ML, 2.1, CW, 0.5, [("THE AI IS YOUR STARTING POINT, NOT YOUR FINISH LINE", dict(font=FM, size=12, color=VERM, bold=True))], align=PP_ALIGN.CENTER)
@@ -404,6 +414,9 @@ grid("What you leave with", "Tools that don't expire.", None,
       ("YOUR WORK", "A redesigned workflow and a scoped project design you can act on."),
       ("A PLAN", "Specific commitments for the week, month and quarter."),
       ("GO DEEPER", "michael-borck.github.io/the-human-edge — incl. the two-page voice method.")])
+wide("Go deeper — the shape underneath it all", "The conversation loop.", "conversation-loop.png",
+     "Brainstorm → Ideate → Iterate → Amplify → Repeat. You stay in the conversation.")
+
 grid("Go deeper — push back on AI output", "VET: verify, explain, test.", None,
      [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations — AI fabricates references routinely."),
       ("EXPLAIN", "Can I say this in my own words? If you can't rephrase it, you're holding words, not understanding."),
