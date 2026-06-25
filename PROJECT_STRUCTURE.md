@@ -49,7 +49,7 @@ Local preview: `open docs/index.html`.
 ## Adding material (common tasks)
 
 - **A new reading:** add `readings/my-reading.qmd` with `title`, `description`,
-  `order` front matter → appears on *Before the day* automatically.
+  `order` front matter → appears on *Readings* automatically.
 - **A new handout:** add `handouts/frameworks/my-handout.md` with `title` +
   `description` → appears under *Frameworks*.
 - **Edit the deck:** edit `content/slide-deck.md`, then `./scripts/build-site.sh`.

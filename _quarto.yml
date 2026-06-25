@@ -23,7 +23,7 @@ website:
     pinned: true
     search: true
     left:
-      - text: "Before the day"
+      - text: "Readings"
         href: before.qmd
       - text: "The workshop"
         href: workshop.qmd

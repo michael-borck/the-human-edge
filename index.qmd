@@ -16,7 +16,7 @@ Curtin Executive Education · One-day masterclass
 Using and delivering AI with judgement — because when everyone has the same tools, your judgement is the edge.
 ::::::
 :::::: {.hero-cta}
-[Start before the day](before.qmd){.btn .btn-primary .btn-lg}
+[Start with the readings](before.qmd){.btn .btn-primary .btn-lg}
 [See the workshop](workshop.qmd){.btn .btn-outline-primary .btn-lg}
 ::::::
 ::::::
@@ -29,7 +29,7 @@ Using and delivering AI with judgement — because when everyone has the same to
 Welcome. This is your companion site for **The Human Edge** — a one-day masterclass that builds the one skill AI can't replace: knowing when to trust it, and where you must stay in charge. Everything you need is here.
 
 <div class="cards">
-<a class="card-tile" href="./before.html"><span class="card-icon"><i class="bi bi-journal-text"></i></span><span class="card-title">Before the day</span><span class="card-desc">Three short reads so you arrive ready.</span></a>
+<a class="card-tile" href="./before.html"><span class="card-icon"><i class="bi bi-journal-text"></i></span><span class="card-title">Readings</span><span class="card-desc">Three short reads — the ideas behind the day.</span></a>
 <a class="card-tile green" href="./workshop.html"><span class="card-icon"><i class="bi bi-tools"></i></span><span class="card-title">The workshop</span><span class="card-desc">One idea, two scales: your desk, then a project.</span></a>
 <a class="card-tile accent" href="./frameworks.html"><span class="card-icon"><i class="bi bi-compass"></i></span><span class="card-title">Frameworks</span><span class="card-desc">The tools you'll keep using Monday.</span></a>
 <a class="card-tile violet" href="./team.html"><span class="card-icon"><i class="bi bi-people"></i></span><span class="card-title">Meet the team</span><span class="card-desc">Interview RetailFlow's leadership live.</span></a>
