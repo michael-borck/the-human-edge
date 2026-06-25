@@ -53,4 +53,6 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     include-in-header: _includes/fonts.html
-    include-after-body: course-bot.html
+    include-after-body:
+      - course-bot.html
+      - ai-edge-quiz.html
