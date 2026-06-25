@@ -244,6 +244,10 @@ grid("Today", "One idea. Two scales.", None,
      footleft="The trust tool — taught once, reused at project scale")
 section(VERM, "Part one", ["THE AVERAGE,", "THE TOOL,", "YOUR EDGE."],
         "Personal fluency — the judgement that lasts after the next model ships.")
+grid("A quick note on scope", "AI is bigger than this.", "Today is one slice.",
+     [("THE WHOLE FIELD", "Machine learning, computer vision, audio, CNNs, robotics, forecasting — decades of work, far beyond chatbots."),
+      ("TODAY'S FOCUS", "Generative AI — models that produce text, images and code. The part reshaping everyday work right now, and the part you'll use at your desk.")],
+     footleft="The judgement we build here transfers across the whole field")
 concept("What AI actually is", "It predicts the next word.",
         "Autocomplete, scaled up. Trained on billions of pages, it learned what tends to follow what. The result looks like understanding. It's pattern-matching.",
         "autocomplete-on-steroids.jpg")
@@ -292,6 +296,8 @@ feature("Where we are by lunch", "A mental model, a grid, a method.",
 brk("break-lunch.jpg", "12:30", "Lunch", "Back at 1:15")
 section(INK, "Part two", ["WHY AI", "DELIVERY IS", "DIFFERENT."],
         "You're the delivery lead. Ship one funded initiative — without the predictable failures.")
+feature("A quick reminder before we go on", "This applies beyond text.",
+        "This morning was generative AI. But the five differences aren't LLM-specific — they describe any AI project. A vision system is non-deterministic too; an audio model's data is discovered, not ordered; any AI output — image, sound, prediction — needs a human checkpoint where the stakes are high. The judgement you build this afternoon travels across the whole field: CNNs, audio, ML, all of it.")
 quote("The fair question",
       "I've delivered projects before. What's actually different about an AI project?",
       "They don't fail more often. They fail differently — in places you didn't see coming.")
