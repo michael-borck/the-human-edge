@@ -3,55 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Human Edge — Deck B (Editorial)</title>
-<meta name="description" content="The Human Edge: Using and Delivering AI with Judgement. An alternative, editorial-styled slide deck for comparison.">
+<title>The Human Edge — Slide Deck</title>
+<meta name="description" content="The Human Edge: Using and Delivering AI with Judgement — a one-day masterclass.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#f4efe3; --paper-2:#ece5d4; --ink:#181613; --ink-soft:#4a443c;
-  --vermilion:#e34f29; --blue:#21364f; --ochre:#cf9a2f; --rule:#181613;
+  --vermilion:#e34f29; --blue:#21364f; --ochre:#cf9a2f;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
 html,body{height:100%; background:#211d18; font-family:'Inter',sans-serif; color:var(--ink); overflow:hidden;}
 body{display:flex; align-items:center; justify-content:center;}
-
-/* frame */
 #deck{position:relative; width:min(100vw, calc(100vh * 1.6)); height:min(100vh, calc(100vw / 1.6));
   background:var(--paper); overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,.5);}
 @media print{ html,body{background:#fff; overflow:visible;} #deck{width:100vw; height:100vh; box-shadow:none; page-break-after:always;} }
 
 .slide{position:absolute; inset:0; padding:6.5vh 7vw; display:none; flex-direction:column;
-  background:
-    radial-gradient(rgba(0,0,0,.035) 1px, transparent 1px) 0 0/22px 22px,
-    var(--paper);
-}
+  background:radial-gradient(rgba(0,0,0,.035) 1px, transparent 1px) 0 0/22px 22px, var(--paper);}
 .slide.active{display:flex; animation:in .4s ease;}
 @media print{ .slide{display:flex !important; position:relative;} }
 @keyframes in{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}}
 
-/* dossier corner marks + chrome */
 .marks{position:absolute; inset:2.2vh 2.6vw; pointer-events:none; z-index:5;}
 .marks::before,.marks::after{content:""; position:absolute; width:14px; height:14px; border:2px solid var(--ink);}
 .marks::before{top:0; left:0; border-right:0; border-bottom:0;}
 .marks::after{bottom:0; right:0; border-left:0; border-top:0;}
-.eyebrow{font-family:'JetBrains Mono',monospace; font-size:.62vw; letter-spacing:.32em; text-transform:uppercase;
-  color:var(--ink-soft); font-weight:600;}
 .kicker{font-family:'JetBrains Mono',monospace; font-size:.7vw; letter-spacing:.28em; text-transform:uppercase;
   color:var(--vermilion); font-weight:600; margin-bottom:1.4vh;}
-h1.display{font-family:'Anton',sans-serif; font-weight:400; line-height:.86; text-transform:uppercase;
-  letter-spacing:-.01em; color:var(--ink);}
+h1.display{font-family:'Anton',sans-serif; font-weight:400; line-height:.86; text-transform:uppercase; letter-spacing:-.01em; color:var(--ink);}
 h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98; letter-spacing:-.02em; color:var(--ink);}
 .serif-it{font-family:'Fraunces',serif; font-style:italic; font-weight:600;}
-.body{font-size:1.5vw; line-height:1.5; color:var(--ink-soft); font-weight:400; max-width:42ch;}
-.num{position:absolute; top:5vh; right:6vw; font-family:'Anton',sans-serif; font-size:9vw; line-height:1;
-  color:var(--ink); opacity:.06; z-index:1;}
+.body{font-size:1.45vw; line-height:1.5; color:var(--ink-soft); max-width:46ch;}
+.num{position:absolute; top:5vh; right:6vw; font-family:'Anton',sans-serif; font-size:9vw; line-height:1; color:var(--ink); opacity:.06; z-index:1;}
 .foot{position:absolute; bottom:4.5vh; left:7vw; right:7vw; display:flex; justify-content:space-between;
-  font-family:'JetBrains Mono',monospace; font-size:.62vw; letter-spacing:.2em; text-transform:uppercase;
-  color:var(--ink-soft); z-index:5;}
-.rule{height:3px; background:var(--ink); width:100%;}
-.thinrule{height:1px; background:var(--ink); opacity:.25; width:100%;}
+  font-family:'JetBrains Mono',monospace; font-size:.6vw; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); z-index:5;}
 
 /* COVER */
 .cover{justify-content:flex-end; padding-bottom:9vh;}
@@ -61,15 +48,13 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
 .cover .badge{position:absolute; top:7vh; left:7vw; background:var(--vermilion); color:var(--paper); padding:.7vh 1.4vw;
   font-family:'JetBrains Mono',monospace; font-size:.72vw; letter-spacing:.2em; text-transform:uppercase; font-weight:600;}
 
-/* SECTION DIVIDER */
+/* SECTION */
 .section{justify-content:center; align-items:flex-start; padding:0;}
-.section .block{flex:1; width:100%; display:flex; flex-direction:column; justify-content:center; padding:0 7vw;}
+.section .block{width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; padding:0 7vw;}
 .section .vblock{background:var(--vermilion);}
 .section .iblock{background:var(--ink);}
-.section .vblock .eyebrow,.section .iblock .eyebrow{color:rgba(255,255,255,.7);}
-.section .iblock .kicker{color:var(--ochre);}
+.section .eyebrow{font-family:'JetBrains Mono',monospace; font-size:.9vw; letter-spacing:.3em; text-transform:uppercase; color:rgba(255,255,255,.7); font-weight:600; margin-bottom:2vh;}
 .section h1{font-size:11vw; color:var(--paper);}
-.section .vblock h1{color:var(--paper);}
 .section .lead{font-family:'Fraunces',serif; font-style:italic; font-size:2vw; color:rgba(255,255,255,.85); margin-top:2vh; max-width:30ch;}
 
 /* QUOTE */
@@ -78,36 +63,50 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
 .quote blockquote{font-family:'Fraunces',serif; font-weight:600; font-size:4.1vw; line-height:1.08; letter-spacing:-.02em; color:var(--ink); max-width:22ch;}
 .quote .attr{margin-top:3vh; font-family:'JetBrains Mono',monospace; font-size:.78vw; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);}
 
-/* CONCEPT (split: sketch | text) */
+/* CONCEPT */
 .concept{flex-direction:row; align-items:stretch; gap:4vw; padding:8vh 7vw;}
 .concept .art{flex:1.05; display:flex; align-items:center; justify-content:center; background:var(--paper-2);
   border:2px solid var(--ink); box-shadow:14px 14px 0 var(--ink); overflow:hidden;}
 .concept .art img{width:100%; height:100%; object-fit:cover;}
 .concept .txt{flex:.95; display:flex; flex-direction:column; justify-content:center;}
-.concept h2{font-size:4vw; margin:1.4vh 0 2vh;}
-.concept .body{font-size:1.35vw;}
+.concept h2{font-size:3.7vw; margin:1.4vh 0 2vh;}
+.concept .body{font-size:1.3vw;}
 
-/* FRAMEWORK / list */
+/* FEATURE (text-led, no image) */
+.feature{justify-content:center;}
+.feature h2{font-size:5vw; margin:1vh 0 2.5vh; max-width:16ch;}
+.feature .body{font-size:1.55vw; max-width:48ch;}
+
+/* GRID / framework list */
 .fw{justify-content:center;}
 .fw h2{font-size:5vw; margin-bottom:3vh;}
-.fw .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:2vh 3vw; margin-top:2vh;}
+.fw .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:2.2vh 3vw; margin-top:2vh;}
 .fw .item{border-top:2px solid var(--ink); padding-top:1.4vh;}
-.fw .item .lab{font-family:'Anton',sans-serif; font-size:2.6vw; color:var(--vermilion);}
-.fw .item .desc{font-size:1.15vw; color:var(--ink-soft); margin-top:.6vh;}
+.fw .item .lab{font-family:'Anton',sans-serif; font-size:2.4vw; color:var(--vermilion);}
+.fw .item .desc{font-size:1.12vw; color:var(--ink-soft); margin-top:.6vh;}
+
+/* STEPS (sprints) */
+.steps{justify-content:center;}
+.steps h2{font-size:5vw; margin-bottom:3.5vh;}
+.steps .row{display:grid; grid-template-columns:repeat(3,1fr); gap:3vw;}
+.steps .step{border-top:3px solid var(--ink); padding-top:1.6vh;}
+.steps .step .n{font-family:'Anton',sans-serif; font-size:3.4vw; color:var(--vermilion);}
+.steps .step h3{font-family:'Fraunces',serif; font-weight:900; font-size:1.85vw; margin:.6vh 0;}
+.steps .step p{font-size:1.05vw; color:var(--ink-soft);}
 
 /* BREAK */
 .break{justify-content:center; align-items:center; text-align:center;}
 .break .time{font-family:'Anton',sans-serif; font-size:8vw; color:var(--vermilion); line-height:.9;}
 .break .lbl{font-family:'Fraunces',serif; font-style:italic; font-size:3vw; color:var(--ink); margin:1vh 0 3vh;}
 .break .back{font-family:'JetBrains Mono',monospace; font-size:.9vw; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);}
-.break img{max-height:34vh; max-width:30vw; border:2px solid var(--ink); box-shadow:12px 12px 0 var(--ink);}
+.break img{max-height:32vh; max-width:28vw; border:2px solid var(--ink); box-shadow:12px 12px 0 var(--ink);}
 
 /* CLOSE */
 .close{justify-content:center; align-items:center; text-align:center;}
-.close h1{font-size:8vw;}
-.close .signoff{font-family:'Fraunces',serif; font-style:italic; font-size:2.2vw; color:var(--ink-soft); margin-top:3vh; max-width:24ch;}
+.close h1{font-size:7.5vw;}
+.close .signoff{font-family:'Fraunces',serif; font-style:italic; font-size:2.1vw; color:var(--ink-soft); margin-top:3vh; max-width:24ch;}
 
-/* nav chrome (hidden in print) */
+/* nav chrome */
 #ui{position:fixed; bottom:14px; left:0; right:0; display:flex; align-items:center; justify-content:center; gap:14px;
   z-index:50; font-family:'JetBrains Mono',monospace; font-size:11px; color:#bdb4a3; letter-spacing:.1em;}
 #barwrap{width:160px; height:3px; background:rgba(255,255,255,.15);}
@@ -122,11 +121,11 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
 <!-- 01 COVER -->
 <section class="slide cover active">
   <div class="num">01</div>
-  <div class="badge">Deck B · Editorial draft</div>
-  <div class="kicker">Curtin Executive Education · One-day masterclass</div>
+  <div class="badge">One-day masterclass</div>
+  <div class="kicker">Curtin Executive Education · Dr Michael Borck</div>
   <h1 class="display">The<br>Human<br>Edge</h1>
   <div class="sub">Using &amp; delivering AI with judgement.</div>
-  <div class="meta">Dr Michael Borck &nbsp;·&nbsp; ← / → to navigate &nbsp;·&nbsp; F for fullscreen</div>
+  <div class="meta">← / → navigate &nbsp;·&nbsp; F fullscreen &nbsp;·&nbsp; print to PDF</div>
 </section>
 
 <!-- 02 PROVOCATION -->
@@ -147,10 +146,10 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
     <div class="item"><div class="lab">MORNING</div><div class="desc">The judgement, at the level of <em>your own work</em>: the trust tool, RTCF, the two-pass demo.</div></div>
     <div class="item"><div class="lab">AFTERNOON</div><div class="desc">The same judgement, lifted to <em>delivery</em>: the five differences, human-in-the-loop, the go/no-go.</div></div>
   </div>
-  <div class="foot"><span>The trust tool, taught once — reused at project scale</span><span>03</span></div>
+  <div class="foot"><span>The trust tool — taught once, reused at project scale</span><span>03</span></div>
 </section>
 
-<!-- 04 SECTION: MORNING -->
+<!-- 04 SECTION MORNING -->
 <section class="slide section">
   <div class="block vblock">
     <div class="eyebrow">Part one</div>
@@ -181,9 +180,20 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 07 CONFIDENT NONSENSE -->
-<section class="slide concept">
+<!-- 07 GOOD/BAD -->
+<section class="slide fw">
   <div class="num">07</div>
+  <div class="kicker">Once you see it as an averaging machine</div>
+  <h2 class="serif">Brilliant here.<br>Quietly wrong there.</h2>
+  <div class="grid">
+    <div class="item"><div class="lab">BRILLIANT</div><div class="desc">Drafting, summarising, formatting, brainstorming, explaining, finding patterns — where "the plausible version" <em>is</em> the answer.</div></div>
+    <div class="item"><div class="lab">UNRELIABLE</div><div class="desc">Precise facts, figures, citations, multi-step logic, <em>your</em> context, ethics — where there's one right answer it can't verify.</div></div>
+  </div>
+</section>
+
+<!-- 08 CONFIDENT NONSENSE -->
+<section class="slide concept">
+  <div class="num">08</div>
   <div class="art"><img src="images/confident-nonsense.jpg" alt="Confident nonsense"></div>
   <div class="txt">
     <div class="kicker">Not a bug — a property</div>
@@ -192,33 +202,49 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 08 TRUST TOOL -->
+<!-- 09 TRUST TOOL -->
 <section class="slide fw">
-  <div class="num">08</div>
+  <div class="num">09</div>
   <div class="kicker">The spine of the day</div>
   <h2 class="serif">The trust tool.</h2>
   <div class="grid">
     <div class="item"><div class="lab">AVERAGE → LEAN IN</div><div class="desc">Low stakes, "about right" is fine. Let AI run; you glance.</div></div>
     <div class="item"><div class="lab">PRECISE → HUMAN IN THE LOOP</div><div class="desc">High stakes, one right answer. A person owns the decision.</div></div>
   </div>
-  <div class="foot"><span>Learned once this morning — reused at project scale this afternoon</span><span>08</span></div>
+  <div class="foot"><span>Learned once this morning — reused at project scale this afternoon</span><span>09</span></div>
 </section>
 
-<!-- 09 RTCF -->
+<!-- 10 TRUST TOOL REAL -->
+<section class="slide feature">
+  <div class="num">10</div>
+  <div class="kicker">The trust tool, on real tasks</div>
+  <h2 class="serif">Average or precise?<br>Small or large?</h2>
+  <p class="body"><strong>Drafting an internal email.</strong> Average is fine, stakes small — lean in.<br><strong>Board-paper figures.</strong> Precision required, stakes large — a human owns every number.<br><strong>Summarising fifty complaints for themes.</strong> Lean in for the themes, then skim for the one complaint the AI smoothed away.</p>
+</section>
+
+<!-- 11 RTCF -->
 <section class="slide fw">
-  <div class="num">09</div>
+  <div class="num">11</div>
   <div class="kicker">Talking to AI well</div>
   <h2 class="serif">RTCF — two halves.</h2>
   <div class="grid">
     <div class="item"><div class="lab">R · T · F  SCAFFOLDING</div><div class="desc">Weaker &amp; self-hosted models need it spelled out. A frontier model infers it from clear writing.</div></div>
     <div class="item"><div class="lab">C  ALWAYS MATTERS</div><div class="desc">Context is the one thing only <em>you</em> supply. No model manufactures your edge.</div></div>
   </div>
-  <div class="foot"><span>The durable skill: being clear about what you want.</span><span>09</span></div>
+  <div class="foot"><span>The durable skill: being clear about what you want.</span><span>11</span></div>
 </section>
 
-<!-- 10 TWO-PASS DEMO -->
+<!-- 12 RTCF BEFORE/AFTER -->
+<section class="slide feature">
+  <div class="num">12</div>
+  <div class="kicker">Before &amp; after</div>
+  <h2 class="serif">Unusable. Then sendable.</h2>
+  <p class="body"><em>Without:</em> "Write an email about the project delay."<br><br><em>With RTCF:</em> a senior PM, professional &amp; empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words — acknowledge → explain → new date → recommit.<br><br>Context is where <em>your</em> edge enters.</p>
+</section>
+
+<!-- 13 TWO-PASS DEMO -->
 <section class="slide concept">
-  <div class="num">10</div>
+  <div class="num">13</div>
   <div class="art"><img src="images/two-pass-demo.jpg" alt="The two-pass demo"></div>
   <div class="txt">
     <div class="kicker">The money moment — live</div>
@@ -227,16 +253,32 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 11 MORNING TEA -->
+<!-- 14 EXERCISE -->
+<section class="slide feature">
+  <div class="num">14</div>
+  <div class="kicker">Exercise — on your own work</div>
+  <h2 class="serif">Redesign one workflow.</h2>
+  <p class="body">Pick a task you own. List its steps. Judge each with the trust tool — where does AI genuinely help, where must your judgement stay in charge? Redesign so AI handles the average and you keep the high-stakes parts. <em>You leave with something to trial next week.</em></p>
+</section>
+
+<!-- 15 MORNING RECAP -->
+<section class="slide feature">
+  <div class="num">15</div>
+  <div class="kicker">Where we are by lunch</div>
+  <h2 class="serif">A mental model,<br>a grid, a method.</h2>
+  <p class="body">AI produces a convincing average. The trust tool tells you when to lean in. RTCF directs it well — and Context is the part that survives any model. <strong>One question for the afternoon:</strong> if this is how I trust AI on a single task, how do I trust it across a whole project?</p>
+</section>
+
+<!-- 16 MORNING TEA -->
 <section class="slide break">
-  <div class="num">11</div>
+  <div class="num">16</div>
   <img src="images/break-morning-tea.jpg" alt="Morning tea">
   <div class="time">10:30</div>
   <div class="lbl">Morning tea</div>
   <div class="back">Back at 11:00</div>
 </section>
 
-<!-- 12 SECTION: AFTERNOON -->
+<!-- 17 SECTION AFTERNOON -->
 <section class="slide section">
   <div class="block iblock">
     <div class="eyebrow">Part two</div>
@@ -245,9 +287,18 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 13 FIVE DIFFERENCES -->
+<!-- 18 FAIR QUESTION -->
+<section class="slide quote">
+  <div class="num">18</div>
+  <div class="kicker">The fair question</div>
+  <div class="mark">&ldquo;</div>
+  <blockquote>I've delivered projects before. What's actually different about an AI project?</blockquote>
+  <div class="attr">They don't fail more often. They fail differently — in places you didn't see coming.</div>
+</section>
+
+<!-- 19 FIVE DIFFERENCES -->
 <section class="slide fw">
-  <div class="num">13</div>
+  <div class="num">19</div>
   <div class="kicker">Five ways AI breaks the rules you usually lead by</div>
   <h2 class="serif">They fail <span class="serif-it">differently</span>.</h2>
   <div class="grid" style="grid-template-columns:repeat(3,1fr);">
@@ -260,9 +311,20 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 14 DEMO IS A TRAP -->
+<!-- 20 DIFF 1 -->
 <section class="slide concept">
-  <div class="num">14</div>
+  <div class="num">20</div>
+  <div class="art"><img src="images/done-cant-be-specified.jpg" alt="Done can't be specified"></div>
+  <div class="txt">
+    <div class="kicker">Difference 01</div>
+    <h2 class="serif">"Done" won't<br>hold still.</h2>
+    <p class="body">Ask twice, get two answers. There's no single correct output — only a spread. Stop chasing a fixed spec; decide what "good enough" looks like <em>for this use</em>.</p>
+  </div>
+</section>
+
+<!-- 21 DIFF 2 -->
+<section class="slide concept">
+  <div class="num">21</div>
   <div class="art"><img src="images/demo-is-a-trap.jpg" alt="The demo is a trap"></div>
   <div class="txt">
     <div class="kicker">Difference 02</div>
@@ -271,9 +333,80 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 15 SCALE PIVOT KILL -->
+<!-- 22 DIFF 3 -->
 <section class="slide concept">
-  <div class="num">15</div>
+  <div class="num">22</div>
+  <div class="art"><img src="images/data-is-the-uncertainty.jpg" alt="Data is the uncertainty"></div>
+  <div class="txt">
+    <div class="kicker">Difference 03</div>
+    <h2 class="serif">The data is<br>the uncertainty.</h2>
+    <p class="body">You don't order it; you discover it — its gaps, biases and surprises show up only when you work with it. Run delivery as discovery, and build the learning into the plan.</p>
+  </div>
+</section>
+
+<!-- 23 DIFF 4 -->
+<section class="slide concept">
+  <div class="num">23</div>
+  <div class="art"><img src="images/verification-is-the-product.jpg" alt="Verification is the product"></div>
+  <div class="txt">
+    <div class="kicker">Difference 04</div>
+    <h2 class="serif">Verification<br>is the product.</h2>
+    <p class="body">Outputs vary and can be confidently wrong. The value lives in how you check them, and where a human stays in the loop. Design the checking deliberately — make it part of what you ship.</p>
+  </div>
+</section>
+
+<!-- 24 DIFF 5 -->
+<section class="slide concept">
+  <div class="num">24</div>
+  <div class="art"><img src="images/where-your-edge-lives.jpg" alt="Generic competence is the baseline"></div>
+  <div class="txt">
+    <div class="kicker">Difference 05</div>
+    <h2 class="serif">Generic is the<br>baseline, not the edge.</h2>
+    <p class="body">When every rival runs the same models, the model isn't your advantage — anyone can have it. Compete on the human variation a rival's identical model can't reproduce.</p>
+  </div>
+</section>
+
+<!-- 25 THREAD -->
+<section class="slide quote">
+  <div class="num">25</div>
+  <div class="kicker">The thread through all five</div>
+  <div class="mark">&ldquo;</div>
+  <blockquote>AI gives you something fluent and roughly-right, fast — then asks you to decide when roughly-right is good enough, and who checks when it isn't.</blockquote>
+  <div class="attr">A leadership question. Which is why it lands on your desk.</div>
+</section>
+
+<!-- 26 RETAILFLOW -->
+<section class="slide feature">
+  <div class="num">26</div>
+  <div class="kicker">Your project · RetailFlow</div>
+  <h2 class="serif">You're the<br>delivery lead.</h2>
+  <p class="body">The board funded one AI initiative. Ship it without the predictable failures. Carry it through three moves — scoping and stress-testing it by <em>interviewing the RetailFlow team</em>: live chatbots with opinions, who disagree, and won't do your job for you. <span style="font-family:'JetBrains Mono',monospace; font-size:.8em;">access code: pilot2024</span></p>
+</section>
+
+<!-- 27 SPRINTS -->
+<section class="slide steps">
+  <div class="num">27</div>
+  <div class="kicker">Three moves, one project</div>
+  <h2 class="serif">Scope. Verify. Decide.</h2>
+  <div class="row">
+    <div class="step"><div class="n">01</div><h3>Scope it against reality</h3><p>Interview Data &amp; CIO. Reconcile "move fast" with "the data isn't ready." → objectives, data needs, a defined "good enough".</p></div>
+    <div class="step"><div class="n">02</div><h3>Stakeholders &amp; human-in-the-loop</h3><p>Interview MD, frontline, CFO. Decide where a human must stay in charge. → stakeholder plan + checkpoint design.</p></div>
+    <div class="step"><div class="n">03</div><h3>Roadmap &amp; the go/no-go</h3><p>Build the roadmap with gates and a risk register. Then make the call: Scale, Pivot, or Kill.</p></div>
+  </div>
+</section>
+
+<!-- 28 LUNCH -->
+<section class="slide break">
+  <div class="num">28</div>
+  <img src="images/break-lunch.jpg" alt="Lunch">
+  <div class="time">12:30</div>
+  <div class="lbl">Lunch</div>
+  <div class="back">Back at 1:15</div>
+</section>
+
+<!-- 29 SCALE PIVOT KILL -->
+<section class="slide concept">
+  <div class="num">29</div>
   <div class="art"><img src="images/scale-pivot-kill.jpg" alt="Scale, pivot or kill"></div>
   <div class="txt">
     <div class="kicker">The go / no-go call</div>
@@ -282,18 +415,31 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 16 LUNCH -->
+<!-- 30 AFTERNOON TEA -->
 <section class="slide break">
-  <div class="num">16</div>
-  <img src="images/break-lunch.jpg" alt="Lunch">
-  <div class="time">12:30</div>
-  <div class="lbl">Lunch</div>
-  <div class="back">Back at 1:15</div>
+  <div class="num">30</div>
+  <img src="images/break-afternoon-tea.jpg" alt="Afternoon tea">
+  <div class="time">2:30</div>
+  <div class="lbl">Afternoon tea</div>
+  <div class="back">Back at 3:00</div>
 </section>
 
-<!-- 17 THE EDGE -->
+<!-- 31 BUILT BY 4 -->
+<section class="slide fw">
+  <div class="num">31</div>
+  <div class="kicker">What you've built by 4:00</div>
+  <h2 class="serif">A delivery design,<br>not a theory.</h2>
+  <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+    <div class="item"><div class="lab">SCOPE</div><div class="desc">Objectives, data requirements, a defined "good enough".</div></div>
+    <div class="item"><div class="lab">ROADMAP</div><div class="desc">Milestones and go/no-go gates.</div></div>
+    <div class="item"><div class="lab">CHECKPOINTS</div><div class="desc">A stakeholder plan and human-in-the-loop design.</div></div>
+    <div class="item"><div class="lab">RISK</div><div class="desc">A register and a Scale / Pivot / Kill call you can defend.</div></div>
+  </div>
+</section>
+
+<!-- 32 THE EDGE -->
 <section class="slide concept">
-  <div class="num">17</div>
+  <div class="num">32</div>
   <div class="art"><img src="images/where-your-edge-lives.jpg" alt="Where your edge lives"></div>
   <div class="txt">
     <div class="kicker">Back to the provocation</div>
@@ -302,9 +448,9 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 18 ACTION PLAN -->
+<!-- 33 ACTION PLAN -->
 <section class="slide fw">
-  <div class="num">18</div>
+  <div class="num">33</div>
   <div class="kicker">What you do next</div>
   <h2 class="serif">Your action plan.</h2>
   <div class="grid" style="grid-template-columns:repeat(3,1fr);">
@@ -314,9 +460,22 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
   </div>
 </section>
 
-<!-- 19 CLOSE -->
+<!-- 34 LEAVE WITH -->
+<section class="slide fw">
+  <div class="num">34</div>
+  <div class="kicker">What you leave with</div>
+  <h2 class="serif">Tools that don't<br>expire.</h2>
+  <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+    <div class="item"><div class="lab">DECISION TOOLS</div><div class="desc">The trust tool, RTCF, the five differences, Scale / Pivot / Kill — any platform, any model.</div></div>
+    <div class="item"><div class="lab">YOUR WORK</div><div class="desc">A redesigned workflow and a scoped project design you can act on.</div></div>
+    <div class="item"><div class="lab">A PLAN</div><div class="desc">Specific commitments for the week, month and quarter.</div></div>
+    <div class="item"><div class="lab">GO DEEPER</div><div class="desc">michael-borck.github.io/the-human-edge — incl. the two-page voice method.</div></div>
+  </div>
+</section>
+
+<!-- 35 CLOSE -->
 <section class="slide close">
-  <div class="num">19</div>
+  <div class="num">35</div>
   <div class="kicker">The AI is your starting point, not your finish line</div>
   <h1 class="display">Stay the one<br>holding the<br>judgement.</h1>
   <div class="signoff">michael-borck.github.io/the-human-edge</div>
@@ -325,7 +484,7 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
 </div>
 
 <div id="ui">
-  <span id="counter">1 / 19</span>
+  <span id="counter">1 / 35</span>
   <div id="barwrap"><div id="bar"></div></div>
   <span class="key">←</span><span class="key">→</span>
 </div>
@@ -348,7 +507,6 @@ h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98
     else if(k==='f'||k==='F'){ if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else {document.exitFullscreen();} }
     else if(k==='o'||k==='O'){ document.body.classList.toggle('overview'); }
   });
-  // click to advance, click+shift to go back
   document.getElementById('deck').addEventListener('click',e=>{ if(e.target.tagName==='A')return; go(e.shiftKey?i-1:i+1); });
   const h=parseInt((location.hash||'').replace('#',''),10); if(h>=1&&h<=slides.length){i=h-1;}
   go(i);

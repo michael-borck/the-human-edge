@@ -34,11 +34,11 @@ website:
     right:
       - text: "The series"
         href: series.qmd
-      - text: "Slides"
-        href: content/slide-deck.html
+      - text: "Slides (PPTX)"
+        href: the-human-edge-deck.pptx
         target: _blank
-      - text: "Slides B"
-        href: content/slide-deck-alt.html
+      - text: "Slides (PDF)"
+        href: the-human-edge-deck.pdf
         target: _blank
   page-footer:
     border: true

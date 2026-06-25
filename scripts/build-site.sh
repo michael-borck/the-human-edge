@@ -24,15 +24,12 @@ fi
 echo ">> rendering website…"
 quarto render || { echo "website render failed"; exit 1; }
 
-echo ">> rendering slide deck…"
-quarto render content/slide-deck.md >/dev/null 2>&1
-mkdir -p docs/content docs/content/images
-cp content/slide-deck.html content/slide-deck.pdf content/slide-deck.pptx docs/content/ 2>/dev/null
-cp content/slide-deck-alt.html docs/content/ 2>/dev/null
-# The deck references images/ (relative to docs/content/), so copy the deck's
-# images in — Quarto's website render only copies assets used by site pages.
-cp content/images/* docs/content/images/ 2>/dev/null
-# Participant workbook PDF (built separately by scripts/build-packet.py) → site root
+echo ">> copying slide deck + workbook…"
+# The deck is a hand-built .pptx (scripts/build-deck-pptx.py) exported to PDF
+# via PowerPoint. Regenerate those manually; here we just publish them.
+cp content/the-human-edge-deck.pptx docs/ 2>/dev/null
+cp content/the-human-edge-deck.pdf docs/ 2>/dev/null
+# Participant workbook PDF (built by scripts/build-packet.py) → site root
 cp content/the-human-edge-participant-workbook.pdf docs/ 2>/dev/null
 
 touch docs/.nojekyll
