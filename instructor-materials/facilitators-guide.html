@@ -320,6 +320,7 @@
 <div class="example">
 <h3>Worked example — staff answer (scope)</h3>
 <p><b class="k">Scoped objective:</b> deploy a chatbot to deflect routine <em>factual</em> queries (order status, basic FAQs) and cut email response time from 26h toward &lt;4h. <b>In:</b> the high-volume factual queries the bot can answer from data. <b>Human-checked or routed (for now):</b> returns and sizing (policy-dependent). <b>Out:</b> complaints/escalations, phone, social DMs.</p>
+<p><b class="k">Readiness:</b> <b>data</b> — good transcripts, but policy docs are scattered (the RAG work above); <b>organisation</b> — Tom's CS team owns the review, sponsor (Emma) wants it live in a quarter; <b>build/buy/host</b> — buy a vendor chatbot + RAG over our policy docs (don't build from scratch).</p>
 <p><b class="k">Data (from Priya):</b> transcript data is the best of the four — but "good foundation" ≠ "knows your policy." Returns/sizing rules vary by product line and live in people's heads. <b>The real work:</b> RAG over current policy documents.</p>
 <p><b class="k">Trust-tool split:</b> routine factual answers (order status) → lean in, with a human glance (it's customer-facing); policy answers (returns/sizing) → <b>human in the loop</b> — a wrong policy in writing is the live risk.</p>
 <p><b class="k">"Good enough":</b> deflect ≥60% of routine queries; wrong-answer rate &lt;2% on routine, but <b>0% tolerance on returns/policy</b> (must route to a human if unsure).</p>
@@ -421,6 +422,7 @@
 </ul>
 <p><b class="k">Risk register (top):</b> confident-wrong returns policy (AI-specific: non-determinism + verification) — Med/High — mitigate: RAG + human checkpoint, bot refuses if unsure. · Demo-gap (AI-specific): the demo handles the easy 80% — mitigate: gate on the angry-customer edge cases.</p>
 <p><b class="k">Crisis (example):</b> a customer screenshots the bot quoting a wrong returns policy. <b>DDCD:</b> Diagnose = technical + ethical; Decide = pause bot on returns, route to human, fix the RAG doc; Communicate = to the customer (apologise + honour), Tom's team, Emma; Document = root cause + fix.</p>
+<p><b class="k">Assumptions register (the load-bearing ones):</b> (1) the policy docs are current and complete → <em>shaky</em> (they're scattered); (2) the bot will route to a human when unsure → <em>holding</em> (designed in, Sprint 2); (3) CS has capacity to review every policy answer → <em>shaky</em>. Two of three are shaky → that's exactly why the gate-1 call is <b>Pivot</b>, not Scale.</p>
 <p><b class="k">Gate-1 call (model):</b> <b>PIVOT</b> if the returns wrong-rate is too high at gate 1 — narrow scope to order-status only until the policy RAG matures. Rationale: the cost of a wrong policy at scale &gt; the cost of narrowing scope. (Scale only if policy-wrong = 0 holds.)</p>
 </div>
 
