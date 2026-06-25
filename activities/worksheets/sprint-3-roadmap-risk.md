@@ -35,7 +35,19 @@ Your facilitator will hand your group a crisis. Respond:
 - **Communicate**: who, and what do you say? ______________
 - **Document**: the decision and the reason: ______________
 
-## 4. The gate-1 decision
+## 4. Assumptions register
+
+Every plan rests on assumptions. Name the ones your plan depends on, and how sensitive it is to each (see *Delivery frameworks* on the companion site). This is what makes the gate-1 call defensible.
+
+| Assumption (what must be true) | Sensitivity (if it's wrong, the plan…) | Status at the gate |
+|---|---|---|
+| | | holding / shaky / broken |
+| | | holding / shaky / broken |
+| | | holding / shaky / broken |
+
+> **Scale** = load-bearing assumptions holding. **Pivot** = one shaky but fixable. **Kill** = a core assumption has broken.
+
+## 5. The gate-1 decision
 
 At your first evaluation gate, the data is ambiguous. Make the call and defend it with evidence:
 

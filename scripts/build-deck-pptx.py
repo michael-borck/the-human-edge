@@ -381,6 +381,11 @@ quote("The thread through all five",
       "A leadership question. Which is why it lands on your desk.")
 feature("Your project · RetailFlow", "You're the delivery lead.",
         "The board funded one AI initiative. Ship it without the predictable failures. Carry it through three moves — scoping and stress-testing it by interviewing the RetailFlow team: live chatbots with opinions, who disagree, and won't do your job for you.   access code: pilot2024")
+grid("Before you scope it — are you ready?", "The AI readiness check.", None,
+     [("DATA", "Do we have it, and is it good enough? You find out by working with it, not by asking. Who owns it? What's missing?"),
+      ("ORGANISATION", "Who owns this, who's affected, who'll resist? Is the sponsor still bought in?"),
+      ("BUILD · BUY · HOST", "How do we deliver? Buy a product, build it, or self-host — each has different cost, lock-in and governance.")],
+     cols=3, footleft="Low readiness doesn't kill it — it reshapes the scope.   companion site → Delivery frameworks")
 activity("45 min", "Sprint 1 — scope it against reality",
          "You're the delivery lead for one RetailFlow initiative. Interview Priya & Marcus. Produce a scoped objective, data needs, the trust-tool split, and a defined 'good enough'. (Worksheet: Sprint 1. Access code: pilot2024.)")
 
@@ -400,6 +405,9 @@ activity("45 min", "Sprint 3 — roadmap, risk & the go/no-go",
 sprint("03", "Roadmap, risk & the go/no-go", "Build it, then defend it",
        "A delivery roadmap with gates, a risk register, the Scale / Pivot / Kill call",
        "Build the roadmap with go/no-go gates and a risk register. Then make the call: Scale, Pivot, or Kill. The question isn't 'is it perfect?' — it's whether the evidence justifies continuing.")
+feature("How to make the go/no-go defensible", "The assumptions register.",
+        "Every plan rests on assumptions. Name the 3-5 your plan depends on, and how sensitive each is. Then the call writes itself: SCALE if the load-bearing assumptions are holding; PIVOT if one is shaky-but-fixable (change the shape, keep the intent); KILL if a core assumption has broken. The register is what lets you kill early — with evidence, not gut.   companion site → Delivery frameworks")
+
 concept("The go / no-go call", "Scale. Pivot. Kill.",
         "At each gate the question isn't \"is it perfect?\" — it's whether the evidence justifies continuing. Killing early is success, not failure.",
         "scale-pivot-kill.jpg")

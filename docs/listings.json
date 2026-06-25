@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/frameworks.html",
-    "items": []
-  },
-  {
-    "listing": "/before.html",
-    "items": [
-      "/readings/ai-in-five-minutes.html",
-      "/readings/the-trust-tool.html",
-      "/readings/why-ai-delivery-is-different.html"
-    ]
-  },
-  {
     "listing": "/workshop.html",
     "items": [
       "/activities/morning/workflow-redesign.html",
@@ -23,6 +11,23 @@
       "/activities/worksheets/sprint-1-scope.html",
       "/activities/worksheets/sprint-2-stakeholders-hitl.html",
       "/activities/worksheets/sprint-3-roadmap-risk.html"
+    ]
+  },
+  {
+    "listing": "/before.html",
+    "items": [
+      "/readings/ai-in-five-minutes.html",
+      "/readings/the-trust-tool.html",
+      "/readings/why-ai-delivery-is-different.html"
+    ]
+  },
+  {
+    "listing": "/frameworks.html",
+    "items": [
+      "/handouts/frameworks/delivery-frameworks.html",
+      "/handouts/frameworks/make-your-edge-persistent.html",
+      "/handouts/frameworks/frameworks-scale-pivot-kill.html",
+      "/handouts/frameworks/frameworks-trust-tool.html"
     ]
   }
 ]
