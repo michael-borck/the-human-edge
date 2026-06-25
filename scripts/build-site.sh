@@ -31,6 +31,8 @@ cp content/slide-deck.html content/slide-deck.pdf content/slide-deck.pptx docs/c
 # The deck references images/ (relative to docs/content/), so copy the deck's
 # images in — Quarto's website render only copies assets used by site pages.
 cp content/images/* docs/content/images/ 2>/dev/null
+# Participant workbook PDF (built separately by scripts/build-packet.py) → site root
+cp content/the-human-edge-participant-workbook.pdf docs/ 2>/dev/null
 
 touch docs/.nojekyll
 find . -name '._*' -delete 2>/dev/null

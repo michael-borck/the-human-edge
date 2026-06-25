@@ -22,6 +22,11 @@ listing:
 
 The day runs on a single idea — **knowing when to trust AI, and where you must stay in charge** — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The **trust tool** is the connective tissue, learned once and reused.
 
+:::: {.callout-note}
+## Prefer paper? Print the workbook
+Every worksheet and initiative card below is also in a clean, print-optimised **[participant workbook (PDF)](the-human-edge-participant-workbook.pdf){target="_blank"}** — one page per activity, no site clutter. Print one set per person (and one initiative card per group) before the day.
+::::
+
 ## Morning — using AI well, yourself
 
 Bring your own device and a real task from your role. By lunch you'll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.
