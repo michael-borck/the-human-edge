@@ -40,6 +40,9 @@ content/*.tex
 /.quarto/
 **/*.quarto_ipynb
 
+# botstash staging folder (working input for the chatbot rebuild, not source)
+/_botstash-staging/
+
 # macOS AppleDouble / Finder cruft (regenerated on external/APFS drives)
 ._*
 **/._*

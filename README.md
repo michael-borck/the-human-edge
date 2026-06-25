@@ -57,9 +57,16 @@ dossiers students discern through, code `pilot2024`), and **7 leadership
 chatbots** the afternoon sprints interview. Those bots run on AnythingLLM
 (`chat.eduserver.au`), built with [botstash](https://pypi.org/project/botstash/).
 
+## Course-assistant chatbot
+
+The site has a site-wide tutor/FAQ chatbot, injected on every page via
+`course-bot.html` → `_quarto.yml` `include-after-body`. It runs on AnythingLLM
+(`chat.eduserver.au`), workspace `the-human-edge-course`, built with
+[botstash](https://pypi.org/project/botstash/). See
+`instructor-materials/course-bot-setup.md` for the config and rebuild steps.
+
 ## Notes
 
-- A site-wide course-assistant chatbot (as on the sibling `ai-in-delivery` site) is **not yet wired up** here — it needs its own AnythingLLM bot configured for this course's content. The `_quarto.yml` omits the `include-after-body` embed until that's ready.
 - The slide deck carries full speaker notes (`:::: {.notes}` blocks) for each slide.
 
 ## License
