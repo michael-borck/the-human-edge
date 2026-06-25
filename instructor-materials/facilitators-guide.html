@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Human Edge — Facilitator's Guide</title>
+<style>
+  :root{ --paper:#f6f2e9; --ink:#1c1a16; --soft:#56514a; --verm:#c4451f; --rule:#d8d0c2; --paper2:#efe9dc; }
+  *{box-sizing:border-box;} body{margin:0; background:var(--paper); color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif; line-height:1.5; font-size:17px;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 28px 120px;}
+  /* nav */
+  nav{position:sticky; top:0; z-index:10; background:var(--ink); color:#f6f2e9;
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; box-shadow:0 2px 8px rgba(0,0,0,.15);}
+  nav .inner{max-width:880px; margin:0 auto; padding:10px 28px; display:flex; flex-wrap:wrap; gap:6px 14px; align-items:center;}
+  nav .brand{font-weight:700; letter-spacing:.04em; margin-right:auto; color:#fff;}
+  nav a{color:#cdbfa6; text-decoration:none; padding:3px 0; border-bottom:1px solid transparent;}
+  nav a:hover{color:#fff; border-bottom-color:var(--verm);}
+  /* header */
+  header{padding:54px 0 24px; border-bottom:3px solid var(--ink); margin-bottom:8px;}
+  header .kicker{font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--verm); font-weight:700; margin-bottom:10px;}
+  header h1{font-size:46px; line-height:1.02; margin:0 0 8px; letter-spacing:-.01em;}
+  header .sub{font-style:italic; color:var(--soft); font-size:20px;}
+  .lead{font-size:18px; color:var(--soft); margin:22px 0 0;}
+  .callout{background:var(--paper2); border-left:4px solid var(--verm); padding:14px 18px; margin:22px 0;
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:15px;}
+  .callout strong{color:var(--ink);}
+  .daymap{display:grid; grid-template-columns:repeat(2,1fr); gap:8px 24px; margin:18px 0;
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:14px;}
+  .daymap div{padding:4px 0; border-bottom:1px dotted var(--rule);}
+  .daymap b{color:var(--verm); font-variant-numeric:tabular-nums;}
+  /* sections */
+  section.activity{padding:34px 0 10px; border-top:1px solid var(--rule);}
+  section.activity:first-of-type{border-top:none;}
+  h2{font-size:30px; margin:0 0 4px; letter-spacing:-.01em;}
+  h2 .n{font-family:'Helvetica Neue',Arial,sans-serif; color:var(--verm); font-size:15px; font-weight:700;
+    letter-spacing:.1em; display:block; margin-bottom:4px;}
+  .meta{font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; color:var(--soft); margin:2px 0 16px;}
+  .meta span{display:inline-block; margin-right:18px;}
+  .meta b{color:var(--ink);}
+  h3{font-family:'Helvetica Neue',Arial,sans-serif; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--verm); margin:22px 0 6px; font-weight:700;}
+  section.activity p{margin:0 0 10px;}
+  section.activity ul{margin:0 0 12px; padding-left:20px;}
+  section.activity li{margin:0 0 5px;}
+  ol.steps{margin:0 0 12px; padding-left:22px;} ol.steps li{margin:0 0 7px;}
+  .warn{background:#f7ece7; border-left:4px solid var(--verm); padding:12px 16px; margin:14px 0;
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:15px;}
+  .warn h3{margin-top:0;}
+  .principles{columns:2; column-gap:34px; font-family:'Helvetica Neue',Arial,sans-serif; font-size:15px;}
+  .principles p{margin:0 0 10px; break-inside:avoid;}
+  footer{margin-top:50px; padding-top:18px; border-top:1px solid var(--rule);
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:13px; color:var(--soft);}
+  code{font-family:'SF Mono',Menlo,monospace; background:var(--paper2); padding:1px 5px; border-radius:3px; font-size:14px;}
+  a{color:var(--verm);}
+  @media print{
+    nav{display:none;} body{font-size:12pt; background:#fff;}
+    .wrap{max-width:none; padding:0;}
+    section.activity{page-break-inside:avoid; border-top:2px solid #999;}
+    header{padding-top:0;}
+    .callout,.warn{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="inner">
+    <span class="brand">Facilitator's Guide</span>
+    <a href="#principles">Principles</a>
+    <a href="#twopass">Two-pass demo</a>
+    <a href="#testdrive">Tool test drive</a>
+    <a href="#prompts">Prompt library</a>
+    <a href="#workflow">Workflow redesign</a>
+    <a href="#sprint1">Sprint 1</a>
+    <a href="#sprint2">Sprint 2</a>
+    <a href="#sprint3">Sprint 3</a>
+  </div>
+</nav>
+<div class="wrap">
+
+<header>
+  <div class="kicker">The Human Edge · One-day masterclass · Dr Michael Borck</div>
+  <h1>Facilitator's Guide</h1>
+  <div class="sub">How to run each activity — setup, timing, the moves that make it land, and where it goes wrong.</div>
+  <p class="lead">This is the runbook for the activities, not the content. The slide deck carries the teaching; this carries the choreography. Read it once before the day, then keep it open on a second screen.</p>
+  <div class="callout">
+    <strong>Day at a glance</strong>
+    <div class="daymap">
+      <div><b>9:00–10:30</b> The average, the tool, the edge (foundations + trust tool)</div>
+      <div><b>10:30–11:00</b> Morning tea</div>
+      <div><b>11:00–12:30</b> Using AI well, yourself (RTCF, two-pass demo, workflow)</div>
+      <div><b>12:30–1:15</b> Lunch</div>
+      <div><b>1:15–2:30</b> Why AI delivery is different (five differences)</div>
+      <div><b>2:30–3:00</b> Afternoon tea</div>
+      <div><b>3:00–4:00</b> Designing the human in, then shipping (sprints → go/no-go)</div>
+      <div><b>4:00–4:30</b> The edge that's left to humans + action plan</div>
+    </div>
+  </div>
+  <div class="callout">
+    <strong>Afternoon scenario:</strong> the RetailFlow leadership team are <strong>live chatbots</strong> — participants interview them at <code>retailflow.eduserver.au/internal.html</code>, access code <code>pilot2024</code>. Treat everything the bots say with the same scrutiny as any AI output: they are <em>fluent and confident even when wrong</em>, which is the behaviour the course teaches people to lead.
+  </div>
+</header>
+
+<section id="principles" class="activity">
+  <h2><span class="n">Before you start</span>Five facilitation principles</h2>
+  <div class="principles">
+    <p><strong>Hands-on from minute one.</strong> Concepts land through doing, not slides. Cut your talking; get them on a keyboard fast.</p>
+    <p><strong>Teach the trust tool once.</strong> Introduce it in Session 1, then <em>point back to it</em> all afternoon. "This is the same grid — this morning it asked 'do I trust this output?'; now it asks 'where does a human stay in the loop?'"</p>
+    <p><strong>Honesty builds trust.</strong> Be upfront about confidently-wrong output, the demo trap, and that killing a project is success. The credibility comes from not overselling.</p>
+    <p><strong>Name the two scales.</strong> Make the morning→afternoon move explicit so the day feels coherent, not crammed.</p>
+    <p><strong>End on the action plan.</strong> Vague plans don't survive Monday — make commitments specific, and have people swap them with a neighbour.</p>
+  </div>
+</section>
+
+<!-- ============ TWO-PASS DEMO ============ -->
+<section id="twopass" class="activity">
+  <h2><span class="n">Activity · Morning</span>The two-pass demo</h2>
+  <div class="meta"><span><b>When:</b> Session 2, ~11:20</span><span><b>Duration:</b> 15–20 min</span><span><b>Format:</b> facilitator-led, live on projector</span></div>
+
+  <h3>Purpose</h3>
+  <p>The thesis, felt in the gut rather than heard as a quote. Participants <em>watch</em> a generic answer become uniquely good the moment human edge is added. This is the spine of the whole day — get it right.</p>
+
+  <h3>Setup</h3>
+  <ul>
+    <li>Projector + an AI tool open (frontier model if possible — you want Pass 1 to be genuinely slick).</li>
+    <li>A <strong>real task</strong> with two versions ready: a naive prompt, and the same prompt enriched with something only a human holds (a specific customer, a contrarian bet, a taste call, domain knowledge the model lacks).</li>
+    <li>Follow-along optional — this works best as a watched demo, not a parallel exercise.</li>
+  </ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Pass 1 — generic.</strong> Run the naive prompt live. Let the output land. It will be slick, correct, polished. Point at it: <em>"This is good. Every one of you would get this same good answer. So where's your edge?"</em></li>
+    <li><strong>The beat.</strong> Hold the silence. Let them feel that "good and identical" is not an advantage.</li>
+    <li><strong>Pass 2 — with edge.</strong> Layer in the human input. Run it again. Watch the output gain a soul — it now sounds like <em>someone</em>, not anyone.</li>
+    <li><strong>Make it interactive.</strong> Open the second pass to the room — let them shout the "edge" inputs (a customer, a constraint, a preference). The output visibly shifts with their input.</li>
+  </ol>
+
+  <h3>Debrief (3–4 min)</h3>
+  <ul>
+    <li>Where did Pass 2 stay generic, and where did your input make it irreducibly <em>yours</em>?</li>
+    <li>What's the part the tool can't manufacture — no matter how good the prompt?</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>Pick a task where Pass 1 is already good.</strong> If the naive output is obviously bad, the "generic is the baseline" contrast collapses. You need it slick-but-identical.</li>
+    <li><strong>Keep it to two passes.</strong> Don't let it drift into a prompting tutorial — the point is the contrast, not technique.</li>
+    <li><strong>Companion-site pointer:</strong> the <em>two-page voice method</em> (Style Mirror) makes this edge <em>persistent</em> — mention it as the take-home, don't teach it here.</li>
+  </ul></div>
+</section>
+
+<!-- ============ TOOL TEST DRIVE ============ -->
+<section id="testdrive" class="activity">
+  <h2><span class="n">Activity · Morning</span>Exercise 1 — the AI tool test drive</h2>
+  <div class="meta"><span><b>When:</b> Session 1, ~10:10</span><span><b>Duration:</b> 20 min</span><span><b>Format:</b> individual, then table debrief</span></div>
+
+  <h3>Purpose</h3>
+  <p>First hands-on contact. Each person runs a <em>real</em> task from their own work through an AI tool and classifies the output with the trust tool. Builds the habit of judging output before trusting it.</p>
+
+  <h3>Setup</h3>
+  <ul>
+    <li>BYOD, an AI tool each (any). Network confirmed.</li>
+    <li>A fallback prompt ready for anyone who didn't bring a task (see Watch-fors).</li>
+    <li>Trust tool grid visible (slide or printed).</li>
+  </ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Set (2 min).</strong> "Pick a real, small task you genuinely need — an email, a summary, a first draft. Not a toy example."</li>
+    <li><strong>Do (8 min).</strong> Run it. Look at the output. Where on the grid does this task sit — average or precise? small or large stakes? Where would it be confidently wrong?</li>
+    <li><strong>Discuss at tables (optional, 5 min).</strong> Compare outputs across tools and tasks.</li>
+    <li><strong>Debrief (10 min).</strong> Draw out 3–4 people: one place the output was genuinely useful, one place it was confidently off. Pin each to a corner of the grid.</li>
+  </ol>
+
+  <h3>Debrief prompts</h3>
+  <ul>
+    <li>Did the output's <em>confidence</em> match its <em>correctness</em>? (It rarely does — that's the lesson.)</li>
+    <li>Which corner of the grid was your task in — and did you treat it that way?</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>Have a fallback task.</strong> Some won't bring one. Suggested: "Draft a polite email chasing an overdue invoice" or "Summarise this article in 5 bullets." Keep it real but low-stakes.</li>
+    <li><strong>Discourage the trivial</strong> ("tell me a joke") and <strong>the too-big</strong> ("write my strategy"). Neither teaches the grid.</li>
+    <li><strong>Spot the confidently-wrong moment</strong> in the debrief — it's the highlight. Amplify it.</li>
+  </ul></div>
+</section>
+
+<!-- ============ PROMPT LIBRARY ============ -->
+<section id="prompts" class="activity">
+  <h2><span class="n">Activity · Morning</span>The prompt library (RTCF)</h2>
+  <div class="meta"><span><b>When:</b> Session 2, ~11:05</span><span><b>Duration:</b> 25 min</span><span><b>Format:</b> individual, worksheet</span></div>
+
+  <h3>Purpose</h3>
+  <p>Build the habit of structured prompting and leave with a reusable set of prompts for real tasks. Land the key nuance: <strong>Role/Task/Format are scaffolding (most needed on weaker or self-hosted models); Context is the part that always matters</strong> — it's where your edge enters.</p>
+
+  <h3>Setup</h3>
+  <ul><li>The <em>Your prompt library</em> worksheet (print or device). Three real tasks each.</li></ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Teach RTCF briefly</strong> with the before/after email example (unusable → sendable).</li>
+    <li><strong>Do (15 min).</strong> For three real tasks: write the naive version, then rebuild with RTCF. Emphasise filling in <strong>Context</strong> — the specifics only they hold.</li>
+    <li><strong>Run the two-pass mini-version</strong> on one prompt: thin context vs rich context. Watch the output improve.</li>
+    <li><strong>Debrief (8 min).</strong> Which component changed the result most? (Usually Context.)</li>
+  </ol>
+
+  <h3>The nuance to land</h3>
+  <p>Be explicit: a frontier model follows plain, well-written instructions well — if you're good at briefing a human, you're most of the way there, so don't over-ritualise the labels. RTCF earns its keep most on smaller / self-hosted models. <strong>Context always matters</strong> — no model supplies it for you. The durable skill is "be clear about what you want," not "master a framework."</p>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>Don't let it become prompt-engineering theatre.</strong> The goal is judgement about <em>what to specify</em>, not memorising an acronym.</li>
+    <li><strong>Self-hosted participants</strong> (running local models) will see bigger gains from full RTCF — affirm that; it's where the scaffolding pays off most.</li>
+  </ul></div>
+</section>
+
+<!-- ============ WORKFLOW REDESIGN ============ -->
+<section id="workflow" class="activity">
+  <h2><span class="n">Activity · Morning</span>Exercise 2 — redesign your workflow</h2>
+  <div class="meta"><span><b>When:</b> Session 2, ~11:50</span><span><b>Duration:</b> 25–30 min</span><span><b>Format:</b> individual, worksheet</span></div>
+
+  <h3>Purpose</h3>
+  <p>Apply the trust tool to a real, repeated task the participant owns — and leave with a redesigned workflow they can trial next week. This is the morning's payoff: not "use AI more," but "use it <em>deliberately, exactly where it belongs</em>."</p>
+
+  <h3>Setup</h3>
+  <ul><li>The <em>Redesign your workflow</em> worksheet. One real, repeated task each (something they own).</li></ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Name the task</strong> and list its steps (aim for 4–8).</li>
+    <li><strong>Judge each step</strong> with the trust tool: average or precise? small or large stakes? (Column by column on the sheet.)</li>
+    <li><strong>Redesign:</strong> let AI handle the average, low-stakes steps; protect the precise, high-stakes ones where judgement stays in charge.</li>
+    <li><strong>Pick one step to trial this week</strong> — and how they'll know if it worked.</li>
+    <li><strong>Debrief.</strong> Where did people over-trust? Where did they under-trust and protect too much?</li>
+  </ol>
+
+  <h3>Debrief prompts</h3>
+  <ul>
+    <li>Which step did you most want to hand to AI — and should you have?</li>
+    <li>Which step must stay yours, no matter how good the tool gets?</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>One workflow, not the whole job.</strong> Scope-creep kills the exercise; keep them to a single repeated task.</li>
+    <li><strong>Guard the high-stakes steps.</strong> Some will want to automate everything — use the grid to pull them back. The point is selective, deliberate use.</li>
+    <li>They leave with something concrete — make sure the "trial next week" commitment is specific.</li>
+  </ul></div>
+</section>
+
+<!-- ============ SPRINT 1 ============ -->
+<section id="sprint1" class="activity">
+  <h2><span class="n">Activity · Afternoon</span>Sprint 1 — scope it against reality</h2>
+  <div class="meta"><span><b>When:</b> Session 3, ~1:30</span><span><b>Duration:</b> 45–60 min</span><span><b>Format:</b> groups of 4–6, one initiative each</span></div>
+
+  <h3>Purpose</h3>
+  <p>Scope a funded RetailFlow initiative against reality by interviewing the people who hold it. Produce a scoped objective, data requirements, a trust-tool split, and a defined "good enough." This is differences 1 and 3 in action: "good enough" as a band, and data as discovery.</p>
+
+  <h3>Setup</h3>
+  <ul>
+    <li>Each group takes <strong>one</strong> of the four initiative cards (no two groups alike).</li>
+    <li>RetailFlow portal open, code <code>pilot2024</code>. Sprint 1 worksheet each.</li>
+    <li>Interview <strong>Priya (Data)</strong> and <strong>Marcus (CIO)</strong>.</li>
+  </ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Frame the boundary (2 min).</strong> The investment decision is made — the board funded it. This is <em>delivery</em> scoping (what ships first, what data it needs, what "good enough" means), <strong>not</strong> a business case. If a group drifts into ROI, pull them back.</li>
+    <li><strong>Interview (15–20 min).</strong> Marcus will push speed and ambition; Priya gives the honest, data-grounded timeline. Their scope is where the two reconcile.</li>
+    <li><strong>Capture (20 min):</strong> scoped objective (in/out of scope), data requirements from Priya, the trust-tool split of the work, and the single metric + threshold that defines "good enough."</li>
+    <li><strong>Debrief.</strong> Each group's scope + where they set "good enough" + how they reconciled Marcus vs Priya.</li>
+  </ol>
+
+  <h3>Debrief prompts</h3>
+  <ul>
+    <li>Where did you land on "good enough" — and could you defend it to a sponsor?</li>
+    <li>What surprised you in the data picture (Priya) vs the ambition (Marcus)?</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>ROI drift.</strong> The most common trap. The card says it's funded; scoping ROI is a different conversation (Course 2).</li>
+    <li><strong>Bots as consultants.</strong> Priya and Marcus are <em>stakeholders</em>, not your team — they give perspective and facts, not your scope. If a group asks the bot to "do the scope," redirect.</li>
+    <li><strong>Scrutinise the bots.</strong> They're confidently wrong in places — that's intentional. It's the behaviour you're teaching them to lead.</li>
+  </ul></div>
+</section>
+
+<!-- ============ SPRINT 2 ============ -->
+<section id="sprint2" class="activity">
+  <h2><span class="n">Activity · Afternoon</span>Sprint 2 — stakeholders & human-in-the-loop</h2>
+  <div class="meta"><span><b>When:</b> Session 4, ~3:05</span><span><b>Duration:</b> 45–55 min</span><span><b>Format:</b> same groups, continuing their initiative</span></div>
+
+  <h3>Purpose</h3>
+  <p>Decide <em>where a human must stay in the loop</em> and design those checkpoints deliberately. This is the trust tool and difference 4 at project scale: verification is the product, not an afterthought.</p>
+
+  <h3>Setup</h3>
+  <ul>
+    <li>Sprint 2 worksheet; groups continue their Sprint 1 initiative.</li>
+    <li>Interview <strong>Emma (MD)</strong>, <strong>Tom (Customer Service)</strong>, <strong>David (CFO)</strong>.</li>
+  </ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Interview (15 min).</strong> Emma on strategy/board expectations; Tom on the frontline reality and customer impact; David on budget and the financial go/no-go.</li>
+    <li><strong>Build the stakeholder plan</strong> — who cares about what, and what each needs to hear.</li>
+    <li><strong>Design the human-in-the-loop checkpoints</strong> — where does verification sit, where must a person own the decision? Map them onto the workflow from Sprint 1.</li>
+    <li><strong>Debrief.</strong> Each group: where they put checkpoints, what's automated vs human-owned, and why.</li>
+  </ol>
+
+  <h3>Debrief prompts</h3>
+  <ul>
+    <li>Where did you default to "human everywhere" (losing speed) or "human nowhere" (losing trust)? How did the grid break the tie?</li>
+    <li>Which checkpoint, if you removed it, would the project quietly fail?</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>The two failure modes</strong> — human-everywhere or human-nowhere — are both wrong. The trust tool exists to make this <em>deliberate</em>. Push groups to justify each checkpoint, not gut-feel it.</li>
+    <li><strong>Tom is the reality check.</strong> Groups often under-weight the frontline; the human-in-the-loop design usually lives closest to Tom's world.</li>
+    <li><strong>Checkpoints are part of the product</strong>, not an afterthought — make that explicit.</li>
+  </ul></div>
+</section>
+
+<!-- ============ SPRINT 3 ============ -->
+<section id="sprint3" class="activity">
+  <h2><span class="n">Activity · Afternoon</span>Sprint 3 — roadmap, risk & the go/no-go</h2>
+  <div class="meta"><span><b>When:</b> Session 4, ~3:35</span><span><b>Duration:</b> 45–55 min</span><span><b>Format:</b> same groups; ends in a decision</span></div>
+
+  <h3>Purpose</h3>
+  <p>Build the delivery roadmap with go/no-go gates and a risk register — then make the call: <strong>Scale, Pivot, or Kill</strong>. The capstone: every group defends a real decision under uncertainty.</p>
+
+  <h3>Setup</h3>
+  <ul>
+    <li>Sprint 3 worksheet; groups continue their initiative.</li>
+    <li>Optional crisis element (staff resistance / data-quality / executive pressure) to stress-test the plan — use if time and energy allow.</li>
+  </ul>
+
+  <h3>How to run it</h3>
+  <ol class="steps">
+    <li><strong>Build the roadmap (15 min)</strong> — milestones, go/no-go gates, a risk register.</li>
+    <li><strong>(Optional) Crisis (10 min)</strong> — introduce one crisis; groups adapt the plan and checkpoint design. Great for energy in a long afternoon.</li>
+    <li><strong>Make the call (10 min):</strong> Scale, Pivot, or Kill — with a one-line rationale they can defend.</li>
+    <li><strong>Debrief.</strong> Each group announces their call + why. Normalise Kill as a legitimate, good outcome.</li>
+  </ol>
+
+  <h3>Debrief prompts</h3>
+  <ul>
+    <li>What was the single piece of evidence that drove your call?</li>
+    <li>If you had killed instead of scaled — what would you have saved? (And vice versa.)</li>
+  </ul>
+
+  <div class="warn"><h3>Watch-fors</h3>
+  <ul style="margin-bottom:0;">
+    <li><strong>Nobody wants to Kill.</strong> It feels like failure. Reframe hard: killing a project that isn't working, early, is <em>success</em>; a portfolio that never kills can't learn. The cost of wrongly scaling is far higher than wrongly killing.</li>
+    <li><strong>Make them defend the call</strong>, not just state it. The rationale is the learning.</li>
+    <li><strong>Time-box ruthlessly.</strong> This is the last content block before the close — protect the 4:00 action-plan finish.</li>
+  </ul></div>
+</section>
+
+<footer>
+  <p>The Human Edge: Using and Delivering AI with Judgement · Curtin Executive Education · Dr Michael Borck.<br>
+  Companion site: <a href="https://michael-borck.github.io/the-human-edge/">michael-borck.github.io/the-human-edge</a>. RetailFlow portal: <code>retailflow.eduserver.au/internal.html</code> (code <code>pilot2024</code>).<br>
+  <em>Facilitator-only — not published to the participant site.</em></p>
+</footer>
+
+</div>
+</body>
+</html>
