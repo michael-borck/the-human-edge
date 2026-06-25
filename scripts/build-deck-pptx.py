@@ -321,6 +321,8 @@ activity("20 min", "Exercise 1 — the AI tool test drive",
 feature("Exercise 1 — the AI tool test drive", "Same task. Judge the result with the trust tool.",
         "Pick a real, small task from your work — an email, a summary, a first draft. Run it through an AI tool. Look at the output: where on the grid does this task sit? Is it 'about right' or does it need exactness? Where would it be confidently wrong? Share one place it was useful, one place it was off. There's no 'best' tool — never assume the first output is ready to use.")
 brk("break-morning-tea.jpg", "10:30", "Morning tea", "Back at 11:00")
+wide("How to talk to AI", "The conversation loop.", "conversation-loop.png",
+     "Brainstorm → Ideate → Iterate → Amplify → Repeat. You stay in the conversation.")
 activity("25 min", "Build your prompt library (RTCF)",
          "For three real tasks: write the naive version, then rebuild with RTCF. Context is where your edge enters. (Worksheet: Your prompt library.)")
 
@@ -414,8 +416,6 @@ grid("What you leave with", "Tools that don't expire.", None,
       ("YOUR WORK", "A redesigned workflow and a scoped project design you can act on."),
       ("A PLAN", "Specific commitments for the week, month and quarter."),
       ("GO DEEPER", "michael-borck.github.io/the-human-edge — incl. the two-page voice method.")])
-wide("Go deeper — the shape underneath it all", "The conversation loop.", "conversation-loop.png",
-     "Brainstorm → Ideate → Iterate → Amplify → Repeat. You stay in the conversation.")
 
 grid("Go deeper — push back on AI output", "VET: verify, explain, test.", None,
      [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations — AI fabricates references routinely."),
