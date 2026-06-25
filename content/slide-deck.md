@@ -216,6 +216,16 @@ An *average* answer is "in the right ballpark" — a first draft, a summary, a s
 
 ---
 
+# Morning tea — 10:30
+
+![Grab a coffee. Back at 11:00.](images/break-morning-tea.png){fig-align="center"}
+
+::::: {.notes}
+- 30-minute break. Encourage people to bring a real task to mind for the RTCF exercise after tea.
+:::::
+
+---
+
 # Framework 2: RTCF — talking to AI well
 
 **The quality of your input decides the quality of your output.**
@@ -256,21 +266,20 @@ An *average* answer is "in the right ballpark" — a first draft, a summary, a s
 
 # The two-pass demo: where your edge lives
 
-We'll run **one real task twice**, live.
+![Pass 1 — everyone gets the same generic answer. Pass 2 — add your edge, it gets a soul.](images/two-pass-demo.jpg){fig-align="center"}
 
-**Pass 1 — generic.** A naive prompt. The output is slick, correct… and *identical to what anyone in this room would get.*
+**One task, run twice — live.**
 
 > "This is good. Every one of you got this same good answer. So where's your edge?"
 
-**Pass 2 — with edge.** Layer in what only *you* hold — a customer only you've talked to, a contrarian bet, a taste call, domain knowledge the model lacks. Watch the output get a soul.
-
-:::: {.notes}
-- This is the thesis, felt in the gut rather than heard as a quote.
-- Pass 1 shows the baseline: generic, competent, anyone-could-have-it.
-- Pass 2 shows the edge: the variation the tool can't manufacture.
+::::: {.notes}
+- Run one real task twice, live (projector, follow-along optional).
+- Pass 1 — generic: a naive prompt. The output is slick, correct, and *identical to what anyone in this room would get.* Point at it: "This is good. Every one of you got this same good answer. So where's your edge?"
+- Pass 2 — with edge: layer in what only *you* hold — a customer only you've talked to, a contrarian bet, a taste call, domain knowledge the model lacks. Watch the output get a soul.
+- This is the thesis, felt in the gut rather than heard as a quote. Pass 1 is the baseline (generic, anyone-could-have-it); Pass 2 is the edge (the variation the tool can't manufacture).
 - Make it interactive — let the room shout the "edge" inputs.
 - The lesson: the AI is your starting point, not your finish line. Your judgement, taste and relationships are what turn generic into *yours*.
-::::
+:::::
 
 ---
 
@@ -308,6 +317,16 @@ You now have:
 - This afternoon we lift the same grid to the project level — where the question becomes "where does a human stay in the loop across an entire AI initiative?"
 - Same idea, bigger canvas.
 ::::
+
+---
+
+# Lunch — 12:30
+
+![Lunch break. Back at 1:15.](images/break-lunch.png){fig-align="center"}
+
+::::: {.notes}
+- 45-minute break. Over lunch, invite people to bring a real initiative to mind for the afternoon scoping work.
+:::::
 
 ---
 
@@ -450,6 +469,16 @@ Interview **Priya** (Data) and **Marcus** (CIO). Reconcile "move fast" with "the
 
 ---
 
+# Afternoon tea — 2:30
+
+![Afternoon tea. Back at 3:00.](images/break-morning-tea.png){fig-align="center"}
+
+::::: {.notes}
+- 30-minute break. The final sprint after tea builds the roadmap and makes the go/no-go call — keep people anchored to their scoped project.
+:::::
+
+---
+
 # Sprint 2: stakeholders & human-in-the-loop
 
 Interview **Emma** (MD), **Tom** (Customer Service), and **David** (CFO). Decide where a human must stay in charge.
@@ -516,6 +545,7 @@ A **delivery design for a real AI project**, not a theory to apply later:
 ---
 
 # Back to the provocation
+![The robots all produce the same generic output; one human holds the edge they can't.](images/where-your-edge-lives.jpg){fig-align="center"}
 
 > If the AI is genuinely good at running your work, it's equally good at running everyone else's.
 > Generic competence, with no variation, is the baseline — not an advantage.
