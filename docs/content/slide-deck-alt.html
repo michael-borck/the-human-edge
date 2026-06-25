@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Human Edge — Deck B (Editorial)</title>
+<meta name="description" content="The Human Edge: Using and Delivering AI with Judgement. An alternative, editorial-styled slide deck for comparison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4efe3; --paper-2:#ece5d4; --ink:#181613; --ink-soft:#4a443c;
+  --vermilion:#e34f29; --blue:#21364f; --ochre:#cf9a2f; --rule:#181613;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html,body{height:100%; background:#211d18; font-family:'Inter',sans-serif; color:var(--ink); overflow:hidden;}
+body{display:flex; align-items:center; justify-content:center;}
+
+/* frame */
+#deck{position:relative; width:min(100vw, calc(100vh * 1.6)); height:min(100vh, calc(100vw / 1.6));
+  background:var(--paper); overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,.5);}
+@media print{ html,body{background:#fff; overflow:visible;} #deck{width:100vw; height:100vh; box-shadow:none; page-break-after:always;} }
+
+.slide{position:absolute; inset:0; padding:6.5vh 7vw; display:none; flex-direction:column;
+  background:
+    radial-gradient(rgba(0,0,0,.035) 1px, transparent 1px) 0 0/22px 22px,
+    var(--paper);
+}
+.slide.active{display:flex; animation:in .4s ease;}
+@media print{ .slide{display:flex !important; position:relative;} }
+@keyframes in{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}}
+
+/* dossier corner marks + chrome */
+.marks{position:absolute; inset:2.2vh 2.6vw; pointer-events:none; z-index:5;}
+.marks::before,.marks::after{content:""; position:absolute; width:14px; height:14px; border:2px solid var(--ink);}
+.marks::before{top:0; left:0; border-right:0; border-bottom:0;}
+.marks::after{bottom:0; right:0; border-left:0; border-top:0;}
+.eyebrow{font-family:'JetBrains Mono',monospace; font-size:.62vw; letter-spacing:.32em; text-transform:uppercase;
+  color:var(--ink-soft); font-weight:600;}
+.kicker{font-family:'JetBrains Mono',monospace; font-size:.7vw; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--vermilion); font-weight:600; margin-bottom:1.4vh;}
+h1.display{font-family:'Anton',sans-serif; font-weight:400; line-height:.86; text-transform:uppercase;
+  letter-spacing:-.01em; color:var(--ink);}
+h1.serif,h2.serif{font-family:'Fraunces',serif; font-weight:900; line-height:.98; letter-spacing:-.02em; color:var(--ink);}
+.serif-it{font-family:'Fraunces',serif; font-style:italic; font-weight:600;}
+.body{font-size:1.5vw; line-height:1.5; color:var(--ink-soft); font-weight:400; max-width:42ch;}
+.num{position:absolute; top:5vh; right:6vw; font-family:'Anton',sans-serif; font-size:9vw; line-height:1;
+  color:var(--ink); opacity:.06; z-index:1;}
+.foot{position:absolute; bottom:4.5vh; left:7vw; right:7vw; display:flex; justify-content:space-between;
+  font-family:'JetBrains Mono',monospace; font-size:.62vw; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--ink-soft); z-index:5;}
+.rule{height:3px; background:var(--ink); width:100%;}
+.thinrule{height:1px; background:var(--ink); opacity:.25; width:100%;}
+
+/* COVER */
+.cover{justify-content:flex-end; padding-bottom:9vh;}
+.cover h1{font-size:13.5vw;}
+.cover .sub{font-family:'Fraunces',serif; font-style:italic; font-weight:600; font-size:2.4vw; color:var(--ink-soft); margin-top:1vh;}
+.cover .meta{margin-top:3vh; font-family:'JetBrains Mono',monospace; font-size:.78vw; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft);}
+.cover .badge{position:absolute; top:7vh; left:7vw; background:var(--vermilion); color:var(--paper); padding:.7vh 1.4vw;
+  font-family:'JetBrains Mono',monospace; font-size:.72vw; letter-spacing:.2em; text-transform:uppercase; font-weight:600;}
+
+/* SECTION DIVIDER */
+.section{justify-content:center; align-items:flex-start; padding:0;}
+.section .block{flex:1; width:100%; display:flex; flex-direction:column; justify-content:center; padding:0 7vw;}
+.section .vblock{background:var(--vermilion);}
+.section .iblock{background:var(--ink);}
+.section .vblock .eyebrow,.section .iblock .eyebrow{color:rgba(255,255,255,.7);}
+.section .iblock .kicker{color:var(--ochre);}
+.section h1{font-size:11vw; color:var(--paper);}
+.section .vblock h1{color:var(--paper);}
+.section .lead{font-family:'Fraunces',serif; font-style:italic; font-size:2vw; color:rgba(255,255,255,.85); margin-top:2vh; max-width:30ch;}
+
+/* QUOTE */
+.quote{justify-content:center;}
+.quote .mark{font-family:'Fraunces',serif; font-size:9vw; color:var(--vermilion); line-height:.5; height:5vh;}
+.quote blockquote{font-family:'Fraunces',serif; font-weight:600; font-size:4.1vw; line-height:1.08; letter-spacing:-.02em; color:var(--ink); max-width:22ch;}
+.quote .attr{margin-top:3vh; font-family:'JetBrains Mono',monospace; font-size:.78vw; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);}
+
+/* CONCEPT (split: sketch | text) */
+.concept{flex-direction:row; align-items:stretch; gap:4vw; padding:8vh 7vw;}
+.concept .art{flex:1.05; display:flex; align-items:center; justify-content:center; background:var(--paper-2);
+  border:2px solid var(--ink); box-shadow:14px 14px 0 var(--ink); overflow:hidden;}
+.concept .art img{width:100%; height:100%; object-fit:cover;}
+.concept .txt{flex:.95; display:flex; flex-direction:column; justify-content:center;}
+.concept h2{font-size:4vw; margin:1.4vh 0 2vh;}
+.concept .body{font-size:1.35vw;}
+
+/* FRAMEWORK / list */
+.fw{justify-content:center;}
+.fw h2{font-size:5vw; margin-bottom:3vh;}
+.fw .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:2vh 3vw; margin-top:2vh;}
+.fw .item{border-top:2px solid var(--ink); padding-top:1.4vh;}
+.fw .item .lab{font-family:'Anton',sans-serif; font-size:2.6vw; color:var(--vermilion);}
+.fw .item .desc{font-size:1.15vw; color:var(--ink-soft); margin-top:.6vh;}
+
+/* BREAK */
+.break{justify-content:center; align-items:center; text-align:center;}
+.break .time{font-family:'Anton',sans-serif; font-size:8vw; color:var(--vermilion); line-height:.9;}
+.break .lbl{font-family:'Fraunces',serif; font-style:italic; font-size:3vw; color:var(--ink); margin:1vh 0 3vh;}
+.break .back{font-family:'JetBrains Mono',monospace; font-size:.9vw; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);}
+.break img{max-height:34vh; max-width:30vw; border:2px solid var(--ink); box-shadow:12px 12px 0 var(--ink);}
+
+/* CLOSE */
+.close{justify-content:center; align-items:center; text-align:center;}
+.close h1{font-size:8vw;}
+.close .signoff{font-family:'Fraunces',serif; font-style:italic; font-size:2.2vw; color:var(--ink-soft); margin-top:3vh; max-width:24ch;}
+
+/* nav chrome (hidden in print) */
+#ui{position:fixed; bottom:14px; left:0; right:0; display:flex; align-items:center; justify-content:center; gap:14px;
+  z-index:50; font-family:'JetBrains Mono',monospace; font-size:11px; color:#bdb4a3; letter-spacing:.1em;}
+#barwrap{width:160px; height:3px; background:rgba(255,255,255,.15);}
+#bar{height:100%; background:var(--vermilion); width:5%; transition:width .2s;}
+#ui .key{border:1px solid rgba(255,255,255,.25); padding:2px 6px; border-radius:3px;}
+@media print{ #ui{display:none;} }
+</style>
+</head>
+<body>
+<div id="deck">
+
+<!-- 01 COVER -->
+<section class="slide cover active">
+  <div class="num">01</div>
+  <div class="badge">Deck B · Editorial draft</div>
+  <div class="kicker">Curtin Executive Education · One-day masterclass</div>
+  <h1 class="display">The<br>Human<br>Edge</h1>
+  <div class="sub">Using &amp; delivering AI with judgement.</div>
+  <div class="meta">Dr Michael Borck &nbsp;·&nbsp; ← / → to navigate &nbsp;·&nbsp; F for fullscreen</div>
+</section>
+
+<!-- 02 PROVOCATION -->
+<section class="slide quote">
+  <div class="num">02</div>
+  <div class="kicker">The provocation we'll spend the day on</div>
+  <div class="mark">&ldquo;</div>
+  <blockquote>If the AI is good at running your work, it's good at running everyone else's. Generic competence is the baseline — not the advantage.</blockquote>
+  <div class="attr">So where does your edge live?</div>
+</section>
+
+<!-- 03 THE ARC -->
+<section class="slide fw">
+  <div class="num">03</div>
+  <div class="kicker">Today</div>
+  <h2 class="serif">One idea.<br>Two scales.</h2>
+  <div class="grid">
+    <div class="item"><div class="lab">MORNING</div><div class="desc">The judgement, at the level of <em>your own work</em>: the trust tool, RTCF, the two-pass demo.</div></div>
+    <div class="item"><div class="lab">AFTERNOON</div><div class="desc">The same judgement, lifted to <em>delivery</em>: the five differences, human-in-the-loop, the go/no-go.</div></div>
+  </div>
+  <div class="foot"><span>The trust tool, taught once — reused at project scale</span><span>03</span></div>
+</section>
+
+<!-- 04 SECTION: MORNING -->
+<section class="slide section">
+  <div class="block vblock">
+    <div class="eyebrow">Part one</div>
+    <h1 class="display">The average,<br>the tool,<br>your edge.</h1>
+    <div class="lead">Personal fluency — the judgement that lasts after the next model ships.</div>
+  </div>
+</section>
+
+<!-- 05 WHAT AI IS -->
+<section class="slide concept">
+  <div class="num">05</div>
+  <div class="art"><img src="images/autocomplete-on-steroids.jpg" alt="Autocomplete on steroids"></div>
+  <div class="txt">
+    <div class="kicker">What AI actually is</div>
+    <h2 class="serif">It predicts the next word.</h2>
+    <p class="body">Autocomplete, scaled up. Trained on billions of pages, it learned what tends to follow what. The result <em>looks</em> like understanding. It's pattern-matching.</p>
+  </div>
+</section>
+
+<!-- 06 THE AVERAGE -->
+<section class="slide concept">
+  <div class="num">06</div>
+  <div class="art"><img src="images/convincing-average.jpg" alt="The convincing average"></div>
+  <div class="txt">
+    <div class="kicker">The one mental model to keep</div>
+    <h2 class="serif">A convincing <span class="serif-it">average</span>.</h2>
+    <p class="body">Fluent, plausible, usually about-right. But "about right" and "exactly right" are not the same — and knowing which you need is the whole game.</p>
+  </div>
+</section>
+
+<!-- 07 CONFIDENT NONSENSE -->
+<section class="slide concept">
+  <div class="num">07</div>
+  <div class="art"><img src="images/confident-nonsense.jpg" alt="Confident nonsense"></div>
+  <div class="txt">
+    <div class="kicker">Not a bug — a property</div>
+    <h2 class="serif">Confident. Wrong.<br>Same polish.</h2>
+    <p class="body">It never says "I don't know." The fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.</p>
+  </div>
+</section>
+
+<!-- 08 TRUST TOOL -->
+<section class="slide fw">
+  <div class="num">08</div>
+  <div class="kicker">The spine of the day</div>
+  <h2 class="serif">The trust tool.</h2>
+  <div class="grid">
+    <div class="item"><div class="lab">AVERAGE → LEAN IN</div><div class="desc">Low stakes, "about right" is fine. Let AI run; you glance.</div></div>
+    <div class="item"><div class="lab">PRECISE → HUMAN IN THE LOOP</div><div class="desc">High stakes, one right answer. A person owns the decision.</div></div>
+  </div>
+  <div class="foot"><span>Learned once this morning — reused at project scale this afternoon</span><span>08</span></div>
+</section>
+
+<!-- 09 RTCF -->
+<section class="slide fw">
+  <div class="num">09</div>
+  <div class="kicker">Talking to AI well</div>
+  <h2 class="serif">RTCF — two halves.</h2>
+  <div class="grid">
+    <div class="item"><div class="lab">R · T · F  SCAFFOLDING</div><div class="desc">Weaker &amp; self-hosted models need it spelled out. A frontier model infers it from clear writing.</div></div>
+    <div class="item"><div class="lab">C  ALWAYS MATTERS</div><div class="desc">Context is the one thing only <em>you</em> supply. No model manufactures your edge.</div></div>
+  </div>
+  <div class="foot"><span>The durable skill: being clear about what you want.</span><span>09</span></div>
+</section>
+
+<!-- 10 TWO-PASS DEMO -->
+<section class="slide concept">
+  <div class="num">10</div>
+  <div class="art"><img src="images/two-pass-demo.jpg" alt="The two-pass demo"></div>
+  <div class="txt">
+    <div class="kicker">The money moment — live</div>
+    <h2 class="serif">Add your edge.<br>It gets a soul.</h2>
+    <p class="body"><strong>Pass 1:</strong> a naive prompt → slick, correct, identical for everyone. <strong>Pass 2:</strong> layer in what only you hold. Watch the output turn <em>yours</em>.</p>
+  </div>
+</section>
+
+<!-- 11 MORNING TEA -->
+<section class="slide break">
+  <div class="num">11</div>
+  <img src="images/break-morning-tea.jpg" alt="Morning tea">
+  <div class="time">10:30</div>
+  <div class="lbl">Morning tea</div>
+  <div class="back">Back at 11:00</div>
+</section>
+
+<!-- 12 SECTION: AFTERNOON -->
+<section class="slide section">
+  <div class="block iblock">
+    <div class="eyebrow">Part two</div>
+    <h1 class="display">Why AI<br>delivery is<br>different.</h1>
+    <div class="lead">You're the delivery lead. Ship one funded initiative — without the predictable failures.</div>
+  </div>
+</section>
+
+<!-- 13 FIVE DIFFERENCES -->
+<section class="slide fw">
+  <div class="num">13</div>
+  <div class="kicker">Five ways AI breaks the rules you usually lead by</div>
+  <h2 class="serif">They fail <span class="serif-it">differently</span>.</h2>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="item"><div class="lab">01</div><div class="desc">"Done" can't be specified.</div></div>
+    <div class="item"><div class="lab">02</div><div class="desc">The demo is a trap.</div></div>
+    <div class="item"><div class="lab">03</div><div class="desc">The data is the uncertainty.</div></div>
+    <div class="item"><div class="lab">04</div><div class="desc">Verification is the product.</div></div>
+    <div class="item"><div class="lab">05</div><div class="desc">Generic competence is the baseline.</div></div>
+    <div class="item"><div class="lab">→</div><div class="desc">So you design the human in.</div></div>
+  </div>
+</section>
+
+<!-- 14 DEMO IS A TRAP -->
+<section class="slide concept">
+  <div class="num">14</div>
+  <div class="art"><img src="images/demo-is-a-trap.jpg" alt="The demo is a trap"></div>
+  <div class="txt">
+    <div class="kicker">Difference 02</div>
+    <h2 class="serif">The demo is a trap.</h2>
+    <p class="body">It shows the happy path. The messy real-world cases are where it falls over. Treat the demo as the <em>start</em> of the hard part — not the end.</p>
+  </div>
+</section>
+
+<!-- 15 SCALE PIVOT KILL -->
+<section class="slide concept">
+  <div class="num">15</div>
+  <div class="art"><img src="images/scale-pivot-kill.jpg" alt="Scale, pivot or kill"></div>
+  <div class="txt">
+    <div class="kicker">The go / no-go call</div>
+    <h2 class="serif">Scale. Pivot. Kill.</h2>
+    <p class="body">At each gate the question isn't "is it perfect?" — it's whether the evidence justifies continuing. Killing early is success, not failure.</p>
+  </div>
+</section>
+
+<!-- 16 LUNCH -->
+<section class="slide break">
+  <div class="num">16</div>
+  <img src="images/break-lunch.jpg" alt="Lunch">
+  <div class="time">12:30</div>
+  <div class="lbl">Lunch</div>
+  <div class="back">Back at 1:15</div>
+</section>
+
+<!-- 17 THE EDGE -->
+<section class="slide concept">
+  <div class="num">17</div>
+  <div class="art"><img src="images/where-your-edge-lives.jpg" alt="Where your edge lives"></div>
+  <div class="txt">
+    <div class="kicker">Back to the provocation</div>
+    <h2 class="serif">The edge is the part<br>the tool can't <span class="serif-it">average</span>.</h2>
+    <p class="body">Averages converge. Your taste, your contrarian calls, your specific customers — that's the variation a rival's identical model can't reproduce.</p>
+  </div>
+</section>
+
+<!-- 18 ACTION PLAN -->
+<section class="slide fw">
+  <div class="num">18</div>
+  <div class="kicker">What you do next</div>
+  <h2 class="serif">Your action plan.</h2>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="item"><div class="lab">WEEK</div><div class="desc">Trial your redesigned workflow. Run one task through the trust tool first.</div></div>
+    <div class="item"><div class="lab">MONTH</div><div class="desc">Make RTCF a habit. Start one conversation about where a human stays in the loop.</div></div>
+    <div class="item"><div class="lab">QUARTER</div><div class="desc">Scope one real initiative — and defend the Scale / Pivot / Kill call.</div></div>
+  </div>
+</section>
+
+<!-- 19 CLOSE -->
+<section class="slide close">
+  <div class="num">19</div>
+  <div class="kicker">The AI is your starting point, not your finish line</div>
+  <h1 class="display">Stay the one<br>holding the<br>judgement.</h1>
+  <div class="signoff">michael-borck.github.io/the-human-edge</div>
+</section>
+
+</div>
+
+<div id="ui">
+  <span id="counter">1 / 19</span>
+  <div id="barwrap"><div id="bar"></div></div>
+  <span class="key">←</span><span class="key">→</span>
+</div>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')];
+  let i=0;
+  function go(n){ i=Math.max(0,Math.min(slides.length-1,n)); slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));
+    document.getElementById('counter').textContent=(i+1)+' / '+slides.length;
+    document.getElementById('bar').style.width=((i+1)/slides.length*100)+'%';
+    try{history.replaceState(null,'','#'+(i+1));}catch(e){}
+  }
+  document.addEventListener('keydown',e=>{
+    const k=e.key;
+    if(['ArrowRight','ArrowDown',' ','PageDown'].includes(k)){e.preventDefault();go(i+1);}
+    else if(['ArrowLeft','ArrowUp','PageUp'].includes(k)){e.preventDefault();go(i-1);}
+    else if(k==='Home'){e.preventDefault();go(0);}
+    else if(k==='End'){e.preventDefault();go(slides.length-1);}
+    else if(k==='f'||k==='F'){ if(!document.fullscreenElement){document.documentElement.requestFullscreen();} else {document.exitFullscreen();} }
+    else if(k==='o'||k==='O'){ document.body.classList.toggle('overview'); }
+  });
+  // click to advance, click+shift to go back
+  document.getElementById('deck').addEventListener('click',e=>{ if(e.target.tagName==='A')return; go(e.shiftKey?i-1:i+1); });
+  const h=parseInt((location.hash||'').replace('#',''),10); if(h>=1&&h<=slides.length){i=h-1;}
+  go(i);
+})();
+</script>
+</body>
+</html>

@@ -37,6 +37,9 @@ website:
       - text: "Slides"
         href: content/slide-deck.html
         target: _blank
+      - text: "Slides B"
+        href: content/slide-deck-alt.html
+        target: _blank
   page-footer:
     border: true
     left: "The Human Edge: *Using and Delivering AI with Judgement*"

@@ -28,6 +28,7 @@ echo ">> rendering slide deck…"
 quarto render content/slide-deck.md >/dev/null 2>&1
 mkdir -p docs/content docs/content/images
 cp content/slide-deck.html content/slide-deck.pdf content/slide-deck.pptx docs/content/ 2>/dev/null
+cp content/slide-deck-alt.html docs/content/ 2>/dev/null
 # The deck references images/ (relative to docs/content/), so copy the deck's
 # images in — Quarto's website render only copies assets used by site pages.
 cp content/images/* docs/content/images/ 2>/dev/null
