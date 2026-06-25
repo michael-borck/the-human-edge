@@ -1,0 +1,46 @@
+# Ignore all files by default
+*
+
+# Except markdown files everywhere
+!*.md
+
+# And allow directories (so we can traverse into them)
+!*/
+
+# Allow everything in docs/ folder (including HTML, PDF, etc.)
+!docs/
+!docs/**
+
+# Allow everything in retailflow-site/ folder
+!retailflow-site/
+!retailflow-site/**
+
+# Allow everything in content/ folder
+!content/
+!content/**
+# ...but not Quarto/LaTeX intermediate build artifacts left in content/
+content/*.aux
+content/*.log
+content/*.tex
+
+# Quarto source: site config, theme, page sources, build scripts, brand assets
+!*.qmd
+!*.yml
+!*.scss
+!*.sh
+!*.html
+!*.svg
+!*.png
+!_includes/
+!_includes/**
+
+# Keep this .gitignore file tracked
+!.gitignore
+
+/.quarto/
+**/*.quarto_ipynb
+
+# macOS AppleDouble / Finder cruft (regenerated on external/APFS drives)
+._*
+**/._*
+.DS_Store

@@ -1,0 +1,20 @@
+---
+title: "Before the day"
+subtitle: "Three short reads, about 15 minutes total, so you arrive ready."
+listing:
+  contents: "readings/*.qmd"
+  type: default
+  sort: "order"
+  fields: [title, description, reading-time]
+  date-format: ""
+---
+
+You don't need any technical background for this masterclass. These three short pieces just give everyone a shared starting point and the language we'll use on the day. Read them in order if you can — they walk from *what AI is*, to *when to trust it*, to *why delivering an AI project is different*.
+
+:::: {#listing}
+::::
+
+:::: {.callout-note}
+## Want to go further?
+Everything here is drawn from the free companion book, [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/). It's optional, but if a topic grabs you, that's where to dig.
+::::

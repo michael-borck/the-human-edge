@@ -1,0 +1,208 @@
+/*-- scss:defaults --*/
+/* AI in Delivery — editorial-modern brand system.
+   Display/headings: Fraunces (serif). Body/UI: Inter. */
+
+// --- Palette (Tailwind slate + brand) ---
+$primary:    #2563eb;
+$secondary:  #059669;   // refined emerald
+$accent:     #d97706;   // refined amber
+$dark:       #0f172a;   // slate-900
+$body-color: #334155;   // slate-700
+$muted:      #64748b;   // slate-500
+$light:      #f8fafc;   // slate-50
+$border:     #e2e8f0;   // slate-200
+
+// --- Typography ---
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:   "Fraunces", Georgia, "Times New Roman", serif;
+$headings-font-weight:   500;
+$body-font-size:   1.05rem;
+$line-height-base: 1.7;
+$h1-font-size: 2.6rem;
+$h2-font-size: 1.7rem;
+$h3-font-size: 1.22rem;
+
+$link-color:      $primary;
+$border-radius:   0.7rem;
+
+// Light navbar (overridden in yml: background: light)
+$navbar-light-color:        $dark;
+$navbar-light-hover-color:  $primary;
+$navbar-light-active-color: $primary;
+
+/*-- scss:rules --*/
+
+/* ---------- Base ---------- */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+main.content { max-width: 820px; }
+
+h1, h2, h3, h4 { letter-spacing: -0.018em; color: $dark; }
+h2 {
+  margin-top: 2.6rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid $border;
+  font-weight: 500;
+}
+p, li { color: $body-color; }
+a { font-weight: 500; }
+code, pre { font-size: .9em; }
+
+/* ---------- Navbar: light, translucent, hairline ---------- */
+.navbar {
+  background: rgba(255,255,255,.82) !important;
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid $border;
+  box-shadow: 0 1px 2px rgba(15,23,42,.04);
+  padding-top: .55rem; padding-bottom: .55rem;
+  font-weight: 500;
+}
+.navbar-brand { font-family: $headings-font-family; font-weight: 600; letter-spacing: -.01em; }
+.navbar-brand img { height: 28px; width: 28px; margin-right: .5rem; }
+.navbar .nav-link { color: $body-color !important; font-size: .95rem; font-weight: 500; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: $primary !important; }
+
+/* The dark-mode toggle button Quarto injects */
+.navbar .quarto-color-scheme-toggle, .navbar .quarto-navigation-tool { color: $muted; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2.5rem;
+  padding: 3.4rem 2.6rem 3rem;
+  border-radius: $border-radius;
+  background:
+    radial-gradient(1100px 480px at 88% -10%, rgba(37,99,235,.14), transparent 60%),
+    radial-gradient(900px 520px at 0% 120%, rgba(5,150,105,.10), transparent 55%),
+    linear-gradient(180deg, #fbfdff 0%, #f4f8ff 100%);
+  border: 1px solid $border;
+  h1 {
+    font-family: $headings-font-family; font-weight: 600;
+    font-size: clamp(2.1rem, 1.4rem + 2.6vw, 3.3rem);
+    line-height: 1.08; letter-spacing: -.02em;
+    color: $dark; margin: .5rem 0 .7rem;
+  }
+  .kicker {
+    display: inline-block;
+    text-transform: uppercase; letter-spacing: .12em;
+    font-size: .72rem; font-weight: 600; color: $primary;
+    background: rgba(37,99,235,.10);
+    padding: .28rem .7rem; border-radius: 999px;
+  }
+  .lead { font-size: 1.2rem; color: $muted; max-width: 46ch; margin: 0; line-height: 1.5; }
+}
+.hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 2.6rem; align-items: center; }
+.hero-copy { min-width: 0; }
+.hero-visual { min-width: 0; }
+.hero-visual figure, .hero-visual .quarto-figure { margin: 0; }
+.hero-visual img { width: 100%; height: auto; border-radius: .55rem; box-shadow: 0 14px 40px rgba(15,23,42,.14); }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 1.4rem; }
+  .hero-visual { order: -1; max-width: 440px; }
+}
+
+/* ---------- Card grid (quick links / sprints) ---------- */
+.cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem; margin: 1.6rem 0;
+}
+.card-tile {
+  display: flex; flex-direction: column; padding: 1.3rem 1.35rem; background: #fff;
+  border: 1px solid $border; border-radius: $border-radius;
+  text-decoration: none; color: $body-color;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  .card-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; border-radius: .55rem; margin-bottom: .75rem;
+    font-size: 1.15rem;
+    background: rgba(37,99,235,.10); color: $primary;
+  }
+  .card-title { display: block; margin: 0 0 .2rem; color: $dark; font-family: $font-family-sans-serif; font-weight: 600; font-size: 1.05rem; }
+  .card-desc  { display: block; font-size: .9rem; color: $muted; }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(15,23,42,.09);
+    border-color: tint($primary, 40%);
+    text-decoration: none;
+  }
+  &.green  .card-icon { background: rgba(5,150,105,.12);  color: $secondary; }
+  &.accent .card-icon { background: rgba(217,119,6,.12);  color: $accent; }
+  &.violet .card-icon { background: rgba(124,58,237,.12); color: #7c3aed; }
+}
+
+/* ---------- Tables ---------- */
+table { font-size: .95rem; }
+thead th { background: $light; color: $dark; font-weight: 600; }
+.table > :not(caption) > * > * { padding: .65rem .8rem; }
+
+/* ---------- Quarto listing cards ---------- */
+.quarto-listing .card {
+  border: 1px solid $border; border-radius: $border-radius;
+  transition: box-shadow .18s ease, transform .18s ease, border-color .18s ease;
+}
+.quarto-listing .card:hover {
+  box-shadow: 0 10px 26px rgba(15,23,42,.08);
+  transform: translateY(-2px); border-color: tint($primary, 40%);
+}
+.listing-title, .quarto-title-meta { font-family: $headings-font-family; }
+
+/* ---------- Callouts ---------- */
+.callout { border-radius: $border-radius; border-width: 1px; }
+.callout-header { font-family: $headings-font-family; font-weight: 600; }
+
+/* ---------- Buttons ---------- */
+.btn { border-radius: .55rem; font-weight: 600; }
+.btn-primary { box-shadow: 0 1px 2px rgba(37,99,235,.25); }
+
+/* ---------- Page footer ---------- */
+.nav-footer { border-top: 1px solid $border !important; background: $light; }
+
+/* ============================================================
+   DARK MODE — Quarto toggles the .quarto-dark class on <body>
+   and enables the alternate stylesheet. Scope dark overrides
+   under body.quarto-dark so they win over the unscoped light rules.
+   ============================================================ */
+body.quarto-dark {
+  background: #0b1120;
+  $dark-body: #cbd5e1;   // slate-300
+  main.content, p, li { color: $dark-body; }
+  h1, h2, h3, h4 { color: #f1f5f9; }
+  a { color: #93c5fd; }
+  code { color: #f1f5f9; background: rgba(148,163,184,.14); }
+
+  .navbar {
+    background: rgba(11,17,32,.80) !important;
+    border-bottom-color: #1e293b;
+    box-shadow: 0 1px 2px rgba(0,0,0,.4);
+  }
+  .navbar .nav-link { color: #cbd5e1 !important; }
+  .navbar .nav-link:hover, .navbar .nav-link.active { color: #93c5fd !important; }
+  .navbar-brand { color: #f1f5f9; }
+
+  thead th { background: #131c31; color: #f1f5f9; }
+  .table { --bs-table-color: #cbd5e1; border-color: #1e293b; }
+
+  .hero {
+    background:
+      radial-gradient(1100px 480px at 88% -10%, rgba(96,165,250,.18), transparent 60%),
+      radial-gradient(900px 520px at 0% 120%, rgba(52,211,153,.12), transparent 55%),
+      linear-gradient(180deg, #0f172a 0%, #111c33 100%);
+    border-color: #1e293b;
+    h1 { color: #f8fafc; }
+    .lead { color: #94a3b8; }
+    .kicker { background: rgba(96,165,250,.16); color: #93c5fd; }
+  }
+  .card-tile {
+    background: #0f172a; border-color: #1e293b;
+    .card-title { color: #f1f5f9; } .card-desc { color: #94a3b8; }
+    &:hover { box-shadow: 0 10px 26px rgba(0,0,0,.5); border-color: #334155; }
+  }
+  .nav-footer { background: #0f172a !important; border-top-color: #1e293b !important; }
+  .callout { background-color: #0f172a; }
+}

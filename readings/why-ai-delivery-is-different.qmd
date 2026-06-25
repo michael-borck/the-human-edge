@@ -1,0 +1,26 @@
+---
+title: "Why AI delivery is different"
+description: "The five ways an AI project breaks the rules you usually lead by, and the leadership move for each."
+order: 3
+reading-time: "~5 min"
+---
+
+You have almost certainly led a project to completion before. You scoped it, you resourced it, you watched it through to delivery. So a fair question to walk in with is this: *what is actually different about an AI project? Why can't I just run it like everything else?*
+
+The honest answer is that most of your instincts still serve you well. Stakeholders, budgets, timelines, the awkward conversation with the sponsor: all of that carries over. But five things behave differently, and each one quietly breaks an assumption that normal projects let you take for granted. If you do not adjust for them, the project does not fail more often. It fails in ways you did not see coming.
+
+Here are the five contrasts. For each: the assumption you usually rely on, why AI breaks it, and the move that good leaders make.
+
+| What you normally assume | Why AI breaks it | The leadership move |
+|---|---|---|
+| **"Done" can be specified.** You write the requirement, and you can later check it was met. | AI is non-deterministic and does not reason. Ask it the same thing twice and you may get two different answers. There is no single correct output to tick off, only a spread of likely ones. | Stop chasing a fixed definition of done. Manage a probability distribution instead, and decide up front what "good enough" looks like for *this* use. |
+| **A working demo means we're nearly there.** Once it works in the room, the rest is just engineering. | The gap between a demo and a dependable production system is wide and deceptive. The demo shows the happy path; the messy real-world cases are where it falls over. Progress feels real but is largely illusory. | Treat the demo as the *start* of the hard part, not the end. Refuse to let an impressive demo set the timeline. |
+| **The data is a known input.** We specify what we need and someone supplies it. | The data is the uncertainty. You discover what you actually have (its gaps, biases and surprises) only by working with it. It is found, not ordered. | Run delivery as organisational discovery. Expect to learn as you go, and build that learning into the plan rather than treating it as slippage. |
+| **The build is the product.** Ship the thing and you are finished. | With AI, verification is the product. Because outputs vary and can be confidently wrong, the value lives in how you check them, and where a human stays in the loop. | Design the checking deliberately. Decide where human judgement sits, and make that part of the thing you ship, not an afterthought. |
+| **Capability is our advantage.** If we build something clever, that is our edge. | Generic competence is now the baseline. When every rival can run the same models, the model is not your advantage, since anyone can have it. | Compete on the human variation a rival's identical model can't reproduce: your taste, your judgement, the specific way your people apply it. |
+
+You will notice a thread running through all five. AI gives you something fluent, plausible and *roughly* right, fast, and then asks you to do the harder work of deciding when roughly right is good enough, and who checks when it isn't. That is a leadership question far more than a technical one, which is exactly why it lands on your desk.
+
+None of this is cause for alarm, and none of it is hype. AI projects are not more fragile than the ones you have run before. They are differently fragile. The cracks appear in different places: in the definition of done, in the seductive demo, in the data you thought you understood, in the checking you assumed you could skip, in the edge you assumed you had.
+
+So the takeaway is simple. These five differences don't make AI projects fail *more*. They make them fail *differently*, and you lead for that.

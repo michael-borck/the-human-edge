@@ -1,0 +1,59 @@
+---
+title: "Your prompt library"
+description: "Turn RTCF (Role · Task · Context · Format) into a starter set of prompts for your own work. Build it during the session."
+---
+
+# Your prompt library
+
+RTCF isn't a trick — it's being clear about what you actually want. Use this sheet to build a working set of prompts for tasks you genuinely do. Most prompts need all four only when the work matters; keep it lighter for quick tasks.
+
+## The framework
+
+- **R — Role:** who should the AI be? (e.g. "a sceptical senior reviewer", "a plain-English editor")
+- **T — Task:** what exactly should it do? (one clear verb)
+- **C — Context:** what does it need to know? (**this is where your edge enters** — the specifics only you hold)
+- **F — Format:** how should the output look? (length, structure, tone)
+
+## Your prompts
+
+Write three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.
+
+### Prompt 1
+
+**Task:** ……………………………………………………………………
+
+**Naive:** ……………………………………………………………………
+
+**RTCF:**
+- **R:** ……………………………………………………………………
+- **T:** ……………………………………………………………………
+- **C:** ……………………………………………………………………
+- **F:** ……………………………………………………………………
+
+### Prompt 2
+
+**Task:** ……………………………………………………………………
+
+**Naive:** ……………………………………………………………………
+
+**RTCF:**
+- **R:** ……………………………………………………………………
+- **T:** ……………………………………………………………………
+- **C:** ……………………………………………………………………
+- **F:** ……………………………………………………………………
+
+### Prompt 3
+
+**Task:** ……………………………………………………………………
+
+**Naive:** ……………………………………………………………………
+
+**RTCF:**
+- **R:** ……………………………………………………………………
+- **T:** ……………………………………………………………………
+- **C:** ……………………………………………………………………
+- **F:** ……………………………………………………………………
+
+:::: {.callout-note}
+**The two-pass lesson.** Run your prompt once with thin context → slick, generic, anyone-could-have-it. Then layer in what only *you* hold (a customer, a contrarian bet, a taste call). Watch the output get a soul. *That's where your edge lives.*
+::::

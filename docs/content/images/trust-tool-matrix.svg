@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" font-family="Inter, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#2563eb"/></marker>
+  </defs>
+  <rect width="1280" height="720" fill="#ffffff"/>
+  <text x="640" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#1f2937" letter-spacing="-0.5">The trust tool: when to trust AI</text>
+  <text x="640" y="90" text-anchor="middle" font-size="16" fill="#64748b">AI gives a convincing <tspan font-style="italic">average</tspan>, so where do you let it run, and where must a human stay in the loop?</text>
+
+  <!-- Quadrants: grid 400..940 x, 130..670 y -->
+  <g stroke="#ffffff" stroke-width="4">
+    <rect x="400" y="130" width="270" height="270" fill="#f1f5f9"/>   <!-- TL Average+Large -->
+    <rect x="670" y="130" width="270" height="270" fill="#fef3c7"/>   <!-- TR Precise+Large -->
+    <rect x="400" y="400" width="270" height="270" fill="#d1fae5"/>   <!-- BL Average+Small -->
+    <rect x="670" y="400" width="270" height="270" fill="#f1f5f9"/>   <!-- BR Precise+Small -->
+  </g>
+
+  <!-- Quadrant labels -->
+  <text x="535" y="252" text-anchor="middle" font-size="13" fill="#94a3b8" font-weight="700" letter-spacing="0.5">PRECISE-ish · HIGH STAKES</text>
+  <text x="535" y="278" text-anchor="middle" font-size="19" fill="#64748b" font-weight="600">Judgement call</text>
+
+  <text x="805" y="238" text-anchor="middle" font-size="13" fill="#b45309" font-weight="700" letter-spacing="0.5">PRECISE · LARGE</text>
+  <text x="805" y="268" text-anchor="middle" font-size="22" fill="#92400e" font-weight="800">Keep a human</text>
+  <text x="805" y="296" text-anchor="middle" font-size="22" fill="#92400e" font-weight="800">in the loop</text>
+
+  <text x="535" y="508" text-anchor="middle" font-size="13" fill="#047857" font-weight="700" letter-spacing="0.5">AVERAGE · SMALL</text>
+  <text x="535" y="538" text-anchor="middle" font-size="22" fill="#065f46" font-weight="800">Lean in,</text>
+  <text x="535" y="566" text-anchor="middle" font-size="22" fill="#065f46" font-weight="800">let AI run</text>
+
+  <text x="805" y="522" text-anchor="middle" font-size="13" fill="#94a3b8" font-weight="700" letter-spacing="0.5">AVERAGE-ish · LOW STAKES</text>
+  <text x="805" y="548" text-anchor="middle" font-size="19" fill="#64748b" font-weight="600">Judgement call</text>
+
+  <!-- X axis -->
+  <line x1="400" y1="700" x2="945" y2="700" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="408" y="694" font-size="15" fill="#1e40af" font-weight="700">Average</text>
+  <text x="932" y="694" text-anchor="end" font-size="15" fill="#1e40af" font-weight="700">Precise</text>
+  <text x="670" y="718" text-anchor="middle" font-size="13" fill="#94a3b8">how exact the answer must be</text>
+
+  <!-- Y axis -->
+  <line x1="372" y1="670" x2="372" y2="125" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="364" y="664" text-anchor="end" font-size="15" fill="#1e40af" font-weight="700">Small</text>
+  <text x="364" y="142" text-anchor="end" font-size="15" fill="#1e40af" font-weight="700">Large</text>
+  <text x="345" y="400" text-anchor="middle" font-size="13" fill="#94a3b8" transform="rotate(-90 345 400)">stakes &amp; scope</text>
+
+</svg>

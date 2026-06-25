@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "readings/*.qmd"
+    - "activities/**/*.md"
+    - "handouts/**/*.md"
+  resources:
+    - content/images/og-image.png
+
+website:
+  title: "The Human Edge"
+  description: "Using and Delivering AI with Judgement: course companion"
+  site-url: "https://michael-borck.github.io/the-human-edge/"
+  favicon: favicon.svg
+  image: content/images/og-image.png
+  open-graph: true
+  twitter-card: true
+  navbar:
+    logo: favicon.svg
+    background: light
+    pinned: true
+    search: true
+    left:
+      - text: "Before the day"
+        href: before.qmd
+      - text: "The workshop"
+        href: workshop.qmd
+      - text: "Frameworks"
+        href: frameworks.qmd
+      - text: "Meet the team"
+        href: team.qmd
+    right:
+      - text: "The series"
+        href: series.qmd
+      - text: "Slides"
+        href: content/slide-deck.html
+        target: _blank
+  page-footer:
+    border: true
+    left: "The Human Edge: *Using and Delivering AI with Judgement*"
+    right: "Dr. Michael Borck · Curtin University"
+
+format:
+  html:
+    theme:
+      light: [cosmo, brand.scss]
+      dark: [darkly, brand.scss]
+    toc: true
+    toc-depth: 3
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-in-header: _includes/fonts.html

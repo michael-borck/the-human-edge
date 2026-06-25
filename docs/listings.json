@@ -1,0 +1,31 @@
+[
+  {
+    "listing": "/workshop.html",
+    "items": [
+      "/activities/morning/workflow-redesign.html",
+      "/activities/morning/prompt-library.html",
+      "/activities/initiative-cards/customer-service-chatbot.html",
+      "/activities/initiative-cards/dynamic-pricing.html",
+      "/activities/initiative-cards/fraud-detection.html",
+      "/activities/initiative-cards/inventory-optimisation.html",
+      "/activities/worksheets/sprint-1-scope.html",
+      "/activities/worksheets/sprint-2-stakeholders-hitl.html",
+      "/activities/worksheets/sprint-3-roadmap-risk.html"
+    ]
+  },
+  {
+    "listing": "/before.html",
+    "items": [
+      "/readings/ai-in-five-minutes.html",
+      "/readings/the-trust-tool.html",
+      "/readings/why-ai-delivery-is-different.html"
+    ]
+  },
+  {
+    "listing": "/frameworks.html",
+    "items": [
+      "/handouts/frameworks/frameworks-scale-pivot-kill.html",
+      "/handouts/frameworks/frameworks-trust-tool.html"
+    ]
+  }
+]

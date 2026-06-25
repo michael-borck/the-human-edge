@@ -1,0 +1,37 @@
+---
+title: "The trust tool: when to trust AI"
+description: "A simple grid (Average or Precise, Small or Large) that turns 'where does a human stay in the loop?' into a question you can actually answer."
+order: 2
+reading-time: "~5 min"
+---
+
+The most useful thing to understand about today's AI is also the least glamorous: it produces a convincing *average*. Feed it a request, and it gives you back the most plausible, most typical response drawn from everything it has seen. That is its genius and its limit in one. The output is fluent, well-shaped and usually about right, but "about right" and "exactly right" are not the same thing, and knowing which one you need is the whole game.
+
+That is where the trust tool comes in. It is a small grid with two questions, and it tells you when to lean in and when to keep a human firmly in the loop.
+
+**Question one: do you need an average, or do you need precision?**
+An *average* answer is one where "in the right ballpark" is genuinely fine: a first draft, a summary, a starting point you will shape further. A *precise* answer is one where there is a single correct value and being close is the same as being wrong: a figure in a contract, a dosage, a legal citation, a customer's account balance.
+
+**Question two: is the decision small or large?**
+A *small* decision is low stakes: easy to reverse, cheap to get wrong, no one is harmed. A *large* decision carries real consequences: money, safety, reputation, someone's job or wellbeing.
+
+Put those together and you get four corners:
+
+|  | **Small (low stakes)** | **Large (high stakes)** |
+|---|---|---|
+| **Average is fine** | **Lean in.** Let AI run. This is its home turf. | **Lean in, with a glance.** Useful, but sanity-check before it goes out. |
+| **Precision required** | **Use, then verify.** Handy, but confirm the specifics. | **Human in the loop.** AI may assist, but a person owns the decision. |
+
+The rule of thumb is easy to remember: **lean in where "about right" over low stakes is fine; keep a human in the loop where exactly-right meets high-stakes.**
+
+A few everyday examples make it concrete.
+
+- **Drafting an internal email or a meeting summary.** Average is fine, stakes are small. Lean in, and let the AI write the first version and tidy it yourself. The risk of a slightly-off phrasing is trivial.
+- **Pulling the exact numbers for a board paper.** Precision is required and the stakes are large. This is the bottom-right corner. The AI can help you draft the narrative around the figures, but a human must source and own every number. Confident-sounding is not the same as correct.
+- **Summarising fifty customer complaints to spot themes.** Average is fine, and the stakes sit in the middle. Lean in to get the themes fast, then, before you act on them, have a person skim the underlying complaints to make sure the AI hasn't smoothed away the one that actually matters.
+
+Notice what the grid quietly does. The hardest question leaders ask about AI is "where does a human stay in the loop?", and most teams answer it by gut feel, which means either everywhere (and you lose the speed) or nowhere (and you lose the trust). The trust tool makes that question *answerable*. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large? The answer falls out of the corner you land in.
+
+This grid, the **Average/Precise × Small/Large** framework, is drawn from the companion book to this course, *Conversation, Not Delegation*. If you want to go deeper on how it plays out across real work, that is the place to look: <https://michael-borck.github.io/conversation-not-delegation/>.
+
+For now, keep the grid in your back pocket. The next time someone asks "can we just let the AI do this?", you have a better answer than yes or no. You have a question, and the question does the work.

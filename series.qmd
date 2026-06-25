@@ -1,0 +1,48 @@
+---
+title: "The masterclass series"
+subtitle: "Standalone one-day AI masterclasses. Take any one on its own, or build a pathway."
+toc: false
+---
+
+> **A common thread runs through all of them:** when everyone has access to the same AI, the generic output it produces is the baseline, not the advantage. What lasts is **human judgement**: knowing where AI genuinely helps, where it quietly fails, and where your thinking must stay in charge.
+
+**The Human Edge** is part of Curtin University's Executive Education AI masterclasses. Each stands completely on its own; together they cover the full arc of working with AI in an organisation: **using and delivering** it well, deciding **where to invest**, and governing it **ethically**.
+
+:::: {.callout-note}
+All are searchable, with dates and enrolment, on the [Curtin Executive Education masterclasses page](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
+::::
+
+:::: {.cards}
+
+<div class="card-tile green">
+<h3>① The Human Edge <span style="font-weight:600">(you are here)</span></h3>
+<p><em>Using and Delivering AI with Judgement</em><br><br>
+<strong>"When everyone has the same tools, where does my edge live?"</strong><br><br>
+For professionals who want to use AI well and lead an AI initiative. The morning builds personal fluency (the trust tool, prompting, workflow redesign); the afternoon lifts the same judgement to delivering a project (the five differences, human-in-the-loop, the go/no-go). Combines individual practice and project delivery into one day.</p>
+</div>
+
+<div class="card-tile">
+<h3>② AI in Strategy</h3>
+<p><em>Choosing Where to Invest</em><br><br>
+<strong>"Which AI investment is worth real money, and which is a confident-sounding trap?"</strong><br><br>
+For executives, strategists and decision-makers. Leave with a scored, risk-assessed AI investment proposal ready to take to a sponsor.</p>
+</div>
+
+<div class="card-tile accent">
+<h3>③ Ethics of Artificial Intelligence</h3>
+<p><em>Predict, Prevent &amp; Manage the Risks</em><br><br>
+<strong>"How do I avoid the ethical missteps, negative outcomes and public scandals that AI can cause?"</strong><br><br>
+For anyone responsible for AI risk and governance. Informed by recent AI scandals and the field of AI ethics. Leave with a guidance toolkit and operational checklist customised to your own organisation.</p>
+</div>
+
+::::
+
+## How they fit together
+
+Each masterclass is a complete, standalone day. But they're designed to complement one another:
+
+- **The Human Edge** (this course) builds the individual fluency *and* the project-delivery judgement the others draw on — from your first prompt to a project that ships.
+- **AI in Strategy** decides *which* AI initiatives deserve investment.
+- **Ethics of Artificial Intelligence** runs *across* all of them: the governance, risk and responsibility lens every AI initiative needs.
+
+[Browse all masterclasses & enrol → Curtin Executive Education](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/){.btn .btn-primary target="_blank"}

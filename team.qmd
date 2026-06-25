@@ -1,0 +1,35 @@
+---
+title: "Meet the RetailFlow team"
+subtitle: "Your stakeholders: interview them, don't just read about them."
+---
+
+The afternoon runs on conversations. RetailFlow's leadership team is available as **live chatbots**, and you interview them to scope your project, surface the messy reality, and stress-test your plan. They have opinions, they disagree with each other, and they won't do your job for you.
+
+:::: {.callout-important}
+## Access
+The team lives in RetailFlow's **internal portal**. Your facilitator will give you the access code on the day.
+
+[**Open the RetailFlow internal portal →**](https://retailflow.eduserver.au/internal.html){.btn .btn-primary target="_blank"}
+::::
+
+## Who you can talk to
+
+| Who | Role | Ask them about |
+|---|---|---|
+| **Emma Rodriguez** | Managing Director | strategy, board expectations, the promise that was made |
+| **David Chen** | CFO | budgets, ROI, the financial go/no-go |
+| **Marcus Kim** | CIO | technology, legacy systems, build vs buy |
+| **Dr. Priya Sharma** | Head of Data & Analytics | data readiness, feasibility, realistic timelines |
+| **Sarah Thompson** | COO | store operations, rollout, the operational reality |
+| **Tom Walsh** | Customer Service Manager | the frontline team, customer impact |
+| **Lisa Nguyen** | General Manager, Customer Experience | customer experience |
+
+## How to get value from them
+
+- **They're stakeholders, not consultants.** They'll give you their perspective and the facts they hold, but the scope, the plan and the decisions are *yours*. If you ask them to do your work, they'll hand it back.
+- **Triangulate.** Marcus pushes speed; Priya pushes realism; David wants certainty. A good plan reconciles them, so don't take any one view as gospel.
+- **Push back.** Ask follow-ups, test your assumptions, probe the gaps. The conversation is where judgement gets built.
+
+:::: {.callout-note}
+Notice the bots are *fluent and confident even when they don't know*, exactly the AI behaviour you're learning to lead. Treat what they tell you with the same scrutiny you'd apply to any AI output — this is the trust tool, applied to your own research.
+::::

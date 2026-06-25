@@ -1,0 +1,30 @@
+---
+title: "AI in five minutes (for non-technical leaders)"
+description: "What a large language model actually is, in plain English, and why 'confidently wrong' is its default way of failing."
+order: 1
+reading-time: "~5 min"
+---
+
+You do not need to know how an engine works to drive a car well, but you do need to know what it can and can't do: that it needs fuel, that it won't go underwater, that the brakes have limits. The same is true here. You do not need the mathematics of AI. You need an honest mental model of what the thing actually is, so you can lead it without either over-trusting it or dismissing it. Five minutes is enough.
+
+**What a large language model actually is**
+
+Strip away the marketing and a large language model is, at heart, a very sophisticated pattern-completer. It has been trained on an enormous amount of human writing, and from all of that it has learned what words and ideas tend to follow other words and ideas. When you ask it something, it does not look up a fact or work out an answer. It produces the most plausible *continuation* (the most likely next words) given your question and everything it has absorbed.
+
+A useful way to hold this: the model gives you a fluent, convincing **average** of everything it has seen on a topic. That average is often genuinely excellent, because the average of a vast amount of competent human writing is itself pretty competent. But it is an average, not a truth. The system **predicts; it does not reason, and it does not "know."** There is no understanding behind the words, no checking against reality, no little voice saying "wait, is that actually correct?" There is only: what would plausibly come next?
+
+**Why it's brilliant at some things and quietly unreliable at others**
+
+Once you see it as a fluent averaging machine, its strengths and weaknesses stop being surprising.
+
+It is *brilliant* at tasks where fluency and typicality are exactly what you want: drafting, rephrasing, summarising, brainstorming, translating, turning a rough thought into clean prose, explaining a familiar idea in simpler terms. Here, "the most plausible version" is the right answer.
+
+It is *quietly unreliable* at tasks that need a single correct fact, a precise figure, a real citation, or genuine step-by-step reasoning that must be right rather than merely plausible. It will happily produce something that *sounds* exactly like a correct answer (same confidence, same polish) whether or not it is true. The trouble is that the fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.
+
+**What "hallucination" means, and why confident-but-wrong is the default**
+
+When the model states something false as if it were fact (invents a source, a statistic, a quote, a name) that is what people call a **hallucination**. The word makes it sound like a glitch, an occasional malfunction. It isn't. It is the same machinery working exactly as designed. The system is *always* producing a plausible continuation; sometimes the most plausible-sounding continuation simply happens not to be true. It has no separate sense of "fact" to fall back on.
+
+So the failure mode to expect is not *blank* or *error message* or *I don't know*. It is **confident and wrong**, delivered with the same assurance as everything else. That is the single most important thing to carry into any AI project. The danger is rarely that the AI refuses to help. The danger is that it helps convincingly when it shouldn't.
+
+None of this is cause for hype or for doom. It is just the shape of the tool. Used where fluency is the goal, it is remarkable. Used where exactness matters, it needs a human checking the work. Everything else in this course builds on that one durable distinction, so if you remember nothing else, remember this: it produces a convincing average, and a convincing average is not the same as the truth.

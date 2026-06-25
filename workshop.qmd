@@ -1,0 +1,66 @@
+---
+title: "The workshop"
+subtitle: "One idea, two scales: your desk in the morning, a project in the afternoon."
+listing:
+  - id: morning
+    contents: "activities/morning/*.md"
+    type: default
+    fields: [title, description]
+    sort: "title"
+  - id: initiatives
+    contents: "activities/initiative-cards/*.md"
+    type: grid
+    grid-columns: 2
+    fields: [title, description]
+    sort: "title"
+  - id: worksheets
+    contents: "activities/worksheets/*.md"
+    type: default
+    fields: [title, description]
+    sort: "title"
+---
+
+The day runs on a single idea — **knowing when to trust AI, and where you must stay in charge** — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The **trust tool** is the connective tissue, learned once and reused.
+
+## Morning — using AI well, yourself
+
+Bring your own device and a real task from your role. By lunch you'll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.
+
+| Block | What you do |
+|---|---|
+| **The average, the tool, the edge** | Foundations: what AI is, why it's confidently wrong in predictable places, and the trust tool (Average/Precise × Small/Large). |
+| **Using AI well, yourself** | Task suitability, RTCF prompting, the two-pass demo (generic → with edge), and a workflow redesign from your own role. |
+
+Bring the morning worksheets (print or fill on your device):
+
+:::: {#morning}
+::::
+
+## Afternoon — delivering AI, responsibly
+
+You are the **delivery lead**. The board has funded one AI initiative at RetailFlow, and your job is to ship it without the predictable failures. You'll carry one project through three moves, scoping and stress-testing it by **interviewing the RetailFlow team** ([meet them here](team.qmd)).
+
+Each group takes a **different** initiative, so no two designs look alike. Pick yours:
+
+:::: {#initiatives}
+::::
+
+### The three moves
+
+Each move hands you one piece of your delivery design. Bring the worksheet (print it, or fill it on your device).
+
+:::: {#worksheets}
+::::
+
+1. **Scope it against reality.** Interview Priya (data) and Marcus (CIO); reconcile "move fast" with "the data isn't ready". → scoped objectives, data needs, a defined *good enough*.
+2. **Stakeholders & human-in-the-loop.** Interview Emma (MD), Tom (frontline) and David (CFO); decide where a human must stay in charge. → stakeholder plan + checkpoint design.
+3. **Roadmap, risk & the go/no-go.** Build the plan, then defend it when the staff push back and a crisis hits. → roadmap with gates, risk register, the Scale/Pivot/Kill call.
+
+:::: {.callout-tip}
+The documents you'll need (board memos, data profiles, vendor proposals, policies) are in RetailFlow's internal portal. Not everything there is relevant: part of the job is working out what matters.
+::::
+
+:::: {.callout-note}
+## The thread through both halves
+The trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks "do I trust this output?" At the project level it asks "where does a human stay in the loop?" One idea, two scales — that's why the day holds together.
+::::
