@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="A practical technique (Ethan Mollick) for getting AI to write in your voice instead of a generic one — the permanent version of the two-pass demo’s ‘add your edge’.">
 
-<title>The workshop – The Human Edge</title>
+<title>Make your edge persistent: the two-page voice method – The Human Edge</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +27,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-20d1645b68fe24e438722d2c6c49ef3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-20d1645b68fe24e438722d2c6c49ef3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,138 +75,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-morning .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-morning'] = new List('listing-morning', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-initiatives .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-initiatives'] = new List('listing-initiatives', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-worksheets .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-worksheets'] = new List('listing-worksheets', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <!-- Brand typography: Fraunces (display/headings) + Inter (body/UI). Loaded once site-wide. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="The workshop – The Human Edge">
-<meta property="og:description" content="One idea, two scales: your desk in the morning, a project in the afternoon.">
-<meta property="og:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
+<meta property="og:title" content="Make your edge persistent: the two-page voice method – The Human Edge">
+<meta property="og:description" content="A practical technique (Ethan Mollick) for getting AI to write in your voice instead of a generic one — the permanent version of the two-pass demo’s ‘add your edge’.">
+<meta property="og:image" content="https://michael-borck.github.io/the-human-edge/handouts/frameworks/content/images/og-image.png">
 <meta property="og:site_name" content="The Human Edge">
-<meta property="og:image:height" content="630">
-<meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="The workshop – The Human Edge">
-<meta name="twitter:description" content="One idea, two scales: your desk in the morning, a project in the afternoon.">
-<meta name="twitter:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
-<meta name="twitter:image-height" content="630">
-<meta name="twitter:image-width" content="1200">
+<meta name="twitter:title" content="Make your edge persistent: the two-page voice method – The Human Edge">
+<meta name="twitter:description" content="A practical technique (Ethan Mollick) for getting AI to write in your voice instead of a generic one — the permanent version of the two-pass demo’s ‘add your edge’.">
+<meta name="twitter:image" content="https://michael-borck.github.io/the-human-edge/handouts/frameworks/content/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -380,11 +261,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./favicon.svg" alt="" class="navbar-logo light-content">
-    <img src="./favicon.svg" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="../../favicon.svg" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">The Human Edge</span>
     </a>
   </div>
@@ -395,29 +276,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./before.html"> 
+    <a class="nav-link" href="../../before.html"> 
 <span class="menu-text">Before the day</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./workshop.html" aria-current="page"> 
+    <a class="nav-link" href="../../workshop.html"> 
 <span class="menu-text">The workshop</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./frameworks.html"> 
+    <a class="nav-link" href="../../frameworks.html"> 
 <span class="menu-text">Frameworks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./team.html"> 
+    <a class="nav-link" href="../../team.html"> 
 <span class="menu-text">Meet the team</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./series.html"> 
+    <a class="nav-link" href="../../series.html"> 
 <span class="menu-text">The series</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./content/slide-deck.html" target="_blank"> 
+    <a class="nav-link" href="../../content/slide-deck.html" target="_blank"> 
 <span class="menu-text">Slides</span></a>
   </li>  
 </ul>
@@ -437,10 +318,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#morning-using-ai-well-yourself" id="toc-morning-using-ai-well-yourself" class="nav-link active" data-scroll-target="#morning-using-ai-well-yourself">Morning — using AI well, yourself</a></li>
-  <li><a href="#afternoon-delivering-ai-responsibly" id="toc-afternoon-delivering-ai-responsibly" class="nav-link" data-scroll-target="#afternoon-delivering-ai-responsibly">Afternoon — delivering AI, responsibly</a>
+  <li><a href="#make-your-edge-persistent-the-two-page-voice-method" id="toc-make-your-edge-persistent-the-two-page-voice-method" class="nav-link active" data-scroll-target="#make-your-edge-persistent-the-two-page-voice-method">Make your edge persistent: the two-page voice method</a>
   <ul class="collapse">
-  <li><a href="#the-three-moves" id="toc-the-three-moves" class="nav-link" data-scroll-target="#the-three-moves">The three moves</a></li>
+  <li><a href="#the-method-in-three-steps" id="toc-the-method-in-three-steps" class="nav-link" data-scroll-target="#the-method-in-three-steps">The method, in three steps</a></li>
+  <li><a href="#the-tool-style-mirror" id="toc-the-tool-style-mirror" class="nav-link" data-scroll-target="#the-tool-style-mirror">The tool: Style Mirror</a></li>
+  <li><a href="#the-honest-part-and-why-its-still-on-thesis" id="toc-the-honest-part-and-why-its-still-on-thesis" class="nav-link" data-scroll-target="#the-honest-part-and-why-its-still-on-thesis">The honest part — and why it’s still on-thesis</a></li>
+  <li><a href="#what-you-leave-with" id="toc-what-you-leave-with" class="nav-link" data-scroll-target="#what-you-leave-with">What you leave with</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -451,10 +334,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The workshop</h1>
-<p class="subtitle lead">One idea, two scales: your desk in the morning, a project in the afternoon.</p>
+<h1 class="title">Make your edge persistent: the two-page voice method</h1>
 </div>
 
+<div>
+  <div class="description">
+    A practical technique (Ethan Mollick) for getting AI to write in <em>your</em> voice instead of a generic one — the permanent version of the two-pass demo’s ‘add your edge’.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -469,223 +356,40 @@ window.Quarto = {
 </header>
 
 
-<p>The day runs on a single idea — <strong>knowing when to trust AI, and where you must stay in charge</strong> — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The <strong>trust tool</strong> is the connective tissue, learned once and reused.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Prefer paper? Print the workbook
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Every worksheet and initiative card below is also in a clean, print-optimised <strong><a href="the-human-edge-participant-workbook.pdf" target="_blank">participant workbook (PDF)</a></strong> — one page per activity, no site clutter. Print one set per person (and one initiative card per group) before the day.</p>
-</div>
-</div>
-<section id="morning-using-ai-well-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="morning-using-ai-well-yourself">Morning — using AI well, yourself</h2>
-<p>Bring your own device and a real task from your role. By lunch you’ll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Block</th>
-<th>What you do</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>The average, the tool, the edge</strong></td>
-<td>Foundations: what AI is, why it’s confidently wrong in predictable places, and the trust tool (Average/Precise × Small/Large).</td>
-</tr>
-<tr class="even">
-<td><strong>Using AI well, yourself</strong></td>
-<td>Task suitability, RTCF prompting, the two-pass demo (generic → with edge), and a workflow redesign from your own role.</td>
-</tr>
-</tbody>
-</table>
-<p>Bring the morning worksheets (print or fill on your device):</p>
-<div id="listing-morning" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1782375551980" data-listing-reading-time-sort="2" data-listing-word-count-sort="269">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./activities/morning/workflow-redesign.html" class="no-external">Redesign your workflow</a>
-</h3>
-<div class="delink listing-description"><a href="./activities/morning/workflow-redesign.html" class="no-external">
-<p>Map one real task from your role, then put AI where it helps — and keep your judgement where it counts. The morning’s main takeaway.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./activities/morning/workflow-redesign.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1782386437810" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./activities/morning/prompt-library.html" class="no-external">Your prompt library</a>
-</h3>
-<div class="delink listing-description"><a href="./activities/morning/prompt-library.html" class="no-external">
-<p>Turn RTCF (Role · Task · Context · Format) into a starter set of prompts for your own work. Build it during the session.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./activities/morning/prompt-library.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="afternoon-delivering-ai-responsibly" class="level2">
-<h2 class="anchored" data-anchor-id="afternoon-delivering-ai-responsibly">Afternoon — delivering AI, responsibly</h2>
-<p>You are the <strong>delivery lead</strong>. The board has funded one AI initiative at RetailFlow, and your job is to ship it without the predictable failures. You’ll carry one project through three moves, scoping and stress-testing it by <strong>interviewing the RetailFlow team</strong> (<a href="./team.html">meet them here</a>).</p>
-<p>Each group takes a <strong>different</strong> initiative, so no two designs look alike. Pick yours:</p>
-<div id="listing-initiatives" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1782375526890" data-listing-reading-time-sort="2" data-listing-word-count-sort="329">
-<a href="./activities/initiative-cards/customer-service-chatbot.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Customer-service chatbot
-</h5>
-<div class="card-text listing-description delink">
-<p>Deflect routine queries and cut 26-hour response times, but it’s customer-facing, so confident-wrong answers are a live risk. ($450K, funded.)</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1782375526900" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
-<a href="./activities/initiative-cards/dynamic-pricing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dynamic pricing
-</h5>
-<div class="card-text listing-description delink">
-<p>Automated price optimisation: high value, high stakes, and the data isn’t ready. ($850K, funded.)</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1782375526900" data-listing-reading-time-sort="2" data-listing-word-count-sort="312">
-<a href="./activities/initiative-cards/fraud-detection.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Fraud detection
-</h5>
-<div class="card-text listing-description delink">
-<p>Cut chargebacks without blocking real customers: a buy-vs-build and threshold-tuning problem. ($650K, funded.)</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1782375526910" data-listing-reading-time-sort="2" data-listing-word-count-sort="300">
-<a href="./activities/initiative-cards/inventory-optimisation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Inventory optimisation
-</h5>
-<div class="card-text listing-description delink">
-<p>Forecast and replenish across 50 stores: the broadest scope, tangled in legacy systems. ($1.1M, funded.)</p>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<section id="the-three-moves" class="level3">
-<h3 class="anchored" data-anchor-id="the-three-moves">The three moves</h3>
-<p>Each move hands you one piece of your delivery design. Bring the worksheet (print it, or fill it on your device).</p>
-<div id="listing-worksheets" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1782375526940" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./activities/worksheets/sprint-1-scope.html" class="no-external">Sprint 1: Scope it against reality</a>
-</h3>
-<div class="delink listing-description"><a href="./activities/worksheets/sprint-1-scope.html" class="no-external">
-<p>Scoped objectives, data requirements, and a defined ‘good enough’.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./activities/worksheets/sprint-1-scope.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1782375526950" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">Sprint 2: Stakeholders &amp; human-in-the-loop</a>
-</h3>
-<div class="delink listing-description"><a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">
-<p>A stakeholder plan and a human-in-the-loop checkpoint design.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1782375526950" data-listing-reading-time-sort="2" data-listing-word-count-sort="243">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">Sprint 3: Roadmap, risk &amp; the go/no-go</a>
-</h3>
-<div class="delink listing-description"><a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">
-<p>A delivery roadmap with gates, a risk register, and the Scale/Pivot/Kill call.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<section id="make-your-edge-persistent-the-two-page-voice-method" class="level1">
+<h1>Make your edge persistent: the two-page voice method</h1>
+<p>The morning’s two-pass demo showed the whole thesis in five minutes: ask AI naively and you get the same slick, generic answer everyone else gets. Add what only <em>you</em> hold — your context, your taste, your angle — and the output gets a soul. That’s the edge, injected one prompt at a time.</p>
+<p>This page is how you make that edge <strong>permanent</strong>, so you don’t have to re-supply it on every request. The technique comes from AI researcher Ethan Mollick; the tool below is free and runs in your browser.</p>
+<section id="the-method-in-three-steps" class="level2">
+<h2 class="anchored" data-anchor-id="the-method-in-three-steps">The method, in three steps</h2>
 <ol type="1">
-<li><strong>Scope it against reality.</strong> Interview Priya (data) and Marcus (CIO); reconcile “move fast” with “the data isn’t ready”. → scoped objectives, data needs, a defined <em>good enough</em>.</li>
-<li><strong>Stakeholders &amp; human-in-the-loop.</strong> Interview Emma (MD), Tom (frontline) and David (CFO); decide where a human must stay in charge. → stakeholder plan + checkpoint design.</li>
-<li><strong>Roadmap, risk &amp; the go/no-go.</strong> Build the plan, then defend it when the staff push back and a crisis hits. → roadmap with gates, risk register, the Scale/Pivot/Kill call.</li>
+<li><strong>Give it a sample of your writing.</strong> A few hundred words of something you actually wrote — an email, a report, a blog post. The more it sounds like <em>you</em>, the better.</li>
+<li><strong>Let it write a style brief.</strong> Ask the AI to analyse the sample and produce a one-to-two-page description of your style, <em>including instructions for how to write in it</em>. (This is the key move: you want a description of your voice, not more of your writing.)</li>
+<li><strong>Paste that brief into your AI’s custom instructions.</strong> Tell it “write in this style” for future tasks. From then on, the generic average tilts toward <em>your</em> average.</li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The documents you’ll need (board memos, data profiles, vendor proposals, policies) are in RetailFlow’s internal portal. Not everything there is relevant: part of the job is working out what matters.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>The thread through both halves
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks “do I trust this output?” At the project level it asks “where does a human stay in the loop?” One idea, two scales — that’s why the day holds together.</p>
-</div>
-</div>
-
+</section>
+<section id="the-tool-style-mirror" class="level2">
+<h2 class="anchored" data-anchor-id="the-tool-style-mirror">The tool: Style Mirror</h2>
+<p><a href="https://stylemirror.eduserver.au"><strong>Style Mirror</strong></a> (stylemirror.eduserver.au) does steps 1 and 2 for you, in the browser:</p>
+<ul>
+<li>Open the <strong>Analyze</strong> tab, paste your writing, hit <em>Extract Style DNA</em>.</li>
+<li>It returns an editable <strong>Style DNA</strong> profile — tone, structure, vocabulary, quirks — which is your style brief.</li>
+<li>Copy that profile into your AI platform’s custom instructions.</li>
+</ul>
+<p>It’s provider-agnostic. <strong>It runs on a local model (Ollama)</strong>, which means your writing sample never leaves your machine — worth choosing if the sample is work-sensitive. (That’s the data-responsibility call this course keeps returning to.)</p>
+</section>
+<section id="the-honest-part-and-why-its-still-on-thesis" class="level2">
+<h2 class="anchored" data-anchor-id="the-honest-part-and-why-its-still-on-thesis">The honest part — and why it’s still on-thesis</h2>
+<p>Mollick is blunt that the result is a <strong>“slight parody” of you</strong>, not a perfect clone. Don’t expect it to carry a long-form piece like a book. That caveat is the interesting bit, because it’s the thesis landing a second time:</p>
+<blockquote class="blockquote">
+<p>Even <em>personalised</em>, the AI is still producing an <strong>average of you</strong> — a smoothed, stylised version of your voice. The part it can’t capture is your live judgement: the taste call you make in the moment, the thing you’d say here but not there.</p>
+</blockquote>
+<p>So the goal isn’t to outsource your voice. It’s to clear the generic baseline out of the way — the part anyone could have written — so the bit that’s left, the part only you would write, is easier to spot and protect.</p>
+<p>That’s also why mimicking <em>yourself</em> beats asking the AI to mimic a famous writer. Hemingway’s style is already in the training data — it’s the ultimate generic average. Your voice is the one thing only you can supply.</p>
+</section>
+<section id="what-you-leave-with" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-leave-with">What you leave with</h2>
+<p>A two-page style brief, pasted into your AI’s custom instructions, that quietly turns “generic” into “yours” — and a clearer sense of where the edge still lives after that: with you.</p>
 
 
 </section>
@@ -1131,5 +835,5 @@ Tip
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

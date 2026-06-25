@@ -26,6 +26,10 @@ You learn it in the morning at the level of a single task ("do I trust this outp
 
 **R**ole · **T**ask · **C**ontext · **F**ormat. Not every prompt needs all four, but for anything important they transform the result. Context is where *your* edge enters: the specifics only you hold.
 
+## Make your edge persistent: the two-page voice method
+
+RTCF injects your edge one prompt at a time. To make it *stick*, give the AI a sample of your writing, have it write a two-page style brief, and paste that into your custom instructions. [**Style Mirror**](https://stylemirror.eduserver.au) (free, in-browser, can run on a local model) does the extraction. The result is a "slight parody" of you — an average of your voice — so the part that's still irreducibly *yours* gets easier to see. Full method on the [take-home page below](#handouts).
+
 ## The five differences: why AI delivery breaks the rules
 
 "Done" can't be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline. Standard PM tools still apply — they just *bend* under these five forces.

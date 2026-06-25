@@ -14,6 +14,10 @@ RTCF isn't a trick — it's being clear about what you actually want. Use this s
 - **C — Context:** what does it need to know? (**this is where your edge enters** — the specifics only you hold)
 - **F — Format:** how should the output look? (length, structure, tone)
 
+:::: {.callout-tip}
+**When does RTCF matter most?** The scaffolding (Role, Task, Format) earns its keep on weaker or self-hosted models that need structure spelled out. A frontier model follows clear, natural instructions well — if you brief people well, you're already most of the way there. The part that *always* matters is **Context**: the specifics only you hold. No model supplies that for you.
+::::
+
 ## Your prompts
 
 Write three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.

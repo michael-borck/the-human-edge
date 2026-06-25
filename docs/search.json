@@ -1,563 +1,38 @@
 [
   {
-    "objectID": "handouts/frameworks/frameworks-trust-tool.html",
-    "href": "handouts/frameworks/frameworks-trust-tool.html",
-    "title": "The trust tool",
+    "objectID": "handouts/frameworks/make-your-edge-persistent.html",
+    "href": "handouts/frameworks/make-your-edge-persistent.html",
+    "title": "Make your edge persistent: the two-page voice method",
     "section": "",
-    "text": "The most useful thing to understand about today’s AI: it produces a convincing average. Fluent, well-shaped, usually about right — but “about right” and “exactly right” are not the same, and knowing which you need is the whole game.\nThe trust tool is two questions.\n\n\n\nAverage = “in the right ballpark” is fine. A first draft, a summary, a starting point you’ll shape further.\nPrecise = a single correct value, where close is the same as wrong. A contract figure, a dosage, a citation, an account balance.\n\n\n\n\n\nSmall = low stakes. Easy to reverse, cheap to get wrong, no one harmed.\nLarge = real consequences. Money, safety, reputation, someone’s job or wellbeing.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run.\nLean in, with a glance. Sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Confirm the specifics.\nHuman in the loop. A person owns the decision.\n\n\n\n\n\n\nThis grid works at two levels — which is why it’s the spine of the whole day:\n\nAt the task (morning): “Do I trust this output for my work?” — average or precise, small or large?\nAt the project (afternoon): “Where does a human stay in the loop across this project?” — the same corners, applied to where verification and oversight are designed in.\n\nThe hardest question leaders ask about AI is “where does a human stay in the loop?” Most teams answer it by gut — everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?\nDrawn from the companion book, Conversation, Not Delegation."
+    "text": "The morning’s two-pass demo showed the whole thesis in five minutes: ask AI naively and you get the same slick, generic answer everyone else gets. Add what only you hold — your context, your taste, your angle — and the output gets a soul. That’s the edge, injected one prompt at a time.\nThis page is how you make that edge permanent, so you don’t have to re-supply it on every request. The technique comes from AI researcher Ethan Mollick; the tool below is free and runs in your browser.\n\n\n\nGive it a sample of your writing. A few hundred words of something you actually wrote — an email, a report, a blog post. The more it sounds like you, the better.\nLet it write a style brief. Ask the AI to analyse the sample and produce a one-to-two-page description of your style, including instructions for how to write in it. (This is the key move: you want a description of your voice, not more of your writing.)\nPaste that brief into your AI’s custom instructions. Tell it “write in this style” for future tasks. From then on, the generic average tilts toward your average.\n\n\n\n\nStyle Mirror (stylemirror.eduserver.au) does steps 1 and 2 for you, in the browser:\n\nOpen the Analyze tab, paste your writing, hit Extract Style DNA.\nIt returns an editable Style DNA profile — tone, structure, vocabulary, quirks — which is your style brief.\nCopy that profile into your AI platform’s custom instructions.\n\nIt’s provider-agnostic. It runs on a local model (Ollama), which means your writing sample never leaves your machine — worth choosing if the sample is work-sensitive. (That’s the data-responsibility call this course keeps returning to.)\n\n\n\nMollick is blunt that the result is a “slight parody” of you, not a perfect clone. Don’t expect it to carry a long-form piece like a book. That caveat is the interesting bit, because it’s the thesis landing a second time:\n\nEven personalised, the AI is still producing an average of you — a smoothed, stylised version of your voice. The part it can’t capture is your live judgement: the taste call you make in the moment, the thing you’d say here but not there.\n\nSo the goal isn’t to outsource your voice. It’s to clear the generic baseline out of the way — the part anyone could have written — so the bit that’s left, the part only you would write, is easier to spot and protect.\nThat’s also why mimicking yourself beats asking the AI to mimic a famous writer. Hemingway’s style is already in the training data — it’s the ultimate generic average. Your voice is the one thing only you can supply.\n\n\n\nA two-page style brief, pasted into your AI’s custom instructions, that quietly turns “generic” into “yours” — and a clearer sense of where the edge still lives after that: with you."
   },
   {
-    "objectID": "handouts/frameworks/frameworks-trust-tool.html#q1-average-or-precision",
-    "href": "handouts/frameworks/frameworks-trust-tool.html#q1-average-or-precision",
-    "title": "The trust tool",
+    "objectID": "handouts/frameworks/make-your-edge-persistent.html#the-method-in-three-steps",
+    "href": "handouts/frameworks/make-your-edge-persistent.html#the-method-in-three-steps",
+    "title": "Make your edge persistent: the two-page voice method",
     "section": "",
-    "text": "Average = “in the right ballpark” is fine. A first draft, a summary, a starting point you’ll shape further.\nPrecise = a single correct value, where close is the same as wrong. A contract figure, a dosage, a citation, an account balance."
+    "text": "Give it a sample of your writing. A few hundred words of something you actually wrote — an email, a report, a blog post. The more it sounds like you, the better.\nLet it write a style brief. Ask the AI to analyse the sample and produce a one-to-two-page description of your style, including instructions for how to write in it. (This is the key move: you want a description of your voice, not more of your writing.)\nPaste that brief into your AI’s custom instructions. Tell it “write in this style” for future tasks. From then on, the generic average tilts toward your average."
   },
   {
-    "objectID": "handouts/frameworks/frameworks-trust-tool.html#q2-small-or-large",
-    "href": "handouts/frameworks/frameworks-trust-tool.html#q2-small-or-large",
-    "title": "The trust tool",
+    "objectID": "handouts/frameworks/make-your-edge-persistent.html#the-tool-style-mirror",
+    "href": "handouts/frameworks/make-your-edge-persistent.html#the-tool-style-mirror",
+    "title": "Make your edge persistent: the two-page voice method",
     "section": "",
-    "text": "Small = low stakes. Easy to reverse, cheap to get wrong, no one harmed.\nLarge = real consequences. Money, safety, reputation, someone’s job or wellbeing."
+    "text": "Style Mirror (stylemirror.eduserver.au) does steps 1 and 2 for you, in the browser:\n\nOpen the Analyze tab, paste your writing, hit Extract Style DNA.\nIt returns an editable Style DNA profile — tone, structure, vocabulary, quirks — which is your style brief.\nCopy that profile into your AI platform’s custom instructions.\n\nIt’s provider-agnostic. It runs on a local model (Ollama), which means your writing sample never leaves your machine — worth choosing if the sample is work-sensitive. (That’s the data-responsibility call this course keeps returning to.)"
   },
   {
-    "objectID": "handouts/frameworks/frameworks-trust-tool.html#the-four-corners",
-    "href": "handouts/frameworks/frameworks-trust-tool.html#the-four-corners",
-    "title": "The trust tool",
+    "objectID": "handouts/frameworks/make-your-edge-persistent.html#the-honest-part-and-why-its-still-on-thesis",
+    "href": "handouts/frameworks/make-your-edge-persistent.html#the-honest-part-and-why-its-still-on-thesis",
+    "title": "Make your edge persistent: the two-page voice method",
     "section": "",
-    "text": "Small (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run.\nLean in, with a glance. Sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Confirm the specifics.\nHuman in the loop. A person owns the decision."
+    "text": "Mollick is blunt that the result is a “slight parody” of you, not a perfect clone. Don’t expect it to carry a long-form piece like a book. That caveat is the interesting bit, because it’s the thesis landing a second time:\n\nEven personalised, the AI is still producing an average of you — a smoothed, stylised version of your voice. The part it can’t capture is your live judgement: the taste call you make in the moment, the thing you’d say here but not there.\n\nSo the goal isn’t to outsource your voice. It’s to clear the generic baseline out of the way — the part anyone could have written — so the bit that’s left, the part only you would write, is easier to spot and protect.\nThat’s also why mimicking yourself beats asking the AI to mimic a famous writer. Hemingway’s style is already in the training data — it’s the ultimate generic average. Your voice is the one thing only you can supply."
   },
   {
-    "objectID": "handouts/frameworks/frameworks-trust-tool.html#two-scales",
-    "href": "handouts/frameworks/frameworks-trust-tool.html#two-scales",
-    "title": "The trust tool",
+    "objectID": "handouts/frameworks/make-your-edge-persistent.html#what-you-leave-with",
+    "href": "handouts/frameworks/make-your-edge-persistent.html#what-you-leave-with",
+    "title": "Make your edge persistent: the two-page voice method",
     "section": "",
-    "text": "This grid works at two levels — which is why it’s the spine of the whole day:\n\nAt the task (morning): “Do I trust this output for my work?” — average or precise, small or large?\nAt the project (afternoon): “Where does a human stay in the loop across this project?” — the same corners, applied to where verification and oversight are designed in.\n\nThe hardest question leaders ask about AI is “where does a human stay in the loop?” Most teams answer it by gut — everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?\nDrawn from the companion book, Conversation, Not Delegation."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html",
-    "href": "handouts/frameworks-overview.html",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale (morning) and the project scale (afternoon).\n\n\n\nAverage / Precise × Small / Large. Two questions turn “where does a human stay in the loop?” from a gut feel into a decision you can defend. Learned in the morning at the task level, reused in the afternoon at the project level.\n\n\n\nRole · Task · Context · Format. Context is where your edge enters: the specifics only you hold.\n\n\n\n“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline.\n\n\n\nAt each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing early is success.\n\nDrawn from the free companion book, Conversation, Not Delegation. Go there to dig deeper on any of these."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html#the-tools-youll-keep-using-monday",
-    "href": "handouts/frameworks-overview.html#the-tools-youll-keep-using-monday",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale (morning) and the project scale (afternoon)."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html#the-trust-tool-the-spine-of-the-day",
-    "href": "handouts/frameworks-overview.html#the-trust-tool-the-spine-of-the-day",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "Average / Precise × Small / Large. Two questions turn “where does a human stay in the loop?” from a gut feel into a decision you can defend. Learned in the morning at the task level, reused in the afternoon at the project level."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html#rtcf-directing-ai-well",
-    "href": "handouts/frameworks-overview.html#rtcf-directing-ai-well",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "Role · Task · Context · Format. Context is where your edge enters: the specifics only you hold."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html#the-five-differences-why-ai-delivery-breaks-the-rules",
-    "href": "handouts/frameworks-overview.html#the-five-differences-why-ai-delivery-breaks-the-rules",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline."
-  },
-  {
-    "objectID": "handouts/frameworks-overview.html#scale-pivot-kill-the-gono-go-call",
-    "href": "handouts/frameworks-overview.html#scale-pivot-kill-the-gono-go-call",
-    "title": "Frameworks overview",
-    "section": "",
-    "text": "At each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing early is success.\n\nDrawn from the free companion book, Conversation, Not Delegation. Go there to dig deeper on any of these."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html",
-    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html",
-    "title": "Sprint 2: Stakeholders & human-in-the-loop",
-    "section": "",
-    "text": "Your initiative: _______________________ Group: __________\nA working AI system isn’t a tool. It’s a division of labour between human judgement and machine output. This sprint you design that division, and the stakeholder plan around it. Interview Emma (Managing Director), Tom (Customer Service) and David (CFO)."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
-    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
-    "title": "Sprint 2: Stakeholders & human-in-the-loop",
-    "section": "1. Stakeholder plan",
-    "text": "1. Stakeholder plan\n\n\n\n\n\n\n\n\n\nStakeholder\nWhat they need / fear\nHow you’ll manage them\nPower × Interest\n\n\n\n\nEmma (Managing Director / sponsor)\n\n\nHigh / High\n\n\nDavid (CFO)\n\n\n\n\n\nTom (CS / frontline)\n\n\n\n\n\nadd others you met"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#human-in-the-loop-checkpoints",
-    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#human-in-the-loop-checkpoints",
-    "title": "Sprint 2: Stakeholders & human-in-the-loop",
-    "section": "2. Human-in-the-loop checkpoints",
-    "text": "2. Human-in-the-loop checkpoints\nFor every point where AI output could be wrong and it matters, design a checkpoint.\n\n\n\n\n\n\n\n\nCheckpoint (where a human checks AI output)\nWho has the expertise to actually evaluate it?\nDoes this checkpoint build that expertise, or just consume it?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe evaluator’s advantage: experienced people spot the confident-but-wrong answer because they know what right looks like. Judgement is unevenly distributed, so staff your checkpoints with the right humans, not just any human.\nThe apprenticeship trap: if you automate all the grunt work, you stop producing the next generation of evaluators. Mark at least one checkpoint that you keep human deliberately, to build capability, not only for quality."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#the-one-youll-defend",
-    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#the-one-youll-defend",
-    "title": "Sprint 2: Stakeholders & human-in-the-loop",
-    "section": "3. The one you’ll defend",
-    "text": "3. The one you’ll defend\nWhich single human-in-the-loop decision are you most confident is non-negotiable, and why? ______________________________________________\n\nLeave Sprint 2 with: a stakeholder plan and a human-in-the-loop checkpoint design where each checkpoint names its evaluator and is marked builds-vs-consumes."
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html",
-    "href": "activities/morning/workflow-redesign.html",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "Pick one task you do repeatedly — something you own, that takes real time. You’ll map it, judge each step against the trust tool, and redesign it so AI handles what it does well while your judgement stays in charge.\n\n\nWhat’s the task? (e.g. “weekly stakeholder report”, “client onboarding pack”, “inquiry triage”)\n………………………………………………………………………………………………\n\n\n\nBreak the task into its steps, in order. Aim for 4–8.\n\n\n\nStep\nWhat happens\nHow long\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n4\n\n\n\n\n5\n\n\n\n\n\n\n\n\nFor every step: does it need an average or precision? Are the stakes small or large?\n\n\n\n\n\n\n\n\n\nStep\nAverage or Precise?\nSmall or Large?\nLean in / Human in the loop\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n4\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\nWhere does AI genuinely help (average, small stakes → lean in)? Where must your judgement stay in charge (precise, large stakes → human in the loop)? Sketch the new version below.\nNew workflow:\n………………………………………………………………………………………………\n………………………………………………………………………………………………\n\n\n\nPick one step to trial with AI this week. What will you try, and how will you know if it worked?\n………………………………………………………………………………………………\n\n\n\n\n\n\nTip\n\n\n\nThe point isn’t “use AI more.” It’s use AI deliberately, exactly where it belongs — and protect the steps where your judgement is the value."
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html#name-the-task",
-    "href": "activities/morning/workflow-redesign.html#name-the-task",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "What’s the task? (e.g. “weekly stakeholder report”, “client onboarding pack”, “inquiry triage”)\n………………………………………………………………………………………………"
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html#list-the-steps",
-    "href": "activities/morning/workflow-redesign.html#list-the-steps",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "Break the task into its steps, in order. Aim for 4–8.\n\n\n\nStep\nWhat happens\nHow long\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n4\n\n\n\n\n5"
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html#judge-each-step-with-the-trust-tool",
-    "href": "activities/morning/workflow-redesign.html#judge-each-step-with-the-trust-tool",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "For every step: does it need an average or precision? Are the stakes small or large?\n\n\n\n\n\n\n\n\n\nStep\nAverage or Precise?\nSmall or Large?\nLean in / Human in the loop\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n4\n\n\n\n\n\n5"
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html#redesign",
-    "href": "activities/morning/workflow-redesign.html#redesign",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "Where does AI genuinely help (average, small stakes → lean in)? Where must your judgement stay in charge (precise, large stakes → human in the loop)? Sketch the new version below.\nNew workflow:\n………………………………………………………………………………………………\n………………………………………………………………………………………………"
-  },
-  {
-    "objectID": "activities/morning/workflow-redesign.html#the-test",
-    "href": "activities/morning/workflow-redesign.html#the-test",
-    "title": "Redesign your workflow",
-    "section": "",
-    "text": "Pick one step to trial with AI this week. What will you try, and how will you know if it worked?\n………………………………………………………………………………………………\n\n\n\n\n\n\nTip\n\n\n\nThe point isn’t “use AI more.” It’s use AI deliberately, exactly where it belongs — and protect the steps where your judgement is the value."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html",
-    "href": "activities/initiative-cards/inventory-optimisation.html",
-    "title": "Inventory optimisation",
-    "section": "",
-    "text": "Your group is the delivery lead for this funded initiative."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html#the-mandate",
-    "href": "activities/initiative-cards/inventory-optimisation.html#the-mandate",
-    "title": "Inventory optimisation",
-    "section": "The mandate",
-    "text": "The mandate\nThe board has approved $1.1M (the largest of the four) to build AI inventory optimisation: forecasting demand and automating replenishment across 50 stores plus the online channel, to cut both stockouts and overstock.\nWhat the board thinks it bought: “major efficiency gains across the whole network.”\nYour job: deliver it without the predictable failures, and define a “good enough” forecast that’s safe to act on automatically."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html#why-this-one-is-hard-to-deliver",
-    "href": "activities/initiative-cards/inventory-optimisation.html#why-this-one-is-hard-to-deliver",
-    "title": "Inventory optimisation",
-    "section": "Why this one is hard to deliver",
-    "text": "Why this one is hard to deliver\n\nIt is the broadest in scope (every store, every category), so the temptation to boil the ocean is strong, and the blast radius of a bad forecast is large.\nIt runs straight into legacy systems: the POS and inventory systems are 10–15 years old, and online/store data is siloed. Integration is where this project lives or dies.\nA forecast that’s “about right” in aggregate (the demo) can be badly wrong for a specific store/category, and that’s where the cost and the staff frustration show up."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html#the-data-reality-ask-priya",
-    "href": "activities/initiative-cards/inventory-optimisation.html#the-data-reality-ask-priya",
-    "title": "Inventory optimisation",
-    "section": "The data reality (ask Priya)",
-    "text": "The data reality (ask Priya)\nPriya’s honest read: “significant value potential, but data quality issues to resolve first; integration complexity is underestimated. 9–12 months. Start with ONE category pilot, prove value, then scale.” Her advice basically pre-writes your roadmap, if you ask her."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html#who-to-interview-and-the-tension-they-bring",
-    "href": "activities/initiative-cards/inventory-optimisation.html#who-to-interview-and-the-tension-they-bring",
-    "title": "Inventory optimisation",
-    "section": "Who to interview, and the tension they bring",
-    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): pushes the single-category pilot; data-quality realism.\nMarcus Kim (CIO): knows the legacy-systems pain better than anyone; also impatient for transformation.\nSarah Thompson (COO): operational reality across stores; the people who’ll act on (or ignore) the forecasts. She slows things down, sometimes rightly."
-  },
-  {
-    "objectID": "activities/initiative-cards/inventory-optimisation.html#your-starting-question-for-good-enough",
-    "href": "activities/initiative-cards/inventory-optimisation.html#your-starting-question-for-good-enough",
-    "title": "Inventory optimisation",
-    "section": "Your starting question for “good enough”",
-    "text": "Your starting question for “good enough”\nWhat forecast accuracy, in which category, justifies automating replenishment versus keeping it as a recommendation a store manager approves? How do you scope a pilot narrow enough to prove value but real enough to matter?"
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html",
-    "href": "activities/initiative-cards/dynamic-pricing.html",
-    "title": "Dynamic pricing",
-    "section": "",
-    "text": "Your group is the delivery lead for this funded initiative."
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html#the-mandate",
-    "href": "activities/initiative-cards/dynamic-pricing.html#the-mandate",
-    "title": "Dynamic pricing",
-    "section": "The mandate",
-    "text": "The mandate\nThe board has approved $850K to build AI-driven dynamic pricing, automatically adjusting prices across fashion and homewares lines in response to demand, competitor moves, inventory levels and margin targets. The case that won funding: a “significant revenue opportunity” and competitors “already doing it.”\nWhat the board thinks it bought: “smarter prices that lift margin, live this year.”\nYour job: deliver it without the predictable failures, and define what “good enough” pricing decisions look like before any price goes live automatically."
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html#why-this-one-is-hard-to-deliver",
-    "href": "activities/initiative-cards/dynamic-pricing.html#why-this-one-is-hard-to-deliver",
-    "title": "Dynamic pricing",
-    "section": "Why this one is hard to deliver",
-    "text": "Why this one is hard to deliver\n\nPricing is precise and high-stakes, squarely in the danger zone of the trust tool. A wrong automated price is public, instant, and can read as price-gouging or trigger a margin loss across thousands of SKUs.\nIt depends on competitive data RetailFlow doesn’t cleanly have, plus demand signals split across online and store systems.\nA pricing model that looks great in backtesting (the “demo”) can behave badly in live conditions it never saw. That is exactly the demo-to-production gap, with money attached."
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html#the-data-reality-ask-priya",
-    "href": "activities/initiative-cards/dynamic-pricing.html#the-data-reality-ask-priya",
-    "title": "Dynamic pricing",
-    "section": "The data reality (ask Priya)",
-    "text": "The data reality (ask Priya)\nPriya’s honest read: “high potential but high complexity: needs better competitive data, staff capability gaps. Recommend Phase 2, not Phase 1; 12+ months realistic.” Expect her to push back on any plan that promises live automated pricing inside a quarter. Your scope has to confront this."
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html#who-to-interview-and-the-tension-they-bring",
-    "href": "activities/initiative-cards/dynamic-pricing.html#who-to-interview-and-the-tension-they-bring",
-    "title": "Dynamic pricing",
-    "section": "Who to interview, and the tension they bring",
-    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): will tell you the honest timeline; the central tension of your sprint.\nMarcus Kim (CIO): wants speed and sees the revenue prize; “competitors aren’t waiting.”\nDavid Chen (CFO): owns the margin numbers and the go/no-go criteria; wants certainty AI can’t give."
-  },
-  {
-    "objectID": "activities/initiative-cards/dynamic-pricing.html#your-starting-question-for-good-enough",
-    "href": "activities/initiative-cards/dynamic-pricing.html#your-starting-question-for-good-enough",
-    "title": "Dynamic pricing",
-    "section": "Your starting question for “good enough”",
-    "text": "Your starting question for “good enough”\nShould pricing be fully automated, or human-approved above a threshold? What guardrails (price floors/ceilings, max change per cycle) make automated pricing safe, and where must a human approve before a price changes?"
-  },
-  {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "The workshop",
-    "section": "",
-    "text": "The day runs on a single idea — knowing when to trust AI, and where you must stay in charge — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The trust tool is the connective tissue, learned once and reused."
-  },
-  {
-    "objectID": "workshop.html#morning-using-ai-well-yourself",
-    "href": "workshop.html#morning-using-ai-well-yourself",
-    "title": "The workshop",
-    "section": "Morning — using AI well, yourself",
-    "text": "Morning — using AI well, yourself\nBring your own device and a real task from your role. By lunch you’ll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.\n\n\n\n\n\n\n\nBlock\nWhat you do\n\n\n\n\nThe average, the tool, the edge\nFoundations: what AI is, why it’s confidently wrong in predictable places, and the trust tool (Average/Precise × Small/Large).\n\n\nUsing AI well, yourself\nTask suitability, RTCF prompting, the two-pass demo (generic → with edge), and a workflow redesign from your own role.\n\n\n\nBring the morning worksheets (print or fill on your device):\n\n\n\n\n\nRedesign your workflow\n\n\nMap one real task from your role, then put AI where it helps — and keep your judgement where it counts. The morning’s main takeaway.\n\n\n\n\n\n\n\n\n\n\nYour prompt library\n\n\nTurn RTCF (Role · Task · Context · Format) into a starter set of prompts for your own work. Build it during the session.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "workshop.html#afternoon-delivering-ai-responsibly",
-    "href": "workshop.html#afternoon-delivering-ai-responsibly",
-    "title": "The workshop",
-    "section": "Afternoon — delivering AI, responsibly",
-    "text": "Afternoon — delivering AI, responsibly\nYou are the delivery lead. The board has funded one AI initiative at RetailFlow, and your job is to ship it without the predictable failures. You’ll carry one project through three moves, scoping and stress-testing it by interviewing the RetailFlow team (meet them here).\nEach group takes a different initiative, so no two designs look alike. Pick yours:\n\n\n\n\n\n\n\nCustomer-service chatbot\n\n\nDeflect routine queries and cut 26-hour response times, but it’s customer-facing, so confident-wrong answers are a live risk. ($450K, funded.)\n\n\n\n\n\n\n\n\n\nDynamic pricing\n\n\nAutomated price optimisation: high value, high stakes, and the data isn’t ready. ($850K, funded.)\n\n\n\n\n\n\n\n\n\nFraud detection\n\n\nCut chargebacks without blocking real customers: a buy-vs-build and threshold-tuning problem. ($650K, funded.)\n\n\n\n\n\n\n\n\n\nInventory optimisation\n\n\nForecast and replenish across 50 stores: the broadest scope, tangled in legacy systems. ($1.1M, funded.)\n\n\n\n\n\nNo matching items\n\n\nThe three moves\nEach move hands you one piece of your delivery design. Bring the worksheet (print it, or fill it on your device).\n\n\n\n\n\nSprint 1: Scope it against reality\n\n\nScoped objectives, data requirements, and a defined ‘good enough’.\n\n\n\n\n\n\n\n\n\n\nSprint 2: Stakeholders & human-in-the-loop\n\n\nA stakeholder plan and a human-in-the-loop checkpoint design.\n\n\n\n\n\n\n\n\n\n\nSprint 3: Roadmap, risk & the go/no-go\n\n\nA delivery roadmap with gates, a risk register, and the Scale/Pivot/Kill call.\n\n\n\n\n\n\n\n\nNo matching items\n\n\nScope it against reality. Interview Priya (data) and Marcus (CIO); reconcile “move fast” with “the data isn’t ready”. → scoped objectives, data needs, a defined good enough.\nStakeholders & human-in-the-loop. Interview Emma (MD), Tom (frontline) and David (CFO); decide where a human must stay in charge. → stakeholder plan + checkpoint design.\nRoadmap, risk & the go/no-go. Build the plan, then defend it when the staff push back and a crisis hits. → roadmap with gates, risk register, the Scale/Pivot/Kill call.\n\n\n\n\n\n\n\nTip\n\n\n\nThe documents you’ll need (board memos, data profiles, vendor proposals, policies) are in RetailFlow’s internal portal. Not everything there is relevant: part of the job is working out what matters.\n\n\n\n\n\n\n\n\nNoteThe thread through both halves\n\n\n\nThe trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks “do I trust this output?” At the project level it asks “where does a human stay in the loop?” One idea, two scales — that’s why the day holds together."
-  },
-  {
-    "objectID": "series.html",
-    "href": "series.html",
-    "title": "The masterclass series",
-    "section": "",
-    "text": "A common thread runs through all of them: when everyone has access to the same AI, the generic output it produces is the baseline, not the advantage. What lasts is human judgement: knowing where AI genuinely helps, where it quietly fails, and where your thinking must stay in charge.\nThe Human Edge is part of Curtin University’s Executive Education AI masterclasses. Each stands completely on its own; together they cover the full arc of working with AI in an organisation: using and delivering it well, deciding where to invest, and governing it ethically."
-  },
-  {
-    "objectID": "series.html#how-they-fit-together",
-    "href": "series.html#how-they-fit-together",
-    "title": "The masterclass series",
-    "section": "How they fit together",
-    "text": "How they fit together\nEach masterclass is a complete, standalone day. But they’re designed to complement one another:\n\nThe Human Edge (this course) builds the individual fluency and the project-delivery judgement the others draw on — from your first prompt to a project that ships.\nAI in Strategy decides which AI initiatives deserve investment.\nEthics of Artificial Intelligence runs across all of them: the governance, risk and responsibility lens every AI initiative needs.\n\nBrowse all masterclasses & enrol → Curtin Executive Education"
-  },
-  {
-    "objectID": "readings/the-trust-tool.html",
-    "href": "readings/the-trust-tool.html",
-    "title": "The trust tool: when to trust AI",
-    "section": "",
-    "text": "The most useful thing to understand about today’s AI is also the least glamorous: it produces a convincing average. Feed it a request, and it gives you back the most plausible, most typical response drawn from everything it has seen. That is its genius and its limit in one. The output is fluent, well-shaped and usually about right, but “about right” and “exactly right” are not the same thing, and knowing which one you need is the whole game.\nThat is where the trust tool comes in. It is a small grid with two questions, and it tells you when to lean in and when to keep a human firmly in the loop.\nQuestion one: do you need an average, or do you need precision? An average answer is one where “in the right ballpark” is genuinely fine: a first draft, a summary, a starting point you will shape further. A precise answer is one where there is a single correct value and being close is the same as being wrong: a figure in a contract, a dosage, a legal citation, a customer’s account balance.\nQuestion two: is the decision small or large? A small decision is low stakes: easy to reverse, cheap to get wrong, no one is harmed. A large decision carries real consequences: money, safety, reputation, someone’s job or wellbeing.\nPut those together and you get four corners:\n\n\n\n\n\n\n\n\n\nSmall (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run. This is its home turf.\nLean in, with a glance. Useful, but sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Handy, but confirm the specifics.\nHuman in the loop. AI may assist, but a person owns the decision.\n\n\n\nThe rule of thumb is easy to remember: lean in where “about right” over low stakes is fine; keep a human in the loop where exactly-right meets high-stakes.\nA few everyday examples make it concrete.\n\nDrafting an internal email or a meeting summary. Average is fine, stakes are small. Lean in, and let the AI write the first version and tidy it yourself. The risk of a slightly-off phrasing is trivial.\nPulling the exact numbers for a board paper. Precision is required and the stakes are large. This is the bottom-right corner. The AI can help you draft the narrative around the figures, but a human must source and own every number. Confident-sounding is not the same as correct.\nSummarising fifty customer complaints to spot themes. Average is fine, and the stakes sit in the middle. Lean in to get the themes fast, then, before you act on them, have a person skim the underlying complaints to make sure the AI hasn’t smoothed away the one that actually matters.\n\nNotice what the grid quietly does. The hardest question leaders ask about AI is “where does a human stay in the loop?”, and most teams answer it by gut feel, which means either everywhere (and you lose the speed) or nowhere (and you lose the trust). The trust tool makes that question answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large? The answer falls out of the corner you land in.\nThis grid, the Average/Precise × Small/Large framework, is drawn from the companion book to this course, Conversation, Not Delegation. If you want to go deeper on how it plays out across real work, that is the place to look: https://michael-borck.github.io/conversation-not-delegation/.\nFor now, keep the grid in your back pocket. The next time someone asks “can we just let the AI do this?”, you have a better answer than yes or no. You have a question, and the question does the work."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Human Edge",
-    "section": "",
-    "text": "Curtin Executive Education · One-day masterclass\n\n\n\n\nUsing and delivering AI with judgement — because when everyone has the same tools, your judgement is the edge.\n\n\nStart before the day See the workshop\n\n\n\n\n\n\n\nThe trust tool: one grid, applied at two scales.\nWelcome. This is your companion site for The Human Edge — a one-day masterclass that builds the one skill AI can’t replace: knowing when to trust it, and where you must stay in charge. Everything you need is here."
-  },
-  {
-    "objectID": "index.html#the-idea-behind-the-day",
-    "href": "index.html#the-idea-behind-the-day",
-    "title": "The Human Edge",
-    "section": "The idea behind the day",
-    "text": "The idea behind the day\n\nIf the AI is genuinely good at running your work, it’s equally good at running everyone else’s. Generic competence, with no variation, is the baseline — not an advantage. So where does your edge live?\n\nThe day builds one answer to that question, applied twice:\n\nThe morning builds the judgement at the level of your own work — directing AI well, judging how far to trust any output, and redesigning a real workflow so AI handles what it does well while your thinking stays in charge.\nThe afternoon lifts the same judgement to delivery — how to scope, lead and ship an AI project without the predictable failures, designing human checkpoints in from the start rather than bolting them on after something goes wrong.\n\nThe connective tissue is the trust tool — a simple grid (Average/Precise × Small/Large) that turns “where does a human stay in the loop?” into a question you can actually answer. You learn it once, in the morning, at the task level. You reuse it, in the afternoon, at the project level. Same grid, two scales."
-  },
-  {
-    "objectID": "index.html#what-youll-leave-with",
-    "href": "index.html#what-youll-leave-with",
-    "title": "The Human Edge",
-    "section": "What you’ll leave with",
-    "text": "What you’ll leave with\n\nReusable decision tools — the trust tool, RTCF, the five differences, Scale/Pivot/Kill. Tool-agnostic; they don’t expire when the next model ships.\nA redesigned workflow from your own role, ready to trial.\nA project design — scope, roadmap, checkpoints, risk — for a real scenario.\nA personal action plan for the week, month, and quarter."
-  },
-  {
-    "objectID": "index.html#how-the-day-runs",
-    "href": "index.html#how-the-day-runs",
-    "title": "The Human Edge",
-    "section": "How the day runs",
-    "text": "How the day runs\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n9:00–10:30\nThe average, the tool, the edge — foundations + the trust tool\n\n\n11:00–12:30\nUsing AI well, yourself — prompting, workflow redesign\n\n\n1:15–2:30\nWhy AI delivery is different — the five differences\n\n\n3:00–4:00\nDesigning the human in, then shipping — checkpoints, roadmap, go/no-go\n\n\n4:00–4:30\nThe edge that’s left to humans + your action plan\n\n\n\n\n\n\n\n\n\nNoteGoing deeper, on your terms\n\n\n\nThis course scaffolds the theory and points you to where to dig. The free companion resource, Conversation, Not Delegation, goes deeper on every idea here, including the trust tool for deciding when to rely on AI."
-  },
-  {
-    "objectID": "before.html",
-    "href": "before.html",
-    "title": "Before the day",
-    "section": "",
-    "text": "You don’t need any technical background for this masterclass. These three short pieces just give everyone a shared starting point and the language we’ll use on the day. Read them in order if you can — they walk from what AI is, to when to trust it, to why delivering an AI project is different.\n\n\n\n\n\nAI in five minutes (for non-technical leaders)\n\n\nWhat a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.\n\n\n\n\n4 min\n\n\n\n\n\n\nThe trust tool: when to trust AI\n\n\nA simple grid (Average or Precise, Small or Large) that turns ‘where does a human stay in the loop?’ into a question you can actually answer.\n\n\n\n\n4 min\n\n\n\n\n\n\nWhy AI delivery is different\n\n\nThe five ways an AI project breaks the rules you usually lead by, and the leadership move for each.\n\n\n\n\n4 min\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nNoteWant to go further?\n\n\n\nEverything here is drawn from the free companion book, Conversation, Not Delegation. It’s optional, but if a topic grabs you, that’s where to dig."
-  },
-  {
-    "objectID": "frameworks.html",
-    "href": "frameworks.html",
-    "title": "Frameworks",
-    "section": "",
-    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale and the project scale."
-  },
-  {
-    "objectID": "frameworks.html#the-trust-tool-the-spine-of-the-day",
-    "href": "frameworks.html#the-trust-tool-the-spine-of-the-day",
-    "title": "Frameworks",
-    "section": "The trust tool: the spine of the day",
-    "text": "The trust tool: the spine of the day\nThe core lens: Average / Precise × Small / Large.\n\nAI excels at average answers over small, low-stakes work, so lean in.\nIt gets dangerous on precise answers and large, high-stakes work, so keep a human in the loop.\n\nYou learn it in the morning at the level of a single task (“do I trust this output?”). You reuse it in the afternoon at the level of a whole project (“where does a human stay in the loop?”). It comes from the free companion book, Conversation, Not Delegation.\n\n\n\nThe trust tool: a 2×2 of how exact the answer must be (average → precise) against stakes and scope (small → large)."
-  },
-  {
-    "objectID": "frameworks.html#rtcf-directing-ai-well",
-    "href": "frameworks.html#rtcf-directing-ai-well",
-    "title": "Frameworks",
-    "section": "RTCF: directing AI well",
-    "text": "RTCF: directing AI well\nRole · Task · Context · Format. Not every prompt needs all four, but for anything important they transform the result. Context is where your edge enters: the specifics only you hold."
-  },
-  {
-    "objectID": "frameworks.html#the-five-differences-why-ai-delivery-breaks-the-rules",
-    "href": "frameworks.html#the-five-differences-why-ai-delivery-breaks-the-rules",
-    "title": "Frameworks",
-    "section": "The five differences: why AI delivery breaks the rules",
-    "text": "The five differences: why AI delivery breaks the rules\n“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline. Standard PM tools still apply — they just bend under these five forces."
-  },
-  {
-    "objectID": "frameworks.html#scale-pivot-kill-the-gono-go-call",
-    "href": "frameworks.html#scale-pivot-kill-the-gono-go-call",
-    "title": "Frameworks",
-    "section": "Scale / Pivot / Kill: the go/no-go call",
-    "text": "Scale / Pivot / Kill: the go/no-go call\nAt each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing a project that isn’t working, early, is success, not failure."
-  },
-  {
-    "objectID": "frameworks.html#take-home-references",
-    "href": "frameworks.html#take-home-references",
-    "title": "Frameworks",
-    "section": "Take-home references",
-    "text": "Take-home references\n\n\n\n\n\nScale / Pivot / Kill\n\n\nA decision matrix for the go/no-go call at each gate.\n\n\n\n\n\n\n\n\n\n\nThe trust tool\n\n\nAverage / Precise × Small / Large — the one grid that answers ‘where does a human stay in the loop?’, at the task level and the project level.\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "readings/ai-in-five-minutes.html",
-    "href": "readings/ai-in-five-minutes.html",
-    "title": "AI in five minutes (for non-technical leaders)",
-    "section": "",
-    "text": "You do not need to know how an engine works to drive a car well, but you do need to know what it can and can’t do: that it needs fuel, that it won’t go underwater, that the brakes have limits. The same is true here. You do not need the mathematics of AI. You need an honest mental model of what the thing actually is, so you can lead it without either over-trusting it or dismissing it. Five minutes is enough.\nWhat a large language model actually is\nStrip away the marketing and a large language model is, at heart, a very sophisticated pattern-completer. It has been trained on an enormous amount of human writing, and from all of that it has learned what words and ideas tend to follow other words and ideas. When you ask it something, it does not look up a fact or work out an answer. It produces the most plausible continuation (the most likely next words) given your question and everything it has absorbed.\nA useful way to hold this: the model gives you a fluent, convincing average of everything it has seen on a topic. That average is often genuinely excellent, because the average of a vast amount of competent human writing is itself pretty competent. But it is an average, not a truth. The system predicts; it does not reason, and it does not “know.” There is no understanding behind the words, no checking against reality, no little voice saying “wait, is that actually correct?” There is only: what would plausibly come next?\nWhy it’s brilliant at some things and quietly unreliable at others\nOnce you see it as a fluent averaging machine, its strengths and weaknesses stop being surprising.\nIt is brilliant at tasks where fluency and typicality are exactly what you want: drafting, rephrasing, summarising, brainstorming, translating, turning a rough thought into clean prose, explaining a familiar idea in simpler terms. Here, “the most plausible version” is the right answer.\nIt is quietly unreliable at tasks that need a single correct fact, a precise figure, a real citation, or genuine step-by-step reasoning that must be right rather than merely plausible. It will happily produce something that sounds exactly like a correct answer (same confidence, same polish) whether or not it is true. The trouble is that the fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.\nWhat “hallucination” means, and why confident-but-wrong is the default\nWhen the model states something false as if it were fact (invents a source, a statistic, a quote, a name) that is what people call a hallucination. The word makes it sound like a glitch, an occasional malfunction. It isn’t. It is the same machinery working exactly as designed. The system is always producing a plausible continuation; sometimes the most plausible-sounding continuation simply happens not to be true. It has no separate sense of “fact” to fall back on.\nSo the failure mode to expect is not blank or error message or I don’t know. It is confident and wrong, delivered with the same assurance as everything else. That is the single most important thing to carry into any AI project. The danger is rarely that the AI refuses to help. The danger is that it helps convincingly when it shouldn’t.\nNone of this is cause for hype or for doom. It is just the shape of the tool. Used where fluency is the goal, it is remarkable. Used where exactness matters, it needs a human checking the work. Everything else in this course builds on that one durable distinction, so if you remember nothing else, remember this: it produces a convincing average, and a convincing average is not the same as the truth."
-  },
-  {
-    "objectID": "readings/why-ai-delivery-is-different.html",
-    "href": "readings/why-ai-delivery-is-different.html",
-    "title": "Why AI delivery is different",
-    "section": "",
-    "text": "You have almost certainly led a project to completion before. You scoped it, you resourced it, you watched it through to delivery. So a fair question to walk in with is this: what is actually different about an AI project? Why can’t I just run it like everything else?\nThe honest answer is that most of your instincts still serve you well. Stakeholders, budgets, timelines, the awkward conversation with the sponsor: all of that carries over. But five things behave differently, and each one quietly breaks an assumption that normal projects let you take for granted. If you do not adjust for them, the project does not fail more often. It fails in ways you did not see coming.\nHere are the five contrasts. For each: the assumption you usually rely on, why AI breaks it, and the move that good leaders make.\n\n\n\n\n\n\n\n\nWhat you normally assume\nWhy AI breaks it\nThe leadership move\n\n\n\n\n“Done” can be specified. You write the requirement, and you can later check it was met.\nAI is non-deterministic and does not reason. Ask it the same thing twice and you may get two different answers. There is no single correct output to tick off, only a spread of likely ones.\nStop chasing a fixed definition of done. Manage a probability distribution instead, and decide up front what “good enough” looks like for this use.\n\n\nA working demo means we’re nearly there. Once it works in the room, the rest is just engineering.\nThe gap between a demo and a dependable production system is wide and deceptive. The demo shows the happy path; the messy real-world cases are where it falls over. Progress feels real but is largely illusory.\nTreat the demo as the start of the hard part, not the end. Refuse to let an impressive demo set the timeline.\n\n\nThe data is a known input. We specify what we need and someone supplies it.\nThe data is the uncertainty. You discover what you actually have (its gaps, biases and surprises) only by working with it. It is found, not ordered.\nRun delivery as organisational discovery. Expect to learn as you go, and build that learning into the plan rather than treating it as slippage.\n\n\nThe build is the product. Ship the thing and you are finished.\nWith AI, verification is the product. Because outputs vary and can be confidently wrong, the value lives in how you check them, and where a human stays in the loop.\nDesign the checking deliberately. Decide where human judgement sits, and make that part of the thing you ship, not an afterthought.\n\n\nCapability is our advantage. If we build something clever, that is our edge.\nGeneric competence is now the baseline. When every rival can run the same models, the model is not your advantage, since anyone can have it.\nCompete on the human variation a rival’s identical model can’t reproduce: your taste, your judgement, the specific way your people apply it.\n\n\n\nYou will notice a thread running through all five. AI gives you something fluent, plausible and roughly right, fast, and then asks you to do the harder work of deciding when roughly right is good enough, and who checks when it isn’t. That is a leadership question far more than a technical one, which is exactly why it lands on your desk.\nNone of this is cause for alarm, and none of it is hype. AI projects are not more fragile than the ones you have run before. They are differently fragile. The cracks appear in different places: in the definition of done, in the seductive demo, in the data you thought you understood, in the checking you assumed you could skip, in the edge you assumed you had.\nSo the takeaway is simple. These five differences don’t make AI projects fail more. They make them fail differently, and you lead for that."
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
-    "title": "Meet the RetailFlow team",
-    "section": "",
-    "text": "The afternoon runs on conversations. RetailFlow’s leadership team is available as live chatbots, and you interview them to scope your project, surface the messy reality, and stress-test your plan. They have opinions, they disagree with each other, and they won’t do your job for you."
-  },
-  {
-    "objectID": "team.html#who-you-can-talk-to",
-    "href": "team.html#who-you-can-talk-to",
-    "title": "Meet the RetailFlow team",
-    "section": "Who you can talk to",
-    "text": "Who you can talk to\n\n\n\n\n\n\n\n\nWho\nRole\nAsk them about\n\n\n\n\nEmma Rodriguez\nManaging Director\nstrategy, board expectations, the promise that was made\n\n\nDavid Chen\nCFO\nbudgets, ROI, the financial go/no-go\n\n\nMarcus Kim\nCIO\ntechnology, legacy systems, build vs buy\n\n\nDr. Priya Sharma\nHead of Data & Analytics\ndata readiness, feasibility, realistic timelines\n\n\nSarah Thompson\nCOO\nstore operations, rollout, the operational reality\n\n\nTom Walsh\nCustomer Service Manager\nthe frontline team, customer impact\n\n\nLisa Nguyen\nGeneral Manager, Customer Experience\ncustomer experience"
-  },
-  {
-    "objectID": "team.html#how-to-get-value-from-them",
-    "href": "team.html#how-to-get-value-from-them",
-    "title": "Meet the RetailFlow team",
-    "section": "How to get value from them",
-    "text": "How to get value from them\n\nThey’re stakeholders, not consultants. They’ll give you their perspective and the facts they hold, but the scope, the plan and the decisions are yours. If you ask them to do your work, they’ll hand it back.\nTriangulate. Marcus pushes speed; Priya pushes realism; David wants certainty. A good plan reconciles them, so don’t take any one view as gospel.\nPush back. Ask follow-ups, test your assumptions, probe the gaps. The conversation is where judgement gets built.\n\n\n\n\n\n\n\nNote\n\n\n\nNotice the bots are fluent and confident even when they don’t know, exactly the AI behaviour you’re learning to lead. Treat what they tell you with the same scrutiny you’d apply to any AI output — this is the trust tool, applied to your own research."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html",
-    "href": "activities/initiative-cards/customer-service-chatbot.html",
-    "title": "Customer-service chatbot",
-    "section": "",
-    "text": "Your group is the delivery lead for this funded initiative."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html#the-mandate",
-    "href": "activities/initiative-cards/customer-service-chatbot.html#the-mandate",
-    "title": "Customer-service chatbot",
-    "section": "The mandate",
-    "text": "The mandate\nThe board has approved $450K to deploy an AI customer-service chatbot across RetailFlow’s online channels. The case that won funding: customer satisfaction has fallen 78% to 68% and email response times sit at 26 hours. The chatbot is meant to deflect routine queries (order status, returns, sizing) and cut response times dramatically.\nWhat the board thinks it bought: “a chatbot that answers customers, live in a quarter.”\nYour job: deliver it without the predictable failures, and define what “good enough to go live” actually means."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html#why-this-one-is-hard-to-deliver-not-just-buy",
-    "href": "activities/initiative-cards/customer-service-chatbot.html#why-this-one-is-hard-to-deliver-not-just-buy",
-    "title": "Customer-service chatbot",
-    "section": "Why this one is hard to deliver (not just buy)",
-    "text": "Why this one is hard to deliver (not just buy)\n\nIt is customer-facing, so a confident hallucination isn’t an internal embarrassment. It’s a wrong returns policy quoted to a real customer, in writing.\nThe data looks ready but isn’t uniform: returns and sizing rules vary by product line and have exceptions that live in people’s heads, not systems.\n“It works in the demo” will be true within week two. That is the trap (Difference 2): the demo handles the easy 80%; the cost is in the angry-customer edge cases."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html#the-data-reality-ask-priya",
-    "href": "activities/initiative-cards/customer-service-chatbot.html#the-data-reality-ask-priya",
-    "title": "Customer-service chatbot",
-    "section": "The data reality (ask Priya)",
-    "text": "The data reality (ask Priya)\nConversation/transcript data is good, the best of the four initiatives. Priya’s honest read: “good data foundation, ~6-month implementation, proceed with confidence.” But “good foundation” does not mean “knows your policies.” Grounding the bot in current, correct policy documents (RAG) is where the real work is."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html#who-to-interview-and-the-tension-they-bring",
-    "href": "activities/initiative-cards/customer-service-chatbot.html#who-to-interview-and-the-tension-they-bring",
-    "title": "Customer-service chatbot",
-    "section": "Who to interview, and the tension they bring",
-    "text": "Who to interview, and the tension they bring\n\nTom Walsh (Customer Service Manager): his team gets automated first. The evaluator’s-advantage and apprenticeship-pipeline questions land hardest here. Who reviews the bot’s answers, and does that role build or consume his juniors’ judgement?\nPriya Sharma (Data): feasibility and realistic “good enough” thresholds.\nEmma Rodriguez (Managing Director): what was promised to the board, and by when."
-  },
-  {
-    "objectID": "activities/initiative-cards/customer-service-chatbot.html#your-starting-question-for-good-enough",
-    "href": "activities/initiative-cards/customer-service-chatbot.html#your-starting-question-for-good-enough",
-    "title": "Customer-service chatbot",
-    "section": "Your starting question for “good enough”",
-    "text": "Your starting question for “good enough”\nWhat deflection rate, and what maximum acceptable wrong-answer rate, makes this safe to put in front of customers? Where must a human stay in the loop before a response is sent?"
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html",
-    "href": "activities/initiative-cards/fraud-detection.html",
-    "title": "Fraud detection",
-    "section": "",
-    "text": "Your group is the delivery lead for this funded initiative."
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html#the-mandate",
-    "href": "activities/initiative-cards/fraud-detection.html#the-mandate",
-    "title": "Fraud detection",
-    "section": "The mandate",
-    "text": "The mandate\nThe board has approved $650K to deploy AI fraud detection across RetailFlow’s online payments, to cut chargebacks and fraudulent returns.\nWhat the board thinks it bought: “fewer fraud losses, fast.”\nYour job: deliver it without the predictable failures, and define what “good enough” detection looks like when both false positives and false negatives carry real cost."
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html#why-this-one-is-hard-to-deliver",
-    "href": "activities/initiative-cards/fraud-detection.html#why-this-one-is-hard-to-deliver",
-    "title": "Fraud detection",
-    "section": "Why this one is hard to deliver",
-    "text": "Why this one is hard to deliver\n\nThe honest delivery question here is build vs. buy. Priya’s view: a third-party solution is more practical than building in-house. So your “delivery” may be a vendor integration and oversight project, not a data-science build. It is a different kind of plan, and a useful contrast for the room.\nThe two failure modes pull in opposite directions: too aggressive and you block legitimate customers (revenue + reputation hit); too loose and fraud slips through. There is no single “accurate”; it’s a tuned trade-off.\nA vendor demo on their data tells you little about performance on RetailFlow’s fraud patterns (demo-to-production gap, vendor edition)."
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html#the-data-reality-ask-priya",
-    "href": "activities/initiative-cards/fraud-detection.html#the-data-reality-ask-priya",
-    "title": "Fraud detection",
-    "section": "The data reality (ask Priya)",
-    "text": "The data reality (ask Priya)\nPriya’s honest read: “third-party AI more practical than building; our data-science team shouldn’t own this. Quick win with the right vendor, 3–6 months. Buy, don’t build.” Your roadmap should reflect a procurement-and-integration shape, with the threshold tuning as the real risk."
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html#who-to-interview-and-the-tension-they-bring",
-    "href": "activities/initiative-cards/fraud-detection.html#who-to-interview-and-the-tension-they-bring",
-    "title": "Fraud detection",
-    "section": "Who to interview, and the tension they bring",
-    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): argues buy-not-build; what your team should and shouldn’t own.\nDavid Chen (CFO): owns the loss numbers and the ROI case; wants certainty.\nTom Walsh (Customer Service): his team handles the fallout when a legitimate customer is wrongly blocked. Who reviews flagged transactions, and how fast?"
-  },
-  {
-    "objectID": "activities/initiative-cards/fraud-detection.html#your-starting-question-for-good-enough",
-    "href": "activities/initiative-cards/fraud-detection.html#your-starting-question-for-good-enough",
-    "title": "Fraud detection",
-    "section": "Your starting question for “good enough”",
-    "text": "Your starting question for “good enough”\nWhere do you set the threshold, and who reviews flagged transactions before a customer is blocked? How do you measure success when the two errors (false block vs. missed fraud) have very different costs?"
-  },
-  {
-    "objectID": "activities/morning/prompt-library.html",
-    "href": "activities/morning/prompt-library.html",
-    "title": "Your prompt library",
-    "section": "",
-    "text": "RTCF isn’t a trick — it’s being clear about what you actually want. Use this sheet to build a working set of prompts for tasks you genuinely do. Most prompts need all four only when the work matters; keep it lighter for quick tasks.\n\n\n\nR — Role: who should the AI be? (e.g. “a sceptical senior reviewer”, “a plain-English editor”)\nT — Task: what exactly should it do? (one clear verb)\nC — Context: what does it need to know? (this is where your edge enters — the specifics only you hold)\nF — Format: how should the output look? (length, structure, tone)\n\n\n\n\nWrite three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\n\n\n\nNote\n\n\n\nThe two-pass lesson. Run your prompt once with thin context → slick, generic, anyone-could-have-it. Then layer in what only you hold (a customer, a contrarian bet, a taste call). Watch the output get a soul. That’s where your edge lives."
-  },
-  {
-    "objectID": "activities/morning/prompt-library.html#the-framework",
-    "href": "activities/morning/prompt-library.html#the-framework",
-    "title": "Your prompt library",
-    "section": "",
-    "text": "R — Role: who should the AI be? (e.g. “a sceptical senior reviewer”, “a plain-English editor”)\nT — Task: what exactly should it do? (one clear verb)\nC — Context: what does it need to know? (this is where your edge enters — the specifics only you hold)\nF — Format: how should the output look? (length, structure, tone)"
-  },
-  {
-    "objectID": "activities/morning/prompt-library.html#your-prompts",
-    "href": "activities/morning/prompt-library.html#your-prompts",
-    "title": "Your prompt library",
-    "section": "",
-    "text": "Write three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\n\n\n\nNote\n\n\n\nThe two-pass lesson. Run your prompt once with thin context → slick, generic, anyone-could-have-it. Then layer in what only you hold (a customer, a contrarian bet, a taste call). Watch the output get a soul. That’s where your edge lives."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-1-scope.html",
-    "href": "activities/worksheets/sprint-1-scope.html",
-    "title": "Sprint 1: Scope it against reality",
-    "section": "",
-    "text": "Your initiative: _______________________ Group: __________\nYou are the delivery lead. The money is committed. Before you can plan anything, you have to scope it against reality, and the only people who know the reality are down the hall. Interview Priya (Data) and Marcus (CIO) and use what they tell you."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-1-scope.html#scoped-objective-one-sentence",
-    "href": "activities/worksheets/sprint-1-scope.html#scoped-objective-one-sentence",
-    "title": "Sprint 1: Scope it against reality",
-    "section": "1. Scoped objective (one sentence)",
-    "text": "1. Scoped objective (one sentence)\nWhat, specifically, will be delivered, and what is deliberately out of scope for this first release?\n\nIn scope: ___________________________________________\nOut of scope (for now): _______________________________"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-1-scope.html#data-requirements-from-your-priya-interview",
-    "href": "activities/worksheets/sprint-1-scope.html#data-requirements-from-your-priya-interview",
-    "title": "Sprint 1: Scope it against reality",
-    "section": "2. Data requirements (from your Priya interview)",
-    "text": "2. Data requirements (from your Priya interview)\n\n\n\n\n\n\n\n\nWhat data the project needs\nDoes RetailFlow have it, and is it good enough?\nWork required first"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-1-scope.html#apply-the-trust-tool",
-    "href": "activities/worksheets/sprint-1-scope.html#apply-the-trust-tool",
-    "title": "Sprint 1: Scope it against reality",
-    "section": "3. Apply the trust tool",
-    "text": "3. Apply the trust tool\nSplit the work into parts. For each, is it Average (AI produces a good-enough answer) or Precise/high-stakes (a human must stay in charge)?\n\n\n\n\n\n\n\n\nPart of the work\nAverage → automate\nPrecise/high-stakes → keep a human"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-1-scope.html#define-good-enough",
-    "href": "activities/worksheets/sprint-1-scope.html#define-good-enough",
-    "title": "Sprint 1: Scope it against reality",
-    "section": "4. Define “good enough”",
-    "text": "4. Define “good enough”\nAI output is non-deterministic; there’s no spec to pass. So you must define fitness for purpose before deployment.\n\nThe single metric that says “safe to go live”: __________________\nThe threshold on that metric: ______________\nThe maximum acceptable error rate, and what kind of error is unacceptable: ______________\n\n\nLeave Sprint 1 with: a scoped objective, data requirements, a trust-tool split, and a defined “good enough.” You’ll build the rest of the plan on these."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html",
-    "href": "activities/worksheets/sprint-3-roadmap-risk.html",
-    "title": "Sprint 3: Roadmap, risk & the go/no-go",
-    "section": "",
-    "text": "Your initiative: _______________________ Group: __________\nNow turn your scope, stakeholders and checkpoints into a delivery plan, then defend it when the staff push back and a crisis hits. Remember Difference 2: progress is illusory, so your gates exist to catch the demo-to-production gap before it reaches a customer or the board."
-  },
-  {
-    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#delivery-roadmap-with-gono-go-gates",
-    "href": "activities/worksheets/sprint-3-roadmap-risk.html#delivery-roadmap-with-gono-go-gates",
-    "title": "Sprint 3: Roadmap, risk & the go/no-go",
-    "section": "1. Delivery roadmap with go/no-go gates",
-    "text": "1. Delivery roadmap with go/no-go gates\n\n\n\nPhase\nWhat happens\nGo/no-go gate: what must be true to proceed?\n\n\n\n\nPilot (narrow)\n\n\n\n\nEvaluate\n\n\n\n\nScale / Pivot / Kill\n\n\n\n\nProduction"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#risk-register",
-    "href": "activities/worksheets/sprint-3-roadmap-risk.html#risk-register",
-    "title": "Sprint 3: Roadmap, risk & the go/no-go",
-    "section": "2. Risk register",
-    "text": "2. Risk register\n\n\n\n\n\n\n\n\n\n\nRisk\nAI-specific? (non-determinism / data / demo-gap / verification)\nLikelihood\nImpact\nMitigation"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#crisis-response-ddcd",
-    "href": "activities/worksheets/sprint-3-roadmap-risk.html#crisis-response-ddcd",
-    "title": "Sprint 3: Roadmap, risk & the go/no-go",
-    "section": "3. Crisis response (DDCD)",
-    "text": "3. Crisis response (DDCD)\nYour facilitator will hand your group a crisis. Respond:\n\nDiagnose: is this technical, people, leadership, or ethical? ______________\nDecide: your call under uncertainty: ______________\nCommunicate: who, and what do you say? ______________\nDocument: the decision and the reason: ______________"
-  },
-  {
-    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#the-gate-1-decision",
-    "href": "activities/worksheets/sprint-3-roadmap-risk.html#the-gate-1-decision",
-    "title": "Sprint 3: Roadmap, risk & the go/no-go",
-    "section": "4. The gate-1 decision",
-    "text": "4. The gate-1 decision\nAt your first evaluation gate, the data is ambiguous. Make the call and defend it with evidence:\nSCALE / PIVOT / KILL (circle one), because: ______________________________________________\n\nKilling a project that isn’t working, early, is success, not failure. The cost of wrongly scaling is far higher than the cost of wrongly killing.\n\n\nLeave Sprint 3 with: a roadmap with gates, a risk register, a documented crisis response, and a defended go/no-go decision. Together with Sprints 1–2, that’s your delivery design."
+    "text": "A two-page style brief, pasted into your AI’s custom instructions, that quietly turns “generic” into “yours” — and a clearer sense of where the edge still lives after that: with you."
   },
   {
     "objectID": "handouts/frameworks/frameworks-scale-pivot-kill.html",
@@ -607,5 +82,572 @@
     "title": "Scale / Pivot / Kill",
     "section": "Remember",
     "text": "Remember\n\nYour Go/No-Go criteria from the planning phase are your anchor\nData beats emotion\n“Not perfect yet” is not the same as “doesn’t work”\nYou can decide with imperfect information\nMost projects PIVOT; that’s normal and healthy\n\nThe goal isn’t to make the perfect decision. It’s to make the best decision you can with the data you have."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html",
+    "href": "activities/worksheets/sprint-3-roadmap-risk.html",
+    "title": "Sprint 3: Roadmap, risk & the go/no-go",
+    "section": "",
+    "text": "Your initiative: _______________________ Group: __________\nNow turn your scope, stakeholders and checkpoints into a delivery plan, then defend it when the staff push back and a crisis hits. Remember Difference 2: progress is illusory, so your gates exist to catch the demo-to-production gap before it reaches a customer or the board."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#delivery-roadmap-with-gono-go-gates",
+    "href": "activities/worksheets/sprint-3-roadmap-risk.html#delivery-roadmap-with-gono-go-gates",
+    "title": "Sprint 3: Roadmap, risk & the go/no-go",
+    "section": "1. Delivery roadmap with go/no-go gates",
+    "text": "1. Delivery roadmap with go/no-go gates\n\n\n\nPhase\nWhat happens\nGo/no-go gate: what must be true to proceed?\n\n\n\n\nPilot (narrow)\n\n\n\n\nEvaluate\n\n\n\n\nScale / Pivot / Kill\n\n\n\n\nProduction"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#risk-register",
+    "href": "activities/worksheets/sprint-3-roadmap-risk.html#risk-register",
+    "title": "Sprint 3: Roadmap, risk & the go/no-go",
+    "section": "2. Risk register",
+    "text": "2. Risk register\n\n\n\n\n\n\n\n\n\n\nRisk\nAI-specific? (non-determinism / data / demo-gap / verification)\nLikelihood\nImpact\nMitigation"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#crisis-response-ddcd",
+    "href": "activities/worksheets/sprint-3-roadmap-risk.html#crisis-response-ddcd",
+    "title": "Sprint 3: Roadmap, risk & the go/no-go",
+    "section": "3. Crisis response (DDCD)",
+    "text": "3. Crisis response (DDCD)\nYour facilitator will hand your group a crisis. Respond:\n\nDiagnose: is this technical, people, leadership, or ethical? ______________\nDecide: your call under uncertainty: ______________\nCommunicate: who, and what do you say? ______________\nDocument: the decision and the reason: ______________"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-3-roadmap-risk.html#the-gate-1-decision",
+    "href": "activities/worksheets/sprint-3-roadmap-risk.html#the-gate-1-decision",
+    "title": "Sprint 3: Roadmap, risk & the go/no-go",
+    "section": "4. The gate-1 decision",
+    "text": "4. The gate-1 decision\nAt your first evaluation gate, the data is ambiguous. Make the call and defend it with evidence:\nSCALE / PIVOT / KILL (circle one), because: ______________________________________________\n\nKilling a project that isn’t working, early, is success, not failure. The cost of wrongly scaling is far higher than the cost of wrongly killing.\n\n\nLeave Sprint 3 with: a roadmap with gates, a risk register, a documented crisis response, and a defended go/no-go decision. Together with Sprints 1–2, that’s your delivery design."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-1-scope.html",
+    "href": "activities/worksheets/sprint-1-scope.html",
+    "title": "Sprint 1: Scope it against reality",
+    "section": "",
+    "text": "Your initiative: _______________________ Group: __________\nYou are the delivery lead. The money is committed. Before you can plan anything, you have to scope it against reality, and the only people who know the reality are down the hall. Interview Priya (Data) and Marcus (CIO) and use what they tell you."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-1-scope.html#scoped-objective-one-sentence",
+    "href": "activities/worksheets/sprint-1-scope.html#scoped-objective-one-sentence",
+    "title": "Sprint 1: Scope it against reality",
+    "section": "1. Scoped objective (one sentence)",
+    "text": "1. Scoped objective (one sentence)\nWhat, specifically, will be delivered, and what is deliberately out of scope for this first release?\n\nIn scope: ___________________________________________\nOut of scope (for now): _______________________________"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-1-scope.html#data-requirements-from-your-priya-interview",
+    "href": "activities/worksheets/sprint-1-scope.html#data-requirements-from-your-priya-interview",
+    "title": "Sprint 1: Scope it against reality",
+    "section": "2. Data requirements (from your Priya interview)",
+    "text": "2. Data requirements (from your Priya interview)\n\n\n\n\n\n\n\n\nWhat data the project needs\nDoes RetailFlow have it, and is it good enough?\nWork required first"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-1-scope.html#apply-the-trust-tool",
+    "href": "activities/worksheets/sprint-1-scope.html#apply-the-trust-tool",
+    "title": "Sprint 1: Scope it against reality",
+    "section": "3. Apply the trust tool",
+    "text": "3. Apply the trust tool\nSplit the work into parts. For each, is it Average (AI produces a good-enough answer) or Precise/high-stakes (a human must stay in charge)?\n\n\n\n\n\n\n\n\nPart of the work\nAverage → automate\nPrecise/high-stakes → keep a human"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-1-scope.html#define-good-enough",
+    "href": "activities/worksheets/sprint-1-scope.html#define-good-enough",
+    "title": "Sprint 1: Scope it against reality",
+    "section": "4. Define “good enough”",
+    "text": "4. Define “good enough”\nAI output is non-deterministic; there’s no spec to pass. So you must define fitness for purpose before deployment.\n\nThe single metric that says “safe to go live”: __________________\nThe threshold on that metric: ______________\nThe maximum acceptable error rate, and what kind of error is unacceptable: ______________\n\n\nLeave Sprint 1 with: a scoped objective, data requirements, a trust-tool split, and a defined “good enough.” You’ll build the rest of the plan on these."
+  },
+  {
+    "objectID": "activities/morning/prompt-library.html",
+    "href": "activities/morning/prompt-library.html",
+    "title": "Your prompt library",
+    "section": "",
+    "text": "RTCF isn’t a trick — it’s being clear about what you actually want. Use this sheet to build a working set of prompts for tasks you genuinely do. Most prompts need all four only when the work matters; keep it lighter for quick tasks.\n\n\n\nR — Role: who should the AI be? (e.g. “a sceptical senior reviewer”, “a plain-English editor”)\nT — Task: what exactly should it do? (one clear verb)\nC — Context: what does it need to know? (this is where your edge enters — the specifics only you hold)\nF — Format: how should the output look? (length, structure, tone)\n\n\n\n\n\n\n\nTip\n\n\n\nWhen does RTCF matter most? The scaffolding (Role, Task, Format) earns its keep on weaker or self-hosted models that need structure spelled out. A frontier model follows clear, natural instructions well — if you brief people well, you’re already most of the way there. The part that always matters is Context: the specifics only you hold. No model supplies that for you.\n\n\n\n\n\nWrite three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\n\n\n\nNote\n\n\n\nThe two-pass lesson. Run your prompt once with thin context → slick, generic, anyone-could-have-it. Then layer in what only you hold (a customer, a contrarian bet, a taste call). Watch the output get a soul. That’s where your edge lives."
+  },
+  {
+    "objectID": "activities/morning/prompt-library.html#the-framework",
+    "href": "activities/morning/prompt-library.html#the-framework",
+    "title": "Your prompt library",
+    "section": "",
+    "text": "R — Role: who should the AI be? (e.g. “a sceptical senior reviewer”, “a plain-English editor”)\nT — Task: what exactly should it do? (one clear verb)\nC — Context: what does it need to know? (this is where your edge enters — the specifics only you hold)\nF — Format: how should the output look? (length, structure, tone)\n\n\n\n\n\n\n\nTip\n\n\n\nWhen does RTCF matter most? The scaffolding (Role, Task, Format) earns its keep on weaker or self-hosted models that need structure spelled out. A frontier model follows clear, natural instructions well — if you brief people well, you’re already most of the way there. The part that always matters is Context: the specifics only you hold. No model supplies that for you."
+  },
+  {
+    "objectID": "activities/morning/prompt-library.html#your-prompts",
+    "href": "activities/morning/prompt-library.html#your-prompts",
+    "title": "Your prompt library",
+    "section": "",
+    "text": "Write three prompts for real tasks from your role. Start with a naive version, then rebuild it with RTCF.\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\nTask: ……………………………………………………………………\nNaive: ……………………………………………………………………\nRTCF: - R: …………………………………………………………………… - T: …………………………………………………………………… - C: …………………………………………………………………… - F: ……………………………………………………………………\n\n\n\n\n\n\nNote\n\n\n\nThe two-pass lesson. Run your prompt once with thin context → slick, generic, anyone-could-have-it. Then layer in what only you hold (a customer, a contrarian bet, a taste call). Watch the output get a soul. That’s where your edge lives."
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html",
+    "href": "activities/initiative-cards/fraud-detection.html",
+    "title": "Fraud detection",
+    "section": "",
+    "text": "Your group is the delivery lead for this funded initiative."
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html#the-mandate",
+    "href": "activities/initiative-cards/fraud-detection.html#the-mandate",
+    "title": "Fraud detection",
+    "section": "The mandate",
+    "text": "The mandate\nThe board has approved $650K to deploy AI fraud detection across RetailFlow’s online payments, to cut chargebacks and fraudulent returns.\nWhat the board thinks it bought: “fewer fraud losses, fast.”\nYour job: deliver it without the predictable failures, and define what “good enough” detection looks like when both false positives and false negatives carry real cost."
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html#why-this-one-is-hard-to-deliver",
+    "href": "activities/initiative-cards/fraud-detection.html#why-this-one-is-hard-to-deliver",
+    "title": "Fraud detection",
+    "section": "Why this one is hard to deliver",
+    "text": "Why this one is hard to deliver\n\nThe honest delivery question here is build vs. buy. Priya’s view: a third-party solution is more practical than building in-house. So your “delivery” may be a vendor integration and oversight project, not a data-science build. It is a different kind of plan, and a useful contrast for the room.\nThe two failure modes pull in opposite directions: too aggressive and you block legitimate customers (revenue + reputation hit); too loose and fraud slips through. There is no single “accurate”; it’s a tuned trade-off.\nA vendor demo on their data tells you little about performance on RetailFlow’s fraud patterns (demo-to-production gap, vendor edition)."
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html#the-data-reality-ask-priya",
+    "href": "activities/initiative-cards/fraud-detection.html#the-data-reality-ask-priya",
+    "title": "Fraud detection",
+    "section": "The data reality (ask Priya)",
+    "text": "The data reality (ask Priya)\nPriya’s honest read: “third-party AI more practical than building; our data-science team shouldn’t own this. Quick win with the right vendor, 3–6 months. Buy, don’t build.” Your roadmap should reflect a procurement-and-integration shape, with the threshold tuning as the real risk."
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html#who-to-interview-and-the-tension-they-bring",
+    "href": "activities/initiative-cards/fraud-detection.html#who-to-interview-and-the-tension-they-bring",
+    "title": "Fraud detection",
+    "section": "Who to interview, and the tension they bring",
+    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): argues buy-not-build; what your team should and shouldn’t own.\nDavid Chen (CFO): owns the loss numbers and the ROI case; wants certainty.\nTom Walsh (Customer Service): his team handles the fallout when a legitimate customer is wrongly blocked. Who reviews flagged transactions, and how fast?"
+  },
+  {
+    "objectID": "activities/initiative-cards/fraud-detection.html#your-starting-question-for-good-enough",
+    "href": "activities/initiative-cards/fraud-detection.html#your-starting-question-for-good-enough",
+    "title": "Fraud detection",
+    "section": "Your starting question for “good enough”",
+    "text": "Your starting question for “good enough”\nWhere do you set the threshold, and who reviews flagged transactions before a customer is blocked? How do you measure success when the two errors (false block vs. missed fraud) have very different costs?"
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html",
+    "href": "activities/initiative-cards/customer-service-chatbot.html",
+    "title": "Customer-service chatbot",
+    "section": "",
+    "text": "Your group is the delivery lead for this funded initiative."
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html#the-mandate",
+    "href": "activities/initiative-cards/customer-service-chatbot.html#the-mandate",
+    "title": "Customer-service chatbot",
+    "section": "The mandate",
+    "text": "The mandate\nThe board has approved $450K to deploy an AI customer-service chatbot across RetailFlow’s online channels. The case that won funding: customer satisfaction has fallen 78% to 68% and email response times sit at 26 hours. The chatbot is meant to deflect routine queries (order status, returns, sizing) and cut response times dramatically.\nWhat the board thinks it bought: “a chatbot that answers customers, live in a quarter.”\nYour job: deliver it without the predictable failures, and define what “good enough to go live” actually means."
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html#why-this-one-is-hard-to-deliver-not-just-buy",
+    "href": "activities/initiative-cards/customer-service-chatbot.html#why-this-one-is-hard-to-deliver-not-just-buy",
+    "title": "Customer-service chatbot",
+    "section": "Why this one is hard to deliver (not just buy)",
+    "text": "Why this one is hard to deliver (not just buy)\n\nIt is customer-facing, so a confident hallucination isn’t an internal embarrassment. It’s a wrong returns policy quoted to a real customer, in writing.\nThe data looks ready but isn’t uniform: returns and sizing rules vary by product line and have exceptions that live in people’s heads, not systems.\n“It works in the demo” will be true within week two. That is the trap (Difference 2): the demo handles the easy 80%; the cost is in the angry-customer edge cases."
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html#the-data-reality-ask-priya",
+    "href": "activities/initiative-cards/customer-service-chatbot.html#the-data-reality-ask-priya",
+    "title": "Customer-service chatbot",
+    "section": "The data reality (ask Priya)",
+    "text": "The data reality (ask Priya)\nConversation/transcript data is good, the best of the four initiatives. Priya’s honest read: “good data foundation, ~6-month implementation, proceed with confidence.” But “good foundation” does not mean “knows your policies.” Grounding the bot in current, correct policy documents (RAG) is where the real work is."
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html#who-to-interview-and-the-tension-they-bring",
+    "href": "activities/initiative-cards/customer-service-chatbot.html#who-to-interview-and-the-tension-they-bring",
+    "title": "Customer-service chatbot",
+    "section": "Who to interview, and the tension they bring",
+    "text": "Who to interview, and the tension they bring\n\nTom Walsh (Customer Service Manager): his team gets automated first. The evaluator’s-advantage and apprenticeship-pipeline questions land hardest here. Who reviews the bot’s answers, and does that role build or consume his juniors’ judgement?\nPriya Sharma (Data): feasibility and realistic “good enough” thresholds.\nEmma Rodriguez (Managing Director): what was promised to the board, and by when."
+  },
+  {
+    "objectID": "activities/initiative-cards/customer-service-chatbot.html#your-starting-question-for-good-enough",
+    "href": "activities/initiative-cards/customer-service-chatbot.html#your-starting-question-for-good-enough",
+    "title": "Customer-service chatbot",
+    "section": "Your starting question for “good enough”",
+    "text": "Your starting question for “good enough”\nWhat deflection rate, and what maximum acceptable wrong-answer rate, makes this safe to put in front of customers? Where must a human stay in the loop before a response is sent?"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Meet the RetailFlow team",
+    "section": "",
+    "text": "The afternoon runs on conversations. RetailFlow’s leadership team is available as live chatbots, and you interview them to scope your project, surface the messy reality, and stress-test your plan. They have opinions, they disagree with each other, and they won’t do your job for you."
+  },
+  {
+    "objectID": "team.html#who-you-can-talk-to",
+    "href": "team.html#who-you-can-talk-to",
+    "title": "Meet the RetailFlow team",
+    "section": "Who you can talk to",
+    "text": "Who you can talk to\n\n\n\n\n\n\n\n\nWho\nRole\nAsk them about\n\n\n\n\nEmma Rodriguez\nManaging Director\nstrategy, board expectations, the promise that was made\n\n\nDavid Chen\nCFO\nbudgets, ROI, the financial go/no-go\n\n\nMarcus Kim\nCIO\ntechnology, legacy systems, build vs buy\n\n\nDr. Priya Sharma\nHead of Data & Analytics\ndata readiness, feasibility, realistic timelines\n\n\nSarah Thompson\nCOO\nstore operations, rollout, the operational reality\n\n\nTom Walsh\nCustomer Service Manager\nthe frontline team, customer impact\n\n\nLisa Nguyen\nGeneral Manager, Customer Experience\ncustomer experience"
+  },
+  {
+    "objectID": "team.html#how-to-get-value-from-them",
+    "href": "team.html#how-to-get-value-from-them",
+    "title": "Meet the RetailFlow team",
+    "section": "How to get value from them",
+    "text": "How to get value from them\n\nThey’re stakeholders, not consultants. They’ll give you their perspective and the facts they hold, but the scope, the plan and the decisions are yours. If you ask them to do your work, they’ll hand it back.\nTriangulate. Marcus pushes speed; Priya pushes realism; David wants certainty. A good plan reconciles them, so don’t take any one view as gospel.\nPush back. Ask follow-ups, test your assumptions, probe the gaps. The conversation is where judgement gets built.\n\n\n\n\n\n\n\nNote\n\n\n\nNotice the bots are fluent and confident even when they don’t know, exactly the AI behaviour you’re learning to lead. Treat what they tell you with the same scrutiny you’d apply to any AI output — this is the trust tool, applied to your own research."
+  },
+  {
+    "objectID": "readings/why-ai-delivery-is-different.html",
+    "href": "readings/why-ai-delivery-is-different.html",
+    "title": "Why AI delivery is different",
+    "section": "",
+    "text": "You have almost certainly led a project to completion before. You scoped it, you resourced it, you watched it through to delivery. So a fair question to walk in with is this: what is actually different about an AI project? Why can’t I just run it like everything else?\nThe honest answer is that most of your instincts still serve you well. Stakeholders, budgets, timelines, the awkward conversation with the sponsor: all of that carries over. But five things behave differently, and each one quietly breaks an assumption that normal projects let you take for granted. If you do not adjust for them, the project does not fail more often. It fails in ways you did not see coming.\nHere are the five contrasts. For each: the assumption you usually rely on, why AI breaks it, and the move that good leaders make.\n\n\n\n\n\n\n\n\nWhat you normally assume\nWhy AI breaks it\nThe leadership move\n\n\n\n\n“Done” can be specified. You write the requirement, and you can later check it was met.\nAI is non-deterministic and does not reason. Ask it the same thing twice and you may get two different answers. There is no single correct output to tick off, only a spread of likely ones.\nStop chasing a fixed definition of done. Manage a probability distribution instead, and decide up front what “good enough” looks like for this use.\n\n\nA working demo means we’re nearly there. Once it works in the room, the rest is just engineering.\nThe gap between a demo and a dependable production system is wide and deceptive. The demo shows the happy path; the messy real-world cases are where it falls over. Progress feels real but is largely illusory.\nTreat the demo as the start of the hard part, not the end. Refuse to let an impressive demo set the timeline.\n\n\nThe data is a known input. We specify what we need and someone supplies it.\nThe data is the uncertainty. You discover what you actually have (its gaps, biases and surprises) only by working with it. It is found, not ordered.\nRun delivery as organisational discovery. Expect to learn as you go, and build that learning into the plan rather than treating it as slippage.\n\n\nThe build is the product. Ship the thing and you are finished.\nWith AI, verification is the product. Because outputs vary and can be confidently wrong, the value lives in how you check them, and where a human stays in the loop.\nDesign the checking deliberately. Decide where human judgement sits, and make that part of the thing you ship, not an afterthought.\n\n\nCapability is our advantage. If we build something clever, that is our edge.\nGeneric competence is now the baseline. When every rival can run the same models, the model is not your advantage, since anyone can have it.\nCompete on the human variation a rival’s identical model can’t reproduce: your taste, your judgement, the specific way your people apply it.\n\n\n\nYou will notice a thread running through all five. AI gives you something fluent, plausible and roughly right, fast, and then asks you to do the harder work of deciding when roughly right is good enough, and who checks when it isn’t. That is a leadership question far more than a technical one, which is exactly why it lands on your desk.\nNone of this is cause for alarm, and none of it is hype. AI projects are not more fragile than the ones you have run before. They are differently fragile. The cracks appear in different places: in the definition of done, in the seductive demo, in the data you thought you understood, in the checking you assumed you could skip, in the edge you assumed you had.\nSo the takeaway is simple. These five differences don’t make AI projects fail more. They make them fail differently, and you lead for that."
+  },
+  {
+    "objectID": "readings/ai-in-five-minutes.html",
+    "href": "readings/ai-in-five-minutes.html",
+    "title": "AI in five minutes (for non-technical leaders)",
+    "section": "",
+    "text": "You do not need to know how an engine works to drive a car well, but you do need to know what it can and can’t do: that it needs fuel, that it won’t go underwater, that the brakes have limits. The same is true here. You do not need the mathematics of AI. You need an honest mental model of what the thing actually is, so you can lead it without either over-trusting it or dismissing it. Five minutes is enough.\nWhat a large language model actually is\nStrip away the marketing and a large language model is, at heart, a very sophisticated pattern-completer. It has been trained on an enormous amount of human writing, and from all of that it has learned what words and ideas tend to follow other words and ideas. When you ask it something, it does not look up a fact or work out an answer. It produces the most plausible continuation (the most likely next words) given your question and everything it has absorbed.\nA useful way to hold this: the model gives you a fluent, convincing average of everything it has seen on a topic. That average is often genuinely excellent, because the average of a vast amount of competent human writing is itself pretty competent. But it is an average, not a truth. The system predicts; it does not reason, and it does not “know.” There is no understanding behind the words, no checking against reality, no little voice saying “wait, is that actually correct?” There is only: what would plausibly come next?\nWhy it’s brilliant at some things and quietly unreliable at others\nOnce you see it as a fluent averaging machine, its strengths and weaknesses stop being surprising.\nIt is brilliant at tasks where fluency and typicality are exactly what you want: drafting, rephrasing, summarising, brainstorming, translating, turning a rough thought into clean prose, explaining a familiar idea in simpler terms. Here, “the most plausible version” is the right answer.\nIt is quietly unreliable at tasks that need a single correct fact, a precise figure, a real citation, or genuine step-by-step reasoning that must be right rather than merely plausible. It will happily produce something that sounds exactly like a correct answer (same confidence, same polish) whether or not it is true. The trouble is that the fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.\nWhat “hallucination” means, and why confident-but-wrong is the default\nWhen the model states something false as if it were fact (invents a source, a statistic, a quote, a name) that is what people call a hallucination. The word makes it sound like a glitch, an occasional malfunction. It isn’t. It is the same machinery working exactly as designed. The system is always producing a plausible continuation; sometimes the most plausible-sounding continuation simply happens not to be true. It has no separate sense of “fact” to fall back on.\nSo the failure mode to expect is not blank or error message or I don’t know. It is confident and wrong, delivered with the same assurance as everything else. That is the single most important thing to carry into any AI project. The danger is rarely that the AI refuses to help. The danger is that it helps convincingly when it shouldn’t.\nNone of this is cause for hype or for doom. It is just the shape of the tool. Used where fluency is the goal, it is remarkable. Used where exactness matters, it needs a human checking the work. Everything else in this course builds on that one durable distinction, so if you remember nothing else, remember this: it produces a convincing average, and a convincing average is not the same as the truth."
+  },
+  {
+    "objectID": "frameworks.html",
+    "href": "frameworks.html",
+    "title": "Frameworks",
+    "section": "",
+    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale and the project scale."
+  },
+  {
+    "objectID": "frameworks.html#the-trust-tool-the-spine-of-the-day",
+    "href": "frameworks.html#the-trust-tool-the-spine-of-the-day",
+    "title": "Frameworks",
+    "section": "The trust tool: the spine of the day",
+    "text": "The trust tool: the spine of the day\nThe core lens: Average / Precise × Small / Large.\n\nAI excels at average answers over small, low-stakes work, so lean in.\nIt gets dangerous on precise answers and large, high-stakes work, so keep a human in the loop.\n\nYou learn it in the morning at the level of a single task (“do I trust this output?”). You reuse it in the afternoon at the level of a whole project (“where does a human stay in the loop?”). It comes from the free companion book, Conversation, Not Delegation.\n\n\n\nThe trust tool: a 2×2 of how exact the answer must be (average → precise) against stakes and scope (small → large)."
+  },
+  {
+    "objectID": "frameworks.html#rtcf-directing-ai-well",
+    "href": "frameworks.html#rtcf-directing-ai-well",
+    "title": "Frameworks",
+    "section": "RTCF: directing AI well",
+    "text": "RTCF: directing AI well\nRole · Task · Context · Format. Not every prompt needs all four, but for anything important they transform the result. Context is where your edge enters: the specifics only you hold."
+  },
+  {
+    "objectID": "frameworks.html#make-your-edge-persistent-the-two-page-voice-method",
+    "href": "frameworks.html#make-your-edge-persistent-the-two-page-voice-method",
+    "title": "Frameworks",
+    "section": "Make your edge persistent: the two-page voice method",
+    "text": "Make your edge persistent: the two-page voice method\nRTCF injects your edge one prompt at a time. To make it stick, give the AI a sample of your writing, have it write a two-page style brief, and paste that into your custom instructions. Style Mirror (free, in-browser, can run on a local model) does the extraction. The result is a “slight parody” of you — an average of your voice — so the part that’s still irreducibly yours gets easier to see. Full method on the take-home page below."
+  },
+  {
+    "objectID": "frameworks.html#the-five-differences-why-ai-delivery-breaks-the-rules",
+    "href": "frameworks.html#the-five-differences-why-ai-delivery-breaks-the-rules",
+    "title": "Frameworks",
+    "section": "The five differences: why AI delivery breaks the rules",
+    "text": "The five differences: why AI delivery breaks the rules\n“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline. Standard PM tools still apply — they just bend under these five forces."
+  },
+  {
+    "objectID": "frameworks.html#scale-pivot-kill-the-gono-go-call",
+    "href": "frameworks.html#scale-pivot-kill-the-gono-go-call",
+    "title": "Frameworks",
+    "section": "Scale / Pivot / Kill: the go/no-go call",
+    "text": "Scale / Pivot / Kill: the go/no-go call\nAt each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing a project that isn’t working, early, is success, not failure."
+  },
+  {
+    "objectID": "frameworks.html#take-home-references",
+    "href": "frameworks.html#take-home-references",
+    "title": "Frameworks",
+    "section": "Take-home references",
+    "text": "Take-home references\n\n\n\n\n\nMake your edge persistent: the two-page voice method\n\n\nA practical technique (Ethan Mollick) for getting AI to write in your voice instead of a generic one — the permanent version of the two-pass demo’s ‘add your edge’.\n\n\n\n\n\n\n\n\n\n\nScale / Pivot / Kill\n\n\nA decision matrix for the go/no-go call at each gate.\n\n\n\n\n\n\n\n\n\n\nThe trust tool\n\n\nAverage / Precise × Small / Large — the one grid that answers ‘where does a human stay in the loop?’, at the task level and the project level.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "before.html",
+    "href": "before.html",
+    "title": "Before the day",
+    "section": "",
+    "text": "You don’t need any technical background for this masterclass. These three short pieces just give everyone a shared starting point and the language we’ll use on the day. Read them in order if you can — they walk from what AI is, to when to trust it, to why delivering an AI project is different.\n\n\n\n\n\nAI in five minutes (for non-technical leaders)\n\n\nWhat a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.\n\n\n\n\n4 min\n\n\n\n\n\n\nThe trust tool: when to trust AI\n\n\nA simple grid (Average or Precise, Small or Large) that turns ‘where does a human stay in the loop?’ into a question you can actually answer.\n\n\n\n\n4 min\n\n\n\n\n\n\nWhy AI delivery is different\n\n\nThe five ways an AI project breaks the rules you usually lead by, and the leadership move for each.\n\n\n\n\n4 min\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\nNoteWant to go further?\n\n\n\nEverything here is drawn from the free companion book, Conversation, Not Delegation. It’s optional, but if a topic grabs you, that’s where to dig."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Human Edge",
+    "section": "",
+    "text": "Curtin Executive Education · One-day masterclass\n\n\n\n\nUsing and delivering AI with judgement — because when everyone has the same tools, your judgement is the edge.\n\n\nStart before the day See the workshop\n\n\n\n\n\n\n\nThe trust tool: one grid, applied at two scales.\nWelcome. This is your companion site for The Human Edge — a one-day masterclass that builds the one skill AI can’t replace: knowing when to trust it, and where you must stay in charge. Everything you need is here."
+  },
+  {
+    "objectID": "index.html#the-idea-behind-the-day",
+    "href": "index.html#the-idea-behind-the-day",
+    "title": "The Human Edge",
+    "section": "The idea behind the day",
+    "text": "The idea behind the day\n\nIf the AI is genuinely good at running your work, it’s equally good at running everyone else’s. Generic competence, with no variation, is the baseline — not an advantage. So where does your edge live?\n\nThe day builds one answer to that question, applied twice:\n\nThe morning builds the judgement at the level of your own work — directing AI well, judging how far to trust any output, and redesigning a real workflow so AI handles what it does well while your thinking stays in charge.\nThe afternoon lifts the same judgement to delivery — how to scope, lead and ship an AI project without the predictable failures, designing human checkpoints in from the start rather than bolting them on after something goes wrong.\n\nThe connective tissue is the trust tool — a simple grid (Average/Precise × Small/Large) that turns “where does a human stay in the loop?” into a question you can actually answer. You learn it once, in the morning, at the task level. You reuse it, in the afternoon, at the project level. Same grid, two scales."
+  },
+  {
+    "objectID": "index.html#what-youll-leave-with",
+    "href": "index.html#what-youll-leave-with",
+    "title": "The Human Edge",
+    "section": "What you’ll leave with",
+    "text": "What you’ll leave with\n\nReusable decision tools — the trust tool, RTCF, the five differences, Scale/Pivot/Kill. Tool-agnostic; they don’t expire when the next model ships.\nA redesigned workflow from your own role, ready to trial.\nA project design — scope, roadmap, checkpoints, risk — for a real scenario.\nA personal action plan for the week, month, and quarter."
+  },
+  {
+    "objectID": "index.html#how-the-day-runs",
+    "href": "index.html#how-the-day-runs",
+    "title": "The Human Edge",
+    "section": "How the day runs",
+    "text": "How the day runs\n\n\n\n\n\n\n\nTime\nBlock\n\n\n\n\n9:00–10:30\nThe average, the tool, the edge — foundations + the trust tool\n\n\n11:00–12:30\nUsing AI well, yourself — prompting, workflow redesign\n\n\n1:15–2:30\nWhy AI delivery is different — the five differences\n\n\n3:00–4:00\nDesigning the human in, then shipping — checkpoints, roadmap, go/no-go\n\n\n4:00–4:30\nThe edge that’s left to humans + your action plan\n\n\n\n\n\n\n\n\n\nNoteGoing deeper, on your terms\n\n\n\nThis course scaffolds the theory and points you to where to dig. The free companion resource, Conversation, Not Delegation, goes deeper on every idea here, including the trust tool for deciding when to rely on AI."
+  },
+  {
+    "objectID": "readings/the-trust-tool.html",
+    "href": "readings/the-trust-tool.html",
+    "title": "The trust tool: when to trust AI",
+    "section": "",
+    "text": "The most useful thing to understand about today’s AI is also the least glamorous: it produces a convincing average. Feed it a request, and it gives you back the most plausible, most typical response drawn from everything it has seen. That is its genius and its limit in one. The output is fluent, well-shaped and usually about right, but “about right” and “exactly right” are not the same thing, and knowing which one you need is the whole game.\nThat is where the trust tool comes in. It is a small grid with two questions, and it tells you when to lean in and when to keep a human firmly in the loop.\nQuestion one: do you need an average, or do you need precision? An average answer is one where “in the right ballpark” is genuinely fine: a first draft, a summary, a starting point you will shape further. A precise answer is one where there is a single correct value and being close is the same as being wrong: a figure in a contract, a dosage, a legal citation, a customer’s account balance.\nQuestion two: is the decision small or large? A small decision is low stakes: easy to reverse, cheap to get wrong, no one is harmed. A large decision carries real consequences: money, safety, reputation, someone’s job or wellbeing.\nPut those together and you get four corners:\n\n\n\n\n\n\n\n\n\nSmall (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run. This is its home turf.\nLean in, with a glance. Useful, but sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Handy, but confirm the specifics.\nHuman in the loop. AI may assist, but a person owns the decision.\n\n\n\nThe rule of thumb is easy to remember: lean in where “about right” over low stakes is fine; keep a human in the loop where exactly-right meets high-stakes.\nA few everyday examples make it concrete.\n\nDrafting an internal email or a meeting summary. Average is fine, stakes are small. Lean in, and let the AI write the first version and tidy it yourself. The risk of a slightly-off phrasing is trivial.\nPulling the exact numbers for a board paper. Precision is required and the stakes are large. This is the bottom-right corner. The AI can help you draft the narrative around the figures, but a human must source and own every number. Confident-sounding is not the same as correct.\nSummarising fifty customer complaints to spot themes. Average is fine, and the stakes sit in the middle. Lean in to get the themes fast, then, before you act on them, have a person skim the underlying complaints to make sure the AI hasn’t smoothed away the one that actually matters.\n\nNotice what the grid quietly does. The hardest question leaders ask about AI is “where does a human stay in the loop?”, and most teams answer it by gut feel, which means either everywhere (and you lose the speed) or nowhere (and you lose the trust). The trust tool makes that question answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large? The answer falls out of the corner you land in.\nThis grid, the Average/Precise × Small/Large framework, is drawn from the companion book to this course, Conversation, Not Delegation. If you want to go deeper on how it plays out across real work, that is the place to look: https://michael-borck.github.io/conversation-not-delegation/.\nFor now, keep the grid in your back pocket. The next time someone asks “can we just let the AI do this?”, you have a better answer than yes or no. You have a question, and the question does the work."
+  },
+  {
+    "objectID": "series.html",
+    "href": "series.html",
+    "title": "The masterclass series",
+    "section": "",
+    "text": "A common thread runs through all of them: when everyone has access to the same AI, the generic output it produces is the baseline, not the advantage. What lasts is human judgement: knowing where AI genuinely helps, where it quietly fails, and where your thinking must stay in charge.\nThe Human Edge is part of Curtin University’s Executive Education AI masterclasses. Each stands completely on its own; together they cover the full arc of working with AI in an organisation: using and delivering it well, deciding where to invest, and governing it ethically."
+  },
+  {
+    "objectID": "series.html#how-they-fit-together",
+    "href": "series.html#how-they-fit-together",
+    "title": "The masterclass series",
+    "section": "How they fit together",
+    "text": "How they fit together\nEach masterclass is a complete, standalone day. But they’re designed to complement one another:\n\nThe Human Edge (this course) builds the individual fluency and the project-delivery judgement the others draw on — from your first prompt to a project that ships.\nAI in Strategy decides which AI initiatives deserve investment.\nEthics of Artificial Intelligence runs across all of them: the governance, risk and responsibility lens every AI initiative needs.\n\nBrowse all masterclasses & enrol → Curtin Executive Education"
+  },
+  {
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "The workshop",
+    "section": "",
+    "text": "The day runs on a single idea — knowing when to trust AI, and where you must stay in charge — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The trust tool is the connective tissue, learned once and reused."
+  },
+  {
+    "objectID": "workshop.html#morning-using-ai-well-yourself",
+    "href": "workshop.html#morning-using-ai-well-yourself",
+    "title": "The workshop",
+    "section": "Morning — using AI well, yourself",
+    "text": "Morning — using AI well, yourself\nBring your own device and a real task from your role. By lunch you’ll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.\n\n\n\n\n\n\n\nBlock\nWhat you do\n\n\n\n\nThe average, the tool, the edge\nFoundations: what AI is, why it’s confidently wrong in predictable places, and the trust tool (Average/Precise × Small/Large).\n\n\nUsing AI well, yourself\nTask suitability, RTCF prompting, the two-pass demo (generic → with edge), and a workflow redesign from your own role.\n\n\n\nBring the morning worksheets (print or fill on your device):\n\n\n\n\n\nRedesign your workflow\n\n\nMap one real task from your role, then put AI where it helps — and keep your judgement where it counts. The morning’s main takeaway.\n\n\n\n\n\n\n\n\n\n\nYour prompt library\n\n\nTurn RTCF (Role · Task · Context · Format) into a starter set of prompts for your own work. Build it during the session.\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "workshop.html#afternoon-delivering-ai-responsibly",
+    "href": "workshop.html#afternoon-delivering-ai-responsibly",
+    "title": "The workshop",
+    "section": "Afternoon — delivering AI, responsibly",
+    "text": "Afternoon — delivering AI, responsibly\nYou are the delivery lead. The board has funded one AI initiative at RetailFlow, and your job is to ship it without the predictable failures. You’ll carry one project through three moves, scoping and stress-testing it by interviewing the RetailFlow team (meet them here).\nEach group takes a different initiative, so no two designs look alike. Pick yours:\n\n\n\n\n\n\n\nCustomer-service chatbot\n\n\nDeflect routine queries and cut 26-hour response times, but it’s customer-facing, so confident-wrong answers are a live risk. ($450K, funded.)\n\n\n\n\n\n\n\n\n\nDynamic pricing\n\n\nAutomated price optimisation: high value, high stakes, and the data isn’t ready. ($850K, funded.)\n\n\n\n\n\n\n\n\n\nFraud detection\n\n\nCut chargebacks without blocking real customers: a buy-vs-build and threshold-tuning problem. ($650K, funded.)\n\n\n\n\n\n\n\n\n\nInventory optimisation\n\n\nForecast and replenish across 50 stores: the broadest scope, tangled in legacy systems. ($1.1M, funded.)\n\n\n\n\n\nNo matching items\n\n\nThe three moves\nEach move hands you one piece of your delivery design. Bring the worksheet (print it, or fill it on your device).\n\n\n\n\n\nSprint 1: Scope it against reality\n\n\nScoped objectives, data requirements, and a defined ‘good enough’.\n\n\n\n\n\n\n\n\n\n\nSprint 2: Stakeholders & human-in-the-loop\n\n\nA stakeholder plan and a human-in-the-loop checkpoint design.\n\n\n\n\n\n\n\n\n\n\nSprint 3: Roadmap, risk & the go/no-go\n\n\nA delivery roadmap with gates, a risk register, and the Scale/Pivot/Kill call.\n\n\n\n\n\n\n\n\nNo matching items\n\n\nScope it against reality. Interview Priya (data) and Marcus (CIO); reconcile “move fast” with “the data isn’t ready”. → scoped objectives, data needs, a defined good enough.\nStakeholders & human-in-the-loop. Interview Emma (MD), Tom (frontline) and David (CFO); decide where a human must stay in charge. → stakeholder plan + checkpoint design.\nRoadmap, risk & the go/no-go. Build the plan, then defend it when the staff push back and a crisis hits. → roadmap with gates, risk register, the Scale/Pivot/Kill call.\n\n\n\n\n\n\n\nTip\n\n\n\nThe documents you’ll need (board memos, data profiles, vendor proposals, policies) are in RetailFlow’s internal portal. Not everything there is relevant: part of the job is working out what matters.\n\n\n\n\n\n\n\n\nNoteThe thread through both halves\n\n\n\nThe trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks “do I trust this output?” At the project level it asks “where does a human stay in the loop?” One idea, two scales — that’s why the day holds together."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html",
+    "href": "activities/initiative-cards/dynamic-pricing.html",
+    "title": "Dynamic pricing",
+    "section": "",
+    "text": "Your group is the delivery lead for this funded initiative."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html#the-mandate",
+    "href": "activities/initiative-cards/dynamic-pricing.html#the-mandate",
+    "title": "Dynamic pricing",
+    "section": "The mandate",
+    "text": "The mandate\nThe board has approved $850K to build AI-driven dynamic pricing, automatically adjusting prices across fashion and homewares lines in response to demand, competitor moves, inventory levels and margin targets. The case that won funding: a “significant revenue opportunity” and competitors “already doing it.”\nWhat the board thinks it bought: “smarter prices that lift margin, live this year.”\nYour job: deliver it without the predictable failures, and define what “good enough” pricing decisions look like before any price goes live automatically."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html#why-this-one-is-hard-to-deliver",
+    "href": "activities/initiative-cards/dynamic-pricing.html#why-this-one-is-hard-to-deliver",
+    "title": "Dynamic pricing",
+    "section": "Why this one is hard to deliver",
+    "text": "Why this one is hard to deliver\n\nPricing is precise and high-stakes, squarely in the danger zone of the trust tool. A wrong automated price is public, instant, and can read as price-gouging or trigger a margin loss across thousands of SKUs.\nIt depends on competitive data RetailFlow doesn’t cleanly have, plus demand signals split across online and store systems.\nA pricing model that looks great in backtesting (the “demo”) can behave badly in live conditions it never saw. That is exactly the demo-to-production gap, with money attached."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html#the-data-reality-ask-priya",
+    "href": "activities/initiative-cards/dynamic-pricing.html#the-data-reality-ask-priya",
+    "title": "Dynamic pricing",
+    "section": "The data reality (ask Priya)",
+    "text": "The data reality (ask Priya)\nPriya’s honest read: “high potential but high complexity: needs better competitive data, staff capability gaps. Recommend Phase 2, not Phase 1; 12+ months realistic.” Expect her to push back on any plan that promises live automated pricing inside a quarter. Your scope has to confront this."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html#who-to-interview-and-the-tension-they-bring",
+    "href": "activities/initiative-cards/dynamic-pricing.html#who-to-interview-and-the-tension-they-bring",
+    "title": "Dynamic pricing",
+    "section": "Who to interview, and the tension they bring",
+    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): will tell you the honest timeline; the central tension of your sprint.\nMarcus Kim (CIO): wants speed and sees the revenue prize; “competitors aren’t waiting.”\nDavid Chen (CFO): owns the margin numbers and the go/no-go criteria; wants certainty AI can’t give."
+  },
+  {
+    "objectID": "activities/initiative-cards/dynamic-pricing.html#your-starting-question-for-good-enough",
+    "href": "activities/initiative-cards/dynamic-pricing.html#your-starting-question-for-good-enough",
+    "title": "Dynamic pricing",
+    "section": "Your starting question for “good enough”",
+    "text": "Your starting question for “good enough”\nShould pricing be fully automated, or human-approved above a threshold? What guardrails (price floors/ceilings, max change per cycle) make automated pricing safe, and where must a human approve before a price changes?"
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html",
+    "href": "activities/initiative-cards/inventory-optimisation.html",
+    "title": "Inventory optimisation",
+    "section": "",
+    "text": "Your group is the delivery lead for this funded initiative."
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html#the-mandate",
+    "href": "activities/initiative-cards/inventory-optimisation.html#the-mandate",
+    "title": "Inventory optimisation",
+    "section": "The mandate",
+    "text": "The mandate\nThe board has approved $1.1M (the largest of the four) to build AI inventory optimisation: forecasting demand and automating replenishment across 50 stores plus the online channel, to cut both stockouts and overstock.\nWhat the board thinks it bought: “major efficiency gains across the whole network.”\nYour job: deliver it without the predictable failures, and define a “good enough” forecast that’s safe to act on automatically."
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html#why-this-one-is-hard-to-deliver",
+    "href": "activities/initiative-cards/inventory-optimisation.html#why-this-one-is-hard-to-deliver",
+    "title": "Inventory optimisation",
+    "section": "Why this one is hard to deliver",
+    "text": "Why this one is hard to deliver\n\nIt is the broadest in scope (every store, every category), so the temptation to boil the ocean is strong, and the blast radius of a bad forecast is large.\nIt runs straight into legacy systems: the POS and inventory systems are 10–15 years old, and online/store data is siloed. Integration is where this project lives or dies.\nA forecast that’s “about right” in aggregate (the demo) can be badly wrong for a specific store/category, and that’s where the cost and the staff frustration show up."
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html#the-data-reality-ask-priya",
+    "href": "activities/initiative-cards/inventory-optimisation.html#the-data-reality-ask-priya",
+    "title": "Inventory optimisation",
+    "section": "The data reality (ask Priya)",
+    "text": "The data reality (ask Priya)\nPriya’s honest read: “significant value potential, but data quality issues to resolve first; integration complexity is underestimated. 9–12 months. Start with ONE category pilot, prove value, then scale.” Her advice basically pre-writes your roadmap, if you ask her."
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html#who-to-interview-and-the-tension-they-bring",
+    "href": "activities/initiative-cards/inventory-optimisation.html#who-to-interview-and-the-tension-they-bring",
+    "title": "Inventory optimisation",
+    "section": "Who to interview, and the tension they bring",
+    "text": "Who to interview, and the tension they bring\n\nPriya Sharma (Data): pushes the single-category pilot; data-quality realism.\nMarcus Kim (CIO): knows the legacy-systems pain better than anyone; also impatient for transformation.\nSarah Thompson (COO): operational reality across stores; the people who’ll act on (or ignore) the forecasts. She slows things down, sometimes rightly."
+  },
+  {
+    "objectID": "activities/initiative-cards/inventory-optimisation.html#your-starting-question-for-good-enough",
+    "href": "activities/initiative-cards/inventory-optimisation.html#your-starting-question-for-good-enough",
+    "title": "Inventory optimisation",
+    "section": "Your starting question for “good enough”",
+    "text": "Your starting question for “good enough”\nWhat forecast accuracy, in which category, justifies automating replenishment versus keeping it as a recommendation a store manager approves? How do you scope a pilot narrow enough to prove value but real enough to matter?"
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html",
+    "href": "activities/morning/workflow-redesign.html",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "Pick one task you do repeatedly — something you own, that takes real time. You’ll map it, judge each step against the trust tool, and redesign it so AI handles what it does well while your judgement stays in charge.\n\n\nWhat’s the task? (e.g. “weekly stakeholder report”, “client onboarding pack”, “inquiry triage”)\n………………………………………………………………………………………………\n\n\n\nBreak the task into its steps, in order. Aim for 4–8.\n\n\n\nStep\nWhat happens\nHow long\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n4\n\n\n\n\n5\n\n\n\n\n\n\n\n\nFor every step: does it need an average or precision? Are the stakes small or large?\n\n\n\n\n\n\n\n\n\nStep\nAverage or Precise?\nSmall or Large?\nLean in / Human in the loop\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n4\n\n\n\n\n\n5\n\n\n\n\n\n\n\n\n\nWhere does AI genuinely help (average, small stakes → lean in)? Where must your judgement stay in charge (precise, large stakes → human in the loop)? Sketch the new version below.\nNew workflow:\n………………………………………………………………………………………………\n………………………………………………………………………………………………\n\n\n\nPick one step to trial with AI this week. What will you try, and how will you know if it worked?\n………………………………………………………………………………………………\n\n\n\n\n\n\nTip\n\n\n\nThe point isn’t “use AI more.” It’s use AI deliberately, exactly where it belongs — and protect the steps where your judgement is the value."
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html#name-the-task",
+    "href": "activities/morning/workflow-redesign.html#name-the-task",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "What’s the task? (e.g. “weekly stakeholder report”, “client onboarding pack”, “inquiry triage”)\n………………………………………………………………………………………………"
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html#list-the-steps",
+    "href": "activities/morning/workflow-redesign.html#list-the-steps",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "Break the task into its steps, in order. Aim for 4–8.\n\n\n\nStep\nWhat happens\nHow long\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n4\n\n\n\n\n5"
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html#judge-each-step-with-the-trust-tool",
+    "href": "activities/morning/workflow-redesign.html#judge-each-step-with-the-trust-tool",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "For every step: does it need an average or precision? Are the stakes small or large?\n\n\n\n\n\n\n\n\n\nStep\nAverage or Precise?\nSmall or Large?\nLean in / Human in the loop\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n4\n\n\n\n\n\n5"
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html#redesign",
+    "href": "activities/morning/workflow-redesign.html#redesign",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "Where does AI genuinely help (average, small stakes → lean in)? Where must your judgement stay in charge (precise, large stakes → human in the loop)? Sketch the new version below.\nNew workflow:\n………………………………………………………………………………………………\n………………………………………………………………………………………………"
+  },
+  {
+    "objectID": "activities/morning/workflow-redesign.html#the-test",
+    "href": "activities/morning/workflow-redesign.html#the-test",
+    "title": "Redesign your workflow",
+    "section": "",
+    "text": "Pick one step to trial with AI this week. What will you try, and how will you know if it worked?\n………………………………………………………………………………………………\n\n\n\n\n\n\nTip\n\n\n\nThe point isn’t “use AI more.” It’s use AI deliberately, exactly where it belongs — and protect the steps where your judgement is the value."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html",
+    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html",
+    "title": "Sprint 2: Stakeholders & human-in-the-loop",
+    "section": "",
+    "text": "Your initiative: _______________________ Group: __________\nA working AI system isn’t a tool. It’s a division of labour between human judgement and machine output. This sprint you design that division, and the stakeholder plan around it. Interview Emma (Managing Director), Tom (Customer Service) and David (CFO)."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
+    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
+    "title": "Sprint 2: Stakeholders & human-in-the-loop",
+    "section": "1. Stakeholder plan",
+    "text": "1. Stakeholder plan\n\n\n\n\n\n\n\n\n\nStakeholder\nWhat they need / fear\nHow you’ll manage them\nPower × Interest\n\n\n\n\nEmma (Managing Director / sponsor)\n\n\nHigh / High\n\n\nDavid (CFO)\n\n\n\n\n\nTom (CS / frontline)\n\n\n\n\n\nadd others you met"
+  },
+  {
+    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#human-in-the-loop-checkpoints",
+    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#human-in-the-loop-checkpoints",
+    "title": "Sprint 2: Stakeholders & human-in-the-loop",
+    "section": "2. Human-in-the-loop checkpoints",
+    "text": "2. Human-in-the-loop checkpoints\nFor every point where AI output could be wrong and it matters, design a checkpoint.\n\n\n\n\n\n\n\n\nCheckpoint (where a human checks AI output)\nWho has the expertise to actually evaluate it?\nDoes this checkpoint build that expertise, or just consume it?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe evaluator’s advantage: experienced people spot the confident-but-wrong answer because they know what right looks like. Judgement is unevenly distributed, so staff your checkpoints with the right humans, not just any human.\nThe apprenticeship trap: if you automate all the grunt work, you stop producing the next generation of evaluators. Mark at least one checkpoint that you keep human deliberately, to build capability, not only for quality."
+  },
+  {
+    "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#the-one-youll-defend",
+    "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#the-one-youll-defend",
+    "title": "Sprint 2: Stakeholders & human-in-the-loop",
+    "section": "3. The one you’ll defend",
+    "text": "3. The one you’ll defend\nWhich single human-in-the-loop decision are you most confident is non-negotiable, and why? ______________________________________________\n\nLeave Sprint 2 with: a stakeholder plan and a human-in-the-loop checkpoint design where each checkpoint names its evaluator and is marked builds-vs-consumes."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html",
+    "href": "handouts/frameworks-overview.html",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale (morning) and the project scale (afternoon).\n\n\n\nAverage / Precise × Small / Large. Two questions turn “where does a human stay in the loop?” from a gut feel into a decision you can defend. Learned in the morning at the task level, reused in the afternoon at the project level.\n\n\n\nRole · Task · Context · Format. Context is where your edge enters: the specifics only you hold.\n\n\n\n“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline.\n\n\n\nAt each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing early is success.\n\nDrawn from the free companion book, Conversation, Not Delegation. Go there to dig deeper on any of these."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html#the-tools-youll-keep-using-monday",
+    "href": "handouts/frameworks-overview.html#the-tools-youll-keep-using-monday",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "These are durable, tool-agnostic frameworks: they work regardless of which AI model you’re using or which one comes out next quarter. They span both halves of the day — the task scale (morning) and the project scale (afternoon)."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html#the-trust-tool-the-spine-of-the-day",
+    "href": "handouts/frameworks-overview.html#the-trust-tool-the-spine-of-the-day",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "Average / Precise × Small / Large. Two questions turn “where does a human stay in the loop?” from a gut feel into a decision you can defend. Learned in the morning at the task level, reused in the afternoon at the project level."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html#rtcf-directing-ai-well",
+    "href": "handouts/frameworks-overview.html#rtcf-directing-ai-well",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "Role · Task · Context · Format. Context is where your edge enters: the specifics only you hold."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html#the-five-differences-why-ai-delivery-breaks-the-rules",
+    "href": "handouts/frameworks-overview.html#the-five-differences-why-ai-delivery-breaks-the-rules",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "“Done” can’t be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline."
+  },
+  {
+    "objectID": "handouts/frameworks-overview.html#scale-pivot-kill-the-gono-go-call",
+    "href": "handouts/frameworks-overview.html#scale-pivot-kill-the-gono-go-call",
+    "title": "Frameworks overview",
+    "section": "",
+    "text": "At each gate, the honest question isn’t “is it perfect?” It’s whether the evidence justifies continuing. Killing early is success.\n\nDrawn from the free companion book, Conversation, Not Delegation. Go there to dig deeper on any of these."
+  },
+  {
+    "objectID": "handouts/frameworks/frameworks-trust-tool.html",
+    "href": "handouts/frameworks/frameworks-trust-tool.html",
+    "title": "The trust tool",
+    "section": "",
+    "text": "The most useful thing to understand about today’s AI: it produces a convincing average. Fluent, well-shaped, usually about right — but “about right” and “exactly right” are not the same, and knowing which you need is the whole game.\nThe trust tool is two questions.\n\n\n\nAverage = “in the right ballpark” is fine. A first draft, a summary, a starting point you’ll shape further.\nPrecise = a single correct value, where close is the same as wrong. A contract figure, a dosage, a citation, an account balance.\n\n\n\n\n\nSmall = low stakes. Easy to reverse, cheap to get wrong, no one harmed.\nLarge = real consequences. Money, safety, reputation, someone’s job or wellbeing.\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmall (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run.\nLean in, with a glance. Sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Confirm the specifics.\nHuman in the loop. A person owns the decision.\n\n\n\n\n\n\nThis grid works at two levels — which is why it’s the spine of the whole day:\n\nAt the task (morning): “Do I trust this output for my work?” — average or precise, small or large?\nAt the project (afternoon): “Where does a human stay in the loop across this project?” — the same corners, applied to where verification and oversight are designed in.\n\nThe hardest question leaders ask about AI is “where does a human stay in the loop?” Most teams answer it by gut — everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?\nDrawn from the companion book, Conversation, Not Delegation."
+  },
+  {
+    "objectID": "handouts/frameworks/frameworks-trust-tool.html#q1-average-or-precision",
+    "href": "handouts/frameworks/frameworks-trust-tool.html#q1-average-or-precision",
+    "title": "The trust tool",
+    "section": "",
+    "text": "Average = “in the right ballpark” is fine. A first draft, a summary, a starting point you’ll shape further.\nPrecise = a single correct value, where close is the same as wrong. A contract figure, a dosage, a citation, an account balance."
+  },
+  {
+    "objectID": "handouts/frameworks/frameworks-trust-tool.html#q2-small-or-large",
+    "href": "handouts/frameworks/frameworks-trust-tool.html#q2-small-or-large",
+    "title": "The trust tool",
+    "section": "",
+    "text": "Small = low stakes. Easy to reverse, cheap to get wrong, no one harmed.\nLarge = real consequences. Money, safety, reputation, someone’s job or wellbeing."
+  },
+  {
+    "objectID": "handouts/frameworks/frameworks-trust-tool.html#the-four-corners",
+    "href": "handouts/frameworks/frameworks-trust-tool.html#the-four-corners",
+    "title": "The trust tool",
+    "section": "",
+    "text": "Small (low stakes)\nLarge (high stakes)\n\n\n\n\nAverage is fine\nLean in. Let AI run.\nLean in, with a glance. Sanity-check before it goes out.\n\n\nPrecision required\nUse, then verify. Confirm the specifics.\nHuman in the loop. A person owns the decision."
+  },
+  {
+    "objectID": "handouts/frameworks/frameworks-trust-tool.html#two-scales",
+    "href": "handouts/frameworks/frameworks-trust-tool.html#two-scales",
+    "title": "The trust tool",
+    "section": "",
+    "text": "This grid works at two levels — which is why it’s the spine of the whole day:\n\nAt the task (morning): “Do I trust this output for my work?” — average or precise, small or large?\nAt the project (afternoon): “Where does a human stay in the loop across this project?” — the same corners, applied to where verification and oversight are designed in.\n\nThe hardest question leaders ask about AI is “where does a human stay in the loop?” Most teams answer it by gut — everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it answerable. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?\nDrawn from the companion book, Conversation, Not Delegation."
   }
 ]

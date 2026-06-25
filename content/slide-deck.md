@@ -234,14 +234,19 @@ An *average* answer is "in the right ballpark" — a first draft, a summary, a s
 
 - **R** — Role (who should the AI be?)
 - **T** — Task (what exactly should it do?)
-- **C** — Context (what does it need to know?)
+- **C** — Context (what does it need to know?) — *where your edge enters*
 - **F** — Format (how should the output look?)
 
-:::: {.notes}
+**Role, Task and Format are scaffolding** — weaker or self-hosted models need it spelled out; a frontier model infers it from clear writing. **Context is the part that always matters** — it's the one thing only you supply.
+
+::::: {.notes}
 - Most people type vague prompts, get vague results, and blame the tool.
-- Not every prompt needs all four. But for anything important, all four transform the result.
-- RTCF isn't a trick — it's just being clear about what you actually want, which is the skill underneath all good prompting.
-::::
+- Separate the two halves of RTCF:
+  - **Scaffolding (Role, Task, Format):** mostly for weaker / self-hosted models that need the structure. A frontier model (Claude, GPT-4-class) follows plain, well-written instructions well — if you're good at briefing a human, you're most of the way there. Use the labels as a checklist, not a rigid template you must fill every time. Over-ritualising them can even make prompts worse.
+  - **Context:** the one part that matters on *any* model, because it's the thing only you hold — your specifics, your edge. No model, however smart, can manufacture your context.
+- So the durable skill isn't "master a prompt framework." It's the skill that already makes you good at instructing people: being clear about what you want, and supplying the context the receiver can't infer. RTCF just names the parts — and as models get smarter, the scaffolding fades, leaving exactly your judgement and context.
+- Honest note for the self-hosted crowd: if you run smaller local models (Ollama etc.), RTCF's full structure earns its keep — that's where it pays off most.
+:::::
 
 ---
 
@@ -281,6 +286,7 @@ An *average* answer is "in the right ballpark" — a first draft, a summary, a s
 - This is the thesis, felt in the gut rather than heard as a quote. Pass 1 is the baseline (generic, anyone-could-have-it); Pass 2 is the edge (the variation the tool can't manufacture).
 - Make it interactive — let the room shout the "edge" inputs.
 - The lesson: the AI is your starting point, not your finish line. Your judgement, taste and relationships are what turn generic into *yours*.
+- Go deeper (companion site): the "two-page voice method" makes this edge persistent — give the AI a writing sample, have it produce a style brief, paste it into custom instructions. Free tool: Style Mirror (stylemirror.eduserver.au), which can run locally. Caveat to land: the result is a "slight parody" of you — an average of your voice — so the residual edge stays yours.
 :::::
 
 ---

@@ -331,14 +331,20 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>R</strong> — Role (who should the AI be?)</li>
 <li><strong>T</strong> — Task (what exactly should it do?)</li>
-<li><strong>C</strong> — Context (what does it need to know?)</li>
+<li><strong>C</strong> — Context (what does it need to know?) — <em>where your edge enters</em></li>
 <li><strong>F</strong> — Format (how should the output look?)</li>
 </ul>
+<p><strong>Role, Task and Format are scaffolding</strong> — weaker or self-hosted models need it spelled out; a frontier model infers it from clear writing. <strong>Context is the part that always matters</strong> — it’s the one thing only you supply.</p>
 <div class="notes">
 <ul>
 <li>Most people type vague prompts, get vague results, and blame the tool.</li>
-<li>Not every prompt needs all four. But for anything important, all four transform the result.</li>
-<li>RTCF isn’t a trick — it’s just being clear about what you actually want, which is the skill underneath all good prompting.</li>
+<li>Separate the two halves of RTCF:
+<ul>
+<li><strong>Scaffolding (Role, Task, Format):</strong> mostly for weaker / self-hosted models that need the structure. A frontier model (Claude, GPT-4-class) follows plain, well-written instructions well — if you’re good at briefing a human, you’re most of the way there. Use the labels as a checklist, not a rigid template you must fill every time. Over-ritualising them can even make prompts worse.</li>
+<li><strong>Context:</strong> the one part that matters on <em>any</em> model, because it’s the thing only you hold — your specifics, your edge. No model, however smart, can manufacture your context.</li>
+</ul></li>
+<li>So the durable skill isn’t “master a prompt framework.” It’s the skill that already makes you good at instructing people: being clear about what you want, and supplying the context the receiver can’t infer. RTCF just names the parts — and as models get smarter, the scaffolding fades, leaving exactly your judgement and context.</li>
+<li>Honest note for the self-hosted crowd: if you run smaller local models (Ollama etc.), RTCF’s full structure earns its keep — that’s where it pays off most.</li>
 </ul>
 </div>
 <hr />
@@ -375,6 +381,7 @@ ul.task-list li input[type="checkbox"] {
 <li>This is the thesis, felt in the gut rather than heard as a quote. Pass 1 is the baseline (generic, anyone-could-have-it); Pass 2 is the edge (the variation the tool can’t manufacture).</li>
 <li>Make it interactive — let the room shout the “edge” inputs.</li>
 <li>The lesson: the AI is your starting point, not your finish line. Your judgement, taste and relationships are what turn generic into <em>yours</em>.</li>
+<li>Go deeper (companion site): the “two-page voice method” makes this edge persistent — give the AI a writing sample, have it produce a style brief, paste it into custom instructions. Free tool: Style Mirror (stylemirror.eduserver.au), which can run locally. Caveat to land: the result is a “slight parody” of you — an average of your voice — so the residual edge stays yours.</li>
 </ul>
 </div>
 <hr />
