@@ -123,11 +123,11 @@ def cover():
     text(s, ML, 1.0, 4.0, 0.45, [("ONE-DAY MASTERCLASS", dict(font=FM, size=11, color=WHITE, bold=True))],
          anchor=MSO_ANCHOR.MIDDLE)
     kicker(s, "Curtin Executive Education · Dr Michael Borck", t=1.7)
-    text(s, ML, 2.4, 11.4, 4.2,
-         [("THE\n", dict(font=FD, size=150, color=INK, spacing=0.86)),
-          ("HUMAN\n", dict(font=FD, size=150, color=INK, spacing=0.86)),
-          ("EDGE", dict(font=FD, size=150, color=INK, spacing=0.86))])
-    text(s, ML, 6.5, 11.4, 0.5,
+    text(s, ML, 2.2, 11.4, 4.4,
+         [("THE\n", dict(font=FD, size=118, color=INK, spacing=0.88)),
+          ("HUMAN\n", dict(font=FD, size=118, color=INK, spacing=0.88)),
+          ("EDGE", dict(font=FD, size=118, color=INK, spacing=0.88))])
+    text(s, ML, 6.65, 11.4, 0.5,
          [("Using & delivering AI with judgement.", dict(font=FS, size=26, italic=True, color=INKSOFT))])
 
 
@@ -200,9 +200,9 @@ def steps(idx, label, title, items):
 
 def brk(idx, img_name, time, label, back):
     s = slide(); bignum(s, idx)
+    rect(s, SW/2 - 1.7, 1.7 + 0.14, 3.4, 2.5, fill=INK)  # hard shadow first
     pic = s.shapes.add_picture(str(IMG / img_name), Inches(SW/2 - 1.7), Inches(1.7), Inches(3.4), Inches(2.5))
     pic.line.color.rgb = INK; pic.line.width = Pt(1.75); pic.shadow.inherit = False
-    rect(s, SW/2 - 1.7, 1.7 + 0.12, 3.4, 2.5, fill=INK)  # shadow behind (drawn first ideally)
     text(s, ML, 4.5, CW, 1.4, [(time, dict(font=FD, size=92, color=VERM))], align=PP_ALIGN.CENTER)
     text(s, ML, 5.8, CW, 0.8, [(label, dict(font=FS, size=34, italic=True, color=INK))], align=PP_ALIGN.CENTER)
     text(s, ML, SH - 0.95, CW, 0.4, [(back.upper(), dict(font=FM, size=11, color=INKSOFT, bold=True))], align=PP_ALIGN.CENTER)
