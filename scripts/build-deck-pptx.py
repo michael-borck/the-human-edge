@@ -202,11 +202,11 @@ def brk(img_name, time, label, back):
     text(s, ML, SH - 0.85, CW, 0.4, [(back.upper(), dict(font=FM, size=11, color=INKSOFT, bold=True))], align=PP_ALIGN.CENTER)
 
 
-def resources(label, items):
+def resources(label, title, items):
     s, n = newslide(); bignum(s, n); kicker(s, label)
-    text(s, ML, 1.5, CW, 1.0, [("Take these with you.", dict(font=FS, size=40, color=INK, bold=True))])
-    colw = (CW - 2.5) / 2; qsize = 2.6; qtop = 2.7
-    for i, (title, url, qr) in enumerate(items):
+    text(s, ML, 1.5, CW, 1.0, [(title, dict(font=FS, size=40, color=INK, bold=True))])
+    colw = (CW - 2.5) / 2; qsize = 2.5; qtop = 2.6
+    for i, (ttl, url, qr, note) in enumerate(items):
         x = ML + i * (colw + 2.5)
         qx = x + (colw - qsize) / 2
         rect(s, qx + 0.14, qtop + 0.14, qsize, qsize, fill=INK)            # hard shadow
@@ -215,8 +215,9 @@ def resources(label, items):
         pic = s.shapes.add_picture(str(IMG / qr), Inches(qx + (qsize - iw) / 2), Inches(qtop + (qsize - ih) / 2), Inches(iw), Inches(ih))
         pic.shadow.inherit = False
         disp = url.replace("https://", "").replace("http://", "").rstrip("/")
-        text(s, x, qtop + qsize + 0.25, colw, 0.5, [(title, dict(font=FS, size=22, color=INK, bold=True))], align=PP_ALIGN.CENTER)
-        text(s, x, qtop + qsize + 0.8, colw, 0.5, [(disp, dict(font=FM, size=12.5, color=VERM, bold=True))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 0.22, colw, 0.5, [(ttl, dict(font=FS, size=22, color=INK, bold=True))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 0.72, colw, 0.5, [(disp, dict(font=FM, size=12.5, color=VERM, bold=True))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 1.2, colw, 0.6, [(note, dict(font=FS, size=13, italic=True, color=INKSOFT))], align=PP_ALIGN.CENTER)
 
 def close_deck():
     s, n = newslide(); bignum(s, n)
@@ -230,6 +231,10 @@ def close_deck():
 
 # ---------- build ----------
 cover()
+resources("Before we begin", "Two links for today.", [
+    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png", "Today only — it won't work after the course."),
+    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png", "Yours to keep — before, during, and after."),
+])
 quote("The provocation we'll spend the day on",
       "If the AI is good at running your work, it's good at running everyone else's. Generic competence is the baseline — not the advantage.",
       "So where does your edge live?")
@@ -344,10 +349,6 @@ grid("What you leave with", "Tools that don't expire.", None,
       ("YOUR WORK", "A redesigned workflow and a scoped project design you can act on."),
       ("A PLAN", "Specific commitments for the week, month and quarter."),
       ("GO DEEPER", "michael-borck.github.io/the-human-edge — incl. the two-page voice method.")])
-resources("Keep going", [
-    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png"),
-    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png"),
-])
 close_deck()
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
