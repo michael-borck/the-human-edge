@@ -20,14 +20,14 @@ listing:
     sort: "title"
 ---
 
-The day runs on a single idea — **knowing when to trust AI, and where you must stay in charge** — applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The **trust tool** is the connective tissue, learned once and reused.
+The day runs on a single idea – **knowing when to trust AI, and where you must stay in charge** – applied at two scales. The morning builds the judgement at the level of your own work. The afternoon lifts it to delivering a project. The **trust tool** is the connective tissue, learned once and reused.
 
 :::: {.callout-note}
 ## Prefer paper? Print the workbook
-Every worksheet and initiative card below is also in a clean, print-optimised **[participant workbook (PDF)](the-human-edge-participant-workbook.pdf){target="_blank"}** — one page per activity, no site clutter. Print one set per person (and one initiative card per group) before the day.
+Every worksheet and initiative card below is also in a clean, print-optimised **[participant workbook (PDF)](the-human-edge-participant-workbook.pdf){target="_blank"}** – one page per activity, no site clutter. Print one set per person (and one initiative card per group) before the day.
 ::::
 
-## Morning — using AI well, yourself
+## Morning – using AI well, yourself
 
 Bring your own device and a real task from your role. By lunch you'll have directed AI at your own work, judged the output against the trust tool, and redesigned one workflow so AI handles what it does well while your judgement stays in charge.
 
@@ -38,7 +38,7 @@ Bring your own device and a real task from your role. By lunch you'll have direc
 
 :::: {.callout-tip}
 ## Try the RTCF toolkit
-A free, in-browser tool to go with the prompting work: [**build an RTCF prompt**](tools/rtcf-toolkit.html) from its four parts, **analyse** any prompt against RTCF, or start from a template. No sign-up, no AI needed — it runs on the page.
+A free, in-browser tool to go with the prompting work: [**build an RTCF prompt**](tools/rtcf-toolkit.html) from its four parts, **analyse** any prompt against RTCF, or start from a template. No sign-up, no AI needed – it runs on the page.
 ::::
 
 Bring the morning worksheets (print or fill on your device):
@@ -46,7 +46,7 @@ Bring the morning worksheets (print or fill on your device):
 :::: {#morning}
 ::::
 
-## Afternoon — delivering AI, responsibly
+## Afternoon – delivering AI, responsibly
 
 You are the **delivery lead**. The board has funded one AI initiative at RetailFlow, and your job is to ship it without the predictable failures. You'll carry one project through three moves, scoping and stress-testing it by **interviewing the RetailFlow team** ([meet them here](team.qmd)).
 
@@ -72,10 +72,10 @@ The documents you'll need (board memos, data profiles, vendor proposals, policie
 
 :::: {.callout-note}
 ## The thread through both halves
-The trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks "do I trust this output?" At the project level it asks "where does a human stay in the loop?" One idea, two scales — that's why the day holds together.
+The trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks "do I trust this output?" At the project level it asks "where does a human stay in the loop?" One idea, two scales – that's why the day holds together.
 ::::
 
 :::: {.callout-tip}
 ## Finished early, or want more? Go deeper
-Self-paced extensions for fast finishers (or if the room races through): **[VET your AI](go-deeper.html#push-back-vet-your-ai)** — verify, explain, test any output; the **[two-chat workflow](go-deeper.html#the-two-chat-workflow)** — separate thinking from building; plus devil's advocate, boardroom perspectives, the handover prompt, and the conversation loop. Each takes five minutes on your own work.
+Self-paced extensions for fast finishers (or if the room races through): **[VET your AI](go-deeper.html#push-back-vet-your-ai)** – verify, explain, test any output; the **[two-chat workflow](go-deeper.html#the-two-chat-workflow)** – separate thinking from building; plus devil's advocate, boardroom perspectives, the handover prompt, and the conversation loop. Each takes five minutes on your own work.
 ::::

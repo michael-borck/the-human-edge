@@ -1,11 +1,11 @@
 ---
 title: "The trust tool"
-description: "Average / Precise × Small / Large — the one grid that answers 'where does a human stay in the loop?', at the task level and the project level."
+description: "Average / Precise × Small / Large – the one grid that answers 'where does a human stay in the loop?', at the task level and the project level."
 ---
 
 # The trust tool: when to trust AI
 
-The most useful thing to understand about today's AI: it produces a convincing **average**. Fluent, well-shaped, usually about right — but "about right" and "exactly right" are not the same, and knowing which you need is the whole game.
+The most useful thing to understand about today's AI: it produces a convincing **average**. Fluent, well-shaped, usually about right – but "about right" and "exactly right" are not the same, and knowing which you need is the whole game.
 
 The trust tool is two questions.
 
@@ -28,11 +28,11 @@ The trust tool is two questions.
 
 ## Two scales
 
-This grid works at two levels — which is why it's the spine of the whole day:
+This grid works at two levels – which is why it's the spine of the whole day:
 
-- **At the task** (morning): *"Do I trust this output for my work?"* — average or precise, small or large?
-- **At the project** (afternoon): *"Where does a human stay in the loop across this project?"* — the same corners, applied to where verification and oversight are designed in.
+- **At the task** (morning): *"Do I trust this output for my work?"* – average or precise, small or large?
+- **At the project** (afternoon): *"Where does a human stay in the loop across this project?"* – the same corners, applied to where verification and oversight are designed in.
 
-The hardest question leaders ask about AI is "where does a human stay in the loop?" Most teams answer it by gut — everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it *answerable*. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?
+The hardest question leaders ask about AI is "where does a human stay in the loop?" Most teams answer it by gut – everywhere (you lose speed) or nowhere (you lose trust). The trust tool makes it *answerable*. You stop arguing about AI in the abstract and start asking, task by task: average or precise, small or large?
 
 Drawn from the companion book, [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/).

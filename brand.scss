@@ -1,5 +1,5 @@
 /*-- scss:defaults --*/
-/* AI in Delivery — editorial-modern brand system.
+/* AI in Delivery – editorial-modern brand system.
    Display/headings: Fraunces (serif). Body/UI: Inter. */
 
 // --- Palette (Tailwind slate + brand) ---
@@ -164,7 +164,7 @@ thead th { background: $light; color: $dark; font-weight: 600; }
 .nav-footer { border-top: 1px solid $border !important; background: $light; }
 
 /* ============================================================
-   DARK MODE — Quarto toggles the .quarto-dark class on <body>
+   DARK MODE – Quarto toggles the .quarto-dark class on <body>
    and enables the alternate stylesheet. Scope dark overrides
    under body.quarto-dark so they win over the unscoped light rules.
    ============================================================ */

@@ -1,4 +1,4 @@
-# Facilitator quick reference — The Human Edge
+# Facilitator quick reference – The Human Edge
 
 One day, 9:00am–4:30pm. BYOD throughout. The through-line is the **trust tool** (Average/Precise × Small/Large), taught once in the morning and reused at project scale in the afternoon.
 
@@ -17,7 +17,7 @@ One day, 9:00am–4:30pm. BYOD throughout. The through-line is the **trust tool*
 
 ## The thesis to keep returning to
 
-> If the AI is genuinely good at running your work, it's equally good at running everyone else's. Generic competence, with no variation, is the baseline — not an advantage. So where does *your* edge live?
+> If the AI is genuinely good at running your work, it's equally good at running everyone else's. Generic competence, with no variation, is the baseline – not an advantage. So where does *your* edge live?
 
 Answer the room builds toward: the edge lives in judgement, taste, and the variation a rival's identical model can't reproduce. Say it at the open, after the two-pass demo, and at the close.
 
@@ -25,19 +25,19 @@ Answer the room builds toward: the edge lives in judgement, taste, and the varia
 
 Run one real task twice, live (projector, follow-along optional):
 
-1. **Pass 1 — generic.** Naive prompt → slick, correct, *anyone-got-the-same-answer* output. Point at it: *"This is good. Everyone got this same good answer. Where's the edge?"*
-2. **Pass 2 — with edge.** Layer in what only the human holds — a specific customer, a contrarian bet, a taste call, domain knowledge. Watch the output get a soul.
+1. **Pass 1 – generic.** Naive prompt → slick, correct, *anyone-got-the-same-answer* output. Point at it: *"This is good. Everyone got this same good answer. Where's the edge?"*
+2. **Pass 2 – with edge.** Layer in what only the human holds – a specific customer, a contrarian bet, a taste call, domain knowledge. Watch the output get a soul.
 
 Let the room shout the "edge" inputs. This is where the thesis lands in the gut, not as a quote.
 
-## The trust tool — how to teach it once
+## The trust tool – how to teach it once
 
 Introduce the grid in Session 1 with everyday examples (drafting an email = lean in; board-paper figures = human owns every number). Then **do not re-teach it**. In the afternoon, when you reach the five differences, explicitly point back: *"This is the same grid. This morning it asked 'do I trust this output?' Now it asks 'where does a human stay in the loop across this project?'"*
 
 ## The afternoon: RetailFlow
 
 - Each group takes **one** of the four initiative cards. No two designs alike.
-- They interview the RetailFlow chatbots (live, fluent, confident even when wrong — treat as AI output).
+- They interview the RetailFlow chatbots (live, fluent, confident even when wrong – treat as AI output).
 - **Sprint 1** = differences 1 & 3 (define "good enough" as a band; data is discovery).
 - **Sprint 2** = difference 4 + trust tool (design checkpoints deliberately).
 - **Sprint 3** = roadmap, risk, Scale/Pivot/Kill. Normalise killing as a good outcome.
@@ -52,8 +52,8 @@ Introduce the grid in Session 1 with everyday examples (drafting an email = lean
 
 ## Materials checklist
 
-- Slide deck (slides + this reference) — `content/slide-deck.md`
-- Morning worksheets — `activities/morning/` (prompt library, workflow redesign)
-- Initiative cards + sprint worksheets — `activities/initiative-cards/`, `activities/worksheets/`
+- Slide deck (slides + this reference) – `content/slide-deck.md`
+- Morning worksheets – `activities/morning/` (prompt library, workflow redesign)
+- Initiative cards + sprint worksheets – `activities/initiative-cards/`, `activities/worksheets/`
 - RetailFlow portal access (code `pilot2024`) and chatbots live
-- Pre-readings sent ~1 week out — `readings/`
+- Pre-readings sent ~1 week out – `readings/`

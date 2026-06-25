@@ -9,7 +9,7 @@ listing:
     sort: "title"
 ---
 
-These are durable, tool-agnostic frameworks: they work regardless of which AI model you're using or which one comes out next quarter. They span both halves of the day — the task scale and the project scale.
+These are durable, tool-agnostic frameworks: they work regardless of which AI model you're using or which one comes out next quarter. They span both halves of the day – the task scale and the project scale.
 
 ## The trust tool: the spine of the day
 
@@ -24,15 +24,15 @@ You learn it in the morning at the level of a single task ("do I trust this outp
 
 ## RTCF: directing AI well
 
-**R**ole · **T**ask · **C**ontext · **F**ormat. Not every prompt needs all four, but for anything important they transform the result. Role, Task and Format are scaffolding (weaker/self-hosted models need them spelled out; a frontier model infers them from clear writing). **Context is the part that always matters** — and don't undersell it: "context" is really your **judgement** (taste, experience, critical thinking) going in. It looks like you're just adding information; you're actually adding the one thing no model can supply — so make yours different.
+**R**ole · **T**ask · **C**ontext · **F**ormat. Not every prompt needs all four, but for anything important they transform the result. Role, Task and Format are scaffolding (weaker/self-hosted models need them spelled out; a frontier model infers them from clear writing). **Context is the part that always matters** – and don't undersell it: "context" is really your **judgement** (taste, experience, critical thinking) going in. It looks like you're just adding information; you're actually adding the one thing no model can supply – so make yours different.
 
 ## Make your edge persistent: the two-page voice method
 
-RTCF injects your edge one prompt at a time. To make it *stick*, give the AI a sample of your writing, have it write a two-page style brief, and paste that into your custom instructions. [**Style Mirror**](https://stylemirror.eduserver.au) (free, in-browser, can run on a local model) does the extraction. The result is a "slight parody" of you — an average of your voice — so the part that's still irreducibly *yours* gets easier to see. Full method on the [take-home page below](#handouts).
+RTCF injects your edge one prompt at a time. To make it *stick*, give the AI a sample of your writing, have it write a two-page style brief, and paste that into your custom instructions. [**Style Mirror**](https://stylemirror.eduserver.au) (free, in-browser, can run on a local model) does the extraction. The result is a "slight parody" of you – an average of your voice – so the part that's still irreducibly *yours* gets easier to see. Full method on the [take-home page below](#handouts).
 
 ## The five differences: why AI delivery breaks the rules
 
-"Done" can't be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline. Standard PM tools still apply — they just *bend* under these five forces.
+"Done" can't be specified · the demo is a trap · the data is the uncertainty · verification is the product · generic competence is the baseline. Standard PM tools still apply – they just *bend* under these five forces.
 
 ## Scale / Pivot / Kill: the go/no-go call
 

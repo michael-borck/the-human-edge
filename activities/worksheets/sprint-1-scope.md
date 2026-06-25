@@ -19,9 +19,9 @@ Before you scope, a quick reality check across three lenses (see *Delivery frame
 
 - **Data readiness:** do we have it, and is it good enough? Who owns it? What's missing or messy? ______________
 - **Organisational readiness:** who owns this initiative, who's affected, who'll resist? Is the sponsor still in? ______________
-- **Build · buy · host:** how will we deliver it — buy a product, build it, or self-host? ______________
+- **Build · buy · host:** how will we deliver it – buy a product, build it, or self-host? ______________
 
-> Low readiness in any lens doesn't kill it — it reshapes the scope (start smaller, fix the data first, buy before you build).
+> Low readiness in any lens doesn't kill it – it reshapes the scope (start smaller, fix the data first, buy before you build).
 
 ## 2. Scoped objective (one sentence)
 

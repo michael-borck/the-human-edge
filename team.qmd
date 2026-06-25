@@ -31,5 +31,5 @@ The team lives in RetailFlow's **internal portal**. Your facilitator will give y
 - **Push back.** Ask follow-ups, test your assumptions, probe the gaps. The conversation is where judgement gets built.
 
 :::: {.callout-note}
-Notice the bots are *fluent and confident even when they don't know*, exactly the AI behaviour you're learning to lead. Treat what they tell you with the same scrutiny you'd apply to any AI output — this is the trust tool, applied to your own research.
+Notice the bots are *fluent and confident even when they don't know*, exactly the AI behaviour you're learning to lead. Treat what they tell you with the same scrutiny you'd apply to any AI output – this is the trust tool, applied to your own research.
 ::::

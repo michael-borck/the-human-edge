@@ -3,7 +3,7 @@
 
 Converts the morning worksheets, initiative cards and afternoon sprint
 worksheets (plus a trust-tool quick reference) into one paginated PDF with no
-navbar/chatbot/footer clutter — for printing as a handout. Source order tracks
+navbar/chatbot/footer clutter – for printing as a handout. Source order tracks
 the day: reference → morning → initiatives → afternoon sprints.
 
 Usage:  python3 scripts/build-packet.py
@@ -20,7 +20,7 @@ OUT = ROOT / "content" / "the-human-edge-participant-workbook.pdf"
 SECTIONS = [
     # Quick reference (every worksheet leans on it)
     ("handouts/frameworks/frameworks-trust-tool.md", "Quick reference"),
-    # Morning — personal practice
+    # Morning – personal practice
     ("activities/morning/prompt-library.md", "Morning"),
     ("activities/morning/workflow-redesign.md", "Morning"),
     # The four scenarios (one per group)
@@ -28,7 +28,7 @@ SECTIONS = [
     ("activities/initiative-cards/dynamic-pricing.md", "Your initiative"),
     ("activities/initiative-cards/fraud-detection.md", "Your initiative"),
     ("activities/initiative-cards/inventory-optimisation.md", "Your initiative"),
-    # Afternoon — delivery sprints
+    # Afternoon – delivery sprints
     ("activities/worksheets/sprint-1-scope.md", "Afternoon"),
     ("activities/worksheets/sprint-2-stakeholders-hitl.md", "Afternoon"),
     ("activities/worksheets/sprint-3-roadmap-risk.md", "Afternoon"),
@@ -111,7 +111,7 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
 
 def build() -> str:
     parts = [f"<!doctype html><html><head><meta charset='utf-8'>"
-             f"<title>The Human Edge — Participant Workbook</title>"
+             f"<title>The Human Edge – Participant Workbook</title>"
              f"<style>{CSS}</style></head><body>",
              f"<section class='cover'>{FRONT}</section>"]
     for rel, label in SECTIONS:

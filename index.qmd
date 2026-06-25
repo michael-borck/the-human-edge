@@ -13,7 +13,7 @@ Curtin Executive Education · One-day masterclass
 ::::::
 # The Human Edge
 :::::: {.lead}
-Using and delivering AI with judgement — because when everyone has the same tools, your judgement is the edge.
+Using and delivering AI with judgement – because when everyone has the same tools, your judgement is the edge.
 ::::::
 :::::: {.hero-cta}
 [Start with the readings](before.qmd){.btn .btn-primary .btn-lg}
@@ -26,10 +26,10 @@ Using and delivering AI with judgement — because when everyone has the same to
 ::::::
 ::::::
 
-Welcome. This is your companion site for **The Human Edge** — a one-day masterclass that builds the one skill AI can't replace: knowing when to trust it, and where you must stay in charge. Everything you need is here.
+Welcome. This is your companion site for **The Human Edge** – a one-day masterclass that builds the one skill AI can't replace: knowing when to trust it, and where you must stay in charge. Everything you need is here.
 
 <div class="cards">
-<a class="card-tile" href="./before.html"><span class="card-icon"><i class="bi bi-journal-text"></i></span><span class="card-title">Readings</span><span class="card-desc">Three short reads — the ideas behind the day.</span></a>
+<a class="card-tile" href="./before.html"><span class="card-icon"><i class="bi bi-journal-text"></i></span><span class="card-title">Readings</span><span class="card-desc">Three short reads – the ideas behind the day.</span></a>
 <a class="card-tile green" href="./workshop.html"><span class="card-icon"><i class="bi bi-tools"></i></span><span class="card-title">The workshop</span><span class="card-desc">One idea, two scales: your desk, then a project.</span></a>
 <a class="card-tile accent" href="./frameworks.html"><span class="card-icon"><i class="bi bi-compass"></i></span><span class="card-title">Frameworks</span><span class="card-desc">The tools you'll keep using Monday.</span></a>
 <a class="card-tile violet" href="./team.html"><span class="card-icon"><i class="bi bi-people"></i></span><span class="card-title">Meet the team</span><span class="card-desc">Interview RetailFlow's leadership live.</span></a>
@@ -37,32 +37,32 @@ Welcome. This is your companion site for **The Human Edge** — a one-day master
 
 ## The idea behind the day
 
-> If the AI is genuinely good at running your work, it's equally good at running everyone else's. Generic competence, with no variation, is the baseline — not an advantage. So where does *your* edge live?
+> If the AI is genuinely good at running your work, it's equally good at running everyone else's. Generic competence, with no variation, is the baseline – not an advantage. So where does *your* edge live?
 
-The edge isn't a trick or a tool — it's your **judgement**: taste, experience, and critical thinking. It looks like all you're doing is *adding context* to the AI; you're actually adding the one thing no model can average. So make yours different — the generic version is the one your competitors already have.
+The edge isn't a trick or a tool – it's your **judgement**: taste, experience, and critical thinking. It looks like all you're doing is *adding context* to the AI; you're actually adding the one thing no model can average. So make yours different – the generic version is the one your competitors already have.
 
 The day builds one answer to that question, applied twice:
 
-- **The morning** builds the judgement at the level of *your own work* — directing AI well, judging how far to trust any output, and redesigning a real workflow so AI handles what it does well while your thinking stays in charge.
-- **The afternoon** lifts the same judgement to *delivery* — how to scope, lead and ship an AI project without the predictable failures, designing human checkpoints in from the start rather than bolting them on after something goes wrong.
+- **The morning** builds the judgement at the level of *your own work* – directing AI well, judging how far to trust any output, and redesigning a real workflow so AI handles what it does well while your thinking stays in charge.
+- **The afternoon** lifts the same judgement to *delivery* – how to scope, lead and ship an AI project without the predictable failures, designing human checkpoints in from the start rather than bolting them on after something goes wrong.
 
-The connective tissue is the **trust tool** — a simple grid (Average/Precise × Small/Large) that turns "where does a human stay in the loop?" into a question you can actually answer. You learn it once, in the morning, at the task level. You reuse it, in the afternoon, at the project level. Same grid, two scales.
+The connective tissue is the **trust tool** – a simple grid (Average/Precise × Small/Large) that turns "where does a human stay in the loop?" into a question you can actually answer. You learn it once, in the morning, at the task level. You reuse it, in the afternoon, at the project level. Same grid, two scales.
 
 ## What you'll leave with
 
-- **Reusable decision tools** — the trust tool, RTCF, the five differences, Scale/Pivot/Kill. Tool-agnostic; they don't expire when the next model ships.
+- **Reusable decision tools** – the trust tool, RTCF, the five differences, Scale/Pivot/Kill. Tool-agnostic; they don't expire when the next model ships.
 - **A redesigned workflow** from your own role, ready to trial.
-- **A project design** — scope, roadmap, checkpoints, risk — for a real scenario.
+- **A project design** – scope, roadmap, checkpoints, risk – for a real scenario.
 - **A personal action plan** for the week, month, and quarter.
 
 ## How the day runs
 
 | Time | Block |
 |---|---|
-| 9:00–10:30 | **The average, the tool, the edge** — foundations + the trust tool |
-| 11:00–12:30 | **Using AI well, yourself** — prompting, workflow redesign |
-| 1:15–2:30 | **Why AI delivery is different** — the five differences |
-| 3:00–4:00 | **Designing the human in, then shipping** — checkpoints, roadmap, go/no-go |
+| 9:00–10:30 | **The average, the tool, the edge** – foundations + the trust tool |
+| 11:00–12:30 | **Using AI well, yourself** – prompting, workflow redesign |
+| 1:15–2:30 | **Why AI delivery is different** – the five differences |
+| 3:00–4:00 | **Designing the human in, then shipping** – checkpoints, roadmap, go/no-go |
 | 4:00–4:30 | **The edge that's left to humans** + your action plan |
 
 :::: {.callout-note}

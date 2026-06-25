@@ -41,7 +41,7 @@ For anyone responsible for AI risk and governance. Informed by recent AI scandal
 
 Each masterclass is a complete, standalone day. But they're designed to complement one another:
 
-- **The Human Edge** (this course) builds the individual fluency *and* the project-delivery judgement the others draw on — from your first prompt to a project that ships.
+- **The Human Edge** (this course) builds the individual fluency *and* the project-delivery judgement the others draw on – from your first prompt to a project that ships.
 - **AI in Strategy** decides *which* AI initiatives deserve investment.
 - **Ethics of Artificial Intelligence** runs *across* all of them: the governance, risk and responsibility lens every AI initiative needs.
 

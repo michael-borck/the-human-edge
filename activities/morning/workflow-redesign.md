@@ -1,11 +1,11 @@
 ---
 title: "Redesign your workflow"
-description: "Map one real task from your role, then put AI where it helps — and keep your judgement where it counts. The morning's main takeaway."
+description: "Map one real task from your role, then put AI where it helps – and keep your judgement where it counts. The morning's main takeaway."
 ---
 
 # Redesign your workflow
 
-Pick **one task you do repeatedly** — something you own, that takes real time. You'll map it, judge each step against the trust tool, and redesign it so AI handles what it does well while your judgement stays in charge.
+Pick **one task you do repeatedly** – something you own, that takes real time. You'll map it, judge each step against the trust tool, and redesign it so AI handles what it does well while your judgement stays in charge.
 
 ## 1. Name the task
 
@@ -54,5 +54,5 @@ Pick **one step** to trial with AI this week. What will you try, and how will yo
 ………………………………………………………………………………………………
 
 :::: {.callout-tip}
-The point isn't "use AI more." It's *use AI deliberately, exactly where it belongs* — and protect the steps where your judgement is the value.
+The point isn't "use AI more." It's *use AI deliberately, exactly where it belongs* – and protect the steps where your judgement is the value.
 ::::

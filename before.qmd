@@ -1,6 +1,6 @@
 ---
 title: "Readings"
-subtitle: "Three short reads — the shared language and core ideas behind the day."
+subtitle: "Three short reads – the shared language and core ideas behind the day."
 listing:
   contents: "readings/*.qmd"
   type: default
@@ -9,7 +9,7 @@ listing:
   date-format: ""
 ---
 
-You don't need any technical background for this masterclass, and you don't need to read these beforehand — read them whenever you like: to warm up before we start, to go deeper on a concept during the day, or to revisit afterwards. They walk from *what AI is*, to *when to trust it*, to *why delivering an AI project is different*.
+You don't need any technical background for this masterclass, and you don't need to read these beforehand – read them whenever you like: to warm up before we start, to go deeper on a concept during the day, or to revisit afterwards. They walk from *what AI is*, to *when to trust it*, to *why delivering an AI project is different*.
 
 :::: {#listing}
 ::::

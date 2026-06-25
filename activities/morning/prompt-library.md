@@ -5,17 +5,17 @@ description: "Turn RTCF (Role · Task · Context · Format) into a starter set o
 
 # Your prompt library
 
-RTCF isn't a trick — it's being clear about what you actually want. Use this sheet to build a working set of prompts for tasks you genuinely do. Most prompts need all four only when the work matters; keep it lighter for quick tasks.
+RTCF isn't a trick – it's being clear about what you actually want. Use this sheet to build a working set of prompts for tasks you genuinely do. Most prompts need all four only when the work matters; keep it lighter for quick tasks.
 
 ## The framework
 
-- **R — Role:** who should the AI be? (e.g. "a sceptical senior reviewer", "a plain-English editor")
-- **T — Task:** what exactly should it do? (one clear verb)
-- **C — Context:** what does it need to know? (**this is where your edge enters** — the specifics only you hold)
-- **F — Format:** how should the output look? (length, structure, tone)
+- **R – Role:** who should the AI be? (e.g. "a sceptical senior reviewer", "a plain-English editor")
+- **T – Task:** what exactly should it do? (one clear verb)
+- **C – Context:** what does it need to know? (**this is where your edge enters** – the specifics only you hold)
+- **F – Format:** how should the output look? (length, structure, tone)
 
 :::: {.callout-tip}
-**When does RTCF matter most?** The scaffolding (Role, Task, Format) earns its keep on weaker or self-hosted models that need structure spelled out. A frontier model follows clear, natural instructions well — if you brief people well, you're already most of the way there. The part that *always* matters is **Context**: the specifics only you hold. No model supplies that for you.
+**When does RTCF matter most?** The scaffolding (Role, Task, Format) earns its keep on weaker or self-hosted models that need structure spelled out. A frontier model follows clear, natural instructions well – if you brief people well, you're already most of the way there. The part that *always* matters is **Context**: the specifics only you hold. No model supplies that for you.
 ::::
 
 ## Your prompts

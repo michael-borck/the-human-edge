@@ -33,7 +33,7 @@ in `course-bot.html`.
 
 ## Rebuild (when course material changes)
 Stage the student-facing files into a folder (macOS: delete `._*` AppleDouble
-files first — they pollute the knowledge base), then:
+files first – they pollute the knowledge base), then:
 
 ```
 find _botstash-staging -name '._*' -delete

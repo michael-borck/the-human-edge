@@ -258,158 +258,158 @@ def close_deck():
 
 # ---------- build ----------
 cover()
-resources("Before we begin — get connected", "Check you can open all three.", [
-    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png", "Today only — gone after the course."),
-    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png", "Yours to keep — before, during, after."),
+resources("Before we begin – get connected", "Check you can open all three.", [
+    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png", "Today only – gone after the course."),
+    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png", "Yours to keep – before, during, after."),
     ("RetailFlow portal", "https://retailflow.eduserver.au", "qr-retailflow.png", "This afternoon's sprints · access code: pilot2024"),
 ])
 schedule("The day.", [
-    ("9:00–10:30", "The average, the tool, the edge — foundations + the trust tool"),
+    ("9:00–10:30", "The average, the tool, the edge – foundations + the trust tool"),
     ("10:30–11:00", "Morning tea"),
-    ("11:00–12:30", "Using AI well — RTCF, the two-pass demo, workflow redesign"),
+    ("11:00–12:30", "Using AI well – RTCF, the two-pass demo, workflow redesign"),
     ("12:30–1:15", "Lunch"),
-    ("1:15–2:30", "Why AI delivery is different — the five differences"),
+    ("1:15–2:30", "Why AI delivery is different – the five differences"),
     ("2:30–3:00", "Afternoon tea"),
-    ("3:00–4:00", "Designing the human in — the three sprints + go/no-go"),
+    ("3:00–4:00", "Designing the human in – the three sprints + go/no-go"),
     ("4:00–4:30", "The edge that's left to humans + your action plan"),
 ])
 quote("The provocation we'll spend the day on",
-      "If the AI is good at running your work, it's good at running everyone else's. Generic competence is the baseline — not the advantage.",
+      "If the AI is good at running your work, it's good at running everyone else's. Generic competence is the baseline – not the advantage.",
       "So where does your edge live?")
 grid("Today", "One idea. Two scales.", None,
      [("MORNING", "The judgement, at the level of your own work: the trust tool, RTCF, the two-pass demo."),
       ("AFTERNOON", "The same judgement, lifted to delivery: the five differences, human-in-the-loop, the go/no-go.")],
-     footleft="The trust tool — taught once, reused at project scale")
+     footleft="The trust tool – taught once, reused at project scale")
 section(VERM, "Part one", ["THE AVERAGE,", "THE TOOL,", "YOUR EDGE."],
-        "Personal fluency — the judgement that lasts after the next model ships.")
+        "Personal fluency – the judgement that lasts after the next model ships.")
 grid("A quick note on scope", "AI is bigger than this.", "Today is one slice.",
-     [("THE WHOLE FIELD", "Machine learning, computer vision, audio, CNNs, robotics, forecasting — decades of work, far beyond chatbots."),
-      ("TODAY'S FOCUS", "Generative AI — models that produce text, images and code. The part reshaping everyday work right now, and the part you'll use at your desk.")],
+     [("THE WHOLE FIELD", "Machine learning, computer vision, audio, CNNs, robotics, forecasting – decades of work, far beyond chatbots."),
+      ("TODAY'S FOCUS", "Generative AI – models that produce text, images and code. The part reshaping everyday work right now, and the part you'll use at your desk.")],
      footleft="The judgement we build here transfers across the whole field")
 concept("What AI actually is", "It predicts the next word.",
         "Autocomplete, scaled up. Trained on billions of pages, it learned what tends to follow what. The result looks like understanding. It's pattern-matching.",
         "autocomplete-on-steroids.jpg")
 concept("The one mental model to keep", "A convincing average.",
-        "Fluent, plausible, usually about-right. But \"about right\" and \"exactly right\" are not the same — and knowing which you need is the whole game.",
+        "Fluent, plausible, usually about-right. But \"about right\" and \"exactly right\" are not the same – and knowing which you need is the whole game.",
         "convincing-average.jpg")
 listslide("Why it's brilliant at some things", "Brilliant here.",
           ["Drafting and writing", "Summarising documents", "Formatting and transforming",
            "Brainstorming", "Explaining concepts in simpler terms", "Finding patterns in data"],
           intro="Tasks where \"the most plausible version\" is exactly what you want.")
 listslide("…and quietly unreliable at others", "Quietly wrong there.",
-          ["Factual accuracy — plausible text, not verified truth", "Precise figures and calculations",
-           "Multi-step logical reasoning", "Your context — it doesn't know your company or politics",
+          ["Factual accuracy – plausible text, not verified truth", "Precise figures and calculations",
+           "Multi-step logical reasoning", "Your context – it doesn't know your company or politics",
            "Ethical judgement"],
           intro="Tasks that need a single correct answer it can't verify.")
-concept("Not a bug — a property", "Confident. Wrong. Same polish.",
+concept("Not a bug – a property", "Confident. Wrong. Same polish.",
         "It never says \"I don't know.\" The fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.",
         "confident-nonsense.jpg")
 concept("The spine of the day", "The trust tool.",
-        "Two questions, four corners — lean in where 'about right' is fine; keep a human in the loop where exactly-right meets high stakes.",
+        "Two questions, four corners – lean in where 'about right' is fine; keep a human in the loop where exactly-right meets high stakes.",
         "trust-tool-matrix.png")
 grid("Two questions, four corners", "Average or precise? Small or large?", None,
-     [("AVERAGE + SMALL", "Lean in. AI's home turf — let it run."),
+     [("AVERAGE + SMALL", "Lean in. AI's home turf – let it run."),
       ("AVERAGE + LARGE", "Lean in, with a glance. Sanity-check before it goes out."),
       ("PRECISE + SMALL", "Use, then verify. Confirm the specifics."),
       ("PRECISE + LARGE", "Human in the loop. A person owns the decision.")],
      cols=2)
 feature("The trust tool, on real tasks", "Average or precise? Small or large?",
-        "Drafting an internal email. Average is fine, stakes small — lean in.\nBoard-paper figures. Precision required, stakes large — a human owns every number.\nSummarising fifty complaints for themes. Lean in for the themes, then skim for the one complaint the AI smoothed away.")
-activity("20 min", "Exercise 1 — the AI tool test drive",
-         "Pick a real, small task. Run it through an AI tool. Judge the output with the trust tool — average or precise? small or large stakes? — and spot the confidently-wrong bit. (Worksheet: in your workbook.)")
+        "Drafting an internal email. Average is fine, stakes small – lean in.\nBoard-paper figures. Precision required, stakes large – a human owns every number.\nSummarising fifty complaints for themes. Lean in for the themes, then skim for the one complaint the AI smoothed away.")
+activity("20 min", "Exercise 1 – the AI tool test drive",
+         "Pick a real, small task. Run it through an AI tool. Judge the output with the trust tool – average or precise? small or large stakes? – and spot the confidently-wrong bit. (Worksheet: in your workbook.)")
 
-feature("Exercise 1 — the AI tool test drive", "Same task. Judge the result with the trust tool.",
-        "Pick a real, small task from your work — an email, a summary, a first draft. Run it through an AI tool. Look at the output: where on the grid does this task sit? Is it 'about right' or does it need exactness? Where would it be confidently wrong? Share one place it was useful, one place it was off. There's no 'best' tool — never assume the first output is ready to use.")
+feature("Exercise 1 – the AI tool test drive", "Same task. Judge the result with the trust tool.",
+        "Pick a real, small task from your work – an email, a summary, a first draft. Run it through an AI tool. Look at the output: where on the grid does this task sit? Is it 'about right' or does it need exactness? Where would it be confidently wrong? Share one place it was useful, one place it was off. There's no 'best' tool – never assume the first output is ready to use.")
 brk("break-morning-tea.jpg", "10:30", "Morning tea", "Back at 11:00")
 wide("How to talk to AI", "The conversation loop.", "conversation-loop.png",
      "Brainstorm → Ideate → Iterate → Amplify → Repeat. You stay in the conversation.")
 activity("25 min", "Build your prompt library (RTCF)",
          "For three real tasks: write the naive version, then rebuild with RTCF. Context is where your edge enters. (Worksheet: Your prompt library.)")
 
-grid("Talking to AI well", "RTCF — two halves.", None,
+grid("Talking to AI well", "RTCF – two halves.", None,
      [("R · T · F  SCAFFOLDING", "Weaker & self-hosted models need it spelled out. A frontier model infers it from clear writing."),
-      ("C  IS YOUR JUDGEMENT", "We call it Context — but it's really your taste, experience & critical thinking. The one thing no model supplies. So make yours different.")],
+      ("C  IS YOUR JUDGEMENT", "We call it Context – but it's really your taste, experience & critical thinking. The one thing no model supplies. So make yours different.")],
      footleft="The durable skill: being clear about what you want")
 feature("Before & after", "Unusable. Then sendable.",
-        "Without: \"Write an email about the project delay.\"\nWith RTCF: a senior PM, professional & empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words — acknowledge → explain → new date → recommit.\nWe call it Context — really, it's your judgement going in.")
-activity("15 min", "The two-pass demo — live",
+        "Without: \"Write an email about the project delay.\"\nWith RTCF: a senior PM, professional & empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words – acknowledge → explain → new date → recommit.\nWe call it Context – really, it's your judgement going in.")
+activity("15 min", "The two-pass demo – live",
          "One task, run twice. Pass 1: naive → slick, identical for everyone. Pass 2: add your edge → it gets a soul. Let the room shout the edge inputs.")
 
-concept("The money moment — live", "Add your edge. It gets a soul.",
+concept("The money moment – live", "Add your edge. It gets a soul.",
         "Pass 1: a naive prompt → slick, correct, identical for everyone. Pass 2: layer in what only you hold. Watch the output turn yours.",
         "two-pass-demo.jpg")
 grid("Push back on AI output", "VET: verify, explain, test.", None,
-     [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations — AI fabricates references routinely."),
+     [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations – AI fabricates references routinely."),
       ("EXPLAIN", "Can I say this in my own words? If you can't rephrase it, you're holding words, not understanding."),
       ("TEST", "Does it hold up? Play devil's advocate, check the edge cases, ask 'what if?'"),],
      cols=3, footleft="The trust tool says when to check; VET says how.  companion site → Go deeper")
-activity("25 min", "Exercise 2 — redesign your workflow",
+activity("25 min", "Exercise 2 – redesign your workflow",
          "Pick a task you own. Map its steps, judge each with the trust tool, redesign so AI handles the average and you keep the high-stakes parts. (Worksheet: Redesign your workflow.)")
 
-feature("Exercise 2 — redesign your workflow", "Redesign one workflow.",
-        "Pick a task you own. List its steps. Judge each with the trust tool — where does AI genuinely help, where must your judgement stay in charge? Redesign so AI handles the average and you keep the high-stakes parts. You leave with something to trial next week.")
+feature("Exercise 2 – redesign your workflow", "Redesign one workflow.",
+        "Pick a task you own. List its steps. Judge each with the trust tool – where does AI genuinely help, where must your judgement stay in charge? Redesign so AI handles the average and you keep the high-stakes parts. You leave with something to trial next week.")
 feature("Where we are by lunch", "A mental model, a grid, a method.",
-        "AI produces a convincing average. The trust tool tells you when to lean in. RTCF directs it well — and Context is the part that survives any model. One question for the afternoon: if this is how I trust AI on a single task, how do I trust it across a whole project?")
+        "AI produces a convincing average. The trust tool tells you when to lean in. RTCF directs it well – and Context is the part that survives any model. One question for the afternoon: if this is how I trust AI on a single task, how do I trust it across a whole project?")
 brk("break-lunch.jpg", "12:30", "Lunch", "Back at 1:15")
 section(INK, "Part two", ["WHY AI", "DELIVERY IS", "DIFFERENT."],
-        "You're the delivery lead. Ship one funded initiative — without the predictable failures.")
+        "You're the delivery lead. Ship one funded initiative – without the predictable failures.")
 feature("A quick reminder before we go on", "This applies beyond text.",
-        "This morning was generative AI. But the five differences aren't LLM-specific — they describe any AI project. A vision system is non-deterministic too; an audio model's data is discovered, not ordered; any AI output — image, sound, prediction — needs a human checkpoint where the stakes are high. The judgement you build this afternoon travels across the whole field: CNNs, audio, ML, all of it.")
+        "This morning was generative AI. But the five differences aren't LLM-specific – they describe any AI project. A vision system is non-deterministic too; an audio model's data is discovered, not ordered; any AI output – image, sound, prediction – needs a human checkpoint where the stakes are high. The judgement you build this afternoon travels across the whole field: CNNs, audio, ML, all of it.")
 quote("The fair question",
       "I've delivered projects before. What's actually different about an AI project?",
-      "They don't fail more often. They fail differently — in places you didn't see coming.")
+      "They don't fail more often. They fail differently – in places you didn't see coming.")
 concept("Five ways AI breaks the rules you usually lead by", "They fail differently.",
-        "For each assumption a normal project relies on — why AI breaks it, and the leadership move it forces.",
+        "For each assumption a normal project relies on – why AI breaks it, and the leadership move it forces.",
         "five-differences-summary.png")
 concept("Difference 01", "\"Done\" won't hold still.",
-        "Ask twice, get two answers. There's no single correct output — only a spread. Stop chasing a fixed spec; decide what \"good enough\" looks like for this use.",
+        "Ask twice, get two answers. There's no single correct output – only a spread. Stop chasing a fixed spec; decide what \"good enough\" looks like for this use.",
         "done-cant-be-specified.jpg")
 concept("Difference 02", "The demo is a trap.",
-        "It shows the happy path. The messy real-world cases are where it falls over. Treat the demo as the start of the hard part — not the end.",
+        "It shows the happy path. The messy real-world cases are where it falls over. Treat the demo as the start of the hard part – not the end.",
         "demo-is-a-trap.jpg")
 concept("Difference 03", "The data is the uncertainty.",
-        "You don't order it; you discover it — its gaps, biases and surprises show up only when you work with it. Run delivery as discovery, and build the learning into the plan.",
+        "You don't order it; you discover it – its gaps, biases and surprises show up only when you work with it. Run delivery as discovery, and build the learning into the plan.",
         "data-is-the-uncertainty.jpg")
 concept("Difference 04", "Verification is the product.",
-        "Outputs vary and can be confidently wrong. The value lives in how you check them, and where a human stays in the loop. Design the checking deliberately — make it part of what you ship.",
+        "Outputs vary and can be confidently wrong. The value lives in how you check them, and where a human stays in the loop. Design the checking deliberately – make it part of what you ship.",
         "verification-is-the-product.jpg")
 concept("Difference 05", "Generic is the baseline, not the edge.",
-        "When every rival runs the same models, the model isn't your advantage — anyone can have it. Compete on the human variation a rival's identical model can't reproduce.",
+        "When every rival runs the same models, the model isn't your advantage – anyone can have it. Compete on the human variation a rival's identical model can't reproduce.",
         "where-your-edge-lives.jpg")
 quote("The thread through all five",
-      "AI gives you something fluent and roughly-right, fast — then asks you to decide when roughly-right is good enough, and who checks when it isn't.",
+      "AI gives you something fluent and roughly-right, fast – then asks you to decide when roughly-right is good enough, and who checks when it isn't.",
       "A leadership question. Which is why it lands on your desk.")
 feature("Your project · RetailFlow", "You're the delivery lead.",
-        "The board funded one AI initiative. Ship it without the predictable failures. Carry it through three moves — scoping and stress-testing it by interviewing the RetailFlow team: live chatbots with opinions, who disagree, and won't do your job for you.   access code: pilot2024")
-grid("Before you scope it — are you ready?", "The AI readiness check.", None,
+        "The board funded one AI initiative. Ship it without the predictable failures. Carry it through three moves – scoping and stress-testing it by interviewing the RetailFlow team: live chatbots with opinions, who disagree, and won't do your job for you.   access code: pilot2024")
+grid("Before you scope it – are you ready?", "The AI readiness check.", None,
      [("DATA", "Do we have it, and is it good enough? You find out by working with it, not by asking. Who owns it? What's missing?"),
       ("ORGANISATION", "Who owns this, who's affected, who'll resist? Is the sponsor still bought in?"),
-      ("BUILD · BUY · HOST", "How do we deliver? Buy a product, build it, or self-host — each has different cost, lock-in and governance.")],
-     cols=3, footleft="Low readiness doesn't kill it — it reshapes the scope.   companion site → Delivery frameworks")
-activity("45 min", "Sprint 1 — scope it against reality",
+      ("BUILD · BUY · HOST", "How do we deliver? Buy a product, build it, or self-host – each has different cost, lock-in and governance.")],
+     cols=3, footleft="Low readiness doesn't kill it – it reshapes the scope.   companion site → Delivery frameworks")
+activity("45 min", "Sprint 1 – scope it against reality",
          "You're the delivery lead for one RetailFlow initiative. Interview Priya & Marcus. Produce a scoped objective, data needs, the trust-tool split, and a defined 'good enough'. (Worksheet: Sprint 1. Access code: pilot2024.)")
 
 sprint("01", "Scope it against reality", "Priya (Data) & Marcus (CIO)",
        "Scoped objectives, data requirements, a defined 'good enough'",
-       "Reconcile 'move fast' with 'the data isn't ready.' Marcus pushes speed; Priya gives the honest, data-grounded timeline. Your scope is where you reconcile the two — and you'll defend it later.")
+       "Reconcile 'move fast' with 'the data isn't ready.' Marcus pushes speed; Priya gives the honest, data-grounded timeline. Your scope is where you reconcile the two – and you'll defend it later.")
 brk("break-afternoon-tea.jpg", "2:30", "Afternoon tea", "Back at 3:00")
-activity("45 min", "Sprint 2 — stakeholders & human-in-the-loop",
-         "Continue your initiative. Interview Emma, Tom & David. Build a stakeholder plan and design the human-in-the-loop checkpoints — each named, marked builds-vs-consumes.")
+activity("45 min", "Sprint 2 – stakeholders & human-in-the-loop",
+         "Continue your initiative. Interview Emma, Tom & David. Build a stakeholder plan and design the human-in-the-loop checkpoints – each named, marked builds-vs-consumes.")
 
 sprint("02", "Stakeholders & human-in-the-loop", "Emma (MD), Tom (frontline) & David (CFO)",
        "A stakeholder plan and a human-in-the-loop checkpoint design",
-       "Decide where a human must stay in charge. This is the trust tool and difference 4 in action: design the checking deliberately — where does verification sit, where must a person own the decision?")
-activity("45 min", "Sprint 3 — roadmap, risk & the go/no-go",
-         "Build the delivery roadmap with gates and a risk register. Then make the call — Scale, Pivot, or Kill — and defend it. (Crisis element if time allows.)")
+       "Decide where a human must stay in charge. This is the trust tool and difference 4 in action: design the checking deliberately – where does verification sit, where must a person own the decision?")
+activity("45 min", "Sprint 3 – roadmap, risk & the go/no-go",
+         "Build the delivery roadmap with gates and a risk register. Then make the call – Scale, Pivot, or Kill – and defend it. (Crisis element if time allows.)")
 
 sprint("03", "Roadmap, risk & the go/no-go", "Build it, then defend it",
        "A delivery roadmap with gates, a risk register, the Scale / Pivot / Kill call",
-       "Build the roadmap with go/no-go gates and a risk register. Then make the call: Scale, Pivot, or Kill. The question isn't 'is it perfect?' — it's whether the evidence justifies continuing.")
+       "Build the roadmap with go/no-go gates and a risk register. Then make the call: Scale, Pivot, or Kill. The question isn't 'is it perfect?' – it's whether the evidence justifies continuing.")
 feature("How to make the go/no-go defensible", "The assumptions register.",
-        "Every plan rests on assumptions. Name the 3-5 your plan depends on, and how sensitive each is. Then the call writes itself: SCALE if the load-bearing assumptions are holding; PIVOT if one is shaky-but-fixable (change the shape, keep the intent); KILL if a core assumption has broken. The register is what lets you kill early — with evidence, not gut.   companion site → Delivery frameworks")
+        "Every plan rests on assumptions. Name the 3-5 your plan depends on, and how sensitive each is. Then the call writes itself: SCALE if the load-bearing assumptions are holding; PIVOT if one is shaky-but-fixable (change the shape, keep the intent); KILL if a core assumption has broken. The register is what lets you kill early – with evidence, not gut.   companion site → Delivery frameworks")
 
 concept("The go / no-go call", "Scale. Pivot. Kill.",
-        "At each gate the question isn't \"is it perfect?\" — it's whether the evidence justifies continuing. Killing early is success, not failure.",
+        "At each gate the question isn't \"is it perfect?\" – it's whether the evidence justifies continuing. Killing early is success, not failure.",
         "scale-pivot-kill.jpg")
 grid("What you've built by 4:00", "A delivery design, not a theory.", None,
      [("SCOPE", "Objectives, data requirements, a defined \"good enough.\""),
@@ -417,21 +417,21 @@ grid("What you've built by 4:00", "A delivery design, not a theory.", None,
       ("CHECKPOINTS", "A stakeholder plan and human-in-the-loop design."),
       ("RISK", "A register and a Scale / Pivot / Kill call you can defend.")])
 concept("Back to the provocation", "The edge is your judgement.",
-        "It looks like all we're doing is adding context. We're not — we're adding your judgement: taste, experience, critical thinking. Averages converge; yours diverges. Make yours different — the generic version is the one your competitors already have.",
+        "It looks like all we're doing is adding context. We're not – we're adding your judgement: taste, experience, critical thinking. Averages converge; yours diverges. Make yours different – the generic version is the one your competitors already have.",
         "where-your-edge-lives.jpg")
 grid("What you do next", "Your action plan.", None,
      [("WEEK", "Trial your redesigned workflow. Run one task through the trust tool first."),
       ("MONTH", "Make RTCF a habit. Start one conversation about where a human stays in the loop."),
-      ("QUARTER", "Scope one real initiative — and defend the Scale / Pivot / Kill call.")],
+      ("QUARTER", "Scope one real initiative – and defend the Scale / Pivot / Kill call.")],
      cols=3)
 grid("What you leave with", "Tools that don't expire.", None,
-     [("DECISION TOOLS", "The trust tool, RTCF, the five differences, Scale / Pivot / Kill — any platform, any model."),
+     [("DECISION TOOLS", "The trust tool, RTCF, the five differences, Scale / Pivot / Kill – any platform, any model."),
       ("YOUR WORK", "A redesigned workflow and a scoped project design you can act on."),
       ("A PLAN", "Specific commitments for the week, month and quarter."),
-      ("GO DEEPER", "michael-borck.github.io/the-human-edge — incl. the two-page voice method.")])
+      ("GO DEEPER", "michael-borck.github.io/the-human-edge – incl. the two-page voice method.")])
 
-feature("Go deeper — the two-chat workflow", "Separate thinking from building.",
-        "Session 1 — Thinking Chat: explore, challenge, follow tangents, find your real question (messy by design). Then stop: read what emerged, decide what matters, write a focused brief. Session 2 — Build Chat: produce the output from that brief. You don't copy-paste between them — that curation is where your judgement lives. Neither session has the full picture; only you hold both.")
+feature("Go deeper – the two-chat workflow", "Separate thinking from building.",
+        "Session 1 – Thinking Chat: explore, challenge, follow tangents, find your real question (messy by design). Then stop: read what emerged, decide what matters, write a focused brief. Session 2 – Build Chat: produce the output from that brief. You don't copy-paste between them – that curation is where your judgement lives. Neither session has the full picture; only you hold both.")
 
 close_deck()
 

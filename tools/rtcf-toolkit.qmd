@@ -1,6 +1,6 @@
 ---
 title: "The RTCF toolkit"
-subtitle: "Build a prompt, analyse one, or start from a template. No AI needed — this runs in your browser."
+subtitle: "Build a prompt, analyse one, or start from a template. No AI needed – this runs in your browser."
 toc: false
 ---
 
@@ -65,17 +65,17 @@ toc: false
 
 <!-- BUILD -->
 <div class="rtcf-pane active" data-pane="build">
-  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Fill the four parts of RTCF — <strong>Role · Task · Context · Format</strong> — and we'll assemble them into one prompt you can paste into any AI. Remember: <em>Context</em> is where your edge enters.</p>
-  <label>Role — who should the AI be?</label>
+  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Fill the four parts of RTCF – <strong>Role · Task · Context · Format</strong> – and we'll assemble them into one prompt you can paste into any AI. Remember: <em>Context</em> is where your edge enters.</p>
+  <label>Role – who should the AI be?</label>
   <div class="rtcf-hint">e.g. "a sceptical senior reviewer", "a plain-English editor"</div>
   <input type="text" id="pb-role" placeholder="A senior project manager, professional and empathetic">
-  <label>Task — what exactly should it do?</label>
+  <label>Task – what exactly should it do?</label>
   <div class="rtcf-hint">one clear verb</div>
   <input type="text" id="pb-task" placeholder="Write a client email explaining a 2-week delivery delay">
-  <label>Context — what does it need to know?</label>
-  <div class="rtcf-hint">the specifics only you hold — this is your edge</div>
+  <label>Context – what does it need to know?</label>
+  <div class="rtcf-hint">the specifics only you hold – this is your edge</div>
   <textarea id="pb-context" placeholder="Delay caused by a vendor integration. The client values transparency and has been understanding. New delivery date is March 15."></textarea>
-  <label>Format — how should the output look?</label>
+  <label>Format – how should the output look?</label>
   <div class="rtcf-hint">length, structure, tone</div>
   <input type="text" id="pb-format" placeholder="Under 200 words. Acknowledge → explain → new date → recommit.">
   <button class="rtcf-btn" onclick="rtcfBuild()">Assemble prompt →</button>
@@ -88,7 +88,7 @@ toc: false
 
 <!-- ANALYSE -->
 <div class="rtcf-pane" data-pane="analyse">
-  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Paste any prompt and we'll score it against RTCF — which parts are present, which are missing. It's a quick heuristic (keyword-based), not an AI, so it's a nudge, not a verdict.</p>
+  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Paste any prompt and we'll score it against RTCF – which parts are present, which are missing. It's a quick heuristic (keyword-based), not an AI, so it's a nudge, not a verdict.</p>
   <label>Prompt to analyse</label>
   <textarea id="an-input" placeholder="Paste a prompt here…" style="min-height:110px;"></textarea>
   <button class="rtcf-btn" onclick="rtcfAnalyse()">Analyse →</button>
@@ -152,9 +152,9 @@ window.rtcfAnalyse = function(){
   function check(kw, name){
     var m = kw.filter(function(k){return lp.indexOf(k)>-1;});
     var st = m.length>=2 ? 'present' : (m.length===1 ? 'partial' : 'missing');
-    var fb = m.length>=2 ? ('Strong — found: ' + m.slice(0,3).join(', ') + '.')
+    var fb = m.length>=2 ? ('Strong – found: ' + m.slice(0,3).join(', ') + '.')
            : m.length===1 ? ('Some present ("' + m[0] + '"), but could be more specific.')
-           : ('No clear ' + name + ' detected — consider adding it.');
+           : ('No clear ' + name + ' detected – consider adding it.');
     return {st:st, fb:fb};
   }
   var role = check(['you are','act as','as a','as an','expert','specialist','advisor','reviewer','manager','analyst','editor','consultant'],'Role');
@@ -164,10 +164,10 @@ window.rtcfAnalyse = function(){
   var sc = {present:2,partial:1,missing:0};
   var tot = sc[role.st]+sc[task.st]+sc[context.st]+sc[format.st];
   var pct = Math.round(tot/8*100);
-  var fb = pct>=80?'Excellent — a well-structured RTCF prompt.'
-         : pct>=60?'Good — most RTCF elements present; small tweaks would help.'
+  var fb = pct>=80?'Excellent – a well-structured RTCF prompt.'
+         : pct>=60?'Good – most RTCF elements present; small tweaks would help.'
          : pct>=40?'A start, but key RTCF elements are missing.'
-         : 'Needs more structure — adding RTCF will dramatically improve results.';
+         : 'Needs more structure – adding RTCF will dramatically improve results.';
   document.getElementById('an-score').textContent = pct+'%';
   document.getElementById('an-bar').style.width = pct+'%';
   document.getElementById('an-feedback').textContent = fb;
@@ -184,10 +184,10 @@ window.rtcfAnalyse = function(){
 
 (function(){
   var TEMPLATES = [
-    {h:"Devil's advocate", d:"Pressure-test an idea before you commit — make the AI argue against you.",
+    {h:"Devil's advocate", d:"Pressure-test an idea before you commit – make the AI argue against you.",
      t:`You are a sceptical, experienced critic of business plans (R).\nTear apart the following idea and find its three weakest assumptions (T).\n[Your idea + what you know about the market/customer that the AI won't] (C).\nFor each weakness: one sharp question and one thing that would need to be true for it to survive. Numbered list, plain language (F).`},
     {h:"Board of advisors", d:"Get multiple expert perspectives on one decision.",
-     t:`Act as a small advisory panel — a strategist, a finance lead, and an operator (R).\nAnalyse this decision from each of those three perspectives (T).\n[The decision, the constraints, what's at stake] (C).\nThree short sections, one per perspective, each ending with a single recommendation (F).`},
+     t:`Act as a small advisory panel – a strategist, a finance lead, and an operator (R).\nAnalyse this decision from each of those three perspectives (T).\n[The decision, the constraints, what's at stake] (C).\nThree short sections, one per perspective, each ending with a single recommendation (F).`},
     {h:"Draft an email", d:"Turn a rough note into a sendable email in your voice.",
      t:`You are a professional, empathetic communicator writing in my voice (R).\nDraft an email [to whom, about what] (T).\n[The situation, the relationship, the tone this person needs, the outcome I want] (C).\nUnder 150 words. Warm but direct. No corporate filler (F).`},
     {h:"Summarise a document", d:"Pull the signal out of something long.",
@@ -204,7 +204,7 @@ window.rtcfUseTemplate = function(i){
   var tab = document.querySelector('#rtcf-toolkit .rtcf-tab[data-pane="build"]'); tab.click();
   document.getElementById('pb-context').value = window.RTCF_TEMPLATES[i].t;
   document.getElementById('pb-out').className='rtcf-out empty';
-  document.getElementById('pb-out').textContent='Template loaded into Context — edit the bracketed parts, fill Role/Task/Format, then assemble.';
+  document.getElementById('pb-out').textContent='Template loaded into Context – edit the bracketed parts, fill Role/Task/Format, then assemble.';
   document.getElementById('pb-context').scrollIntoView({behavior:'smooth',block:'center'});
 };
 </script>
