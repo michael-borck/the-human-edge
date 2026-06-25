@@ -28,6 +28,7 @@ content/*.tex
 !*.yml
 !*.scss
 !*.sh
+!*.py
 !*.html
 !*.svg
 !*.png
