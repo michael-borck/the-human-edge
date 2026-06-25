@@ -91,9 +91,11 @@ def img_fit(name, maxw, maxh):
 
 
 def img_frame(s, name, l, t, w, h):
-    rect(s, l + 0.14, t + 0.14, w, h, fill=INK)
-    pic = s.shapes.add_picture(str(IMG / name), Inches(l), Inches(t), Inches(w), Inches(h))
-    pic.line.color.rgb = INK; pic.line.width = Pt(1.75); pic.shadow.inherit = False
+    rect(s, l + 0.14, t + 0.14, w, h, fill=INK)              # hard shadow
+    rect(s, l, t, w, h, fill=PAPER2, line=INK, lw=1.75)      # matted frame
+    iw, ih = img_fit(name, w - 0.28, h - 0.28)               # fit, preserve aspect
+    pic = s.shapes.add_picture(str(IMG / name), Inches(l + (w - iw) / 2), Inches(t + (h - ih) / 2), Inches(iw), Inches(ih))
+    pic.shadow.inherit = False
     return pic
 
 
@@ -189,16 +191,6 @@ def sprint(num, title, who, out, body):
     text(s, ML + 2.6, SH - 1.15, CW - 2.6, 0.6, [("→ " + out, dict(font=FS, size=17, italic=True, color=VERM, bold=True))])
 
 
-def graphic(label, title, img_name, caption=None):
-    s, n = newslide(); bignum(s, n); kicker(s, label)
-    text(s, ML, 1.4, CW, 0.9, [(title, dict(font=FS, size=36, color=INK, bold=True))])
-    w, h = img_fit(img_name, 11.2, 4.7)
-    l = (SW - w) / 2; t = 2.5
-    pic = s.shapes.add_picture(str(IMG / img_name), Inches(l), Inches(t), Inches(w), Inches(h))
-    pic.shadow.inherit = False
-    if caption:
-        text(s, ML, SH - 0.7, CW, 0.4, [(caption, dict(font=FM, size=10, color=INKSOFT))], align=PP_ALIGN.CENTER)
-
 
 def brk(img_name, time, label, back):
     s, n = newslide(); bignum(s, n)
@@ -249,8 +241,9 @@ listslide("…and quietly unreliable at others", "Quietly wrong there.",
 concept("Not a bug — a property", "Confident. Wrong. Same polish.",
         "It never says \"I don't know.\" The fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.",
         "confident-nonsense.jpg")
-graphic("The spine of the day", "The trust tool.", "trust-tool-matrix.png",
-        caption="Two questions, four corners — lean in where 'about right' is fine; keep a human in the loop where exactly-right meets high stakes.")
+concept("The spine of the day", "The trust tool.",
+        "Two questions, four corners — lean in where 'about right' is fine; keep a human in the loop where exactly-right meets high stakes.",
+        "trust-tool-matrix.png")
 grid("Two questions, four corners", "Average or precise? Small or large?", None,
      [("AVERAGE + SMALL", "Lean in. AI's home turf — let it run."),
       ("AVERAGE + LARGE", "Lean in, with a glance. Sanity-check before it goes out."),
@@ -281,8 +274,9 @@ section(INK, "Part two", ["WHY AI", "DELIVERY IS", "DIFFERENT."],
 quote("The fair question",
       "I've delivered projects before. What's actually different about an AI project?",
       "They don't fail more often. They fail differently — in places you didn't see coming.")
-graphic("Five ways AI breaks the rules you usually lead by", "They fail differently.", "five-differences-summary.png",
-        caption="For each assumption a normal project relies on — why AI breaks it, and the leadership move.")
+concept("Five ways AI breaks the rules you usually lead by", "They fail differently.",
+        "For each assumption a normal project relies on — why AI breaks it, and the leadership move it forces.",
+        "five-differences-summary.png")
 concept("Difference 01", "\"Done\" won't hold still.",
         "Ask twice, get two answers. There's no single correct output — only a spread. Stop chasing a fixed spec; decide what \"good enough\" looks like for this use.",
         "done-cant-be-specified.jpg")
