@@ -338,6 +338,11 @@ activity("15 min", "The two-pass demo — live",
 concept("The money moment — live", "Add your edge. It gets a soul.",
         "Pass 1: a naive prompt → slick, correct, identical for everyone. Pass 2: layer in what only you hold. Watch the output turn yours.",
         "two-pass-demo.jpg")
+grid("Push back on AI output", "VET: verify, explain, test.", None,
+     [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations — AI fabricates references routinely."),
+      ("EXPLAIN", "Can I say this in my own words? If you can't rephrase it, you're holding words, not understanding."),
+      ("TEST", "Does it hold up? Play devil's advocate, check the edge cases, ask 'what if?'"),],
+     cols=3, footleft="The trust tool says when to check; VET says how.  companion site → Go deeper")
 activity("25 min", "Exercise 2 — redesign your workflow",
          "Pick a task you own. Map its steps, judge each with the trust tool, redesign so AI handles the average and you keep the high-stakes parts. (Worksheet: Redesign your workflow.)")
 
@@ -417,11 +422,6 @@ grid("What you leave with", "Tools that don't expire.", None,
       ("A PLAN", "Specific commitments for the week, month and quarter."),
       ("GO DEEPER", "michael-borck.github.io/the-human-edge — incl. the two-page voice method.")])
 
-grid("Go deeper — push back on AI output", "VET: verify, explain, test.", None,
-     [("VERIFY", "Can I find this independently? Check sources, cross-reference, look up citations — AI fabricates references routinely."),
-      ("EXPLAIN", "Can I say this in my own words? If you can't rephrase it, you're holding words, not understanding."),
-      ("TEST", "Does it hold up? Play devil's advocate, check the edge cases, ask 'what if?'"),],
-     cols=3, footleft="The trust tool says when to check; VET says how.  companion site → Go deeper")
 feature("Go deeper — the two-chat workflow", "Separate thinking from building.",
         "Session 1 — Thinking Chat: explore, challenge, follow tangents, find your real question (messy by design). Then stop: read what emerged, decide what matters, write a focused brief. Session 2 — Build Chat: produce the output from that brief. You don't copy-paste between them — that curation is where your judgement lives. Neither session has the full picture; only you hold both.")
 
