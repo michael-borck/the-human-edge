@@ -25,10 +25,9 @@ echo ">> rendering website…"
 quarto render || { echo "website render failed"; exit 1; }
 
 echo ">> copying slide deck + workbook…"
-# The deck is a hand-built .pptx (scripts/build-deck-pptx.py) exported to PDF
-# via PowerPoint. Regenerate those manually; here we just publish them.
+# The deck is a hand-built .pptx (scripts/build-deck-pptx.py). Regenerate
+# manually; here we just publish it (PPTX only — no deck PDF).
 cp content/the-human-edge-deck.pptx docs/ 2>/dev/null
-cp content/the-human-edge-deck.pdf docs/ 2>/dev/null
 # Participant workbook PDF (built by scripts/build-packet.py) → site root
 cp content/the-human-edge-participant-workbook.pdf docs/ 2>/dev/null
 

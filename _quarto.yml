@@ -37,9 +37,6 @@ website:
       - text: "Slides (PPTX)"
         href: the-human-edge-deck.pptx
         target: _blank
-      - text: "Slides (PDF)"
-        href: the-human-edge-deck.pdf
-        target: _blank
   page-footer:
     border: true
     left: "The Human Edge: *Using and Delivering AI with Judgement*"
