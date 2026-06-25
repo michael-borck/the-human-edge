@@ -36,6 +36,11 @@ Bring your own device and a real task from your role. By lunch you'll have direc
 | **The average, the tool, the edge** | Foundations: what AI is, why it's confidently wrong in predictable places, and the trust tool (Average/Precise × Small/Large). |
 | **Using AI well, yourself** | Task suitability, RTCF prompting, the two-pass demo (generic → with edge), and a workflow redesign from your own role. |
 
+:::: {.callout-tip}
+## Try the RTCF toolkit
+A free, in-browser tool to go with the prompting work: [**build an RTCF prompt**](tools/rtcf-toolkit.html) from its four parts, **analyse** any prompt against RTCF, or start from a template. No sign-up, no AI needed — it runs on the page.
+::::
+
 Bring the morning worksheets (print or fill on your device):
 
 :::: {#morning}

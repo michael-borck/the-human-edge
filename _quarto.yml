@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "readings/*.qmd"
     - "activities/**/*.md"
-    - "handouts/**/*.md"
+    - "tools/*.qmd"
   resources:
     - content/images/og-image.png
 

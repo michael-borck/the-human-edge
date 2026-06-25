@@ -1,0 +1,212 @@
+---
+title: "The RTCF toolkit"
+subtitle: "Build a prompt, analyse one, or start from a template. No AI needed — this runs in your browser."
+toc: false
+---
+
+```{=html}
+<div id="rtcf-toolkit">
+<style>
+#rtcf-toolkit{--paper:#f4efe3;--paper2:#ece5d4;--ink:#181613;--soft:#4a443c;--verm:#e34f29;--ok:#2f7d52;
+  font-family:'Inter',sans-serif;color:var(--ink);max-width:880px;}
+#rtcf-toolkit *{box-sizing:border-box;}
+#rtcf-toolkit .rtcf-tabs{display:flex;gap:0;border-bottom:3px solid var(--ink);margin:6px 0 22px;}
+#rtcf-toolkit .rtcf-tab{flex:1;padding:12px 8px;text-align:center;cursor:pointer;font-weight:600;font-size:14px;
+  background:transparent;border:none;border-bottom:4px solid transparent;margin-bottom:-3px;color:var(--soft);
+  font-family:'JetBrains Mono',monospace;letter-spacing:.04em;text-transform:uppercase;font-size:11px;}
+#rtcf-toolkit .rtcf-tab.active{color:var(--ink);border-bottom-color:var(--verm);}
+#rtcf-toolkit .rtcf-pane{display:none;}
+#rtcf-toolkit .rtcf-pane.active{display:block;}
+#rtcf-toolkit label{display:block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--verm);font-weight:600;margin:14px 0 5px;}
+#rtcf-toolkit .rtcf-hint{color:var(--soft);font-size:12px;margin:-2px 0 6px;}
+#rtcf-toolkit input[type=text],#rtcf-toolkit textarea{width:100%;border:2px solid var(--ink);background:#fff;
+  padding:10px 12px;font-family:'Inter',sans-serif;font-size:14px;border-radius:0;}
+#rtcf-toolkit textarea{min-height:70px;resize:vertical;}
+#rtcf-toolkit .rtcf-btn{font-family:'Inter',sans-serif;font-weight:600;font-size:14px;cursor:pointer;
+  border:2px solid var(--ink);padding:11px 20px;margin-top:16px;background:var(--verm);color:#fff;}
+#rtcf-toolkit .rtcf-btn:hover{background:#c4451f;}
+#rtcf-toolkit .rtcf-btn.ghost{background:#fff;color:var(--ink);}
+#rtcf-toolkit .rtcf-btn.ghost:hover{background:var(--paper2);}
+#rtcf-toolkit .rtcf-out{margin-top:20px;background:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);
+  padding:18px;min-height:60px;white-space:pre-wrap;font-size:14px;line-height:1.55;}
+#rtcf-toolkit .rtcf-out.empty{color:var(--soft);font-style:italic;}
+#rtcf-toolkit .rtcf-row{display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap;}
+/* analyser */
+#rtcf-toolkit .rtcf-score{font-family:'Fraunces',serif;font-weight:900;font-size:40px;line-height:1;color:var(--ink);}
+#rtcf-toolkit .rtcf-scorelabel{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--soft);}
+#rtcf-toolkit .rtcf-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+#rtcf-toolkit .rtcf-card{background:#fff;border:2px solid var(--ink);padding:12px 14px;}
+#rtcf-toolkit .rtcf-card .h{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+#rtcf-toolkit .rtcf-card .let{font-family:'Fraunces',serif;font-weight:900;font-size:20px;color:var(--verm);}
+#rtcf-toolkit .rtcf-card .st{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;font-weight:600;padding:2px 7px;}
+#rtcf-toolkit .rtcf-card.s-present .st{background:#d8efe2;color:var(--ok);}
+#rtcf-toolkit .rtcf-card.s-partial .st{background:#fbe8d6;color:#b06a1f;}
+#rtcf-toolkit .rtcf-card.s-missing .st{background:#f6deda;color:#b23b24;}
+#rtcf-toolkit .rtcf-card .fb{font-size:13px;color:var(--soft);line-height:1.45;}
+#rtcf-toolkit .rtcf-bar{height:8px;background:var(--paper2);border:1px solid var(--ink);margin:14px 0 4px;}
+#rtcf-toolkit .rtcf-barfill{height:100%;width:0;background:var(--verm);transition:width .3s;}
+/* templates */
+#rtcf-toolkit .rtcf-tpl{background:#fff;border:2px solid var(--ink);padding:16px 18px;margin-bottom:14px;}
+#rtcf-toolkit .rtcf-tpl h4{font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin:0 0 6px;}
+#rtcf-toolkit .rtcf-tpl p{font-size:13.5px;color:var(--soft);margin:0 0 10px;line-height:1.5;}
+#rtcf-toolkit .rtcf-tpl code{display:block;white-space:pre-wrap;background:var(--paper2);border:1px solid var(--ink);
+  padding:10px 12px;font-size:13px;font-family:'JetBrains Mono',monospace;line-height:1.5;}
+@media(max-width:560px){#rtcf-toolkit .rtcf-cards{grid-template-columns:1fr;}}
+</style>
+
+<div class="rtcf-tabs">
+  <button class="rtcf-tab active" data-pane="build">Build a prompt</button>
+  <button class="rtcf-tab" data-pane="analyse">Analyse a prompt</button>
+  <button class="rtcf-tab" data-pane="templates">Templates</button>
+</div>
+
+<!-- BUILD -->
+<div class="rtcf-pane active" data-pane="build">
+  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Fill the four parts of RTCF — <strong>Role · Task · Context · Format</strong> — and we'll assemble them into one prompt you can paste into any AI. Remember: <em>Context</em> is where your edge enters.</p>
+  <label>Role — who should the AI be?</label>
+  <div class="rtcf-hint">e.g. "a sceptical senior reviewer", "a plain-English editor"</div>
+  <input type="text" id="pb-role" placeholder="A senior project manager, professional and empathetic">
+  <label>Task — what exactly should it do?</label>
+  <div class="rtcf-hint">one clear verb</div>
+  <input type="text" id="pb-task" placeholder="Write a client email explaining a 2-week delivery delay">
+  <label>Context — what does it need to know?</label>
+  <div class="rtcf-hint">the specifics only you hold — this is your edge</div>
+  <textarea id="pb-context" placeholder="Delay caused by a vendor integration. The client values transparency and has been understanding. New delivery date is March 15."></textarea>
+  <label>Format — how should the output look?</label>
+  <div class="rtcf-hint">length, structure, tone</div>
+  <input type="text" id="pb-format" placeholder="Under 200 words. Acknowledge → explain → new date → recommit.">
+  <button class="rtcf-btn" onclick="rtcfBuild()">Assemble prompt →</button>
+  <div class="rtcf-out empty" id="pb-out">Your assembled RTCF prompt will appear here.</div>
+  <div class="rtcf-row">
+    <button class="rtcf-btn ghost" onclick="rtcfCopy()">Copy to clipboard</button>
+    <button class="rtcf-btn ghost" onclick="rtcfClear()">Clear</button>
+  </div>
+</div>
+
+<!-- ANALYSE -->
+<div class="rtcf-pane" data-pane="analyse">
+  <p style="color:var(--soft);font-size:14.5px;margin:0 0 6px;line-height:1.5;">Paste any prompt and we'll score it against RTCF — which parts are present, which are missing. It's a quick heuristic (keyword-based), not an AI, so it's a nudge, not a verdict.</p>
+  <label>Prompt to analyse</label>
+  <textarea id="an-input" placeholder="Paste a prompt here…" style="min-height:110px;"></textarea>
+  <button class="rtcf-btn" onclick="rtcfAnalyse()">Analyse →</button>
+  <div id="an-result" style="display:none;margin-top:18px;">
+    <div style="display:flex;align-items:baseline;gap:14px;">
+      <div class="rtcf-score" id="an-score">0%</div>
+      <div class="rtcf-scorelabel">RTCF score</div>
+    </div>
+    <div class="rtcf-bar"><div class="rtcf-barfill" id="an-bar"></div></div>
+    <div id="an-feedback" style="color:var(--soft);font-size:14px;margin-bottom:6px;"></div>
+    <div class="rtcf-cards" id="an-cards"></div>
+  </div>
+</div>
+
+<!-- TEMPLATES -->
+<div class="rtcf-pane" data-pane="templates">
+  <p style="color:var(--soft);font-size:14.5px;margin:0 0 14px;line-height:1.5;">Ready-made RTCF prompts for common professional tasks. Hit "use" to load one into the builder.</p>
+  <div id="tpl-list"></div>
+</div>
+
+<script>
+(function(){
+  var T = document.getElementById('rtcf-toolkit');
+  T.querySelectorAll('.rtcf-tab').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      var p = tab.getAttribute('data-pane');
+      T.querySelectorAll('.rtcf-tab').forEach(function(t){t.classList.toggle('active', t===tab);});
+      T.querySelectorAll('.rtcf-pane').forEach(function(pane){pane.classList.toggle('active', pane.getAttribute('data-pane')===p);});
+    });
+  });
+})();
+
+window.rtcfBuild = function(){
+  var v = function(id){return document.getElementById(id).value.trim();};
+  var parts = [];
+  var r=v('pb-role'), t=v('pb-task'), c=v('pb-context'), f=v('pb-format');
+  var out = document.getElementById('pb-out');
+  if(!r && !t && !c && !f){ out.className='rtcf-out empty'; out.textContent='Fill in at least one field, then assemble.'; return; }
+  if(r) parts.push('Role: ' + r);
+  if(t) parts.push('Task: ' + t);
+  if(c) parts.push('Context: ' + c);
+  if(f) parts.push('Format: ' + f);
+  out.className='rtcf-out'; out.textContent = parts.join('\n\n');
+};
+window.rtcfCopy = function(){
+  var t = document.getElementById('pb-out').textContent;
+  if(!t || t.indexOf('will appear')>-1) return;
+  navigator.clipboard && navigator.clipboard.writeText(t);
+  var b = event.target; var orig = b.textContent; b.textContent='Copied ✓'; setTimeout(function(){b.textContent=orig;},1400);
+};
+window.rtcfClear = function(){
+  ['pb-role','pb-task','pb-context','pb-format'].forEach(function(id){document.getElementById(id).value='';});
+  var out=document.getElementById('pb-out'); out.className='rtcf-out empty'; out.textContent='Your assembled RTCF prompt will appear here.';
+};
+
+window.rtcfAnalyse = function(){
+  var p = document.getElementById('an-input').value.trim();
+  var res = document.getElementById('an-result');
+  if(!p){ res.style.display='none'; return; }
+  var lp = p.toLowerCase();
+  function check(kw, name){
+    var m = kw.filter(function(k){return lp.indexOf(k)>-1;});
+    var st = m.length>=2 ? 'present' : (m.length===1 ? 'partial' : 'missing');
+    var fb = m.length>=2 ? ('Strong — found: ' + m.slice(0,3).join(', ') + '.')
+           : m.length===1 ? ('Some present ("' + m[0] + '"), but could be more specific.')
+           : ('No clear ' + name + ' detected — consider adding it.');
+    return {st:st, fb:fb};
+  }
+  var role = check(['you are','act as','as a','as an','expert','specialist','advisor','reviewer','manager','analyst','editor','consultant'],'Role');
+  var task = check(['generate','create','write','analyse','analyze','summarise','summarize','explain','design','develop','identify','suggest','recommend','evaluate','compare','review','draft'],'Task');
+  var context = check(['given','based on','considering','context','for','because','the client','the team','audience','background','situation','goal'],'Context');
+  var format = check(['format','present as','list','table','bullet','paragraph','numbered','under','words','sections','steps','tone'],'Format');
+  var sc = {present:2,partial:1,missing:0};
+  var tot = sc[role.st]+sc[task.st]+sc[context.st]+sc[format.st];
+  var pct = Math.round(tot/8*100);
+  var fb = pct>=80?'Excellent — a well-structured RTCF prompt.'
+         : pct>=60?'Good — most RTCF elements present; small tweaks would help.'
+         : pct>=40?'A start, but key RTCF elements are missing.'
+         : 'Needs more structure — adding RTCF will dramatically improve results.';
+  document.getElementById('an-score').textContent = pct+'%';
+  document.getElementById('an-bar').style.width = pct+'%';
+  document.getElementById('an-feedback').textContent = fb;
+  var names = {role:'Role',task:'Task',context:'Context',format:'Format'};
+  var letters = {role:'R',task:'T',context:'C',format:'F'};
+  var label = {present:'Present',partial:'Partial',missing:'Missing'};
+  var results = {role:role, task:task, context:context, format:format};
+  document.getElementById('an-cards').innerHTML = ['role','task','context','format'].map(function(k){
+    var r = results[k];
+    return '<div class="rtcf-card s-'+r.st+'"><div class="h"><span class="let">'+letters[k]+'</span><span class="st">'+label[r.st]+'</span></div><div class="fb">'+r.fb+'</div></div>';
+  }).join('');
+  res.style.display='block';
+};
+
+(function(){
+  var TEMPLATES = [
+    {h:"Devil's advocate", d:"Pressure-test an idea before you commit — make the AI argue against you.",
+     t:`You are a sceptical, experienced critic of business plans (R).\nTear apart the following idea and find its three weakest assumptions (T).\n[Your idea + what you know about the market/customer that the AI won't] (C).\nFor each weakness: one sharp question and one thing that would need to be true for it to survive. Numbered list, plain language (F).`},
+    {h:"Board of advisors", d:"Get multiple expert perspectives on one decision.",
+     t:`Act as a small advisory panel — a strategist, a finance lead, and an operator (R).\nAnalyse this decision from each of those three perspectives (T).\n[The decision, the constraints, what's at stake] (C).\nThree short sections, one per perspective, each ending with a single recommendation (F).`},
+    {h:"Draft an email", d:"Turn a rough note into a sendable email in your voice.",
+     t:`You are a professional, empathetic communicator writing in my voice (R).\nDraft an email [to whom, about what] (T).\n[The situation, the relationship, the tone this person needs, the outcome I want] (C).\nUnder 150 words. Warm but direct. No corporate filler (F).`},
+    {h:"Summarise a document", d:"Pull the signal out of something long.",
+     t:`You are a careful editor who distinguishes fact from filler (R).\nSummarise the document below for a busy executive (T).\n[Paste the document. What they care about and what to ignore] (C).\nA 5-bullet TL;DR, then a short 'so what' paragraph. Flag anything you're unsure of (F).`}
+  ];
+  var list = document.getElementById('tpl-list');
+  list.innerHTML = TEMPLATES.map(function(tp, i){
+    return '<div class="rtcf-tpl"><h4>'+tp.h+'</h4><p>'+tp.d+'</p><code>'+tp.t.replace(/\(R\)/g,'<strong>(R)</strong>').replace(/\(T\)/g,'<strong>(T)</strong>').replace(/\(C\)/g,'<strong>(C)</strong>').replace(/\(F\)/g,'<strong>(F)</strong>')+'</code><div class="rtcf-row"><button class="rtcf-btn ghost" onclick="rtcfUseTemplate('+i+')">Use this template →</button></div></div>';
+  }).join('');
+  window.RTCF_TEMPLATES = TEMPLATES;
+})();
+window.rtcfUseTemplate = function(i){
+  // switch to build tab, drop the template body into Context as a starting scaffold
+  var tab = document.querySelector('#rtcf-toolkit .rtcf-tab[data-pane="build"]'); tab.click();
+  document.getElementById('pb-context').value = window.RTCF_TEMPLATES[i].t;
+  document.getElementById('pb-out').className='rtcf-out empty';
+  document.getElementById('pb-out').textContent='Template loaded into Context — edit the bracketed parts, fill Role/Task/Format, then assemble.';
+  document.getElementById('pb-context').scrollIntoView({behavior:'smooth',block:'center'});
+};
+</script>
+</div>
+```

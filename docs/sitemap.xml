@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://michael-borck.github.io/the-human-edge/handouts/frameworks/make-your-edge-persistent.html</loc>
-    <lastmod>2026-06-25T11:14:50.630Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/handouts/frameworks/frameworks-scale-pivot-kill.html</loc>
-    <lastmod>2026-06-25T08:18:47.010Z</lastmod>
-  </url>
-  <url>
     <loc>https://michael-borck.github.io/the-human-edge/activities/worksheets/sprint-3-roadmap-risk.html</loc>
     <lastmod>2026-06-25T08:18:46.950Z</lastmod>
   </url>
@@ -29,40 +21,44 @@
     <lastmod>2026-06-25T08:18:46.890Z</lastmod>
   </url>
   <url>
-    <loc>https://michael-borck.github.io/the-human-edge/team.html</loc>
-    <lastmod>2026-06-25T08:17:36.740Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/readings/why-ai-delivery-is-different.html</loc>
-    <lastmod>2026-06-25T08:15:48.830Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/readings/ai-in-five-minutes.html</loc>
-    <lastmod>2026-06-25T08:15:31.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/frameworks.html</loc>
-    <lastmod>2026-06-25T11:15:01.250Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/before.html</loc>
-    <lastmod>2026-06-25T16:38:30.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/index.html</loc>
-    <lastmod>2026-06-25T16:38:39.760Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/readings/the-trust-tool.html</loc>
-    <lastmod>2026-06-25T08:15:18.950Z</lastmod>
+    <loc>https://michael-borck.github.io/the-human-edge/tools/rtcf-toolkit.html</loc>
+    <lastmod>2026-06-25T17:09:04.990Z</lastmod>
   </url>
   <url>
     <loc>https://michael-borck.github.io/the-human-edge/series.html</loc>
     <lastmod>2026-06-25T08:18:36.640Z</lastmod>
   </url>
   <url>
+    <loc>https://michael-borck.github.io/the-human-edge/readings/the-trust-tool.html</loc>
+    <lastmod>2026-06-25T08:15:18.950Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/index.html</loc>
+    <lastmod>2026-06-25T16:38:39.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/before.html</loc>
+    <lastmod>2026-06-25T16:38:30.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/frameworks.html</loc>
+    <lastmod>2026-06-25T11:15:01.250Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/readings/ai-in-five-minutes.html</loc>
+    <lastmod>2026-06-25T08:15:31.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/readings/why-ai-delivery-is-different.html</loc>
+    <lastmod>2026-06-25T08:15:48.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://michael-borck.github.io/the-human-edge/team.html</loc>
+    <lastmod>2026-06-25T08:17:36.740Z</lastmod>
+  </url>
+  <url>
     <loc>https://michael-borck.github.io/the-human-edge/workshop.html</loc>
-    <lastmod>2026-06-25T11:01:21.420Z</lastmod>
+    <lastmod>2026-06-25T17:03:01.980Z</lastmod>
   </url>
   <url>
     <loc>https://michael-borck.github.io/the-human-edge/activities/initiative-cards/dynamic-pricing.html</loc>
@@ -79,13 +75,5 @@
   <url>
     <loc>https://michael-borck.github.io/the-human-edge/activities/worksheets/sprint-2-stakeholders-hitl.html</loc>
     <lastmod>2026-06-25T08:18:46.950Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/handouts/frameworks-overview.html</loc>
-    <lastmod>2026-06-25T08:20:54.040Z</lastmod>
-  </url>
-  <url>
-    <loc>https://michael-borck.github.io/the-human-edge/handouts/frameworks/frameworks-trust-tool.html</loc>
-    <lastmod>2026-06-25T08:21:16.270Z</lastmod>
   </url>
 </urlset>
