@@ -39,6 +39,8 @@ Welcome. This is your companion site for **The Human Edge** — a one-day master
 
 > If the AI is genuinely good at running your work, it's equally good at running everyone else's. Generic competence, with no variation, is the baseline — not an advantage. So where does *your* edge live?
 
+The edge isn't a trick or a tool — it's your **judgement**: taste, experience, and critical thinking. It looks like all you're doing is *adding context* to the AI; you're actually adding the one thing no model can average. So make yours different — the generic version is the one your competitors already have.
+
 The day builds one answer to that question, applied twice:
 
 - **The morning** builds the judgement at the level of *your own work* — directing AI well, judging how far to trust any output, and redesigning a real workflow so AI handles what it does well while your thinking stays in charge.

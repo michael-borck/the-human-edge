@@ -316,10 +316,10 @@ activity("25 min", "Build your prompt library (RTCF)",
 
 grid("Talking to AI well", "RTCF — two halves.", None,
      [("R · T · F  SCAFFOLDING", "Weaker & self-hosted models need it spelled out. A frontier model infers it from clear writing."),
-      ("C  ALWAYS MATTERS", "Context is the one thing only you supply. No model manufactures your edge.")],
+      ("C  IS YOUR JUDGEMENT", "We call it Context — but it's really your taste, experience & critical thinking. The one thing no model supplies. So make yours different.")],
      footleft="The durable skill: being clear about what you want")
 feature("Before & after", "Unusable. Then sendable.",
-        "Without: \"Write an email about the project delay.\"\nWith RTCF: a senior PM, professional & empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words — acknowledge → explain → new date → recommit.\nContext is where your edge enters.")
+        "Without: \"Write an email about the project delay.\"\nWith RTCF: a senior PM, professional & empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words — acknowledge → explain → new date → recommit.\nWe call it Context — really, it's your judgement going in.")
 activity("15 min", "The two-pass demo — live",
          "One task, run twice. Pass 1: naive → slick, identical for everyone. Pass 2: add your edge → it gets a soul. Let the room shout the edge inputs.")
 
@@ -391,8 +391,8 @@ grid("What you've built by 4:00", "A delivery design, not a theory.", None,
       ("ROADMAP", "Milestones and go/no-go gates."),
       ("CHECKPOINTS", "A stakeholder plan and human-in-the-loop design."),
       ("RISK", "A register and a Scale / Pivot / Kill call you can defend.")])
-concept("Back to the provocation", "The edge is the part the tool can't average.",
-        "Averages converge. Your taste, your contrarian calls, your specific customers — that's the variation a rival's identical model can't reproduce.",
+concept("Back to the provocation", "The edge is your judgement.",
+        "It looks like all we're doing is adding context. We're not — we're adding your judgement: taste, experience, critical thinking. Averages converge; yours diverges. Make yours different — the generic version is the one your competitors already have.",
         "where-your-edge-lives.jpg")
 grid("What you do next", "Your action plan.", None,
      [("WEEK", "Trial your redesigned workflow. Run one task through the trust tool first."),

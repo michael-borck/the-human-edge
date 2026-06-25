@@ -24,7 +24,7 @@ You learn it in the morning at the level of a single task ("do I trust this outp
 
 ## RTCF: directing AI well
 
-**R**ole · **T**ask · **C**ontext · **F**ormat. Not every prompt needs all four, but for anything important they transform the result. Context is where *your* edge enters: the specifics only you hold.
+**R**ole · **T**ask · **C**ontext · **F**ormat. Not every prompt needs all four, but for anything important they transform the result. Role, Task and Format are scaffolding (weaker/self-hosted models need them spelled out; a frontier model infers them from clear writing). **Context is the part that always matters** — and don't undersell it: "context" is really your **judgement** (taste, experience, critical thinking) going in. It looks like you're just adding information; you're actually adding the one thing no model can supply — so make yours different.
 
 ## Make your edge persistent: the two-page voice method
 
