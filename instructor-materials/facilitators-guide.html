@@ -48,6 +48,13 @@
   .warn{background:#f7ece7; border-left:4px solid var(--verm); padding:12px 16px; margin:14px 0;
     font-family:'Helvetica Neue',Arial,sans-serif; font-size:15px;}
   .warn h3{margin-top:0;}
+  .example{background:#eef5f0; border-left:4px solid #2f7d52; padding:12px 16px; margin:14px 0;
+    font-family:'Helvetica Neue',Arial,sans-serif; font-size:14.5px; break-inside:avoid;}
+  .example h3{margin-top:0; color:#2f7d52;}
+  .example p{margin:0 0 8px;} .example ul{margin:0 0 8px; padding-left:18px;} .example li{margin:0 0 4px;}
+  .example .ex-q{background:#fff; border:1px solid #c9d9cf; padding:8px 10px; margin:8px 0; font-style:italic; color:#334;}
+  .example .edge{background:#fff3d6; border:1px solid #e0c870; padding:1px 5px; font-weight:600; white-space:nowrap;}
+  .example b.k{color:#2f7d52;}
   .principles{columns:2; column-gap:34px; font-family:'Helvetica Neue',Arial,sans-serif; font-size:15px;}
   .principles p{margin:0 0 10px; break-inside:avoid;}
   footer{margin-top:50px; padding-top:18px; border-top:1px solid var(--rule);
@@ -148,6 +155,16 @@
     <li><strong>Keep it to two passes.</strong> Don't let it drift into a prompting tutorial — the point is the contrast, not technique.</li>
     <li><strong>Companion-site pointer:</strong> the <em>two-page voice method</em> (Style Mirror) makes this edge <em>persistent</em> — mention it as the take-home, don't teach it here.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — the two prompts</h3>
+<p><b class="k">Task:</b> a difficult customer email (relatable; the contrast lands fast).</p>
+<p><b>Pass 1 — generic:</b></p>
+<div class="ex-q">"Write an email to a customer about their delayed order."</div>
+<p>→ slick, polite, "we value your business," no specifics. <em>Identical for everyone in the room.</em> Hold it up: "Good. So where's your edge?"</p>
+<p><b>Pass 2 — with edge:</b></p>
+<div class="ex-q">"You're the CS lead. Write to <span class="edge">Aisha, a 6-year VIP</span> who's emailed twice this week, frustrated. <span class="edge">Order #4471 is 10 days late — our freight partner lost the pallet; found yesterday, arriving Thursday.</span> <span class="edge">We've upgraded it to express and added a $40 credit.</span> Tone: <span class="edge">warm, no corporate filler, acknowledge she's annoyed.</span> Under 120 words."</div>
+<p>→ now it has a soul: specific, empathetic, references the real situation. <b class="k">The edge</b> is everything highlighted — <em>who</em> the customer is, <em>what actually happened</em>, <em>what you've already done</em>, the <em>tone this person needs</em>. The model knew none of it; you supplied it. That's the part the tool can't manufacture.</p>
+</div>
 </section>
 
 <!-- ============ TOOL TEST DRIVE ============ -->
@@ -185,6 +202,12 @@
     <li><strong>Discourage the trivial</strong> ("tell me a joke") and <strong>the too-big</strong> ("write my strategy"). Neither teaches the grid.</li>
     <li><strong>Spot the confidently-wrong moment</strong> in the debrief — it's the highlight. Amplify it.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example</h3>
+<p><b class="k">Task to suggest:</b> "Summarise these meeting notes into 5 action items" (paste your raw notes). Average is fine, small-medium stakes → lean in — but <b>verify each action item actually matches</b>: AI often invents an action nobody agreed to, or drops the one contentious point. That's your confidently-wrong moment.</p>
+<p><b class="k">Trust-tool call:</b> Average + Small → lean in; the action items are the precise part, so sanity-check before you act.</p>
+<p><b class="k">Fallback task</b> (if someone has nothing): "Draft a polite email chasing an invoice 14 days overdue, keeping the relationship intact."</p>
+</div>
 </section>
 
 <!-- ============ PROMPT LIBRARY ============ -->
@@ -214,6 +237,14 @@
     <li><strong>Don't let it become prompt-engineering theatre.</strong> The goal is judgement about <em>what to specify</em>, not memorising an acronym.</li>
     <li><strong>Self-hosted participants</strong> (running local models) will see bigger gains from full RTCF — affirm that; it's where the scaffolding pays off most.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — naive → RTCF</h3>
+<p><b>Naive:</b></p>
+<div class="ex-q">"Write a LinkedIn post about our new AI course."</div>
+<p><b>RTCF:</b></p>
+<div class="ex-q">"<b>R:</b> a confident but not hype-y B2B marketer. <b>T:</b> a LinkedIn post announcing <em>The Human Edge</em>, a 1-day Curtin exec-ed masterclass. <b>C:</b> <span class="edge">audience = mid-career professionals sceptical of AI hype; the differentiator is judgement, not tools</span>. <b>F:</b> hook line, 3 short paragraphs, end on a question, ~120 words."</div>
+<p>The output jumps from generic to <em>on-message</em>. <b class="k">The component that did it:</b> Context (the audience + the differentiator) — your edge. That's the beat to draw out in the debrief.</p>
+</div>
 </section>
 
 <!-- ============ WORKFLOW REDESIGN ============ -->
@@ -248,6 +279,19 @@
     <li><strong>Guard the high-stakes steps.</strong> Some will want to automate everything — use the grid to pull them back. The point is selective, deliberate use.</li>
     <li>They leave with something concrete — make sure the "trial next week" commitment is specific.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — the weekly stakeholder report</h3>
+<p><b>Steps:</b> (1) gather updates from the team · (2) draft the summary · (3) write the risks/decisions section · (4) format · (5) send.</p>
+<p><b class="k">Trust-tool split:</b></p>
+<ul>
+<li>Gather updates → <b>human</b> (judgement on what's material; relationship).</li>
+<li>Draft summary → <b>AI</b> (average, low stakes — lean in).</li>
+<li>Risks/decisions section → <b>human</b> (precise, high stakes — judgement).</li>
+<li>Format → <b>AI</b> (average, low stakes).</li>
+<li>Send → <b>human</b>.</li>
+</ul>
+<p><b class="k">Redesign:</b> AI drafts the summary from your raw bullet points and formats it; you own gathering (materiality) and the risks/decisions section. <b>Trial this week:</b> feed AI your raw bullets for the draft, then review.</p>
+</div>
 </section>
 
 <!-- ============ SPRINT 1 ============ -->
@@ -285,6 +329,13 @@
     <li><strong>Bots as consultants.</strong> Priya and Marcus are <em>stakeholders</em>, not your team — they give perspective and facts, not your scope. If a group asks the bot to "do the scope," redirect.</li>
     <li><strong>Scrutinise the bots.</strong> They're confidently wrong in places — that's intentional. It's the behaviour you're teaching them to lead.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — staff answer (Customer-service chatbot)</h3>
+<p><b class="k">Scoped objective:</b> deploy a chatbot to deflect routine queries (order status, returns, sizing) and cut email response time from 26h toward &lt;4h. <b>In:</b> the top ~80% routine queries. <b>Out (for now):</b> complaints/escalations, phone, social DMs.</p>
+<p><b class="k">Data (from Priya):</b> transcript data is the best of the four — but "good foundation" ≠ "knows your policy." Returns/sizing rules vary by product line and live in people's heads. <b>The real work:</b> RAG over current policy documents.</p>
+<p><b class="k">Trust-tool split:</b> routine factual answers (order status) → lean in, with a human glance (it's customer-facing); policy answers (returns/sizing) → <b>human in the loop</b> — a wrong policy in writing is the live risk.</p>
+<p><b class="k">"Good enough":</b> deflect ≥60% of routine queries; wrong-answer rate &lt;2% on routine, but <b>0% tolerance on returns/policy</b> (must route to a human if unsure).</p>
+</div>
 </section>
 
 <!-- ============ SPRINT 2 ============ -->
@@ -321,6 +372,21 @@
     <li><strong>Tom is the reality check.</strong> Groups often under-weight the frontline; the human-in-the-loop design usually lives closest to Tom's world.</li>
     <li><strong>Checkpoints are part of the product</strong>, not an afterthought — make that explicit.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — staff answer (Customer-service chatbot)</h3>
+<p><b class="k">Stakeholder plan:</b></p>
+<ul>
+<li><b>Emma (MD/sponsor), High/High:</b> needs the quarter promise; fears reputational damage → agree "good enough" gates + phased rollout, no big-bang.</li>
+<li><b>David (CFO):</b> needs ROI on $450K; fears runaway cost → tie spend to gates; show deflection savings.</li>
+<li><b>Tom (CS/frontline), High interest:</b> his team is automated first; fears job loss + looking bad → position as augmentation; staff checkpoints with CS.</li>
+</ul>
+<p><b class="k">HITL checkpoints:</b></p>
+<ul>
+<li>Returns/policy answers → <b>experienced CS reviewer checks before send</b> (or bot refuses + routes). Evaluator: senior CS rep. <b>Builds</b> capability (mark this the deliberate build-checkpoint) + consumes.</li>
+<li>High-confidence routine answers → QA-sample (~5%), human glance. Evaluator: CS lead. Mostly consumes.</li>
+</ul>
+<p><b class="k">The non-negotiable:</b> returns-policy answers must be human-verified or refused — a wrong returns policy quoted to a customer in writing is the single biggest risk.</p>
+</div>
 </section>
 
 <!-- ============ SPRINT 3 ============ -->
@@ -357,6 +423,18 @@
     <li><strong>Make them defend the call</strong>, not just state it. The rationale is the learning.</li>
     <li><strong>Time-box ruthlessly.</strong> This is the last content block before the close — protect the 4:00 action-plan finish.</li>
   </ul></div>
+<div class="example">
+<h3>Worked example — staff answer (Customer-service chatbot)</h3>
+<p><b class="k">Roadmap with gates:</b></p>
+<ul>
+<li><b>Pilot (narrow):</b> order-status + returns, shadow mode (bot drafts, human sends), 2 weeks. <b>Gate:</b> ≥70% of drafts usable with &lt;3% wrong.</li>
+<li><b>Evaluate:</b> add sizing; measure deflection + wrong-rate. <b>Gate:</b> deflection ≥60%, wrong &lt;2%, policy-wrong = 0.</li>
+<li><b>Scale / Pivot / Kill → Production:</b> full rollout with monitoring.</li>
+</ul>
+<p><b class="k">Risk register (top):</b> confident-wrong returns policy (AI-specific: non-determinism + verification) — Med/High — mitigate: RAG + human checkpoint, bot refuses if unsure. · Demo-gap (AI-specific): the demo handles the easy 80% — mitigate: gate on the angry-customer edge cases.</p>
+<p><b class="k">Crisis (example):</b> a customer screenshots the bot quoting a wrong returns policy. <b>DDCD:</b> Diagnose = technical + ethical; Decide = pause bot on returns, route to human, fix the RAG doc; Communicate = to the customer (apologise + honour), Tom's team, Emma; Document = root cause + fix.</p>
+<p><b class="k">Gate-1 call (model):</b> <b>PIVOT</b> if the returns wrong-rate is too high at gate 1 — narrow scope to order-status only until the policy RAG matures. Rationale: the cost of a wrong policy at scale &gt; the cost of narrowing scope. (Scale only if policy-wrong = 0 holds.)</p>
+</div>
 </section>
 
 <footer>
