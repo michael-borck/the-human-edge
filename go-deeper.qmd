@@ -63,6 +63,15 @@ The shape underneath all of the above – four stages, one rule: **you stay in t
 
 The loop works because **your expertise + AI's breadth = amplified thinking**, and the bottleneck is your thinking, not the model. A better model won't fix a lazy prompt; skipping iteration won't be saved by speed. [Full chapter →](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html)
 
+### Three cognitive traps
+The loop is how to work with AI *well*. These are the three ways we go wrong across everything we do with it. (Adapted from the AI Skills Passport's *three cognitive traps* guide.)
+
+- **Gell-Mann amnesia.** You catch the AI's errors in your own field – then trust it completely on a topic you know nothing about, exactly where you're least equipped to check. Be *more* sceptical where you can't verify.
+- **The AI dismissal fallacy.** "That's just ChatGPT" is a refusal to engage, not a critique – the genetic fallacy in disguise. Judge the reasoning, not the origin.
+- **Sycophancy.** The AI tells you what you want to hear (trained on human feedback, and humans prefer agreeable answers). Don't ask "what do you think?" – ask "what are the three weakest points in this?" or "play devil's advocate and tell me why this plan fails."
+
+Not technical problems – human ones. Awareness is the first defence.
+
 :::: {.callout-note}
 ## One thread through all of these
 Every technique here keeps you from the easiest mistake: accepting fluent, generic output. Verify it, split thinking from building, argue against it, iterate. Each is a different way of doing the same thing – **adding your judgement instead of just adding context.**

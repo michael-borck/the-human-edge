@@ -79,3 +79,8 @@ The trust tool you learn in the morning is the same grid you apply all afternoon
 ## Finished early, or want more? Go deeper
 Self-paced extensions for fast finishers (or if the room races through): **[VET your AI](go-deeper.html#push-back-vet-your-ai)** – verify, explain, test any output; the **[two-chat workflow](go-deeper.html#the-two-chat-workflow)** – separate thinking from building; plus devil's advocate, boardroom perspectives, the handover prompt, and the conversation loop. Each takes five minutes on your own work.
 ::::
+
+:::: {.callout-note}
+## Before lunch: responsible use
+Data privacy & governance (the proportionate approach, not a blanket ban), **bias** – play [**Survival of the Best Fit**](https://www.survivalofthebestfit.com/) and watch an "objective" algorithm amplify bias – and an **ethics-dilemma** activity. All on the **[Responsible use](responsible-use.html)** page.
+::::

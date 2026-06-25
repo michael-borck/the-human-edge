@@ -1,0 +1,60 @@
+---
+title: "Responsible use: data, bias & ethics"
+subtitle: "The responsible-use beat of the day: govern your data, see how bias compounds, and own the consequences."
+---
+
+These are the parts of working with AI that don't fit on the trust tool's grid but matter just as much. They run through the whole day – data responsibility is threaded into every activity – but here they get their own space.
+
+## Data governance: proportionate, not prohibitive
+
+Most organisations land on "don't upload anything to AI." That policy treats every interaction as equally risky, and it conflates a few real concerns with one fictional one. A proportionate approach separates them.
+
+**The real risks are about the *pipeline*, not the model.** When you paste data into a tool, the exposure is transmission, storage, jurisdiction and contract – not someone "extracting" your document from the model later. (An LLM interpolates; it doesn't retrieve. Trained data dissolves into the model like ink in a swimming pool – it isn't sitting in a searchable file.) Email, Slack and shared drives carry the *same* pipeline risks; AI feels riskier only because it's newer.
+
+A more useful approach:
+
+1. **Classify the data** – public, internal, confidential, regulated?
+2. **Match the tool to the classification** – enterprise tools with data-processing agreements for internal/confidential work; consumer tools for public and non-sensitive brainstorming; regulated data needs a specific assessment.
+3. **Manage the real risks** – never paste credentials, API keys or access tokens; de-identify personal information; know the provider's logging and retention terms.
+4. **Drop the fictional risk** – stop treating "model extraction" as a plausible threat. Focus governance where the exposure actually is.
+
+That's professional data hygiene applied consistently – not AI exceptionalism. (Adapted from the AI Skills Passport's *data governance* guide.)
+
+## Bias has moved (find the quiet defaults)
+
+> **Activity (~10 min):** Ask your AI: *"Write a one-paragraph scene of a new academic on their first day at an Australian university."* Then, in a fresh prompt: *"Write a one-paragraph scene of a new professional staff member on their first day."* Read them side by side.
+
+The interesting bias isn't the obvious one – frontier models have been trained hard against the blatant stereotypes. It lives in the smaller choices: what is each character *called* ("Dr Chen" or "Sarah")? What do they worry about? Whose office has the window? Who holds authority in the scene? The story tells you what the model thinks each role looks like – and that picture does quiet work every time you use it.
+
+**Try the same exercise with:**
+
+- **Teaching:** "a struggling first-year student" vs "a high-achieving first-year student." Notice the defaults – discipline, background, why they're struggling or succeeding.
+- **Research:** "a brilliant early-career researcher" vs "a brilliant senior researcher." What field? Whose career trajectory does the model treat as the default shape of success? (If you use AI for reference letters, those defaults are leaking in.)
+- **Professional:** "a respected senior manager" vs "a respected administrative officer." Who's described as warm, who as capable? (If you draft position descriptions with AI, is that a problem?)
+
+This is why "generic competence is the baseline" cuts both ways: the generic output inherits the generic – often skewed – average of its training data. Your judgement, noticing the skew, is the edge the tool can't supply.
+
+### Alternative: Survival of the Best Fit
+
+Prefer a guided game? Open [**survivalofthebestfit.com**](https://www.survivalofthebestfit.com/) (~10 min) and watch an "objective" hiring algorithm reproduce and amplify the bias in its training data. Debrief: *where did the bias enter, and whose job is it to notice?* (Bias detection is a precise, large-stakes call – a human must stay in the loop.)
+
+## Ethics dilemmas
+
+Work through one or two of these at your table. There's no answer key; the point is to make the trade-off explicit and decide where the human stays in charge.
+
+**1. The biased screen.** Your team deploys an AI résumé-screening tool. Six months in, an analyst notices it quietly downgrades applicants from one group. The tool is "working" by its efficiency metric. Do you turn it off immediately? Audit it? Who's responsible – the vendor, the team that deployed it, or the executive who sponsored it?
+*Tie-in:* bias entered through the data, not malice. The ethical move is the same as the trust-tool move: a human owns the high-stakes decision, and "the algorithm did it" is not a defence.
+
+**2. The confidently-wrong policy bot.** A customer is quoted a returns policy that doesn't exist – in writing, by your chatbot – and acts on it. Who's accountable? What do you owe the customer, and what do you change about the system?
+*Tie-in:* verification *is* the product (Difference 4). The ethical obligation is to design the human checkpoint *before* the wrong answer reaches a customer, not apologise after.
+
+**3. The efficiency-vs-apprenticeship tradeoff.** Automating 80% of a junior's work looks like a win – until you realise they never learn to evaluate the output, because the grunt work that taught their predecessors is gone. Is that an ethics issue or just an HR one?
+*Tie-in:* the apprenticeship trap. Hollowing out expertise for short-term speed isn't only inefficient – it deletes your team's future judgement. Mark at least one checkpoint you keep human *deliberately, to build capability*.
+
+**4. "Ship it now, govern it later."** A competitor launches an AI feature; your boss says match them this quarter and sort the governance afterwards. Do you? What do you say?
+*Tie-in:* the demo is a trap (Difference 2) and "everyone else is doing it" is not a strategy. Governance built in *after* something goes wrong is more expensive – and more ethically costly – than governance designed in from the start.
+
+:::: {.callout-note}
+## The thread
+Every dilemma above is really one question: **where does a human stay in the loop, and who owns the consequence when they don't?** That's not a technical question. It's the judgement the whole day is about – and it's why ethics, governance and bias belong in a *delivery* course, not bolted on.
+::::

@@ -14,20 +14,20 @@
     ]
   },
   {
-    "listing": "/before.html",
-    "items": [
-      "/readings/ai-in-five-minutes.html",
-      "/readings/the-trust-tool.html",
-      "/readings/why-ai-delivery-is-different.html"
-    ]
-  },
-  {
     "listing": "/frameworks.html",
     "items": [
       "/handouts/frameworks/delivery-frameworks.html",
       "/handouts/frameworks/make-your-edge-persistent.html",
       "/handouts/frameworks/frameworks-scale-pivot-kill.html",
       "/handouts/frameworks/frameworks-trust-tool.html"
+    ]
+  },
+  {
+    "listing": "/before.html",
+    "items": [
+      "/readings/ai-in-five-minutes.html",
+      "/readings/the-trust-tool.html",
+      "/readings/why-ai-delivery-is-different.html"
     ]
   }
 ]

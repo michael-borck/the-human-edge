@@ -323,6 +323,12 @@ feature("Exercise 1 – the AI tool test drive", "Same task. Judge the result wi
 brk("break-morning-tea.jpg", "10:30", "Morning tea", "Back at 11:00")
 wide("How to talk to AI", "The conversation loop.", "conversation-loop.png",
      "Brainstorm → Ideate → Iterate → Amplify → Repeat. You stay in the conversation.")
+grid("How we go wrong with AI", "Three cognitive traps.", None,
+     [("GELL-MANN AMNESIA", "You catch AI's errors in your own field, then trust it completely on topics you know nothing about. Be more sceptical where you can't check."),
+      ("AI DISMISSAL FALLACY", "'That's just ChatGPT' is a refusal to engage, not a critique. Judge the reasoning, not the origin."),
+      ("SYCOPHANCY", "AI tells you what you want to hear. Don't ask 'what do you think?' – ask 'what are the three weakest points?'")],
+     cols=3, footleft="Not technical problems – human ones. Awareness is the first defence.")
+
 activity("25 min", "Build your prompt library (RTCF)",
          "For three real tasks: write the naive version, then rebuild with RTCF. Context is where your edge enters. (Worksheet: Your prompt library.)")
 
@@ -350,6 +356,12 @@ feature("Exercise 2 – redesign your workflow", "Redesign one workflow.",
         "Pick a task you own. List its steps. Judge each with the trust tool – where does AI genuinely help, where must your judgement stay in charge? Redesign so AI handles the average and you keep the high-stakes parts. You leave with something to trial next week.")
 feature("Where we are by lunch", "A mental model, a grid, a method.",
         "AI produces a convincing average. The trust tool tells you when to lean in. RTCF directs it well – and Context is the part that survives any model. One question for the afternoon: if this is how I trust AI on a single task, how do I trust it across a whole project?")
+feature("Before lunch – using it responsibly", "Data privacy & governance: proportionate, not prohibitive.",
+        "Don't blanket-ban AI. Classify the data (public / internal / confidential / regulated) and match the tool to it – enterprise tiers for sensitive work, consumer for brainstorming. The real risks are the pipeline: transmission, storage, jurisdiction, contract – not someone 'extracting' your document from the model (that's a myth; an LLM interpolates, it doesn't retrieve). Never paste credentials; de-identify personal data. Same hygiene you'd apply to email or Slack.   companion site → Responsible use")
+activity("10 min", "Bias has moved – find the quiet defaults",
+         "Ask your AI: 'Write a one-paragraph scene of a new academic on their first day at an Australian uni.' Then, fresh prompt: '...a new professional staff member on their first day.' Read them side by side. The interesting bias isn't the obvious one – it's the small choices: who's 'Dr Chen' vs 'Sarah', whose office has the window, who holds authority. The model's picture of each role does quiet work every time you use it. (Alt: survivalofthebestfit.com.)")
+feature("Ethics & accountability", "Who's responsible when AI's wrong? You are.",
+        "Transparency – say when you used it. Accountability – you own the output, not the tool. And the human-in-the-loop is an ethical decision, not just a technical one. 'The algorithm did it' is not a defence: bias enters through the data; the wrong policy reaches a customer because no human owned the checkpoint.   companion site → Responsible use (ethics dilemmas)")
 brk("break-lunch.jpg", "12:30", "Lunch", "Back at 1:15")
 section(INK, "Part two", ["WHY AI", "DELIVERY IS", "DIFFERENT."],
         "You're the delivery lead. Ship one funded initiative – without the predictable failures.")
