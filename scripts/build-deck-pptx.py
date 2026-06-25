@@ -204,20 +204,37 @@ def brk(img_name, time, label, back):
 
 def resources(label, title, items):
     s, n = newslide(); bignum(s, n); kicker(s, label)
-    text(s, ML, 1.5, CW, 1.0, [(title, dict(font=FS, size=40, color=INK, bold=True))])
-    colw = (CW - 2.5) / 2; qsize = 2.5; qtop = 2.6
+    text(s, ML, 1.5, CW, 1.0, [(title, dict(font=FS, size=38, color=INK, bold=True))])
+    cols = len(items); gap = 2.2 if cols <= 2 else 1.4
+    colw = (CW - (cols - 1) * gap) / cols; qsize = min(2.5, colw - 0.25); qtop = 2.6
     for i, (ttl, url, qr, note) in enumerate(items):
-        x = ML + i * (colw + 2.5)
-        qx = x + (colw - qsize) / 2
-        rect(s, qx + 0.14, qtop + 0.14, qsize, qsize, fill=INK)            # hard shadow
-        rect(s, qx, qtop, qsize, qsize, fill=WHITE, line=INK, lw=1.75)     # white frame
-        iw, ih = img_fit(qr, qsize - 0.5, qsize - 0.5)
+        x = ML + i * (colw + gap); qx = x + (colw - qsize) / 2
+        rect(s, qx + 0.12, qtop + 0.12, qsize, qsize, fill=INK)
+        rect(s, qx, qtop, qsize, qsize, fill=WHITE, line=INK, lw=1.5)
+        iw, ih = img_fit(qr, qsize - 0.4, qsize - 0.4)
         pic = s.shapes.add_picture(str(IMG / qr), Inches(qx + (qsize - iw) / 2), Inches(qtop + (qsize - ih) / 2), Inches(iw), Inches(ih))
         pic.shadow.inherit = False
         disp = url.replace("https://", "").replace("http://", "").rstrip("/")
-        text(s, x, qtop + qsize + 0.22, colw, 0.5, [(ttl, dict(font=FS, size=22, color=INK, bold=True))], align=PP_ALIGN.CENTER)
-        text(s, x, qtop + qsize + 0.72, colw, 0.5, [(disp, dict(font=FM, size=12.5, color=VERM, bold=True))], align=PP_ALIGN.CENTER)
-        text(s, x, qtop + qsize + 1.2, colw, 0.6, [(note, dict(font=FS, size=13, italic=True, color=INKSOFT))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 0.18, colw, 0.5, [(ttl, dict(font=FS, size=19, color=INK, bold=True))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 0.62, colw, 0.45, [(disp, dict(font=FM, size=11, color=VERM, bold=True))], align=PP_ALIGN.CENTER)
+        text(s, x, qtop + qsize + 1.05, colw, 0.75, [(note, dict(font=FS, size=11.5, italic=True, color=INKSOFT))], align=PP_ALIGN.CENTER)
+
+def schedule(title, rows):
+    s, n = newslide(); bignum(s, n); kicker(s, "The day at a glance")
+    text(s, ML, 1.5, CW, 1.0, [(title, dict(font=FS, size=38, color=INK, bold=True))])
+    top = 2.9; rh = 0.52
+    for i, (t, b) in enumerate(rows):
+        y = top + i * rh
+        text(s, ML, y, 2.7, rh, [(t, dict(font=FM, size=12.5, color=VERM, bold=True))])
+        text(s, ML + 2.9, y, CW - 2.9, rh, [(b, dict(font=FN, size=13.5, color=INK))])
+
+def activity(minutes, title, brief):
+    s, n = newslide()
+    rect(s, 0, 0, SW, 0.62, fill=VERM)
+    text(s, ML, 0, 5.0, 0.62, [("ACTIVITY", dict(font=FM, size=13, color=WHITE, bold=True))], anchor=MSO_ANCHOR.MIDDLE)
+    text(s, SW - 4.5, 0, 3.7, 0.62, [("≈ " + minutes, dict(font=FM, size=13, color=WHITE, bold=True))], align=PP_ALIGN.RIGHT, anchor=MSO_ANCHOR.MIDDLE)
+    text(s, ML, 2.5, CW, 1.8, [(title, dict(font=FS, size=38, color=INK, bold=True, spacing=0.98))])
+    text(s, ML, 4.4, CW, 1.8, [(brief, dict(font=FN, size=16, color=INKSOFT, spacing=1.3))])
 
 def close_deck():
     s, n = newslide(); bignum(s, n)
@@ -231,9 +248,20 @@ def close_deck():
 
 # ---------- build ----------
 cover()
-resources("Before we begin", "Two links for today.", [
-    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png", "Today only — it won't work after the course."),
-    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png", "Yours to keep — before, during, and after."),
+resources("Before we begin — get connected", "Check you can open all three.", [
+    ("Free chat", "https://chat.locopuente.org", "qr-free-chat.png", "Today only — gone after the course."),
+    ("Companion site", "https://michael-borck.github.io/the-human-edge/", "qr-companion-site.png", "Yours to keep — before, during, after."),
+    ("RetailFlow portal", "https://retailflow.eduserver.au", "qr-retailflow.png", "This afternoon's sprints · access code: pilot2024"),
+])
+schedule("The day.", [
+    ("9:00–10:30", "The average, the tool, the edge — foundations + the trust tool"),
+    ("10:30–11:00", "Morning tea"),
+    ("11:00–12:30", "Using AI well — RTCF, the two-pass demo, workflow redesign"),
+    ("12:30–1:15", "Lunch"),
+    ("1:15–2:30", "Why AI delivery is different — the five differences"),
+    ("2:30–3:00", "Afternoon tea"),
+    ("3:00–4:00", "Designing the human in — the three sprints + go/no-go"),
+    ("4:00–4:30", "The edge that's left to humans + your action plan"),
 ])
 quote("The provocation we'll spend the day on",
       "If the AI is good at running your work, it's good at running everyone else's. Generic competence is the baseline — not the advantage.",
@@ -277,18 +305,30 @@ grid("Two questions, four corners", "Average or precise? Small or large?", None,
      cols=2)
 feature("The trust tool, on real tasks", "Average or precise? Small or large?",
         "Drafting an internal email. Average is fine, stakes small — lean in.\nBoard-paper figures. Precision required, stakes large — a human owns every number.\nSummarising fifty complaints for themes. Lean in for the themes, then skim for the one complaint the AI smoothed away.")
+activity("20 min", "Exercise 1 — the AI tool test drive",
+         "Pick a real, small task. Run it through an AI tool. Judge the output with the trust tool — average or precise? small or large stakes? — and spot the confidently-wrong bit. (Worksheet: in your workbook.)")
+
 feature("Exercise 1 — the AI tool test drive", "Same task. Judge the result with the trust tool.",
         "Pick a real, small task from your work — an email, a summary, a first draft. Run it through an AI tool. Look at the output: where on the grid does this task sit? Is it 'about right' or does it need exactness? Where would it be confidently wrong? Share one place it was useful, one place it was off. There's no 'best' tool — never assume the first output is ready to use.")
 brk("break-morning-tea.jpg", "10:30", "Morning tea", "Back at 11:00")
+activity("25 min", "Build your prompt library (RTCF)",
+         "For three real tasks: write the naive version, then rebuild with RTCF. Context is where your edge enters. (Worksheet: Your prompt library.)")
+
 grid("Talking to AI well", "RTCF — two halves.", None,
      [("R · T · F  SCAFFOLDING", "Weaker & self-hosted models need it spelled out. A frontier model infers it from clear writing."),
       ("C  ALWAYS MATTERS", "Context is the one thing only you supply. No model manufactures your edge.")],
      footleft="The durable skill: being clear about what you want")
 feature("Before & after", "Unusable. Then sendable.",
         "Without: \"Write an email about the project delay.\"\nWith RTCF: a senior PM, professional & empathetic, writes a client email explaining a 2-week delay (vendor integration; client values transparency; new date March 15), under 200 words — acknowledge → explain → new date → recommit.\nContext is where your edge enters.")
+activity("15 min", "The two-pass demo — live",
+         "One task, run twice. Pass 1: naive → slick, identical for everyone. Pass 2: add your edge → it gets a soul. Let the room shout the edge inputs.")
+
 concept("The money moment — live", "Add your edge. It gets a soul.",
         "Pass 1: a naive prompt → slick, correct, identical for everyone. Pass 2: layer in what only you hold. Watch the output turn yours.",
         "two-pass-demo.jpg")
+activity("25 min", "Exercise 2 — redesign your workflow",
+         "Pick a task you own. Map its steps, judge each with the trust tool, redesign so AI handles the average and you keep the high-stakes parts. (Worksheet: Redesign your workflow.)")
+
 feature("Exercise 2 — redesign your workflow", "Redesign one workflow.",
         "Pick a task you own. List its steps. Judge each with the trust tool — where does AI genuinely help, where must your judgement stay in charge? Redesign so AI handles the average and you keep the high-stakes parts. You leave with something to trial next week.")
 feature("Where we are by lunch", "A mental model, a grid, a method.",
@@ -324,13 +364,22 @@ quote("The thread through all five",
       "A leadership question. Which is why it lands on your desk.")
 feature("Your project · RetailFlow", "You're the delivery lead.",
         "The board funded one AI initiative. Ship it without the predictable failures. Carry it through three moves — scoping and stress-testing it by interviewing the RetailFlow team: live chatbots with opinions, who disagree, and won't do your job for you.   access code: pilot2024")
+activity("45 min", "Sprint 1 — scope it against reality",
+         "You're the delivery lead for one RetailFlow initiative. Interview Priya & Marcus. Produce a scoped objective, data needs, the trust-tool split, and a defined 'good enough'. (Worksheet: Sprint 1. Access code: pilot2024.)")
+
 sprint("01", "Scope it against reality", "Priya (Data) & Marcus (CIO)",
        "Scoped objectives, data requirements, a defined 'good enough'",
        "Reconcile 'move fast' with 'the data isn't ready.' Marcus pushes speed; Priya gives the honest, data-grounded timeline. Your scope is where you reconcile the two — and you'll defend it later.")
 brk("break-afternoon-tea.jpg", "2:30", "Afternoon tea", "Back at 3:00")
+activity("45 min", "Sprint 2 — stakeholders & human-in-the-loop",
+         "Continue your initiative. Interview Emma, Tom & David. Build a stakeholder plan and design the human-in-the-loop checkpoints — each named, marked builds-vs-consumes.")
+
 sprint("02", "Stakeholders & human-in-the-loop", "Emma (MD), Tom (frontline) & David (CFO)",
        "A stakeholder plan and a human-in-the-loop checkpoint design",
        "Decide where a human must stay in charge. This is the trust tool and difference 4 in action: design the checking deliberately — where does verification sit, where must a person own the decision?")
+activity("45 min", "Sprint 3 — roadmap, risk & the go/no-go",
+         "Build the delivery roadmap with gates and a risk register. Then make the call — Scale, Pivot, or Kill — and defend it. (Crisis element if time allows.)")
+
 sprint("03", "Roadmap, risk & the go/no-go", "Build it, then defend it",
        "A delivery roadmap with gates, a risk register, the Scale / Pivot / Kill call",
        "Build the roadmap with go/no-go gates and a risk register. Then make the call: Scale, Pivot, or Kill. The question isn't 'is it perfect?' — it's whether the evidence justifies continuing.")
