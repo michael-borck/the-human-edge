@@ -73,31 +73,33 @@ A one-day masterclass · Curtin Executive Education
 
 # What AI actually is
 
-**The simple truth: it predicts the next word.**
+![It predicts the next word — autocomplete, scaled up.](images/autocomplete-on-steroids.jpg){fig-align="center"}
 
-- Trained on billions of pages of text, it learned what tends to follow what.
-- It's autocomplete, scaled up: your phone predicts one word; these predict thousands.
-- The result often *looks* like understanding. It's pattern-matching.
+**It predicts the next word.** Autocomplete, scaled up.
 
-:::: {.notes}
+::::: {.notes}
+- Trained on billions of pages of text, it learned what tends to follow what. It's autocomplete on steroids — your phone predicts one word; these predict thousands.
+- The result often *looks* like understanding. It's pattern-matching, not reasoning.
 - You don't need the maths. You need an honest mental model: what the tool can and can't do.
 - Driving a car well doesn't require knowing how the engine works — but you do need to know it needs fuel and won't go underwater.
-::::
+:::::
 
 ---
 
 # The one mental model to keep
 
+![A convincing average — smooth, plausible, and not the same as the truth.](images/convincing-average.jpg){fig-align="center"}
+
 > AI produces a **convincing average** drawn from everything it has seen.
 
-That average is often genuinely excellent — because the average of a vast amount of competent writing is itself competent.
+**An average, not a truth.** It predicts; it does not reason.
 
-**But it is an average, not a truth.** It predicts; it does not reason, and it does not "know."
-
-:::: {.notes}
+::::: {.notes}
+- That average is often genuinely excellent — the average of a vast amount of competent writing is itself competent.
+- But "about right" and "exactly right" are not the same. It predicts; it does not reason, and it does not "know."
 - This single distinction carries the whole day. If you remember nothing else: it produces a convincing average, and a convincing average is not the same as the truth.
 - Everything that follows — the trust tool, prompting, the five differences, the human-in-the-loop design — is an elaboration of this one fact.
-::::
+:::::
 
 ---
 
@@ -137,16 +139,16 @@ That average is often genuinely excellent — because the average of a vast amou
 
 # "Confident nonsense" is not a bug
 
+![Confident and wrong, with the same polish as a right answer.](images/confident-nonsense.jpg){fig-align="center"}
+
 Ask a colleague → *"I'm not sure, let me check."*
+Ask AI → confident, well-structured, completely wrong.
 
-Ask AI → confident, well-structured, completely wrong answer.
-
-**Hallucination isn't a glitch.** It's the same machinery working as designed — sometimes the most plausible-sounding continuation simply isn't true.
-
-:::: {.notes}
+::::: {.notes}
+- Hallucination isn't a glitch. It's the same machinery working as designed — sometimes the most plausible-sounding continuation simply isn't true.
 - If you take one thing from this morning: AI output needs human verification. Always — especially facts, numbers, names, quotes, and references.
 - This isn't something a future model will "fix." It's a property of how the technology works.
-::::
+:::::
 
 ---
 
@@ -218,7 +220,7 @@ An *average* answer is "in the right ballpark" — a first draft, a summary, a s
 
 # Morning tea — 10:30
 
-![Grab a coffee. Back at 11:00.](images/break-morning-tea.png){fig-align="center"}
+![Grab a coffee. Back at 11:00.](images/break-morning-tea.jpg){fig-align="center"}
 
 ::::: {.notes}
 - 30-minute break. Encourage people to bring a real task to mind for the RTCF exercise after tea.
@@ -322,7 +324,7 @@ You now have:
 
 # Lunch — 12:30
 
-![Lunch break. Back at 1:15.](images/break-lunch.png){fig-align="center"}
+![Lunch break. Back at 1:15.](images/break-lunch.jpg){fig-align="center"}
 
 ::::: {.notes}
 - 45-minute break. Over lunch, invite people to bring a real initiative to mind for the afternoon scoping work.
@@ -368,6 +370,8 @@ Most of your instincts still serve you. Stakeholders, budgets, timelines, the aw
 ---
 
 # Difference 1: "done" can't be specified
+![No single right answer — only a spread of likely ones.](images/done-cant-be-specified.jpg){fig-align="center"}
+
 
 | You normally assume | Why AI breaks it | The move |
 |---|---|---|
@@ -380,6 +384,8 @@ Most of your instincts still serve you. Stakeholders, budgets, timelines, the aw
 ---
 
 # Difference 2: the demo is a trap
+![An impressive demo hides the hard part still ahead.](images/demo-is-a-trap.jpg){fig-align="center"}
+
 
 | You normally assume | Why AI breaks it | The move |
 |---|---|---|
@@ -393,6 +399,8 @@ Most of your instincts still serve you. Stakeholders, budgets, timelines, the aw
 ---
 
 # Difference 3: the data is the uncertainty
+![Data is discovered and messy, not a clean known input.](images/data-is-the-uncertainty.jpg){fig-align="center"}
+
 
 | You normally assume | Why AI breaks it | The move |
 |---|---|---|
@@ -405,6 +413,8 @@ Most of your instincts still serve you. Stakeholders, budgets, timelines, the aw
 ---
 
 # Difference 4: verification is the product
+![The checking is the product — not the raw output.](images/verification-is-the-product.jpg){fig-align="center"}
+
 
 | You normally assume | Why AI breaks it | The move |
 |---|---|---|
@@ -418,6 +428,8 @@ Most of your instincts still serve you. Stakeholders, budgets, timelines, the aw
 ---
 
 # Difference 5: generic competence is the baseline
+![The edge isn't the model — it's the human variation only you bring.](images/where-your-edge-lives.jpg){fig-align="center"}
+
 
 | You normally assume | Why AI breaks it | The move |
 |---|---|---|
@@ -471,7 +483,7 @@ Interview **Priya** (Data) and **Marcus** (CIO). Reconcile "move fast" with "the
 
 # Afternoon tea — 2:30
 
-![Afternoon tea. Back at 3:00.](images/break-morning-tea.png){fig-align="center"}
+![Afternoon tea. Back at 3:00.](images/break-afternoon-tea.jpg){fig-align="center"}
 
 ::::: {.notes}
 - 30-minute break. The final sprint after tea builds the roadmap and makes the go/no-go call — keep people anchored to their scoped project.
@@ -507,14 +519,19 @@ Then make the call: **Scale, Pivot, or Kill.**
 
 # The Scale / Pivot / Kill call
 
-- **Scale** — the evidence supports it. Move toward production, with governance and monitoring that grow with the system.
-- **Pivot** — the idea is right but the approach isn't. Change the shape, keep the intent.
-- **Kill** — it isn't working. Stop early, before it consumes more budget and goodwill. *This is a good outcome.*
+![Three paths from one gate: scale, pivot, or kill.](images/scale-pivot-kill.jpg){fig-align="center"}
 
-:::: {.notes}
-- Normalise killing. A portfolio that never kills is a portfolio that can't learn.
-- Frame it to your sponsor as disciplined decision-making under uncertainty, not failure.
-::::
+- **Scale** — the evidence supports it.
+- **Pivot** — right idea, wrong approach.
+- **Kill** — it isn't working. *This is a good outcome.*
+
+::::: {.notes}
+- Scale: move toward production, with governance and monitoring that grow with the system.
+- Pivot: change the shape, keep the intent.
+- Kill: stop early, before it consumes more budget and goodwill. Normalise killing — a portfolio that never kills can't learn.
+- The honest question at each gate isn't "is it perfect?" It's whether the evidence justifies continuing. The cost of wrongly scaling is far higher than wrongly killing.
+- Frame killing to your sponsor as disciplined decision-making under uncertainty, not failure.
+:::::
 
 ---
 
