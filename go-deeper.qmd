@@ -1,0 +1,69 @@
+---
+title: "Go deeper"
+subtitle: "More to try — if you finish early, or want to push further. All self-paced, all on your own work."
+---
+
+These extend the day's ideas without adding to the main flow. Each is a technique you can run in five minutes on something real. They all do the same thing the day does — keep your judgement in charge — just from different angles.
+
+Everything here is drawn from the free companion book, [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/).
+
+## Push back: VET your AI
+
+The **trust tool** tells you *when* to keep a human in the loop. **VET** tells you *how* — three questions to run on any AI output that matters. The most dangerous output isn't the obvious hallucination; it's the one that sounds completely right.
+
+> **Verify, Explain, Test.** If you can't verify it, explain it, and test it, you're not done yet.
+
+| AI says… | **V**erify | **E**xplain | **T**est |
+|---|---|---|---|
+| "Studies show…" | Find the actual studies | Can I explain the mechanism? | What about a different context? |
+| "The optimal figure is X" | Where's that number from? | Why X, specifically? | What happens if I change a variable? |
+| "This method is 95% effective" | Source? | What does 95% mean here? | Under what conditions? |
+
+- **Verify — can I find this independently?** Check sources, cross-reference claims, look up citations. AI fabricates references routinely because generating a plausible citation is the same process as generating any text. A beautifully formatted reference that doesn't exist is the single most common failure.
+- **Explain — can I say this in my own words?** If you can't rephrase it without leaning on the AI's exact wording, you're holding words, not understanding. Rewrite it; teach it to a colleague. Where you struggle to rephrase is where your gap is.
+- **Test — does this hold up under scrutiny?** Play devil's advocate, check the edge cases, ask "what if?" Change a variable. Fragile answers break; robust ones flex.
+
+Use VET hardest when the output contains claims you'll rely on, a decision hangs on it, or it'll be shared with people who assume you checked. A casual brainstorm gets a light pass; a client deliverable gets the full treatment. [Full chapter →](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html)
+
+## Better conversations
+
+The shape of the conversation changes the output. A single prompt gets you an answer; a conversation gets you understanding.
+
+### Devil's advocate
+Make the AI argue *against* your idea before you commit. It surfaces the weakest assumptions — the ones you'd rather find now than after you've decided.
+> *"Argue against this plan as a sceptical, experienced critic. Find its three weakest assumptions, and for each, one question that would need a good answer and one thing that would have to be true for it to survive."*
+**Teaches:** the edge isn't in the idea you like; it's in surviving the challenge you didn't want to hear. *(A ready-made version is in the [RTCF toolkit](tools/rtcf-toolkit.html) → Templates.)*
+
+### Boardroom perspectives
+Turn one decision into a panel. Ask the AI to take several distinct expert perspectives — strategist, finance, operator, ethicist — and give each a recommendation.
+> *"Act as a small advisory panel: a strategist, a finance lead, and an operator. Analyse this decision from each perspective. End each with a single recommendation."*
+**Teaches:** you decide which voice to weight — that weighting is your judgement.
+
+### The two-chat workflow
+Separate thinking from building across **two sessions**.
+- **Session 1 — Thinking Chat:** explore, challenge assumptions, follow tangents, clarify what your *actual* question is. Messy by design; disposable.
+- **In between — the magic:** read what emerged, decide what matters, discard what doesn't, write a focused brief. You don't copy-paste; you *curate*. **That curation is where your judgement lives.**
+- **Session 2 — Build Chat:** produce the output from the brief. Better input, better output.
+
+Neither session has the full picture. Only you hold both — that's the real meaning of "human in the loop." *Teaching example: Chat 1 — brainstorm what an assessment should test and where students stumble; Chat 2 — draft the task sheet from your one-paragraph brief.*
+
+### The handover prompt
+Long chats drift and lose the thread. Before you close one, ask the AI to package the context so you can pick it up clean.
+> *"Write a handover prompt that captures everything important from this conversation — context, decisions made, where we left off — so I can paste it into a new chat and continue."*
+Save it, start fresh, paste it in. **You keep the thinking; you lose the noise.** Great for multi-session work (a grant draft, a policy, a unit redesign).
+
+### The conversation loop
+The shape underneath all of the above — four stages, one rule: **you stay in the conversation.**
+
+1. **Brainstorm** — define your real question, not your attempted solution.
+2. **Ideate** — go wide; explore angles you hadn't considered.
+3. **Iterate** — push back, refine, redirect. *"The tone's wrong." / "You're solving the wrong problem — the constraint is budget, not timeline."* This is where the output becomes yours.
+4. **Amplify** — edit, restructure, cut, bring it into your voice. Put your name on it.
+5. **Repeat** — loop again until your thinking has landed.
+
+The loop works because **your expertise + AI's breadth = amplified thinking**, and the bottleneck is your thinking, not the model. A better model won't fix a lazy prompt; skipping iteration won't be saved by speed. [Full chapter →](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html)
+
+:::: {.callout-note}
+## One thread through all of these
+Every technique here keeps you from the easiest mistake: accepting fluent, generic output. Verify it, split thinking from building, argue against it, iterate. Each is a different way of doing the same thing — **adding your judgement instead of just adding context.**
+::::

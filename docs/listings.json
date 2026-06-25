@@ -1,15 +1,15 @@
 [
   {
+    "listing": "/frameworks.html",
+    "items": []
+  },
+  {
     "listing": "/before.html",
     "items": [
       "/readings/ai-in-five-minutes.html",
       "/readings/the-trust-tool.html",
       "/readings/why-ai-delivery-is-different.html"
     ]
-  },
-  {
-    "listing": "/frameworks.html",
-    "items": []
   },
   {
     "listing": "/workshop.html",

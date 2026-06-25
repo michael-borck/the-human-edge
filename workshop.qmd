@@ -74,3 +74,8 @@ The documents you'll need (board memos, data profiles, vendor proposals, policie
 ## The thread through both halves
 The trust tool you learn in the morning is the same grid you apply all afternoon. At the task level it asks "do I trust this output?" At the project level it asks "where does a human stay in the loop?" One idea, two scales — that's why the day holds together.
 ::::
+
+:::: {.callout-tip}
+## Finished early, or want more? Go deeper
+Self-paced extensions for fast finishers (or if the room races through): **[VET your AI](go-deeper.html#push-back-vet-your-ai)** — verify, explain, test any output; the **[two-chat workflow](go-deeper.html#the-two-chat-workflow)** — separate thinking from building; plus devil's advocate, boardroom perspectives, the handover prompt, and the conversation loop. Each takes five minutes on your own work.
+::::
