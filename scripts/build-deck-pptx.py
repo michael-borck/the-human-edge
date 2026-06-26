@@ -291,6 +291,11 @@ grid("A quick note on scope", "AI is bigger than this.", "Today is one slice.",
      [("THE WHOLE FIELD", "Machine learning, computer vision, audio, CNNs, robotics, forecasting – decades of work, far beyond chatbots."),
       ("TODAY'S FOCUS", "Generative AI – models that produce text, images and code. The part reshaping everyday work right now, and the part you'll use at your desk.")],
      footleft="The judgement we build here transfers across the whole field")
+grid("What AI can do right now", "The average is genuinely impressive.", None,
+     [("NOTEBOOKLM", "Paste a source – get a podcast, a briefing doc, a study guide. Two minutes, free."),
+      ("DATA TO SLIDES", "Upload a CSV – get charts and a presentation. No code, no spreadsheet skills."),
+      ("TEACHABLE MACHINE", "Train an image or audio model in the browser. No code, no account.")],
+     cols=3, footleft="This is the convincing average. Everyone in the room gets it. So how do you differentiate?")
 concept("What AI actually is", "It predicts the next word.",
         "Autocomplete, scaled up. Trained on billions of pages, it learned what tends to follow what. The result looks like understanding. It's pattern-matching.",
         "autocomplete-on-steroids.jpg")
