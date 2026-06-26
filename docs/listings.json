@@ -16,10 +16,12 @@
   {
     "listing": "/frameworks.html",
     "items": [
+      "/handouts/frameworks/data-governance.html",
       "/handouts/frameworks/delivery-frameworks.html",
       "/handouts/frameworks/make-your-edge-persistent.html",
       "/handouts/frameworks/frameworks-scale-pivot-kill.html",
-      "/handouts/frameworks/frameworks-trust-tool.html"
+      "/handouts/frameworks/frameworks-trust-tool.html",
+      "/handouts/frameworks/cognitive-traps.html"
     ]
   },
   {

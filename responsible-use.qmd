@@ -58,3 +58,12 @@ Work through one or two of these at your table. There's no answer key; the point
 ## The thread
 Every dilemma above is really one question: **where does a human stay in the loop, and who owns the consequence when they don't?** That's not a technical question. It's the judgement the whole day is about – and it's why ethics, governance and bias belong in a *delivery* course, not bolted on.
 ::::
+
+:::: {.callout-note}
+## Go deeper
+- [Data governance: proportionate, not prohibitive](handouts/frameworks/data-governance.html) – full article
+- [Three cognitive traps](handouts/frameworks/cognitive-traps.html) – full article
+- [Ethics, data governance & integrity](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/ethics-integrity.html) – original (Passport)
+- [AI Skills Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html) – Curtin's AI literacy hub
+- [bigpicture.borck.dev](https://bigpicture.borck.dev) – more of Michael's work
+::::

@@ -41,7 +41,7 @@ website:
   page-footer:
     border: true
     left: "The Human Edge: *Using and Delivering AI with Judgement*"
-    right: "Dr. Michael Borck · Curtin University"
+    right: "[bigpicture.borck.dev](https://bigpicture.borck.dev) · Dr Michael Borck · Curtin University"
 
 format:
   html:

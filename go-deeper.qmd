@@ -76,3 +76,12 @@ Not technical problems – human ones. Awareness is the first defence.
 ## One thread through all of these
 Every technique here keeps you from the easiest mistake: accepting fluent, generic output. Verify it, split thinking from building, argue against it, iterate. Each is a different way of doing the same thing – **adding your judgement instead of just adding context.**
 ::::
+
+:::: {.callout-note}
+## Go deeper
+- [Three cognitive traps](handouts/frameworks/cognitive-traps.html) – full article · [original (Passport)](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/three-cognitive-traps.html)
+- [The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html) – book chapter
+- [VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html) – book chapter
+- [AI Skills Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html) – Curtin's broader AI literacy hub
+- [bigpicture.borck.dev](https://bigpicture.borck.dev) – more of Michael's work
+::::
