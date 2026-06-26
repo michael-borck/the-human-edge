@@ -83,5 +83,6 @@ Every technique here keeps you from the easiest mistake: accepting fluent, gener
 - [The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html) – book chapter
 - [VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html) – book chapter
 - [AI Skills Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html) – Curtin's broader AI literacy hub
+- [AI Toolkit](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/ai-toolkit.html) – browse all articles (some have a teaching focus; the frameworks transfer)
 - [bigpicture.borck.dev](https://bigpicture.borck.dev) – more of Michael's work
 ::::
