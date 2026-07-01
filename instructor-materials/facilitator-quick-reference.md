@@ -38,9 +38,9 @@ Introduce the grid in Session 1 with everyday examples (drafting an email = lean
 
 - Each group takes **one** of the four initiative cards. No two designs alike.
 - They interview the RetailFlow chatbots (live, fluent, confident even when wrong – treat as AI output).
-- **Sprint 1** = differences 1 & 3 (define "good enough" as a band; data is discovery).
-- **Sprint 2** = difference 4 + trust tool (design checkpoints deliberately).
-- **Sprint 3** = roadmap, risk, Scale/Pivot/Kill. Normalise killing as a good outcome.
+- **Sprint 1** = differences 1 & 3 (define "good enough" as a band; data is discovery). **Close (3–5 min):** each group defends their "good enough" band — the metric, the threshold, and where Marcus met Priya — then takes one challenge.
+- **Sprint 2** = difference 4 + trust tool (design checkpoints deliberately). **Close (3–5 min):** each group defends the one checkpoint they won't automate, against the builds-vs-consumes test, then takes one challenge.
+- **Sprint 3** = roadmap, risk, Scale/Pivot/Kill. Normalise killing as a good outcome. **Close (the capstone):** the gate-1 board pitch — Scale/Pivot/Kill + the load-bearing assumption that drove it, then one challenge from the room.
 - Access code for the RetailFlow internal portal: `pilot2024`.
 
 ## Facilitation principles

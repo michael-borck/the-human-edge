@@ -14,6 +14,14 @@
     ]
   },
   {
+    "listing": "/before.html",
+    "items": [
+      "/readings/ai-in-five-minutes.html",
+      "/readings/the-trust-tool.html",
+      "/readings/why-ai-delivery-is-different.html"
+    ]
+  },
+  {
     "listing": "/frameworks.html",
     "items": [
       "/handouts/frameworks/data-governance.html",
@@ -22,14 +30,6 @@
       "/handouts/frameworks/frameworks-scale-pivot-kill.html",
       "/handouts/frameworks/frameworks-trust-tool.html",
       "/handouts/frameworks/cognitive-traps.html"
-    ]
-  },
-  {
-    "listing": "/before.html",
-    "items": [
-      "/readings/ai-in-five-minutes.html",
-      "/readings/the-trust-tool.html",
-      "/readings/why-ai-delivery-is-different.html"
     ]
   }
 ]

@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Seven prompting techniques — reverse prompting, pros and cons, stepwise thinking, role play, debating, practice, and the expert panel — with ready-to-use prompts and discipline-specific examples.">
+
+<title>Seven prompt techniques to try – The Human Edge</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-20d1645b68fe24e438722d2c6c49ef3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<!-- Brand typography: Fraunces (display/headings) + Inter (body/UI). Loaded once site-wide. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+
+<meta property="og:title" content="Seven prompt techniques to try – The Human Edge">
+<meta property="og:description" content="Seven prompting techniques — reverse prompting, pros and cons, stepwise thinking, role play, debating, practice, and the expert panel — with ready-to-use prompts and discipline-specific examples.">
+<meta property="og:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
+<meta property="og:site_name" content="The Human Edge">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Seven prompt techniques to try – The Human Edge">
+<meta name="twitter:description" content="Seven prompting techniques — reverse prompting, pros and cons, stepwise thinking, role play, debating, practice, and the expert panel — with ready-to-use prompts and discipline-specific examples.">
+<meta name="twitter:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="./favicon.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Human Edge</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./before.html"> 
+<span class="menu-text">Readings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshop.html"> 
+<span class="menu-text">The workshop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./frameworks.html"> 
+<span class="menu-text">Frameworks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Meet the team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./series.html"> 
+<span class="menu-text">The series</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./the-human-edge-deck.pptx" target="_blank"> 
+<span class="menu-text">Slides (PPTX)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#where-rtcf-fits" id="toc-where-rtcf-fits" class="nav-link active" data-scroll-target="#where-rtcf-fits">Where RTCF fits</a></li>
+  <li><a href="#why-these-seven" id="toc-why-these-seven" class="nav-link" data-scroll-target="#why-these-seven">Why these seven</a></li>
+  <li><a href="#technique-1-reverse-prompting-for-scoping-and-policy-design" id="toc-technique-1-reverse-prompting-for-scoping-and-policy-design" class="nav-link" data-scroll-target="#technique-1-reverse-prompting-for-scoping-and-policy-design">Technique 1: Reverse Prompting (for Scoping and Policy Design)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does" id="toc-what-it-does" class="nav-link" data-scroll-target="#what-it-does">What It Does</a></li>
+  <li><a href="#why-it-works-across-disciplines" id="toc-why-it-works-across-disciplines" class="nav-link" data-scroll-target="#why-it-works-across-disciplines">Why It Works Across Disciplines</a></li>
+  <li><a href="#prompt-ready-to-use" id="toc-prompt-ready-to-use" class="nav-link" data-scroll-target="#prompt-ready-to-use">Prompt (ready to use)</a></li>
+  <li><a href="#what-happens" id="toc-what-happens" class="nav-link" data-scroll-target="#what-happens">What Happens</a></li>
+  <li><a href="#variations-for-different-disciplines" id="toc-variations-for-different-disciplines" class="nav-link" data-scroll-target="#variations-for-different-disciplines">Variations for Different Disciplines</a></li>
+  <li><a href="#try-this" id="toc-try-this" class="nav-link" data-scroll-target="#try-this">Try this</a></li>
+  </ul></li>
+  <li><a href="#technique-2-pros-and-cons-for-decision-making" id="toc-technique-2-pros-and-cons-for-decision-making" class="nav-link" data-scroll-target="#technique-2-pros-and-cons-for-decision-making">Technique 2: Pros and Cons (for Decision Making)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-1" id="toc-what-it-does-1" class="nav-link" data-scroll-target="#what-it-does-1">What It Does</a></li>
+  <li><a href="#why-it-works-across-disciplines-1" id="toc-why-it-works-across-disciplines-1" class="nav-link" data-scroll-target="#why-it-works-across-disciplines-1">Why It Works Across Disciplines</a></li>
+  <li><a href="#prompt-ready-to-use-1" id="toc-prompt-ready-to-use-1" class="nav-link" data-scroll-target="#prompt-ready-to-use-1">Prompt (ready to use)</a></li>
+  <li><a href="#what-happens-1" id="toc-what-happens-1" class="nav-link" data-scroll-target="#what-happens-1">What Happens</a></li>
+  <li><a href="#push-back-on-the-result" id="toc-push-back-on-the-result" class="nav-link" data-scroll-target="#push-back-on-the-result">Push back on the result</a></li>
+  <li><a href="#variations-for-different-disciplines-1" id="toc-variations-for-different-disciplines-1" class="nav-link" data-scroll-target="#variations-for-different-disciplines-1">Variations for Different Disciplines</a></li>
+  <li><a href="#try-this-1" id="toc-try-this-1" class="nav-link" data-scroll-target="#try-this-1">Try this</a></li>
+  </ul></li>
+  <li><a href="#technique-3-stepwise-chain-of-thought-for-process-management" id="toc-technique-3-stepwise-chain-of-thought-for-process-management" class="nav-link" data-scroll-target="#technique-3-stepwise-chain-of-thought-for-process-management">Technique 3: Stepwise Chain of Thought (for Process Management)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-2" id="toc-what-it-does-2" class="nav-link" data-scroll-target="#what-it-does-2">What It Does</a></li>
+  <li><a href="#why-it-works-across-disciplines-2" id="toc-why-it-works-across-disciplines-2" class="nav-link" data-scroll-target="#why-it-works-across-disciplines-2">Why It Works Across Disciplines</a></li>
+  <li><a href="#prompt-ready-to-use-2" id="toc-prompt-ready-to-use-2" class="nav-link" data-scroll-target="#prompt-ready-to-use-2">Prompt (ready to use)</a></li>
+  <li><a href="#what-happens-2" id="toc-what-happens-2" class="nav-link" data-scroll-target="#what-happens-2">What Happens</a></li>
+  <li><a href="#variations-for-different-disciplines-2" id="toc-variations-for-different-disciplines-2" class="nav-link" data-scroll-target="#variations-for-different-disciplines-2">Variations for Different Disciplines</a></li>
+  <li><a href="#try-this-2" id="toc-try-this-2" class="nav-link" data-scroll-target="#try-this-2">Try this</a></li>
+  </ul></li>
+  <li><a href="#technique-4-role-play-for-skill-building" id="toc-technique-4-role-play-for-skill-building" class="nav-link" data-scroll-target="#technique-4-role-play-for-skill-building">Technique 4: Role Play (for Skill Building)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-3" id="toc-what-it-does-3" class="nav-link" data-scroll-target="#what-it-does-3">What It Does</a></li>
+  <li><a href="#why-it-works-across-disciplines-3" id="toc-why-it-works-across-disciplines-3" class="nav-link" data-scroll-target="#why-it-works-across-disciplines-3">Why It Works Across Disciplines</a></li>
+  <li><a href="#prompt-ready-to-use-3" id="toc-prompt-ready-to-use-3" class="nav-link" data-scroll-target="#prompt-ready-to-use-3">Prompt (ready to use)</a></li>
+  <li><a href="#what-happens-3" id="toc-what-happens-3" class="nav-link" data-scroll-target="#what-happens-3">What Happens</a></li>
+  <li><a href="#advanced-variation-the-difficult-conversation" id="toc-advanced-variation-the-difficult-conversation" class="nav-link" data-scroll-target="#advanced-variation-the-difficult-conversation">Advanced Variation: The Difficult Conversation</a></li>
+  <li><a href="#variations-for-different-disciplines-3" id="toc-variations-for-different-disciplines-3" class="nav-link" data-scroll-target="#variations-for-different-disciplines-3">Variations for Different Disciplines</a></li>
+  <li><a href="#try-this-3" id="toc-try-this-3" class="nav-link" data-scroll-target="#try-this-3">Try this</a></li>
+  </ul></li>
+  <li><a href="#technique-5-debating-for-strategic-and-ethical-analysis" id="toc-technique-5-debating-for-strategic-and-ethical-analysis" class="nav-link" data-scroll-target="#technique-5-debating-for-strategic-and-ethical-analysis">Technique 5: Debating (for Strategic and Ethical Analysis)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-4" id="toc-what-it-does-4" class="nav-link" data-scroll-target="#what-it-does-4">What It Does</a></li>
+  <li><a href="#why-it-works-across-disciplines-4" id="toc-why-it-works-across-disciplines-4" class="nav-link" data-scroll-target="#why-it-works-across-disciplines-4">Why It Works Across Disciplines</a></li>
+  <li><a href="#variation-a-critique-and-compare" id="toc-variation-a-critique-and-compare" class="nav-link" data-scroll-target="#variation-a-critique-and-compare">Variation A: Critique and Compare</a></li>
+  <li><a href="#variation-b-argue-both-sides" id="toc-variation-b-argue-both-sides" class="nav-link" data-scroll-target="#variation-b-argue-both-sides">Variation B: Argue Both Sides</a></li>
+  <li><a href="#variation-c-multi-stakeholder-debate" id="toc-variation-c-multi-stakeholder-debate" class="nav-link" data-scroll-target="#variation-c-multi-stakeholder-debate">Variation C: Multi-Stakeholder Debate</a></li>
+  <li><a href="#push-it-further" id="toc-push-it-further" class="nav-link" data-scroll-target="#push-it-further">Push it further</a></li>
+  <li><a href="#try-this-4" id="toc-try-this-4" class="nav-link" data-scroll-target="#try-this-4">Try this</a></li>
+  </ul></li>
+  <li><a href="#technique-6-practice-and-self-testing-for-rehearsal-and-confidence" id="toc-technique-6-practice-and-self-testing-for-rehearsal-and-confidence" class="nav-link" data-scroll-target="#technique-6-practice-and-self-testing-for-rehearsal-and-confidence">Technique 6: Practice and Self-Testing (for Rehearsal and Confidence)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-5" id="toc-what-it-does-5" class="nav-link" data-scroll-target="#what-it-does-5">What It Does</a></li>
+  <li><a href="#why-it-works" id="toc-why-it-works" class="nav-link" data-scroll-target="#why-it-works">Why It Works</a></li>
+  <li><a href="#use-case-1-self-check-your-understanding-of-a-domain" id="toc-use-case-1-self-check-your-understanding-of-a-domain" class="nav-link" data-scroll-target="#use-case-1-self-check-your-understanding-of-a-domain">Use Case 1: Self-check your understanding of a domain</a></li>
+  <li><a href="#use-case-2-application-practice" id="toc-use-case-2-application-practice" class="nav-link" data-scroll-target="#use-case-2-application-practice">Use Case 2: Application practice</a></li>
+  <li><a href="#use-case-3-rehearse-a-difficult-conversation" id="toc-use-case-3-rehearse-a-difficult-conversation" class="nav-link" data-scroll-target="#use-case-3-rehearse-a-difficult-conversation">Use Case 3: Rehearse a difficult conversation</a></li>
+  <li><a href="#use-case-4-close-your-own-knowledge-gaps" id="toc-use-case-4-close-your-own-knowledge-gaps" class="nav-link" data-scroll-target="#use-case-4-close-your-own-knowledge-gaps">Use Case 4: Close your own knowledge gaps</a></li>
+  <li><a href="#try-this-5" id="toc-try-this-5" class="nav-link" data-scroll-target="#try-this-5">Try this</a></li>
+  <li><a href="#rehearsal-not-the-real-thing" id="toc-rehearsal-not-the-real-thing" class="nav-link" data-scroll-target="#rehearsal-not-the-real-thing">Rehearsal, not the real thing</a></li>
+  <li><a href="#variation-adaptive-difficulty" id="toc-variation-adaptive-difficulty" class="nav-link" data-scroll-target="#variation-adaptive-difficulty">Variation: Adaptive difficulty</a></li>
+  <li><a href="#self-directed-progression" id="toc-self-directed-progression" class="nav-link" data-scroll-target="#self-directed-progression">Self-directed progression</a></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters">Why this matters</a></li>
+  </ul></li>
+  <li><a href="#technique-7-the-expert-panel-for-multi-perspective-analysis" id="toc-technique-7-the-expert-panel-for-multi-perspective-analysis" class="nav-link" data-scroll-target="#technique-7-the-expert-panel-for-multi-perspective-analysis">Technique 7: The Expert Panel (for Multi-Perspective Analysis)</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does-6" id="toc-what-it-does-6" class="nav-link" data-scroll-target="#what-it-does-6">What It Does</a></li>
+  <li><a href="#why-it-works-1" id="toc-why-it-works-1" class="nav-link" data-scroll-target="#why-it-works-1">Why It Works</a></li>
+  <li><a href="#prompt-ready-to-use-4" id="toc-prompt-ready-to-use-4" class="nav-link" data-scroll-target="#prompt-ready-to-use-4">Prompt (ready to use)</a></li>
+  <li><a href="#what-happens-4" id="toc-what-happens-4" class="nav-link" data-scroll-target="#what-happens-4">What Happens</a></li>
+  <li><a href="#turn-it-into-a-decision" id="toc-turn-it-into-a-decision" class="nav-link" data-scroll-target="#turn-it-into-a-decision">Turn it into a decision</a></li>
+  <li><a href="#variations-for-different-topics" id="toc-variations-for-different-topics" class="nav-link" data-scroll-target="#variations-for-different-topics">Variations for Different Topics</a></li>
+  <li><a href="#try-this-6" id="toc-try-this-6" class="nav-link" data-scroll-target="#try-this-6">Try this</a></li>
+  <li><a href="#why-this-is-powerful" id="toc-why-this-is-powerful" class="nav-link" data-scroll-target="#why-this-is-powerful">Why This Is Powerful</a></li>
+  <li><a href="#combining-with-other-techniques" id="toc-combining-with-other-techniques" class="nav-link" data-scroll-target="#combining-with-other-techniques">Combining with Other Techniques</a></li>
+  </ul></li>
+  <li><a href="#how-to-choose-which-technique-to-use" id="toc-how-to-choose-which-technique-to-use" class="nav-link" data-scroll-target="#how-to-choose-which-technique-to-use">How to Choose Which Technique to Use</a></li>
+  <li><a href="#combining-techniques" id="toc-combining-techniques" class="nav-link" data-scroll-target="#combining-techniques">Combining Techniques</a></li>
+  <li><a href="#your-action-step" id="toc-your-action-step" class="nav-link" data-scroll-target="#your-action-step">Your Action Step</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Seven prompt techniques to try</h1>
+<p class="subtitle lead">Seven ready-to-use patterns that put your judgement in charge of the output.</p>
+</div>
+
+<div>
+  <div class="description">
+    Seven prompting techniques — reverse prompting, pros and cons, stepwise thinking, role play, debating, practice, and the expert panel — with ready-to-use prompts and discipline-specific examples.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>These seven prompting techniques are reusable patterns for getting more out of AI on your own work — drafting a policy, weighing a decision, rehearsing a difficult conversation, pressure-testing a recommendation. Each one turns the AI from an answer machine into a sparring partner, a coach, or a panel of experts. They’re not about clever prompting for its own sake; they’re about keeping your judgement in charge of the output. Pick the one that matches the job in front of you, adapt the example prompt, and run it on something real.</p>
+<section id="where-rtcf-fits" class="level2">
+<h2 class="anchored" data-anchor-id="where-rtcf-fits">Where RTCF fits</h2>
+<p><strong>RTCF</strong> — <strong>R</strong>ole · <strong>T</strong>ask · <strong>C</strong>ontext · <strong>F</strong>ormat — is how you <em>structure</em> any prompt, and it’s covered in the in-browser <a href="tools/rtcf-toolkit.html">RTCF toolkit</a>. These seven techniques are <em>patterns</em> you apply with it: they tell you what shape of conversation to run, while RTCF makes sure each prompt inside that conversation is well-formed. So you might use RTCF to set a single prompt up crisply, and use Role Play to decide you want a coached rehearsal rather than a one-shot answer. Think of RTCF as the grammar and these seven as the moves.</p>
+</section>
+<section id="why-these-seven" class="level2">
+<h2 class="anchored" data-anchor-id="why-these-seven">Why these seven</h2>
+<p>These aren’t random AI tricks. They’re seven prompting patterns chosen because they build the judgement AI can’t supply on its own:</p>
+<ol type="1">
+<li><strong>Reverse Prompting</strong> → comprehensive scoping and requirement gathering</li>
+<li><strong>Pros and Cons</strong> → analytical, evidence-based decision-making</li>
+<li><strong>Stepwise Chain of Thought</strong> → deliberate, defensible process</li>
+<li><strong>Role Play</strong> → communication and interpersonal skill under pressure</li>
+<li><strong>Debating</strong> → strategic and ethical reasoning across competing views</li>
+<li><strong>Practice and Self-Testing</strong> → low-stakes rehearsal with immediate feedback</li>
+<li><strong>The Expert Panel</strong> → multi-perspective analysis and synthesis</li>
+</ol>
+<p>Each is easy to adapt to your own discipline. Let’s work through them with ready-to-use examples.</p>
+<hr>
+</section>
+<section id="technique-1-reverse-prompting-for-scoping-and-policy-design" class="level2">
+<h2 class="anchored" data-anchor-id="technique-1-reverse-prompting-for-scoping-and-policy-design">Technique 1: Reverse Prompting (for Scoping and Policy Design)</h2>
+<section id="what-it-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does">What It Does</h3>
+<p>Instead of jumping straight to a solution, the AI asks <em>you</em> questions to help scope out all the requirements, considerations, and potential issues. This mirrors real professional work, where defining the problem properly is half the battle.</p>
+</section>
+<section id="why-it-works-across-disciplines" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-across-disciplines">Why It Works Across Disciplines</h3>
+<p>Complex problem scoping is fundamental to every business discipline. Whether you’re designing a policy, a strategy, a system, or a solution, you have to think through multiple stakeholders, constraints, legal and ethical implications, and trade-offs. This technique forces you past the obvious surface issues and into the full complexity before you start solving.</p>
+<p><strong>Discipline-specific contexts:</strong> - <strong>HR:</strong> Policy and program design with stakeholder, legal, operational, and fairness considerations - <strong>Business/Marketing:</strong> Strategy development with market, competitive, financial, and capability considerations - <strong>Management:</strong> Organisational change with stakeholder, cultural, operational, and risk considerations - <strong>Supply Chain:</strong> Network design with cost, resilience, sustainability, and operational considerations - <strong>Accounting/Finance:</strong> Audit or valuation scope with compliance, materiality, and stakeholder considerations - <strong>Economics:</strong> Policy design with trade-offs, stakeholder impacts, and evidence considerations</p>
+</section>
+<section id="prompt-ready-to-use" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-ready-to-use">Prompt (ready to use)</h3>
+<pre><code>I need to draft a new "Flexible Work Arrangement" policy for a 500-employee
+company that has both office-based and remote staff. I need to make sure I
+cover all the key areas.
+
+Your task: Ask me a series of yes/no or short-answer questions to help me
+clarify all the requirements, considerations, and potential pitfalls for
+this policy.
+
+Ask one question at a time. Wait for my response before asking the next
+question. Continue until you've helped me think through at least 10
+different aspects of this policy.
+
+Begin with your first question.</code></pre>
+</section>
+<section id="what-happens" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens">What Happens</h3>
+<p>The AI will start asking questions like: - “Will all roles be eligible for flexible arrangements, or will there be specific criteria?” - “Have you considered how this will affect team collaboration and meeting schedules?” - “What equipment or technology support will the company provide for remote workers?” - “How will you handle performance measurement for remote versus office staff?” - “Are there legal or insurance implications you need to address?”</p>
+<p>You have to think through each question before responding. By the end, you’ve been guided to consider fairness, logistics, legal compliance, technology needs, and cultural impact — all before drafting a single policy sentence.</p>
+</section>
+<section id="variations-for-different-disciplines" class="level3">
+<h3 class="anchored" data-anchor-id="variations-for-different-disciplines">Variations for Different Disciplines</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">HR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Business &amp; Marketing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Supply Chain &amp; Logistics</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Information Systems</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">Accounting &amp; Finance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">Economics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>“I need to design an onboarding program for graduate hires. Ask me questions to ensure I’ve thought through all the key elements.”</li>
+<li>“I’m planning a diversity and inclusion initiative. Help me identify all the stakeholders and considerations through questioning.”</li>
+<li>“I need to restructure our performance review process. What questions should I be asking myself to ensure it’s fair and effective?”</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>“I need to develop a market entry strategy for a new geographic region. Ask me questions to help me think through all the market, competitive, and operational considerations.”</li>
+<li>“I’m launching a new product. Ask me questions to ensure I’ve scoped out the customer, competitive, and capability requirements.”</li>
+<li>“I need to design a customer loyalty program. What questions should I be asking to ensure it’s viable and profitable?”</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ul>
+<li>“I need to plan an organisational restructure. Ask me questions to help me think through all the stakeholder, cultural, and operational impacts.”</li>
+<li>“I’m implementing a new management model. What questions should I ask myself about change management, training, and stakeholder readiness?”</li>
+<li>“I need to design a change management strategy. Help me identify all the resistance points and engagement considerations.”</li>
+</ul>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<ul>
+<li>“I need to redesign our supply chain network. Ask me questions to help me think through cost, resilience, sustainability, and service considerations.”</li>
+<li>“I’m evaluating a supplier consolidation strategy. What questions should I be asking about risk, quality, and financial implications?”</li>
+<li>“I need to implement demand planning. Ask me questions about data, systems, and organisational capability requirements.”</li>
+</ul>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<ul>
+<li>“I need to plan a systems implementation. Ask me questions to help me think through stakeholder requirements, technical feasibility, and change management.”</li>
+<li>“I’m designing an IT governance framework. What questions should I be asking about risk, compliance, and organisational adoption?”</li>
+<li>“I need to scope a digital transformation initiative. Help me identify all the technical, organisational, and capability considerations.”</li>
+</ul>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<ul>
+<li>“I need to plan an audit approach for a complex client. Ask me questions to help me scope the audit scope, materiality, and key risks.”</li>
+<li>“I’m designing a financial reporting control system. What questions should I be asking about stakeholders, compliance, and operational constraints?”</li>
+<li>“I need to evaluate a valuation approach. Ask me questions about assumptions, stakeholders, and regulatory considerations.”</li>
+</ul>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<ul>
+<li>“I need to design a policy recommendation to address economic inequality. Ask me questions to help me think through trade-offs, stakeholders, and evidence.”</li>
+<li>“I’m analysing an economic model. What questions should I ask about assumptions, limitations, and stakeholder impacts?”</li>
+<li>“I need to scope an economic impact analysis. Help me identify all the affected parties and considerations.”</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="try-this" class="level3">
+<h3 class="anchored" data-anchor-id="try-this">Try this</h3>
+<p>Use it as a pre-writing exercise. Run the AI questioning session, then draft your policy or plan. Now compare the draft to the questions the AI raised — did you actually address them, or slide past the hard ones?</p>
+<hr>
+</section>
+</section>
+<section id="technique-2-pros-and-cons-for-decision-making" class="level2">
+<h2 class="anchored" data-anchor-id="technique-2-pros-and-cons-for-decision-making">Technique 2: Pros and Cons (for Decision Making)</h2>
+<section id="what-it-does-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-1">What It Does</h3>
+<p>The AI systematically analyses multiple approaches to a business problem, evaluating each option against specific criteria. This develops the ability to make justified recommendations rather than just stating preferences.</p>
+</section>
+<section id="why-it-works-across-disciplines-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-across-disciplines-1">Why It Works Across Disciplines</h3>
+<p>Every business professional has to evaluate competing strategies and make balanced, evidence-based recommendations. This technique builds the muscle for weighing trade-offs, considering multiple stakeholder perspectives, and justifying strategic choices.</p>
+</section>
+<section id="prompt-ready-to-use-1" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-ready-to-use-1">Prompt (ready to use)</h3>
+<pre><code>What are the main models for conducting performance reviews in a hybrid
+workforce? For each model you identify, provide:
+
+1. A brief description of how it works
+2. Three key advantages
+3. Three key disadvantages
+
+Evaluate each model specifically in terms of:
+- Fairness and perceived equity
+- Administrative overhead and manager workload
+- Impact on employee morale and development
+
+Conclude with a recommendation for which model would be most appropriate
+for a mid-sized tech company (300 employees, 60% hybrid, 40% fully remote)
+and justify your recommendation.</code></pre>
+</section>
+<section id="what-happens-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-1">What Happens</h3>
+<p>The AI will identify 3-4 performance review models (e.g., annual reviews, continuous feedback, 360-degree feedback, OKR-based systems) and analyse each systematically. You receive a structured comparison that you then have to critically evaluate.</p>
+</section>
+<section id="push-back-on-the-result" class="level3">
+<h3 class="anchored" data-anchor-id="push-back-on-the-result">Push back on the result</h3>
+<p>Don’t simply accept the AI’s recommendation. Force yourself to: - Challenge one of the “pros” listed — is it really an advantage in every context? - Add a disadvantage the AI missed - Argue for a <em>different</em> option than the one the AI recommended, using evidence - Identify which psychological, economic, or organisational theory supports or contradicts each approach</p>
+<p>That turns the AI output from an answer into a starting point for deeper analysis.</p>
+</section>
+<section id="variations-for-different-disciplines-1" class="level3">
+<h3 class="anchored" data-anchor-id="variations-for-different-disciplines-1">Variations for Different Disciplines</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">HR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Business &amp; Marketing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Supply Chain &amp; Logistics</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Information Systems</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Accounting &amp; Finance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">Economics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<ul>
+<li>“Compare different approaches to managing workplace conflict: mediation, formal grievance process, restorative justice. Evaluate each for speed, fairness, and relationship preservation.”</li>
+<li>“Analyse three different redundancy selection methods. What are the legal risks and ethical considerations of each?”</li>
+<li>“What are the pros and cons of using AI-powered resume screening tools versus traditional human review?”</li>
+</ul>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<ul>
+<li>“Compare different market entry strategies: direct investment, partnership, acquisition. Evaluate each for speed to market, cost, risk, and control.”</li>
+<li>“Analyse different pricing strategies: penetration pricing, value-based pricing, competitive pricing. What are the trade-offs for market share, profitability, and customer perception?”</li>
+<li>“What are the pros and cons of expanding through new products versus new markets?”</li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<ul>
+<li>“Compare different organisational structures: functional, divisional, matrix, networked. Evaluate each for agility, accountability, and collaboration.”</li>
+<li>“Analyse different change management approaches: top-down, participative, emergent. What are the trade-offs for speed, buy-in, and sustainability?”</li>
+<li>“What are the pros and cons of different leadership models: directive, participative, delegative?”</li>
+</ul>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<ul>
+<li>“Compare different supply chain strategies: make-to-stock, make-to-order, mass customisation. Evaluate each for cost, responsiveness, and flexibility.”</li>
+<li>“Analyse different supplier relationship models: single-source, multi-source, supplier partnerships. What are the trade-offs for cost, quality, and resilience?”</li>
+<li>“What are the pros and cons of vertical integration versus outsourcing key functions?”</li>
+</ul>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<ul>
+<li>“Compare different systems implementation approaches: big bang, phased, modular. Evaluate each for speed, risk, and user adoption.”</li>
+<li>“Analyse different IT governance models: centralized, decentralized, federated. What are the trade-offs for control, innovation, and efficiency?”</li>
+<li>“What are the pros and cons of cloud-based versus on-premises systems?”</li>
+</ul>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<ul>
+<li>“Compare different valuation methods: discounted cash flow, comparable companies, precedent transactions. What are the pros and cons of each?”</li>
+<li>“Analyse different audit approaches: statistical sampling, risk-based audit, controls-based audit. Evaluate each for efficiency, effectiveness, and client relationships.”</li>
+<li>“What are the pros and cons of different capital structure options: debt, equity, retained earnings?”</li>
+</ul>
+</div>
+<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
+<ul>
+<li>“Compare different policy approaches to addressing unemployment: fiscal stimulus, labour market training, labour market deregulation. Evaluate each for effectiveness, cost, and trade-offs.”</li>
+<li>“Analyse different economic models: Keynesian, neoclassical, behavioural. What assumptions and limitations does each have?”</li>
+<li>“What are the pros and cons of different monetary policy tools: interest rates, quantitative easing, forward guidance?”</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="try-this-1" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-1">Try this</h3>
+<p>Use this to stress-test a recommendation before you take it upstairs. Put the AI’s comparison in front of you and argue each option’s case out loud — or with a colleague — using the AI’s framework plus your own reasoning. Where you can’t defend it, that’s the gap to close before you commit.</p>
+<hr>
+</section>
+</section>
+<section id="technique-3-stepwise-chain-of-thought-for-process-management" class="level2">
+<h2 class="anchored" data-anchor-id="technique-3-stepwise-chain-of-thought-for-process-management">Technique 3: Stepwise Chain of Thought (for Process Management)</h2>
+<section id="what-it-does-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-2">What It Does</h3>
+<p>The AI walks through a complex business process one step at a time, pausing after each step until you signal you’re ready to continue. It slows down high-stakes processes that are easy to rush.</p>
+</section>
+<section id="why-it-works-across-disciplines-2" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-across-disciplines-2">Why It Works Across Disciplines</h3>
+<p>Many professional processes are legally, ethically, or operationally sensitive. You need to understand <em>why</em> each step exists and what considerations apply at each stage. This technique forces deliberate, sequential thinking and real engagement with the process logic.</p>
+</section>
+<section id="prompt-ready-to-use-2" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-ready-to-use-2">Prompt (ready to use)</h3>
+<pre><code>I am learning how to properly conduct a disciplinary action process for an
+employee with a pattern of repeated lateness.
+
+Your task: Walk me through the entire disciplinary process, starting from
+the very first informal conversation. For each step, tell me:
+
+1. What action to take
+2. What to document
+3. What legal or procedural consideration is important at this stage
+
+After you explain each step, STOP and wait for me to type "next" before
+moving to the next step. Do not provide the entire process at once.
+
+Begin with Step 1.</code></pre>
+</section>
+<section id="what-happens-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-2">What Happens</h3>
+<p>The AI will provide the first step:</p>
+<blockquote class="blockquote">
+<p><strong>Step 1: Informal Verbal Warning</strong></p>
+<p><strong>Action:</strong> Meet privately with the employee to discuss the lateness pattern. Use a calm, non-accusatory tone. Ask if there are any circumstances contributing to the issue (e.g., transport problems, personal issues, health concerns).</p>
+<p><strong>Documentation:</strong> Make a brief file note recording the date, what was discussed, and the employee’s response. This is informal, so no formal warning letter yet.</p>
+<p><strong>Legal/Procedural Consideration:</strong> At this stage, you’re gathering information and providing an opportunity for the employee to explain. Under principles of procedural fairness, you must give them a chance to be heard before escalating.</p>
+<p>Type “next” when you’re ready for Step 2.</p>
+</blockquote>
+<p>You have to actively engage with each step before progressing. It stops you skipping to “just fire them” without understanding the required process.</p>
+</section>
+<section id="variations-for-different-disciplines-2" class="level3">
+<h3 class="anchored" data-anchor-id="variations-for-different-disciplines-2">Variations for Different Disciplines</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">HR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Business &amp; Marketing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Supply Chain &amp; Logistics</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Information Systems</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">Accounting &amp; Finance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false" href="">Economics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li>“Walk me through conducting a workplace investigation into a bullying complaint. One step at a time.”</li>
+<li>“Take me through the proper process for making an employee redundant in Australia. Pause after each step.”</li>
+<li>“Show me the recruitment process from job analysis through to onboarding, step by step with legal checkpoints.”</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li>“Walk me through developing a market entry strategy for a new region. Pause after each step so I can understand the rationale.”</li>
+<li>“Take me through the customer journey mapping process step by step, explaining the key decisions at each stage.”</li>
+<li>“Show me the new product development process from concept through launch, pausing to explain checkpoints and risk mitigation.”</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<ul>
+<li>“Walk me through conducting an organisational change initiative. Explain each step and the risk if we skip it.”</li>
+<li>“Take me through creating a strategic plan from situational analysis through execution. Pause after each step.”</li>
+<li>“Show me the merger integration process step by step, explaining what happens if we get the sequencing wrong.”</li>
+</ul>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<ul>
+<li>“Walk me through designing a demand planning process. Pause after each step to explain the dependencies.”</li>
+<li>“Take me through establishing a supplier relationship from selection through strategic partnership. One step at a time.”</li>
+<li>“Show me the logistics network optimisation process step by step, explaining decisions at each stage.”</li>
+</ul>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<ul>
+<li>“Walk me through a systems implementation project from requirements through go-live. Pause after each step.”</li>
+<li>“Take me through the software development lifecycle step by step, explaining quality controls at each stage.”</li>
+<li>“Show me the IT disaster recovery process step by step, explaining what could go wrong at each stage.”</li>
+</ul>
+</div>
+<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
+<ul>
+<li>“Walk me through the financial close process. Explain each step and why it matters.”</li>
+<li>“Take me through an audit engagement from planning through audit opinion. Pause after each phase.”</li>
+<li>“Show me the capital budgeting process step by step, from proposal through post-implementation review.”</li>
+</ul>
+</div>
+<div id="tabset-3-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-7-tab">
+<ul>
+<li>“Walk me through conducting an economic impact analysis. Explain each step and the assumptions involved.”</li>
+<li>“Take me through developing a policy recommendation. Pause after each step to explain the reasoning.”</li>
+<li>“Show me how to construct an economic model from theory through validation. One step at a time.”</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="try-this-2" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-2">Try this</h3>
+<p>Use it to rehearse a high-stakes process you’re about to run for real — a disciplinary action, an investigation, a redundancy. Run it once, then ask the AI to introduce a complication at Step 3 (“what if the employee refuses to sign the written warning?”). Hit the awkward moments in the simulator, not in the meeting.</p>
+<hr>
+</section>
+</section>
+<section id="technique-4-role-play-for-skill-building" class="level2">
+<h2 class="anchored" data-anchor-id="technique-4-role-play-for-skill-building">Technique 4: Role Play (for Skill Building)</h2>
+<section id="what-it-does-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-3">What It Does</h3>
+<p>The AI adopts a specific persona and runs a realistic conversation with you. Think of it as a flight simulator for the parts of your job where you can’t afford to get it wrong the first time.</p>
+</section>
+<section id="why-it-works-across-disciplines-3" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-across-disciplines-3">Why It Works Across Disciplines</h3>
+<p>Business work is fundamentally about interaction — with clients, stakeholders, teams, and colleagues. You can memorise the theory, but until you’ve practised <em>actually having</em> a difficult conversation where the other person pushes back, gets emotional, or raises objections, you won’t develop genuine interpersonal competence.</p>
+</section>
+<section id="prompt-ready-to-use-3" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-ready-to-use-3">Prompt (ready to use)</h3>
+<pre><code>You are an experienced and empathetic HR Business Partner. I am a new,
+nervous manager who needs to put one of my team members on a Performance
+Improvement Plan (PIP).
+
+Your goal is to coach me through preparing for and conducting this meeting
+successfully.
+
+Guide me through this step by step:
+1. First, ask me why the employee is being put on a PIP
+2. Wait for my answer
+3. If my answer is vague or subjective (e.g., "bad attitude"), challenge me
+   gently and ask me to be more specific and behavioural
+4. Once I give you a solid answer, move to the next aspect: helping me
+   draft clear, measurable objectives for the PIP
+5. Continue coaching me through each element of the conversation I need to
+   have with the employee
+
+Throughout this process, if I say something that could be problematic
+(legally risky, unfair, too harsh, or too vague), pause and give me
+feedback on how to improve it.
+
+Begin by asking me your first question.</code></pre>
+</section>
+<section id="what-happens-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-3">What Happens</h3>
+<p>The AI becomes a coach who actively guides you through the preparation. If you say “I’m putting them on a PIP because they’re lazy,” the AI will respond:</p>
+<blockquote class="blockquote">
+<p>“I understand you’re frustrated, but ‘lazy’ is subjective and not something we can measure or document defensibly. Let’s try again: what specific behaviours or performance gaps have you observed? For example, are they missing deadlines, producing work below the required standard, or not completing their assigned tasks?”</p>
+</blockquote>
+<p>This iterative coaching helps you think and speak like a professional.</p>
+</section>
+<section id="advanced-variation-the-difficult-conversation" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-variation-the-difficult-conversation">Advanced Variation: The Difficult Conversation</h3>
+<p>Once you’re comfortable, flip the scenario:</p>
+<pre><code>You are Sarah, a high-performing marketing manager who has just been told
+you're being put on a Performance Improvement Plan. You are shocked,
+defensive, and angry because you believe this is unfair and politically
+motivated.
+
+I am the HR representative who has to conduct this PIP meeting with you.
+
+Your behaviour:
+- Start the conversation by immediately challenging the fairness of the PIP
+- Bring up a recent successful project you led
+- Hint that you believe this is retaliation for raising a complaint about
+  your manager last month
+- Be emotional but not abusive. Show genuine distress
+
+I will attempt to conduct this meeting professionally. Stay in character
+until I manage to de-escalate the situation and establish a constructive
+dialogue.
+
+Begin the meeting. I will speak first.</code></pre>
+<p>Now you’re managing a realistic, emotionally charged scenario. You practise de-escalation, empathy, procedural fairness, and documentation — all while the AI responds dynamically to what you say.</p>
+</section>
+<section id="variations-for-different-disciplines-3" class="level3">
+<h3 class="anchored" data-anchor-id="variations-for-different-disciplines-3">Variations for Different Disciplines</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">HR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Business &amp; Marketing</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Supply Chain &amp; Logistics</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Information Systems</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">Accounting &amp; Finance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-7" role="tab" aria-controls="tabset-4-7" aria-selected="false" href="">Economics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<ul>
+<li>AI plays a union representative in an enterprise bargaining negotiation</li>
+<li>AI plays a candidate in a behavioural interview who gives weak answers that need probing</li>
+<li>AI plays a manager who resists implementing a diversity initiative</li>
+<li>AI plays an employee making an informal discrimination complaint</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<ul>
+<li>AI plays a difficult customer objecting to pricing and demanding better terms</li>
+<li>AI plays a competitor in a market negotiation</li>
+<li>AI plays a skeptical internal stakeholder who needs to be convinced of a strategy</li>
+<li>AI plays a partner company executive in a partnership negotiation</li>
+</ul>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<ul>
+<li>AI plays an employee resistant to organisational change</li>
+<li>AI plays a union representative in a labour negotiation</li>
+<li>AI plays a direct report who is underperforming and defensive</li>
+<li>AI plays a peer manager with competing priorities</li>
+</ul>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<ul>
+<li>AI plays a demanding supplier or customer</li>
+<li>AI plays an internal stakeholder questioning cost cuts</li>
+<li>AI plays a logistics partner with implementation concerns</li>
+<li>AI plays a regulator questioning compliance</li>
+</ul>
+</div>
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<ul>
+<li>AI plays a resistant end-user during system implementation</li>
+<li>AI plays a business stakeholder with changing requirements</li>
+<li>AI plays a project team member questioning a technical decision</li>
+<li>AI plays a vendor in a software licensing negotiation</li>
+</ul>
+</div>
+<div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
+<ul>
+<li>AI plays a client questioning an audit finding</li>
+<li>AI plays a board member scrutinizing a financial decision</li>
+<li>AI plays an internal stakeholder challenging a budget proposal</li>
+<li>AI plays a regulator questioning financial reporting</li>
+</ul>
+</div>
+<div id="tabset-4-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-7-tab">
+<ul>
+<li>AI plays a policymaker questioning an economic recommendation</li>
+<li>AI plays a stakeholder affected by proposed policy</li>
+<li>AI plays a peer economist with a competing analysis</li>
+<li>AI plays a business leader concerned about economic impacts</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="try-this-3" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-3">Try this</h3>
+<p>After a role-play, scroll back through the transcript and ask yourself what you’d do differently — which techniques landed, where the conversation turned, what principle was guiding you. That reflection is where the reps turn into actual skill.</p>
+<hr>
+</section>
+</section>
+<section id="technique-5-debating-for-strategic-and-ethical-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="technique-5-debating-for-strategic-and-ethical-analysis">Technique 5: Debating (for Strategic and Ethical Analysis)</h2>
+<section id="what-it-does-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-4">What It Does</h3>
+<p>The AI examines multiple perspectives on a contentious issue, argues for and against different positions, and helps you see the complexity and trade-offs in a strategic decision.</p>
+</section>
+<section id="why-it-works-across-disciplines-4" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-across-disciplines-4">Why It Works Across Disciplines</h3>
+<p>Modern business work lives in the grey areas where competing legitimate perspectives exist. Whether you’re addressing an HR challenge, a strategy question, an operational trade-off, a financial decision, or a policy call, you need to be able to argue multiple sides of an issue before making a defensible recommendation.</p>
+</section>
+<section id="variation-a-critique-and-compare" class="level3">
+<h3 class="anchored" data-anchor-id="variation-a-critique-and-compare">Variation A: Critique and Compare</h3>
+<pre><code>I will provide you with two different "Bring Your Own Device (BYOD)"
+policies from two fictional companies.
+
+Your task:
+1. Critique the strengths and weaknesses of each policy in terms of
+   security, employee privacy, and clarity
+2. Tell me which policy is stronger overall and why
+3. Identify one element from the weaker policy that could improve the
+   stronger one
+
+Here is Policy A: [paste policy]
+Here is Policy B: [paste policy]
+
+Begin your analysis.</code></pre>
+<p><strong>Use it when:</strong> you’ve got two draft policies on the desk (or you generate them with the AI, one deliberately flawed). Identify which is stronger and justify your reasoning before you commit. It’s a fast way to build critical evaluation muscle.</p>
+</section>
+<section id="variation-b-argue-both-sides" class="level3">
+<h3 class="anchored" data-anchor-id="variation-b-argue-both-sides">Variation B: Argue Both Sides</h3>
+<pre><code>I want you to debate the pros and cons of using AI-powered tools to scan
+resumes and filter job applicants.
+
+Structure your response in three parts:
+
+**Part 1: The Case FOR Using AI Resume Screening**
+Make the strongest possible argument in favour of this technology. Consider
+efficiency, consistency, potential to reduce human bias, cost savings, and
+scalability.
+
+**Part 2: The Case AGAINST Using AI Resume Screening**
+Make the strongest possible argument against this technology. Consider
+algorithmic bias, legal risk, lack of contextual understanding, potential
+discrimination, and dehumanization of the recruitment process.
+
+**Part 3: Critical Synthesis**
+Critique both arguments you just made. What did each side get right? What
+did each side oversimplify or ignore? Provide a balanced recommendation
+with conditions (e.g., "Use AI screening only if X, Y, and Z safeguards
+are in place").</code></pre>
+<p><strong>What happens:</strong> The AI builds sophisticated arguments for both positions, then a nuanced synthesis. You can’t just pick a side — you have to understand the legitimate concerns and benefits on both.</p>
+</section>
+<section id="variation-c-multi-stakeholder-debate" class="level3">
+<h3 class="anchored" data-anchor-id="variation-c-multi-stakeholder-debate">Variation C: Multi-Stakeholder Debate</h3>
+<p>This is the most sophisticated version:</p>
+<pre><code>You will simulate a leadership debate on whether to implement a "mandatory
+return to office" policy requiring all employees to work in-office four
+days per week.
+
+Create three distinct personas and have them debate this issue:
+
+**Persona 1: The CFO (Chief Financial Officer)**
+Focus on: Real estate costs, productivity metrics, and financial efficiency
+
+**Persona 2: The CHRO (Chief HR Officer)**
+Focus on: Employee morale, retention, recruitment competitiveness, and
+diversity/equity/inclusion implications
+
+**Persona 3: The COO (Chief Operating Officer)**
+Focus on: Team collaboration, operational consistency, training
+effectiveness, and company culture
+
+Have each persona make their opening argument (3-4 sentences each). Then
+have them respond to each other's points. Continue the debate through three
+rounds until they need to make a recommendation to the CEO.
+
+After the debate, summarise the key tension points and what a compromise
+policy might look like.
+
+Begin the debate.</code></pre>
+<p><strong>What happens:</strong> The AI creates a realistic executive debate where each stakeholder has legitimate but competing priorities. You see that there’s rarely a perfect answer, only trade-offs and compromise.</p>
+</section>
+<section id="push-it-further" class="level3">
+<h3 class="anchored" data-anchor-id="push-it-further">Push it further</h3>
+<p>After reading the debate, push yourself to: 1. Identify which stakeholder made the strongest argument, and why 2. Propose a policy that addresses the COO’s concerns while minimising the CHRO’s risks 3. Explain what data or evidence would help resolve the CFO’s questions 4. Name the organisational or economic theory that best explains the tension between these perspectives</p>
+</section>
+<section id="try-this-4" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-4">Try this</h3>
+<p>Run the two-sided debate before your next high-stakes recommendation — a board paper, an investment memo, client advice. If you can’t articulate the strongest case <em>against</em> your own position, you’re not ready to defend it.</p>
+<hr>
+</section>
+</section>
+<section id="technique-6-practice-and-self-testing-for-rehearsal-and-confidence" class="level2">
+<h2 class="anchored" data-anchor-id="technique-6-practice-and-self-testing-for-rehearsal-and-confidence">Technique 6: Practice and Self-Testing (for Rehearsal and Confidence)</h2>
+<section id="what-it-does-5" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-5">What It Does</h3>
+<p>The AI generates scenarios you can use to rehearse a judgement call, prep for a difficult conversation or negotiation, or self-check your understanding of a domain before a high-stakes decision. It gives you low-stakes repetition and immediate feedback — the reps you can’t safely get on the job.</p>
+</section>
+<section id="why-it-works" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works">Why It Works</h3>
+<p>Many professional judgement calls need practice you can’t get for real without risk: advising on a legal point, running a sensitive conversation, reading a tricky market signal. You need more reps than the day-to-day provides, and a colleague’s time to walk you through them is scarce. AI gives you a simulator — infinite scenarios, instant generation, immediate feedback, and difficulty that adapts to how you’re doing.</p>
+</section>
+<section id="use-case-1-self-check-your-understanding-of-a-domain" class="level3">
+<h3 class="anchored" data-anchor-id="use-case-1-self-check-your-understanding-of-a-domain">Use Case 1: Self-check your understanding of a domain</h3>
+<p><strong>Prompt:</strong></p>
+<pre><code>I need to advise on Australian employment law and I want to check my own
+understanding before I do. I need to practice identifying which legislation
+applies in different workplace scenarios.
+
+Generate 10 short scenario descriptions (2-3 sentences each) where I need
+to identify:
+1. Which legislation is relevant (e.g., Fair Work Act, WHS Act,
+   Anti-Discrimination Act)
+2. What the employer's legal obligation is
+3. What risk exists if the employer doesn't comply
+
+After I answer each one, tell me if I'm correct and explain why.
+
+Begin with Scenario 1.</code></pre>
+<p><strong>What happens:</strong> The AI creates scenario after scenario. You test yourself, get immediate feedback, and keep going until you’re confident. Unlike a textbook with a handful of practice problems, this gives you unlimited reps.</p>
+<p><strong>Key feature:</strong> the AI adapts. If you get several wrong, ask it to simplify; if you’re nailing the basics, ask it to make them more complex.</p>
+</section>
+<section id="use-case-2-application-practice" class="level3">
+<h3 class="anchored" data-anchor-id="use-case-2-application-practice">Use Case 2: Application practice</h3>
+<p><strong>Prompt:</strong></p>
+<pre><code>I'm learning to identify different types of workplace conflict (task
+conflict, relationship conflict, process conflict).
+
+Create 8 brief workplace scenarios. For each one, I'll identify the type
+of conflict and suggest an appropriate intervention approach.
+
+After each scenario, provide feedback on my classification and intervention
+suggestion. If I'm wrong, explain why and what I missed.
+
+Make the scenarios progressively more complex. Start easy, end with
+ambiguous situations where multiple interpretations are valid.
+
+Begin with Scenario 1.</code></pre>
+<p><strong>What happens:</strong> Progressive difficulty builds confidence and competence. You move from obvious cases to nuanced judgement calls — exactly the territory where a wrong read is costly.</p>
+</section>
+<section id="use-case-3-rehearse-a-difficult-conversation" class="level3">
+<h3 class="anchored" data-anchor-id="use-case-3-rehearse-a-difficult-conversation">Use Case 3: Rehearse a difficult conversation</h3>
+<p><strong>Prompt:</strong></p>
+<pre><code>I have to run a difficult salary negotiation with a key supplier next
+week. I want to rehearse before I'm in the room.
+
+Generate five progressively harder negotiation scenarios I might face:
+each one a short situation (3-4 sentences) with a specific demand or
+objection from the supplier. After each scenario:
+1. Let me write my response
+2. Give me feedback on what I did well and what to improve
+3. Tell me what a skilled negotiator would do differently
+
+Topics to cover: anchoring, trade-offs, breaking deadlocks, handling
+"take it or leave it" pressure, protecting the relationship.
+
+Begin with Scenario 1.</code></pre>
+<p><strong>What happens:</strong> You walk into the real conversation having already handled the awkward moments. Each rep sharpens your phrasing and your fallbacks, so the first time you hear “take it or leave it” isn’t live.</p>
+</section>
+<section id="use-case-4-close-your-own-knowledge-gaps" class="level3">
+<h3 class="anchored" data-anchor-id="use-case-4-close-your-own-knowledge-gaps">Use Case 4: Close your own knowledge gaps</h3>
+<p><strong>Prompt:</strong></p>
+<pre><code>I need to make a recommendation on procedural fairness in a workplace
+investigation, and I'm not confident I've got the legal requirements
+straight. I think I might be confusing "being fair" with the specific
+tests.
+
+Create a 10-question diagnostic that tests whether I actually understand:
+1. The right to be informed of allegations
+2. The right to respond to allegations
+3. The requirement for impartial decision-making
+4. The requirement to consider the response before deciding
+5. The right to representation/support
+
+For each question, use a scenario. After each answer, give me feedback
+explaining the principle — not just whether I'm right.
+
+Generate the diagnostic.</code></pre>
+<p><strong>What you get:</strong> A focused self-check that surfaces the edges of your understanding before you advise or decide — so the gap shows up here, in private, not in front of a stakeholder.</p>
+</section>
+<section id="try-this-5" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-5">Try this</h3>
+<p>Run it solo before a big decision, or with a colleague: each of you generates five scenarios and tests the other, then compare answers and reasoning. The peer version catches the blind spots a solo run misses.</p>
+</section>
+<section id="rehearsal-not-the-real-thing" class="level3">
+<h3 class="anchored" data-anchor-id="rehearsal-not-the-real-thing">Rehearsal, not the real thing</h3>
+<p>This technique is for <em>practice</em>, not for the decision itself.</p>
+<p><strong>Why that distinction matters:</strong> - You can regenerate until you get scenarios you already know the answer to — so don’t let an easy run fool you into overconfidence - AI scenarios lack the rigour of a real, messy situation with real consequences - The point is to struggle and make mistakes here, safely, so you make fewer of them when it counts</p>
+<p><strong>The value:</strong> unlimited, personalised rehearsal that builds confidence and competence before the high-stakes moment.</p>
+</section>
+<section id="variation-adaptive-difficulty" class="level3">
+<h3 class="anchored" data-anchor-id="variation-adaptive-difficulty">Variation: Adaptive difficulty</h3>
+<p><strong>Advanced prompt:</strong></p>
+<pre><code>I want to practice identifying workplace bullying vs. performance management
+vs. legitimate reasonable management action.
+
+Create scenarios for me to classify. After each one:
+- If I get it right, make the next scenario more nuanced and ambiguous
+- If I get it wrong, make the next scenario clearer and more obvious
+- Continue until I can correctly identify 5 difficult/ambiguous cases in a row
+
+Track my progress and tell me when I've achieved mastery.
+
+Begin.</code></pre>
+<p>This creates a personalised path — the AI adjusts the difficulty based on how you’re performing.</p>
+</section>
+<section id="self-directed-progression" class="level3">
+<h3 class="anchored" data-anchor-id="self-directed-progression">Self-directed progression</h3>
+<p>You can also drive the difficulty yourself through smart prompting:</p>
+<p><strong>Prompt:</strong></p>
+<pre><code>I want to practice identifying workplace bullying vs. legitimate performance
+management vs. reasonable management action.
+
+Generate scenarios for me to classify. After I answer each one, tell me if
+I'm correct.
+
+Track my performance. When I get 8 out of 10 correct, automatically make
+the next batch of scenarios more complex and ambiguous. When I get fewer
+than 5 out of 10 correct, make the next batch clearer and more obvious.
+
+Continue until I can correctly identify 5 difficult, ambiguous cases in a row.
+
+Begin with Scenario 1 at medium difficulty.</code></pre>
+<p><strong>What this achieves:</strong> - Difficulty that progresses with you - Mastery-based advancement - Confidence built through appropriate challenge - No technical setup — just good prompting</p>
+</section>
+<section id="why-this-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-matters">Why this matters</h3>
+<p>Traditional rehearsal is limited by finite scenarios, the cost of someone’s time to walk you through them, and no feedback until after the fact. AI removes those constraints — infinite scenarios, instant generation, immediate feedback, adaptive difficulty. The result: you rehearse until you’re confident, not until you run out of someone’s patience.</p>
+<hr>
+</section>
+</section>
+<section id="technique-7-the-expert-panel-for-multi-perspective-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="technique-7-the-expert-panel-for-multi-perspective-analysis">Technique 7: The Expert Panel (for Multi-Perspective Analysis)</h2>
+<section id="what-it-does-6" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does-6">What It Does</h3>
+<p>You consult multiple AI “experts”, each with a different professional perspective on the same problem, then synthesise their competing advice into a recommendation.</p>
+</section>
+<section id="why-it-works-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-it-works-1">Why It Works</h3>
+<p>Professional problems rarely have a single “correct” answer. They sit at the intersection of psychology, law, business strategy, finance, and ethics. This technique forces you to consider legitimate but competing perspectives and make informed choices about priorities and trade-offs.</p>
+</section>
+<section id="prompt-ready-to-use-4" class="level3">
+<h3 class="anchored" data-anchor-id="prompt-ready-to-use-4">Prompt (ready to use)</h3>
+<pre><code>I need to address high turnover in our sales department (35% annual turnover;
+industry average is 18%). This is affecting team morale, increasing
+recruitment costs, and impacting customer relationships.
+
+Create three expert personas who will each analyse this problem from their
+professional perspective:
+
+**Expert 1: Organisational Psychologist**
+Focus on: Employee motivation, job satisfaction, workplace culture, team
+dynamics, psychological contracts
+
+**Expert 2: Compensation &amp; Benefits Specialist**
+Focus on: Pay equity, market competitiveness, incentive structures, total
+rewards, cost-benefit analysis
+
+**Expert 3: Talent Management Strategist**
+Focus on: Career development, succession planning, retention programs,
+employee value proposition, organisational capability
+
+Have each expert independently provide:
+1. Their diagnosis of why turnover is high (from their perspective)
+2. Their recommended intervention strategy
+3. Potential risks or limitations of their recommended approach
+4. What data they would need to validate their hypothesis
+
+After all three experts have provided their analysis, I will synthesize
+their recommendations and develop my own strategic recommendation.
+
+Begin with Expert 1: Organisational Psychologist.</code></pre>
+</section>
+<section id="what-happens-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-4">What Happens</h3>
+<p><strong>The AI creates three distinct voices:</strong></p>
+<p><strong>Organisational Psychologist:</strong> &gt; “The 35% turnover suggests a breakdown in psychological contract or poor person-organisation fit. Sales roles are inherently stressful, but this level suggests systemic issues, possibly unrealistic targets, poor management relationships, or lack of autonomy. I recommend: (1) Conduct stay/exit interview analysis focusing on psychological factors, (2) Assess manager-employee relationship quality, (3) Review goal-setting processes…”</p>
+<p><strong>Compensation Specialist:</strong> &gt; “At 35% turnover, you’re likely seeing pay inequity or uncompetitive base/commission structures. Sales talent is mobile and market-driven. I recommend: (1) Conduct compensation benchmarking against competitors, (2) Analyse pay dispersion within the team, (3) Review commission structures for fairness and achievability…”</p>
+<p><strong>Talent Management Strategist:</strong> &gt; “High turnover in sales suggests limited growth opportunities or unclear career paths. Top performers leave when they plateau. I recommend: (1) Map career progression pathways, (2) Implement mentoring for high-potentials, (3) Create lateral development opportunities…”</p>
+</section>
+<section id="turn-it-into-a-decision" class="level3">
+<h3 class="anchored" data-anchor-id="turn-it-into-a-decision">Turn it into a decision</h3>
+<p>After receiving all three perspectives, push yourself to:</p>
+<ol type="1">
+<li><strong>Compare and contrast:</strong>
+<ul>
+<li>Where do the experts agree?</li>
+<li>Where do they conflict?</li>
+<li>Which diagnosis seems most plausible given the evidence?</li>
+</ul></li>
+<li><strong>Synthesize:</strong>
+<ul>
+<li>“If I could only implement one intervention, which would have the most impact?”</li>
+<li>“How could I combine elements from multiple recommendations?”</li>
+<li>“What’s the minimum viable intervention that addresses multiple root causes?”</li>
+</ul></li>
+<li><strong>Justify with theory:</strong>
+<ul>
+<li>“Which theory best explains my chosen approach?” (e.g., Herzberg’s two-factor theory, social exchange theory, expectancy theory)</li>
+<li>“What evidence would I need to collect to validate my choice?”</li>
+</ul></li>
+<li><strong>Acknowledge trade-offs:</strong>
+<ul>
+<li>“What am I deprioritising by choosing this approach?”</li>
+<li>“What are the risks if my diagnosis is wrong?”</li>
+</ul></li>
+</ol>
+</section>
+<section id="variations-for-different-topics" class="level3">
+<h3 class="anchored" data-anchor-id="variations-for-different-topics">Variations for Different Topics</h3>
+<p><strong>Variation 1: Policy Design</strong></p>
+<pre><code>Three experts debate a proposed "Bring Your Own Device" policy:
+- IT Security Officer (focus: data protection, cybersecurity)
+- HR Manager (focus: employee experience, equity, privacy)
+- CFO (focus: cost savings, business case, ROI)
+
+Each argues for their priorities. Your job is to design a policy that
+balances all three perspectives.</code></pre>
+<p><strong>Variation 2: Ethical Dilemma</strong></p>
+<pre><code>Three experts analyse whether to implement mandatory return-to-office:
+- Employee Relations Specialist (focus: morale, retention, fairness)
+- Operations Manager (focus: productivity, collaboration, efficiency)
+- Legal Counsel (focus: contractual obligations, discrimination risk, WHS)
+
+Your job is to recommend a policy that is ethical, legal, and operationally
+sound.</code></pre>
+<p><strong>Variation 3: Change Management</strong></p>
+<pre><code>Three experts advise on implementing AI resume screening:
+- Diversity &amp; Inclusion Officer (focus: algorithmic bias, equity)
+- Recruitment Lead (focus: efficiency, candidate experience)
+- Risk &amp; Compliance Manager (focus: legal compliance, audit trails)
+
+Your job is to design an implementation plan that addresses all concerns.</code></pre>
+</section>
+<section id="try-this-6" class="level3">
+<h3 class="anchored" data-anchor-id="try-this-6">Try this</h3>
+<p>After running an expert panel on a real decision, write yourself a one-page synthesis: where the experts agree, where they conflict, your recommendation, the theory and evidence behind it, and the risk if your read is wrong. That one page is what turns three opinions into a decision you can defend.</p>
+</section>
+<section id="why-this-is-powerful" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-is-powerful">Why This Is Powerful</h3>
+<p>Most advice presents one “correct” approach. Professional practice demands navigating competing legitimate perspectives.</p>
+<p><strong>This technique teaches:</strong> - No single expert has the complete answer - Good business decisions balance multiple priorities and perspectives - Strategic thinking means choosing which perspective to prioritise when - Justification matters more than the specific choice - Real problems require synthesis, not just analysis</p>
+</section>
+<section id="combining-with-other-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="combining-with-other-techniques">Combining with Other Techniques</h3>
+<p><strong>The Expert Panel</strong> works brilliantly with:</p>
+<p><strong>Pros and Cons</strong> (Technique 2): &gt; “After consulting the expert panel, use the Pros and Cons technique to evaluate each expert’s recommended intervention systematically.”</p>
+<p><strong>Debating</strong> (Technique 5): &gt; “Have the three experts debate each other’s recommendations. Then you arbitrate and make the final decision.”</p>
+<p><strong>Role Play</strong> (Technique 4): &gt; “After developing your strategy based on expert consultation, role-play presenting it to a skeptical stakeholder (CFO, union rep, CEO) and defend your choices.”</p>
+<hr>
+</section>
+</section>
+<section id="how-to-choose-which-technique-to-use" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-choose-which-technique-to-use">How to Choose Which Technique to Use</h2>
+<p>Match the technique to the job in front of you:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>If you want to…</th>
+<th>Use this technique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Define a complex problem or policy comprehensively</td>
+<td><strong>Reverse Prompting</strong></td>
+</tr>
+<tr class="even">
+<td>Evaluate competing options and justify a choice</td>
+<td><strong>Pros and Cons</strong></td>
+</tr>
+<tr class="odd">
+<td>Follow a legally/ethically sensitive process correctly</td>
+<td><strong>Stepwise Chain of Thought</strong></td>
+</tr>
+<tr class="even">
+<td>Practise a difficult conversation or negotiation</td>
+<td><strong>Role Play</strong></td>
+</tr>
+<tr class="odd">
+<td>Understand multiple perspectives and strategic trade-offs</td>
+<td><strong>Debating</strong></td>
+</tr>
+<tr class="even">
+<td>Rehearse a judgement call and self-check your understanding</td>
+<td><strong>Practice and Self-Testing</strong></td>
+</tr>
+<tr class="odd">
+<td>Synthesise expert advice from different disciplines or roles</td>
+<td><strong>The Expert Panel</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="combining-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="combining-techniques">Combining Techniques</h2>
+<p>The real power comes from combining these techniques. For example, a complete work sequence:</p>
+<ol type="1">
+<li>Use <strong>Reverse Prompting</strong> to scope out all the requirements for a new parental leave policy</li>
+<li>Use <strong>Pros and Cons</strong> to evaluate three different policy models</li>
+<li>Draft your chosen policy</li>
+<li>Use <strong>Role Play</strong> to practise explaining the policy to a skeptical manager</li>
+<li>Use <strong>Debating</strong> to analyse potential criticisms from different stakeholders</li>
+</ol>
+<p>This sequence takes you through analysis, decision-making, communication, and critical reflection — a complete professional process.</p>
+<hr>
+</section>
+<section id="your-action-step" class="level2">
+<h2 class="anchored" data-anchor-id="your-action-step">Your Action Step</h2>
+<p>Choose <strong>one technique</strong> from this guide and try it on something real. Pick the one that feels most immediately useful for a piece of work in front of you.</p>
+<p>Copy one of the example prompts from your discipline’s tab, adapt it to your own content, and see what happens. Get comfortable with at least one of these before exploring the more complex applications.</p>
+<p>These aren’t party tricks. They’re reusable patterns that keep your judgement in the conversation — and the AI just makes them available any time you need a rep.</p>
+<hr>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li>Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. V., &amp; Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. In <em>Advances in Neural Information Processing Systems, 35</em>, 24824–24837. https://arxiv.org/abs/2201.11903</li>
+<li>Mollick, E. R., &amp; Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. <em>arXiv preprint.</em> https://doi.org/10.48550/arXiv.2306.10052</li>
+<li>Mollick, E. R., &amp; Mollick, L. (2024). Instructors as innovators: A future-focused approach to new AI learning opportunities, with prompts. <em>SSRN.</em> https://doi.org/10.2139/ssrn.4802463</li>
+<li>Labadze, L., Grigolia, M., &amp; Machaidze, L. (2023). Role of AI chatbots in education: Systematic literature review. <em>International Journal of Educational Technology in Higher Education, 20</em>, Article 56. https://doi.org/10.1186/s41239-023-00426-1</li>
+<li>Sahoo, P., Singh, A. K., Saha, S., Jain, V., Mondal, S., &amp; Chadha, A. (2024). A systematic survey of prompt engineering in large language models: Techniques and applications. <em>arXiv preprint arXiv:2402.07927.</em> https://arxiv.org/abs/2402.07927</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Two things to take with you
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These seven techniques are patterns you run <em>inside</em> the structure RTCF gives a prompt — so for the structure itself, use the in-browser <a href="tools/rtcf-toolkit.html">RTCF toolkit</a>. And for the thinking behind all of it — keeping your judgement in the loop, adding your edge one prompt at a time — the companion book <a href="https://michael-borck.github.io/conversation-not-delegation/"><em>Conversation, Not Delegation</em></a> is free.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<!-- Course assistant chatbot, injected site-wide via _quarto.yml include-after-body -->
+<script data-embed-id="10d0eb94-0c5a-4696-a41d-3ff83b9e1eea" data-base-api-url="https://chat.eduserver.au/api/embed" data-assistant-name="The Human Edge: Course Assistant" data-greeting="Hi! I'm your course assistant. Ask me about The Human Edge: the trust tool, RTCF prompting, the five differences of AI delivery, the RetailFlow sprints, or how the day's idea applies to your own work." src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<!-- "Where's your edge?" – AI self-check popup overlay.
+     Self-contained: launcher button + modal + quiz. Scoped under #aiq-* so it
+     won't clash with the Quarto theme. Branded to the editorial look
+     (cream / ink / vermilion; Fraunces + Inter + JetBrains Mono). Injected
+     site-wide via _quarto.yml include-after-body. -->
+<style>
+#aiq-launch{position:fixed; left:18px; bottom:18px; z-index:1000; display:flex; align-items:center; gap:8px;
+  background:#181613; color:#f4efe3; border:none; padding:11px 16px; border-radius:999px; cursor:pointer;
+  font-family:'Inter',sans-serif; font-size:13px; font-weight:600; letter-spacing:.01em;
+  box-shadow:4px 4px 0 #e34f29; transition:transform .12s ease, box-shadow .12s ease;}
+#aiq-launch:hover{transform:translate(-2px,-2px); box-shadow:6px 6px 0 #e34f29;}
+#aiq-launch .aiq-dot{width:8px;height:8px;border-radius:50%;background:#e34f29;}
+#aiq-overlay{position:fixed; inset:0; z-index:1001; display:none; align-items:center; justify-content:center;
+  background:rgba(24,22,19,.55); padding:20px;}
+#aiq-overlay.open{display:flex;}
+#aiq-card{position:relative; width:min(560px,100%); max-height:92vh; overflow:auto;
+  background:#f4efe3; color:#181613; border:3px solid #181613; box-shadow:10px 10px 0 #181613;
+  font-family:'Inter',sans-serif;}
+#aiq-card *{box-sizing:border-box;}
+#aiq-close{position:absolute; top:10px; right:12px; background:none; border:none; font-size:26px; line-height:1;
+  color:#4a443c; cursor:pointer; padding:4px 8px;}
+#aiq-close:hover{color:#e34f29;}
+#aiq-inner{padding:34px 30px 26px;}
+.aiq-kick{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+  color:#e34f29; font-weight:600; margin-bottom:8px;}
+#aiq-card h2{font-family:'Fraunces',serif; font-weight:900; font-size:27px; line-height:1.05; letter-spacing:-.01em; margin:0 0 10px;}
+.aiq-lead{font-size:14.5px; line-height:1.55; color:#4a443c; margin:0 0 18px;}
+/* progress */
+#aiq-progwrap{display:none; margin-bottom:18px;}
+#aiq-progbar{height:6px; background:#ece5d4; border:1px solid #181613;}
+#aiq-progfill{height:100%; width:0; background:#e34f29; transition:width .25s ease;}
+.aiq-proglabel{display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:10.5px;
+  letter-spacing:.14em; text-transform:uppercase; color:#4a443c; margin-bottom:6px;}
+/* options */
+.aiq-q{font-family:'Fraunces',serif; font-weight:600; font-size:18px; line-height:1.3; margin:0 0 14px;}
+.aiq-opts{display:flex; flex-direction:column; gap:9px;}
+.aiq-opt{display:block; background:#fff; border:2px solid #181613; padding:12px 14px; cursor:pointer;
+  font-size:14px; line-height:1.35; transition:transform .1s ease, box-shadow .1s ease, background .1s;}
+.aiq-opt:hover{transform:translate(-2px,-2px); box-shadow:4px 4px 0 #181613;}
+.aiq-opt.sel{background:#181613; color:#f4efe3; box-shadow:4px 4px 0 #e34f29;}
+/* nav */
+#aiq-nav{display:none; margin-top:20px; gap:10px;}
+.aiq-btn{font-family:'Inter',sans-serif; font-size:14px; font-weight:600; cursor:pointer; padding:10px 18px;
+  border:2px solid #181613; background:#fff; color:#181613;}
+.aiq-btn:hover{background:#ece5d4;}
+.aiq-btn:disabled{opacity:.4; cursor:not-allowed;}
+#aiq-next{margin-left:auto; background:#e34f29; color:#fff; border-color:#181613;}
+#aiq-next:hover{background:#c4451f;}
+/* result */
+#aiq-result{display:none;}
+.aiq-badge{display:inline-block; background:#e34f29; color:#fff; font-family:'JetBrains Mono',monospace;
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; padding:4px 10px; margin-bottom:12px;}
+.aiq-result-title{font-family:'Fraunces',serif; font-weight:900; font-size:30px; line-height:1; margin:0 0 12px;}
+.aiq-result-body{font-size:14.5px; line-height:1.55; color:#4a443c; margin:0 0 16px;}
+.aiq-stretch{background:#fff; border:2px solid #181613; padding:14px 16px; margin:0 0 14px;}
+.aiq-stretch .lab{font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:#e34f29; font-weight:600; margin-bottom:5px;}
+.aiq-stretch p{margin:0; font-size:14px; line-height:1.5;}
+.aiq-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
+#aiq-retry{background:#fff;}
+.aiq-link{text-decoration:none; display:inline-flex; align-items:center;}
+</style>
+
+<button id="aiq-launch" aria-label="Open the AI self-check"><span class="aiq-dot"></span>Where's your edge?</button>
+
+<div id="aiq-overlay" role="dialog" aria-modal="true" aria-label="AI self-check">
+  <div id="aiq-card">
+    <button id="aiq-close" aria-label="Close">×</button>
+    <div id="aiq-inner">
+      <!-- intro -->
+      <div id="aiq-intro">
+        <div class="aiq-kick">2-minute self-check</div>
+        <h2>Where's your edge?</h2>
+        <p class="aiq-lead">Six quick questions to place you on your AI journey and show where today will stretch you most. No score is "better" – it just points you to the part of the day built for where you are.</p>
+        <button class="aiq-btn" id="aiq-start" style="background:#e34f29;color:#fff;">Start →</button>
+      </div>
+      <!-- quiz -->
+      <div id="aiq-quiz" style="display:none;">
+        <div id="aiq-progwrap">
+          <div class="aiq-proglabel"><span id="aiq-progq">Question 1 of 6</span><span id="aiq-progpct">0%</span></div>
+          <div id="aiq-progbar"><div id="aiq-progfill"></div></div>
+        </div>
+        <div class="aiq-q" id="aiq-qtext"></div>
+        <div class="aiq-opts" id="aiq-opts"></div>
+      </div>
+      <div id="aiq-nav">
+        <button class="aiq-btn" id="aiq-prev">← Back</button>
+        <button class="aiq-btn" id="aiq-next">Next →</button>
+      </div>
+      <!-- result -->
+      <div id="aiq-result"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const QUESTIONS = [
+    { q: "How often do you use AI tools like ChatGPT, Claude or Copilot?",
+      opts: [
+        ["Never, or hardly ever", {explorer:3}],
+        ["Once in a while", {explorer:1, user:1}],
+        ["Most weeks", {user:2, operator:1}],
+        ["Daily – it's part of how I work", {operator:2, builder:1}] ] },
+    { q: "When AI gives you an answer, you usually…",
+      opts: [
+        ["Use it pretty much as-is", {user:3}],
+        ["Give it a quick skim to see if it looks right", {user:2}],
+        ["Check the key facts before I rely on it", {operator:2}],
+        ["Treat it as a first draft and verify anything that matters", {operator:1, builder:1}] ] },
+    { q: "How do you usually prompt?",
+      opts: [
+        ["I type a question and hope for the best", {explorer:2, user:1}],
+        ["I ask again, rephrasing, until it's better", {user:2}],
+        ["I give it a role, context and format (something like RTCF)", {operator:2}],
+        ["I've built reusable prompts or run local models", {operator:1, builder:2}] ] },
+    { q: "How confident would you be explaining AI to a colleague?",
+      opts: [
+        ["Not confident – I'm still finding my feet", {explorer:3}],
+        ["I could share the basics", {user:2}],
+        ["Fairly confident on practical uses", {operator:2}],
+        ["Very – I help others with it regularly", {operator:1, builder:2}] ] },
+    { q: "Have you scoped or led an AI project or initiative?",
+      opts: [
+        ["No, not yet", {explorer:1, user:1}],
+        ["I've thought about it", {user:1, operator:1}],
+        ["One is in progress", {operator:1, builder:2}],
+        ["Yes, a few", {builder:3}] ] },
+    { q: "Where do you feel least confident right now?",
+      opts: [
+        ["Actually using AI day-to-day", {explorer:2, user:1}],
+        ["Knowing when to trust it (and when not to)", {user:2}],
+        ["Getting genuinely good output, not generic", {operator:2}],
+        ["Turning it into a real project that ships", {builder:3}] ] }
+  ];
+
+  const PROFILES = {
+    explorer: {
+      title: "The Explorer", badge: "Early on your journey",
+      body: "You're at the start – and that's the best place to build the habit that lasts: judging AI before you trust it. Don't worry about the project layer yet.",
+      stretch: "The morning is your sweet spot: hands-on fluency, the trust tool, and the two-pass demo. Get the judgement first; everything else builds on it.",
+      goto: "Readings", href: "before.html" },
+    user: {
+      title: "The Hands-on User", badge: "Using it – trust is doing the work",
+      body: "You're using AI, but the way you trust it is carrying the load. Your biggest win today is making that trust deliberate instead of instinctive.",
+      stretch: "The trust tool and the verification habit. Learn exactly when to lean in and where a human must stay in the loop – it'll change how you use AI every day.",
+      goto: "The workshop", href: "workshop.html" },
+    operator: {
+      title: "The Confident Operator", badge: "Fluent – time to make it stick",
+      body: "You're fluent. Your edge now is two things: making your judgement permanent, and lifting it from your desk to a project that ships.",
+      stretch: "The two-page voice method (make your edge stick) and the afternoon's delivery layer – leading projects that don't fail the predictable ways.",
+      goto: "Frameworks", href: "frameworks.html" },
+    builder: {
+      title: "The Builder", badge: "Thinking at the project level",
+      body: "You're already operating at the initiative level. Today is about sharpening how you design the human into delivery and make the go/no-go call.",
+      stretch: "The afternoon: the five differences, human-in-the-loop design, and Scale / Pivot / Kill. Bring a real initiative to scope.",
+      goto: "The workshop", href: "workshop.html" }
+  };
+
+  const launch=document.getElementById('aiq-launch');
+  const overlay=document.getElementById('aiq-overlay');
+  const card=document.getElementById('aiq-card');
+  const closeBtn=document.getElementById('aiq-close');
+  let cur=0, answers={};
+
+  function open(){ overlay.classList.add('open'); reset(); }
+  function close(){ overlay.classList.remove('open'); }
+  launch.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e=>{ if(e.target===overlay) close(); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape' && overlay.classList.contains('open')) close(); });
+
+  const intro=document.getElementById('aiq-intro'), quiz=document.getElementById('aiq-quiz'),
+        nav=document.getElementById('aiq-nav'), result=document.getElementById('aiq-result'),
+        progwrap=document.getElementById('aiq-progwrap');
+
+  function reset(){
+    cur=0; answers={};
+    intro.style.display='block'; quiz.style.display='none'; nav.style.display='none'; result.style.display='none';
+  }
+  document.getElementById('aiq-start').addEventListener('click', ()=>{
+    intro.style.display='none'; quiz.style.display='block'; nav.style.display='flex';
+    render();
+  });
+
+  function render(){
+    const pct=Math.round((cur/QUESTIONS.length)*100);
+    document.getElementById('aiq-progq').textContent='Question '+(cur+1)+' of '+QUESTIONS.length;
+    document.getElementById('aiq-progpct').textContent=pct+'%';
+    document.getElementById('aiq-progfill').style.width=pct+'%';
+    progwrap.style.display='block';
+    document.getElementById('aiq-qtext').textContent=QUESTIONS[cur].q;
+    const opts=document.getElementById('aiq-opts'); opts.innerHTML='';
+    QUESTIONS[cur].opts.forEach((o,i)=>{
+      const sel = answers[cur]===i ? ' sel':'';
+      const div=document.createElement('div');
+      div.className='aiq-opt'+sel;
+      div.textContent=o[0];
+      div.addEventListener('click', ()=>{ answers[cur]=i; [...opts.children].forEach(c=>c.classList.remove('sel')); div.classList.add('sel'); updateNav(); });
+      opts.appendChild(div);
+    });
+    updateNav();
+  }
+  function updateNav(){
+    document.getElementById('aiq-prev').disabled = cur===0;
+    const next=document.getElementById('aiq-next');
+    next.disabled = answers[cur]===undefined;
+    next.textContent = cur===QUESTIONS.length-1 ? 'See your edge →' : 'Next →';
+  }
+  document.getElementById('aiq-prev').addEventListener('click', ()=>{ if(cur>0){cur--; render();} });
+  document.getElementById('aiq-next').addEventListener('click', ()=>{
+    if(answers[cur]===undefined) return;
+    if(cur<QUESTIONS.length-1){ cur++; render(); } else { showResult(); }
+  });
+
+  function showResult(){
+    const score={explorer:0,user:0,operator:0,builder:0};
+    QUESTIONS.forEach((Q,i)=>{ const choice=Q.opts[answers[i]][1]; for(const k in choice) score[k]+=choice[k]; });
+    // highest, tie-break: builder > operator > user > explorer
+    let best='explorer', order=['builder','operator','user','explorer'];
+    order.forEach(k=>{ if(score[k]>(score[best]||0)) best=k; });
+    const p=PROFILES[best];
+    quiz.style.display='none'; nav.style.display='none'; progwrap.style.display='none';
+    result.style.display='block';
+    result.innerHTML =
+      '<div class="aiq-badge">'+p.badge+'</div>'+
+      '<div class="aiq-result-title">'+p.title+'</div>'+
+      '<p class="aiq-result-body">'+p.body+'</p>'+
+      '<div class="aiq-stretch"><div class="lab">Where today will stretch you</div><p>'+p.stretch+'</p></div>'+
+      '<div class="aiq-actions">'+
+        '<a class="aiq-btn aiq-link" href="'+p.href+'">Go to '+p.goto+' →</a>'+
+        '<button class="aiq-btn" id="aiq-retry">Retake</button>'+
+      '</div>';
+    document.getElementById('aiq-retry').addEventListener('click', reset);
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/michael-borck\.github\.io\/the-human-edge\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>The Human Edge: <em>Using and Delivering AI with Judgement</em></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://bigpicture.borck.dev">bigpicture.borck.dev</a> · Dr Michael Borck · Curtin University</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

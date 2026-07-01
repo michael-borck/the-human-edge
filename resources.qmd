@@ -1,0 +1,80 @@
+---
+title: "Resources"
+subtitle: "A reading list and a site map — everything worth following, in one place."
+---
+
+This page pulls together every link the course points you to: the free AI tools worth trying, the companion book and its deeper chapters, Curtin's broader AI Skills Passport, and every "go deeper" thread on this site. It also holds the take-home references — worked examples and prompting guides you can come back to. Skim it now; bookmark it for later.
+
+## Free AI tools to explore
+
+::::: {.callout-tip}
+## Hands-on, no account needed (mostly)
+- **[Our class NotebookLM](https://notebooklm.google.com/notebook/298d815e-8cef-4ff3-84da-14d5285cae05){target="_blank"}** — the notebook we built together in the session. Add your own sources and ask it anything, source-grounded. *(The clearest way to feel the "convincing average" at scale.)*
+- **[Google NotebookLM](https://notebooklm.google.com){target="_blank"}** — start your own: paste a source (webpage, PDF, your notes) and get a podcast, a briefing doc, a study guide. Free and source-grounded.
+- **[Google Teachable Machine](https://teachablemachine.withgoogle.com){target="_blank"}** — train your own image or audio classifier in two minutes, in the browser. AI beyond text — feel how pattern-matching works.
+- **[Survival of the Best Fit](https://www.survivalofthebestfit.com){target="_blank"}** — play ~10 minutes and watch an "objective" hiring algorithm amplify the bias in its training data.
+- **[Style Mirror](https://stylemirror.eduserver.au){target="_blank"}** — give it a sample of your writing; it extracts a two-page style brief to paste into your custom instructions. (The "make your edge persistent" method.)
+- **[CiteSight](https://citesight.eduserver.au){target="_blank"}** — verify references, check citation formatting, and catch the suspicious ones. Free online and desktop. Exactly the defence against AI's most common failure: a polished reference that doesn't exist.
+:::::
+
+## This site, mapped
+
+::::: {.callout-note}
+## The course at a glance
+- **[Readings](before.html)** — three short reads: *AI in five minutes*, *the trust tool*, *why AI delivery is different*.
+- **[The workshop](workshop.html)** — the morning worksheets, the four RetailFlow initiatives, and the three afternoon sprint worksheets.
+- **[Frameworks](frameworks.html)** — the trust tool, RTCF, the five differences, Scale/Pivot/Kill, plus take-home handouts.
+- **[Meet the team](team.html)** — RetailFlow's leadership, available as live chatbots to interview.
+- **[Go deeper](go-deeper.html)** — self-paced extensions: VET your AI, the two-chat workflow, devil's advocate, boardroom perspectives, the handover prompt, the conversation loop, and three cognitive traps.
+- **[Responsible use](responsible-use.html)** — data governance, bias, and ethics dilemmas.
+- **[The series](series.html)** — the three Curtin Executive Education AI masterclasses and how they fit.
+:::::
+
+::::: {.callout-note}
+## Tools that live on this site
+- **[RTCF toolkit](tools/rtcf-toolkit.html)** — build an RTCF prompt from its four parts, analyse any prompt against RTCF, or start from a template. Runs in the browser, no sign-up.
+- **[Your prompt library](activities/morning/prompt-library.html)** — the morning worksheet that turns RTCF into a starter set for your own work.
+- **[Redesign your workflow](activities/morning/workflow-redesign.html)** — the morning's main takeaway: map one real task, put AI where it helps, keep your judgement where it counts.
+- **[Participant workbook (PDF)](the-human-edge-participant-workbook.pdf){target="_blank"}** — every worksheet and initiative card, print-optimised.
+- **[Slide deck (PPTX)](the-human-edge-deck.pptx){target="_blank"}** — the day's deck, with full speaker notes.
+:::::
+
+## The companion book
+
+::::: {.callout-note}
+## *Conversation, Not Delegation* — free, open-licensed
+Everything on this site is drawn from this book. Optional, but if a topic grabs you, that's where to dig.
+- **[Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation/){target="_blank"}** — the whole book.
+- **[The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html){target="_blank"}** — brainstorm → ideate → iterate → amplify → repeat. The shape underneath every technique on the [Go deeper](go-deeper.html) page.
+- **[VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html){target="_blank"}** — Verify, Explain, Test: three questions to run on any AI output that matters.
+:::::
+
+## Curtin's AI Skills Passport
+
+::::: {.callout-note}
+## Broader AI literacy, self-paced
+- **[AI Skills Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html){target="_blank"}** — Curtin's AI literacy hub.
+- **[AI Toolkit](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/ai-toolkit.html){target="_blank"}** — browse every article (some have a teaching focus; the frameworks transfer).
+- **[Three cognitive traps](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/three-cognitive-traps.html){target="_blank"}** — Gell-Mann amnesia, the AI dismissal fallacy, sycophancy. *(Also on this site as a [handout](handouts/frameworks/cognitive-traps.html).)*
+- **[Ethics, data governance & integrity](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/ethics-integrity.html){target="_blank"}** — the original behind the [Responsible use](responsible-use.html) page. *(Also a [handout](handouts/frameworks/data-governance.html).)*
+:::::
+
+## Take-home references
+
+::::: {.callout-important}
+## Worked examples & guides to revisit
+- **[Seven prompt techniques to try](seven-prompt-techniques.html)** — reverse prompting, pros & cons, stepwise chain of thought, role play, debating, practice & self-testing, the expert panel. Ready-to-use prompts across business disciplines.
+- **[Afternoon workshop: worked examples](scenario-answers.html)** — a model answer for each funded RetailFlow initiative, across all three sprints (scope, stakeholders & human-in-the-loop, roadmap & go/no-go). Read these *after* your group has worked through its own.
+:::::
+
+## More from Michael Borck
+
+::::: {.callout-note}
+- **[bigpicture.borck.dev](https://bigpicture.borck.dev){target="_blank"}** — a map of Michael Borck's AI teaching, tools and research at Curtin: what each is for, who it helps, and what he learned (including what didn't work).
+:::::
+
+## The masterclass series
+
+::::: {.callout-note}
+**The Human Edge** is one of Curtin Executive Education's standalone AI masterclasses. Browse the full series — *The Human Edge*, *AI in Strategy*, and *Ethics of Artificial Intelligence* — and enrol on the **[Curtin Executive Education masterclasses page](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/){target="_blank"}**.
+:::::

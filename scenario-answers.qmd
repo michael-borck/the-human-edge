@@ -1,0 +1,180 @@
+---
+title: "Afternoon workshop: worked examples"
+subtitle: "A model answer for each RetailFlow initiative, across all three sprints."
+description: "Worked examples for the afternoon RetailFlow sprints — scope, stakeholders & human-in-the-loop, roadmap & the go/no-go."
+toc: true
+---
+
+These are worked examples for the afternoon's three sprints — one set per funded RetailFlow initiative. Use them to compare against your own group's design, and to see how the day's tools (the trust tool, the five differences, Scale/Pivot/Kill) play out on a real scope. Read them *after* your group has worked through its own sprints; the value is in the comparison, not in copying the answer.
+
+Each set mirrors the worksheets: **Sprint 1** scopes the objective against reality (data, readiness, trust-tool split, a defined “good enough”). **Sprint 2** maps stakeholders and designs the human-in-the-loop checkpoints. **Sprint 3** builds the roadmap with gates, a risk register, an assumptions register, and the gate-1 go/no-go call.
+
+## How to read the gate-1 calls
+
+All four initiatives land on **Pivot** at gate 1 — not by coincidence, but because each genuinely rests on a shaky, load-bearing assumption at the first evaluation gate:
+
+- **Chatbot** — the returns policy exists in four disagreeing copies, and a retired 14-day window is still live in the support macros.
+- **Pricing** — there is no clean competitor feed, so the engine degrades to inventory-only; the backtest won’t hold live.
+- **Inventory** — stock-on-hand can’t be fully trusted, on a fragile, end-of-support inventory estate.
+- **Fraud** — today’s false-block rate is unmeasurable, so the “baseline to beat” is unknown.
+
+So don’t read these for the *verdict*. The interesting contrast is in the *reason*. Each answer carries its conditional **Scale** and **Kill** path, because a defensible Pivot is one that turns into Scale if the shaky assumption clears — and into Kill if it breaks. The judgement is in defending the call under challenge.
+
+---
+
+## The four initiatives
+
+Expand an initiative, then expand a sprint inside it.
+
+<details>
+<summary>**Customer-service chatbot** · $450K</summary>
+
+> *Grounded in: board funding memo (28 Jan 2026), Priya's data-readiness note (11 Feb 2026), returns policy v4.1, ConverseAI vendor proposal, CS team email thread (15 Jun 2026), org chart, draft AI principles..*
+
+<details>
+<summary>Sprint 1 — scope it against reality</summary>
+
+- **Scoped objective:** deploy a chatbot to deflect routine *factual* queries (order status) and cut average email response time from **26h toward <4h** (board memo). **In:** factual queries answerable from data. **Human-checked or routed (for now):** returns (30-day change-of-mind; sale/clearance final; faulty goods covered under the ACL regardless of window) and sizing/fit (tacit — denim runs small, "king" = Australian king — lives in agents' heads). **Out:** complaints/escalations, phone, social DMs.
+- **Readiness:** *data* – best of the four (~214K Zendesk tickets over 2.3 yrs + Shopify live-chat, clean and labelled by query type), **but ground truth is poor** (the RAG work is the critical path). *Organisation* – Tom's CS team owns review + escalation design (operational owner, per org chart); sponsor Emma carries the board promise (~6-month build, board committed; the board privately expects "live in a quarter"); pilot already in flight. *Build/buy/host* – **buy the tool, not the trust.** The ConverseAI pitch is a trap: its "97.8% accuracy" is on the vendor's *own* RetailBench corpus, not our policies; per-conversation pricing ($0.42) is uncapped at volume; and Singapore/US-East hosting breaches our draft data-sovereignty principle (Principle 2). Buy the platform; the grounding is ours.
+- **Data (from Priya):** best transcript foundation of the four — but "good foundation" ≠ "knows your policy." Returns policy exists in ≥4 disagreeing copies (website footer, in-store card, 2022 intranet PDF, Zendesk macros); the macro library still quotes a **14-day window retired in 2024** (actual: 30 days). Sizing knowledge and discretionary return exceptions are unwritten. **Real work:** consolidate to one ratified canonical policy source, owned jointly with Tom, before the bot goes beyond pilot.
+- **Trust-tool split:** order status → lean in, with a human glance (it's customer-facing); returns/sizing → **human in the loop** — a wrong policy in writing is a reputational + consumer-law exposure (the board flagged this itself).
+- **"Good enough":** deflect **≥55% of inbound** (the board commitment; push toward 60%); wrong-answer rate <2% on routine factual, but **0% tolerance on returns/policy** — the bot must refuse and route to a human if unsure.
+
+</details>
+
+<details>
+<summary>Sprint 2 — stakeholders & human-in-the-loop</summary>
+
+- **Stakeholder plan:** Emma (MD/sponsor, High/High) – needs the board promise kept; fears reputational damage → agree "good enough" gates + phased rollout, no big-bang. David (CFO) – needs ROI on $450K against the **$1.1M cost-avoidance run-rate** he signed off; fears runaway cost → tie spend to gates, show deflection savings. Tom (CS manager, operational owner, High interest) – his team is automated first; fears job loss + looking bad → position as augmentation (**board committed no role cuts**), staff the checkpoints with CS. Lisa Nguyen (GM CX, Tom's manager) ratified the v4.1 returns policy with Tom — she is the policy authority and the escalation owner for CX risk.
+- **HITL checkpoints:** Returns/policy answers → **senior CS reviewer checks before send** (or the bot refuses + routes). Evaluator: an experienced senior rep — the one who already makes the discretionary calls. **Builds** capability (the deliberate build-checkpoint — juniors learn what "right" looks like here) + consumes. High-confidence routine answers → QA-sample (~5%), human glance. Evaluator: CS lead. Mostly consumes.
+- **The non-negotiable:** returns-policy answers must be human-verified or refused — a wrong policy in writing (the bot quoting "14 days" instead of 30) is the single biggest risk, and per Raj's team email it is **already happening**.
+
+</details>
+
+<details>
+<summary>Sprint 3 — roadmap, risk & the go/no-go</summary>
+
+- **Roadmap with gates:** Pilot (narrow) – order-status + returns, shadow mode (bot drafts, human sends), 2 weeks. **Gate:** ≥70% of drafts usable with <3% wrong. Evaluate – add sizing; measure deflection + wrong-rate. **Gate:** deflection ≥55% (board), wrong <2%, **policy-wrong = 0**. Scale/Pivot/Kill → Production with monitoring.
+- **Risk register (top):** confident-wrong returns policy (AI-specific: non-determinism + verification) – Med/High – mitigate: RAG + human checkpoint, bot refuses if unsure. **Already live, not theoretical:** Raj's email (15 Jun) records the bot telling a customer "14 days" (order #RF-880214) — the grounding gap in action. Demo-gap (AI-specific): the demo handles the easy 80% – mitigate: gate on the angry-customer edge cases. Vendor trap (non-AI but real): offshore hosting + uncapped per-conversation cost – mitigate: require Aus-region hosting per Principle 2; forecast/cap usage.
+- **Assumptions register (load-bearing):** (1) the policy docs are current & complete → *shaky* (4 disagreeing copies, retired 14-day macro still live); (2) the bot routes to a human when unsure → *holding* (designed in, Sprint 2); (3) CS has capacity to review every policy answer → *shaky*. Three of three shaky-or-tenuous → exactly why gate-1 is **Pivot**, not Scale.
+- **Gate-1 call:** **PIVOT** if the returns wrong-rate is too high at gate 1 – narrow scope to order-status only until the policy RAG matures. Rationale (traces to assumption 1, *shaky*): the cost of a wrong policy at scale — consumer-law + reputational — exceeds the cost of narrowing scope. Scale only if **policy-wrong = 0** holds.
+- **DDCD crisis (the screenshot incident):** a customer screenshots the bot quoting "14 days" returns. *Diagnose* = technical grounding gap + ethical/consumer-law exposure; *Decide* = pause the bot on returns, force-route to human, retire the stale 14-day Zendesk macro, re-ground on v4.1; *Communicate* = to the customer (apologise + honour the 30-day return), Tom's team, Emma/board; *Document* = root cause (grounded on a stale macro) + fix + ongoing policy-wrong monitoring.
+
+</details>
+
+</details>
+
+<details>
+<summary>**Dynamic pricing** · $850K</summary>
+
+<details>
+<summary>Sprint 1 — scope it against reality</summary>
+
+- **Scoped objective:** deliver **human-approved, demand-led price *recommendations*** on a narrow pilot (slow-moving online fashion), not autonomous repricing. **In:** within-guardrail markdown recommendations, online-first where the data is clean. **Human-approved (for now):** any change >20% in one step, hero/top-200 SKUs, essential-homewares increases, anything below cost. **Out:** autonomous mode, store prices (POS not reconciled), essential homewares, brand-hero lines.
+- **Readiness:** *data* – **poor**. No clean competitor feed (manual ad-hoc checks, weeks stale; a matched feed is a separate $80–120K/yr project **not in the $850K**). Store demand (legacy POS, ~65% of revenue) is coarse, batch-loaded, ~14% SKU mismatched to online. *Organisation* – sponsor **David (CFO)**, delivery lead **Priya**, tech **Marcus**, brand **Lisa**; governance policy v4.2 (owner Sarah/COO) is a **hard constraint**. *Build/buy/host* – buy the engine + build the feed/reconciliation + a governance wrapper; **never accept the vendor's autonomous default**.
+- **Data (from Priya):** competitor feed is the **critical gap**; online/store won't join cleanly; and **backtest ≠ live** — discount the vendor's +3.8pt claim "heavily." Real work = feed acquisition + SKU reconciliation + a capped live pilot. **12+ months, not "this year."**
+- **Trust-tool split:** pricing sits in the **Precise / high-stakes danger corner**. Small within-band markdowns on slow stock → Average, can automate inside guardrails. Anything touching a threshold, a hero line, or a margin floor → **human in the loop**.
+- **"Good enough":** metric = full-price sell-through (target 61%→67%) / margin lift on pilot SKUs vs a control. Threshold = a measurable, attributable lift. **Maximum error = zero tolerance on governance breaches** (below-cost, >20% unapproved step, >7-day swing, >5% channel divergence, gouging). A wrong price is public.
+
+</details>
+
+<details>
+<summary>Sprint 2 — stakeholders & human-in-the-loop</summary>
+
+- **Stakeholder plan:** **David (CFO/sponsor, High/High)** – needs ROI on $850K + the "this year" margin lift; fears blowout → tie spend to gates, surface the $80–120K feed cost up front, frame the pilot as de-risking the backtest. **Emma (MD, High/High)** – owns the board's "live this year" promise; fears a gouging headline → reframe "this year" as a **branded-safe pilot, not full rollout**, phased. **Marcus (CIO, High/Med)** – wants speed, "competitors aren't waiting" → channel his urgency into the real blocker (data engineering: feed + reconciliation), not the engine. **Priya (delivery lead, High/High)** – the honest 12-month timeline → make her the gatekeeper. **Sarah (COO, High power/High interest)** – owns governance; will slow it, **rightly** → embed her policy as hard guardrails, not a negotiation. **Lisa (GM CX)** – brand perception + hero-SKU sign-off → in early on hero rules.
+- **HITL checkpoints:** any change >20% in a step, hero/top-200 SKUs, homewares increases, or below-cost → **merchandise manager / COO / CFO approve before it goes live** (policy §1–2). Evaluator: experienced category buyer / merchandise manager. **Builds** capability (deliberate build-checkpoint — juniors learn pricing judgement, not just rubber-stamp) + consumes. Small within-band markdowns → QA-sample (~5%), human glance. Evaluator: merchandise manager. Mostly consumes. Brand-perception breaches (cadence, channel divergence, gouging) → automated daily check + weekly CX review. Evaluator: Lisa's team. Consumes.
+- **The non-negotiable:** **no price goes live automatically above the thresholds** — >20% step, hero line, or below-cost all require **human sign-off as a hard block, not an alert.** A wrong price is public and instant; "autonomous by default" is a non-starter here.
+
+</details>
+
+<details>
+<summary>Sprint 3 — roadmap, risk & the go/no-go</summary>
+
+- **Roadmap with gates:** **Phase 0 – Data foundation (parallel):** acquire + match the competitor feed; reconcile online/store SKU keys. ~3–4 months. *Gate 0: feed live, ≥95% SKU match, reconciliation done — no engine contract before this clears.* **Phase 1 – Pilot:** one slow-moving online fashion category, engine in **recommendation-only mode**, every change human-approved, guardrails **ON** (not the vendor default), shadow run ~6–8 weeks vs a control. *Gate 1: measurable margin lift vs control, 0 governance breaches, backtest-vs-live delta understood.* **Phase 2 – Expand** categories, still human-approved above threshold; add stores once POS reconciled. **Phase 3 – Trust-banded autonomy:** only ≤small within-band changes ever automated; full autonomous mode is never reached.
+- **Risk register (top):** autonomous wrong price live (AI-specific: non-determinism + verification) – Med impact / **High** – mitigate: guardrails ON by default, hard-block above threshold. Demo-gap / backtest overstatement (AI-specific): the +3.8pt is replayed against own history, can't see competitor/customer reaction – mitigate: live capped pilot vs control. Missing competitor feed (AI-specific + data-discovered): engine **falls back to inventory-and-demand-only**, mis-prices the 65%-of-revenue store base – mitigate: Phase-0 feed project, online-first pilot. Brand/gouging exposure (high-stakes, amplified by speed): 7-day swing, >5% channel divergence – mitigate: governance as hard guardrails + CX review.
+- **Assumptions register (load-bearing):** (1) a clean competitor feed can be acquired + matched → **shaky** (Priya: critical gap, separate $80–120K/yr project, not in budget); (2) online/store demand can be reconciled → **shaky** (legacy POS, ~14% SKU mismatch, batch); (3) governance guardrails can be enforced as hard blocks in the vendor engine → **holding** (available in console, but disabled by default — must be turned ON); (4) the backtested margin lift holds live → **shaky/broken** (Priya: discount heavily); (5) the board accepts "this year" = a pilot, not full rollout → **shaky** (the central tension). Two core assumptions shaky/broken → why gate-1 is **PIVOT**, not Scale.
+- **Gate-1 call:** **PIVOT** — ship only **human-approved recommendations on a narrow online category**, not autonomous pricing. Traceable to assumption **#1 (competitor feed — shaky/broken: the engine degrades to inventory-only without it)** and **#4 (the backtest won't hold in live)**. The cost of an autonomous wrong price at scale — a gouging story or margin loss across thousands of SKUs — far exceeds the cost of staying human-approved. Scale only if #1 and #4 are proven **holding** at the pilot; if the feed genuinely can't be sourced, **KILL** (inventory-only repricing against a 65%-store blind spot has no defensible value).
+- **DDCD crisis example:** a repricer hiking an essential homewares line +11% in a week (breaching the +10%/quarter cap) the morning of a competitor stockout — instant "gouging" headline; only the human checkpoint catches it, the engine sees only opportunity.
+
+</details>
+
+</details>
+
+<details>
+<summary>**Inventory optimisation** · $1.1M</summary>
+
+<details>
+<summary>Sprint 1 — scope it against reality</summary>
+
+- **Scoped objective:** deliver AI demand-forecasting and **advisory** replenishment for **one category (homewares)** across pilot stores — prove value, then scale. **In:** single-category forecast + daily replenishment suggestions ranked by stockout risk; automate the *suggestion*. **Human-approved (for now):** any actual reorder/write-back; the seasonal buy forecast. **Out:** every other category, real-time store stock (the system can't give it), auto-commit/auto-replenish, network-wide rollout, POS replacement.
+- **Readiness:** *data* – online (Shopify) clean & API-accessible; **store POS (RetailMaster, ~12 yrs) is nightly flat-file only — a 24-hr lag**; StockTrak inventory (~14 yrs) carries manual adjustments and **~7% variance vs counts**; **~22% of SKUs need mapping/cleansing**; no shared product key; supplier lead times live in spreadsheets/email. *Organisation* – Priya accountable, Marcus owns integration, Sarah holds ops; Sarah's own policy keeps pilot suggestions **advisory only**. *Build/buy/host* – **buy** the forecasting platform ($420K licensing); the real work is the $390K integration, which is a **data-quality program, not a connector**.
+- **Data (from Priya):** product-master reconciliation + SKU mapping must **precede modelling**; trustworthy stock-on-hand (~93% today) must improve; reconcile StockTrak ↔ POS ↔ Shopify. **Realistic 9–12 months, pilot ~3 months** — not the 6 quoted.
+- **Trust-tool split:** aggregate demand signal + stockout-risk ranking → **Average → automate** the suggestion. The actual commit/write-back to a fragile, end-of-support system, and the seasonal buy (large, irreversible $) → **Precise → human approves**. Per-store/regional forecasts where a "right in aggregate" demo can be wrong-on-a-store → **human check**.
+- **"Good enough":** single metric = **store-manager acceptance rate** of pilot suggestions (the trust proxy Sarah bakes in); proposed gate ≥70% accepted, with **pilot-line stockout ≤6%** (board target) and zero nil-stock regressions vs baseline. **Unacceptable:** a confident forecast that drives a wrong reorder in a specific store — pile-up or nil-stock — even when the network average looks right (worst case: worsening the DC's *chronic* homewares-candle nil-stock in regional stores).
+
+</details>
+
+<details>
+<summary>Sprint 2 — stakeholders & human-in-the-loop</summary>
+
+- **Stakeholder plan:** **Emma** (MD/sponsor, High/High) – owns the "whole-network gains" board promise; fears a visible failure on the biggest spend → reframe as **prove-then-scale** (board already endorsed), milestone-gated budget, set the 9–12 month expectation now. **David** (CFO, High/High) – needs ROI/certainty on $1.1M; fears the underestimated integration blows the budget → **first tranche only $340K**, release the rest against gates. **Marcus** (CIO, High/High) – owns integration; impatient for transformation but knows the legacy pain best → he's the pilot's ally; agree integration is a **data-quality program**; protect his 3 data engineers (binding constraint across all four initiatives) with sequencing. **Priya** (Data, High/Med-High, accountable) – pushes the single-category pilot + realism → adopt her roadmap. **Sarah** (COO, High/Med) – **store managers ignore forecasts they don't trust**; fears steamrolling frontline → **recommendation-a-manager-approves, not auto-replenish**; she is the gatekeeper of trust. Tom/Lisa: keep informed (stockouts hurt CX).
+- **HITL checkpoints:** (1) **Every replenishment suggestion approved by the store manager before commit** — evaluator: the store manager (knows what right looks like for their store); **builds** capability (managers stay fluent in reorder judgement while the system learns — the apprenticeship point) and consumes. (2) **SKU-mapping / stock-on-hand sign-off before the model trains** — evaluator: Priya's data engineers **+ Raj Patel** (the one person who knows StockTrak's schema — key-person risk); builds. (3) **Seasonal-buy forecast review** — evaluator: buying team + Priya; mostly consumes (large, irreversible $).
+- **The non-negotiable:** **no auto-commit to StockTrak — every suggestion is advisory, a store manager approves before write-back.** It bounds blast radius on the broadest-scope initiative *and* protects a fragile, out-of-support system. Both Marcus's note and Sarah's policy say exactly this.
+
+</details>
+
+<details>
+<summary>Sprint 3 — roadmap, risk & the go/no-go</summary>
+
+- **Roadmap with gates:** **Phase 0 — Integration groundwork** (~6 wks): StockTrak nightly replica + Shopify feed in staging; SKU-master cleanse for the homewares slice; cross-train Raj's knowledge. **Gate 0:** trustworthy, reconciled homewares data + key-person risk mitigated *before* any modelling. **Phase 1 — Pilot (homewares, ~3 mo):** advisory daily suggestions ranked by stockout risk, manager approves. **Gate 1 (go/no-go):** forecast acceptance ≥ gate, pilot stockout ≤6%, **no nil-stock regressions**, nightly pipeline stable. **Phase 2 — Scale:** waves of categories/stores; move stable lines toward auto-suggest (still no auto-commit while StockTrak is EOL). **Phase 3 (FY27+):** POS replacement unlocks real-time + auto-commit.
+- **Risk register (top):** **Right-in-aggregate / wrong-on-a-store** (AI-specific: demo gap + non-determinism) — Med/High — mitigate: pilot, per-store validation, gate on **worst store** not network average. **Integration under-scoped** (AI-specific: data is *discovered*, not specified) — High/High — mitigate: $390K line, treat as data-quality program, Phase 0 first. **Auto-write to EOL StockTrak** — Med/High — mitigate: advisory-only, no auto-commit. **Key-person risk (Raj)** — Med/High — mitigate: cross-train, document, Gate 0. **Manager distrust** — Med/High — mitigate: manager-approves model + Sarah's change management.
+- **Assumptions register (load-bearing):** (1) **homewares SKU-cleanse delivers trustworthy stock-on-hand** → *shaky* (no shared product key; "reconciliation is a project in itself"). (2) **nightly batch / 24-hr lag is tolerable** → *holding* (designed in). (3) **StockTrak replica + Shopify feed stand up in ~6 wks** → *shaky* (EOL, undocumented). (4) **managers accept the suggestions (trust)** → *shaky* (Sarah: they ignore what they don't trust). (5) **Raj stays available through Phase 0** → *shaky*. (6) **StockTrak stays operational** (EOL mid-2024) → *shaky*. (7) **board's prove-then-scale framing holds** → *holding* (explicitly endorsed). **Five of seven load-bearing assumptions sit on the data/integration layer — the most underestimated part of the budget.**
+- **Gate-1 call:** **PIVOT by default; SCALE only if all data-and-trust gates clear; KILL only if the core extraction assumption breaks.** Because the load-bearing integration assumptions (#1, #3, #6) are *shaky*, gate-1 leans **Pivot** — hold scope at homewares and fix the data layer — even if the demo looks good, rather than Scale on a forecast built on stock-on-hand we can't fully trust. **Scale** only if homewares data is clean, the pipeline is stable, Raj risk is mitigated, **and** managers are accepting suggestions with zero nil-stock regressions. **Kill** only if trustworthy data genuinely can't be extracted from the EOL estate — at which point inventory waits for the FY27 POS replacement, it isn't force-fit.
+- **DDCD crisis line:** a confident forecast under-orders the homewares-candle line for regional stores — turning the pilot's flagship category into the exact stockout the board funded this to fix.
+
+</details>
+
+</details>
+
+<details>
+<summary>**Fraud detection** · $650K</summary>
+
+<details>
+<summary>Sprint 1 — scope it against reality</summary>
+
+- **Readiness:** *data* – Shopify Plus order data (value, device/IP, billing–shipping mismatch, tenure, payment method) is clean and adequate to feed a vendor, but **we don't have enough labelled fraud history to build our own** (Priya's reason buy wins). Legacy POS is poor, but in-store card-present is the smaller exposure – not blocking. *organisation* – the manual rule-based review is straining, inconsistent online vs store, and **we cannot measure our own false-block rate today** (the baseline we must beat). Sponsor is Marcus (CIO); Priya owns threshold/oversight design; Tom is consulted on anything customer-facing. *build/buy/host* – **buy, don't build**: this is a vendor-integration + oversight project, not a data-science build. Fraud is an always-on control → it sits with Risk/Ops + vendor, NOT in Priya's analytics backlog.
+- **Scoped objective:** cut card-not-present chargebacks ≥40% and fraudulent returns/refund abuse ≥30% within 12 months of go-live. **In:** online card-not-present detection via vendor + threshold tuning + human review of flagged-before-block. **Human-checked (for now):** the borderline/flagged review queue. **Out:** in-store card-present fraud (smaller exposure, poor data); building a proprietary model; any auto-decline without review.
+- **Data (from Priya):** data is "good enough for a vendor" – and that's the point. The real data work isn't ingestion, it's **instrumenting the false-positive rate so we can finally see it**, and demanding the vendor's FP rate *at our threshold on data like ours*, not a 99.2% headline benchmarked on other retailers.
+- **Trust-tool split:** clear-clean majority (low risk) → lean in / auto-approve at checkout (speed). Borderline/flagged (~8% middle) → **PRECISE: human in the loop before any customer is blocked.** The threshold is a business trade-off owned by us (Finance + CS in the room), never the vendor's default.
+- **"Good enough":** no single metric – a paired trade-off. Primary: chargeback reduction ≥40%. Constraint: false-block rate must be measurable and **must not exceed today's manual baseline**; the vendor's ~1-in-6-of-flagged default (≈1.3% of all online orders wrongly interfered with) is the number to tune DOWN. Unacceptable: blocking a legit customer (esp. long-standing/wholesale) without review – "a wrongly accused customer rarely returns."
+
+</details>
+
+<details>
+<summary>Sprint 2 — stakeholders & human-in-the-loop</summary>
+
+- **Stakeholder plan:** David (CFO, High/High) – owns the **$3.2M FY25 loss** (up from $2.4M) + the $650K; wants certainty on the 40%/30% cuts; fears runaway per-transaction fees ($0.11/order scales with growth) and a loss-cutter that blocks good customers (the board's hard constraint) → tie spend to gates; show chargeback $ saved vs per-order cost; Finance sits in the threshold room. Priya (Data, Med/High) – owns buy-not-build + oversight design; needs her team NOT running it; fears a black box we can't oversee → she sets the measurement spec + vendor-oversight framework, explicitly not the ongoing model. Tom (CS, Med/High) – his queue absorbs every wrongly-blocked customer (**3+ escalations/month already**, one furious wholesale customer); fears looking bad + the 4-hr SLA already slipping in sales → staff the review checkpoint with his experienced agents; position as augmentation; he signs off anything customer-facing. Marcus (CIO/sponsor) – tempted by the 4-week vendor go-live; gate him on the demo-to-production reality.
+- **HITL checkpoints:** Flagged-before-block (borderline) → **experienced CS/risk reviewer checks and contacts the customer before any decline** – "security verification" framing, never the word "fraud" (policy). Evaluator: senior reviewer (the evaluator's advantage – they know real-fraud vs nervous-good-customer; a junior becomes a conduit who waves it through). **Builds** capability (deliberate judgement work grows tomorrow's evaluators) and consumes. High-confidence-fraud auto-decline, if used → QA-sample + audit, human can override; mostly consumes. Threshold-setting reviews (Finance + CS + Priya) → human judgement owns the trade-off; builds institutional capability.
+- **The non-negotiable:** no customer is auto-declined on the vendor's score alone – flagged transactions get human review (or a safe release-and-monitor path) before block. A wrongly blocked legit customer is the single biggest risk (revenue + reputation), the board's explicit hard constraint, and the AI-principles "high-impact action = HITL" rule.
+
+</details>
+
+<details>
+<summary>Sprint 3 — roadmap, risk & the go/no-go</summary>
+
+- **Roadmap with gates:** Phase 0 Baseline & diligence (wks 1–4): instrument today's manual false-block rate (can't beat what we can't measure); vendor POC on RetailFlow's own data; demand FP rate at our threshold. *Gate:* FP-on-our-data < now-measured baseline; contract clause locking threshold ownership to us (not the Enterprise-tier hostage). Phase 1 Pilot/shadow (online card-not-present only): vendor runs alongside manual rules; Finance+CS+Priya tune; flagged → human review before block. *Gate (end-Q2 board review):* chargebacks trending ≥40% cut AND false-block ≤ baseline AND review queue within SLA. Phase 2 Live online + extend to returns/refund-abuse. *Gate:* hold both at scale. Phase 3 in-store (out for now). Scale/Pivot/Kill → production.
+- **Risk register (top):** Demo-to-production gap (AI-specific: demo on THEIR data) – the 99.2%/62% are portfolio benchmarks on other retailers' data, say little about our patterns – Med/High – mitigate: POC on our data, FP-at-our-threshold before signing. False-block at scale (AI-specific: non-determinism + trade-off + verification) – ~1-in-6 of ~8% flagged ≈ 1.3% of all online orders wrongly interfered with; reputational + lost sales; we can't measure it yet – High/High – mitigate: human-before-block, instrument the metric, tune down. Black-box/lock-in (AI-specific: can't verify why) – proprietary model, can't explain a decline; bespoke thresholds cost extra – Med/High – mitigate: contract for threshold ownership + explainability + exit. Per-order cost creep (not AI-specific) – $0.11/order scales with growth – Med/Med – mitigate: fee cap, gate review.
+- **Assumptions register (load-bearing):** (1) vendor FP rate on RetailFlow data ≈ portfolio benchmark → *shaky* (benchmarked on others' data); (2) today's manual false-block rate is a beatable baseline → *shaky/unknown* (we don't measure it yet – foundational); (3) CS has capacity + expertise to review every flagged-before-block within SLA → *shaky* (4-hr target already slips; reviewer notes inconsistent); (4) threshold config is ours, not vendor-locked → *shaky* (standard = vendor default; bespoke = Enterprise extra). Four-of-four shaky → why gate-1 is Pivot, not Scale.
+- **Gate-1 call:** **PIVOT** if the false-block rate on our data exceeds the now-measured baseline OR the review queue blows the SLA at end-Q2. Action: tune thresholds up (more conservative blocking), make human-review-before-block mandatory on all borderline (no auto-decline) until the vendor FP rate is demonstrably ≤ baseline on our data. Rationale: the board's hard constraint is customer experience – a loss-cutter that blocks good customers "will not be judged a success"; assumption (2) is the core load-bearing one and it is unverifiable-or-broken at gate-1, but fixable by tuning + HITL → Pivot, not Kill. Scale only if (1)+(2)+(3) all hold.
+- **Crisis example:** the wholesale-customer blow-up (finance email) is the template – a high-value, long-standing customer wrongly blocked and furious; playbook = human-before-block + assume-good-faith "security verification" comms + a fast release path.
+
+</details>
+
+</details>
+
+---
+
+::::: {.callout-note}
+## These are model answers, not the only defensible ones
+A different group, reading the same RetailFlow documents and interviewing the same stakeholders, can arrive at a different — equally defensible — design. The point of the afternoon is the *reasoning* you bring to scope, checkpoints and the go/no-go, not matching a fixed key. Compare your group’s calls against these and ask: where would we defend a different call, and why?
+:::::

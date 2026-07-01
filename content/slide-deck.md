@@ -541,6 +541,22 @@ Then make the call: **Scale, Pivot, or Kill.**
 
 ---
 
+# The gate-1 board pitch
+
+You're at the board with **ambiguous pilot data**. Three minutes, three parts:
+
+1. **Our call** — Scale, Pivot, or Kill (one word).
+2. **The load-bearing assumption** — the one holding/shaky/broken call that drove it.
+3. **One challenge** — the hardest question the room (or the board) can throw at you.
+
+> With ambiguous data there's no "right" call — only one that's **traceable to a named assumption**. A call you can't trace is one you'll wrongly scale.
+
+::::: {.notes}
+- This is the capstone: every group defends a real decision under uncertainty. Same shape as the morning's "judge before you trust," lifted to project scale.
+- Manufacture disagreement: each group has a different initiative, so the calls (and the reasons) differ. Push a confident group toward Scale, a cautious one toward Kill — the defence is the learning, not the verdict.
+- Normalise Kill publicly: a project killed early, with a reason you can name, is success.
+:::::
+
 # What you've built by 4:00
 
 A **delivery design for a real AI project**, not a theory to apply later:

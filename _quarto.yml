@@ -32,6 +32,8 @@ website:
         href: frameworks.qmd
       - text: "Meet the team"
         href: team.qmd
+      - text: "Resources"
+        href: resources.qmd
     right:
       - text: "The series"
         href: series.qmd

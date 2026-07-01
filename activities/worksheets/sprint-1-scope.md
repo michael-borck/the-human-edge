@@ -54,6 +54,16 @@ AI output is non-deterministic; there's no spec to pass. So *you* must define fi
 - The threshold on that metric: ______________
 - The **maximum acceptable error rate**, and what kind of error is unacceptable: ______________
 
+
+## 6. Sprint close — defend your "good enough"
+
+This is how you know the sprint is done. To the room, in one breath:
+
+- **State it** — the metric, the threshold, and the maximum error you'll accept.
+- **Name the evidence** — where Marcus (speed) met Priya (data reality). What tension did you reconcile to land on *this* band, not a tighter or looser one?
+- **Take one challenge.** A group (or your facilitator) asks: *"If the real error rate landed just outside your band, would you still ship — and why?"* Your answer is the test of whether the band is defensible, not aspirational.
+
+> If you can't name the tension or flinch at the challenge, your scope isn't finished — go back to section 5.
 ---
 
 **Leave Sprint 1 with:** a scoped objective, data requirements, a trust-tool split, and a defined "good enough." You'll build the rest of the plan on these.

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Worked examples for the afternoon RetailFlow sprints — scope, stakeholders &amp; human-in-the-loop, roadmap &amp; the go/no-go.">
+
+<title>Afternoon workshop: worked examples – The Human Edge</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-20d1645b68fe24e438722d2c6c49ef3a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0bcdabf9d8c9e2be313de06e6ed1a50c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<!-- Brand typography: Fraunces (display/headings) + Inter (body/UI). Loaded once site-wide. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+
+<meta property="og:title" content="Afternoon workshop: worked examples – The Human Edge">
+<meta property="og:description" content="Worked examples for the afternoon RetailFlow sprints — scope, stakeholders &amp; human-in-the-loop, roadmap &amp; the go/no-go.">
+<meta property="og:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
+<meta property="og:site_name" content="The Human Edge">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Afternoon workshop: worked examples – The Human Edge">
+<meta name="twitter:description" content="Worked examples for the afternoon RetailFlow sprints — scope, stakeholders &amp; human-in-the-loop, roadmap &amp; the go/no-go.">
+<meta name="twitter:image" content="https://michael-borck.github.io/the-human-edge/content/images/og-image.png">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./favicon.svg" alt="" class="navbar-logo light-content">
+    <img src="./favicon.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Human Edge</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./before.html"> 
+<span class="menu-text">Readings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshop.html"> 
+<span class="menu-text">The workshop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./frameworks.html"> 
+<span class="menu-text">Frameworks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./team.html"> 
+<span class="menu-text">Meet the team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./series.html"> 
+<span class="menu-text">The series</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./the-human-edge-deck.pptx" target="_blank"> 
+<span class="menu-text">Slides (PPTX)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-to-read-the-gate-1-calls" id="toc-how-to-read-the-gate-1-calls" class="nav-link active" data-scroll-target="#how-to-read-the-gate-1-calls">How to read the gate-1 calls</a></li>
+  <li><a href="#the-four-initiatives" id="toc-the-four-initiatives" class="nav-link" data-scroll-target="#the-four-initiatives">The four initiatives</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Afternoon workshop: worked examples</h1>
+<p class="subtitle lead">A model answer for each RetailFlow initiative, across all three sprints.</p>
+</div>
+
+<div>
+  <div class="description">
+    Worked examples for the afternoon RetailFlow sprints — scope, stakeholders &amp; human-in-the-loop, roadmap &amp; the go/no-go.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>These are worked examples for the afternoon’s three sprints — one set per funded RetailFlow initiative. Use them to compare against your own group’s design, and to see how the day’s tools (the trust tool, the five differences, Scale/Pivot/Kill) play out on a real scope. Read them <em>after</em> your group has worked through its own sprints; the value is in the comparison, not in copying the answer.</p>
+<p>Each set mirrors the worksheets: <strong>Sprint 1</strong> scopes the objective against reality (data, readiness, trust-tool split, a defined “good enough”). <strong>Sprint 2</strong> maps stakeholders and designs the human-in-the-loop checkpoints. <strong>Sprint 3</strong> builds the roadmap with gates, a risk register, an assumptions register, and the gate-1 go/no-go call.</p>
+<section id="how-to-read-the-gate-1-calls" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-read-the-gate-1-calls">How to read the gate-1 calls</h2>
+<p>All four initiatives land on <strong>Pivot</strong> at gate 1 — not by coincidence, but because each genuinely rests on a shaky, load-bearing assumption at the first evaluation gate:</p>
+<ul>
+<li><strong>Chatbot</strong> — the returns policy exists in four disagreeing copies, and a retired 14-day window is still live in the support macros.</li>
+<li><strong>Pricing</strong> — there is no clean competitor feed, so the engine degrades to inventory-only; the backtest won’t hold live.</li>
+<li><strong>Inventory</strong> — stock-on-hand can’t be fully trusted, on a fragile, end-of-support inventory estate.</li>
+<li><strong>Fraud</strong> — today’s false-block rate is unmeasurable, so the “baseline to beat” is unknown.</li>
+</ul>
+<p>So don’t read these for the <em>verdict</em>. The interesting contrast is in the <em>reason</em>. Each answer carries its conditional <strong>Scale</strong> and <strong>Kill</strong> path, because a defensible Pivot is one that turns into Scale if the shaky assumption clears — and into Kill if it breaks. The judgement is in defending the call under challenge.</p>
+<hr>
+</section>
+<section id="the-four-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="the-four-initiatives">The four initiatives</h2>
+<p>Expand an initiative, then expand a sprint inside it.</p>
+<details>
+<summary>
+<strong>Customer-service chatbot</strong> · $450K
+</summary>
+<blockquote class="blockquote">
+<p><em>Grounded in: board funding memo (28 Jan 2026), Priya’s data-readiness note (11 Feb 2026), returns policy v4.1, ConverseAI vendor proposal, CS team email thread (15 Jun 2026), org chart, draft AI principles..</em></p>
+</blockquote>
+<details>
+<summary>
+Sprint 1 — scope it against reality
+</summary>
+<ul>
+<li><strong>Scoped objective:</strong> deploy a chatbot to deflect routine <em>factual</em> queries (order status) and cut average email response time from <strong>26h toward &lt;4h</strong> (board memo). <strong>In:</strong> factual queries answerable from data. <strong>Human-checked or routed (for now):</strong> returns (30-day change-of-mind; sale/clearance final; faulty goods covered under the ACL regardless of window) and sizing/fit (tacit — denim runs small, “king” = Australian king — lives in agents’ heads). <strong>Out:</strong> complaints/escalations, phone, social DMs.</li>
+<li><strong>Readiness:</strong> <em>data</em> – best of the four (~214K Zendesk tickets over 2.3 yrs + Shopify live-chat, clean and labelled by query type), <strong>but ground truth is poor</strong> (the RAG work is the critical path). <em>Organisation</em> – Tom’s CS team owns review + escalation design (operational owner, per org chart); sponsor Emma carries the board promise (~6-month build, board committed; the board privately expects “live in a quarter”); pilot already in flight. <em>Build/buy/host</em> – <strong>buy the tool, not the trust.</strong> The ConverseAI pitch is a trap: its “97.8% accuracy” is on the vendor’s <em>own</em> RetailBench corpus, not our policies; per-conversation pricing ($0.42) is uncapped at volume; and Singapore/US-East hosting breaches our draft data-sovereignty principle (Principle 2). Buy the platform; the grounding is ours.</li>
+<li><strong>Data (from Priya):</strong> best transcript foundation of the four — but “good foundation” ≠ “knows your policy.” Returns policy exists in ≥4 disagreeing copies (website footer, in-store card, 2022 intranet PDF, Zendesk macros); the macro library still quotes a <strong>14-day window retired in 2024</strong> (actual: 30 days). Sizing knowledge and discretionary return exceptions are unwritten. <strong>Real work:</strong> consolidate to one ratified canonical policy source, owned jointly with Tom, before the bot goes beyond pilot.</li>
+<li><strong>Trust-tool split:</strong> order status → lean in, with a human glance (it’s customer-facing); returns/sizing → <strong>human in the loop</strong> — a wrong policy in writing is a reputational + consumer-law exposure (the board flagged this itself).</li>
+<li><strong>“Good enough”:</strong> deflect <strong>≥55% of inbound</strong> (the board commitment; push toward 60%); wrong-answer rate &lt;2% on routine factual, but <strong>0% tolerance on returns/policy</strong> — the bot must refuse and route to a human if unsure.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 2 — stakeholders &amp; human-in-the-loop
+</summary>
+<ul>
+<li><strong>Stakeholder plan:</strong> Emma (MD/sponsor, High/High) – needs the board promise kept; fears reputational damage → agree “good enough” gates + phased rollout, no big-bang. David (CFO) – needs ROI on $450K against the <strong>$1.1M cost-avoidance run-rate</strong> he signed off; fears runaway cost → tie spend to gates, show deflection savings. Tom (CS manager, operational owner, High interest) – his team is automated first; fears job loss + looking bad → position as augmentation (<strong>board committed no role cuts</strong>), staff the checkpoints with CS. Lisa Nguyen (GM CX, Tom’s manager) ratified the v4.1 returns policy with Tom — she is the policy authority and the escalation owner for CX risk.</li>
+<li><strong>HITL checkpoints:</strong> Returns/policy answers → <strong>senior CS reviewer checks before send</strong> (or the bot refuses + routes). Evaluator: an experienced senior rep — the one who already makes the discretionary calls. <strong>Builds</strong> capability (the deliberate build-checkpoint — juniors learn what “right” looks like here) + consumes. High-confidence routine answers → QA-sample (~5%), human glance. Evaluator: CS lead. Mostly consumes.</li>
+<li><strong>The non-negotiable:</strong> returns-policy answers must be human-verified or refused — a wrong policy in writing (the bot quoting “14 days” instead of 30) is the single biggest risk, and per Raj’s team email it is <strong>already happening</strong>.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 3 — roadmap, risk &amp; the go/no-go
+</summary>
+<ul>
+<li><strong>Roadmap with gates:</strong> Pilot (narrow) – order-status + returns, shadow mode (bot drafts, human sends), 2 weeks. <strong>Gate:</strong> ≥70% of drafts usable with &lt;3% wrong. Evaluate – add sizing; measure deflection + wrong-rate. <strong>Gate:</strong> deflection ≥55% (board), wrong &lt;2%, <strong>policy-wrong = 0</strong>. Scale/Pivot/Kill → Production with monitoring.</li>
+<li><strong>Risk register (top):</strong> confident-wrong returns policy (AI-specific: non-determinism + verification) – Med/High – mitigate: RAG + human checkpoint, bot refuses if unsure. <strong>Already live, not theoretical:</strong> Raj’s email (15 Jun) records the bot telling a customer “14 days” (order #RF-880214) — the grounding gap in action. Demo-gap (AI-specific): the demo handles the easy 80% – mitigate: gate on the angry-customer edge cases. Vendor trap (non-AI but real): offshore hosting + uncapped per-conversation cost – mitigate: require Aus-region hosting per Principle 2; forecast/cap usage.</li>
+<li><strong>Assumptions register (load-bearing):</strong> (1) the policy docs are current &amp; complete → <em>shaky</em> (4 disagreeing copies, retired 14-day macro still live); (2) the bot routes to a human when unsure → <em>holding</em> (designed in, Sprint 2); (3) CS has capacity to review every policy answer → <em>shaky</em>. Three of three shaky-or-tenuous → exactly why gate-1 is <strong>Pivot</strong>, not Scale.</li>
+<li><strong>Gate-1 call:</strong> <strong>PIVOT</strong> if the returns wrong-rate is too high at gate 1 – narrow scope to order-status only until the policy RAG matures. Rationale (traces to assumption 1, <em>shaky</em>): the cost of a wrong policy at scale — consumer-law + reputational — exceeds the cost of narrowing scope. Scale only if <strong>policy-wrong = 0</strong> holds.</li>
+<li><strong>DDCD crisis (the screenshot incident):</strong> a customer screenshots the bot quoting “14 days” returns. <em>Diagnose</em> = technical grounding gap + ethical/consumer-law exposure; <em>Decide</em> = pause the bot on returns, force-route to human, retire the stale 14-day Zendesk macro, re-ground on v4.1; <em>Communicate</em> = to the customer (apologise + honour the 30-day return), Tom’s team, Emma/board; <em>Document</em> = root cause (grounded on a stale macro) + fix + ongoing policy-wrong monitoring.</li>
+</ul>
+</details>
+</details>
+<details>
+<summary>
+<strong>Dynamic pricing</strong> · $850K
+</summary>
+<details>
+<summary>
+Sprint 1 — scope it against reality
+</summary>
+<ul>
+<li><strong>Scoped objective:</strong> deliver <strong>human-approved, demand-led price <em>recommendations</em></strong> on a narrow pilot (slow-moving online fashion), not autonomous repricing. <strong>In:</strong> within-guardrail markdown recommendations, online-first where the data is clean. <strong>Human-approved (for now):</strong> any change &gt;20% in one step, hero/top-200 SKUs, essential-homewares increases, anything below cost. <strong>Out:</strong> autonomous mode, store prices (POS not reconciled), essential homewares, brand-hero lines.</li>
+<li><strong>Readiness:</strong> <em>data</em> – <strong>poor</strong>. No clean competitor feed (manual ad-hoc checks, weeks stale; a matched feed is a separate $80–120K/yr project <strong>not in the $850K</strong>). Store demand (legacy POS, ~65% of revenue) is coarse, batch-loaded, ~14% SKU mismatched to online. <em>Organisation</em> – sponsor <strong>David (CFO)</strong>, delivery lead <strong>Priya</strong>, tech <strong>Marcus</strong>, brand <strong>Lisa</strong>; governance policy v4.2 (owner Sarah/COO) is a <strong>hard constraint</strong>. <em>Build/buy/host</em> – buy the engine + build the feed/reconciliation + a governance wrapper; <strong>never accept the vendor’s autonomous default</strong>.</li>
+<li><strong>Data (from Priya):</strong> competitor feed is the <strong>critical gap</strong>; online/store won’t join cleanly; and <strong>backtest ≠ live</strong> — discount the vendor’s +3.8pt claim “heavily.” Real work = feed acquisition + SKU reconciliation + a capped live pilot. <strong>12+ months, not “this year.”</strong></li>
+<li><strong>Trust-tool split:</strong> pricing sits in the <strong>Precise / high-stakes danger corner</strong>. Small within-band markdowns on slow stock → Average, can automate inside guardrails. Anything touching a threshold, a hero line, or a margin floor → <strong>human in the loop</strong>.</li>
+<li><strong>“Good enough”:</strong> metric = full-price sell-through (target 61%→67%) / margin lift on pilot SKUs vs a control. Threshold = a measurable, attributable lift. <strong>Maximum error = zero tolerance on governance breaches</strong> (below-cost, &gt;20% unapproved step, &gt;7-day swing, &gt;5% channel divergence, gouging). A wrong price is public.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 2 — stakeholders &amp; human-in-the-loop
+</summary>
+<ul>
+<li><strong>Stakeholder plan:</strong> <strong>David (CFO/sponsor, High/High)</strong> – needs ROI on $850K + the “this year” margin lift; fears blowout → tie spend to gates, surface the $80–120K feed cost up front, frame the pilot as de-risking the backtest. <strong>Emma (MD, High/High)</strong> – owns the board’s “live this year” promise; fears a gouging headline → reframe “this year” as a <strong>branded-safe pilot, not full rollout</strong>, phased. <strong>Marcus (CIO, High/Med)</strong> – wants speed, “competitors aren’t waiting” → channel his urgency into the real blocker (data engineering: feed + reconciliation), not the engine. <strong>Priya (delivery lead, High/High)</strong> – the honest 12-month timeline → make her the gatekeeper. <strong>Sarah (COO, High power/High interest)</strong> – owns governance; will slow it, <strong>rightly</strong> → embed her policy as hard guardrails, not a negotiation. <strong>Lisa (GM CX)</strong> – brand perception + hero-SKU sign-off → in early on hero rules.</li>
+<li><strong>HITL checkpoints:</strong> any change &gt;20% in a step, hero/top-200 SKUs, homewares increases, or below-cost → <strong>merchandise manager / COO / CFO approve before it goes live</strong> (policy §1–2). Evaluator: experienced category buyer / merchandise manager. <strong>Builds</strong> capability (deliberate build-checkpoint — juniors learn pricing judgement, not just rubber-stamp) + consumes. Small within-band markdowns → QA-sample (~5%), human glance. Evaluator: merchandise manager. Mostly consumes. Brand-perception breaches (cadence, channel divergence, gouging) → automated daily check + weekly CX review. Evaluator: Lisa’s team. Consumes.</li>
+<li><strong>The non-negotiable:</strong> <strong>no price goes live automatically above the thresholds</strong> — &gt;20% step, hero line, or below-cost all require <strong>human sign-off as a hard block, not an alert.</strong> A wrong price is public and instant; “autonomous by default” is a non-starter here.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 3 — roadmap, risk &amp; the go/no-go
+</summary>
+<ul>
+<li><strong>Roadmap with gates:</strong> <strong>Phase 0 – Data foundation (parallel):</strong> acquire + match the competitor feed; reconcile online/store SKU keys. ~3–4 months. <em>Gate 0: feed live, ≥95% SKU match, reconciliation done — no engine contract before this clears.</em> <strong>Phase 1 – Pilot:</strong> one slow-moving online fashion category, engine in <strong>recommendation-only mode</strong>, every change human-approved, guardrails <strong>ON</strong> (not the vendor default), shadow run ~6–8 weeks vs a control. <em>Gate 1: measurable margin lift vs control, 0 governance breaches, backtest-vs-live delta understood.</em> <strong>Phase 2 – Expand</strong> categories, still human-approved above threshold; add stores once POS reconciled. <strong>Phase 3 – Trust-banded autonomy:</strong> only ≤small within-band changes ever automated; full autonomous mode is never reached.</li>
+<li><strong>Risk register (top):</strong> autonomous wrong price live (AI-specific: non-determinism + verification) – Med impact / <strong>High</strong> – mitigate: guardrails ON by default, hard-block above threshold. Demo-gap / backtest overstatement (AI-specific): the +3.8pt is replayed against own history, can’t see competitor/customer reaction – mitigate: live capped pilot vs control. Missing competitor feed (AI-specific + data-discovered): engine <strong>falls back to inventory-and-demand-only</strong>, mis-prices the 65%-of-revenue store base – mitigate: Phase-0 feed project, online-first pilot. Brand/gouging exposure (high-stakes, amplified by speed): 7-day swing, &gt;5% channel divergence – mitigate: governance as hard guardrails + CX review.</li>
+<li><strong>Assumptions register (load-bearing):</strong> (1) a clean competitor feed can be acquired + matched → <strong>shaky</strong> (Priya: critical gap, separate $80–120K/yr project, not in budget); (2) online/store demand can be reconciled → <strong>shaky</strong> (legacy POS, ~14% SKU mismatch, batch); (3) governance guardrails can be enforced as hard blocks in the vendor engine → <strong>holding</strong> (available in console, but disabled by default — must be turned ON); (4) the backtested margin lift holds live → <strong>shaky/broken</strong> (Priya: discount heavily); (5) the board accepts “this year” = a pilot, not full rollout → <strong>shaky</strong> (the central tension). Two core assumptions shaky/broken → why gate-1 is <strong>PIVOT</strong>, not Scale.</li>
+<li><strong>Gate-1 call:</strong> <strong>PIVOT</strong> — ship only <strong>human-approved recommendations on a narrow online category</strong>, not autonomous pricing. Traceable to assumption <strong>#1 (competitor feed — shaky/broken: the engine degrades to inventory-only without it)</strong> and <strong>#4 (the backtest won’t hold in live)</strong>. The cost of an autonomous wrong price at scale — a gouging story or margin loss across thousands of SKUs — far exceeds the cost of staying human-approved. Scale only if #1 and #4 are proven <strong>holding</strong> at the pilot; if the feed genuinely can’t be sourced, <strong>KILL</strong> (inventory-only repricing against a 65%-store blind spot has no defensible value).</li>
+<li><strong>DDCD crisis example:</strong> a repricer hiking an essential homewares line +11% in a week (breaching the +10%/quarter cap) the morning of a competitor stockout — instant “gouging” headline; only the human checkpoint catches it, the engine sees only opportunity.</li>
+</ul>
+</details>
+</details>
+<details>
+<summary>
+<strong>Inventory optimisation</strong> · $1.1M
+</summary>
+<details>
+<summary>
+Sprint 1 — scope it against reality
+</summary>
+<ul>
+<li><strong>Scoped objective:</strong> deliver AI demand-forecasting and <strong>advisory</strong> replenishment for <strong>one category (homewares)</strong> across pilot stores — prove value, then scale. <strong>In:</strong> single-category forecast + daily replenishment suggestions ranked by stockout risk; automate the <em>suggestion</em>. <strong>Human-approved (for now):</strong> any actual reorder/write-back; the seasonal buy forecast. <strong>Out:</strong> every other category, real-time store stock (the system can’t give it), auto-commit/auto-replenish, network-wide rollout, POS replacement.</li>
+<li><strong>Readiness:</strong> <em>data</em> – online (Shopify) clean &amp; API-accessible; <strong>store POS (RetailMaster, ~12 yrs) is nightly flat-file only — a 24-hr lag</strong>; StockTrak inventory (~14 yrs) carries manual adjustments and <strong>~7% variance vs counts</strong>; <strong>~22% of SKUs need mapping/cleansing</strong>; no shared product key; supplier lead times live in spreadsheets/email. <em>Organisation</em> – Priya accountable, Marcus owns integration, Sarah holds ops; Sarah’s own policy keeps pilot suggestions <strong>advisory only</strong>. <em>Build/buy/host</em> – <strong>buy</strong> the forecasting platform ($420K licensing); the real work is the $390K integration, which is a <strong>data-quality program, not a connector</strong>.</li>
+<li><strong>Data (from Priya):</strong> product-master reconciliation + SKU mapping must <strong>precede modelling</strong>; trustworthy stock-on-hand (~93% today) must improve; reconcile StockTrak ↔︎ POS ↔︎ Shopify. <strong>Realistic 9–12 months, pilot ~3 months</strong> — not the 6 quoted.</li>
+<li><strong>Trust-tool split:</strong> aggregate demand signal + stockout-risk ranking → <strong>Average → automate</strong> the suggestion. The actual commit/write-back to a fragile, end-of-support system, and the seasonal buy (large, irreversible $) → <strong>Precise → human approves</strong>. Per-store/regional forecasts where a “right in aggregate” demo can be wrong-on-a-store → <strong>human check</strong>.</li>
+<li><strong>“Good enough”:</strong> single metric = <strong>store-manager acceptance rate</strong> of pilot suggestions (the trust proxy Sarah bakes in); proposed gate ≥70% accepted, with <strong>pilot-line stockout ≤6%</strong> (board target) and zero nil-stock regressions vs baseline. <strong>Unacceptable:</strong> a confident forecast that drives a wrong reorder in a specific store — pile-up or nil-stock — even when the network average looks right (worst case: worsening the DC’s <em>chronic</em> homewares-candle nil-stock in regional stores).</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 2 — stakeholders &amp; human-in-the-loop
+</summary>
+<ul>
+<li><strong>Stakeholder plan:</strong> <strong>Emma</strong> (MD/sponsor, High/High) – owns the “whole-network gains” board promise; fears a visible failure on the biggest spend → reframe as <strong>prove-then-scale</strong> (board already endorsed), milestone-gated budget, set the 9–12 month expectation now. <strong>David</strong> (CFO, High/High) – needs ROI/certainty on $1.1M; fears the underestimated integration blows the budget → <strong>first tranche only $340K</strong>, release the rest against gates. <strong>Marcus</strong> (CIO, High/High) – owns integration; impatient for transformation but knows the legacy pain best → he’s the pilot’s ally; agree integration is a <strong>data-quality program</strong>; protect his 3 data engineers (binding constraint across all four initiatives) with sequencing. <strong>Priya</strong> (Data, High/Med-High, accountable) – pushes the single-category pilot + realism → adopt her roadmap. <strong>Sarah</strong> (COO, High/Med) – <strong>store managers ignore forecasts they don’t trust</strong>; fears steamrolling frontline → <strong>recommendation-a-manager-approves, not auto-replenish</strong>; she is the gatekeeper of trust. Tom/Lisa: keep informed (stockouts hurt CX).</li>
+<li><strong>HITL checkpoints:</strong> (1) <strong>Every replenishment suggestion approved by the store manager before commit</strong> — evaluator: the store manager (knows what right looks like for their store); <strong>builds</strong> capability (managers stay fluent in reorder judgement while the system learns — the apprenticeship point) and consumes. (2) <strong>SKU-mapping / stock-on-hand sign-off before the model trains</strong> — evaluator: Priya’s data engineers <strong>+ Raj Patel</strong> (the one person who knows StockTrak’s schema — key-person risk); builds. (3) <strong>Seasonal-buy forecast review</strong> — evaluator: buying team + Priya; mostly consumes (large, irreversible $).</li>
+<li><strong>The non-negotiable:</strong> <strong>no auto-commit to StockTrak — every suggestion is advisory, a store manager approves before write-back.</strong> It bounds blast radius on the broadest-scope initiative <em>and</em> protects a fragile, out-of-support system. Both Marcus’s note and Sarah’s policy say exactly this.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 3 — roadmap, risk &amp; the go/no-go
+</summary>
+<ul>
+<li><strong>Roadmap with gates:</strong> <strong>Phase 0 — Integration groundwork</strong> (~6 wks): StockTrak nightly replica + Shopify feed in staging; SKU-master cleanse for the homewares slice; cross-train Raj’s knowledge. <strong>Gate 0:</strong> trustworthy, reconciled homewares data + key-person risk mitigated <em>before</em> any modelling. <strong>Phase 1 — Pilot (homewares, ~3 mo):</strong> advisory daily suggestions ranked by stockout risk, manager approves. <strong>Gate 1 (go/no-go):</strong> forecast acceptance ≥ gate, pilot stockout ≤6%, <strong>no nil-stock regressions</strong>, nightly pipeline stable. <strong>Phase 2 — Scale:</strong> waves of categories/stores; move stable lines toward auto-suggest (still no auto-commit while StockTrak is EOL). <strong>Phase 3 (FY27+):</strong> POS replacement unlocks real-time + auto-commit.</li>
+<li><strong>Risk register (top):</strong> <strong>Right-in-aggregate / wrong-on-a-store</strong> (AI-specific: demo gap + non-determinism) — Med/High — mitigate: pilot, per-store validation, gate on <strong>worst store</strong> not network average. <strong>Integration under-scoped</strong> (AI-specific: data is <em>discovered</em>, not specified) — High/High — mitigate: $390K line, treat as data-quality program, Phase 0 first. <strong>Auto-write to EOL StockTrak</strong> — Med/High — mitigate: advisory-only, no auto-commit. <strong>Key-person risk (Raj)</strong> — Med/High — mitigate: cross-train, document, Gate 0. <strong>Manager distrust</strong> — Med/High — mitigate: manager-approves model + Sarah’s change management.</li>
+<li><strong>Assumptions register (load-bearing):</strong> (1) <strong>homewares SKU-cleanse delivers trustworthy stock-on-hand</strong> → <em>shaky</em> (no shared product key; “reconciliation is a project in itself”). (2) <strong>nightly batch / 24-hr lag is tolerable</strong> → <em>holding</em> (designed in). (3) <strong>StockTrak replica + Shopify feed stand up in ~6 wks</strong> → <em>shaky</em> (EOL, undocumented). (4) <strong>managers accept the suggestions (trust)</strong> → <em>shaky</em> (Sarah: they ignore what they don’t trust). (5) <strong>Raj stays available through Phase 0</strong> → <em>shaky</em>. (6) <strong>StockTrak stays operational</strong> (EOL mid-2024) → <em>shaky</em>. (7) <strong>board’s prove-then-scale framing holds</strong> → <em>holding</em> (explicitly endorsed). <strong>Five of seven load-bearing assumptions sit on the data/integration layer — the most underestimated part of the budget.</strong></li>
+<li><strong>Gate-1 call:</strong> <strong>PIVOT by default; SCALE only if all data-and-trust gates clear; KILL only if the core extraction assumption breaks.</strong> Because the load-bearing integration assumptions (#1, #3, #6) are <em>shaky</em>, gate-1 leans <strong>Pivot</strong> — hold scope at homewares and fix the data layer — even if the demo looks good, rather than Scale on a forecast built on stock-on-hand we can’t fully trust. <strong>Scale</strong> only if homewares data is clean, the pipeline is stable, Raj risk is mitigated, <strong>and</strong> managers are accepting suggestions with zero nil-stock regressions. <strong>Kill</strong> only if trustworthy data genuinely can’t be extracted from the EOL estate — at which point inventory waits for the FY27 POS replacement, it isn’t force-fit.</li>
+<li><strong>DDCD crisis line:</strong> a confident forecast under-orders the homewares-candle line for regional stores — turning the pilot’s flagship category into the exact stockout the board funded this to fix.</li>
+</ul>
+</details>
+</details>
+<details>
+<summary>
+<strong>Fraud detection</strong> · $650K
+</summary>
+<details>
+<summary>
+Sprint 1 — scope it against reality
+</summary>
+<ul>
+<li><strong>Readiness:</strong> <em>data</em> – Shopify Plus order data (value, device/IP, billing–shipping mismatch, tenure, payment method) is clean and adequate to feed a vendor, but <strong>we don’t have enough labelled fraud history to build our own</strong> (Priya’s reason buy wins). Legacy POS is poor, but in-store card-present is the smaller exposure – not blocking. <em>organisation</em> – the manual rule-based review is straining, inconsistent online vs store, and <strong>we cannot measure our own false-block rate today</strong> (the baseline we must beat). Sponsor is Marcus (CIO); Priya owns threshold/oversight design; Tom is consulted on anything customer-facing. <em>build/buy/host</em> – <strong>buy, don’t build</strong>: this is a vendor-integration + oversight project, not a data-science build. Fraud is an always-on control → it sits with Risk/Ops + vendor, NOT in Priya’s analytics backlog.</li>
+<li><strong>Scoped objective:</strong> cut card-not-present chargebacks ≥40% and fraudulent returns/refund abuse ≥30% within 12 months of go-live. <strong>In:</strong> online card-not-present detection via vendor + threshold tuning + human review of flagged-before-block. <strong>Human-checked (for now):</strong> the borderline/flagged review queue. <strong>Out:</strong> in-store card-present fraud (smaller exposure, poor data); building a proprietary model; any auto-decline without review.</li>
+<li><strong>Data (from Priya):</strong> data is “good enough for a vendor” – and that’s the point. The real data work isn’t ingestion, it’s <strong>instrumenting the false-positive rate so we can finally see it</strong>, and demanding the vendor’s FP rate <em>at our threshold on data like ours</em>, not a 99.2% headline benchmarked on other retailers.</li>
+<li><strong>Trust-tool split:</strong> clear-clean majority (low risk) → lean in / auto-approve at checkout (speed). Borderline/flagged (~8% middle) → <strong>PRECISE: human in the loop before any customer is blocked.</strong> The threshold is a business trade-off owned by us (Finance + CS in the room), never the vendor’s default.</li>
+<li><strong>“Good enough”:</strong> no single metric – a paired trade-off. Primary: chargeback reduction ≥40%. Constraint: false-block rate must be measurable and <strong>must not exceed today’s manual baseline</strong>; the vendor’s ~1-in-6-of-flagged default (≈1.3% of all online orders wrongly interfered with) is the number to tune DOWN. Unacceptable: blocking a legit customer (esp.&nbsp;long-standing/wholesale) without review – “a wrongly accused customer rarely returns.”</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 2 — stakeholders &amp; human-in-the-loop
+</summary>
+<ul>
+<li><strong>Stakeholder plan:</strong> David (CFO, High/High) – owns the <strong>$3.2M FY25 loss</strong> (up from $2.4M) + the $650K; wants certainty on the 40%/30% cuts; fears runaway per-transaction fees ($0.11/order scales with growth) and a loss-cutter that blocks good customers (the board’s hard constraint) → tie spend to gates; show chargeback $ saved vs per-order cost; Finance sits in the threshold room. Priya (Data, Med/High) – owns buy-not-build + oversight design; needs her team NOT running it; fears a black box we can’t oversee → she sets the measurement spec + vendor-oversight framework, explicitly not the ongoing model. Tom (CS, Med/High) – his queue absorbs every wrongly-blocked customer (<strong>3+ escalations/month already</strong>, one furious wholesale customer); fears looking bad + the 4-hr SLA already slipping in sales → staff the review checkpoint with his experienced agents; position as augmentation; he signs off anything customer-facing. Marcus (CIO/sponsor) – tempted by the 4-week vendor go-live; gate him on the demo-to-production reality.</li>
+<li><strong>HITL checkpoints:</strong> Flagged-before-block (borderline) → <strong>experienced CS/risk reviewer checks and contacts the customer before any decline</strong> – “security verification” framing, never the word “fraud” (policy). Evaluator: senior reviewer (the evaluator’s advantage – they know real-fraud vs nervous-good-customer; a junior becomes a conduit who waves it through). <strong>Builds</strong> capability (deliberate judgement work grows tomorrow’s evaluators) and consumes. High-confidence-fraud auto-decline, if used → QA-sample + audit, human can override; mostly consumes. Threshold-setting reviews (Finance + CS + Priya) → human judgement owns the trade-off; builds institutional capability.</li>
+<li><strong>The non-negotiable:</strong> no customer is auto-declined on the vendor’s score alone – flagged transactions get human review (or a safe release-and-monitor path) before block. A wrongly blocked legit customer is the single biggest risk (revenue + reputation), the board’s explicit hard constraint, and the AI-principles “high-impact action = HITL” rule.</li>
+</ul>
+</details>
+<details>
+<summary>
+Sprint 3 — roadmap, risk &amp; the go/no-go
+</summary>
+<ul>
+<li><strong>Roadmap with gates:</strong> Phase 0 Baseline &amp; diligence (wks 1–4): instrument today’s manual false-block rate (can’t beat what we can’t measure); vendor POC on RetailFlow’s own data; demand FP rate at our threshold. <em>Gate:</em> FP-on-our-data &lt; now-measured baseline; contract clause locking threshold ownership to us (not the Enterprise-tier hostage). Phase 1 Pilot/shadow (online card-not-present only): vendor runs alongside manual rules; Finance+CS+Priya tune; flagged → human review before block. <em>Gate (end-Q2 board review):</em> chargebacks trending ≥40% cut AND false-block ≤ baseline AND review queue within SLA. Phase 2 Live online + extend to returns/refund-abuse. <em>Gate:</em> hold both at scale. Phase 3 in-store (out for now). Scale/Pivot/Kill → production.</li>
+<li><strong>Risk register (top):</strong> Demo-to-production gap (AI-specific: demo on THEIR data) – the 99.2%/62% are portfolio benchmarks on other retailers’ data, say little about our patterns – Med/High – mitigate: POC on our data, FP-at-our-threshold before signing. False-block at scale (AI-specific: non-determinism + trade-off + verification) – ~1-in-6 of ~8% flagged ≈ 1.3% of all online orders wrongly interfered with; reputational + lost sales; we can’t measure it yet – High/High – mitigate: human-before-block, instrument the metric, tune down. Black-box/lock-in (AI-specific: can’t verify why) – proprietary model, can’t explain a decline; bespoke thresholds cost extra – Med/High – mitigate: contract for threshold ownership + explainability + exit. Per-order cost creep (not AI-specific) – $0.11/order scales with growth – Med/Med – mitigate: fee cap, gate review.</li>
+<li><strong>Assumptions register (load-bearing):</strong> (1) vendor FP rate on RetailFlow data ≈ portfolio benchmark → <em>shaky</em> (benchmarked on others’ data); (2) today’s manual false-block rate is a beatable baseline → <em>shaky/unknown</em> (we don’t measure it yet – foundational); (3) CS has capacity + expertise to review every flagged-before-block within SLA → <em>shaky</em> (4-hr target already slips; reviewer notes inconsistent); (4) threshold config is ours, not vendor-locked → <em>shaky</em> (standard = vendor default; bespoke = Enterprise extra). Four-of-four shaky → why gate-1 is Pivot, not Scale.</li>
+<li><strong>Gate-1 call:</strong> <strong>PIVOT</strong> if the false-block rate on our data exceeds the now-measured baseline OR the review queue blows the SLA at end-Q2. Action: tune thresholds up (more conservative blocking), make human-review-before-block mandatory on all borderline (no auto-decline) until the vendor FP rate is demonstrably ≤ baseline on our data. Rationale: the board’s hard constraint is customer experience – a loss-cutter that blocks good customers “will not be judged a success”; assumption (2) is the core load-bearing one and it is unverifiable-or-broken at gate-1, but fixable by tuning + HITL → Pivot, not Kill. Scale only if (1)+(2)+(3) all hold.</li>
+<li><strong>Crisis example:</strong> the wholesale-customer blow-up (finance email) is the template – a high-value, long-standing customer wrongly blocked and furious; playbook = human-before-block + assume-good-faith “security verification” comms + a fast release path.</li>
+</ul>
+</details>
+</details>
+<hr>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>These are model answers, not the only defensible ones
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A different group, reading the same RetailFlow documents and interviewing the same stakeholders, can arrive at a different — equally defensible — design. The point of the afternoon is the <em>reasoning</em> you bring to scope, checkpoints and the go/no-go, not matching a fixed key. Compare your group’s calls against these and ask: where would we defend a different call, and why?</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<!-- Course assistant chatbot, injected site-wide via _quarto.yml include-after-body -->
+<script data-embed-id="10d0eb94-0c5a-4696-a41d-3ff83b9e1eea" data-base-api-url="https://chat.eduserver.au/api/embed" data-assistant-name="The Human Edge: Course Assistant" data-greeting="Hi! I'm your course assistant. Ask me about The Human Edge: the trust tool, RTCF prompting, the five differences of AI delivery, the RetailFlow sprints, or how the day's idea applies to your own work." src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<!-- "Where's your edge?" – AI self-check popup overlay.
+     Self-contained: launcher button + modal + quiz. Scoped under #aiq-* so it
+     won't clash with the Quarto theme. Branded to the editorial look
+     (cream / ink / vermilion; Fraunces + Inter + JetBrains Mono). Injected
+     site-wide via _quarto.yml include-after-body. -->
+<style>
+#aiq-launch{position:fixed; left:18px; bottom:18px; z-index:1000; display:flex; align-items:center; gap:8px;
+  background:#181613; color:#f4efe3; border:none; padding:11px 16px; border-radius:999px; cursor:pointer;
+  font-family:'Inter',sans-serif; font-size:13px; font-weight:600; letter-spacing:.01em;
+  box-shadow:4px 4px 0 #e34f29; transition:transform .12s ease, box-shadow .12s ease;}
+#aiq-launch:hover{transform:translate(-2px,-2px); box-shadow:6px 6px 0 #e34f29;}
+#aiq-launch .aiq-dot{width:8px;height:8px;border-radius:50%;background:#e34f29;}
+#aiq-overlay{position:fixed; inset:0; z-index:1001; display:none; align-items:center; justify-content:center;
+  background:rgba(24,22,19,.55); padding:20px;}
+#aiq-overlay.open{display:flex;}
+#aiq-card{position:relative; width:min(560px,100%); max-height:92vh; overflow:auto;
+  background:#f4efe3; color:#181613; border:3px solid #181613; box-shadow:10px 10px 0 #181613;
+  font-family:'Inter',sans-serif;}
+#aiq-card *{box-sizing:border-box;}
+#aiq-close{position:absolute; top:10px; right:12px; background:none; border:none; font-size:26px; line-height:1;
+  color:#4a443c; cursor:pointer; padding:4px 8px;}
+#aiq-close:hover{color:#e34f29;}
+#aiq-inner{padding:34px 30px 26px;}
+.aiq-kick{font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+  color:#e34f29; font-weight:600; margin-bottom:8px;}
+#aiq-card h2{font-family:'Fraunces',serif; font-weight:900; font-size:27px; line-height:1.05; letter-spacing:-.01em; margin:0 0 10px;}
+.aiq-lead{font-size:14.5px; line-height:1.55; color:#4a443c; margin:0 0 18px;}
+/* progress */
+#aiq-progwrap{display:none; margin-bottom:18px;}
+#aiq-progbar{height:6px; background:#ece5d4; border:1px solid #181613;}
+#aiq-progfill{height:100%; width:0; background:#e34f29; transition:width .25s ease;}
+.aiq-proglabel{display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:10.5px;
+  letter-spacing:.14em; text-transform:uppercase; color:#4a443c; margin-bottom:6px;}
+/* options */
+.aiq-q{font-family:'Fraunces',serif; font-weight:600; font-size:18px; line-height:1.3; margin:0 0 14px;}
+.aiq-opts{display:flex; flex-direction:column; gap:9px;}
+.aiq-opt{display:block; background:#fff; border:2px solid #181613; padding:12px 14px; cursor:pointer;
+  font-size:14px; line-height:1.35; transition:transform .1s ease, box-shadow .1s ease, background .1s;}
+.aiq-opt:hover{transform:translate(-2px,-2px); box-shadow:4px 4px 0 #181613;}
+.aiq-opt.sel{background:#181613; color:#f4efe3; box-shadow:4px 4px 0 #e34f29;}
+/* nav */
+#aiq-nav{display:none; margin-top:20px; gap:10px;}
+.aiq-btn{font-family:'Inter',sans-serif; font-size:14px; font-weight:600; cursor:pointer; padding:10px 18px;
+  border:2px solid #181613; background:#fff; color:#181613;}
+.aiq-btn:hover{background:#ece5d4;}
+.aiq-btn:disabled{opacity:.4; cursor:not-allowed;}
+#aiq-next{margin-left:auto; background:#e34f29; color:#fff; border-color:#181613;}
+#aiq-next:hover{background:#c4451f;}
+/* result */
+#aiq-result{display:none;}
+.aiq-badge{display:inline-block; background:#e34f29; color:#fff; font-family:'JetBrains Mono',monospace;
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; padding:4px 10px; margin-bottom:12px;}
+.aiq-result-title{font-family:'Fraunces',serif; font-weight:900; font-size:30px; line-height:1; margin:0 0 12px;}
+.aiq-result-body{font-size:14.5px; line-height:1.55; color:#4a443c; margin:0 0 16px;}
+.aiq-stretch{background:#fff; border:2px solid #181613; padding:14px 16px; margin:0 0 14px;}
+.aiq-stretch .lab{font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:#e34f29; font-weight:600; margin-bottom:5px;}
+.aiq-stretch p{margin:0; font-size:14px; line-height:1.5;}
+.aiq-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
+#aiq-retry{background:#fff;}
+.aiq-link{text-decoration:none; display:inline-flex; align-items:center;}
+</style>
+
+<button id="aiq-launch" aria-label="Open the AI self-check"><span class="aiq-dot"></span>Where's your edge?</button>
+
+<div id="aiq-overlay" role="dialog" aria-modal="true" aria-label="AI self-check">
+  <div id="aiq-card">
+    <button id="aiq-close" aria-label="Close">×</button>
+    <div id="aiq-inner">
+      <!-- intro -->
+      <div id="aiq-intro">
+        <div class="aiq-kick">2-minute self-check</div>
+        <h2>Where's your edge?</h2>
+        <p class="aiq-lead">Six quick questions to place you on your AI journey and show where today will stretch you most. No score is "better" – it just points you to the part of the day built for where you are.</p>
+        <button class="aiq-btn" id="aiq-start" style="background:#e34f29;color:#fff;">Start →</button>
+      </div>
+      <!-- quiz -->
+      <div id="aiq-quiz" style="display:none;">
+        <div id="aiq-progwrap">
+          <div class="aiq-proglabel"><span id="aiq-progq">Question 1 of 6</span><span id="aiq-progpct">0%</span></div>
+          <div id="aiq-progbar"><div id="aiq-progfill"></div></div>
+        </div>
+        <div class="aiq-q" id="aiq-qtext"></div>
+        <div class="aiq-opts" id="aiq-opts"></div>
+      </div>
+      <div id="aiq-nav">
+        <button class="aiq-btn" id="aiq-prev">← Back</button>
+        <button class="aiq-btn" id="aiq-next">Next →</button>
+      </div>
+      <!-- result -->
+      <div id="aiq-result"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const QUESTIONS = [
+    { q: "How often do you use AI tools like ChatGPT, Claude or Copilot?",
+      opts: [
+        ["Never, or hardly ever", {explorer:3}],
+        ["Once in a while", {explorer:1, user:1}],
+        ["Most weeks", {user:2, operator:1}],
+        ["Daily – it's part of how I work", {operator:2, builder:1}] ] },
+    { q: "When AI gives you an answer, you usually…",
+      opts: [
+        ["Use it pretty much as-is", {user:3}],
+        ["Give it a quick skim to see if it looks right", {user:2}],
+        ["Check the key facts before I rely on it", {operator:2}],
+        ["Treat it as a first draft and verify anything that matters", {operator:1, builder:1}] ] },
+    { q: "How do you usually prompt?",
+      opts: [
+        ["I type a question and hope for the best", {explorer:2, user:1}],
+        ["I ask again, rephrasing, until it's better", {user:2}],
+        ["I give it a role, context and format (something like RTCF)", {operator:2}],
+        ["I've built reusable prompts or run local models", {operator:1, builder:2}] ] },
+    { q: "How confident would you be explaining AI to a colleague?",
+      opts: [
+        ["Not confident – I'm still finding my feet", {explorer:3}],
+        ["I could share the basics", {user:2}],
+        ["Fairly confident on practical uses", {operator:2}],
+        ["Very – I help others with it regularly", {operator:1, builder:2}] ] },
+    { q: "Have you scoped or led an AI project or initiative?",
+      opts: [
+        ["No, not yet", {explorer:1, user:1}],
+        ["I've thought about it", {user:1, operator:1}],
+        ["One is in progress", {operator:1, builder:2}],
+        ["Yes, a few", {builder:3}] ] },
+    { q: "Where do you feel least confident right now?",
+      opts: [
+        ["Actually using AI day-to-day", {explorer:2, user:1}],
+        ["Knowing when to trust it (and when not to)", {user:2}],
+        ["Getting genuinely good output, not generic", {operator:2}],
+        ["Turning it into a real project that ships", {builder:3}] ] }
+  ];
+
+  const PROFILES = {
+    explorer: {
+      title: "The Explorer", badge: "Early on your journey",
+      body: "You're at the start – and that's the best place to build the habit that lasts: judging AI before you trust it. Don't worry about the project layer yet.",
+      stretch: "The morning is your sweet spot: hands-on fluency, the trust tool, and the two-pass demo. Get the judgement first; everything else builds on it.",
+      goto: "Readings", href: "before.html" },
+    user: {
+      title: "The Hands-on User", badge: "Using it – trust is doing the work",
+      body: "You're using AI, but the way you trust it is carrying the load. Your biggest win today is making that trust deliberate instead of instinctive.",
+      stretch: "The trust tool and the verification habit. Learn exactly when to lean in and where a human must stay in the loop – it'll change how you use AI every day.",
+      goto: "The workshop", href: "workshop.html" },
+    operator: {
+      title: "The Confident Operator", badge: "Fluent – time to make it stick",
+      body: "You're fluent. Your edge now is two things: making your judgement permanent, and lifting it from your desk to a project that ships.",
+      stretch: "The two-page voice method (make your edge stick) and the afternoon's delivery layer – leading projects that don't fail the predictable ways.",
+      goto: "Frameworks", href: "frameworks.html" },
+    builder: {
+      title: "The Builder", badge: "Thinking at the project level",
+      body: "You're already operating at the initiative level. Today is about sharpening how you design the human into delivery and make the go/no-go call.",
+      stretch: "The afternoon: the five differences, human-in-the-loop design, and Scale / Pivot / Kill. Bring a real initiative to scope.",
+      goto: "The workshop", href: "workshop.html" }
+  };
+
+  const launch=document.getElementById('aiq-launch');
+  const overlay=document.getElementById('aiq-overlay');
+  const card=document.getElementById('aiq-card');
+  const closeBtn=document.getElementById('aiq-close');
+  let cur=0, answers={};
+
+  function open(){ overlay.classList.add('open'); reset(); }
+  function close(){ overlay.classList.remove('open'); }
+  launch.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', e=>{ if(e.target===overlay) close(); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape' && overlay.classList.contains('open')) close(); });
+
+  const intro=document.getElementById('aiq-intro'), quiz=document.getElementById('aiq-quiz'),
+        nav=document.getElementById('aiq-nav'), result=document.getElementById('aiq-result'),
+        progwrap=document.getElementById('aiq-progwrap');
+
+  function reset(){
+    cur=0; answers={};
+    intro.style.display='block'; quiz.style.display='none'; nav.style.display='none'; result.style.display='none';
+  }
+  document.getElementById('aiq-start').addEventListener('click', ()=>{
+    intro.style.display='none'; quiz.style.display='block'; nav.style.display='flex';
+    render();
+  });
+
+  function render(){
+    const pct=Math.round((cur/QUESTIONS.length)*100);
+    document.getElementById('aiq-progq').textContent='Question '+(cur+1)+' of '+QUESTIONS.length;
+    document.getElementById('aiq-progpct').textContent=pct+'%';
+    document.getElementById('aiq-progfill').style.width=pct+'%';
+    progwrap.style.display='block';
+    document.getElementById('aiq-qtext').textContent=QUESTIONS[cur].q;
+    const opts=document.getElementById('aiq-opts'); opts.innerHTML='';
+    QUESTIONS[cur].opts.forEach((o,i)=>{
+      const sel = answers[cur]===i ? ' sel':'';
+      const div=document.createElement('div');
+      div.className='aiq-opt'+sel;
+      div.textContent=o[0];
+      div.addEventListener('click', ()=>{ answers[cur]=i; [...opts.children].forEach(c=>c.classList.remove('sel')); div.classList.add('sel'); updateNav(); });
+      opts.appendChild(div);
+    });
+    updateNav();
+  }
+  function updateNav(){
+    document.getElementById('aiq-prev').disabled = cur===0;
+    const next=document.getElementById('aiq-next');
+    next.disabled = answers[cur]===undefined;
+    next.textContent = cur===QUESTIONS.length-1 ? 'See your edge →' : 'Next →';
+  }
+  document.getElementById('aiq-prev').addEventListener('click', ()=>{ if(cur>0){cur--; render();} });
+  document.getElementById('aiq-next').addEventListener('click', ()=>{
+    if(answers[cur]===undefined) return;
+    if(cur<QUESTIONS.length-1){ cur++; render(); } else { showResult(); }
+  });
+
+  function showResult(){
+    const score={explorer:0,user:0,operator:0,builder:0};
+    QUESTIONS.forEach((Q,i)=>{ const choice=Q.opts[answers[i]][1]; for(const k in choice) score[k]+=choice[k]; });
+    // highest, tie-break: builder > operator > user > explorer
+    let best='explorer', order=['builder','operator','user','explorer'];
+    order.forEach(k=>{ if(score[k]>(score[best]||0)) best=k; });
+    const p=PROFILES[best];
+    quiz.style.display='none'; nav.style.display='none'; progwrap.style.display='none';
+    result.style.display='block';
+    result.innerHTML =
+      '<div class="aiq-badge">'+p.badge+'</div>'+
+      '<div class="aiq-result-title">'+p.title+'</div>'+
+      '<p class="aiq-result-body">'+p.body+'</p>'+
+      '<div class="aiq-stretch"><div class="lab">Where today will stretch you</div><p>'+p.stretch+'</p></div>'+
+      '<div class="aiq-actions">'+
+        '<a class="aiq-btn aiq-link" href="'+p.href+'">Go to '+p.goto+' →</a>'+
+        '<button class="aiq-btn" id="aiq-retry">Retake</button>'+
+      '</div>';
+    document.getElementById('aiq-retry').addEventListener('click', reset);
+  }
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/michael-borck\.github\.io\/the-human-edge\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>The Human Edge: <em>Using and Delivering AI with Judgement</em></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://bigpicture.borck.dev">bigpicture.borck.dev</a> · Dr Michael Borck · Curtin University</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

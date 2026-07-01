@@ -252,12 +252,12 @@ def close_deck():
     text(s, ML, 2.0, CW, 2.2,
          [("STAY THE ONE", dict(font=FD, size=46, color=INK, spacing=0.95)),
           ("HOLDING THE JUDGEMENT.", dict(font=FD, size=46, color=INK, spacing=0.95))], align=PP_ALIGN.CENTER)
-    qrsize = 1.3
-    rect(s, (SW - qrsize) / 2 + 0.1, 4.5 + 0.1, qrsize, qrsize, fill=INK)
-    rect(s, (SW - qrsize) / 2, 4.5, qrsize, qrsize, fill=WHITE, line=INK, lw=1.5)
-    qr = s.shapes.add_picture(str(IMG / "QR-Code-Feedback.png"), Inches((SW - qrsize) / 2), Inches(4.5), Inches(qrsize), Inches(qrsize))
+    qrsize = 2.2; qy = 3.8
+    rect(s, (SW - qrsize) / 2 + 0.1, qy + 0.1, qrsize, qrsize, fill=INK)
+    rect(s, (SW - qrsize) / 2, qy, qrsize, qrsize, fill=WHITE, line=INK, lw=1.5)
+    qr = s.shapes.add_picture(str(IMG / "QR-Code-Feedback.png"), Inches((SW - qrsize) / 2), Inches(qy), Inches(qrsize), Inches(qrsize))
     qr.shadow.inherit = False
-    text(s, ML, 4.5 + qrsize + 0.12, CW, 0.35, [("SCAN: COURSE FEEDBACK", dict(font=FM, size=10, color=INKSOFT, bold=True))], align=PP_ALIGN.CENTER)
+    text(s, ML, qy + qrsize + 0.14, CW, 0.35, [("SCAN: COURSE FEEDBACK", dict(font=FM, size=10, color=INKSOFT, bold=True))], align=PP_ALIGN.CENTER)
     text(s, ML, SH - 0.8, CW, 0.5, [("michael-borck.github.io/the-human-edge  ·  bigpicture.borck.dev", dict(font=FS, size=14, italic=True, color=INKSOFT))], align=PP_ALIGN.CENTER)
 
 

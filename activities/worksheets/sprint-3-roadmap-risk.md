@@ -55,6 +55,16 @@ At your first evaluation gate, the data is ambiguous. Make the call and defend i
 
 > Killing a project that isn't working, early, is success, not failure. The cost of wrongly scaling is far higher than the cost of wrongly killing.
 
+
+## 6. Sprint close — the gate-1 board pitch
+
+This is the sprint's finish and the day's capstone. You're at the board with ambiguous pilot data. Three minutes, three parts:
+
+1. **Our call** — Scale, Pivot, or Kill (one word).
+2. **The load-bearing assumption** — the one holding/shaky/broken call from your register (section 4) that drove it. If Pivot, what do you narrow? If Kill, what did you stop early enough to be proud of?
+3. **Take one challenge.** Another group (or your facilitator playing the board) asks the hardest question they can. Defend it with evidence, not confidence.
+
+> The point isn't the "right" call — with ambiguous data there isn't one. The point is that your call is **traceable to a named assumption**. A call you can't trace is a call you can't defend — and one you'll wrongly scale.
 ---
 
 **Leave Sprint 3 with:** a roadmap with gates, a risk register, a documented crisis response, and a defended go/no-go decision. Together with Sprints 1–2, that's your delivery design.
