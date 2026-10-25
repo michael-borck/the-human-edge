@@ -12,7 +12,7 @@ Thanks for reaching out, and thanks for the reminder details. Everything is in h
 
 **Printing, yes please.** For 27 participants (plus a few spares):
 
-1. **Frameworks reference sheet**: 1 per participant (4 pages, color if possible; this is the take-home reference)
+1. **Frameworks reference sheet**: 1 per participant (now 10-12 pages including the trust tool page, colour if possible; this is the take-home reference. Any stock left from previous runs is out of date, please print fresh)
 2. **Prompt Engineering Workshop worksheet**: 1 per participant (double-sided is fine)
 3. **Data Analysis Challenge worksheet**: 1 per participant
 4. **Workflow mapping template**: 1 per participant
@@ -28,7 +28,9 @@ Thanks for reaching out, and thanks for the reminder details. Everything is in h
 > - Create a free account on **ChatGPT** (chat.openai.com) and at least one of **Claude** (claude.ai) or **Google Gemini** (gemini.google.com)
 > - Log in once from the laptop you'll bring, using the network you'd normally use
 >
-> **2. Pre-reading (~20 minutes):** "AI for the Rest of Us", attached [or: link]. It sets up a key idea we'll use all day.
+> **2. Pre-reading (~20 minutes):** "AI for the Rest of Us": https://michael-borck.github.io/ai-in-practice/ai-for-the-rest-of-us.html — it sets up a key idea we'll use all day.
+>
+> **3. Optional, for the curious (2 minutes):** a practice game for that key idea: https://trusttool.borck.education/
 >
 > If your workplace restricts access to AI tools, let us know, we'll pair you up on the day so you don't miss the hands-on parts.
 
