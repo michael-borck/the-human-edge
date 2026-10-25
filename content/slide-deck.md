@@ -183,8 +183,8 @@ AI's wrong work announces nothing: polished, complete, confident.
 ::: {.notes}
 - "This is the single most useful thing to understand about today's AI"
 - "It gives you back the most plausible, most typical response drawn from everything it has seen. That's its genius and its limit in one."
-- "Most of the time, the average is genuinely useful — a first draft, a summary, a starting point"
-- "But sometimes you need exactly right — a contract figure, a citation, an account balance. And on those, the average is just a confident guess that looks like an answer"
+- "Most of the time, the average is genuinely useful: a first draft, a summary, a starting point"
+- "But sometimes you need exactly right: a contract figure, a citation, an account balance. And on those, the average is just a confident guess that looks like an answer"
 - "Here's the trap, and it's worth dwelling on: you have a lifetime of training at spotting weak work, because weak human work announces itself. Rushed work looks rushed. Gaps show. Sloppiness shows. Your alarm is well calibrated for people."
 - "AI's wrong work announces nothing. It's polished, complete, confident. The error signals you've relied on your whole career are gone. Your alarm stays quiet exactly when you need it most."
 - "So the skill of this day is not typing clever prompts. It's running the check your alarm can no longer run for you."
@@ -292,9 +292,9 @@ AI's wrong work announces nothing: polished, complete, confident.
 **Debrief (15 min):**
 
 - Draw out 3-4 observations about differences (tone, structure, content, gaps)
-- Spotlight any bad advice or hallucination — this is the highlight
+- Spotlight any bad advice or hallucination, this is the highlight
 - Connect to the Suitability Spectrum: "This scenario is Human-Led, AI-Supported. The AI helps you think, but the conversation is yours."
-- Now apply the trust tool: "Where did an average suffice? Where did the output land in the precision quadrant — and did anyone actually check anything? Hold that thought."
+- Now apply the trust tool: "Where did an average suffice? Where did the output land in the precision quadrant, and did anyone actually check anything? Hold that thought."
 - Name what they just did: "This exercise has a name: the compare habit. One task that matters, your rough pass, AI's pass, side by side. Every gap teaches you something. Where you beat it shows your strength. Where it beat you shows its limit. It is the highest-value practice move available, and it takes minutes."
 
 **Key message:**
@@ -302,7 +302,7 @@ AI's wrong work announces nothing: polished, complete, confident.
 - "What matters is that you try a few, find what works, and NEVER assume the first output is ready to use."
 
 **Bridge to Session 2:**
-- "You just saw what happens with a basic prompt. After the break, we'll learn how to dramatically improve what you get back — and the reframe might surprise you. It's less about clever words than you think."
+- "You just saw what happens with a basic prompt. After the break, we'll learn how to dramatically improve what you get back, and the reframe might surprise you. It's less about clever words than you think."
 :::
 
 ---
@@ -738,10 +738,10 @@ The part you own is the **skill**: a plain-text brief in a folder that the harne
 
 ::: {.notes}
 - "If you remember five things from today, remember these"
-- "Conversation, not delegation: the prompt is a briefing, not an incantation. The tool gives you the form of the work; you supply what it can't — intent, context, standards."
+- "Conversation, not delegation: the prompt is a briefing, not an incantation. The tool gives you the form of the work; you supply what it can't: intent, context, standards."
 - "Your judgement is the edge: 27 people in this room, same tools. What separates you is the discipline you bring to it."
 - "Verify from outside: the model will happily reaffirm its own wrong answer. The check is yours, against the data and the source."
-- "One more thing, and it's the big picture: for a century, work trained people for free. The grunt work was the tuition, and everyone starting out paid it. AI just ended that arrangement — the grunt work is the first thing it takes over. Practice is now something you choose, like exercise. The compare habit is the workout. The action plan you're about to write is the schedule."
+- "One more thing, and it's the big picture: for a century, work trained people for free. The grunt work was the tuition, and everyone starting out paid it. AI just ended that arrangement, the grunt work is the first thing it takes over. Practice is now something you choose, like exercise. The compare habit is the workout. The action plan you're about to write is the schedule."
 - "Never send AI output without reviewing it. Your name is on it, not ChatGPT's."
 - "Start with one task this week. Not five. One. Build from there."
 :::
@@ -771,7 +771,7 @@ What AI skill will you develop further?
 ::: {.notes}
 - "Take out your Personal Action Plan template"
 - "The template has four moves at the top: decide, practise, trade, revisit. They map onto the three timeframes. This week is practise: one compare drill on a task that matters. This month is trade: redesign one workflow and hand over what AI has proven. This quarter is decide and revisit: name what must stay human, and check whether the line has moved."
-- "This is the most important part of the day — making it concrete"
+- "This is the most important part of the day, making it concrete"
 - "Don't write 'use AI more.' Write: 'I will use Claude to draft my weekly status update on Thursday using RTCF.'"
 - "Specific task. Specific tool. Specific day."
 - Give 10 minutes of quiet time. Don't talk over this.
