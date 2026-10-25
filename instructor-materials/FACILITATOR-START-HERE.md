@@ -78,6 +78,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 - AI predicts the next word, it's pattern-matching, not thinking
 - The convincing average: output is fluent and usually about right, but "about right" and "exactly right" are different, and knowing which you need is the whole game
 - **The trust tool (the spine):** Average/Precise × Small/Large → four corners (Lean in · Glance · Use, then verify · Human in the loop). Verification comes from outside the tool, the model can't check itself
+- Optional 3-minute live game: project <https://trusttool.borck.education/> (executives pack), place 2-3 scenarios as a room and let the disagreements do the teaching. Theory page and embedded game on the course site under "Trust tool"
 - Different tools, different strengths (no single "best" tool)
 - The AI Task Suitability Spectrum: AI-Led → AI-Assisted → Human-Led → Human-Only (which tasks belong with AI; the trust tool then governs how much to trust the output)
 - Hallucination is real and dangerous, AI never says "I don't know"
