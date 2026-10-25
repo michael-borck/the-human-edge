@@ -105,6 +105,10 @@ Listen for:
 
 **Your move:** Draw out 3-4 observations. Connect them: "So the same prompt produced meaningfully different advice. That's important, the tool you choose affects the output you get."
 
+**Name the pattern: the compare habit.**
+
+> "What you just did has a name: the compare habit. One task that matters, your rough pass, AI's pass, side by side. Every gap teaches you something, where you beat it shows your strength, where it beat you shows its limit. It's the highest-value practice move available, it takes minutes, and it's this week's action-plan commitment. Keep it running after today."
+
 **Question 2: "Did any tool give bad advice?"**
 
 Listen for:

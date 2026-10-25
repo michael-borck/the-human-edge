@@ -193,6 +193,12 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 **Action planning:**
 - Distribute the Personal Action Plan template
+- Frame it with the four moves before quiet time:
+
+> "The template starts with four moves: decide, practise, trade, revisit. This week is practise: one compare drill on a task that matters, your rough pass, then AI's, side by side. This month is trade: redesign one workflow and hand over only what AI has proven on your work. This quarter is decide and revisit: name what must stay human, then check in a few months whether the line has moved. It usually has."
+>
+> *(Idea source for the four moves and the compare habit: "AI Just Broke the Way People Become Experts", d-squared70.github.io — linked from the course site's go-deeper section.)*
+
 - Give them 10 minutes of quiet time to fill it in, don't talk over this
 - Ask 2-3 volunteers to share their "this week" commitment
 - End with course feedback form and next-in-series pointers

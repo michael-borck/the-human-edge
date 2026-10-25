@@ -33,6 +33,19 @@
 
 ---
 
+## The Four Moves
+
+Use these to fill in the plan below. They repeat for the rest of your career, because the line keeps moving.
+
+| Move | What it means | Where it lands |
+|------|---------------|----------------|
+| **1. Decide** | Name what must still be judged by human eyes | Your **quarter** list below |
+| **2. Practise** | Run the compare drill there: your rough pass, AI's pass, side by side | Your **week** commitment below |
+| **3. Trade** | Hand over only what AI has proven reliable on *your* work | Your **month** redesign below |
+| **4. Revisit** | Check the trade every few months; take back or hand over more | Your calendar, quarterly |
+
+---
+
 ## This Week
 
 *What is the ONE AI tool or technique you'll try?*
