@@ -105,7 +105,7 @@ convert_to_html() {
   echo -e "${GREEN}Converting${NC} $(basename $source) → HTML..."
 
   pandoc "$source" \
-    --from markdown \
+    --from markdown-smart \
     --to html5 \
     --template="$TEMPLATE_DIR/$template" \
     --standalone \
