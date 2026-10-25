@@ -181,6 +181,15 @@ Rendered slide files are copied to `docs/` by the build script if they exist.
 - **Pandoc**: Markdown to HTML conversion (`brew install pandoc` on macOS)
 - **Python 3**: Local testing server (pre-installed on macOS)
 - **Quarto** (optional), Slide deck rendering (`brew install --cask quarto`)
+- **WeasyPrint** (optional), PDF rendering for print items (`brew install weasyprint`)
+
+### Render Print PDFs
+
+```bash
+bash build/scripts/make-print.sh
+```
+
+Regenerates the five participant PDFs in `print/` (frameworks reference sheet, all three worksheets, action plan). Run after editing any participant material; the committed PDFs in `print/` should always match the markdown sources.
 
 ---
 
