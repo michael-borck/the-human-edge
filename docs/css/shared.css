@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, .logo {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    letter-spacing: -0.018em;
+}
+
 :root {
-    --primary: #7c3aed;
-    --primary-dark: #5b21b6;
-    --secondary: #f59e0b;
-    --dark: #1f2937;
-    --light: #f3f4f6;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #059669;
+    --dark: #0f172a;
+    --light: #f8fafc;
     --white: #ffffff;
-    --text: #374151;
-    --border: #e5e7eb;
+    --text: #334155;
+    --border: #e2e8f0;
+    --muted: #64748b;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: var(--text);
     background: var(--white);
@@ -30,12 +36,14 @@ body {
 
 /* Header */
 header {
-    background: var(--white);
+    background: rgba(255,255,255,.86);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(15,23,42,.04);
 }
 
 nav {
@@ -73,23 +81,24 @@ nav {
 
 /* Hero */
 .hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: var(--white);
-    padding: 4rem 0;
+    background: var(--light);
+    border-bottom: 1px solid var(--border);
+    color: var(--dark);
+    padding: 4.5rem 0;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2.9rem;
+    font-weight: 600;
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 .hero .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
+    color: var(--muted, #64748b);
 }
 
 .hero-meta {
@@ -113,7 +122,8 @@ section {
 }
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+    font-weight: 500;
     color: var(--dark);
     margin-bottom: 1rem;
     text-align: center;
@@ -138,7 +148,7 @@ section .section-intro {
 .overview-card {
     background: var(--light);
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 11px;
     border: 1px solid var(--border);
 }
 
@@ -176,15 +186,15 @@ section .section-intro {
 
 .framework-card {
     background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
     padding: 2rem;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .framework-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(15,23,42,.06);
 }
 
 .framework-header {
@@ -226,9 +236,9 @@ section .section-intro {
 }
 
 .exercise-card {
-    background: linear-gradient(to right, var(--white), var(--light));
+    background: var(--white);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 11px;
     padding: 2rem;
 }
 
@@ -248,8 +258,9 @@ section .section-intro {
 .exercise-duration {
     background: var(--secondary);
     color: var(--white);
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: 600;
     white-space: nowrap;
 }
@@ -269,7 +280,7 @@ section .section-intro {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 1px solid var(--border);
 }
 
 .timeline-item {
@@ -305,7 +316,7 @@ section .section-intro {
     background: var(--light);
     padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid var(--primary);
+    border-left: 3px solid var(--primary);
 }
 
 .timeline-content h4 {
@@ -342,16 +353,15 @@ section .section-intro {
 
 .material-card {
     background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 12px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
     padding: 2rem;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .material-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
     border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(15,23,42,.06);
 }
 
 .material-card h3 {
@@ -380,7 +390,7 @@ section .section-intro {
     color: var(--dark);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 1px solid var(--border);
     text-align: left;
 }
 
@@ -402,7 +412,7 @@ section .section-intro {
 .material-header {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 1px solid var(--border);
 }
 
 .material-header h1 {
@@ -448,7 +458,7 @@ section .section-intro {
 }
 
 .btn-secondary:hover {
-    background: #d97706;
+    background: #047857;
 }
 
 .material-footer {
