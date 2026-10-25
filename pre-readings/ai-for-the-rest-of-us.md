@@ -303,7 +303,7 @@ The best results come from combining AI speed with human judgment:
 | Format and structure | Verify accuracy and relevance |
 | Work fast | Think deep |
 
-**The professionals who get the most from AI aren't the ones who ask it to do everything, they're the ones who know exactly which parts to delegate and which to keep.** Everyone has access to the same tools, so generic AI skills are quickly becoming the baseline. The edge is your judgement: knowing what to ask for, when to trust the answer, and where a human must stay in charge. That judgement is the theme of the workshop, and you'll learn a simple grid for it, called the trust tool.
+**The professionals who get the most from AI aren't the ones who ask it to do everything, they're the ones who know exactly which parts to delegate and which to keep.** Everyone has access to the same tools, so generic AI skills are quickly becoming the baseline. The edge is your judgement: knowing what to ask for, when to trust the answer, and where a human must stay in charge. That judgement is the theme of the workshop, and you'll learn a simple grid for it, called the trust tool. If you want a head start, there is a two-minute practice game online: [trusttool.borck.education](https://trusttool.borck.education/).
 
 ### It's OK to Be Skeptical
 

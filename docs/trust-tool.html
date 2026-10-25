@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trust tool | AI for Professionals</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/materials.css">
+  <meta name="description" content="The trust tool: a two-question grid for deciding how much to trust any AI output, with an interactive practice game.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">AI for Professionals</a>
+      <ul class="nav-links">
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="frameworks.html">Frameworks</a></li>
+        <li><a href="trust-tool.html" style="color: var(--primary);">Trust tool</a></li>
+        <li><a href="exercises.html">Exercises</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li class="nav-item has-dropdown">
+          <span class="dropdown-trigger">Materials</span>
+          <div class="dropdown-menu">
+            <a href="materials.html">All Materials</a>
+            <a href="ai-for-the-rest-of-us.html">Pre-Reading</a>
+            <a href="frameworks-reference-sheet.html">Frameworks Reference</a>
+            <a href="personal-action-plan-template.html">Action Plan</a>
+            <a href="instructor/index.html">Instructor Portal</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>The trust tool</h1>
+      <p class="subtitle">Two questions that turn "can I trust this?" into an answer</p>
+      <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; opacity: 0.95;">
+        AI produces a convincing average: fluent, well-shaped, usually about right. Whether that is
+        good enough depends on what you need and what is at stake. Place the output on a 2×2 grid and
+        the review it needs falls out of the corner you land in.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width: 820px;">
+      <h2 style="text-align: left;">The two questions</h2>
+      <p><strong>Question one: do you need an average, or precision?</strong> An <em>average</em> answer
+      is one where "in the right ballpark" is genuinely fine: a first draft, a summary, a starting point
+      you will shape further. A <em>precise</em> answer is one where there is a single correct value and
+      being close is the same as being wrong: a figure in a contract, a citation, a customer's account
+      balance.</p>
+      <p><strong>Question two: are the stakes small or large?</strong> A <em>small</em> decision is easy
+      to reverse and cheap to get wrong. A <em>large</em> decision carries real consequences: money,
+      safety, reputation, someone's job or wellbeing.</p>
+
+      <h2 style="text-align: left; margin-top: 2.5rem;">The four corners</h2>
+      <div class="content">
+        <table>
+          <tr>
+            <th></th>
+            <th>Small (low stakes)</th>
+            <th>Large (high stakes)</th>
+          </tr>
+          <tr>
+            <td style="font-weight: 600;">Average is fine</td>
+            <td>🟢 <strong>Trust with light review.</strong> Drafts, brainstorming, first-pass summaries, language polish. Act on it, skim later.</td>
+            <td>🟡 <strong>Trust, but verify the load-bearing bits.</strong> The framing matters even when the prose is average. Name the claims the decision hangs on, and check those.</td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600;">Precision required</td>
+            <td>🟡 <strong>Verify before you ship.</strong> A calculation, a citation, a fact you will quote. Small blast radius if wrong, but still wrong.</td>
+            <td>🔴 <strong>Human in the loop, non-negotiable.</strong> Anything that touches a person, money, safety, or a decision you cannot walk back.</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2 style="text-align: left; margin-top: 2.5rem;">How to use it</h2>
+      <p>For any AI output you are about to use, place it on the grid and do what the corner says.
+      Most AI failures reported in the news are red-corner outputs that were treated as though they
+      were green. Placing the output on the grid before acting makes that error visible while it is
+      still cheap to fix.</p>
+      <p>One rule of thumb to remember: <strong>lean in where "about right" over low stakes is fine;
+      keep a human in the loop where exactly-right meets high stakes.</strong></p>
+
+      <h2 style="text-align: left; margin-top: 2.5rem;">Capability moves the boundary</h2>
+      <p>A frontier model and a small local model can both produce strong and weak outputs. Better
+      models shift where the boundary tends to sit, and they demand less checking on easy ground.
+      They never remove your obligation to place the output on the grid: capability raises the floor,
+      it does not remove the review. That is what makes the tool durable. It works on any platform,
+      and it does not expire when the next model ships.</p>
+
+      <h2 style="text-align: left; margin-top: 2.5rem;">Practise until it is a reflex</h2>
+      <p>Placement becomes instinct through repetition. The practice game below gives you ten
+      scenarios from a domain you choose; place each one on the grid and get immediate feedback,
+      with explanations on every card. A few minutes is enough to feel the corners. There are
+      domain packs for executives, business, consulting, professional staff, and more.</p>
+      <p style="text-align: center;">
+        <a href="https://trusttool.borck.education/" class="btn-primary" target="_blank" rel="noopener">Open the game in a new tab</a>
+      </p>
+      <div class="content">
+        <iframe src="https://trusttool.borck.education/" title="Trust tool practice game"
+          style="width: 100%; height: 820px; border: 1px solid var(--border); border-radius: 11px; background: #fff;"
+          loading="lazy"></iframe>
+      </div>
+
+      <div class="material-footer">
+        <p>From the companion book <a href="https://michael-borck.github.io/conversation-not-delegation/" target="_blank" rel="noopener"><em>Conversation, Not Delegation</em></a> (chapter 2).
+        Revisit the <a href="frameworks.html">four frameworks</a>, or read the <a href="ai-for-the-rest-of-us.html">pre-reading</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>Practical AI for Professionals Workshop</strong></p>
+      <p style="margin-top: 0.5rem; opacity: 0.8;">Executive Education | Curtin Business School</p>
+      <p style="margin-top: 1rem;"><a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></p>
+    </div>
+  </footer>
+</body>
+</html>
