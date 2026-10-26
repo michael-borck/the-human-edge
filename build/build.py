@@ -54,6 +54,8 @@ def main():
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(f, dest)
 
+    shutil.copy2(ROOT / "build/templates/404.html", DOCS / "404.html")  # old-page redirects + not-found page
+
     print("site pages")
     for md in sorted(m for m in (ROOT / "site").glob("*.md") if not m.name.startswith("._")):
         run("pandoc", md, "-f", "markdown", "-t", "html5", "--template", ROOT / "build/templates/site.html",

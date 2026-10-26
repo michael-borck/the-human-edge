@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · The Human Edge</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/the-human-edge/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/the-human-edge/assets/site.css">
+<script>
+  // Pages from the earlier "AI for professionals" site were renamed in the redesign.
+  // Send old addresses to their new home; anything else shows the page below.
+  (function () {
+    var MAP = {
+      'ai-for-the-rest-of-us.html': 'before.html',
+      'frameworks.html': 'tools.html',
+      'frameworks-reference-sheet.html': 'tools.html',
+      'trust-tool.html': 'tools.html#trust-tool',
+      'overview.html': 'index.html',
+      'schedule.html': 'index.html#the-day',
+      'materials.html': 'resources.html',
+      'personal-action-plan-template.html': 'workbook.html',
+      'deck.html': 'deck/',
+      'slide-deck.pptx': 'downloads/slides.pdf'
+    };
+    var key = location.pathname.replace(/^\/the-human-edge\/?/, '');
+    var to = MAP[key] || (key.indexOf('instructor/') === 0 ? 'index.html' : null);
+    if (to !== null) {
+      location.replace('/the-human-edge/' + to + (to.indexOf('#') < 0 ? location.hash : ''));
+    }
+  })();
+</script>
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="/the-human-edge/">The <span>Human Edge</span></a>
+</div></header>
+<main>
+  <div class="kicker">Page not found</div>
+  <h1>That page has moved, <em>or never existed.</em></h1>
+  <p class="lede">The course site was reorganised when the course became The Human Edge. Try one of these:</p>
+  <div class="btns">
+    <a href="/the-human-edge/">Home</a>
+    <a href="/the-human-edge/before.html">Before the day</a>
+    <a href="/the-human-edge/workbook.html">Workbook</a>
+    <a href="/the-human-edge/resources.html">Everything else</a>
+  </div>
+</main>
+</body>
+</html>
