@@ -8,7 +8,7 @@
     { label: 'JUDGE',    time: '9:00',  acc: '#E8B54D' },
     { label: 'BRIEF',    time: '11:00', acc: '#4FC9A8' },
     { label: 'CHECK',    time: '1:15',  acc: '#E5745A' },
-    { label: 'REDESIGN', time: '3:00',  acc: '#7FA8F0' },
+    { label: 'DELIVER',  time: '3:00',  acc: '#7FA8F0' },
   ];
   const $ = (q, el = document) => el.querySelector(q);
   const slides = [...document.querySelectorAll('.slide')];
