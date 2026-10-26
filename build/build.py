@@ -10,7 +10,7 @@ Needs: pandoc, weasyprint, and Python playwright with Google Chrome installed
     site/*.md            -> docs/*.html             (pandoc + build/templates/site.html)
     deck/                -> docs/deck/              (speaker notes and private slides removed)
     handouts/*.html      -> docs/downloads/*.pdf    (weasyprint)
-    handouts/workbook.md -> docs/downloads/workbook.{pdf,docx}
+    site/workbook.md     -> docs/workbook.html (digital workbook: autosave, export, print)
     site/prompts.md      -> docs/prompts.html and docs/downloads/starter-prompts.pdf
     data/*.csv           -> docs/downloads/
 """
@@ -72,9 +72,6 @@ def main():
     for f in (f for f in (ROOT / "data").glob("*.csv") if not f.name.startswith("._")):
         shutil.copy2(f, DL / f.name)
 
-    print("workbook (docx)")
-    run("pandoc", ROOT / "handouts/workbook.md", "-o", DL / "workbook.docx")
-
     if not PDF:
         print("done (no PDFs)")
         return
@@ -82,10 +79,7 @@ def main():
     print("handouts (pdf)")
     for name in ("field-guide", "voting-cards", "desk-card"):
         run("weasyprint", "-q", ROOT / f"handouts/{name}.html", DL / f"{name}.pdf")
-    tmp = ROOT / "handouts/.workbook.tmp.html"
-    run("pandoc", ROOT / "handouts/workbook.md", "-f", "markdown", "-t", "html5",
-        "--template", ROOT / "build/templates/handout.html", "-o", tmp)
-    run("weasyprint", "-q", tmp, DL / "workbook.pdf")
+    tmp = ROOT / "handouts/.prompts.tmp.html"
     run("pandoc", ROOT / "site/prompts.md", "-f", "markdown", "-t", "html5",
         "--template", ROOT / "build/templates/handout.html", "-o", tmp)
     run("weasyprint", "-q", tmp, DL / "starter-prompts.pdf")

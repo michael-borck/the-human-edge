@@ -28,6 +28,7 @@ The close covers why deliberate practice matters now that routine work goes to A
 - Print the **desk card** (one page each); it's the handout people keep.
 - The field guide (10 pages) and starter prompts are optional on paper. Everything else is digital.
 - Check the trust tool game loads: trusttool.borck.education.
+- Open the **workbook** on a laptop, type into a few fields including a delivery-plan row, reload to check it restored, and export.
 - Optional: set up a **ClassPulse** session (classpulse.borck.education). Use it for an arrival poll ("How often do you use AI at work?") and for the five card-vote scenarios as a projected histogram. The paper cards stay as the backup, so the vote still works if the Wi-Fi doesn't.
 - Work through "Before each run" at the end of this guide.
 
@@ -63,10 +64,10 @@ The deck uses local fonts, so it runs offline.
 |---|---|---|---|
 | **9:00** | 1–2 | Title fade, the day, show of hands or ClassPulse poll, tool check | 8 |
 | 9:08 | 3–6 | The bigger pie; the convincing average; the alarm; Gell-Mann amnesia | 14 |
-| 9:22 | 7 | **Exercise 1** · Same prompt, two tools | 20 |
-| 9:42 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
-| 9:55 | 11 | **Exercise 2** · Place it (card vote, game, own tasks) | 25 |
-| 10:20 | 12 | Three rules before you paste; questions | 10 |
+| 9:22 | 7 | **Exercise 1** · Your pass first | 25 |
+| 9:47 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
+| 10:00 | 11 | **Exercise 2** · Place it (card vote, game, own tasks) | 22 |
+| 10:22 | 12 | Three rules before you paste; questions | 8 |
 | 10:30 | | Morning tea | 30 |
 | **11:00** | 13–15 | Brief like a colleague; RTCF; live before/after demo | 15 |
 | 11:15 | 16 | **Exercise 3** · Brief it | 25 |
@@ -105,13 +106,13 @@ Never cut the verification challenge, the delivery plan or the action plan.
 
 **Gell-Mann amnesia (slide 6).** The term is Michael Crichton's, from a 2002 talk. He named it after the physicist Murray Gell-Mann; Gell-Mann didn't coin it himself. Note that the AI for Founders site currently says otherwise.
 
-**Exercise 1.** Look for:
+**Exercise 1.** Own pass first: five minutes, and nobody opens AI until it's done. Before anyone pastes, say the line: nothing confidential or personal into a tool your organisation hasn't approved. Where people beat the AI is almost always context; name that as their edge. When comparing outputs, look for:
 - different assumptions (firm vs caring)
 - nobody asking about personal circumstances
 - confident employment-law advice nobody can verify
 - advice that's too punitive, or too soft
 
-Amplify comments like "I'd take A's structure and B's tone". It previews the two-pass habit in Session 4.
+Amplify comments like "I'd take its structure and my judgement". This is the two-pass habit; it comes back in Session 4 as a weekly practice.
 
 **Exercise 2 card vote.** Read a scenario, pause, "one, two, three", and everyone shows a card (or votes in ClassPulse). Ask one person from each corner to explain. Blind voting stops people following the most senior person in the room.
 
@@ -145,7 +146,7 @@ Spares:
 
 **Push back (slide 18).** Three moves: the fact-gated guardrail, devil's advocate, and board of directors. In Exercise 4, everyone tries at least one.
 
-**Exercise 4.** The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library.
+**Exercise 4.** Fast finishers can do the voice pass (in the workbook): the tool rewrites its output in their voice from a 100-word sample, and optionally writes a style brief for their custom instructions. The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library.
 
 ### Session 3 · Check
 
@@ -258,10 +259,10 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Product names** in "Before the day" and slide 31.
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse session** set up, if you're using it.
-- [ ] **Feedback form** link for this run (slide 37 notes).
+- [ ] **Feedback form.** Slide 37 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day
 
-- Send participants the course site link and the desk card.
+- Send participants the course site link and the desk card, and remind them to export their workbook if they haven't.
 - Note which exercises ran long and which scenarios split the room, and update the card-vote list above.

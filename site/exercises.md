@@ -11,12 +11,12 @@ Exercises
 # Eight exercises. <em>Mostly your own work.</em>
 
 ::: lede
-Copy the prompts from here. Write your answers in the [workbook (Word)](downloads/workbook.docx) or the [PDF](downloads/workbook.pdf). If your own work is confidential, use a [scenario card](#scenario-cards) instead.
+Copy the prompts from here and write your answers in the [digital workbook](workbook.html); it saves in your browser and exports before you leave. If your own work is confidential, use a [scenario card](#scenario-cards) instead.
 :::
 
 | | Exercise | Session | Time |
 |---|---|---|---|
-| 1 | [Same prompt, two tools](#ex1) | Judge | 20 min |
+| 1 | [Your pass first](#ex1) | Judge | 25 min |
 | 2 | [Place it](#ex2) | Judge | 25 min |
 | 3 | [Brief it](#ex3) | Brief | 25 min |
 | 4 | [Upgrade and save](#ex4) | Brief | 25 min |
@@ -26,13 +26,13 @@ Copy the prompts from here. Write your answers in the [workbook (Word)](download
 | 8 | [Your action plan](#ex8) | Deliver | 12 min |
 
 ::: {.ex .s1}
-## Exercise 1 · Same prompt, two tools {#ex1}
+## Exercise 1 · Your pass first {#ex1}
 
-[20 min · solo or pairs]{.mins}
+[25 min · solo, then tables]{.mins}
 
-1. Paste this prompt, unedited, into two different AI tools (or two models in the same tool).
-2. Read both as if you had to act on it tomorrow. What did each assume? What's missing?
-3. At your table, agree on one piece of advice you would not follow.
+1. **Your pass first.** Five minutes, no AI: sketch your own plan for the task below, in the workbook.
+2. **Then AI's.** Paste the task, unedited, into an AI tool (two tools if you have them).
+3. **Compare side by side.** Where did you beat it? Where did it beat you? What did it get confidently wrong?
 
 > I manage a team of 8 in a mid-sized company. One of my team, a strong performer for three years, has been late and missing deadlines for the past month. Others are starting to notice. Write me a plan to address this.
 :::
@@ -44,7 +44,7 @@ Copy the prompts from here. Write your answers in the [workbook (Word)](download
 
 1. **Card vote.** The facilitator reads a scenario. Decide in silence, then show your corner card on "three".
 2. **Play the game** at [trusttool.borck.education](https://trusttool.borck.education/). Choose your domain and place all ten cards.
-3. **Place three tasks from your own week** in the workbook. For each, note the check it needs. Swap with a neighbour: where do you disagree, and why?
+3. **Place three tasks from your own week** in the [workbook](workbook.html). For each, note the check it needs. Swap with a neighbour: where do you disagree, and why?
 :::
 
 ::: {.ex .s2}
@@ -77,7 +77,8 @@ The [prompt builder](prompt-builder.html) assembles the four parts for you.
 > DEVIL'S ADVOCATE: Don't flatter me. Give me three reasons this fails, and name the assumption it all rests on.
 > BOARD: Respond as a board: a CFO, a sceptical customer and a frontline manager. One paragraph each, then where they disagree.
 
-3. Save three prompts to your library: a name, when to use it, the prompt with [blanks], and the check it needs. The [prompt builder](prompt-builder.html) can store them in your browser and export them.
+3. Save three prompts to your library: a name, when to use it, the prompt with [blanks], and the check it needs. Use the [workbook](workbook.html) or the [prompt builder](prompt-builder.html).
+4. **Stretch: the voice pass.** Paste about 100 words you actually wrote (sanitised), then ask: *"Rewrite your last output in my voice, leading with the one thing only I would say."* What changed? Optionally, ask it to summarise your style as a short brief and paste that into your tool's custom instructions.
 :::
 
 ::: {.ex .s3}

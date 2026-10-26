@@ -23,8 +23,8 @@ Everyone in the room has the same AI tools. What sets you apart is knowing what 
 
 ::: btns
 [Before the day](before.html)
+[Your workbook](workbook.html)
 [The four tools](tools.html)
-[Exercises](exercises.html)
 [Starter prompts](prompts.html)
 :::
 
@@ -100,7 +100,7 @@ Seventeen prompts for briefing, pushing back, checking and delivering. [Page](pr
 
 ### Workbook
 
-All eight exercises, your prompt library, your delivery plan and your action plan. [Word](downloads/workbook.docx) · [PDF](downloads/workbook.pdf)
+All eight exercises, your prompt library, delivery plan and action plan. Saves in your browser; export before you leave. [Open](workbook.html)
 :::
 
 ::: card
