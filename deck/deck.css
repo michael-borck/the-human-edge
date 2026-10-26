@@ -1,0 +1,160 @@
+/* AI for professionals: deck styles
+   Visual language from "The Broken Ladder": dark stage, one accent per chapter,
+   serif titles, mono labels, SVG figures, progressive reveal. */
+
+:root{
+  --bg:#0A0C10;
+  --ink:#ECE7DB;
+  --dim:rgba(236,231,219,.64);
+  --faint:rgba(236,231,219,.32);
+  --hair:rgba(236,231,219,.15);
+  --card:#10131A;
+  --card2:#141821;
+  --acc:#E8B54D;
+  --green:#6CC59A;
+  --amber:#E8B54D;
+  --red:#E5745A;
+  --serif:'Domine', Georgia, serif;
+  --sans:'Funnel Sans', system-ui, sans-serif;
+  --mono:'Nanum Gothic Coding', ui-monospace, monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;background:var(--bg);overflow:hidden}
+body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#050608}
+#stage{position:relative;width:1280px;height:720px;flex:none;background:var(--bg);overflow:hidden;transform-origin:center center}
+
+/* atmosphere */
+#halo{position:absolute;left:250px;top:200px;width:940px;height:500px;z-index:1;pointer-events:none;
+  background:radial-gradient(closest-side, color-mix(in srgb, var(--acc) 7.5%, transparent), transparent 72%);
+  transition:background .6s}
+#stage::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:radial-gradient(ellipse 95% 85% at 50% 42%, transparent 58%, rgba(0,0,0,.5))}
+
+/* chrome */
+#counter{position:absolute;top:32px;right:46px;z-index:6;font-family:var(--mono);
+  font-size:12.5px;letter-spacing:.16em;color:var(--faint)}
+#counter b{color:var(--acc);font-weight:700}
+#nav{position:absolute;left:46px;top:50%;transform:translateY(-50%);z-index:6;display:flex;flex-direction:column;gap:25px}
+.nv{display:flex;align-items:center;gap:13px}
+.nv .bar{width:3px;height:17px;border-radius:2px;background:var(--hair);transition:all .45s;flex:none}
+.nv .lb{font-family:var(--mono);font-size:11px;letter-spacing:.15em;color:var(--faint);transition:color .45s;white-space:nowrap}
+.nv .tm{display:block;font-size:10px;letter-spacing:.12em;opacity:.7;margin-top:3px}
+.nv.done .bar{background:rgba(236,231,219,.45)}
+.nv.done .lb{color:var(--dim)}
+.nv.cur .bar{background:var(--acc);box-shadow:0 0 12px color-mix(in srgb, var(--acc) 60%, transparent)}
+.nv.cur .lb{color:var(--acc)}
+#timer{position:absolute;top:56px;right:46px;z-index:6;font-family:var(--mono);font-size:30px;font-weight:700;
+  letter-spacing:.06em;color:var(--acc);opacity:0;transition:opacity .3s}
+#timer.show{opacity:1}
+#timer.paused{opacity:.45}
+#timer.over{color:var(--red);animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+#blank{position:absolute;inset:0;background:#000;z-index:20;opacity:0;pointer-events:none;transition:opacity .3s}
+#blank.on{opacity:1}
+
+/* slides */
+.slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .45s ease;z-index:2;
+  padding:66px 90px 54px 210px;display:flex;flex-direction:column}
+.slide.cur{opacity:1;pointer-events:auto}
+aside.notes{display:none}
+
+.k{font-size:13px;font-weight:650;letter-spacing:.26em;color:var(--acc);text-transform:uppercase;flex:none}
+.k::before{content:"";display:inline-block;width:28px;height:2px;border-radius:1px;background:var(--acc);
+  vertical-align:middle;margin-right:14px;transform:translateY(-1px)}
+.t{font-family:var(--serif);font-weight:500;font-size:50px;line-height:1.14;color:var(--ink);
+  max-width:980px;letter-spacing:-.005em;margin-top:14px;flex:none}
+.t em{font-style:normal;color:var(--acc)}
+.sub{margin-top:14px;font-size:18px;color:var(--dim);max-width:920px;line-height:1.45;flex:none}
+.sub b{color:var(--ink);font-weight:600}
+.b{flex:1;position:relative;margin-top:30px;min-height:0}
+.b > svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+
+/* full-stage figure layer (ported Broken Ladder slides) */
+.fig{position:absolute;inset:0;pointer-events:none}
+.fig svg{position:absolute;inset:0;width:1280px;height:720px;overflow:visible}
+
+/* svg text system */
+svg text{font-family:var(--sans)}
+text.hd{font-size:13px;letter-spacing:.16em;font-weight:650;fill:var(--dim)}
+text.hda{fill:var(--acc)}
+text.l1{font-size:20px;font-weight:480;fill:var(--ink)}
+text.l1d{fill:var(--dim)}
+text.l1a{fill:var(--acc)}
+text.s1{font-size:14.5px;fill:var(--dim)}
+text.s2{font-size:12.5px;fill:var(--faint)}
+text.mn{font-family:var(--mono);font-size:12px;letter-spacing:.14em;fill:var(--dim)}
+text.mnf{fill:var(--faint)}
+text.mna{fill:var(--acc)}
+text.num{font-family:var(--serif);font-weight:600;fill:var(--acc)}
+.gl{filter:drop-shadow(0 0 8px color-mix(in srgb,var(--acc) 55%,transparent))}
+
+/* html building blocks */
+.row{display:grid;gap:18px}
+.c2{grid-template-columns:1fr 1fr}
+.c3{grid-template-columns:repeat(3,1fr)}
+.c4{grid-template-columns:repeat(4,1fr)}
+.fill{height:100%}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:20px 22px;position:relative}
+.card.hi{background:color-mix(in srgb,var(--acc) 8%,var(--card));border-color:color-mix(in srgb,var(--acc) 62%,transparent)}
+.card.dim{opacity:.75}
+.lab{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+.lab.a{color:var(--acc)}
+.h{font-size:21px;font-weight:600;color:var(--ink);margin-top:10px;line-height:1.25}
+.h.lg{font-size:25px}
+.p{font-size:15.5px;color:var(--dim);margin-top:8px;line-height:1.45}
+.p b{color:var(--ink);font-weight:600}
+.letter{font-family:var(--serif);font-size:60px;line-height:1;color:var(--acc);font-weight:600}
+.q{font-family:var(--mono);font-size:14px;line-height:1.6;color:var(--ink);background:#0C0F15;border:1px solid var(--hair);
+  border-radius:9px;padding:14px 16px;margin-top:12px}
+.q .f{color:var(--acc)}
+.q.dim{color:var(--dim)}
+.foot{position:absolute;left:0;right:0;bottom:0;font-size:15px;color:var(--dim)}
+.foot b{color:var(--ink);font-weight:600}
+.src{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--faint)}
+.chip{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 10px;border-radius:999px;border:1px solid var(--hair);color:var(--dim)}
+.chip.a{border-color:var(--acc);color:var(--acc)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:1px}
+
+/* title slide */
+.slide.title .t{font-size:74px;line-height:1.05;margin-top:22px}
+.slide.title .t2{font-family:var(--serif);font-size:36px;color:var(--acc);margin-top:12px;font-weight:500}
+
+/* exercise slides */
+.slide.ex::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--acc) 11%,transparent),transparent 58%)}
+.exbar{display:flex;align-items:center;gap:14px;flex:none}
+.pill{background:var(--acc);color:#0A0C10;font-weight:760;font-size:12.5px;letter-spacing:.16em;padding:7px 14px;border-radius:999px;text-transform:uppercase}
+.mins{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--acc)}
+.exgrid{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;height:100%}
+.steps{display:flex;flex-direction:column;gap:15px;counter-reset:s}
+.steps li{list-style:none;display:grid;grid-template-columns:40px 1fr;font-size:19px;line-height:1.38;color:var(--ink)}
+.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:13px;
+  letter-spacing:.12em;color:var(--acc);padding-top:5px}
+.steps li span{display:block;font-size:15px;color:var(--dim);margin-top:3px}
+.stack{display:grid}
+.stack > *{grid-area:1/1;transition:opacity .4s ease}
+.slide .deb{opacity:0}
+.slide[data-cur="1"] .deb{opacity:1}
+.slide[data-cur="1"] .mat{opacity:0}
+.out{margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);font-size:15.5px;color:var(--dim)}
+.out b{color:var(--acc);font-family:var(--mono);font-size:12px;letter-spacing:.16em;font-weight:700;margin-right:10px}
+
+/* reveal engine */
+.slide[data-mode="spot"] .st{transition:opacity .38s ease}
+.slide[data-mode="spot"] .st.dimd{opacity:.18}
+.slide[data-mode="spot"] .st.lit{opacity:1}
+.slide:not([data-mode="spot"]) .st{opacity:0;transform:translateY(8px);transition:opacity .45s ease,transform .45s ease}
+.slide:not([data-mode="spot"]) .st.on{opacity:1;transform:none}
+g.st{transform-box:fill-box}
+
+/* print / PDF: one slide per page, every step revealed */
+@page{size:1280px 720px;margin:0}
+body.print{overflow:visible;height:auto;background:var(--bg)}
+body.print #viewport{position:static;display:block;background:none}
+body.print #stage{transform:none!important;width:1280px;height:auto;overflow:visible;background:none}
+body.print #stage::after,body.print #halo,body.print #nav,body.print #counter,body.print #timer,body.print #blank{display:none}
+body.print .slide{position:relative;opacity:1;width:1280px;height:720px;break-after:page;overflow:hidden;background:var(--bg);transition:none}
+body.print .slide *{transition:none!important}
