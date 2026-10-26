@@ -69,12 +69,18 @@ button.btn-primary{cursor:pointer;border:0}
 <label>Round 3 — weaker-model ladder</label>
 <p class="hint">Add one worked example and one explicit constraint ("do not invent…"). Then try the fact-gated guardrail: "Only change your assessment if I give you new facts, and name the fact that changed it." Push back with no new facts. Did it fold or hold?</p>
 <textarea data-wb="ex2-r3"></textarea>
+<label>Round 3 continued — the voice pass (5 min)</label>
+<p class="hint">Paste about 100 words of something you actually wrote (an old email or report paragraph, sanitised). Then ask: "Rewrite your last output in my voice, leading with the one thing only I would say." Compare. Generic competence sounds like everyone. This is how output starts sounding like you.</p>
+<textarea data-wb="ex2-voice" placeholder="Your 100 words here, then note what changed in the rewrite"></textarea>
+<label>Optional, make it permanent</label>
+<p class="hint">Ask the tool to summarise your style from that sample into a short style brief. Paste that brief into your AI tool's custom instructions or memory settings tonight, and every future draft starts closer to your voice.</p>
+<textarea class="small" data-wb="ex2-stylebrief" placeholder="My style brief"></textarea>
 <label>Save to your prompt library (the prompt you would reuse verbatim)</label><textarea data-wb="ex2-library"></textarea>
 </section>
 
 <section><span class="timing">EXERCISE 3 · VERIFY · 50 MIN</span>
 <h2>Data challenge — RetailFlow</h2>
-<p><a href="data/retailflow-customer-service-data.csv" download>Download the dataset (260 tickets, Jul–Dec 2024)</a>. Start a <strong>fresh chat</strong>. Orientation first: ask the tool to describe rows, columns, and date range — then check that description yourself.</p>
+<p><a href="data/retailflow-customer-service-data.csv" download>Download the dataset (260 tickets, Jul–Dec 2024)</a>. Start a <strong>fresh chat</strong>. <strong>Upload blocked or capped?</strong> Paste the first 50 rows as text, or describe the columns and row count and say so in your answers. The exercise still works, and noting the limit is part of verification. Orientation first: ask the tool to describe rows, columns, and date range — then check that description yourself.</p>
 <label>Q1. Top 3 drivers of dissatisfaction (with the figures you verified)</label><textarea data-wb="ex3-q1"></textarea>
 <label>Q2. When do response times blow out?</label><textarea data-wb="ex3-q2"></textarea>
 <label>Verification Challenge — verdict each claim against the data, not its tone</label>
@@ -87,13 +93,20 @@ button.btn-primary{cursor:pointer;border:0}
 
 <section><span class="timing">EXERCISE 4 · REDESIGN · 40 MIN</span>
 <h2>Your AI-enhanced workflow</h2>
-<label>My task (weekly, 30+ minutes) and current total time</label><input type="text" data-wb="ex4-task">
+<p class="hint"><strong>Real work, sanitised.</strong> A free chatbot is someone else's cloud. Use your task's shape and steps, change names and figures, and never paste client, personal, or confidential material. If a step is sensitive, describe it instead of pasting it, and follow your employer's approved-tool policy.</p><label>My task (weekly, 30+ minutes) and current total time</label><input type="text" data-wb="ex4-task">
 <label>Map and classify (one row per step)</label>
 <table><thead><tr><th>Step — what I do</th><th>Min</th><th>Type: Automate / Assist / Generate / Analyse / Human-Only</th><th>Trust corner</th></tr></thead><tbody id="wfrows"></tbody></table>
 <p class="hint"><button type="button" class="btn-primary" id="addrow">Add step</button></p>
 <label>The redesigned workflow (narrative)</label><textarea data-wb="ex4-redesign"></textarea>
 <label>Live test: which step did you run, what came back, what did you verify?</label><textarea data-wb="ex4-test"></textarea>
 <label>Estimated new total time, and what stays deliberately human</label><textarea class="small" data-wb="ex4-human"></textarea>
+</section>
+
+<section><span class="timing">BRIEF + REDESIGN · BUILT ACROSS THE DAY</span>
+<h2>My prompt library — for my role</h2>
+<p>The scenarios were practice. This is the marketed take-home: prompts for the work <em>you</em> repeat. Draft at least three today (Exercise 4 will surface candidates), aim for five by the end of your first week back. Keep each prompt copyable as one block.</p>
+<div id="librows"></div>
+<p class="hint"><button type="button" class="btn-primary" id="addlib">Add library prompt</button></p>
 </section>
 
 <section><span class="timing">CLOSE · 15 MIN</span>
@@ -117,11 +130,15 @@ const KEY='human-edge-workbook-v1';
 function rows(n){const tb=document.getElementById('wfrows');for(let i=0;i<n;i++){const tr=document.createElement('tr');tr.innerHTML='<td><input type="text" data-wb="wf-step-'+tb.children.length+'"></td><td><input type="text" data-wb="wf-min-'+tb.children.length+'" size="4"></td><td><input type="text" data-wb="wf-type-'+tb.children.length+'"></td><td><input type="text" data-wb="wf-trust-'+tb.children.length+'"></td>';tb.appendChild(tr);}bind();}
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}}
 function bind(){document.querySelectorAll('[data-wb]').forEach(function(el){if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('input',save);el.addEventListener('change',save);});}
-function save(){const d={};document.querySelectorAll('[data-wb]').forEach(function(el){d[el.dataset.wb]=el.value;});d._rows=document.getElementById('wfrows').children.length;try{localStorage.setItem(KEY,JSON.stringify(d));document.getElementById('savestate').textContent='Saved in this browser · '+new Date().toLocaleTimeString();}catch(e){document.getElementById('savestate').textContent='Could not save (private browsing?) — export now.';}}
+function save(){const d={};document.querySelectorAll('[data-wb]').forEach(function(el){d[el.dataset.wb]=el.value;});d._rows=document.getElementById('wfrows').children.length;var _l=document.getElementById('librows');d._lib=_l?_l.children.length:0;try{localStorage.setItem(KEY,JSON.stringify(d));document.getElementById('savestate').textContent='Saved in this browser · '+new Date().toLocaleTimeString();}catch(e){document.getElementById('savestate').textContent='Could not save (private browsing?) — export now.';}}
 const saved=load();rows(saved._rows||5);
 document.querySelectorAll('[data-wb]').forEach(function(el){if(saved[el.dataset.wb]!==undefined)el.value=saved[el.dataset.wb];});
 if(Object.keys(saved).length){document.getElementById('savestate').textContent='Restored earlier answers from this browser.';}
 document.getElementById('addrow').onclick=function(){rows(1);save();};
+function lib(n){const w=document.getElementById('librows');for(let i=0;i<n;i++){const k=w.children.length;const d=document.createElement('div');d.innerHTML='<label>Library prompt '+(k+1)+' — the job I repeat</label><input type="text" data-wb="lib-job-'+k+'" placeholder="e.g. Weekly status update for my manager"><label>My RTCF prompt (one copyable block)</label><textarea data-wb="lib-prompt-'+k+'"></textarea><label>Trust corner for its output, and how I will check it</label><input type="text" data-wb="lib-trust-'+k+'">';w.appendChild(d);}bind();}
+const _sv=load();lib(_sv._lib||3);
+document.querySelectorAll('[data-wb]').forEach(function(el){if(_sv[el.dataset.wb]!==undefined&&!el.value)el.value=_sv[el.dataset.wb];});
+document.getElementById('addlib').onclick=function(){lib(1);save();};
 document.getElementById('resetwb').onclick=function(){if(confirm('Clear all workbook answers on this device?')){localStorage.removeItem(KEY);location.reload();}};
 document.getElementById('exportmd').onclick=function(){
  const d=load();let out='# The Human Edge — my workbook\n\n';

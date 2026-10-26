@@ -83,6 +83,7 @@ INSTRUCTOR_FILES=(
   "exercise-3-facilitator-guide"
   "exercise-4-facilitator-guide"
   "answer-keys"
+  "run-of-show"
 )
 
 # Function: Convert markdown to HTML for web
@@ -193,9 +194,9 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
         <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
           <div class="resource-item" style="border: 2px solid var(--primary); padding: 1.5rem; border-radius: 8px;">
             <h3>START HERE</h3>
-            <p>Master delivery guide: teaching philosophy, day timeline, facilitation moves, troubleshooting, materials checklist.</p>
+            <p>Master delivery guide: teaching philosophy, day timeline, facilitation moves, troubleshooting, materials checklist. Then the minute-by-minute run of show with the cut plan and dry-run checklist.</p>
             <div style="margin-top: 1rem;">
-              <a href="FACILITATOR-START-HERE.html" class="btn-primary">Read Now</a>
+              <a href="FACILITATOR-START-HERE.html" class="btn-primary">Read Now</a> <a href="run-of-show.html" class="btn-primary">Run of Show</a>
             </div>
           </div>
         </div>
@@ -276,8 +277,8 @@ echo -e "${BLUE}Publishing Deck + Dataset${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 if [ -f "content/deck.html" ]; then
-  cp "content/deck.html" "$OUTPUT_DIR/deck.html"
-  echo -e "${GREEN}✓${NC} Copied: content/deck.html -> docs/deck.html\n"
+  python3 build/scripts/make-participant-deck.py
+  echo -e "${GREEN}✓${NC} Participant deck: content/deck.html -> docs/deck.html (notes stripped, verdicts held)\n"
 else
   echo -e "${RED}✗${NC} content/deck.html missing\n"; exit 1
 fi

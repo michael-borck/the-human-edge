@@ -11,7 +11,7 @@ Needs `pandoc`. No Quarto, no WeasyPrint, no print pipeline, no PPTX — all ret
 
 - `participant-materials/*.md` + `pre-readings/*.md` -> `docs/*.html` (templates in `build/templates/`)
 - `instructor-materials/*.md` -> `docs/instructor/*.html` (password `instructor2025`; hash in `build/templates/auth.js`)
-- `content/deck.html` -> `docs/deck.html` (edit the source, never the copy)
+- `content/deck.html` -> participant copy at `docs/deck.html` via `build/scripts/make-participant-deck.py` (presenter notes stripped, Exercise 3 verdicts held). Present from `content/deck.html` itself. Never publish the presenter copy.
 - `content/images/*.svg` -> `docs/images/`; `activities/retailflow-*.csv` -> `docs/data/`
 
 Hand-written pages (`docs/index.html`, `frameworks.html`, `exercises.html` workbook, `trust-tool.html`, `overview.html`, `schedule.html`, `materials.html`) are edited directly and are not overwritten by the build.

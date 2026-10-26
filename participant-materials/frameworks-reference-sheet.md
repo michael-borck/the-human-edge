@@ -19,7 +19,7 @@ AI produces a **convincing average**: fluent, well-shaped, usually about right. 
 **Rules that never bend**
 
 - Verification comes from **outside the tool** — against the data, the source, or an independent standard. Asking the model to check itself does not count.
-- Fluency is not evidence. The smoother it reads, the more reason to check the load-bearing parts.
+- Fluency is not evidence. The smoother it reads, the more reason to check the load-bearing parts. Two named traps guard this corner: **sycophancy** (it praises first and folds when pushed, so prompt past the flattery) and **Gell-Mann amnesia** (you catch its errors in your domain, then trust it where you cannot check, so stay most sceptical where you know least).
 - Weak human work announces itself. Weak AI work announces nothing. Run the check your alarm no longer runs.
 
 *Worked example:* a board paper's narrative summary sits top-left of "average + large" — draft it with AI, sanity-check the argument. The same paper's financial table is precision + large — a person owns every figure.
@@ -67,7 +67,7 @@ Not every prompt needs all four. Anything important does.
 1. **Prepare** — write the question first; start a fresh chat (long conversations drift toward your framing). If you cannot state the question, you cannot judge the answer.
 2. **Upload** — clean headers, consistent formats. Privacy gate: personal or confidential data never goes into a free-tier tool.
 3. **Question** — broad to deep: overview, descriptives, patterns, drivers, recommendations. Follow surprises.
-4. **Verify** — spot-check totals and averages against the source. Watch for miscounts, correlation sold as cause, silently ignored missing data, invented figures. *If a finding would change a decision, verify it.*
+4. **Verify (VET it)** — **V**erify the source independently, **E**xplain it back until you could explain it yourself, **T**est the edges with a case that would make it wrong. Then spot-check totals and averages against the source. Watch for miscounts, correlation sold as cause, silently ignored missing data, invented figures. *If a finding would change a decision, verify it.*
 5. **Refine** — slice, exclude outliers, re-run. Good analysis takes 3–5 rounds.
 6. **Present** — format for the audience, then add your interpretation. The AI's output is the starting point, not the brief.
 

@@ -21,7 +21,7 @@ Marketed outcomes, all delivered: RTCF, Opportunity Finder, workflow redesign, r
 
 ## Deliverables
 
-- **Deck:** `content/deck.html` → `docs/deck.html`. Bespoke single-file HTML (engine forked from *The Broken Ladder* `a.html`): 26 slides, chapter rail, `Space` next, `N` presenter notes, `1–4` chapter jump. No PowerPoint. Print-to-PDF from the browser is the emergency fallback.
+- **Deck:** present from `content/deck.html` (your local presenter copy with notes and verdicts). The build publishes a participant copy to `docs/deck.html` with notes stripped and the Exercise 3 verdicts held back, so the reveal survives participants clicking ahead. Bespoke single-file HTML (engine forked from *The Broken Ladder* `a.html`): 26 slides, chapter rail, `Space` next, `N` presenter notes, `1–4` chapter jump. No PowerPoint. Print-to-PDF from the browser is the emergency fallback.
 - **Workbook:** `docs/exercises.html`. All four exercises + action plan as one digital workbook. Autosaves in the browser (localStorage), exports to markdown or PDF. No paper, no butchers paper, no post-its — artefacts leave on participants' laptops.
 - **Frameworks reference:** `participant-materials/frameworks-reference-sheet.md` → `docs/frameworks-reference-sheet.html`, with `docs/frameworks.html` as the brochure page. Diagrams are shared SVGs in `content/images/`.
 - **Instructor:** `instructor-materials/` (password portal). Start at FACILITATOR-START-HERE.md.

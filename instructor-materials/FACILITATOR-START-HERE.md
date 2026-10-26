@@ -10,7 +10,7 @@
 
 | When | What to Do |
 |------|-----------|
-| **1 week before** | Read this guide end-to-end. Read all 4 exercise guides. Check technology. Reply to the Exec Ed logistics email. The course is fully digital now, so no printing and no stationery. Ask for power at each table and wifi that holds 30 people. Wording is in `reply-to-nicole-logistics.md`. |
+| **1 week before** | Read this guide end-to-end. Read all 4 exercise guides and `run-of-show.md` (minute-by-minute, cut plan, dry-run checklist). Check technology. Reply to the Exec Ed logistics email. The course is fully digital now, so no printing and no stationery. Ask for power at each table and wifi that holds 30 people. Wording is in `reply-to-nicole-logistics.md`. |
 | **72 hours before** | Coordinator reminder goes out with pre-reading + BYOD tech check (laptop, AI accounts created and tested). |
 | **Day before** | Nothing to print. Test venue wifi against AI tool access and the companion site. Open `docs/deck.html` once on the presentation machine (caches fonts). Set up room: power board per table. |
 | **Morning of** | Arrive 30 min early. Test projector. Open all AI tools in browser tabs. |
@@ -66,12 +66,12 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 ## Full Day Timeline
 
-### Session 1: AI Foundations & Orientation (9:00-10:30)
+### Loop 1 · Judge (9:00-10:30)
 
 | Time | Duration | Activity | Your Role |
 |------|----------|----------|-----------|
 | 9:00 | 15 min | **Welcome & Introductions** | Facilitate introductions, set expectations |
-| 9:15 | 35 min | **Lecture: What AI Actually Is** | Present Framework 1: AI Task Suitability Spectrum |
+| 9:15 | 35 min | **Judge: tuition, your alarm, Trust Tool, Spectrum** (plus 5-min pair plot at 9:35) | Slides 3 to 6; see run-of-show.md |
 | 9:50 | 40 min | **Exercise 1: The Compare Drill** | Circulate, observe, facilitate debrief |
 
 **Key teaching points for the lecture:**
@@ -94,11 +94,11 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 - Note who seems advanced and who seems brand-new, adjust pairings for Exercise 2 if needed
 - Reset projector for Session 2
 
-### Session 2: Prompt & Context Engineering (11:00-12:30)
+### Loop 2 · Brief (11:00-12:30)
 
 | Time | Duration | Activity | Your Role |
 |------|----------|----------|-----------|
-| 11:00 | 30 min | **Lecture: The Art of Effective Prompting** | Present Framework 2: RTCF Prompt Framework |
+| 11:00 | 30 min | **Brief: conversation not delegation, RTCF, live demo, weaker-model ladder** | Slides 9 to 12 |
 | 11:30 | 60 min | **Exercise 2: Prompt Engineering Workshop** | Circulate, compare outputs, facilitate debrief |
 
 **Key teaching points for the lecture:**
@@ -125,8 +125,8 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 | Time | Duration | Activity | Your Role |
 |------|----------|----------|-----------|
-| 1:15 | 30 min | **Lecture: Using AI for Data Work** | Present Framework 3: AI-Assisted Analysis Workflow |
-| 1:45 | 45 min | **Exercise 3: Data Analysis Challenge** | Circulate, check for errors, facilitate debrief |
+| 1:15 | 25 min | **Verify: precision, VET, Analysis Workflow** | Slides 15 to 16 |
+| 1:40 | 50 min | **Exercise 3: Data Analysis Challenge** | Circulate, check for errors, vote-then-reveal debrief |
 
 **Key teaching points for the lecture:**
 - Define the question BEFORE you touch the tool (Prepare step)
@@ -152,7 +152,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 | Time | Duration | Activity | Your Role |
 |------|----------|----------|-----------|
-| 3:00 | 20 min | **Lecture: Low-Code AI Integration** | Present Framework 4: AI Opportunity Finder |
+| 3:00 | 20 min | **Redesign: beyond chat, Opportunity Finder, agents and skills** | Slides 19 to 21 (agents slide is the first cut if behind) |
 | 3:20 | 40 min | **Exercise 4: Your AI-Enhanced Workflow** | Circulate, help with task selection, facilitate sharing |
 
 **Key teaching points for the lecture:**
@@ -172,8 +172,9 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 | Time | Duration | Activity | Your Role |
 |------|----------|----------|-----------|
-| 4:00 | 15 min | **Framework Synthesis** | Recap all 4 frameworks, key principles |
-| 4:15 | 15 min | **Personal Action Planning** | Guide them through the action plan template |
+| 4:00 | 10 min | **Close: broken ladder + four moves** | Slides 23 to 24 |
+| 4:10 | 12 min | **Personal Action Planning** | Workbook final section, ten quiet minutes |
+| 4:22 | 8 min | **Close: export + feedback QR** | Hold the closing slide until phones go down |
 
 **Framework synthesis, your script:**
 
