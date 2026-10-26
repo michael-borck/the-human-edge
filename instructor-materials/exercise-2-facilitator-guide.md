@@ -38,9 +38,9 @@ Distribute the Prompt Engineering Worksheet (if not already distributed).
 
 **Your script:**
 
-> "You have a worksheet with 6 workplace scenarios. Each one gives you a realistic situation and enough context to write a good prompt. Here's how this works:
+> "You have a worksheet with 3 workplace scenarios (pick 2). Each one gives you a realistic situation and enough context to write a good prompt. Here's how this works:
 >
-> **Round 1:** Pick 3 scenarios. For each one, write the prompt you'd naturally write, the first thing that comes to mind. Type it into your AI tool and note the quality of the output. Don't try to be fancy. Write what you'd normally write.
+> **Round 1:** Pick 2 scenarios. For each one, write the prompt you'd naturally write, the first thing that comes to mind. Type it into your AI tool and note the quality of the output. Don't try to be fancy. Write what you'd normally write.
 >
 > **Round 2:** Go back to the same 3 scenarios. This time, brief the AI properly, the mindset is conversation, not delegation: you're briefing a capable junior colleague who knows nothing about your job. Use the RTCF structure, Role, Task, Context, Format, and compare the output to Round 1.
 >
@@ -191,7 +191,7 @@ Listen for:
 | Someone's Round 2 isn't much better than Round 1 | Look at their prompts together, usually Context or Role is still missing. Coach in real-time. |
 | Someone gets a perfect Round 1 output | Ask: "Were you already applying structure naturally? That's a strength. Try a harder scenario." |
 | A table is working silently | Prompt discussion: "Share your Round 1 vs Round 2 with your neighbour. What's different?" |
-| Someone is trying all 6 scenarios | Redirect: "Depth over breadth, pick 3 and really refine them." |
+| Someone is trying all 6 scenarios | Redirect: "Depth over breadth, pick 2 and really refine them." |
 | The room is high-energy, lots of sharing | Let it run. This is the best part of the exercise. |
 | Someone's AI gave an offensive or biased response | Address it: "This is real. AI reflects patterns from its training data, including biases. What would you do if this happened at work?" |
 

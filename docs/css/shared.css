@@ -10,17 +10,17 @@ h1, h2, h3, h4, .logo {
 }
 
 :root {
-    --primary: #d9a441;
+    --primary: #E8B54D;
     --primary-dark: #b9832e;
     --secondary: #a3b18a;
-    --dark: #eae5d9;
+    --dark: #ECE7DB;
     --light: #141821;
     --white: #10141b;
     --text: #b3ad9f;
     --border: rgba(234, 229, 217, 0.14);
     --muted: #8a8478;
-    --ink: #eae5d9;
-    --bg: #0b0e13;
+    --ink: #ECE7DB;
+    --bg: #0A0C10;
 }
 
 body {

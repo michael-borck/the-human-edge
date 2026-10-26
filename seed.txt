@@ -1,5 +1,0 @@
-The feedback also highlighted a clear demand for a more technical, "how-to" course, which I believe is the main reason for the mismatched expectation feedback.
-
-Based on this, I'd like to propose a new, complementary masterclass: "Practical AI for Professionals." This would be a BYOD workshop focusing on prompt/context engineering, using AI for data analysis, and low-code platforms (no heavy coding).
-
-This new offering would perfectly satisfy the hands-on demand and allow the "Leadership" class to remain focused on strategy.

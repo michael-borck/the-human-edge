@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 200" font-family="sans-serif">
+<rect width="980" height="200" fill="#0A0C10"/>
+<g font-size="17" font-weight="600" fill="#ECE7DB" text-anchor="middle">
+<rect x="15" y="45" width="145" height="100" rx="12" fill="#10131A" stroke="#E8B54D"/><text x="87" y="92">1 Prepare</text><text x="87" y="118" font-size="12" font-weight="400" fill-opacity=".65">question first</text>
+<rect x="175" y="45" width="145" height="100" rx="12" fill="#10131A" stroke="#ECE7DB" stroke-opacity=".3"/><text x="247" y="92">2 Upload</text><text x="247" y="118" font-size="12" font-weight="400" fill-opacity=".65">privacy gate</text>
+<rect x="335" y="45" width="145" height="100" rx="12" fill="#10131A" stroke="#ECE7DB" stroke-opacity=".3"/><text x="407" y="92">3 Question</text><text x="407" y="118" font-size="12" font-weight="400" fill-opacity=".65">broad to deep</text>
+<rect x="495" y="32" width="160" height="126" rx="12" fill="#E5745A" fill-opacity=".15" stroke="#E5745A" stroke-width="2"/><text x="575" y="92">4 VERIFY</text><text x="575" y="118" font-size="12" font-weight="400" fill-opacity=".7">outside the tool</text>
+<rect x="670" y="45" width="145" height="100" rx="12" fill="#10131A" stroke="#ECE7DB" stroke-opacity=".3"/><text x="742" y="92">5 Refine</text><text x="742" y="118" font-size="12" font-weight="400" fill-opacity=".65">iterate</text>
+<rect x="830" y="45" width="135" height="100" rx="12" fill="#10131A" stroke="#ECE7DB" stroke-opacity=".3"/><text x="897" y="92">6 Present</text><text x="897" y="118" font-size="12" font-weight="400" fill-opacity=".65">for audience</text>
+</g><g stroke="#E8B54D" stroke-width="2"><line x1="162" y1="95" x2="173" y2="95"/><line x1="322" y1="95" x2="333" y2="95"/><line x1="482" y1="95" x2="493" y2="95"/><line x1="657" y1="95" x2="668" y2="95"/><line x1="817" y1="95" x2="828" y2="95"/></g>
+</svg>

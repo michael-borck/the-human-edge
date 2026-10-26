@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build Course Materials for GitHub Pages
-# AI for Professionals — Executive Education, Curtin Business School
+# The Human Edge — Executive Education, Curtin Business School
 # Runs locally or in CI (GitHub Actions)
 
 set -e  # Exit on error
@@ -23,7 +23,7 @@ TEMPLATE_DIR="build/templates"
 
 echo -e "${BLUE}========================================${NC}"
 echo -e "${BLUE}Building Course Materials${NC}"
-echo -e "${BLUE}AI for Professionals${NC}"
+echo -e "${BLUE}The Human Edge${NC}"
 echo -e "${BLUE}========================================${NC}\n"
 
 # Create output directories
@@ -162,7 +162,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instructor Materials | AI for Professionals</title>
+  <title>Instructor Materials | The Human Edge</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
@@ -173,7 +173,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 <body onload="checkAuth()">
   <nav class="topnav">
     <div class="container">
-      <a href="../index.html" class="logo">AI for Professionals</a>
+      <a href="../index.html" class="logo">The Human Edge</a>
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="../materials.html">Materials</a>
@@ -191,7 +191,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
       <div class="content">
         <h2>Quick Start</h2>
         <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
-          <div class="resource-item" style="border: 3px solid #667eea; padding: 1.5rem; border-radius: 8px; background: #f0f4ff;">
+          <div class="resource-item" style="border: 2px solid var(--primary); padding: 1.5rem; border-radius: 8px;">
             <h3>START HERE</h3>
             <p>Master delivery guide: teaching philosophy, day timeline, facilitation moves, troubleshooting, materials checklist.</p>
             <div style="margin-top: 1rem;">
@@ -205,8 +205,8 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
         <h2>Exercise Facilitator Guides (Use During Course)</h2>
         <div class="resource-grid" style="display: grid; gap: 2rem; margin: 2rem 0;">
           <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
-            <h3>1. AI Tool Test Drive (40 min)</h3>
-            <p>Compare ChatGPT, Claude, and Gemini on a management scenario. Debrief on tool differences.</p>
+            <h3>1. The Compare Drill (35 min)</h3>
+            <p>Your rough pass vs the AI pass on a management scenario. Debrief on where judgement beat the average.</p>
             <div style="margin-top: 1rem;">
               <a href="exercise-1-facilitator-guide.html" class="btn-primary">View Guide</a>
             </div>
@@ -214,7 +214,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 
           <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
             <h3>2. Prompt Engineering Workshop (60 min)</h3>
-            <p>Three rounds: baseline, RTCF, advanced techniques. Coaching-intensive with 6 workplace scenarios.</p>
+            <p>Three rounds: baseline, RTCF, weaker-model ladder. Pick 2 of 3 scenarios in the digital workbook.</p>
             <div style="margin-top: 1rem;">
               <a href="exercise-2-facilitator-guide.html" class="btn-primary">View Guide</a>
             </div>
@@ -222,7 +222,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 
           <div class="resource-item" style="border: 2px solid #e5e7eb; padding: 1.5rem; border-radius: 8px;">
             <h3>3. Data Analysis Challenge (45 min)</h3>
-            <p>RetailFlow CSV dataset with baked-in patterns. Progressive questioning and verification.</p>
+            <p>RetailFlow CSV with three planted claims to verdict. Progressive questioning, then verify against the data.</p>
             <div style="margin-top: 1rem;">
               <a href="exercise-3-facilitator-guide.html" class="btn-primary">View Guide</a>
             </div>
@@ -261,7 +261,7 @@ cat > "$OUTPUT_INSTRUCTOR/index.html" << 'EOF'
 
   <footer class="site-footer">
     <div class="container">
-      <p>AI for Professionals | Curtin Business School</p>
+      <p>The Human Edge | Curtin Business School</p>
     </div>
   </footer>
 </body>
@@ -270,20 +270,22 @@ EOF
 
 echo -e "${GREEN}✓${NC} Created instructor materials index\n"
 
-# Copy slide deck to docs/ (if rendered versions exist)
+# Publish the bespoke HTML deck (source: content/deck.html — no PPTX, no print pipeline)
 echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${BLUE}Copying Slide Decks${NC}"
+echo -e "${BLUE}Publishing Deck + Dataset${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-SLIDE_FORMATS=("pptx" "docx" "html" "pdf")
-for format in "${SLIDE_FORMATS[@]}"; do
-  if [ -f "content/slide-deck.$format" ]; then
-    cp "content/slide-deck.$format" "$OUTPUT_DIR/slide-deck.$format"
-    echo -e "${GREEN}✓${NC} Copied: slide-deck.$format\n"
-  else
-    echo -e "${YELLOW}⚠${NC} Slide deck not found: content/slide-deck.$format (render with Quarto/Pandoc first)\n"
-  fi
-done
+if [ -f "content/deck.html" ]; then
+  cp "content/deck.html" "$OUTPUT_DIR/deck.html"
+  echo -e "${GREEN}✓${NC} Copied: content/deck.html -> docs/deck.html\n"
+else
+  echo -e "${RED}✗${NC} content/deck.html missing\n"; exit 1
+fi
+mkdir -p "$OUTPUT_DIR/data"
+if [ -f "activities/retailflow-customer-service-data.csv" ]; then
+  cp "activities/retailflow-customer-service-data.csv" "$OUTPUT_DIR/data/"
+  echo -e "${GREEN}✓${NC} Copied: RetailFlow CSV -> docs/data/\n"
+fi
 
 echo -e "\n${BLUE}========================================${NC}"
 echo -e "${GREEN}Build Complete!${NC}"

@@ -6,42 +6,28 @@
 
 ---
 
-## Exercise 1: AI Tool Test Drive
+## Exercise 1. The compare drill
 
-### The Task
+### The task
 
-> "I manage a team of 8 people in a mid-sized company. One of my team members, who has been a strong performer for 3 years, has been consistently late to work and missing deadlines for the past month. Other team members are starting to notice. Write me a plan for how to address this situation."
+A strong performer of three years has been late and missing deadlines for a month. The team has noticed. Sketch your plan to address it. Participants write their own pass first, then give AI the identical task.
 
-### What Good Comparison Looks Like
+### What strong looks like
 
-**A strong participant will notice:**
+A strong compare names specific gaps, not a winner. The AI usually wins on structure, a clean step sequence, a checklist, opening lines for the conversation. The participant usually wins on the stuff that was never in the prompt. What this person is actually like. Whether something happened at home last month. What the team already tried. Which manager owns the fallout if it goes badly.
 
-1. **Tone differences**: Some tools are more HR-procedural ("Schedule a formal meeting, document the conversation"), others more empathetic ("Start by checking if something is going on in their personal life"), others more direct ("Address it immediately before it affects team morale").
+Listen for observations like these in the debrief, and repeat the best ones back to the room:
 
-2. **Structural differences**: One tool might give a step-by-step timeline, another might give principles with examples, another might give a decision tree.
+- "It never asked why a three year performer changed. That was my first line and its last."
+- "It cited Australian employment process with total confidence and I have no idea if any of it is right." That is a precision claim spotted without prompting. Praise it.
+- "Its plan was better than mine and I still would not send it." Good. That is the Trust Tool working before they have a name for the corner.
 
-3. **Content gaps**: One tool might mention legal considerations the others don't. Another might address the team dynamic while others focus only on the individual. Some might suggest documentation for HR purposes; others won't.
+Weak looks like a verdict with no evidence. "The AI was better." Better at what, and checked how. Push until they can point at a sentence.
 
-4. **Problematic advice**: A tool might suggest being overly punitive without first understanding the root cause. Or it might be so gentle it doesn't actually address the performance issue.
-
-### What Indicates Strong Thinking
-
-| Observation | Why It's Good |
-|-------------|--------------|
-| "Tool A assumed I should be firm, Tool B assumed I should be caring, neither asked me what my style is" | Recognises AI makes assumptions based on patterns, not YOUR context |
-| "None of them mentioned checking if there's a health or personal issue first" | Notices a gap, empathy that humans would naturally have |
-| "Tool C gave very specific Australian employment law advice that I can't verify" | Catches potential hallucination in a domain-specific context |
-| "I'd take Tool A's structure but Tool B's tone" | Understands tools as starting points to combine, not final products |
-
-### What Indicates Weak Thinking
-
-| Observation | Concern |
-|-------------|---------|
-| "Tool A is the best, the others are useless" | Black-and-white thinking, all tools have strengths |
-| Didn't notice any problems with the output | Not reading critically enough |
-| "They all said the same thing" | Didn't look closely, there are always meaningful differences |
+The correct classification is Human-Led. AI helps the thinking, the conversation belongs to a person.
 
 ---
+
 
 ## Exercise 2: Prompt Engineering Workshop
 

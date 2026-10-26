@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" font-family="sans-serif">
+<rect width="640" height="520" fill="#0A0C10"/>
+<line x1="90" y1="440" x2="590" y2="440" stroke="#ECE7DB" stroke-opacity=".4" stroke-width="2"/>
+<line x1="90" y1="440" x2="90" y2="40" stroke="#ECE7DB" stroke-opacity=".4" stroke-width="2"/>
+<line x1="340" y1="40" x2="340" y2="440" stroke="#ECE7DB" stroke-opacity=".2"/><line x1="90" y1="240" x2="590" y2="240" stroke="#ECE7DB" stroke-opacity=".2"/>
+<rect x="100" y="250" width="230" height="180" rx="10" fill="#7FB069" fill-opacity=".14" stroke="#7FB069"/>
+<rect x="350" y="250" width="230" height="180" rx="10" fill="#E8B54D" fill-opacity=".12" stroke="#E8B54D"/>
+<rect x="100" y="50" width="230" height="180" rx="10" fill="#E8B54D" fill-opacity=".12" stroke="#E8B54D"/>
+<rect x="350" y="50" width="230" height="180" rx="10" fill="#E5745A" fill-opacity=".14" stroke="#E5745A"/>
+<text x="120" y="295" fill="#ECE7DB" font-size="21" font-weight="600">Lean in</text><text x="120" y="325" fill="#ECE7DB" fill-opacity=".65" font-size="14">Average + small</text><text x="120" y="355" fill="#ECE7DB" fill-opacity=".65" font-size="14">internal draft, summary</text>
+<text x="370" y="295" fill="#ECE7DB" font-size="21" font-weight="600">Lean in, glance</text><text x="370" y="325" fill="#ECE7DB" fill-opacity=".65" font-size="14">Average + large</text><text x="370" y="355" fill="#ECE7DB" fill-opacity=".65" font-size="14">client email, team update</text>
+<text x="120" y="95" fill="#ECE7DB" font-size="21" font-weight="600">Use, then verify</text><text x="120" y="125" fill="#ECE7DB" fill-opacity=".65" font-size="14">Precision + small</text><text x="120" y="155" fill="#ECE7DB" fill-opacity=".65" font-size="14">a date, a citation, a total</text>
+<text x="370" y="95" fill="#ECE7DB" font-size="21" font-weight="600">Human in loop</text><text x="370" y="125" fill="#ECE7DB" fill-opacity=".65" font-size="14">Precision + large</text><text x="370" y="155" fill="#ECE7DB" fill-opacity=".65" font-size="14">money, people, safety</text>
+<text x="340" y="480" text-anchor="middle" fill="#ECE7DB" fill-opacity=".7" font-size="14" letter-spacing="2">STAKES: SMALL → LARGE</text>
+<text x="35" y="245" text-anchor="middle" fill="#ECE7DB" fill-opacity=".7" font-size="14" letter-spacing="2" transform="rotate(-90 35 245)">AVERAGE FINE → PRECISION REQUIRED</text>
+</svg>

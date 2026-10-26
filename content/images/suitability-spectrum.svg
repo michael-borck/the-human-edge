@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" font-family="sans-serif">
+<rect width="900" height="220" fill="#0A0C10"/>
+<line x1="30" y1="130" x2="870" y2="130" stroke="#ECE7DB" stroke-opacity=".3" stroke-width="3"/>
+<rect x="30" y="45" width="195" height="110" rx="12" fill="#7FB069" fill-opacity=".14" stroke="#7FB069"/><text x="127" y="92" text-anchor="middle" fill="#ECE7DB" font-size="19" font-weight="600">AI-Led</text><text x="127" y="120" text-anchor="middle" fill="#ECE7DB" fill-opacity=".65" font-size="13">you review</text>
+<rect x="240" y="45" width="195" height="110" rx="12" fill="#E8B54D" fill-opacity=".12" stroke="#E8B54D"/><text x="337" y="92" text-anchor="middle" fill="#ECE7DB" font-size="19" font-weight="600">AI-Assisted</text><text x="337" y="120" text-anchor="middle" fill="#ECE7DB" fill-opacity=".65" font-size="13">you guide + verify</text>
+<rect x="450" y="45" width="195" height="110" rx="12" fill="#E8B54D" fill-opacity=".08" stroke="#E8B54D"/><text x="547" y="92" text-anchor="middle" fill="#ECE7DB" font-size="19" font-weight="600">Human-Led</text><text x="547" y="120" text-anchor="middle" fill="#ECE7DB" fill-opacity=".65" font-size="13">AI does sub-tasks</text>
+<rect x="660" y="45" width="195" height="110" rx="12" fill="#E5745A" fill-opacity=".14" stroke="#E5745A"/><text x="757" y="92" text-anchor="middle" fill="#ECE7DB" font-size="19" font-weight="600">Human-Only</text><text x="757" y="120" text-anchor="middle" fill="#ECE7DB" fill-opacity=".65" font-size="13">full ownership</text>
+<text x="30" y="195" fill="#ECE7DB" fill-opacity=".6" font-size="12" letter-spacing="2">ROUTINE · PATTERN-BASED</text>
+<text x="855" y="195" text-anchor="end" fill="#ECE7DB" fill-opacity=".6" font-size="12" letter-spacing="2">EMPATHY · ETHICS · ACCOUNTABILITY</text>
+</svg>

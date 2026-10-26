@@ -1,126 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercises | AI for Professionals</title>
-  <link rel="stylesheet" href="css/shared.css">
-  <link rel="stylesheet" href="css/materials.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav class="container">
-      <a href="index.html" class="logo">AI for Professionals</a>
-      <ul class="nav-links">
-        <li><a href="overview.html">Overview</a></li>
-        <li><a href="frameworks.html">Frameworks</a></li>
-        <li><a href="trust-tool.html">Trust tool</a></li>
-        <li><a href="exercises.html" style="color: var(--primary);">Exercises</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li class="nav-item has-dropdown">
-          <span class="dropdown-trigger">Materials</span>
-          <div class="dropdown-menu">
-            <a href="materials.html">All Materials</a>
-            <a href="ai-for-the-rest-of-us.html">Pre-Reading</a>
-            <a href="frameworks-reference-sheet.html">Frameworks Reference</a>
-            <a href="personal-action-plan-template.html">Action Plan</a>
-            <a href="instructor/index.html">Instructor Portal</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workbook | The Human Edge: Using and Delivering AI with Judgement</title>
+<link rel="stylesheet" href="css/shared.css"><link rel="stylesheet" href="css/materials.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.wb{max-width:920px;margin:0 auto;padding:2.5rem 20px 5rem}
+.wb section{border:1px solid var(--border);border-radius:12px;background:var(--white);padding:1.6rem;margin:1.4rem 0}
+.wb h2{text-align:left;margin:0 0 .4rem}.wb .timing{font-family:"Nanum Gothic Coding",monospace;font-size:11px;letter-spacing:.12em;color:var(--primary)}
+.wb label{display:block;font-weight:600;color:var(--ink);margin:1.1rem 0 .35rem}
+.wb textarea,.wb input[type=text],.wb select{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--border);border-radius:8px;padding:.7rem;font-family:inherit;font-size:1rem;line-height:1.5}
+.wb textarea{min-height:110px;resize:vertical}.wb textarea.small{min-height:70px}
+.wb .hint{font-size:.92rem;color:var(--muted);margin-top:.3rem}
+.wb .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}@media(max-width:700px){.wb .row{grid-template-columns:1fr}}
+.wb table{width:100%;border-collapse:collapse}.wb td,.wb th{border:1px solid var(--border);padding:.5rem;vertical-align:top}
+.wb td input,.wb td textarea{min-height:0;border:0;background:transparent;padding:.2rem}
+.savebar{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--border);padding:1rem 0;display:flex;gap:.8rem;flex-wrap:wrap;align-items:center}
+.savebar span{color:var(--muted);font-size:.9rem}
+button.btn-primary{cursor:pointer;border:0}
+@media print{.savebar,header{display:none}.wb section{break-inside:avoid}}
+</style></head><body>
+<header><nav class="container">
+<a href="index.html" class="logo">The Human Edge</a>
+<ul class="nav-links">
+<li><a href="overview.html">Overview</a></li><li><a href="deck.html">Deck</a></li>
+<li><a href="frameworks.html">Frameworks</a></li><li><a href="trust-tool.html">Trust tool</a></li>
+<li><a href="exercises.html" style="color:var(--primary)">Workbook</a></li><li><a href="schedule.html">Schedule</a></li>
+<li class="nav-item has-dropdown"><span class="dropdown-trigger">Materials</span><div class="dropdown-menu">
+<a href="materials.html">All Materials</a><a href="ai-for-the-rest-of-us.html">Pre-Reading</a>
+<a href="frameworks-reference-sheet.html">Frameworks Reference</a><a href="instructor/index.html">Instructor Portal</a>
+</div></li></ul></nav></header>
 
-  <section style="padding: 3rem 0;">
-    <div class="container" style="max-width: 900px;">
-      <h2 style="text-align: center;">The four exercises</h2>
-      <p class="section-intro">Each exercise builds on the previous one. You'll move from exploring AI tools to applying them to your own work.</p>
+<main class="wb" id="workbook">
+<h1>Digital workbook</h1>
+<p>This page replaces every paper worksheet. It saves automatically in this browser on this device — no account, nothing leaves your laptop. If wifi drops after this page has loaded, keep working. Export before you leave.</p>
+<p><strong>Privacy:</strong> do not paste confidential or personal data into free-tier AI tools during these exercises. Use the scenarios and dataset provided.</p>
+<label for="f-name">Your name (for the export header)</label>
+<input type="text" id="f-name" data-wb="name" autocomplete="name">
 
-      <div class="exercises-grid">
+<section><span class="timing">EXERCISE 1 · JUDGE · 35 MIN</span>
+<h2>The compare drill</h2>
+<p><strong>Task:</strong> A strong performer of three years has been late and missing deadlines for a month. The team has noticed. Sketch your plan to address it.</p>
+<label>1. Your rough pass (5 min, before opening any AI tool)</label>
+<textarea data-wb="ex1-mine" placeholder="Bullet sketch is fine. Rough is the point."></textarea>
+<label>2. AI's pass (paste or summarise the output to the identical task)</label>
+<textarea data-wb="ex1-ai"></textarea>
+<div class="row"><div><label>Where you beat it</label><textarea class="small" data-wb="ex1-ibeat"></textarea></div>
+<div><label>Where it beat you</label><textarea class="small" data-wb="ex1-itbeat"></textarea></div></div>
+<label>Anything confidently wrong or unusable?</label><textarea class="small" data-wb="ex1-wrong"></textarea>
+<div class="row"><div><label>Suitability zone</label><select data-wb="ex1-zone"><option value="">Choose…</option><option>AI-Led</option><option>AI-Assisted</option><option>Human-Led, AI-Supported</option><option>Human-Only</option></select></div>
+<div><label>Trust Tool corner for this output</label><select data-wb="ex1-corner"><option value="">Choose…</option><option>Average + Small — Lean in</option><option>Average + Large — Lean in, with a glance</option><option>Precision + Small — Use, then verify</option><option>Precision + Large — Human in the loop</option></select></div></div>
+</section>
 
-        <div class="exercise-card">
-          <div class="exercise-header">
-            <div>
-              <h3>Exercise 1: AI tool test drive</h3>
-              <p style="color: var(--text); font-style: italic;">Compare AI tools on a real workplace task</p>
-            </div>
-            <span class="exercise-duration">40 min</span>
-          </div>
-          <p>Give the same workplace scenario to ChatGPT, Claude, and Gemini. Compare outputs for quality, tone, accuracy, and gaps. Apply the trust tool: where was an average good enough, and where did it need to be exactly right?</p>
-          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <p><strong style="color: var(--primary);">Framework:</strong> AI Task Suitability Spectrum</p>
-            <p><strong style="color: var(--primary);">You'll need:</strong> Accounts on at least 2 AI platforms</p>
-            <p><strong style="color: var(--primary);">Output:</strong> Personal notes on tool strengths and preferences</p>
-          </div>
-        </div>
+<section><span class="timing">EXERCISE 2 · BRIEF · 55 MIN</span>
+<h2>Prompt workshop — pick 2 of 3 scenarios</h2>
+<p><strong>A. Difficult client email:</strong> GreenLeaf Industries says your solid deliverable is "too generic" after a board meeting you were not at. Respond: acknowledge without conceding poor work, propose a 1-hour alignment meeting. Contact: David Chen, VP Operations, 18-month relationship.</p>
+<p><strong>B. Board summary:</strong> Turn a long document (paste one of your own non-confidential documents, or use the pre-reading) into 5 board-ready bullet points with one decision requested.</p>
+<p><strong>C. Status update from raw notes:</strong> Notes: "API vendor late again, now Mar 15. Testing 80% done. Sarah back Monday. Budget 4% over, mostly contractor. Client demo went well." Produce a 200-word update: progress, risks, next steps.</p>
+<label>Scenarios chosen</label><input type="text" data-wb="ex2-chosen" placeholder="e.g. A and C">
+<label>Round 1 — baseline prompt and honest rating of what came back</label><textarea data-wb="ex2-r1"></textarea>
+<label>Round 2 — your RTCF brief</label>
+<div class="row"><div><label>Role</label><textarea class="small" data-wb="ex2-role"></textarea></div>
+<div><label>Task (verb + scope)</label><textarea class="small" data-wb="ex2-task"></textarea></div>
+<div><label>Context (audience, history, stakes, constraints)</label><textarea class="small" data-wb="ex2-context"></textarea></div>
+<div><label>Format (shape you can paste)</label><textarea class="small" data-wb="ex2-format"></textarea></div></div>
+<label>What improved most from Round 1 to Round 2? Which component did it?</label><textarea class="small" data-wb="ex2-improve"></textarea>
+<label>Round 3 — weaker-model ladder</label>
+<p class="hint">Add one worked example and one explicit constraint ("do not invent…"). Then try the fact-gated guardrail: "Only change your assessment if I give you new facts, and name the fact that changed it." Push back with no new facts. Did it fold or hold?</p>
+<textarea data-wb="ex2-r3"></textarea>
+<label>Save to your prompt library (the prompt you would reuse verbatim)</label><textarea data-wb="ex2-library"></textarea>
+</section>
 
-        <div class="exercise-card">
-          <div class="exercise-header">
-            <div>
-              <h3>Exercise 2: Prompt engineering workshop</h3>
-              <p style="color: var(--text); font-style: italic;">Build prompting skills through 3 progressive rounds</p>
-            </div>
-            <span class="exercise-duration">60 min</span>
-          </div>
-          <p>Choose from 6 workplace scenarios. Round 1: write a naive prompt and see what you get. Round 2: brief the AI properly with the RTCF framework and compare. Round 3: advanced techniques, chain-of-thought, iteration, multiple versions, and the fact-gated guardrail that stops the AI folding just because you pushed back.</p>
-          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <p><strong style="color: var(--primary);">Framework:</strong> RTCF Prompt Framework</p>
-            <p><strong style="color: var(--primary);">Scenarios:</strong> Difficult client email, policy summary, status update, interview questions, decision analysis, process document</p>
-            <p><strong style="color: var(--primary);">Output:</strong> Personal prompt template library</p>
-          </div>
-        </div>
+<section><span class="timing">EXERCISE 3 · VERIFY · 50 MIN</span>
+<h2>Data challenge — RetailFlow</h2>
+<p><a href="data/retailflow-customer-service-data.csv" download>Download the dataset (260 tickets, Jul–Dec 2024)</a>. Start a <strong>fresh chat</strong>. Orientation first: ask the tool to describe rows, columns, and date range — then check that description yourself.</p>
+<label>Q1. Top 3 drivers of dissatisfaction (with the figures you verified)</label><textarea data-wb="ex3-q1"></textarea>
+<label>Q2. When do response times blow out?</label><textarea data-wb="ex3-q2"></textarea>
+<label>Verification Challenge — verdict each claim against the data, not its tone</label>
+<p class="hint">A: "Email is about 3x slower than live chat." &nbsp; B: "Account Issues has the lowest satisfaction and is the most complex category." &nbsp; C: "Sunday response times are more than double the overall average." At least one is wrong.</p>
+<div class="row"><div><label>Claim A verdict + evidence</label><textarea class="small" data-wb="ex3-a"></textarea></div>
+<div><label>Claim B verdict + evidence</label><textarea class="small" data-wb="ex3-b"></textarea></div></div>
+<label>Claim C verdict + evidence</label><textarea class="small" data-wb="ex3-c"></textarea>
+<label>Q3. Your one-page brief to Karen (recommendations built only on verified findings)</label><textarea data-wb="ex3-brief"></textarea>
+</section>
 
-        <div class="exercise-card">
-          <div class="exercise-header">
-            <div>
-              <h3>Exercise 3: Data analysis challenge</h3>
-              <p style="color: var(--text); font-style: italic;">Analyse real data with AI and produce a business brief</p>
-            </div>
-            <span class="exercise-duration">45 min</span>
-          </div>
-          <p>Upload a RetailFlow customer service dataset (260 tickets, 6 months) to your AI tool. Answer three business questions, then take the Verification Challenge: three claims about the data, at least one is wrong, one is stated wrong. Check them against the data, not the AI's confidence. Produce a one-page brief with every load-bearing number verified.</p>
-          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <p><strong style="color: var(--primary);">Framework:</strong> AI-Assisted Analysis Workflow</p>
-            <p><strong style="color: var(--primary);">Data:</strong> RetailFlow customer service CSV (provided)</p>
-            <p><strong style="color: var(--primary);">Output:</strong> One-page insight brief for the customer service manager</p>
-          </div>
-        </div>
+<section><span class="timing">EXERCISE 4 · REDESIGN · 40 MIN</span>
+<h2>Your AI-enhanced workflow</h2>
+<label>My task (weekly, 30+ minutes) and current total time</label><input type="text" data-wb="ex4-task">
+<label>Map and classify (one row per step)</label>
+<table><thead><tr><th>Step — what I do</th><th>Min</th><th>Type: Automate / Assist / Generate / Analyse / Human-Only</th><th>Trust corner</th></tr></thead><tbody id="wfrows"></tbody></table>
+<p class="hint"><button type="button" class="btn-primary" id="addrow">Add step</button></p>
+<label>The redesigned workflow (narrative)</label><textarea data-wb="ex4-redesign"></textarea>
+<label>Live test: which step did you run, what came back, what did you verify?</label><textarea data-wb="ex4-test"></textarea>
+<label>Estimated new total time, and what stays deliberately human</label><textarea class="small" data-wb="ex4-human"></textarea>
+</section>
 
-        <div class="exercise-card">
-          <div class="exercise-header">
-            <div>
-              <h3>Exercise 4: Your AI-enhanced workflow</h3>
-              <p style="color: var(--text); font-style: italic;">Redesign a real task from your own job</p>
-            </div>
-            <span class="exercise-duration">40 min</span>
-          </div>
-          <p>Pick a task you do at least weekly. Map every step. Classify each step using the Opportunity Finder. Redesign the workflow with AI at the steps where it adds value. Test one step live.</p>
-          <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">
-            <p><strong style="color: var(--primary);">Framework:</strong> AI Opportunity Finder</p>
-            <p><strong style="color: var(--primary);">You'll need:</strong> A real recurring task from your job</p>
-            <p><strong style="color: var(--primary);">Output:</strong> Before/after workflow diagram with at least one tested step</p>
-          </div>
-        </div>
+<section><span class="timing">CLOSE · 15 MIN</span>
+<h2>Personal action plan</h2>
+<p>Decide. Practise. Trade. Revisit. Be specific: task, tool, day.</p>
+<label>This week — Practise (one compare drill, one library prompt)</label><textarea class="small" data-wb="ap-week"></textarea>
+<label>This month — Trade (one workflow redesign, one real Analysis Workflow)</label><textarea class="small" data-wb="ap-month"></textarea>
+<label>This quarter — Decide + Revisit (what stays human; date of your revisit)</label><textarea class="small" data-wb="ap-quarter"></textarea>
+<label>My top takeaway from today</label><textarea class="small" data-wb="ap-takeaway"></textarea>
+</section>
 
-      </div>
-
-      <div style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); padding: 2rem; border-radius: 12px; margin: 3rem 0; text-align: center;">
-        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--white);">The progression is deliberate</h3>
-        <p style="opacity: 0.95;">Exercise 1 explores. Exercise 2 builds skill. Exercise 3 applies skill to data. Exercise 4 applies everything to your real work. By the end, you've moved from "trying AI" to "using AI at work."</p>
-      </div>
-
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p><strong>Practical AI for Professionals Workshop</strong></p>
-      <p style="margin-top: 0.5rem; opacity: 0.8;">Executive Education | Curtin Business School</p>
-      <p style="margin-top: 1rem;"><a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></p>
-    </div>
-  </footer>
-</body>
-</html>
+<div class="savebar">
+<button type="button" class="btn-primary" id="exportmd">Export workbook (.md)</button>
+<button type="button" class="btn-primary" onclick="window.print()">Print / save as PDF</button>
+<button type="button" class="btn-primary" id="resetwb">Clear my answers</button>
+<span id="savestate">Not saved yet</span>
+</div>
+</main>
+<script>
+const KEY='human-edge-workbook-v1';
+function rows(n){const tb=document.getElementById('wfrows');for(let i=0;i<n;i++){const tr=document.createElement('tr');tr.innerHTML='<td><input type="text" data-wb="wf-step-'+tb.children.length+'"></td><td><input type="text" data-wb="wf-min-'+tb.children.length+'" size="4"></td><td><input type="text" data-wb="wf-type-'+tb.children.length+'"></td><td><input type="text" data-wb="wf-trust-'+tb.children.length+'"></td>';tb.appendChild(tr);}bind();}
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}}
+function bind(){document.querySelectorAll('[data-wb]').forEach(function(el){if(el.dataset.bound)return;el.dataset.bound='1';el.addEventListener('input',save);el.addEventListener('change',save);});}
+function save(){const d={};document.querySelectorAll('[data-wb]').forEach(function(el){d[el.dataset.wb]=el.value;});d._rows=document.getElementById('wfrows').children.length;try{localStorage.setItem(KEY,JSON.stringify(d));document.getElementById('savestate').textContent='Saved in this browser · '+new Date().toLocaleTimeString();}catch(e){document.getElementById('savestate').textContent='Could not save (private browsing?) — export now.';}}
+const saved=load();rows(saved._rows||5);
+document.querySelectorAll('[data-wb]').forEach(function(el){if(saved[el.dataset.wb]!==undefined)el.value=saved[el.dataset.wb];});
+if(Object.keys(saved).length){document.getElementById('savestate').textContent='Restored earlier answers from this browser.';}
+document.getElementById('addrow').onclick=function(){rows(1);save();};
+document.getElementById('resetwb').onclick=function(){if(confirm('Clear all workbook answers on this device?')){localStorage.removeItem(KEY);location.reload();}};
+document.getElementById('exportmd').onclick=function(){
+ const d=load();let out='# The Human Edge — my workbook\n\n';
+ document.querySelectorAll('.wb section').forEach(function(sec){const h=sec.querySelector('h2');out+='## '+(h?h.textContent:'Section')+'\n\n';sec.querySelectorAll('[data-wb]').forEach(function(el){const lab=el.closest('td')?'':(function(){let p=el.previousElementSibling;while(p&&p.tagName!=='LABEL')p=p.previousElementSibling;return p?p.textContent:'';})();const v=(el.value||'').trim();if(v)out+=(lab?'**'+lab+':** ':'')+v+'\n\n';});});
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([out],{type:'text/markdown'}));a.download='human-edge-workbook.md';a.click();URL.revokeObjectURL(a.href);};
+bind();
+</script>
+</body></html>

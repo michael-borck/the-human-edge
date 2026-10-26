@@ -1,6 +1,6 @@
 # Facilitator Guide, Start Here
 
-## Practical AI for Professionals Masterclass
+## The Human Edge: Using and Delivering AI with Judgement Masterclass
 
 **Read this first.** This is your master guide to delivering the one-day workshop. It covers the teaching philosophy, full timeline, preparation checklists, common situations, and materials list. Individual exercise guides provide the detailed facilitation scripts.
 
@@ -10,9 +10,9 @@
 
 | When | What to Do |
 |------|-----------|
-| **1 week before** | Read this guide end-to-end. Read all 4 exercise guides. Check technology. Reply to the Exec Ed logistics email (printing, stationery, request pre-reading + tech check go in the 72-hour reminder, see `reply-to-nicole-logistics.md`). |
+| **1 week before** | Read this guide end-to-end. Read all 4 exercise guides. Check technology. Reply to the Exec Ed logistics email. The course is fully digital now, so no printing and no stationery. Ask for power at each table and wifi that holds 30 people. Wording is in `reply-to-nicole-logistics.md`. |
 | **72 hours before** | Coordinator reminder goes out with pre-reading + BYOD tech check (laptop, AI accounts created and tested). |
-| **Day before** | Print materials. Test venue wifi against AI tool access. Set up room. |
+| **Day before** | Nothing to print. Test venue wifi against AI tool access and the companion site. Open `docs/deck.html` once on the presentation machine (caches fonts). Set up room: power board per table. |
 | **Morning of** | Arrive 30 min early. Test projector. Open all AI tools in browser tabs. |
 | **During course** | Follow the timeline below. Open each exercise guide 10 min before that session. |
 
@@ -28,7 +28,7 @@ This is a **hands-on skills workshop**, not a strategic masterclass. The other t
 
 | Exercise | What Participants Learn | The "Aha!" Moment |
 |----------|------------------------|-------------------|
-| **1. AI Tool Test Drive** | AI tools are different from each other, and none are perfect | "These tools give different answers to the same question" |
+| **1. The Compare Drill** | Your judgement vs the convincing average, side by side | "I can name where I beat it, and that is my value" |
 | **2. Prompt Engineering** | The quality of your input determines the quality of your output | "I got dramatically better results just by being more specific" |
 | **3. Data Analysis** | AI can accelerate analysis but needs human verification | "The AI found something real, but it also got things wrong" |
 | **4. Workflow Mapping** | AI fits into specific parts of real work, not all of it | "I can actually see where this saves me time in my job" |
@@ -72,7 +72,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 |------|----------|----------|-----------|
 | 9:00 | 15 min | **Welcome & Introductions** | Facilitate introductions, set expectations |
 | 9:15 | 35 min | **Lecture: What AI Actually Is** | Present Framework 1: AI Task Suitability Spectrum |
-| 9:50 | 40 min | **Exercise 1: AI Tool Test Drive** | Circulate, observe, facilitate debrief |
+| 9:50 | 40 min | **Exercise 1: The Compare Drill** | Circulate, observe, facilitate debrief |
 
 **Key teaching points for the lecture:**
 - AI predicts the next word, it's pattern-matching, not thinking
@@ -83,7 +83,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 - The AI Task Suitability Spectrum: AI-Led → AI-Assisted → Human-Led → Human-Only (which tasks belong with AI; the trust tool then governs how much to trust the output)
 - Hallucination is real and dangerous, AI never says "I don't know"
 
-**Transition to Exercise 1:** "You've heard me talk about what AI can and can't do. Now let's test that. You're about to give three different AI tools the exact same task and see what happens."
+**Transition to Exercise 1:** "You have heard me talk about what AI can and cannot do. Now test it. First your own rough pass, in silence. Then the AI gets the identical task. The gaps between the two are the lesson."
 
 → Open `exercise-1-facilitator-guide.md`
 
@@ -110,7 +110,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 **Live demo suggestion:** Pick Scenario 3 (project status update) from the worksheet. Show a naive prompt and the output, then rewrite it with RTCF live in front of the room. The contrast is immediate and convincing.
 
-**Transition to Exercise 2:** "I just showed you the difference RTCF makes. Now it's your turn. You have 6 workplace scenarios, pick 3 and experience the difference yourself."
+**Transition to Exercise 2:** "You just saw what a brief does. Pick 2 of the 3 workbook scenarios and feel the difference yourself."
 
 → Open `exercise-2-facilitator-guide.md`
 
@@ -197,7 +197,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 > "The template starts with four moves: decide, practise, trade, revisit. This week is practise: one compare drill on a task that matters, your rough pass, then AI's, side by side. This month is trade: redesign one workflow and hand over only what AI has proven on your work. This quarter is decide and revisit: name what must stay human, then check in a few months whether the line has moved. It usually has."
 >
-> *(Idea source for the four moves and the compare habit: "AI Just Broke the Way People Become Experts", d-squared70.github.io — linked from the course site's go-deeper section.)*
+> *(Idea source for the four moves and the compare habit: "AI Just Broke the Way People Become Experts", d-squared70.github.io. The course site links it in the go-deeper section.)*
 
 - Give them 10 minutes of quiet time to fill it in, don't talk over this
 - Ask 2-3 volunteers to share their "this week" commitment
@@ -292,15 +292,11 @@ Seat experienced users with beginners (if you can control seating). Give advance
 
 ## Materials Checklist
 
-### Print (1 per participant unless noted)
+### Digital pack (nothing is printed)
 
-| Material | File | Quantity |
-|----------|------|----------|
-| Frameworks Reference Sheet | `participant-materials/frameworks-reference-sheet.md` | 1 per person |
-| Prompt Engineering Worksheet | `activities/prompt-engineering-worksheet.md` | 1 per person |
-| Data Analysis Worksheet | `activities/data-analysis-worksheet.md` | 1 per person |
-| Workflow Mapping Template | `activities/workflow-mapping-template.md` | 1 per person |
-| Personal Action Plan | `participant-materials/personal-action-plan-template.md` | 1 per person |
+- Open the companion site on the projector at the start. The title slide carries the address. It holds the deck, the workbook with every worksheet and the action plan, the frameworks reference, and the dataset download.
+- The workbook saves in each person's browser as they type and exports to a markdown file or a PDF. Test the export yourself the day before. It is the one failure you cannot fix live.
+- The room needs a power board at each table, wifi tested with about 30 AI sessions running, and two spare laptops if you can get them. Skip the butchers paper and post-its. Work leaves on participants' laptops, not on a wall. Scrap paper is fine for thinking. Nobody collects it.
 
 ### Digital (distribute or make accessible)
 
@@ -319,7 +315,7 @@ Seat experienced users with beginners (if you can control seating). Give advance
 | Exercise 3 guide | `exercise-3-facilitator-guide.md` | 1:35 PM |
 | Exercise 4 guide | `exercise-4-facilitator-guide.md` | 3:10 PM |
 | Answer keys | `answer-keys.md` | Reference throughout, incl. Verification Challenge verdicts |
-| Exec Ed logistics reply | `reply-to-nicole-logistics.md` | 1 week before (printing, stationery, 72h reminder wording) |
+| Exec Ed logistics reply | `reply-to-nicole-logistics.md` | 1 week before (digital logistics: power, wifi, 72h reminder wording) |
 | Ticket triage demo kit | `retailflow-triage-demo/` | Session 4, optional 3-min demo (skill file, script, sample tickets) |
 
 ### Room Setup
@@ -362,4 +358,4 @@ By end of day, you should observe:
 
 ---
 
-**You're ready. Read the exercise guides, print the materials, test the tech, and trust the design. The exercises do the teaching, you guide the conversation.**
+**You're ready. Read the exercise guides, test the tech and the workbook export, and trust the design. The exercises do the teaching, you guide the conversation.**
