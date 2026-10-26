@@ -3,7 +3,7 @@ title: "Workbook"
 subtitle: "The Human Edge: using and delivering AI with judgement"
 ---
 
-Use this workbook on your laptop (Word version) or on paper (PDF). Everything you write here is yours to keep: your prompt library, your redesigned workflow and your action plan. Copyable prompts, the scenario cards and the data file are on the course site: **michael-borck.github.io/ai-in-practice**.
+Use this workbook on your laptop (Word version) or on paper (PDF). Everything you write here is yours to keep: your prompt library, your delivery plan and your action plan. Copyable prompts, the scenario cards and the data file are on the course site: **michael-borck.github.io/ai-in-practice**.
 
 | Session | Time | Tool | Exercises |
 |---|---|---|---|
@@ -43,7 +43,7 @@ Paste this prompt, unedited, into two different AI tools (or two models in the s
 
 **Three tasks from your own week.**
 
-| Task | Exact or average? | Small or large stakes? | Corner (A–D) | The check it needs |
+| Task | Precise or average? | Small or large stakes? | Corner (A to D) | The check it needs |
 |---|---|---|---|---|
 | | | | | |
 | | | | | |
@@ -138,9 +138,9 @@ Karen manages customer service at RetailFlow. You have 260 tickets from July to 
 
 | Claim | Verdict | Evidence from the data |
 |---|---|---|
-| **A** "Email is roughly three times slower than Live Chat." | ☐ Verified ☐ Overstated ☐ Refuted | |
-| **B** "Account Issues has the lowest satisfaction of any category, which makes sense, because account problems are the most complex to resolve." | ☐ Verified ☐ Overstated ☐ Refuted | |
-| **C** "Sunday response times are more than double the overall average." | ☐ Verified ☐ Overstated ☐ Refuted | |
+| **A** "Email is roughly three times slower than Live Chat." | ☐ Verified ☐ Overstated ☐ Refuted ☐ Can't tell yet | |
+| **B** "Account Issues has the lowest satisfaction of any category, which makes sense, because account problems are the most complex to resolve." | ☐ Verified ☐ Overstated ☐ Refuted ☐ Can't tell yet | |
+| **C** "Sunday response times are more than double the overall average." | ☐ Verified ☐ Overstated ☐ Refuted ☐ Can't tell yet | |
 
 **Which claim would have done the most damage if forwarded to Karen unchecked? Why?**
 
@@ -148,7 +148,7 @@ Karen manages customer service at RetailFlow. You have 260 tickets from July to 
 
 <div class="pb"></div>
 
-# Exercise 7 · My delivery plan
+# Exercise 7 · Plan one delivery
 
 **The workflow** (weekly, 30 minutes or more): ____________________________________
 
@@ -175,7 +175,7 @@ Who leads: AI leads · AI assists · You lead · Human only. Corners: A light re
 
 **My 30-day gate** (date: ________)
 
-| | I'll do this if… |
+| | I'll do this if ... |
 |---|---|
 | **Scale** (hand it over for good) | |
 | **Pivot** (change the brief, step or who leads) | |
@@ -183,7 +183,7 @@ Who leads: AI leads · AI assists · You lead · Human only. Corners: A light re
 
 <div class="pb"></div>
 
-# Exercise 8 · My action plan
+# Exercise 8 · Your action plan
 
 One line each. Specific task, specific tool, specific day.
 

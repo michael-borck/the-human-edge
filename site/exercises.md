@@ -111,7 +111,7 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 
 [15 min · pairs, then card vote]{.mins}
 
-Three claims about the RetailFlow data are circulating. At least one is wrong. Check each against the data, not against how confident it sounds. Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it).
+Three claims about the RetailFlow data are circulating. At least one is wrong. Check each against the data, not against how confident it sounds. Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it.
 
 - **A.** "Email is roughly three times slower than Live Chat."
 - **B.** "Account Issues has the lowest satisfaction of any category, which makes sense, because account problems are the most complex to resolve."
@@ -121,7 +121,7 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 :::
 
 ::: {.ex .s4}
-## Exercise 7 · Plan the delivery of one real workflow {#ex7}
+## Exercise 7 · Plan one delivery {#ex7}
 
 [35 min · solo, then tables]{.mins}
 

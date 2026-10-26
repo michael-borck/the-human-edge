@@ -64,7 +64,10 @@ Fill in the four parts, add an upgrade if the output is weak, and attach the che
       <label><input type="checkbox" id="u-done"><span>+ Done <small>Say what done looks like, and allow it to be unsure.</small></span></label>
       <label><input type="checkbox" id="u-q"><span>+ Questions <small>Let it ask you first.</small></span></label>
       <label><input type="checkbox" id="u-steps"><span>+ Steps <small>Split the job.</small></span></label>
-      <label><input type="checkbox" id="u-guard"><span>+ Guardrail <small>Only change its view for a new fact.</small></span></label>
+    </div>
+    <label>Push back <span>keep it honest</span></label>
+    <div class="ups">
+      <label><input type="checkbox" id="u-guard"><span>Guardrail <small>Only change its view for a new fact, and name it.</small></span></label>
     </div>
     <label for="k">The check it needs <span>trust tool corner</span></label>
     <select id="k">

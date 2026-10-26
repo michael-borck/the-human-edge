@@ -92,7 +92,7 @@ The four tools, delivering with checkpoints, safeguards and practice, in ten pag
 
 ### Starter prompts
 
-Sixteen prompts for briefing, pushing back, checking and delivering. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
+Seventeen prompts for briefing, pushing back, checking and delivering. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
 :::
 
 ::: card
@@ -132,7 +132,7 @@ The Human Edge is one of two Curtin Executive Education AI masterclasses. Each s
 
 ### The Human Edge
 
-*Using and delivering AI with judgement.* When everyone has the same tools, where does my edge live? Personal fluency in the morning; delivering AI into real work in the afternoon.
+*Using and delivering AI with judgement.* When everyone has the same tools, where does my edge live? Judging and briefing in the morning; checking and delivering in the afternoon.
 :::
 
 ::: card

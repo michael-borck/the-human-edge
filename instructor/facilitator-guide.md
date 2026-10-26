@@ -53,7 +53,7 @@ The close covers why deliberate practice matters now that routine work goes to A
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
 
-**Slide 23**, the verification answers, exists only in the repo copy. The public deck and the PDF skip it.
+**Slide 24**, the verification answers, exists only in the repo copy. The public deck and the PDF skip it.
 
 The deck uses local fonts, so it runs offline.
 
@@ -61,37 +61,37 @@ The deck uses local fonts, so it runs offline.
 
 | Time | Slides | What happens | Min |
 |---|---|---|---|
-| **9:00** | 1–2 | Title fade, the day, show of hands or ClassPulse poll, tool check | 10 |
-| 9:10 | 3–5 | The convincing average; the alarm; Gell-Mann amnesia | 12 |
-| 9:22 | 6 | **Exercise 1** · Same prompt, two tools | 20 |
-| 9:42 | 7–9 | Trust tool: two questions, four corners, check from outside | 13 |
-| 9:55 | 10 | **Exercise 2** · Place it (card vote, game, own tasks) | 25 |
-| 10:20 | 11 | Three rules before you paste; questions | 10 |
+| **9:00** | 1–2 | Title fade, the day, show of hands or ClassPulse poll, tool check | 8 |
+| 9:08 | 3–6 | The bigger pie; the convincing average; the alarm; Gell-Mann amnesia | 14 |
+| 9:22 | 7 | **Exercise 1** · Same prompt, two tools | 20 |
+| 9:42 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
+| 9:55 | 11 | **Exercise 2** · Place it (card vote, game, own tasks) | 25 |
+| 10:20 | 12 | Three rules before you paste; questions | 10 |
 | 10:30 | | Morning tea | 30 |
-| **11:00** | 12–14 | Brief like a colleague; RTCF; live before/after demo | 15 |
-| 11:15 | 15 | **Exercise 3** · Brief it | 25 |
-| 11:40 | 16–17 | Four upgrades; push back three ways | 10 |
-| 11:50 | 18 | **Exercise 4** · Upgrade and save (library) | 25 |
+| **11:00** | 13–15 | Brief like a colleague; RTCF; live before/after demo | 15 |
+| 11:15 | 16 | **Exercise 3** · Brief it | 25 |
+| 11:40 | 17–18 | Four upgrades; push back three ways | 10 |
+| 11:50 | 19 | **Exercise 4** · Upgrade and save (library) | 25 |
 | 12:15 | | Debrief; download the CSV before lunch | 15 |
 | 12:30 | | Lunch | 45 |
-| **1:15** | 19–20 | Check loop; five failure modes and VET | 10 |
-| 1:25 | 21 | **Exercise 5** · RetailFlow | 30 |
-| 1:55 | 22 | **Exercise 6** · Verification challenge (pairs, then card vote) | 15 |
-| 2:10 | 23 | Reveal; full debrief of Exercise 5 | 20 |
+| **1:15** | 20–21 | Check loop; five failure modes and VET | 10 |
+| 1:25 | 22 | **Exercise 5** · RetailFlow | 30 |
+| 1:55 | 23 | **Exercise 6** · Verification challenge (pairs, then card vote) | 15 |
+| 2:10 | 24 | Reveal; full debrief of Exercise 5 | 20 |
 | 2:30 | | Afternoon tea | 30 |
-| **3:00** | 24–27 | Opportunity Finder (spot, assign, prioritise); design the human in | 12 |
-| 3:12 | 28 | **Exercise 7** · Plan the delivery of one workflow | 35 |
-| 3:47 | 29–30 | The 30-day gate; agents, harnesses, skills | 6 |
-| 3:53 | 31–34 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
-| 4:01 | 35 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
-| 4:13 | 36 | Close, the companion masterclass, feedback form | 17 |
+| **3:00** | 25–28 | Opportunity Finder (spot, assign, prioritise); design the human in | 12 |
+| 3:12 | 29 | **Exercise 7** · Plan the delivery of one workflow | 35 |
+| 3:47 | 30–31 | The 30-day gate; agents, harnesses, skills | 6 |
+| 3:53 | 32–35 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
+| 4:01 | 36 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
+| 4:13 | 37 | Close, the companion masterclass, feedback form | 17 |
 | 4:30 | | Finish | |
 
 **If you're running late,** cut in this order:
-1. Slide 33 (the corners move): say it in one sentence.
-2. The agents slide (30).
+1. Slide 34 (the corners move): say it in one sentence.
+2. The agents slide (31).
 3. The Exercise 4 push-back step.
-4. The "if you lead people" slide (34).
+4. The "if you lead people" slide (35).
 
 Never cut the verification challenge, the delivery plan or the action plan.
 
@@ -101,7 +101,9 @@ Never cut the verification challenge, the delivery plan or the action plan.
 
 **The point:** fluent isn't the same as correct. AI's errors don't trigger the alarm you use on human work, and you trust it most where you know least. The trust tool turns "can I trust this?" into a ten-second placement.
 
-**Gell-Mann amnesia (slide 5).** The term is Michael Crichton's, from a 2002 talk. He named it after the physicist Murray Gell-Mann; Gell-Mann didn't coin it himself. Note that the AI for Founders site currently says otherwise.
+**The bigger pie (slide 3).** Thirty seconds of bearings: AI, machine learning, deep learning, generative AI, LLMs. The point is that the four tools apply to any AI output, including the machine learning already running in participants' organisations. If someone asks "is our fraud model AI?", yes, and it goes on the trust tool too.
+
+**Gell-Mann amnesia (slide 6).** The term is Michael Crichton's, from a 2002 talk. He named it after the physicist Murray Gell-Mann; Gell-Mann didn't coin it himself. Note that the AI for Founders site currently says otherwise.
 
 **Exercise 1.** Look for:
 - different assumptions (firm vs caring)
@@ -133,7 +135,7 @@ Spares:
 
 **The point:** prompting is briefing a capable new colleague, and Context does most of the work. Be honest that Role matters least on current models.
 
-**Live demo (slide 14).** Run the before prompt, then the after prompt in a fresh chat, and ask "which would you send?" If the Wi-Fi fails, describe both outputs and go straight to Exercise 3.
+**Live demo (slide 15).** Run the before prompt, then the after prompt in a fresh chat, and ask "which would you send?" If the Wi-Fi fails, describe both outputs and go straight to Exercise 3.
 
 **Exercise 3 coaching.**
 - Round 2 barely different from Round 1? Ask "what would you tell a new hire?"
@@ -141,7 +143,7 @@ Spares:
 - Good Round 2 prompts are four to eight sentences.
 - Push people towards real work; the scenario cards are a fallback.
 
-**Push back (slide 17).** Three moves: the fact-gated guardrail, devil's advocate, and board of directors. In Exercise 4, everyone tries at least one.
+**Push back (slide 18).** Three moves: the fact-gated guardrail, devil's advocate, and board of directors. In Exercise 4, everyone tries at least one.
 
 **Exercise 4.** The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library.
 
@@ -149,7 +151,7 @@ Spares:
 
 **The point:** fast analysis, slow trust. Verification comes from outside the tool.
 
-**VET (slide 20)** is for claims people can't check against their own data:
+**VET (slide 21)** is for claims people can't check against their own data:
 - **Verify** the source independently.
 - **Explain** it back in your own words.
 - **Test** the edges.
@@ -158,7 +160,7 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 
 **Exercise 5.** If uploads are blocked, most tools accept pasted CSV text; the file is small. Watch for people skipping "describe the data first".
 
-**Exercise 6.** Give pairs 8 minutes to check the claims, then run the card vote one claim at a time (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 23, one claim per click. Expect B to fool the most people and C to split the room.
+**Exercise 6.** Give pairs 8 minutes to check the claims, then run the card vote one claim at a time (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 24, one claim per click. Expect B to fool the most people and C to split the room.
 
 ## Answer key: RetailFlow
 
@@ -212,27 +214,27 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **The point:** treat one redesigned workflow as a small AI project, and design the human checkpoints in from the start. Then keep practising on purpose, because routine work no longer trains you for free.
 
-**Design the human in (slide 27).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check.
+**Design the human in (slide 28).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check.
 
 **Exercise 7.**
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
 - The Map my workflow and Pre-mortem starter prompts help anyone who's stuck.
 
-**The gate (slide 29).** Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
+**The gate (slide 30).** Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
-**The evidence (slide 31).** Lead with Australia and keep it balanced:
+**The evidence (slide 32).** Lead with Australia and keep it balanced:
 - **DEWR**, Office of the Chief Economist, *AI and employment in Australia*, July 2026. No broad AI-driven upheaval, and youth outcomes mostly held up. The occupations most exposed to AI automation have grown more slowly. The authors call this suggestive, not definitive.
 - **Jobs and Skills Australia**, *Generative AI Capacity Study*, 2025. Some employers shifted hiring towards experienced staff. The ReadyTech quote comes from this study via ACS Information Age, 15 September 2025. Entry-level roles haven't declined economy-wide; JSA says to monitor closely.
 - **Stanford**, Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine?", revised August 2026. Treat it as the US leading indicator: under-25s in AI-exposed jobs are 19% below trend, mostly through fewer hires.
 
 The message is fewer junior hires, not mass replacement.
 
-**Practice (slide 32).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
+**Practice (slide 33).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
 **Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
 
-**Optional agent demo (slide 30).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky.
+**Optional agent demo (slide 31).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky.
 
 ## What you'll hear, and how to respond
 
@@ -249,14 +251,14 @@ The message is fewer junior hires, not mass replacement.
 
 AI changes fast. Check these the week before; most take a minute.
 
-- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 31, the field guide's practice page and these notes.
+- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 32, the field guide's practice page and these notes.
 - [ ] **Jobs and Skills Australia**: any newer AI transition release?
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
-- [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 11, the field guide and the pre-reading speak in general terms; make sure that's still true.
-- [ ] **Product names** in "Before the day" and slide 30.
+- [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
+- [ ] **Product names** in "Before the day" and slide 31.
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse session** set up, if you're using it.
-- [ ] **Feedback form** link for this run (slide 36 notes).
+- [ ] **Feedback form** link for this run (slide 37 notes).
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day

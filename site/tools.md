@@ -66,7 +66,7 @@ Ask two questions about any output before you act on it.
 
 **Rule of thumb:** lean in where about-right on low stakes is fine; keep a person in charge where exactly-right meets high stakes.
 
-**Check from outside the tool.** Asking the AI "are you sure?" doesn't count: it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. Better models move the corners. They never remove the check.
+**Check from outside the tool.** Asking the AI "are you sure?" doesn't count, because it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. Better models move the corners. They never remove the check.
 
 **Sharp where you know, trusting where you don't.** You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. (Michael Crichton called this Gell-Mann amnesia, after the physicist Murray Gell-Mann.)
 
@@ -87,7 +87,7 @@ Prompting is briefing, not spell-casting. Write the prompt the way you'd brief a
 | **Context** | What does it need to know? | 18-month client. Their board shifted priorities. I want a meeting, not a rewrite. |
 | **Format** | What should it look like? | Email. Acknowledge, explain, propose, close. |
 
-Context does most of the work: it's the only part the tool can't guess. Role does the least.
+Context does most of the work, because it's the only part the tool can't guess. Role does the least.
 
 **Still weak? Add one upgrade** before you rewrite from scratch. They help smaller, older and free-tier models the most.
 

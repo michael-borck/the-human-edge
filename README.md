@@ -1,6 +1,6 @@
 # The Human Edge: using and delivering AI with judgement
 
-Materials and companion site for a one-day Curtin Executive Education masterclass. It was first marketed as *AI for professionals: building everyday capability*; the companion masterclass is *AI in Strategy: Choosing Where to Invest*.
+Materials and companion site for a one-day Curtin Executive Education masterclass. It was first marketed as *AI for professionals: building everyday capability*; the companion masterclass is *AI in Strategy: Choosing where to invest*.
 
 **Live site:** https://michael-borck.github.io/ai-in-practice/
 
