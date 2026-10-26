@@ -122,7 +122,34 @@ g.st{transform-box:fill-box}
   <aside class="notes">From The Broken Ladder. For a century the grunt work trained juniors for free. AI takes the grunt work first, so practice becomes a choice. Hold the full argument for the close; plant it here in two minutes. Spot each row with space.</aside>
 </section>
 
-<!-- 3 CONVINCING AVERAGE -->
+<!-- 3 AI PIE -->
+<section class="slide">
+  <div class="k">JUDGE &middot; THE WIDER MAP, IN 90 SECONDS</div>
+  <div class="t">GenAI is the slice you can talk to. <em>It is not the whole pie.</em></div>
+  <div class="body"><div class="cols">
+    <div style="border:1px solid var(--hair);border-radius:14px;padding:14px;background:rgba(236,231,219,.03)">
+      <span class="tag" style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--ink)">AI — PERCEIVE · PREDICT · RECOMMEND · GENERATE</span>
+      <div style="border:1px solid var(--hair);border-radius:12px;padding:12px;margin-top:10px;background:var(--card)">
+        <span style="font-size:15px;color:var(--ink)"><strong>Machine learning</strong> — learns patterns from examples</span>
+        <div style="border:1px solid var(--hair);border-radius:10px;padding:11px;margin-top:9px">
+          <span style="font-size:15px;color:var(--ink)"><strong>Neural networks / deep learning</strong> — layered pattern learning</span>
+          <div style="border:2px solid var(--acc);border-radius:10px;padding:11px;margin-top:9px;background:color-mix(in srgb,var(--acc) 8%,transparent)">
+            <span style="font-size:15px;color:var(--ink)"><strong>Generative AI</strong> — creates text, image, audio, code</span>
+            <div style="border-radius:8px;padding:10px;margin-top:8px;background:var(--acc);color:#0A0C10;font-size:15px"><strong>Large language models</strong> — today's working surface</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:13.5px;margin:10px 0 0">NLP (natural language processing) is the language-task field that cuts across these layers, from classification to conversation.</p>
+    </div>
+    <div>
+      <div class="card"><span class="tag">THE OUTER PIE IS ALREADY AT WORK</span><p>Spam filters, search ranking, fraud alerts, recommendations, demand forecasts, transcription, image recognition.</p></div>
+      <div class="card" style="margin-top:14px;border-color:var(--acc)"><span class="tag">WHY TODAY STARTS WITH GENAI</span><p><strong>Natural language became the interface.</strong> No code, no specialist team: anyone can direct work, inspect output, and redesign a process from a browser.</p><p><strong>The judgement travels. The prompts are the local dialect.</strong> Predictive AI is governed through data quality, false positives, bias, and drift. GenAI adds a new hazard: fluent artefacts that can look finished before they are right.</p></div>
+    </div>
+  </div></div>
+  <aside class="notes">Ninety seconds, no more. Walk outside in. Most AI in their organisations is not a chatbot: it ranks, flags, forecasts, and classifies quietly. Machine learning learns from examples; neural networks are one powerful way to do that; generative models create new content; LLMs are the language-centred members of that family. Modern assistants wrap an LLM with files, search, memory, code, and tools, so do not reduce the whole product to next-token prediction. Scope line to say verbatim: when I say AI today, I usually mean GenAI assistants, because conversation puts them on every desk. The Trust Tool travels to the wider pie; RTCF does not retrain a fraud model.</aside>
+</section>
+
+<!-- 4 CONVINCING AVERAGE -->
 <section class="slide">
   <div class="k">JUDGE &middot; YOUR ALARM</div>
   <div class="t">AI's mistakes <em>don't look like mistakes.</em></div>
@@ -130,8 +157,8 @@ g.st{transform-box:fill-box}
     <div class="card"><span class="tag">WEAK HUMAN WORK ANNOUNCES ITSELF</span><p>Sloppy, gapped, rushed. Your alarm fires. You check.</p><p><strong>A lifetime of calibration — for people.</strong></p></div>
     <div class="card" style="border-color:var(--acc)"><span class="tag">WEAK AI WORK ANNOUNCES NOTHING</span><p>Fluent, complete, confident — a <strong>convincing average</strong>: the most plausible typical answer, whether or not it is right.</p><p><strong>Your alarm stays quiet exactly when you need it most.</strong></p></div>
   </div>
-  <p style="margin-top:20px">AI predicts likely text, not verified truth. It never says "I don't know." And watch the second trap, <strong>Gell-Mann amnesia</strong>: you catch its errors in your own domain, then trust it on the market, the rules, the numbers, the bits you cannot check. Stay most sceptical where you know least.</p></div>
-  <aside class="notes">Merge of the old four slides (good at / bad at / hallucination / convincing average) into one contrast. Pattern tasks: strong. Precision, facts, arithmetic, your context, ethics: weak. Land it and move to the tool.</aside>
+  <p style="margin-top:20px">A GenAI assistant can generate polished output without reliably knowing when it is wrong. And watch the second trap, <strong>Gell-Mann amnesia</strong>: you catch its errors in your own domain, then trust it on the market, the rules, the numbers, the bits you cannot check. Stay most sceptical where you know least.</p></div>
+  <aside class="notes">Merge of the old four slides (good at / bad at / hallucination / convincing average) into one contrast. Pattern tasks are strong. Unchecked precision, source-free facts, hidden calculation steps, missing context, and ethical calls are not. Modern assistants can hedge, search, and use code, which changes the error profile without removing the need to verify. Land it and move to the tool.</aside>
 </section>
 
 <!-- 4 TRUST TOOL -->
@@ -407,10 +434,10 @@ g.st{transform-box:fill-box}
 <script>
 const CH=[
  {label:'JUDGE',acc:'#E8B54D',start:2},
- {label:'BRIEF',acc:'#4FC9A8',start:8},
- {label:'VERIFY',acc:'#E5745A',start:14},
- {label:'REDESIGN',acc:'#7FA8F0',start:18},
- {label:'CLOSE',acc:'#E3DCCB',start:22}
+ {label:'BRIEF',acc:'#4FC9A8',start:9},
+ {label:'VERIFY',acc:'#E5745A',start:15},
+ {label:'REDESIGN',acc:'#7FA8F0',start:19},
+ {label:'CLOSE',acc:'#E3DCCB',start:23}
 ];
 const slides=[...document.querySelectorAll('.slide')];
 document.getElementById('ct').textContent=slides.length;

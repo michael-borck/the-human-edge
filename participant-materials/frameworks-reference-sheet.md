@@ -4,7 +4,7 @@
 
 One spine, four tools. Keep this open during the workshop; export it with your workbook afterwards. There is no printed version — this page is the reference, on the device where the work happens.
 
-Booked as *The Human Edge: Building Everyday Capability*. Delivered as *The Human Edge* — same promised outcomes, judgement made explicit.
+Booked as *AI for Professionals: Building Everyday Capability*. Delivered as *The Human Edge* — same promised outcomes, judgement made explicit.
 
 ---
 

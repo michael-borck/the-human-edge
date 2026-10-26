@@ -1,4 +1,6 @@
-# Exercise 4 — Your AI-Enhanced Workflow (digital workbook: exercises.html)
+# Exercise 4 source summary — Your AI-Enhanced Workflow
+
+Facilitator/source note only. Participants map and test the workflow in the digital workbook (`docs/exercises.html`).
 
 Pick a weekly task of 30+ minutes. Map each step; classify Automate / Assist / Generate / Analyse / Human-Only; plot each step on the Trust Tool; redesign; **test one step live**; share.
 

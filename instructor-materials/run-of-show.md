@@ -7,20 +7,20 @@ Present from `content/deck.html` (presenter copy with notes: N toggles notes, 1 
 | Time | Block | Slides | The move that matters |
 |---|---|---|---|
 | 9:00 | Title, Today, introductions | 1 to 2 | Title strikeout in three beats. Site QR up while you talk. Show of hands A to D (hardly used it, played, most days, built into my work) and pace off the split. Round-the-room names and roles inside this block, fast. |
-| 9:15 | Judge, teach | 3 to 6 | Tuition, your alarm (Gell-Mann), Trust Tool, Spectrum. At 9:35 stop for five minutes in pairs: plot one task from your actual week on the Trust Tool out loud. Hands move before any long talk does. |
-| 9:50 | Exercise 1, compare drill | 7 to 8 | Five silent minutes for their own pass. Nobody opens AI first. Say the IP line before the first paste. |
+| 9:15 | Judge, teach | 3 to 7 | Tuition, the wider AI pie in 90 seconds, your alarm (Gell-Mann), Trust Tool, Spectrum. At 9:35 stop for five minutes in pairs: plot one task from your actual week on the Trust Tool out loud. Hands move before any long talk does. |
+| 9:50 | Exercise 1, compare drill | 8 to 9 | Five silent minutes for their own pass. Nobody opens AI first. Say the IP line before the first paste. |
 | 10:30 | Morning tea |  | Fix account lockouts now, not later. Note beginners for pairing. |
-| 11:00 | Brief, teach | 9 to 12 | Conversation not delegation, RTCF, live before/after on the projector, weaker-model ladder with sycophancy named. |
-| 11:30 | Exercise 2, prompt workshop | 13 to 14 | Two of three scenarios. Rounds 1 to 3, then the voice pass. Library entries start here. |
+| 11:00 | Brief, teach | 10 to 13 | Conversation not delegation, RTCF, live before/after on the projector, weaker-model ladder with sycophancy named. |
+| 11:30 | Exercise 2, prompt workshop | 14 to 15 | Two of three scenarios. Rounds 1 to 3, then the voice pass. Library entries start here. |
 | 12:30 | Lunch |  | Leave one question on screen worth arguing about: which task in your job stays human no matter what? |
-| 1:15 | Verify, teach | 15 to 16 | Precision is never about right. VET it. Then the six steps. |
-| 1:40 | Exercise 3, data challenge | 17 to 18 | Fresh chat. Verification Challenge sits between Q2 and Q3 on purpose. Vote before each verdict reveal. |
+| 1:15 | Verify, teach | 16 to 17 | Precision is never about right. VET it. Then the six steps. |
+| 1:40 | Exercise 3, data challenge | 18 to 19 | Fresh chat. Verification Challenge sits between Q2 and Q3 on purpose. Vote before each verdict reveal. |
 | 2:30 | Afternoon tea |  |  |
-| 3:00 | Redesign, teach | 19 to 21 | Beyond chat plus memory safeguards, Opportunity Finder with sequencing, agents and skills. |
-| 3:20 | Exercise 4, your workflow | 22 | Repeat the IP line for real work, sanitised. One step gets tested live. No exceptions. |
-| 4:00 | Close, ladder and four moves | 23 to 24 | Three minutes only. The full leadership version is project-scale material for future combined runs. Say so in one line. |
-| 4:10 | Action plan | 25 | Ten quiet minutes. Specific task, tool, day. Two volunteers read the week line aloud. |
-| 4:22 | Close | 26 | Workbook export first, feedback QR second, hold the slide until phones go down. |
+| 3:00 | Redesign, teach | 20 to 22 | Beyond chat plus memory safeguards, Opportunity Finder with sequencing, agents and skills. |
+| 3:20 | Exercise 4, your workflow | 23 | Repeat the IP line for real work, sanitised. One step gets tested live. No exceptions. |
+| 4:00 | Close, ladder and four moves | 24 to 25 | Three minutes only. The full leadership version is project-scale material for future combined runs. Say so in one line. |
+| 4:10 | Action plan | 26 | Ten quiet minutes. Specific task, tool, day. Two volunteers read the week line aloud. |
+| 4:22 | Close | 27 | Workbook export first, feedback QR second, hold the slide until phones go down. |
 
 ## The cut plan. Decide now, not on stage
 

@@ -1,4 +1,6 @@
-# Exercise 2 — Prompt Workshop (digital workbook: exercises.html)
+# Exercise 2 source summary — Prompt Workshop
+
+Facilitator/source note only. Participants use the digital workbook (`docs/exercises.html`), which contains the full scenarios and fields.
 
 Pick 2 of 3 scenarios. Work on laptops; the workbook is the worksheet. No paper version.
 

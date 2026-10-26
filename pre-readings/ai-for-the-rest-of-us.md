@@ -1,17 +1,19 @@
-# AI for the Rest of Us: A Practical Introduction
+# AI for the rest of us
+
+Pre-reading for **The Human Edge: Using and Delivering AI with Judgement**
 
 ## Summary
 
 AI tools like ChatGPT, Claude, and Gemini are now freely available to anyone with a browser. They can draft emails, summarise documents, analyse data, write code, and brainstorm ideas, but they also hallucinate facts, miss nuance, and confidently deliver nonsense. This pre-reading gives you the conceptual foundation you need before the workshop: how these tools actually work (pattern-matching, not thinking), what they're reliably good at, where they fall apart, and how to stay safe with company data. The goal isn't to make you an expert, it's to get you comfortable enough that the workshop can focus on building real skills, not explaining basics.
 
-**Reading time:** 20 minutes
-**Key takeaway:** AI tools are powerful pattern-matching assistants, not intelligent colleagues, the better you understand what's actually happening, the better results you'll get.
+**Reading time:** about 25 minutes
+**Key takeaway:** AI assistants are useful pattern-based tools, not accountable colleagues. The better you understand how an answer was produced, the better you can judge how far to trust it.
 
 ---
 
 ## Who This Is For
 
-This is not a reading for executives making investment decisions or project managers leading AI initiatives. This is for **you**: a professional who wants to use AI tools effectively in your daily work.
+This reading is for professionals who want to use AI well in daily work. It stays at desk scale: your own tasks, documents, data, and decisions. Choosing which AI projects to fund belongs to the companion strategy course; applying the same judgement across a delivered project is the direction of future combined Human Edge runs.
 
 You might be:
 - A marketing coordinator who's heard ChatGPT can draft copy
@@ -28,7 +30,7 @@ You might be:
 
 ### The Tools You'll Encounter
 
-When people say "AI" today, they usually mean one of these:
+When people say "AI" today, they often mean a conversational assistant such as one of these. The examples matter less than the pattern, because products and names change quickly:
 
 | Tool | Made By | What It Is |
 |------|---------|------------|
@@ -39,31 +41,44 @@ When people say "AI" today, they usually mean one of these:
 | Notion AI | Notion | AI built into the Notion workspace |
 | Grammarly | Grammarly | AI writing assistant |
 
-These are all built on the same underlying technology: **large language models (LLMs)**.
+Conversational assistants are generally built around a **large language model (LLM)**, often wrapped with file handling, web search, memory, code execution, and other tools. AI built into office or specialist software may use an LLM, another machine-learning model, deterministic rules, or a mixture. Do not assume every feature labelled AI works the same way.
 
 ### How They Actually Work
 
 Here's the most important thing to understand about AI tools:
 
-**They predict the next word.**
+**An LLM generates plausible next tokens.**
 
-That's it. When you type "Write me an email to a client about...", the AI doesn't *understand* your request the way a colleague would. It predicts what words are most likely to come next, based on patterns it learned from billions of pages of text during training.
+A token is a chunk of text. Given your prompt and any supplied material, the model calculates likely continuations from patterns learned in training. Modern assistants may then reason over several steps, search, inspect files, run code, or call tools before answering. That machinery can make output much more useful. It does not make the system an accountable colleague who knows your situation or owns the result.
 
-Think of it as **autocomplete on steroids:**
+Autocomplete is a useful starting analogy, with limits:
 - Your phone's autocomplete predicts one word at a time
-- AI tools predict thousands of words at a time
-- The result often *looks* like understanding, but it's pattern-matching
+- An LLM generates a whole response token by token, conditioned on the prompt, conversation, files, and tool results it can access
+- Fluent output can look like understanding, so judge the evidence and reasoning you can inspect, not the polish
 
 **Why this matters to you:**
-- AI is incredibly good at tasks where patterns exist (writing styles, document formats, data structures)
-- AI is unreliable at tasks requiring genuine understanding (novel reasoning, factual accuracy, nuanced judgment)
+- GenAI is often strong where form and patterns carry the work (writing styles, document formats, transformations)
+- It needs outside checks for current facts, hidden calculations, unfamiliar context, and consequential judgement
 - Your job is to know the difference
 
-### The "Confident Nonsense" Problem
+### The wider AI map
 
-AI tools have a distinctive failure mode: **they never say "I don't know."**
+Generative AI is the slice you can talk to. It is not the whole pie.
 
-Ask a colleague a question they can't answer, and they'll say "I'm not sure, let me check." Ask an AI the same question, and it will give you a confident, well-structured, completely wrong answer.
+- **Artificial intelligence (AI)** is the broad field: systems that perceive, predict, recommend, classify, decide, or generate. Spam filters, search ranking, fraud alerts, forecasts, recommendations, transcription, and image recognition are familiar examples.
+- **Machine learning (ML)** learns patterns from examples rather than relying only on hand-written rules.
+- **Neural networks and deep learning** use layered models to learn representations from data.
+- **Generative AI (GenAI)** creates new text, images, audio, video, or code.
+- **Large language models (LLMs)** are GenAI models centred on language and code. Today's assistants usually wrap an LLM in a wider product.
+- **Natural language processing (NLP)** is the field of language tasks, including classification, translation, extraction, and summarisation. It cuts across the layers rather than sitting neatly inside one.
+
+This course works mainly with GenAI assistants because natural language became the interface. You can direct and review work from a browser without code or a data-science team. The judgement travels to other AI — stakes, evidence, bias, verification, human accountability — but prompts are the local dialect. A predictive model is governed through its data, false-positive and false-negative costs, monitoring, and drift, not by asking it more nicely.
+
+### The "confident nonsense" problem
+
+AI tools have a distinctive failure mode: **they do not reliably know when they do not know.**
+
+A colleague may say "I'm not sure, let me check." An assistant can also hedge or decline, but it may instead give a confident, well-structured, completely wrong answer. Confidence and correctness are not the same signal.
 
 This is called **hallucination**: the AI generates plausible-sounding content that is factually incorrect.
 
@@ -142,26 +157,24 @@ These are tasks where AI tools regularly fail or produce unreliable results:
 **1. Factual Accuracy**
 - AI does not "know" facts the way you do
 - It generates text that *sounds* factual based on patterns
-- Specific numbers, dates, names, and citations are frequently wrong
-- Recent events may be unknown (training data has a cutoff date)
+- Specific numbers, dates, names, and citations can be wrong or fabricated
+- An answer may rely on stale training data, a poor retrieved source, or supplied material read out of context. Ask what source supports each load-bearing claim
 
 **The fix:** Always verify facts, especially numbers and references. Use AI for structure and drafting, not as a source of truth.
 
-**2. Maths and Precise Calculations**
-- AI makes arithmetic errors regularly
-- Complex calculations are unreliable
-- It may round, estimate, or hallucinate numbers
+**2. Hidden calculations**
+- Mental arithmetic inside a language model can go wrong, especially across many steps
+- A model that writes and runs code, calls a calculator, or works in a spreadsheet can be much more reliable, but it can still choose the wrong method, fields, or filters
 - Spreadsheet formulas it writes may contain errors
 
-**The fix:** Use AI to write formulas or set up analysis, then verify the results. Don't trust AI-generated numbers without checking.
+**The fix:** Ask how a number was produced. Prefer a visible calculation or code path you can inspect, then verify the result against the source.
 
-**3. Logical Reasoning**
-- Multi-step logic problems trip AI up
-- It can miss obvious contradictions
-- Complex "if-then" chains become unreliable
-- It may agree with you even when you're wrong
+**3. Long or hidden reasoning**
+- Current models can work through some multi-step problems well
+- They can also miss contradictions, lose constraints, or build a tidy argument on a false premise
+- They may agree with you when pushed. That agreeable fold is called sycophancy
 
-**The fix:** For complex reasoning, break the problem into small steps and verify each one. Don't rely on AI for critical logical deductions.
+**The fix:** Surface assumptions and steps. Test each load-bearing step against evidence. Do not accept a change of assessment unless a new fact justifies it, and ask which fact did.
 
 **4. Understanding Your Specific Context**
 - AI doesn't know your company, your team, your industry norms
@@ -169,7 +182,7 @@ These are tasks where AI tools regularly fail or produce unreliable results:
 - It can't read the room or understand office politics
 - It doesn't know what happened in yesterday's meeting
 
-**The fix:** Provide context explicitly. The more specific information you give, the more relevant the output. This is what prompt engineering is about, and it's the core of the workshop.
+**The fix:** Provide context explicitly. Relevant background, audience, stakes, constraints, and examples usually matter more than clever phrasing. Briefing well is the core of the workshop.
 
 **5. Consistency Across Long Conversations**
 - AI can contradict itself in long conversations
@@ -190,14 +203,14 @@ Chatbots are the most visible AI tools, but AI is increasingly embedded in softw
 **AI in Productivity Software:**
 - Microsoft Copilot in Word, Excel, PowerPoint, Outlook
 - Google Workspace AI in Docs, Sheets, Gmail
-- Notion AI for notes and documentation
-- Canva AI for design
+- Note and document workspaces with drafting and search assistance
+- Design tools with image and layout generation
 
-**AI in Specialist Tools:**
-- Grammarly (writing quality)
-- Otter.ai (meeting transcription)
-- Beautiful.ai (presentation design)
-- Tableau AI (data visualisation)
+**AI in specialist tools:**
+- Meeting transcription and action extraction
+- Writing and presentation assistance
+- Data visualisation and anomaly flagging
+- Customer, finance, HR, and service platforms that classify, draft, or route work
 
 **AI in Automation Platforms:**
 - Zapier (connecting apps with AI steps)
@@ -228,9 +241,9 @@ In the workshop, we'll focus primarily on **chat assistant** and **co-pilot** in
 
 When you type something into an AI tool, you should assume:
 
-- **Free tiers:** Your input may be used to train future models. Don't enter sensitive data.
-- **Paid tiers:** Most providers (OpenAI, Anthropic, Google) have "no training" policies for paid accounts, but read the terms.
-- **Enterprise tiers:** Typically the strongest data protection guarantees.
+- **Consumer and free accounts:** training, retention, memory, and sharing settings vary by product and can change. Check the current settings, not last year's summary.
+- **Work and enterprise accounts:** your organisation's contract and admin settings matter more than the product label. Follow the approved-tool policy.
+- **In every tier:** treat a cloud assistant as someone else's computer unless your organisation has approved that service for that class of data.
 
 **Assistants can also remember you across sessions.** Modern AI assistants keep knowledge about you in up to three separate places: the facts you explicitly asked them to save, the inferences they've drawn from your conversations, and the chat history itself. Deleting a chat does not delete what the assistant learned from it, memory and personalisation settings are managed separately. If an assistant ever starts to feel "too personal", look in its settings for memory, personalisation, or data controls. And for conversations you'd rather it not learn from, use private or temporary chat mode, which doesn't read from or write to memory.
 
@@ -263,10 +276,10 @@ When you type something into an AI tool, you should assume:
 
 This area is evolving rapidly, but the current state:
 
-- **Your prompts:** You own what you write
-- **AI output:** Copyright status is legally unclear in most jurisdictions
-- **Training data:** AI may reproduce patterns from copyrighted material
-- **Practical advice:** Treat AI output as a starting point that you modify and make your own. The more you edit and add your expertise, the more clearly it's your work.
+- **Your input:** you remain responsible for having the right to supply it
+- **AI output:** ownership and copyright protection can depend on jurisdiction, human contribution, and provider terms
+- **Training and source material:** output may resemble or reuse patterns from existing work, so similarity and attribution still need checking
+- **Practical advice:** Treat AI output as a draft. Add your expertise, verify sources, and follow your organisation's policy. Ask a qualified adviser for consequential legal questions.
 
 ---
 
@@ -305,15 +318,15 @@ The best results come from combining AI speed with human judgment:
 
 **The professionals who get the most from AI aren't the ones who ask it to do everything, they're the ones who know exactly which parts to delegate and which to keep.** Everyone has access to the same tools, so generic AI skills are quickly becoming the baseline. The edge is your judgement: knowing what to ask for, when to trust the answer, and where a human must stay in charge. That judgement is the theme of the workshop, and you'll learn a simple grid for it, called the trust tool. If you want a head start, there is a two-minute practice game online: [trusttool.borck.education](https://trusttool.borck.education/).
 
-### It's OK to Be Skeptical
+### Scepticism is useful
 
-Healthy skepticism is an asset with AI tools:
+Healthy scepticism is an asset with AI tools:
 - Question outputs, especially facts and numbers
 - Test claims before relying on them
 - Compare AI suggestions to your own knowledge
 - Start small and build trust gradually
 
-The workshop will help you develop practical judgment about when to trust AI output and when to verify it.
+The workshop will help you develop practical judgement about when to trust AI output and when to verify it.
 
 ---
 
@@ -323,9 +336,9 @@ The workshop will help you develop practical judgment about when to trust AI out
 
 **Set up accounts (10 minutes):**
 
-You'll need active accounts on at least two of these (free tiers are fine):
+Set up **one** of these before the day (a free tier is fine). A second account is a useful backup if setup is quick:
 
-1. **ChatGPT**: [chat.openai.com](https://chat.openai.com)
+1. **ChatGPT**: [chatgpt.com](https://chatgpt.com)
    - Create account with email
    - Free tier is sufficient
 
@@ -373,7 +386,7 @@ The workshop is hands-on. You'll spend most of the day working with AI tools, no
 
 ## Key Takeaways
 
-1. **AI tools predict the next word**: they're pattern-matching engines, not thinking machines. Understanding this changes how you use them.
+1. **LLMs generate plausible next tokens; assistants may add search, files, memory, code, and tools**: they're pattern-matching engines, not thinking machines. Understanding this changes how you use them.
 
 2. **Strong at drafting, weak at facts**: use AI for structure, writing, brainstorming, and formatting. Verify facts, numbers, and references yourself.
 
@@ -385,7 +398,7 @@ The workshop is hands-on. You'll spend most of the day working with AI tools, no
 
 6. **AI is a tool, not a replacement**: the best results come from human expertise combined with AI speed. Know which parts to delegate.
 
-7. **Healthy skepticism is an asset**: question, verify, and test. The professionals who get the most from AI are the ones who know its limits.
+7. **Healthy scepticism is an asset**: question, verify, and test. The professionals who get the most from AI are the ones who know its limits.
 
 8. **Everyone is still figuring this out**: you're not behind. The technology is new and evolving. The workshop will give you practical skills to start using it effectively.
 
@@ -401,10 +414,13 @@ Terms you'll hear in the workshop:
 | **LLM (Large Language Model)** | The technology behind ChatGPT, Claude, Gemini, trained on text to predict words |
 | **Hallucination** | When AI generates confident but incorrect information |
 | **Context window** | How much text the AI can "see" at once (like short-term memory) |
-| **Token** | A chunk of text (roughly 3/4 of a word), how AI measures input/output |
-| **Fine-tuning** | Customising an AI model for a specific use case |
-| **RAG (Retrieval-Augmented Generation)** | Connecting AI to specific documents so it answers from your data |
-| **Prompt engineering** | The skill of writing effective prompts to get good AI output |
+| **Token** | A chunk of text an LLM processes; only a rough guide to words |
+| **Machine learning (ML)** | Software that learns patterns from examples rather than only following hand-written rules |
+| **Neural network / deep learning** | A layered model that learns representations from data |
+| **NLP** | Natural language processing: language tasks such as classification, translation, extraction, and summarisation |
+| **Briefing (prompting)** | Giving an assistant the role, task, context, examples, constraints, and format it needs |
+| **Agent** | A model in a loop with tools that can plan and take steps toward a goal |
+| **Skill** | A reusable plain-text brief a tool loads when a request matches it |
 | **BYOD** | Bring Your Own Device, you'll need your laptop for the workshop |
 | **Generative AI** | AI that creates new content (text, images, code) rather than just classifying or predicting |
 
