@@ -1,6 +1,6 @@
-# AI for professionals: building everyday capability
+# The Human Edge: using and delivering AI with judgement
 
-Materials and companion site for a one-day Curtin Executive Education masterclass, the first course in the AI capability series.
+Materials and companion site for a one-day Curtin Executive Education masterclass. It was first marketed as *AI for professionals: building everyday capability*; the companion masterclass is *AI in Strategy: Choosing Where to Invest*.
 
 **Live site:** https://michael-borck.github.io/ai-in-practice/
 
@@ -13,16 +13,16 @@ Everyone has the same AI tools now, so the edge is judgement. The day runs four 
 | 1 · Judge | 9:00 | Trust tool | How much should I trust this output? | 1 Same prompt, two tools · 2 Place it (card vote and game) |
 | 2 · Brief | 11:00 | RTCF and four upgrades | How do I ask for what I need? | 3 Brief it · 4 Upgrade and save |
 | 3 · Check | 1:15 | Check loop | How do I know it's right? | 5 RetailFlow analysis · 6 Verification challenge |
-| 4 · Redesign | 3:00 | Opportunity Finder (spot, assign, prioritise) | Where does it fit in my week? | 7 Redesign one workflow · 8 Action plan |
+| 4 · Deliver | 3:00 | Opportunity Finder (spot, assign, prioritise), Scale/Pivot/Kill | Where does it fit, and will it work every week? | 7 Plan one delivery · 8 Action plan |
 
-What participants leave with, as marketed: a personal prompt library (Exercise 4), four reusable tools (the field guide), and an action plan for the coming week, month and quarter (Exercise 8).
+What participants leave with: a personal prompt library (Exercise 4), four reusable decision tools (field guide and desk card), a delivery plan for one real workflow with human checkpoints and a 30-day gate (Exercise 7), and an action plan (Exercise 8).
 
 ## Layout
 
 ```
 deck/            The slides: deck.html (with speaker notes), deck.css, deck.js
-handouts/        Field guide and voting cards (HTML, printed to PDF), workbook (Markdown), print.css
-site/            Companion site pages (Markdown, rendered with pandoc)
+handouts/        Field guide, desk card, voting cards (HTML, printed to PDF), workbook (Markdown), print.css
+site/            Companion site pages (Markdown, rendered with pandoc); prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
 data/            RetailFlow customer service dataset (Exercise 5)
 instructor/      Facilitator guide, room-mode spec, optional agent demo kit (not published)
@@ -52,9 +52,16 @@ Open `deck/deck.html` from the repo (not the site): it has the notes and the ans
 
 - **Slides:** edit `deck/deck.html`. Each slide is a `<section>` with `data-ch` (session 0 to 3). Steps reveal with `data-s="1"`, `data-s="2"` and so on. Exercise slides use `class="slide ex"`, `data-min` for the timer, and `data-steps="1"` to switch from instructions to debrief. Speaker notes go in `<aside class="notes">`.
 - **Site:** edit `site/*.md`. Pandoc fenced divs (`::: card`) give the cards and notes.
-- **Handouts:** edit `handouts/field-guide.html`, `handouts/voting-cards.html` or `handouts/workbook.md`.
+- **Handouts:** edit `handouts/field-guide.html`, `handouts/desk-card.html`, `handouts/voting-cards.html`, `handouts/workbook.md` or `site/prompts.md`.
 
 The trust tool's corner names and orientation (precision across, consequences up) match the practice game at trusttool.borck.education. Keep them in step.
+
+## Sources and credits
+
+- Australian evidence: DEWR (2026) *AI and employment in Australia*; Jobs and Skills Australia (2025) *Generative AI Capacity Study*. US: Brynjolfsson, Chandar & Chen (rev. 2026) "Canaries in the Coal Mine?".
+- The "broken ladder" framing of the junior pipeline problem draws on Dylan Davis. Slides and text are original.
+- "Gell-Mann amnesia" is Michael Crichton's term (2002).
+- The trust tool, RTCF and conversation-not-delegation ideas: *Conversation, Not Delegation* (michael-borck.github.io/conversation-not-delegation).
 
 ## Licence
 

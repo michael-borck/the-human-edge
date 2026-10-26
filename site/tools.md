@@ -19,7 +19,7 @@ Each tool answers one question you'll face every time you use AI at work. The fu
 | [1 · Trust tool](#trust-tool) | How much should I trust this output? | Two questions place it in a corner; the corner sets the check. |
 | [2 · RTCF](#rtcf) | How do I ask for what I need? | Brief it like a capable new colleague. Context does most of the work. |
 | [3 · Check loop](#check-loop) | How do I know it's right? | Frame, explore, verify from outside, then say what you checked. |
-| [4 · Opportunity Finder](#opportunity-finder) | Where does AI fit in my week? | Spot the signals, decide who leads each step, start with quick wins. |
+| [4 · Opportunity Finder](#opportunity-finder) | Where does AI fit, and will it work every week? | Spot, assign, prioritise; then deliver with checkpoints and a 30-day gate. |
 
 ## 1 · The trust tool {#trust-tool .s1}
 
@@ -68,6 +68,8 @@ Ask two questions about any output before you act on it.
 
 **Check from outside the tool.** Asking the AI "are you sure?" doesn't count: it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. Better models move the corners. They never remove the check.
 
+**Sharp where you know, trusting where you don't.** You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. (Michael Crichton called this Gell-Mann amnesia, after the physicist Murray Gell-Mann.)
+
 ### Practise it
 
 Ten scenarios from a domain you choose, with an explanation on every card. [Open the game in a new tab](https://trusttool.borck.education/).
@@ -96,7 +98,15 @@ Context does most of the work: it's the only part the tool can't guess. Role doe
 | + Questions | `Before you start, ask me up to five questions.` |
 | + Steps | `Give me an outline only. We'll draft one section at a time.` |
 
-**Agreeable is not honest.** Models are tuned to please. Add the guardrail line: `Only change your assessment if I give you a new fact. Name the fact that changed it.` For an independent read, start a fresh chat.
+**Push back: three ways.** Models are tuned to please, and many fold the moment you disagree.
+
+| Move | Line to add |
+|---|---|
+| Guardrail | `Only change your assessment if I give you a new fact. Name the fact that changed it.` |
+| Devil's advocate | `Don't flatter me. Give me three reasons this fails, and name the assumption it all rests on.` |
+| Board of directors | `Respond as a board: a CFO, a sceptical customer and a frontline manager. One paragraph each, then where they disagree.` |
+
+Long chats drift towards your view. For an independent read, start a fresh chat.
 
 [Build and save prompts with the prompt builder →](prompt-builder.html)
 
@@ -111,6 +121,8 @@ AI makes analysis fast. It doesn't make it trustworthy.
 
 **Five ways a smooth answer goes wrong:** miscounts after filtering; correlation sold as cause; missing rows skipped silently; numbers that can't all be true; detail that isn't in the file.
 
+**VET claims you can't check against your own data.** *Verify* the source yourself. *Explain* it back in your own words; if you can't, you don't understand it yet. *Test* the edges: when, where or for whom would it be wrong?
+
 ## 4 · The Opportunity Finder {#opportunity-finder .s4}
 
 **1 · Spot.** Look for four signals in your week: work you do often the same way (*Automate*); reading, gathering and comparing (*Assist*); writing from a blank page (*Generate*); hunting for meaning in numbers (*Analyse*).
@@ -124,6 +136,19 @@ AI makes analysis fast. It doesn't make it trustworthy.
 
 **3 · Prioritise.** Start with quick wins: high time saved, low effort to set up. Count the checking as effort. Quick wins usually sit in the trust tool's green corner, because they're cheap to check.
 
+### Deliver it: design the human in
+
+A redesigned workflow is a small AI project. Decide four things before you start:
+
+| Move | Decide |
+|---|---|
+| **Scope** | One workflow, one owner, one success measure. Record today's time and quality as the baseline. |
+| **Checkpoints** | Every step in an amber or red corner gets a named person and a specific check. |
+| **People** | Who's affected, who has to agree, who will do the checking. Tell them before you start. |
+| **Gate** | A date, about 30 days out, and the criteria for each call below. |
+
+At the gate: **scale** if it met the measure with a light review; **pivot** if it's close but the checking costs too much; **kill** if it missed or the errors mattered. Killing is a good outcome: you found where the line is, cheaply.
+
 ::: note
-**Keep practising.** Pick one task that matters. Do a rough pass yourself, then ask AI for its version, and compare. Where it beat you shows your weak spot; where you beat it shows its limit. Decide what must stay human, practise there, trade what AI has proven, and revisit every few months. The line moves.
+**Delegate the task. Keep the learning.** Routine work used to teach you while you did it. When AI does it, practice is a choice. Once a week, do a rough pass of a task that matters yourself, then give AI the same brief and compare. Where it beat you is your blind spot; where you beat it is where its output needs your check. And revisit every few months: the corners move as models improve, but the check stays.
 :::

@@ -1,6 +1,6 @@
 ---
 pagetitle: Home
-description: "Companion site for AI for professionals: building everyday capability, a one-day Curtin Executive Education masterclass."
+description: "Companion site for The Human Edge: using and delivering AI with judgement, a one-day Curtin Executive Education masterclass."
 nav-home: true
 wide: true
 ---
@@ -9,17 +9,23 @@ wide: true
 Curtin Executive Education · One-day masterclass
 :::
 
-# AI for professionals: <em>building everyday capability</em>
+```{=html}
+<div class="rename">
+  <div class="was">AI for professionals<small>Building everyday capability</small></div><br>
+  <div class="sticker"><b>The Human Edge</b><span>Using and delivering AI with judgement</span></div>
+  <div class="note2">Same day. Better name.</div>
+</div>
+```
 
 ::: lede
-Everyone in the room has the same AI tools. What sets you apart is knowing what to ask, when to trust the answer, and where a person stays in charge. This site has everything from the day: the tools, the exercises, the data, the prompt builder and the slides.
+Everyone in the room has the same AI tools. What sets you apart is knowing what to ask, when to trust the answer, and where a person stays in charge, at your own desk and when you put AI into real work. This site has everything from the day: the tools, the exercises, the data, the prompts and the slides.
 :::
 
 ::: btns
 [Before the day](before.html)
 [The four tools](tools.html)
 [Exercises](exercises.html)
-[Prompt builder](prompt-builder.html)
+[Starter prompts](prompts.html)
 :::
 
 ## The day
@@ -54,9 +60,9 @@ How do I know it's right? **Check loop.** You leave with an analysis you have ve
 ::: {.card .s4}
 [04 · 3:00]{.lab}
 
-### Redesign
+### Deliver
 
-Where does it fit in my week? **Opportunity Finder.** You leave with a redesigned workflow and an action plan.
+Will it work every week? **Opportunity Finder** and a **30-day gate.** You leave with a delivery plan for one real workflow, and an action plan.
 :::
 ::::::
 
@@ -66,11 +72,27 @@ Where does it fit in my week? **Opportunity Finder.** You leave with a redesigne
 
 :::::: {.cards .two}
 ::: card
+[Pin it up]{.lab}
+
+### Desk card
+
+The four tools on one page. [PDF](downloads/desk-card.pdf)
+:::
+
+::: card
 [Read and keep]{.lab}
 
 ### Field guide
 
-The four tools, the safeguards and the habits, in ten pages. [PDF](downloads/field-guide.pdf)
+The four tools, delivering with checkpoints, safeguards and practice, in ten pages. [PDF](downloads/field-guide.pdf)
+:::
+
+::: card
+[Copy and adapt]{.lab}
+
+### Starter prompts
+
+Sixteen prompts for briefing, pushing back, checking and delivering. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
 :::
 
 ::: card
@@ -78,7 +100,7 @@ The four tools, the safeguards and the habits, in ten pages. [PDF](downloads/fie
 
 ### Workbook
 
-All eight exercises, your prompt library and your action plan. [Word](downloads/workbook.docx) · [PDF](downloads/workbook.pdf)
+All eight exercises, your prompt library, your delivery plan and your action plan. [Word](downloads/workbook.docx) · [PDF](downloads/workbook.pdf)
 :::
 
 ::: card
@@ -100,32 +122,24 @@ The deck as presented, without the exercise answers. [Open](deck/) · [PDF](down
 
 [Facilitators: printable voting cards for Exercises 2 and 6 are [here](downloads/voting-cards.pdf). Print double-sided, flip on the long edge.]{.small}
 
-## The series
+## Two masterclasses
 
-This course is the first of three in Curtin Executive Education's AI capability series. Each can be taken on its own.
+The Human Edge is one of two Curtin Executive Education AI masterclasses. Each stands on its own.
 
-:::::: cards
+:::::: {.cards .two}
 ::: {.card .hi}
-[1 · This course]{.lab}
+[This course]{.lab}
 
-### AI for professionals
+### The Human Edge
 
-How do I use AI well in my own role?
+*Using and delivering AI with judgement.* When everyone has the same tools, where does my edge live? Personal fluency in the morning; delivering AI into real work in the afternoon.
 :::
 
 ::: card
-[2]{.lab}
+[The companion day]{.lab}
 
-### AI to drive business innovation
+### AI in Strategy
 
-Which AI project should we fund?
-:::
-
-::: card
-[3]{.lab}
-
-### AI in leadership and project management
-
-How do I deliver it, and lead the people around it?
+*Choosing where to invest.* Which AI investment is worth real money, and which is a confident-sounding trap? For executives and strategists.
 :::
 ::::::

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starter prompts · The Human Edge</title>
+<meta name="description" content="Copy-and-adapt prompts for briefing,
+pushing back, checking and delivering, each with the check it needs.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">The <span>Human Edge</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html">Before the day</a>
+    <a href="tools.html">The four tools</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="prompts.html" class="on">Starter prompts</a>
+    <a href="prompt-builder.html">Prompt builder</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>Starter prompts</p>
+</div>
+<h1 id="copy-adapt-then-check.">Copy, adapt, <em>then check.</em></h1>
+<div class="lede">
+<p>Sixteen prompts from the day, ready to adapt. Replace the [square
+brackets] with your own detail, which is where your edge goes in. Each
+one notes the trust tool corner its output usually lands in, so you know
+how hard to check it.</p>
+</div>
+<p>Corners: <strong>A</strong> trust with light review ·
+<strong>B</strong> verify the load-bearing bits · <strong>C</strong>
+verify before you ship · <strong>D</strong> human in the loop.</p>
+<h2 id="brief-it">Brief it</h2>
+<h3 id="the-rtcf-brief">1 · The RTCF brief</h3>
+<p><em>Use for any task that matters.</em> Check: depends on the
+task.</p>
+<pre class="text"><code>ROLE: You are [who should write this, e.g. an experienced project manager who writes plainly].
+TASK: [Verb and scope, e.g. Draft a 200-word update for the steering committee].
+CONTEXT: The audience is [who, and what they care about]. The situation is [what happened, what&#39;s at stake]. Good looks like [your standard]. [Paste your notes or material.]
+FORMAT: [Length, structure, tone, e.g. RAG status, three bullets, a risks table, next steps].</code></pre>
+<h3 id="ask-me-first">2 · Ask me first</h3>
+<p><em>Use when you’re not sure what context it needs.</em> Check:
+A.</p>
+<pre class="text"><code>Before you start on [task], ask me up to five questions about anything you&#39;d need to know to do it well. Ask them one at a time and wait for my answer.</code></pre>
+<h3 id="define-done">3 · Define done</h3>
+<p><em>Add to any brief when the output keeps missing.</em> Check: as
+the task.</p>
+<pre class="text"><code>Done means: [length], [structure], using only facts I&#39;ve given you. Mark anything you&#39;re unsure of with [CHECK] rather than guessing.</code></pre>
+<h3 id="match-an-example">4 · Match an example</h3>
+<p><em>The strongest single upgrade.</em> Check: A.</p>
+<pre class="text"><code>Here is an example I liked: [paste]. Match its length, tone and structure for [new task]. Don&#39;t copy its content.</code></pre>
+<h2 id="push-back">Push back</h2>
+<h3 id="guardrail">5 · Guardrail</h3>
+<p><em>Add at the start of any conversation where you want an honest
+assessment.</em> Check: B.</p>
+<pre class="text"><code>Only change your assessment if I give you a new fact. If you do change it, name the fact that changed it.</code></pre>
+<h3 id="devils-advocate">6 · Devil’s advocate</h3>
+<p><em>Use on a plan, a proposal or an idea you like too much.</em>
+Check: B.</p>
+<pre class="text"><code>Don&#39;t flatter me. Here is my [plan / proposal / idea]: [paste]. Give me the three strongest reasons it fails, and name the single assumption it all rests on.</code></pre>
+<h3 id="board-of-directors">7 · Board of directors</h3>
+<p><em>Use when one confident answer isn’t enough.</em> Check: B.</p>
+<pre class="text"><code>Respond to [proposal] as a board of three: a CFO, a sceptical customer and a frontline manager. One paragraph each from their point of view. Then list where they disagree with each other.</code></pre>
+<h3 id="fresh-chat-second-opinion">8 · Fresh-chat second opinion</h3>
+<p><em>Use in a new chat when a long conversation has gone on too
+long.</em> Check: B.</p>
+<pre class="text"><code>I&#39;m going to paste a conclusion reached in another conversation. Assess it independently. Where is it strongest, where is it weakest, and what would you need to see to be confident it&#39;s right? [paste]</code></pre>
+<h2 id="check-it">Check it</h2>
+<h3 id="describe-the-data-first">9 · Describe the data first</h3>
+<p><em>Always the first prompt on a dataset.</em> Check: C.</p>
+<pre class="text"><code>Describe this dataset before analysing it: number of rows, the columns and what each seems to contain, the date range, and anything missing, duplicated or inconsistent. Don&#39;t draw conclusions yet.</code></pre>
+<h3 id="show-your-working">10 · Show your working</h3>
+<p><em>Use on any figure that will drive a decision.</em> Check: C, then
+recount it yourself.</p>
+<pre class="text"><code>For each number in your answer, show how you calculated it: which rows or columns you used, any filters you applied, and the formula. List anything you excluded and why.</code></pre>
+<h3 id="vet-the-claim">11 · VET the claim</h3>
+<p><em>Use on claims you can’t check against your own data.</em> Check:
+B or C.</p>
+<pre class="text"><code>You told me: [paste the claim]. Help me VET it.
+VERIFY: What sources would support this, and how could I check them independently?
+EXPLAIN: Break it down step by step until I could explain it to a colleague.
+TEST: Under what conditions, or for whom, would it be wrong?</code></pre>
+<h3 id="describe-the-shape-not-the-data">12 · Describe the shape, not
+the data</h3>
+<p><em>Use when you can’t share the real data.</em> Check: as the
+task.</p>
+<pre class="text"><code>I can&#39;t share the data itself. Its structure is: [number] rows, columns [list them, with types and example values made up]. Write the steps or spreadsheet formulas I&#39;d use to answer [question], so I can run them myself.</code></pre>
+<h2 id="deliver-it">Deliver it</h2>
+<h3 id="map-my-workflow">13 · Map my workflow</h3>
+<p><em>The start of a delivery plan.</em> Check: B.</p>
+<pre class="text"><code>Here&#39;s how I currently do [weekly task], in my own words: [describe it]. List it as numbered steps with a time estimate for each. For each step, suggest whether AI could lead, assist, or should stay with a person, and say why. Don&#39;t assume access to any system I haven&#39;t mentioned.</code></pre>
+<h3 id="pre-mortem">14 · Pre-mortem</h3>
+<p><em>Use before you start a new workflow or project.</em> Check:
+B.</p>
+<pre class="text"><code>Imagine it&#39;s 30 days from now and [the redesigned workflow / project] has failed. Write the five most likely reasons it failed, and for each, one early warning sign I could watch for and one thing I could put in place now.</code></pre>
+<h3 id="gate-review">15 · Gate review</h3>
+<p><em>Use at your 30-day gate. You make the call.</em> Check: D.</p>
+<pre class="text"><code>At the start I set these criteria. Scale if: [criteria]. Pivot if: [criteria]. Kill if: [criteria]. Here&#39;s what happened over 30 days: [log, numbers, issues]. Assess the evidence against each criterion and tell me what&#39;s missing. Don&#39;t make the decision for me.</code></pre>
+<h2 id="practise">Practise</h2>
+<h3 id="two-pass-compare">16 · Two-pass compare</h3>
+<p><em>Once a week, on a task that matters. Do your own rough pass
+first.</em> Check: A.</p>
+<pre class="text"><code>Here are two versions of the same [task]: mine (A) and an AI draft (B). [paste both]. Without flattering either, list where A is stronger, where B is stronger, and what both missed. Be specific.</code></pre>
+<div class="note">
+<p>Saved one that works? Add its name, when to use it and its check in
+the <a href="prompt-builder.html">prompt builder</a>, and export your
+library.</p>
+</div>
+</main>
+<footer><div class="in">
+  <span>The Human Edge: using and delivering AI with judgement · Curtin Executive Education</span>
+  <span>Dr Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+<script>
+document.querySelectorAll('main pre').forEach(function (pre) {
+  var b = document.createElement('button');
+  b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy';
+  b.onclick = function () {
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1200);
+    });
+  };
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

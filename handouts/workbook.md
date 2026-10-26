@@ -1,6 +1,6 @@
 ---
 title: "Workbook"
-subtitle: "AI for professionals: building everyday capability"
+subtitle: "The Human Edge: using and delivering AI with judgement"
 ---
 
 Use this workbook on your laptop (Word version) or on paper (PDF). Everything you write here is yours to keep: your prompt library, your redesigned workflow and your action plan. Copyable prompts, the scenario cards and the data file are on the course site: **michael-borck.github.io/ai-in-practice**.
@@ -10,7 +10,7 @@ Use this workbook on your laptop (Word version) or on paper (PDF). Everything yo
 | 1 · Judge | 9:00 | Trust tool | 1 Same prompt, two tools · 2 Place it |
 | 2 · Brief | 11:00 | RTCF | 3 Brief it · 4 Upgrade and save |
 | 3 · Check | 1:15 | Check loop | 5 RetailFlow · 6 Verification challenge |
-| 4 · Redesign | 3:00 | Opportunity Finder | 7 Redesign one workflow · 8 Action plan |
+| 4 · Deliver | 3:00 | Opportunity Finder, Scale/Pivot/Kill | 7 Plan one delivery · 8 Action plan |
 
 <div class="pb"></div>
 
@@ -84,9 +84,13 @@ Score: ____ · The part that moved the score most: ____________
 |---|---|---|
 | + Example / + Done / + Questions / + Steps | | |
 
-**Pushback test.** I pushed back without new evidence. It ☐ folded ☐ held. With the guardrail line it ☐ folded ☐ held.
+**Pushback test.** I pushed back without new evidence. It ☐ folded ☐ held.
 
-> Guardrail: *Only change your assessment if I give you a new fact. Name the fact that changed it.*
+| Push-back move | What happened |
+|---|---|
+| **Guardrail:** *Only change your assessment if I give you a new fact. Name the fact that changed it.* | |
+| **Devil's advocate:** *Don't flatter me. Give me three reasons this fails, and name the assumption it all rests on.* | |
+| **Board of directors:** *Respond as a board: a CFO, a sceptical customer and a frontline manager. One paragraph each, then where they disagree.* | |
 
 <div class="pb"></div>
 
@@ -144,13 +148,15 @@ Karen manages customer service at RetailFlow. You have 260 tickets from July to 
 
 <div class="pb"></div>
 
-# Exercise 7 · Redesign one workflow
+# Exercise 7 · My delivery plan
 
-**The task** (weekly, 30 minutes or more): ____________________________________
+**The workflow** (weekly, 30 minutes or more): ____________________________________
 
-Signals: Automate · Assist · Generate · Analyse. Who leads: AI leads · AI assists · You lead · Human only. Corners: A light review · B load-bearing bits · C before you ship · D human in the loop.
+**Owner:** ____________ · **Success measure:** ____________________________ · **Baseline today:** ____ min, quality ____________
 
-| Step | Minutes now | Signal | Who leads | Corner | Minutes after |
+Who leads: AI leads · AI assists · You lead · Human only. Corners: A light review · B load-bearing bits · C before you ship · D human in the loop.
+
+| Step | Minutes now | Who leads | Corner | Checkpoint: who checks, and how | Minutes after |
 |---|---|---|---|---|---|
 | 1 | | | | | |
 | 2 | | | | | |
@@ -161,13 +167,19 @@ Signals: Automate · Assist · Generate · Analyse. Who leads: AI leads · AI as
 | 7 | | | | | |
 | **Total** | | | | | |
 
+**People.** Who's affected? __________________ Who has to agree? __________________ Who will do the checking? __________________
+
 **The step I tested live, and what happened:**
 
 &nbsp;
 
-**What I'd need to trust that step every week:**
+**My 30-day gate** (date: ________)
 
-&nbsp;
+| | I'll do this if… |
+|---|---|
+| **Scale** (hand it over for good) | |
+| **Pivot** (change the brief, step or who leads) | |
+| **Kill** (keep it human for now) | |
 
 <div class="pb"></div>
 
@@ -177,13 +189,14 @@ One line each. Specific task, specific tool, specific day.
 
 | When | Move | My commitment |
 |---|---|---|
-| **This week** | Practise: one compare habit on a task that matters; use one saved prompt for real | |
-| **This month** | Trade: run my redesigned workflow; hand over the steps AI has proven | |
-| **This quarter** | Decide and revisit: name what must stay human in my role; check whether the line has moved | |
+| **This week** | Practise: two-pass one task that matters; use one saved prompt for real | |
+| **This month** | Deliver: run my delivery plan, checkpoints in place from day one | |
+| **Day 30** | Gate: scale, pivot or kill, against the criteria I set today | |
+| **This quarter** | Revisit: name what must stay human in my role; check whether the corners have moved | |
 
-*Example:* Thursday 9am: draft the steering committee update with my saved prompt, then compare it with my own.
+*Example:* Thursday 9am: draft the steering committee update myself, then with my saved prompt, and compare.
 
-☐ This week's line is in my calendar.
+☐ This week's line is in my calendar. ☐ My day-30 gate is in my calendar.
 
 **What must human eyes still judge in my work?**
 
@@ -191,7 +204,7 @@ One line each. Specific task, specific tool, specific day.
 
 &nbsp;
 
-**What I'll stop doing by hand, once it's proven:**
+**What I'll hand over to AI, once it's proven:**
 
 &nbsp;
 

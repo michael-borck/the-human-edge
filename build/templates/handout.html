@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="print.css">
 <style>
 .pb{page-break-before:always}
+.wb-head + .kicker{display:none}
 h1{font-size:16pt;margin:16pt 0 6pt;padding-top:7pt;border-top:1.5pt solid var(--ink)}
 .pb + h1{margin-top:0}
 table td{height:22pt}
@@ -16,6 +17,13 @@ code{font-family:var(--mono);font-size:8pt}
 .wb-head{border-bottom:1.5pt solid var(--ink);padding-bottom:10pt;margin-bottom:12pt}
 .wb-head h1{border:0;padding:0;margin:6pt 0 2pt;font-size:28pt}
 hr{border:0;border-top:.5pt solid var(--rule);margin:14pt 0}
+pre{font-family:var(--mono);font-size:8pt;line-height:1.5;background:#F7F6F2;border:.6pt solid var(--rule);padding:7pt 9pt;white-space:pre-wrap;color:var(--ink);margin:3pt 0 10pt;break-inside:avoid}
+pre code{font-family:inherit;font-size:inherit}
+h2{break-after:avoid}
+h3{break-after:avoid;margin-top:10pt}
+h3 + p{break-after:avoid}
+.note{background:var(--wash);border-left:2.5pt solid var(--gold);padding:7pt 10pt;margin:10pt 0}
+.note p{margin:0}
 </style>
 </head>
 <body>

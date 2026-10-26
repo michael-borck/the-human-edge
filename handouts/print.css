@@ -76,6 +76,7 @@ th{font-family:var(--mono);font-size:7pt;letter-spacing:.14em;text-transform:upp
   border-bottom:1pt solid var(--ink);padding:4pt 6pt 4pt 0;font-weight:700}
 td{border-bottom:.5pt solid var(--rule);padding:5pt 6pt 5pt 0;vertical-align:top}
 td:first-child{color:var(--ink);font-weight:600}
+table.tight td{padding:3pt 6pt 3pt 0}
 table.write td{height:24pt}
 table.write.tall td{height:40pt}
 .chip{display:inline-block;font-family:var(--mono);font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;padding:1.5pt 5pt;border-radius:7pt;color:#fff;font-weight:700}

@@ -11,6 +11,7 @@ Needs: pandoc, weasyprint, and Python playwright with Google Chrome installed
     deck/                -> docs/deck/              (speaker notes and private slides removed)
     handouts/*.html      -> docs/downloads/*.pdf    (weasyprint)
     handouts/workbook.md -> docs/downloads/workbook.{pdf,docx}
+    site/prompts.md      -> docs/prompts.html and docs/downloads/starter-prompts.pdf
     data/*.csv           -> docs/downloads/
 """
 import pathlib
@@ -79,12 +80,15 @@ def main():
         return
 
     print("handouts (pdf)")
-    for name in ("field-guide", "voting-cards"):
+    for name in ("field-guide", "voting-cards", "desk-card"):
         run("weasyprint", "-q", ROOT / f"handouts/{name}.html", DL / f"{name}.pdf")
     tmp = ROOT / "handouts/.workbook.tmp.html"
     run("pandoc", ROOT / "handouts/workbook.md", "-f", "markdown", "-t", "html5",
         "--template", ROOT / "build/templates/handout.html", "-o", tmp)
     run("weasyprint", "-q", tmp, DL / "workbook.pdf")
+    run("pandoc", ROOT / "site/prompts.md", "-f", "markdown", "-t", "html5",
+        "--template", ROOT / "build/templates/handout.html", "-o", tmp)
+    run("weasyprint", "-q", tmp, DL / "starter-prompts.pdf")
     tmp.unlink()
 
     print("slides (pdf)")

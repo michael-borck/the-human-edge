@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Desk card · The Human Edge</title>
+<link rel="stylesheet" href="print.css">
+<style>
+@page{size:A4;margin:0;@bottom-left{content:none}@bottom-right{content:none}}
+html{font-size:10pt;line-height:1.45}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.top{background:var(--night);color:#ECE7DB;padding:9mm 12mm 7mm}
+.top .kicker{color:#E8B54D}.top .kicker::before{background:#E8B54D}
+.top h1{color:#ECE7DB;font-size:22pt;margin-top:4pt}
+.top h1 em{font-style:normal;color:#E8B54D}
+.top p{margin:3pt 0 0;color:rgba(236,231,219,.75);font-size:9.5pt}
+.grid{flex:1;display:flex;flex-wrap:wrap;padding:7mm 10mm 0;gap:7mm 5mm}
+.panel{width:calc(50% - 2.5mm);border-top:2.5pt solid var(--acc);padding-top:4pt}
+.panel h2{margin:2pt 0 4pt;font-size:15pt;display:flex;align-items:baseline;gap:6pt}
+.panel h2 span{font-family:var(--mono);font-size:7.5pt;letter-spacing:.14em;color:var(--acc);font-weight:700}
+.panel .q{font-family:var(--serif);font-size:10.5pt;color:var(--dim);margin-bottom:4pt}
+.panel h3{font-size:8.4pt;margin:6pt 0 2pt;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.panel p{margin:0 0 3pt}
+.panel ul{margin:0 0 3pt;padding-left:10pt}
+.panel li{margin:0 0 1pt}
+.mono{font-family:var(--mono);font-size:7.6pt;color:var(--ink)}
+.t1{--acc:#B8842A}.t2{--acc:#1F8A70}.t3{--acc:#C4503A}.t4{--acc:#3E66B8}
+.bottom{display:flex;gap:6mm;padding:4mm 10mm 7mm;border-top:.6pt solid var(--rule);margin:0 10mm;padding-left:0;padding-right:0}
+.bottom > div{flex:1}
+.bottom h3{font-family:var(--mono);font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 2pt}
+.foot{padding:0 10mm 6mm;display:flex;justify-content:space-between;font-family:var(--mono);font-size:7pt;letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="kicker">The Human Edge · Desk card</div>
+    <h1>Same tools. <em>Your judgement is the edge.</em></h1>
+    <p>Four tools for using and delivering AI with judgement. Pin it up; use it on any AI product.</p>
+  </div>
+
+  <div class="grid">
+    <div class="panel t1">
+      <h2><span>01</span>Trust tool</h2>
+      <div class="q">How much should I trust this output?</div>
+      <div style="display:flex;gap:8pt">
+        <svg viewBox="0 0 150 112" style="width:46mm;flex:none">
+          <g font-family="Nanum Gothic Coding, monospace" font-size="5.6" font-weight="700">
+            <rect x="12" y="2" width="68" height="50" fill="#F8F0DD" stroke="#C99A2E" stroke-width=".7"/>
+            <rect x="82" y="2" width="68" height="50" fill="#F7E3DF" stroke="#C4503A" stroke-width=".7"/>
+            <rect x="12" y="54" width="68" height="50" fill="#E7F3EC" stroke="#3E9A6C" stroke-width=".7"/>
+            <rect x="82" y="54" width="68" height="50" fill="#F8F0DD" stroke="#C99A2E" stroke-width=".7"/>
+            <text x="16" y="12" fill="#9A7520">B · LOAD-BEARING</text><text x="16" y="20" fill="#9A7520">BITS</text>
+            <text x="86" y="12" fill="#A63E2B">D · HUMAN IN</text><text x="86" y="20" fill="#A63E2B">THE LOOP</text>
+            <text x="16" y="64" fill="#2F7A55">A · LIGHT</text><text x="16" y="72" fill="#2F7A55">REVIEW</text>
+            <text x="86" y="64" fill="#9A7520">C · BEFORE YOU</text><text x="86" y="72" fill="#9A7520">SHIP</text>
+            <text transform="translate(8 53) rotate(-90)" text-anchor="middle" fill="#6B6F78" font-weight="400">STAKES ↑</text>
+            <text x="81" y="111" text-anchor="middle" fill="#6B6F78" font-weight="400">PRECISION →</text>
+          </g>
+        </svg>
+        <div>
+          <p><b>Ask two questions.</b> How exact must it be? What happens if it's wrong?</p>
+          <p><b>Check from outside:</b> the data, the source, a colleague, your own sum. "Are you sure?" doesn't count.</p>
+          <p><b>Sharp where you know, trusting where you don't:</b> be most sceptical outside your field.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel t2">
+      <h2><span>02</span>RTCF</h2>
+      <div class="q">How do I ask for what I need?</div>
+      <p><b>Role</b> who writes it · <b>Task</b> what, how much · <b>Context</b> audience, situation, stakes, material (does most of the work) · <b>Format</b> length, structure, tone.</p>
+      <h3>Still weak? Upgrade</h3>
+      <p><b>+ Example</b> show one you liked · <b>+ Done</b> define success, allow [CHECK] · <b>+ Questions</b> let it ask first · <b>+ Steps</b> outline, then draft.</p>
+      <h3>Push back</h3>
+      <p><b>Guardrail:</b> <span class="mono">Only change your assessment if I give you a new fact. Name it.</span> <b>Devil's advocate:</b> three reasons it fails. <b>Board:</b> CFO, customer, frontline. Long chat? Start fresh.</p>
+    </div>
+
+    <div class="panel t3">
+      <h2><span>03</span>Check loop</h2>
+      <div class="q">How do I know it's right?</div>
+      <p><b>Frame</b> write the question; fresh chat → <b>Explore</b> describe the data first → <b>Verify</b> recount, filter, trace to rows → <b>Shape</b> write for the reader; say what you checked. Doesn't hold? Go back.</p>
+      <h3>Watch for</h3>
+      <p>Miscounts · correlation sold as cause · silent gaps · numbers that can't all be true · invented detail.</p>
+      <h3>VET it</h3>
+      <p><b>Verify</b> the source yourself · <b>Explain</b> it back in your own words · <b>Test</b> the edges: when would it be wrong?</p>
+    </div>
+
+    <div class="panel t4">
+      <h2><span>04</span>Opportunity Finder · Deliver</h2>
+      <div class="q">Where does it fit, and will it work every week?</div>
+      <p><b>Spot</b> work you repeat, read, write or crunch · <b>Assign</b> AI leads, AI assists, you lead, human only · <b>Prioritise</b> quick wins first (usually green-corner work).</p>
+      <h3>Design the human in</h3>
+      <p><b>Scope</b> one workflow, owner, measure, baseline · <b>Checkpoints</b> a named person at every B, C or D step · <b>People</b> tell them before you start · <b>Gate</b> date and criteria, set now.</p>
+      <h3>Day 30</h3>
+      <p><b>Scale</b> met the measure, light review · <b>Pivot</b> close, check costs too much · <b>Kill</b> missed, or errors mattered.</p>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div><h3>Practise</h3><p>Two-pass weekly: your rough pass first, then AI's, then compare. Where it beat you is your blind spot.</p></div>
+    <div><h3>Revisit</h3><p>The corners move as models improve. The check stays: the top-right corner never empties.</p></div>
+    <div><h3>Before you paste</h3><p>Approved tools first. Leave out what identifies people. Temporary chat for anything sensitive.</p></div>
+  </div>
+  <div class="foot"><span>Direct it. Don't delegate. Never surrender.</span><span>michael-borck.github.io/ai-in-practice</span></div>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 pagetitle: Before the day
-description: "Setup checklist and a ten-minute pre-reading for AI for professionals."
+description: "Setup checklist and a ten-minute pre-reading for The Human Edge."
 nav-before: true
 ---
 
@@ -20,7 +20,7 @@ The day is hands-on from the first half hour. A little setup means you spend it 
 2. **Log in to at least one AI tool you're allowed to use for work.** Microsoft Copilot, ChatGPT, Claude or Gemini are all fine. Two is better: the first exercise compares them. Free plans are enough, and you won't need to enter anything confidential.
 3. **Check you can upload a file** to that tool, or paste a few hundred lines of text into it.
 4. **Have a spreadsheet app** (Excel, Google Sheets or Numbers). You'll use it to check the AI's numbers.
-5. **Think of three tasks you do every week** that take 30 minutes or more. You'll work on your own tasks in the afternoon.
+5. **Think of three tasks you do every week** that take 30 minutes or more. In the afternoon you'll plan how to deliver one of them with AI.
 6. **Find out what your organisation allows.** Which AI tools are approved, and what kinds of information can go into them?
 7. **Optional:** play the trust tool game once at [trusttool.borck.education](https://trusttool.borck.education/). Ten scenarios, about ten minutes.
 

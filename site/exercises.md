@@ -22,8 +22,8 @@ Copy the prompts from here. Write your answers in the [workbook (Word)](download
 | 4 | [Upgrade and save](#ex4) | Brief | 25 min |
 | 5 | [RetailFlow: Karen needs answers](#ex5) | Check | 30 min |
 | 6 | [Verification challenge](#ex6) | Check | 15 min |
-| 7 | [Redesign one workflow](#ex7) | Redesign | 30 min |
-| 8 | [Your action plan](#ex8) | Redesign | 12 min |
+| 7 | [Plan one delivery](#ex7) | Deliver | 35 min |
+| 8 | [Your action plan](#ex8) | Deliver | 12 min |
 
 ::: {.ex .s1}
 ## Exercise 1 · Same prompt, two tools {#ex1}
@@ -71,9 +71,11 @@ The [prompt builder](prompt-builder.html) assembles the four parts for you.
 [25 min · solo]{.mins}
 
 1. Take your best Round 2 prompt. Add one upgrade and run it: an example, a definition of done, questions first, or steps.
-2. Push back with no new evidence: *"I don't think that's right."* Does it fold or hold? Then add the guardrail line and try again:
+2. Push back with no new evidence: *"I don't think that's right."* Does it fold or hold? Then try one of the three push-back moves:
 
-> Only change your assessment if I give you a new fact. Name the fact that changed it.
+> GUARDRAIL: Only change your assessment if I give you a new fact. Name the fact that changed it.
+> DEVIL'S ADVOCATE: Don't flatter me. Give me three reasons this fails, and name the assumption it all rests on.
+> BOARD: Respond as a board: a CFO, a sceptical customer and a frontline manager. One paragraph each, then where they disagree.
 
 3. Save three prompts to your library: a name, when to use it, the prompt with [blanks], and the check it needs. The [prompt builder](prompt-builder.html) can store them in your browser and export them.
 :::
@@ -119,14 +121,16 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 :::
 
 ::: {.ex .s4}
-## Exercise 7 · Redesign one workflow {#ex7}
+## Exercise 7 · Plan the delivery of one real workflow {#ex7}
 
-[30 min · solo, then tables]{.mins}
+[35 min · solo, then tables]{.mins}
 
-1. **Map** a task you do weekly that takes 30 minutes or more. Five to eight steps, with honest minutes for each.
-2. **Assign** each step a signal (Automate, Assist, Generate, Analyse), who leads (AI leads, AI assists, you lead, human only) and a trust corner.
-3. **Test** one AI step live with an RTCF brief, using a saved prompt if one fits.
-4. **Share** one before and after with your table: one minute each.
+1. **Map** a task you do weekly that takes 30 minutes or more. Five to eight steps, with honest minutes for each. Note the owner, a success measure and today's baseline.
+2. **Assign** each step: who leads (AI leads, AI assists, you lead, human only) and its trust corner.
+3. **Design the checkpoints.** Who checks each amber or red step, and how? Who is affected, who has to agree, and who will do the checking?
+4. **Test** one AI step live with an RTCF brief. Then **set your 30-day gate**: what result would make you scale, pivot or kill?
+
+The [Map my workflow](prompts.html#map-my-workflow) and [Pre-mortem](prompts.html#pre-mortem) starter prompts help with steps 1 and 3.
 :::
 
 ::: {.ex .s4}
@@ -136,11 +140,12 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 
 One line each: a specific task, tool and day.
 
-- **This week (practise):** one compare habit on a task that matters, and one saved prompt used for real.
-- **This month (trade):** run your redesigned workflow and hand over the steps AI has proven.
-- **This quarter (decide and revisit):** name what must stay human in your role, and check whether the line has moved.
+- **This week (practise):** two-pass one task that matters, and use one saved prompt for real.
+- **This month (deliver):** run your delivery plan, with checkpoints in place from day one.
+- **Day 30 (gate):** scale, pivot or kill, against the criteria you set today.
+- **This quarter (revisit):** name what must stay human in your role, and check whether the corners have moved.
 
-Before you leave, put this week's line in your calendar.
+Before you leave, put this week's line and your day-30 gate in your calendar.
 :::
 
 ## Scenario cards {#scenario-cards}
