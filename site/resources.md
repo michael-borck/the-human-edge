@@ -59,6 +59,11 @@ A map of this site, the free tools worth trying, and where to go deeper after th
 - **[CiteSight](https://citesight.eduserver.au):** check references and catch the ones that don't exist. VET's "verify" step, for citations.
 - **[The trust tool game](https://trusttool.borck.education/):** ten scenarios per domain, with an explanation on every card.
 
+## Responsible AI guidance (Australia)
+
+- [Guidance for AI Adoption](https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices): the Australian Government's six essential practices for responsible AI use (October 2025), with an AI policy template.
+- [Australia's AI Ethics Principles](https://www.industry.gov.au/publications/australias-ai-ethics-principles): the earlier eight principles, now folded into the guidance above.
+
 ## The companion book
 
 [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/) is free and openly licensed, and the ideas behind this course come from it. Two chapters to start with:
@@ -77,7 +82,7 @@ Curtin's self-paced AI literacy hub. Some pages may ask for a Curtin login.
 
 ## The masterclasses
 
-The Human Edge and **AI in Strategy: Choosing where to invest** are Curtin Executive Education's AI masterclasses; the **Ethics of AI** masterclass goes deeper on governance and risk. Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
+The Human Edge and **AI in Strategy: Choosing where to invest** are Curtin Executive Education's AI masterclasses; the [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass goes deeper on governance and risk. Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
 
 ## More from Michael Borck
 

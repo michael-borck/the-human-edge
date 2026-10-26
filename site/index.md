@@ -143,7 +143,7 @@ The Human Edge is one of two Curtin Executive Education AI masterclasses. Each s
 :::
 ::::::
 
-Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/). For depth on governance and risk, see the **Ethics of AI** masterclass.
+Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/). For depth on governance, risk and regulation, see the [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass.
 
 ## After the day
 

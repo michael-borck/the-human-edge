@@ -69,6 +69,14 @@ Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draf
 
 If your samples are sensitive, do step 2 with a local model so nothing leaves your laptop.
 
+## Ethics and governance
+
+The day covers the practical side: classify before you paste, find the quiet defaults, keep a person accountable, and tell people when AI was involved. To go further:
+
+- The [Responsible use](responsible-use.html) page: Australia's six essential practices, proportionate data governance, and four ethics dilemmas for your team.
+- The Australian Government's [Guidance for AI Adoption](https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices) (October 2025), with an AI policy template and step-by-step actions.
+- Curtin Executive Education's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass, for governance, risk and regulation in depth.
+
 ::: note
 **One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. More in [Resources](resources.html).
 :::

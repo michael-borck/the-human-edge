@@ -89,19 +89,19 @@ The deck uses local fonts, so it runs offline.
 | 2:00 | 24 | **Exercise 6** · Verification challenge (pairs, then blind vote) | 15 |
 | 2:15 | 25 | Reveal; full debrief of Exercise 5 | 15 |
 | 2:30 | | Afternoon tea | 30 |
-| **3:00** | 26–30 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in | 15 |
-| 3:15 | 31 | **Exercise 7** · Plan the delivery of one workflow | 35 |
-| 3:50 | 32–33 | The 30-day gate; agents, harnesses, skills | 5 |
-| 3:55 | 34–37 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
-| 4:03 | 38 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
-| 4:15 | 39 | Close, the companion masterclass, feedback form | 15 |
+| **3:00** | 26–31 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in; responsible by design | 17 |
+| 3:17 | 32 | **Exercise 7** · Plan the delivery of one workflow | 35 |
+| 3:52 | 33–34 | The 30-day gate; agents, harnesses, skills | 5 |
+| 3:57 | 35–38 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
+| 4:04 | 39 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
+| 4:16 | 40 | Close, the companion masterclasses, feedback form | 14 |
 | 4:30 | | Finish | |
 
 **If you're running late,** cut in this order:
-1. Slide 36 (the corners move): say it in one sentence.
-2. The agents slide (33).
+1. Slide 37 (the corners move): say it in one sentence.
+2. The agents slide (34).
 3. The Exercise 4 push-back step.
-4. The "if you lead people" slide (37).
+4. The "if you lead people" slide (38).
 
 Never cut the verification challenge, the delivery plan or the action plan.
 
@@ -230,25 +230,27 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **Design the human in (slide 30).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check. Staff them with someone who knows what right looks like (the evaluator's advantage), and keep at least one human step deliberately to build capability.
 
+**Responsible by design (slide 31).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
+
 **Exercise 7.**
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
 - The Map my workflow and Pre-mortem starter prompts help anyone who's stuck.
 
-**The gate (slide 32).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
+**The gate (slide 33).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
-**The evidence (slide 34).** Lead with Australia and keep it balanced:
+**The evidence (slide 35).** Lead with Australia and keep it balanced:
 - **DEWR**, Office of the Chief Economist, *AI and employment in Australia*, July 2026. No broad AI-driven upheaval, and youth outcomes mostly held up. The occupations most exposed to AI automation have grown more slowly. The authors call this suggestive, not definitive.
 - **Jobs and Skills Australia**, *Generative AI Capacity Study*, 2025. Some employers shifted hiring towards experienced staff. The ReadyTech quote comes from this study via ACS Information Age, 15 September 2025. Entry-level roles haven't declined economy-wide; JSA says to monitor closely.
 - **Stanford**, Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine?", revised August 2026. Treat it as the US leading indicator: under-25s in AI-exposed jobs are 19% below trend, mostly through fewer hires.
 
 The message is fewer junior hires, not mass replacement.
 
-**Practice (slide 35).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
+**Practice (slide 36).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
 **Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
 
-**Optional agent demo (slide 33).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky.
+**Optional agent demo (slide 34).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky.
 
 ## What you'll hear, and how to respond
 
@@ -265,14 +267,14 @@ The message is fewer junior hires, not mass replacement.
 
 AI changes fast. Check these the week before; most take a minute.
 
-- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 34, the field guide's practice page and these notes.
+- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 35, the field guide's practice page and these notes.
 - [ ] **Jobs and Skills Australia**: any newer AI transition release?
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
-- [ ] **Product names** in "Before the day" and slide 33.
+- [ ] **Product names** in "Before the day" and slide 34.
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
-- [ ] **Feedback form.** Slide 39 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
+- [ ] **Feedback form.** Slide 40 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day

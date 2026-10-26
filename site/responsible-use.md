@@ -14,6 +14,19 @@ Responsible use
 These run through the whole day, from "three rules before you paste" to the human checkpoints in your delivery plan. Here they get their own space: for a fast-finisher activity, a team meeting, or a policy conversation at work.
 :::
 
+## Australia's six essential practices
+
+In October 2025 the Australian Government's [Guidance for AI Adoption](https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices) replaced the eight AI Ethics Principles and the ten voluntary guardrails with six essential practices. They're written for organisations, but each one has a version you can practise in your own work:
+
+| Practice | In your own work |
+|---|---|
+| 1 · Decide who is accountable | Every AI-assisted workflow has a named owner. Your name goes on the output, not the tool's. |
+| 2 · Understand impacts and plan accordingly | Ask who is affected, and who could be treated unfairly (see the quiet defaults below). |
+| 3 · Measure and manage risks | Classify data before you paste it. Place each output on the trust tool. |
+| 4 · Share essential information | Tell people when AI drafted or decided something that affects them. Check what your organisation's AI policy says about disclosure. |
+| 5 · Test and monitor | Check from outside the tool (the check loop, VET), and review at a gate. |
+| 6 · Maintain human control | Human checkpoints at every amber or red step; some work stays human only. |
+
 ## Data governance: proportionate, not prohibitive
 
 Many organisations land on "don't put anything into AI". That treats every interaction as equally risky, and it mixes up a few real concerns with one imaginary one.
@@ -74,5 +87,5 @@ A competitor launches an AI feature, and your manager says to match it this quar
 *The link to the day:* the demo is a trap, and "everyone else is doing it" isn't a plan. Governance added after something goes wrong costs more, in money and in trust, than governance designed in.
 
 ::: note
-**The thread:** every dilemma is the same question. Where does a person stay in the loop, and who owns the consequence when they don't? It isn't a technical question; it's the judgement the whole day is about. For depth on governance and risk, see Curtin Executive Education's **Ethics of AI** masterclass.
+**The thread:** every dilemma is the same question. Where does a person stay in the loop, and who owns the consequence when they don't? It isn't a technical question; it's the judgement the whole day is about. For depth on governance, risk and regulation, see Curtin Executive Education's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass.
 :::
