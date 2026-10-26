@@ -23,7 +23,7 @@
     <div style="border-color:#E5745A;color:#E5745A">03 Check loop</div>
     <div style="border-color:#7FA8F0;color:#7FA8F0">04 Opportunity Finder</div>
   </div>
-  <div class="bottom"><span style="font-family:var(--serif);font-size:15pt;letter-spacing:0;text-transform:none;color:#ECE7DB">Direct it. Don't delegate. Never surrender.</span><br><br>Dr Michael Borck · michael.borck@curtin.edu.au<br>michael-borck.github.io/ai-in-practice</div>
+  <div class="bottom"><span style="font-family:var(--serif);font-size:15pt;letter-spacing:0;text-transform:none;color:#ECE7DB">Direct it. Don't delegate. Never surrender.</span><br><br>Dr Michael Borck · michael.borck@curtin.edu.au<br>michael-borck.github.io/the-human-edge</div>
 </div></section>
 
 <!-- ============================== OVERVIEW ============================== -->
@@ -132,7 +132,7 @@
   <div class="cols">
     <div class="box"><p><b>Check from outside the tool.</b> Asking the AI "are you sure?" doesn't count: it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. That is an old professional skill, not a new AI one.</p></div>
     <div class="box"><p><b>Better models move the corners.</b> They need less checking on easy ground. They never remove the obligation to place the output first.</p></div>
-    <div class="box"><p><b>Sharp where you know, trusting where you don't.</b> You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. <span class="small">(Michael Crichton's "Gell-Mann amnesia", 2002.)</span></p></div>
+    <div class="box"><p><b>Sharp where you know, trusting where you don't.</b> You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. <span class="small">(Michael Crichton's "Gell-Mann amnesia", 2002.)</span> The mirror image: "that's just ChatGPT" isn't a critique. Judge the reasoning, not where it came from.</p></div>
   </div>
   <h3>Practise until it's a reflex</h3>
   <p>The free game at <b>trusttool.borck.education</b> has ten scenarios per domain with an explanation on every card. Then place three tasks from your own week. Where you hesitate is usually a question about stakes: who sees this next, and what do they do with it?</p>
@@ -326,12 +326,21 @@
       </div>
     </div>
   </div>
+  <h2>Why AI projects fail differently</h2>
+  <table class="tight">
+    <tr><th style="width:27%">You usually assume</th><th style="width:37%">With AI</th><th>So you</th></tr>
+    <tr><td>"Done" can be specified.</td><td>Outputs vary: a spread, not one right answer.</td><td>Decide what "good enough" means, up front.</td></tr>
+    <tr><td>A working demo means nearly there.</td><td>The demo is a trap; it shows the happy path.</td><td>Treat the demo as the start of the hard part.</td></tr>
+    <tr><td>The data is a known input.</td><td>The data is the uncertainty. You find out by using it.</td><td>Plan for discovery, not slippage.</td></tr>
+    <tr><td>The build is the product.</td><td>Checking is the product.</td><td>Design the checking in, and ship it.</td></tr>
+    <tr><td>Capability is our edge.</td><td>Everyone has the same models.</td><td>Compete on your people's judgement.</td></tr>
+  </table>
+
   <h2>Deliver it: design the human in</h2>
-  <p>A redesigned workflow is a small AI project, and it fails for the same reasons big ones do: no baseline, no owner, checks bolted on after an error, the people affected told last.</p>
   <table class="tight">
     <tr><th style="width:17%">Move</th><th>What to decide before you start</th></tr>
     <tr><td>Scope</td><td>One workflow, one owner, one success measure. Record today's time and quality as the baseline.</td></tr>
-    <tr><td>Checkpoints</td><td>Every step in an amber or red trust corner gets a named person and a specific check, before the output moves on.</td></tr>
+    <tr><td>Checkpoints</td><td>Every step in an amber or red trust corner gets a named person and a specific check, before the output moves on. Pick someone who knows what right looks like, and keep at least one human step on purpose, to build capability.</td></tr>
     <tr><td>People</td><td>Who is affected, who has to agree, who will do the checking. Tell them before you start.</td></tr>
     <tr><td>Gate</td><td>A date (30 days works) and the criteria that would make you scale, pivot or kill it. Decide now, before you're invested.</td></tr>
   </table>
@@ -352,7 +361,7 @@
     <tr><td><span class="chip a">Pivot</span></td><td>Close, but the checking costs too much.</td><td>Change the brief, the step, or who leads. Run another month.</td></tr>
     <tr><td><span class="chip r">Kill</span></td><td>It missed, or the errors mattered.</td><td>Keep it human. Revisit next quarter: the tools will have moved.</td></tr>
   </table>
-  <p class="small">Killing is a good outcome. You found where the line is, cheaply. The same four moves and the same gate apply to a department-wide rollout; the scale changes, the judgement doesn't.</p>
+  <p class="small">Killing is a good outcome: you found the line cheaply. Avoid sunk cost, cherry-picking the measures that passed, and treating "not perfect" as "broken".</p>
 </section>
 
 <!-- ============================== SAFEGUARDS ============================== -->
@@ -360,7 +369,7 @@
   <div class="kicker">Safeguards</div>
   <h1 style="margin-top:6pt">Three rules <em class="a">before you paste.</em></h1>
   <div class="cols" style="margin-top:10pt">
-    <div><h3>1 · Use what your organisation allows</h3><p>Work accounts and approved tools first. Enterprise plans usually exclude your data from training; consumer plans often include it by default unless you opt out. Settings change, so check the data controls of whatever you use.</p></div>
+    <div><h3>1 · Classify it, then pick the tool</h3><p>Public, internal, confidential or regulated? Internal and above only into approved tools. The risk is the pipeline (where data goes, who keeps it), as with email. Never paste passwords or keys.</p></div>
     <div><h3>2 · Leave out what identifies people</h3><p>Names, health details, client data, anything under NDA. If you can't share it, describe its shape instead of pasting it.</p></div>
     <div><h3>3 · Know what it remembers</h3><p>Assistants keep memories separately from your chat history. See the table below, and use a temporary chat for anything sensitive.</p></div>
   </div>
@@ -373,7 +382,10 @@
     <tr><td>What it inferred</td><td>Patterns drawn from your chats. Why an assistant can start to feel too personal.</td><td>A separate setting. <b>Deleting chats may not delete this.</b></td></tr>
     <tr><td>The chats</td><td>The conversation history you can see.</td><td>Delete one at a time or in bulk in privacy or data settings.</td></tr>
   </table>
-  <p>Use a temporary or private chat for anything you don't want learned; in most tools it doesn't read from or write to memory. At work, IT controls the enterprise settings, so check what's approved before assuming where your data goes. And never send AI output you haven't read: your name goes on it, not the tool's.</p>
+  <p>Use a temporary chat for anything you don't want learned. And never send AI output you haven't read: your name goes on it.</p>
+
+  <h2>Find the quiet defaults</h2>
+  <p>Bias now hides in small choices. Ask for a scene with "a respected senior manager", then "a respected administrative officer", and compare who gets a title, who is warm and who holds authority. Those defaults leak into AI-drafted references and reviews.</p>
 
   <h2>Agents, harnesses and skills</h2>
   <div class="cols">

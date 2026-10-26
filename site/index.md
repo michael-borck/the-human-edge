@@ -92,7 +92,7 @@ The four tools, delivering with checkpoints, safeguards and practice, in ten pag
 
 ### Starter prompts
 
-Seventeen prompts for briefing, pushing back, checking and delivering. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
+Twenty-one prompts for briefing, pushing back, checking, delivering and rehearsing. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
 :::
 
 ::: card
@@ -142,3 +142,9 @@ The Human Edge is one of two Curtin Executive Education AI masterclasses. Each s
 *Choosing where to invest.* Which AI investment is worth real money, and which is a confident-sounding trap? For executives and strategists.
 :::
 ::::::
+
+Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/). For depth on governance and risk, see the **Ethics of AI** masterclass.
+
+## After the day
+
+[Go deeper](go-deeper.html) has five-minute extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and making your voice persistent. [Responsible use](responsible-use.html) covers data governance, the quiet defaults in AI output, and four ethics dilemmas. Everything else is in [Resources](resources.html).

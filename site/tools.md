@@ -68,7 +68,7 @@ Ask two questions about any output before you act on it.
 
 **Check from outside the tool.** Asking the AI "are you sure?" doesn't count, because it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. Better models move the corners. They never remove the check.
 
-**Sharp where you know, trusting where you don't.** You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. (Michael Crichton called this Gell-Mann amnesia, after the physicist Murray Gell-Mann.)
+**Sharp where you know, trusting where you don't.** You catch AI's errors in your own field, then believe it on the law, the market or the numbers. Be most sceptical where you know least. (Michael Crichton called this Gell-Mann amnesia, after the physicist Murray Gell-Mann.) The mirror-image trap is the *AI dismissal fallacy*: "that's just ChatGPT" isn't a critique. Judge the reasoning, not where it came from.
 
 ### Practise it
 
@@ -136,18 +136,28 @@ AI makes analysis fast. It doesn't make it trustworthy.
 
 **3 · Prioritise.** Start with quick wins: high time saved, low effort to set up. Count the checking as effort. Quick wins usually sit in the trust tool's green corner, because they're cheap to check.
 
-### Deliver it: design the human in
+### Deliver it: why AI projects fail differently
+
+| You usually assume | With AI | So you |
+|---|---|---|
+| "Done" can be specified. | Outputs vary: a spread, not one right answer. | Decide what "good enough" means, up front. |
+| A working demo means nearly there. | The demo is a trap; it shows the happy path. | Treat the demo as the start of the hard part. |
+| The data is a known input. | The data is the uncertainty. | Plan for discovery, not slippage. |
+| The build is the product. | Checking is the product. | Design the checking in, and ship it. |
+| Capability is our edge. | Everyone has the same models. | Compete on your people's judgement. |
+
+### Design the human in
 
 A redesigned workflow is a small AI project. Decide four things before you start:
 
 | Move | Decide |
 |---|---|
 | **Scope** | One workflow, one owner, one success measure. Record today's time and quality as the baseline. |
-| **Checkpoints** | Every step in an amber or red corner gets a named person and a specific check. |
+| **Checkpoints** | Every step in an amber or red corner gets a named person and a specific check. Pick someone who knows what right looks like, and keep at least one human step on purpose, to build capability. |
 | **People** | Who's affected, who has to agree, who will do the checking. Tell them before you start. |
 | **Gate** | A date, about 30 days out, and the criteria for each call below. |
 
-At the gate: **scale** if it met the measure with a light review; **pivot** if it's close but the checking costs too much; **kill** if it missed or the errors mattered. Killing is a good outcome: you found where the line is, cheaply.
+At the gate: **scale** if it met the measure with a light review; **pivot** if it's close but the checking costs too much; **kill** if it missed or the errors mattered. Killing is a good outcome: you found where the line is, cheaply. Watch for three mistakes at the gate: sunk cost, cherry-picking the measures that passed, and treating "not perfect" as "broken".
 
 ::: note
 **Delegate the task. Keep the learning.** Routine work used to teach you while you did it. When AI does it, practice is a choice. Once a week, do a rough pass of a task that matters yourself, then give AI the same brief and compare. Where it beat you is your blind spot; where you beat it is where its output needs your check. And revisit every few months: the corners move as models improve, but the check stays.

@@ -13,7 +13,7 @@ Starter prompts
 # Copy, adapt, <em>then check.</em>
 
 ::: lede
-Seventeen prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
+Twenty-one prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
 :::
 
 Corners: **A** trust with light review · **B** verify the load-bearing bits · **C** verify before you ship · **D** human in the loop.
@@ -97,9 +97,17 @@ Respond to [proposal] as a board of three: a CFO, a sceptical customer and a fro
 I'm going to paste a conclusion reached in another conversation. Assess it independently. Where is it strongest, where is it weakest, and what would you need to see to be confident it's right? [paste]
 ```
 
+### 10 · Hand over to a fresh chat
+
+*Use when a long conversation has drifted.* Check: A.
+
+```text
+Write a handover prompt that captures everything important from this conversation: the context, the decisions made, open questions, and where we left off. I'll paste it into a new chat to continue.
+```
+
 ## Check it
 
-### 10 · Describe the data first
+### 11 · Describe the data first
 
 *Always the first prompt on a dataset.* Check: C.
 
@@ -107,7 +115,7 @@ I'm going to paste a conclusion reached in another conversation. Assess it indep
 Describe this dataset before analysing it: number of rows, the columns and what each seems to contain, the date range, and anything missing, duplicated or inconsistent. Don't draw conclusions yet.
 ```
 
-### 11 · Show your working
+### 12 · Show your working
 
 *Use on any figure that will drive a decision.* Check: C, then recount it yourself.
 
@@ -115,7 +123,7 @@ Describe this dataset before analysing it: number of rows, the columns and what 
 For each number in your answer, show how you calculated it: which rows or columns you used, any filters you applied, and the formula. List anything you excluded and why.
 ```
 
-### 12 · VET the claim
+### 13 · VET the claim
 
 *Use on claims you can't check against your own data.* Check: B or C.
 
@@ -126,7 +134,7 @@ EXPLAIN: Break it down step by step until I could explain it to a colleague.
 TEST: Under what conditions, or for whom, would it be wrong?
 ```
 
-### 13 · Describe the shape, not the data
+### 14 · Describe the shape, not the data
 
 *Use when you can't share the real data.* Check: as the task.
 
@@ -136,7 +144,7 @@ I can't share the data itself. Its structure is: [number] rows, columns [list th
 
 ## Deliver it
 
-### 14 · Map my workflow
+### 15 · Map my workflow
 
 *The start of a delivery plan.* Check: B.
 
@@ -144,7 +152,7 @@ I can't share the data itself. Its structure is: [number] rows, columns [list th
 Here's how I currently do [weekly task], in my own words: [describe it]. List it as numbered steps with a time estimate for each. For each step, suggest whether AI could lead, assist, or should stay with a person, and say why. Don't assume access to any system I haven't mentioned.
 ```
 
-### 15 · Pre-mortem
+### 16 · Pre-mortem
 
 *Use before you start a new workflow or project.* Check: B.
 
@@ -152,7 +160,7 @@ Here's how I currently do [weekly task], in my own words: [describe it]. List it
 Imagine it's 30 days from now and [the workflow / project] has failed. Write the five most likely reasons it failed, and for each, one early warning sign I could watch for and one thing I could put in place now.
 ```
 
-### 16 · Gate review
+### 17 · Gate review
 
 *Use at your 30-day gate. You make the call.* Check: D.
 
@@ -160,9 +168,35 @@ Imagine it's 30 days from now and [the workflow / project] has failed. Write the
 At the start I set these criteria. Scale if: [criteria]. Pivot if: [criteria]. Kill if: [criteria]. Here's what happened over 30 days: [log, numbers, issues]. Assess the evidence against each criterion and tell me what's missing. Don't make the decision for me.
 ```
 
+## Decide and rehearse
+
+### 18 · Pros and cons, against your criteria
+
+*Use when you're choosing between options.* Check: B.
+
+```text
+I'm choosing between [options] for [situation, with the key facts]. For each option give a short description, three advantages and three disadvantages, judged against [criteria, e.g. cost, risk, effort, impact on staff]. Then recommend one for my situation and say what would change your recommendation.
+```
+
+### 19 · Rehearse a difficult conversation
+
+*Use before a performance conversation, a negotiation or bad news.* Check: A. The decision and the words you use stay yours.
+
+```text
+You are [the other person: role, temperament, what they care about]. I need to [goal of the conversation]. Play that person realistically, including pushback. Stay in role until I type PAUSE; then give me feedback on what I said that was unclear, unfair or legally risky, and how to say it better.
+```
+
+### 20 · Practise and test me
+
+*Use to check your own understanding before a high-stakes call.* Check: C. Confirm anything you'll rely on.
+
+```text
+I need to get better at [skill or topic, e.g. reading a variance report, applying our leave policy]. Give me one short realistic scenario at a time, ask me what I'd do, then tell me whether I'm right and why. Make them harder if I get two right in a row, easier if I miss two.
+```
+
 ## Practise
 
-### 17 · Two-pass habit
+### 21 · Two-pass habit
 
 *Once a week, on a task that matters. Do your own rough pass first.* Check: A.
 

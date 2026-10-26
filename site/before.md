@@ -22,7 +22,7 @@ The day is hands-on from the first half hour. A little setup means you spend it 
 4. **Have a spreadsheet app** (Excel, Google Sheets or Numbers). You'll use it to check the AI's numbers.
 5. **Think of three tasks you do every week** that take 30 minutes or more. In the afternoon you'll plan how to deliver one of them with AI.
 6. **Find out what your organisation allows.** Which AI tools are approved, and what kinds of information can go into them?
-7. **Optional:** play the trust tool game once at [trusttool.borck.education](https://trusttool.borck.education/). Ten scenarios, about ten minutes.
+7. **Optional:** take the two-minute [Where's your edge?](quiz.html) self-check, and play the trust tool game once at [trusttool.borck.education](https://trusttool.borck.education/) (ten scenarios, about ten minutes).
 
 ## AI in ten minutes
 
@@ -67,6 +67,7 @@ You don't need to master a particular product. The skills in this course (decidi
 ### Data and privacy
 
 - **Use what your organisation allows.** Business and enterprise plans usually keep your data out of model training. Many personal plans use your chats for training unless you turn it off. Settings change, so check the data controls of whatever you use.
+- **Classify before you paste.** Public, internal, confidential or regulated? The real risk is where the data goes and who keeps it, the same as with email.
 - **Leave out what identifies people or clients.** If you can't share the data, describe its shape instead.
 - **Assistants remember.** Many keep saved memories and inferred preferences, separately from your chat history. Deleting a chat doesn't necessarily delete what was learned from it. A temporary or private chat avoids memory altogether.
 

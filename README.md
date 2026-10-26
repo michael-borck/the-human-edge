@@ -2,7 +2,7 @@
 
 Materials and companion site for a one-day Curtin Executive Education masterclass. It was first marketed as *AI for professionals: building everyday capability*; the companion masterclass is *AI in Strategy: Choosing where to invest*.
 
-**Live site:** https://michael-borck.github.io/ai-in-practice/
+**Live site:** https://michael-borck.github.io/the-human-edge/
 
 ## The course
 
@@ -22,7 +22,8 @@ What participants leave with: a personal prompt library (Exercise 4), four reusa
 ```
 deck/            The slides: deck.html (with speaker notes), deck.css, deck.js
 handouts/        Field guide, desk card, optional voting cards (HTML, printed to PDF), print.css
-site/            Companion site pages (Markdown, rendered with pandoc), including the digital workbook; prompts.md also builds the starter prompt PDF
+site/            Companion site pages (Markdown, rendered with pandoc): home, before, tools, exercises, workbook, prompts,
+                 prompt builder, go deeper, responsible use, resources, quiz. prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
 data/            RetailFlow customer service dataset (Exercise 5)
 instructor/      Facilitator guide, optional agent demo kit (not published)
@@ -61,6 +62,7 @@ The trust tool's corner names and orientation (precision across, consequences up
 - Australian evidence: DEWR (2026) *AI and employment in Australia*; Jobs and Skills Australia (2025) *Generative AI Capacity Study*. US: Brynjolfsson, Chandar & Chen (rev. 2026) "Canaries in the Coal Mine?".
 - The "broken ladder" framing of the junior pipeline problem draws on Dylan Davis. Slides and text are original.
 - "Gell-Mann amnesia" is Michael Crichton's term (2002).
+- The delivery-is-different table, data governance, the quiet-defaults activity, ethics dilemmas, go-deeper techniques and the quiz were carried over from the earlier Human Edge site, now archived at github.com/michael-borck/the-human-edge-archive.
 - The trust tool, RTCF and conversation-not-delegation ideas: *Conversation, Not Delegation* (michael-borck.github.io/conversation-not-delegation).
 
 ## Licence

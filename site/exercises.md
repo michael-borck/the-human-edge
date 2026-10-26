@@ -128,7 +128,7 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 
 1. **Map** a task you do weekly that takes 30 minutes or more. Five to eight steps, with honest minutes for each. Note the owner, a success measure and today's baseline.
 2. **Assign** each step: who leads (AI leads, AI assists, you lead, human only) and its trust corner.
-3. **Design the checkpoints.** Who checks each amber or red step, and how? Who is affected, who has to agree, and who will do the checking?
+3. **Design the checkpoints.** Who checks each amber or red step, and how? Pick someone who knows what right looks like. Who is affected, who has to agree, and who will do the checking?
 4. **Test** one AI step live with an RTCF brief. Then **set your 30-day gate**: what result would make you scale, pivot or kill?
 
 The [Map my workflow](prompts.html#map-my-workflow) and [Pre-mortem](prompts.html#pre-mortem) starter prompts help with steps 1 and 3.

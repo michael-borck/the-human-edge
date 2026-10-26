@@ -190,7 +190,7 @@ Type straight into this page. It saves automatically in this browser on this dev
     <div><label>Baseline today <small>time and quality</small></label><input type="text" data-wb="e7-base" data-label="Baseline"></div>
   </div>
   <label>Steps</label>
-  <table><thead><tr><th>Step</th><th>Min now</th><th>Who leads</th><th>Corner</th><th>Checkpoint: who checks, how</th><th>Min after</th></tr></thead>
+  <table><thead><tr><th>Step</th><th>Min now</th><th>Who leads</th><th>Corner</th><th>Checkpoint: who (knows what right looks like), how</th><th>Min after</th></tr></thead>
   <tbody data-table="e7-steps" data-cols="text,num,lead,corner,text,num" data-rows="5"></tbody></table>
   <button type="button" class="add" data-add-row="e7-steps">+ Add a step</button>
   <div class="two">
