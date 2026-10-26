@@ -10,7 +10,7 @@ Everyone has the same AI tools now, so the edge is judgement. The day runs four 
 
 | Session | Time | Tool | Question | Exercises |
 |---|---|---|---|---|
-| 1 · Judge | 9:00 | Trust tool | How much should I trust this output? | 1 Your pass first · 2 Place it (card vote and game) |
+| 1 · Judge | 9:00 | Trust tool | How much should I trust this output? | 1 Your pass first · 2 Place it (blind vote and game) |
 | 2 · Brief | 11:00 | RTCF and four upgrades | How do I ask for what I need? | 3 Brief it · 4 Upgrade and save |
 | 3 · Check | 1:15 | Check loop | How do I know it's right? | 5 RetailFlow analysis · 6 Verification challenge |
 | 4 · Deliver | 3:00 | Opportunity Finder (spot, assign, prioritise), Scale/Pivot/Kill | Where does it fit, and will it work every week? | 7 Plan one delivery · 8 Action plan |
@@ -21,11 +21,11 @@ What participants leave with: a personal prompt library (Exercise 4), four reusa
 
 ```
 deck/            The slides: deck.html (with speaker notes), deck.css, deck.js
-handouts/        Field guide, desk card, voting cards (HTML, printed to PDF), print.css
+handouts/        Field guide, desk card, optional voting cards (HTML, printed to PDF), print.css
 site/            Companion site pages (Markdown, rendered with pandoc), including the digital workbook; prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
 data/            RetailFlow customer service dataset (Exercise 5)
-instructor/      Facilitator guide, room-mode spec, optional agent demo kit (not published)
+instructor/      Facilitator guide, optional agent demo kit (not published)
 build/           build.py, screens.py, pandoc templates
 docs/            Generated site, served by GitHub Pages. Don't edit; rebuild.
 ```

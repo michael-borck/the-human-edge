@@ -120,7 +120,6 @@ The deck as presented, without the exercise answers. [Open](deck/) · [PDF](down
 :::
 ::::::
 
-[Facilitators: printable voting cards for Exercises 2 and 6 are [here](downloads/voting-cards.pdf). Print double-sided, flip on the long edge.]{.small}
 
 ## Two masterclasses
 

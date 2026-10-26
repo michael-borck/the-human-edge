@@ -42,7 +42,7 @@ Copy the prompts from here and write your answers in the [digital workbook](work
 
 [25 min · room, then solo]{.mins}
 
-1. **Card vote.** The facilitator reads a scenario. Decide in silence, then show your corner card on "three".
+1. **Blind vote.** The facilitator reads a scenario. Decide in silence, then vote on "three": in ClassPulse (scan the code on screen), or by showing 1 to 4 fingers for corners A to D.
 2. **Play the game** at [trusttool.borck.education](https://trusttool.borck.education/). Choose your domain and place all ten cards.
 3. **Place three tasks from your own week** in the [workbook](workbook.html). For each, note the check it needs. Swap with a neighbour: where do you disagree, and why?
 :::
@@ -110,7 +110,7 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 ::: {.ex .s3}
 ## Exercise 6 · Verification challenge {#ex6}
 
-[15 min · pairs, then card vote]{.mins}
+[15 min · pairs, then blind vote]{.mins}
 
 Three claims about the RetailFlow data are circulating. At least one is wrong. Check each against the data, not against how confident it sounds. Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it.
 

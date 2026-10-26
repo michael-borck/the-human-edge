@@ -24,17 +24,24 @@ The close covers why deliberate practice matters now that routine work goes to A
 - Ask Exec Ed to include the course site link and "Before the day" page in the joining instructions: `michael-borck.github.io/ai-in-practice/before.html`.
 
 **Three days out**
-- Print the **voting cards**: one A4 sheet per participant plus spares. File: `docs/downloads/voting-cards.pdf`. Print double-sided, flip on the long edge, and cut each sheet into four cards (A/Verified, B/Overstated, C/Refuted, D/Can't tell yet).
-- Print the **desk card** (one page each); it's the handout people keep.
-- The field guide (10 pages) and starter prompts are optional on paper. Everything else is digital.
+
+The course is fully digital: participants need only a laptop or phone. Nothing has to be printed.
+
+- **Set up ClassPulse** (classpulse.borck.education). One session, these questions in order:
+  1. *Multiple choice:* "How do you use AI at work today?" Hardly at all / Tried it / Most weeks / It's built into my work.
+  2. to 6. *Grid, 2×2*, one per Exercise 2 scenario (below). X axis "Precision needed", ends "Average" and "Precise". Y axis "Consequences if wrong", ends "Small" and "Large". The heatmap shows where the room clustered and where it split.
+  7. *Scatter plot (optional)*, same axes: "Drop a dot for one task from your own week." Anonymous, and a good debrief picture.
+  8. to 10. *Multiple choice*, one per verification claim A, B and C: Verified / Overstated / Refuted / Can't tell yet.
+- **Fallback for no Wi-Fi:** fingers on "three" (1 to 4 for corners A to D) and thumbs for verdicts (up verified, sideways overstated, down refuted, fist can't tell yet). It's still blind and simultaneous, and needs no paper.
+- **Optional paper.** The voting cards (`docs/downloads/voting-cards.pdf`, duplex, long-edge flip, four cards per A4) are worth it only if the organiser can reliably print *and* cut them. The desk card and field guide can be printed for anyone who wants paper.
 - Check the trust tool game loads: trusttool.borck.education.
 - Open the **workbook** on a laptop, type into a few fields including a delivery-plan row, reload to check it restored, and export.
-- Optional: set up a **ClassPulse** session (classpulse.borck.education). Use it for an arrival poll ("How often do you use AI at work?") and for the five card-vote scenarios as a projected histogram. The paper cards stay as the backup, so the vote still works if the Wi-Fi doesn't.
 - Work through "Before each run" at the end of this guide.
 
 **On the day, before 9:00**
 - Open `deck/deck.html` **from the repo**: it has your notes and the answer slide. Press **F** for full screen and **N** for the presenter window.
-- Wi-Fi details on the whiteboard. Voting cards and desk cards on every seat.
+- Wi-Fi details on the whiteboard.
+- ClassPulse open in a second window on the presenting laptop, on the join screen. Switch to it (Alt-Tab or Cmd-Tab) for each vote, then back to the deck.
 - Load an AI tool on the projector for the live demos, with one fresh chat ready.
 
 ## Presenting
@@ -62,11 +69,11 @@ The deck uses local fonts, so it runs offline.
 
 | Time | Slides | What happens | Min |
 |---|---|---|---|
-| **9:00** | 1–2 | Title fade, the day, show of hands or ClassPulse poll, tool check | 8 |
+| **9:00** | 1–2 | Title fade, the day, ClassPulse arrival poll (people join here), tool check | 8 |
 | 9:08 | 3–6 | The bigger pie; the convincing average; the alarm; Gell-Mann amnesia | 14 |
 | 9:22 | 7 | **Exercise 1** · Your pass first | 25 |
 | 9:47 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
-| 10:00 | 11 | **Exercise 2** · Place it (card vote, game, own tasks) | 22 |
+| 10:00 | 11 | **Exercise 2** · Place it (blind vote, game, own tasks) | 22 |
 | 10:22 | 12 | Three rules before you paste; questions | 8 |
 | 10:30 | | Morning tea | 30 |
 | **11:00** | 13–15 | Brief like a colleague; RTCF; live before/after demo | 15 |
@@ -77,7 +84,7 @@ The deck uses local fonts, so it runs offline.
 | 12:30 | | Lunch | 45 |
 | **1:15** | 20–21 | Check loop; five failure modes and VET | 10 |
 | 1:25 | 22 | **Exercise 5** · RetailFlow | 30 |
-| 1:55 | 23 | **Exercise 6** · Verification challenge (pairs, then card vote) | 15 |
+| 1:55 | 23 | **Exercise 6** · Verification challenge (pairs, then blind vote) | 15 |
 | 2:10 | 24 | Reveal; full debrief of Exercise 5 | 20 |
 | 2:30 | | Afternoon tea | 30 |
 | **3:00** | 25–28 | Opportunity Finder (spot, assign, prioritise); design the human in | 12 |
@@ -114,7 +121,7 @@ Never cut the verification challenge, the delivery plan or the action plan.
 
 Amplify comments like "I'd take its structure and my judgement". This is the two-pass habit; it comes back in Session 4 as a weekly practice.
 
-**Exercise 2 card vote.** Read a scenario, pause, "one, two, three", and everyone shows a card (or votes in ClassPulse). Ask one person from each corner to explain. Blind voting stops people following the most senior person in the room.
+**Exercise 2 blind vote.** Read a scenario and give people a moment in silence. Then they vote in ClassPulse with the join screen still showing, or show fingers on "one, two, three". Flip to the heatmap and ask one person from each corner to explain. Blind voting stops people following the most senior person in the room.
 
 Scenarios, with the usual answer:
 
@@ -161,7 +168,7 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 
 **Exercise 5.** If uploads are blocked, most tools accept pasted CSV text; the file is small. Watch for people skipping "describe the data first".
 
-**Exercise 6.** Give pairs 8 minutes to check the claims, then run the card vote one claim at a time (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 24, one claim per click. Expect B to fool the most people and C to split the room.
+**Exercise 6.** Give pairs 8 minutes to check the claims, then run a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 24, one claim per click. Expect B to fool the most people and C to split the room.
 
 ## Answer key: RetailFlow
 
@@ -258,11 +265,11 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
 - [ ] **Product names** in "Before the day" and slide 31.
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
-- [ ] **ClassPulse session** set up, if you're using it.
+- [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
 - [ ] **Feedback form.** Slide 37 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day
 
 - Send participants the course site link and the desk card, and remind them to export their workbook if they haven't.
-- Note which exercises ran long and which scenarios split the room, and update the card-vote list above.
+- Note which exercises ran long and which scenarios split the room, and update the scenario list above. ClassPulse can export the votes to CSV for this.

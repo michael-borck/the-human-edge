@@ -16,7 +16,7 @@ The day is hands-on from the first half hour. A little setup means you spend it 
 
 ## Checklist
 
-1. **Laptop and charger.** A tablet works for most exercises; a laptop is easier for the data exercise.
+1. **Laptop and charger.** A tablet works for most exercises; a laptop is easier for the data exercise. Your phone is handy for the live votes, which run in ClassPulse: scan a code, no app or account.
 2. **Log in to at least one AI tool you're allowed to use for work.** Microsoft Copilot, ChatGPT, Claude or Gemini are all fine. Two is better, because the first exercise compares them. Free plans work for most exercises, though some limit file uploads; check yours before the day. You won't need to enter anything confidential.
 3. **Check you can upload a file** to that tool, or paste a few hundred lines of text into it.
 4. **Have a spreadsheet app** (Excel, Google Sheets or Numbers). You'll use it to check the AI's numbers.
