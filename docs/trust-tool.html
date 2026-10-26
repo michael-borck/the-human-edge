@@ -6,10 +6,105 @@
   <title>Trust tool | AI for Professionals</title>
   <link rel="stylesheet" href="css/shared.css">
   <link rel="stylesheet" href="css/materials.css">
-  <meta name="description" content="The trust tool: a two-question grid for deciding how much to trust any AI output, with an interactive practice game.">
+  <meta name="description" content="The trust tool: a two-question grid for deciding how much to trust any AI output, walked corner by corner, with an interactive practice game.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #d9a441;
+      --green: #7fb069;
+      --amber: #d9a441;
+      --red: #c96f5e;
+    }
+    .tt-kicker {
+      font-family: "Nanum Gothic Coding", monospace;
+      font-size: 12.5px;
+      letter-spacing: 0.22em;
+      color: var(--gold);
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .tt-kicker::before { content: ""; width: 28px; height: 2px; background: var(--gold); display: inline-block; }
+    .tt-wrap { max-width: 980px; margin: 0 auto; padding: 4rem 20px; }
+
+    /* walkthrough */
+    .walk { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: center; margin-top: 2.5rem; }
+    @media (max-width: 800px) { .walk { grid-template-columns: 1fr; } }
+
+    .grid2x2 { display: grid; grid-template-columns: 44px 1fr 1fr; grid-template-rows: 1fr 1fr 40px; gap: 10px; user-select: none; }
+    .axis { display: flex; align-items: center; justify-content: center; color: var(--muted);
+            font-family: "Nanum Gothic Coding", monospace; font-size: 10.5px; letter-spacing: 0.14em;
+            text-transform: uppercase; text-align: center; }
+    .axis-y { grid-row: 1 / 3; flex-direction: column; gap: 8px; }
+    .axis-y .axis-line { width: 2px; flex: 1; background: linear-gradient(to top, rgba(234,229,217,.08), rgba(234,229,217,.5)); position: relative; }
+    .axis-y .axis-line::before { content: ""; position: absolute; top: -8px; left: -4px;
+      border: 5px solid transparent; border-bottom: 8px solid rgba(234,229,217,.55); border-top: none; }
+    .axis-x { grid-column: 2 / 4; flex-direction: column; gap: 8px; }
+    .axis-x .axis-line { height: 2px; width: 100%; background: linear-gradient(to right, rgba(234,229,217,.08), rgba(234,229,217,.5)); position: relative; }
+    .axis-x .axis-line::before { content: ""; position: absolute; right: -8px; top: -4px;
+      border: 5px solid transparent; border-left: 8px solid rgba(234,229,217,.55); border-top: none; }
+
+    .quad {
+      border-radius: 12px;
+      padding: 18px 16px;
+      min-height: 168px;
+      border: 1px solid var(--border);
+      background: #10141b;
+      transition: opacity .45s ease, border-color .45s ease, box-shadow .45s ease, transform .45s ease;
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .quad .q-name { font-family: "Domine", Georgia, serif; font-size: 1.02rem; color: var(--ink); line-height: 1.25; }
+    .quad .q-sub { font-family: "Nanum Gothic Coding", monospace; font-size: 10px; letter-spacing: 0.14em;
+                   text-transform: uppercase; color: var(--muted); }
+    .quad .q-dot { width: 10px; height: 10px; border-radius: 50%; margin-bottom: 4px; opacity: 0; transition: opacity .45s; }
+    .quad.green .q-dot { background: var(--green); box-shadow: 0 0 14px rgba(127,176,105,.7); }
+    .quad.amber .q-dot { background: var(--amber); box-shadow: 0 0 14px rgba(217,164,65,.7); }
+    .quad.red   .q-dot { background: var(--red);   box-shadow: 0 0 14px rgba(201,111,94,.7); }
+
+    .quad.lit { opacity: 1; transform: translateY(-2px); }
+    .quad.lit .q-dot { opacity: 1; }
+    .quad.green.lit { border-color: rgba(127,176,105,.55); box-shadow: 0 0 34px rgba(127,176,105,.10) inset, 0 0 24px rgba(127,176,105,.08); }
+    .quad.amber.lit { border-color: rgba(217,164,65,.55);  box-shadow: 0 0 34px rgba(217,164,65,.10) inset, 0 0 24px rgba(217,164,65,.08); }
+    .quad.red.lit   { border-color: rgba(201,111,94,.6);   box-shadow: 0 0 34px rgba(201,111,94,.12) inset, 0 0 24px rgba(201,111,94,.08); }
+    .walk.staged .quad:not(.lit) { opacity: 0.13; }
+
+    .beat { min-height: 210px; display: flex; flex-direction: column; justify-content: center; }
+    .beat .b-step { font-family: "Nanum Gothic Coding", monospace; font-size: 11.5px; letter-spacing: 0.2em;
+                    color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
+    .beat .b-title { font-family: "Domine", Georgia, serif; font-size: 1.7rem; color: var(--ink);
+                     line-height: 1.2; margin-bottom: 12px; }
+    .beat .b-body { font-size: 1rem; line-height: 1.7; color: var(--text); }
+    .beat .b-body strong { color: var(--ink); }
+    .beat .b-ex { margin-top: 14px; font-size: 0.92rem; color: var(--muted); border-left: 2px solid var(--gold);
+                  padding-left: 12px; font-style: italic; }
+
+    .walk-controls { display: flex; align-items: center; gap: 14px; margin-top: 1.6rem; }
+    .wbtn { background: none; border: 1px solid var(--border); color: var(--ink); font-family: "Funnel Sans", sans-serif;
+            font-size: 0.85rem; padding: 8px 18px; border-radius: 8px; cursor: pointer; transition: border-color .2s, color .2s; }
+    .wbtn:hover { border-color: var(--gold); color: var(--gold); }
+    .wbtn[disabled] { opacity: 0.3; cursor: default; }
+    .dots { display: flex; gap: 7px; }
+    .dots span { width: 7px; height: 7px; border-radius: 50%; background: rgba(234,229,217,.18); transition: all .3s; }
+    .dots span.on { background: var(--gold); box-shadow: 0 0 8px rgba(217,164,65,.6); }
+    .walk-hint { font-family: "Nanum Gothic Coding", monospace; font-size: 10.5px; letter-spacing: 0.12em;
+                 color: var(--muted); margin-top: 10px; }
+
+    /* content sections */
+    .tt-section { border-top: 1px solid var(--border); }
+    .tt-section h2 { font-size: 1.6rem; color: var(--ink); margin: 2.5rem 0 1rem; text-align: left; }
+    .tt-section p { line-height: 1.75; }
+    .tt-section p strong { color: var(--ink); }
+    .tt-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+    .tt-table th { text-align: left; color: var(--muted); font-family: "Nanum Gothic Coding", monospace;
+                   font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400;
+                   padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    .tt-table td { padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+    .tt-table td:first-child { color: var(--ink); font-weight: 600; white-space: nowrap; }
+    .frame { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #f8fafc; }
+  </style>
 </head>
 <body>
   <header>
@@ -37,19 +132,67 @@
 
   <section class="hero">
     <div class="container">
-      <h1>The trust tool</h1>
+      <div class="tt-kicker" style="justify-content: center;">The spine of the day</div>
+      <h1 style="margin-top: 1rem;">The trust tool</h1>
       <p class="subtitle">Two questions that turn "can I trust this?" into an answer</p>
       <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; opacity: 0.95;">
         AI produces a convincing average: fluent, well-shaped, usually about right. Whether that is
-        good enough depends on what you need and what is at stake. Place the output on a 2×2 grid and
+        good enough depends on what you need and what is at stake. Place the output on the grid and
         the review it needs falls out of the corner you land in.
       </p>
     </div>
   </section>
 
-  <section>
-    <div class="container" style="max-width: 820px;">
-      <h2 style="text-align: left;">The two questions</h2>
+  <div class="tt-wrap">
+    <div class="tt-kicker">Walk the grid</div>
+    <h2 style="font-family: 'Domine', Georgia, serif; font-size: 2rem; color: var(--ink); margin-top: 1rem; letter-spacing: -0.01em;">
+      Four corners, one habit of mind</h2>
+
+    <div class="walk staged" id="walk">
+      <div class="grid2x2" aria-hidden="true">
+        <div class="axis axis-y"><span class="axis-text">Consequences: small &rarr; large</span><span class="axis-line"></span></div>
+        <div class="quad green" id="q-as">
+          <span class="q-dot"></span>
+          <span class="q-sub">Average + small</span>
+          <span class="q-name">Trust with light review</span>
+        </div>
+        <div class="quad amber" id="q-al">
+          <span class="q-dot"></span>
+          <span class="q-sub">Average + large</span>
+          <span class="q-name">Verify the load-bearing bits</span>
+        </div>
+        <div class="quad amber" id="q-ps">
+          <span class="q-dot"></span>
+          <span class="q-sub">Precise + small</span>
+          <span class="q-name">Verify before you ship</span>
+        </div>
+        <div class="quad red" id="q-pl">
+          <span class="q-dot"></span>
+          <span class="q-sub">Precise + large</span>
+          <span class="q-name">Human in the loop</span>
+        </div>
+        <div class="axis axis-x"><span class="axis-line"></span><span class="axis-text">Precision: average &rarr; precise</span></div>
+      </div>
+
+      <div class="beat" id="beat" aria-live="polite">
+        <div class="b-step" id="bStep"></div>
+        <div class="b-title" id="bTitle"></div>
+        <div class="b-body" id="bBody"></div>
+        <div class="b-ex" id="bEx" style="display:none;"></div>
+        <div class="walk-controls">
+          <button class="wbtn" id="wPrev">&larr; Back</button>
+          <div class="dots" id="wDots"></div>
+          <button class="wbtn" id="wNext">Next &rarr;</button>
+        </div>
+        <div class="walk-hint">or use &larr; &rarr; arrow keys</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tt-section">
+    <div class="tt-wrap">
+      <div class="tt-kicker">The two questions</div>
+      <h2>Average or precision? Small or large?</h2>
       <p><strong>Question one: do you need an average, or precision?</strong> An <em>average</em> answer
       is one where "in the right ballpark" is genuinely fine: a first draft, a summary, a starting point
       you will shape further. A <em>precise</em> answer is one where there is a single correct value and
@@ -59,53 +202,30 @@
       to reverse and cheap to get wrong. A <em>large</em> decision carries real consequences: money,
       safety, reputation, someone's job or wellbeing.</p>
 
-      <h2 style="text-align: left; margin-top: 2.5rem;">The four corners</h2>
-      <div class="content">
-        <table>
-          <tr>
-            <th></th>
-            <th>Small (low stakes)</th>
-            <th>Large (high stakes)</th>
-          </tr>
-          <tr>
-            <td style="font-weight: 600;">Average is fine</td>
-            <td>🟢 <strong>Trust with light review.</strong> Drafts, brainstorming, first-pass summaries, language polish. Act on it, skim later.</td>
-            <td>🟡 <strong>Trust, but verify the load-bearing bits.</strong> The framing matters even when the prose is average. Name the claims the decision hangs on, and check those.</td>
-          </tr>
-          <tr>
-            <td style="font-weight: 600;">Precision required</td>
-            <td>🟡 <strong>Verify before you ship.</strong> A calculation, a citation, a fact you will quote. Small blast radius if wrong, but still wrong.</td>
-            <td>🔴 <strong>Human in the loop, non-negotiable.</strong> Anything that touches a person, money, safety, or a decision you cannot walk back.</td>
-          </tr>
-        </table>
-      </div>
+      <h2>The rule of thumb</h2>
+      <p><strong>Lean in where "about right" over low stakes is fine; keep a human in the loop where
+      exactly-right meets high stakes.</strong> Most AI failures reported in the news are red-corner
+      outputs that were treated as though they were green. Placing the output on the grid before acting
+      makes that error visible while it is still cheap to fix.</p>
 
-      <h2 style="text-align: left; margin-top: 2.5rem;">How to use it</h2>
-      <p>For any AI output you are about to use, place it on the grid and do what the corner says.
-      Most AI failures reported in the news are red-corner outputs that were treated as though they
-      were green. Placing the output on the grid before acting makes that error visible while it is
-      still cheap to fix.</p>
-      <p>One rule of thumb to remember: <strong>lean in where "about right" over low stakes is fine;
-      keep a human in the loop where exactly-right meets high stakes.</strong></p>
-
-      <h2 style="text-align: left; margin-top: 2.5rem;">Capability moves the boundary</h2>
+      <h2>Capability moves the boundary</h2>
       <p>A frontier model and a small local model can both produce strong and weak outputs. Better
       models shift where the boundary tends to sit, and they demand less checking on easy ground.
       They never remove your obligation to place the output on the grid: capability raises the floor,
       it does not remove the review. That is what makes the tool durable. It works on any platform,
       and it does not expire when the next model ships.</p>
 
-      <h2 style="text-align: left; margin-top: 2.5rem;">Practise until it is a reflex</h2>
+      <h2>Practise until it is a reflex</h2>
       <p>Placement becomes instinct through repetition. The practice game below gives you ten
       scenarios from a domain you choose; place each one on the grid and get immediate feedback,
-      with explanations on every card. A few minutes is enough to feel the corners. There are
-      domain packs for executives, business, consulting, professional staff, and more.</p>
-      <p style="text-align: center;">
+      with explanations on every card. There are domain packs for executives, business, consulting,
+      professional staff, and more.</p>
+      <p style="text-align: center; margin: 1.5rem 0;">
         <a href="https://trusttool.borck.education/" class="btn-primary" target="_blank" rel="noopener">Open the game in a new tab</a>
       </p>
-      <div class="content">
+      <div class="frame">
         <iframe src="https://trusttool.borck.education/" title="Trust tool practice game"
-          style="width: 100%; height: 820px; border: 1px solid var(--border); border-radius: 11px; background: #fff;"
+          style="width: 100%; height: 820px; border: none; display: block;"
           loading="lazy"></iframe>
       </div>
 
@@ -114,7 +234,7 @@
         Revisit the <a href="frameworks.html">four frameworks</a>, or read the <a href="ai-for-the-rest-of-us.html">pre-reading</a>.</p>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer>
     <div class="container">
@@ -123,5 +243,57 @@
       <p style="margin-top: 1rem;"><a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></p>
     </div>
   </footer>
+
+  <script>
+    const beats = [
+      { step: "Two questions", title: "Every output lands somewhere",
+        body: "Ask <strong>how precise</strong> the answer must be, and <strong>how large</strong> the stakes are if it is wrong. Two questions, four corners. The corner tells you the review it needs.",
+        ex: "Draft a birthday email: average is fine, nobody is harmed. A contract figure: one right answer, real money." },
+      { step: "Corner 1 of 4", title: "Trust with light review",
+        body: "<strong>Average is fine, stakes are small.</strong> This is AI's home turf: drafts, brainstorming, first-pass summaries, language polish. Act on it, skim later. The risk of a slightly-off phrasing is trivial.",
+        ex: "An internal email draft, meeting minutes from your notes, a rewrite for tone." },
+      { step: "Corner 2 of 4", title: "Verify the load-bearing bits",
+        body: "<strong>Average is fine, stakes are large.</strong> The framing matters even when the prose is average. Name the claims the decision actually hangs on, and check those. The rest can stand.",
+        ex: "A strategic memo: the argument structure can be AI's; the three numbers the board will act on cannot be." },
+      { step: "Corner 3 of 4", title: "Verify before you ship",
+        body: "<strong>Precision required, stakes are small.</strong> A calculation, a citation, a fact you will quote. Small blast radius if wrong, but still wrong: close is the same as wrong the moment anyone checks.",
+        ex: "A citation in a report. Getting it wrong embarrasses you in front of one reader. Check it anyway." },
+      { step: "Corner 4 of 4", title: "Human in the loop",
+        body: "<strong>Precision required, stakes are large.</strong> Anything that touches a person, money, safety, or a decision you cannot walk back. AI may assist, but a person owns the decision. Non-negotiable.",
+        ex: "The numbers in a board paper. AI may help draft the narrative; a human sources and owns every figure." },
+      { step: "The habit", title: "Place it before you act on it",
+        body: "Most AI failures in the news are <strong>red-corner outputs treated as though they were green.</strong> The placement takes ten seconds and makes the error visible while it is still cheap. Rule of thumb: lean in where about-right over low stakes is fine; keep a human where exactly-right meets high stakes.",
+        ex: "Try the game below: ten scenarios, immediate feedback, explanations on every card." },
+    ];
+    const quadIds = [null, 'q-as', 'q-al', 'q-ps', 'q-pl', null];
+    const walk = document.getElementById('walk');
+    const bStep = document.getElementById('bStep'), bTitle = document.getElementById('bTitle'),
+          bBody = document.getElementById('bBody'), bEx = document.getElementById('bEx');
+    const dots = document.getElementById('wDots');
+    const prev = document.getElementById('wPrev'), next = document.getElementById('wNext');
+    let i = 0;
+    beats.forEach((_, k) => { const d = document.createElement('span'); dots.appendChild(d); });
+    function render() {
+      bStep.textContent = beats[i].step;
+      bTitle.innerHTML = beats[i].title;
+      bBody.innerHTML = beats[i].body;
+      bEx.innerHTML = beats[i].ex;
+      bEx.style.display = beats[i].ex ? 'block' : 'none';
+      document.querySelectorAll('.quad').forEach(q => q.classList.remove('lit'));
+      if (quadIds[i]) document.getElementById(quadIds[i]).classList.add('lit');
+      walk.classList.toggle('staged', i > 0 && i < beats.length - 1);
+      [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+      prev.disabled = i === 0;
+      next.textContent = i === beats.length - 1 ? 'Restart \u21ba' : 'Next \u2192';
+    }
+    function go(k) { i = (k + beats.length) % beats.length; render(); }
+    prev.addEventListener('click', () => go(i - 1));
+    next.addEventListener('click', () => go(i + 1));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { go(i + 1); e.preventDefault(); }
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { go(i - 1); e.preventDefault(); }
+    });
+    render();
+  </script>
 </body>
 </html>
