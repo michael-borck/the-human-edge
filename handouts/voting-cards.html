@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Voting cards · AI for professionals</title>
+<link rel="stylesheet" href="print.css">
+<style>
+/* Two A4 pages, four A6 cards each. Print double-sided, flip on the long edge,
+   cut along the dashed lines. Page 2 is mirrored left to right so each back
+   lands behind its front: A/Verified, B/Overstated, C/Refuted, D/Can't tell yet. */
+.sheet{page:bare;width:210mm;height:297mm;position:relative;page-break-after:always;overflow:hidden}
+.sheet:last-child{page-break-after:auto}
+.card{position:absolute;width:105mm;height:148.5mm;padding:11mm 10mm;display:flex;flex-direction:column}
+.p1{left:0;top:0}.p2{left:105mm;top:0}.p3{left:0;top:148.5mm}.p4{left:105mm;top:148.5mm}
+.cut{position:absolute;border:0 dashed #B5B7BC}
+.cut.v{left:105mm;top:0;height:297mm;border-left-width:.5pt}
+.cut.h{top:148.5mm;left:0;width:210mm;border-top-width:.5pt}
+.letter{font-family:var(--serif);font-size:130pt;line-height:.9;font-weight:600}
+.name{font-family:var(--serif);font-size:23pt;line-height:1.15;color:var(--ink);margin-top:6mm}
+.what{font-size:12pt;color:var(--body);margin-top:3mm}
+.foot{position:absolute;left:10mm;right:10mm;bottom:10mm;display:flex;justify-content:space-between;align-items:flex-end}
+.mini{width:30mm;height:30mm}
+.tag{font-family:var(--mono);font-size:7pt;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:700}
+.band{position:absolute;left:0;right:0;top:0;height:5mm}
+.back .big{font-family:var(--serif);font-size:38pt;line-height:1.05;color:var(--ink);margin-top:30mm}
+.back .what{font-size:13pt;margin-top:5mm}
+</style>
+</head>
+<body>
+<span class="doc-name">Voting cards</span>
+
+<!-- FRONTS: trust tool corners -->
+<section class="sheet">
+  <div class="card p1"><div class="band" style="background:#3E9A6C"></div>
+    <div class="tag">Trust tool · corner</div>
+    <div class="letter" style="color:#3E9A6C;margin-top:4mm">A</div>
+    <div class="name">Trust with light review</div>
+    <div class="what">Average is fine. Small consequences. Use it, skim before it goes out.</div>
+    <div class="foot"><span class="tag">AI for professionals</span>
+      <svg class="mini" viewBox="0 0 44 44"><rect x="1" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="1" y="23" width="20" height="20" fill="#3E9A6C"/><rect x="23" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/></svg></div>
+  </div>
+  <div class="card p2"><div class="band" style="background:#C99A2E"></div>
+    <div class="tag">Trust tool · corner</div>
+    <div class="letter" style="color:#C99A2E;margin-top:4mm">B</div>
+    <div class="name">Verify the load-bearing bits</div>
+    <div class="what">Average is fine. Large consequences. Check the claims the decision rests on.</div>
+    <div class="foot"><span class="tag">AI for professionals</span>
+      <svg class="mini" viewBox="0 0 44 44"><rect x="1" y="1" width="20" height="20" fill="#C99A2E"/><rect x="23" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="1" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/></svg></div>
+  </div>
+  <div class="card p3"><div class="band" style="background:#C99A2E"></div>
+    <div class="tag">Trust tool · corner</div>
+    <div class="letter" style="color:#C99A2E;margin-top:4mm">C</div>
+    <div class="name">Verify before you ship</div>
+    <div class="what">Precise. Small consequences. Check every figure, name and date.</div>
+    <div class="foot"><span class="tag">AI for professionals</span>
+      <svg class="mini" viewBox="0 0 44 44"><rect x="1" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="1" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="23" width="20" height="20" fill="#C99A2E"/></svg></div>
+  </div>
+  <div class="card p4"><div class="band" style="background:#C4503A"></div>
+    <div class="tag">Trust tool · corner</div>
+    <div class="letter" style="color:#C4503A;margin-top:4mm">D</div>
+    <div class="name">Human in the loop</div>
+    <div class="what">Precise. Large consequences. AI can help; a person decides and signs.</div>
+    <div class="foot"><span class="tag">AI for professionals</span>
+      <svg class="mini" viewBox="0 0 44 44"><rect x="1" y="1" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="1" width="20" height="20" fill="#C4503A"/><rect x="1" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/><rect x="23" y="23" width="20" height="20" fill="none" stroke="#B5B7BC"/></svg></div>
+  </div>
+  <div class="cut v"></div><div class="cut h"></div>
+</section>
+
+<!-- BACKS: verdicts (mirrored: A's back is top-right, B's back is top-left) -->
+<section class="sheet back">
+  <div class="card p2"><div class="band" style="background:#3E9A6C"></div>
+    <div class="tag">Verification · verdict</div>
+    <div class="big" style="color:#3E9A6C">Verified</div>
+    <div class="what">Accurate as stated. I checked it against the data.</div>
+    <div class="foot"><span class="tag">Back of A</span></div>
+  </div>
+  <div class="card p1"><div class="band" style="background:#C99A2E"></div>
+    <div class="tag">Verification · verdict</div>
+    <div class="big" style="color:#C99A2E">Overstated</div>
+    <div class="what">Right direction, wrong number. Close is not the same as right.</div>
+    <div class="foot"><span class="tag">Back of B</span></div>
+  </div>
+  <div class="card p4"><div class="band" style="background:#C4503A"></div>
+    <div class="tag">Verification · verdict</div>
+    <div class="big" style="color:#C4503A">Refuted</div>
+    <div class="what">The data contradicts it.</div>
+    <div class="foot"><span class="tag">Back of C</span></div>
+  </div>
+  <div class="card p3"><div class="band" style="background:#6B6F78"></div>
+    <div class="tag">Verification · verdict</div>
+    <div class="big" style="color:#6B6F78">Can't tell yet</div>
+    <div class="what">I haven't checked it. An honest answer beats a guess.</div>
+    <div class="foot"><span class="tag">Back of D</span></div>
+  </div>
+  <div class="cut v"></div><div class="cut h"></div>
+</section>
+</body>
+</html>

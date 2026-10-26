@@ -1,0 +1,96 @@
+/* Print stylesheet for the field guide, workbook and voting cards (WeasyPrint, A4).
+   Light paper, one accent per tool, numbered exhibits. */
+@import url('../assets/fonts/fonts.css');
+
+:root{
+  --ink:#16181D; --body:#33363D; --dim:#6B6F78; --faint:#A3A6AD; --rule:#D9DADD; --wash:#F4F2EC;
+  --night:#0A0C10; --paper:#FFFFFF;
+  --gold:#B8842A; --teal:#1F8A70; --coral:#C4503A; --blue:#3E66B8;
+  --green:#3E9A6C; --amber:#C99A2E; --red:#C4503A;
+  --acc:var(--gold);
+  --serif:'Domine', Georgia, serif; --sans:'Funnel Sans', 'Helvetica Neue', Arial, sans-serif; --mono:'Nanum Gothic Coding', Menlo, monospace;
+}
+@page{size:A4;margin:20mm 17mm 20mm 17mm;
+  @bottom-left{content:string(doc);font:8pt var(--mono);letter-spacing:.08em;color:#A3A6AD;text-transform:uppercase}
+  @bottom-right{content:counter(page);font:8pt var(--mono);color:#A3A6AD}}
+@page cover{margin:0;@bottom-left{content:none}@bottom-right{content:none}}
+@page bare{margin:0;@bottom-left{content:none}@bottom-right{content:none}}
+
+*{box-sizing:border-box}
+html{font-family:var(--sans);font-size:9.6pt;line-height:1.5;color:var(--body)}
+body{margin:0}
+.doc-name{string-set:doc content();display:none}
+
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:500;margin:0}
+h1{font-size:25pt;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:15pt;line-height:1.25;margin:16pt 0 6pt}
+h3{font-family:var(--sans);font-size:10.5pt;font-weight:600;margin:12pt 0 3pt;color:var(--ink)}
+p{margin:0 0 6pt}
+ul,ol{margin:0 0 6pt;padding-left:13pt}
+li{margin:0 0 2.5pt}
+b,strong{color:var(--ink);font-weight:600}
+em.a{font-style:normal;color:var(--acc)}
+a{color:inherit;text-decoration:none}
+
+.kicker{font-family:var(--mono);font-size:7.6pt;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);font-weight:700}
+.kicker::before{content:"";display:inline-block;width:18pt;height:1.4pt;background:var(--acc);vertical-align:middle;margin-right:7pt}
+.lab{font-family:var(--mono);font-size:7.2pt;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:700}
+.lab.a{color:var(--acc)}
+.lede{font-size:11.5pt;line-height:1.5;color:var(--ink);margin:8pt 0 10pt}
+.small{font-size:8.4pt;color:var(--dim)}
+.src{font-family:var(--mono);font-size:7pt;color:var(--faint);letter-spacing:.04em}
+
+/* chapter openers */
+.chapter{page-break-before:always}
+.tool-head{display:flex;align-items:flex-end;gap:14pt;border-bottom:1.5pt solid var(--ink);padding-bottom:9pt;margin-bottom:10pt}
+.tool-head > div:last-child{flex:1}
+.tool-num{font-family:var(--serif);font-size:44pt;line-height:.85;color:var(--acc);font-weight:600}
+.tool-head h1{font-size:22pt}
+.tool-q{font-family:var(--serif);font-size:11pt;color:var(--dim);margin-top:2pt}
+
+/* layout */
+.cols{display:flex;gap:14pt}
+.cols > *{flex:1}
+.c-6-4 > :first-child{flex:6}.c-6-4 > :last-child{flex:4}
+.c-4-6 > :first-child{flex:4}.c-4-6 > :last-child{flex:6}
+.keep{break-inside:avoid}
+
+/* exhibits */
+.exhibit{border-top:1pt solid var(--ink);padding-top:5pt;margin:10pt 0 12pt;break-inside:avoid}
+.exhibit .ex-t{font-family:var(--mono);font-size:7.2pt;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);font-weight:700;margin-bottom:6pt}
+.exhibit .ex-t span{color:var(--acc)}
+.exhibit svg{display:block;width:100%;height:auto}
+.exhibit .cap{font-size:7.8pt;color:var(--dim);margin-top:5pt}
+
+/* boxes */
+.box{background:var(--wash);border-left:2.5pt solid var(--acc);padding:8pt 11pt;margin:8pt 0;break-inside:avoid}
+.box p:last-child{margin:0}
+.box.dark{background:var(--night);color:#ECE7DB;border-left:none}
+.box.dark b{color:#fff}
+.quote{font-family:var(--mono);font-size:8.2pt;line-height:1.55;background:#F7F6F2;border:.6pt solid var(--rule);padding:7pt 9pt;color:var(--ink);margin:4pt 0 8pt;white-space:pre-wrap}
+.quote .f{color:var(--acc);font-weight:700}
+
+/* tables */
+table{width:100%;border-collapse:collapse;margin:4pt 0 10pt;font-size:8.6pt;break-inside:avoid}
+th{font-family:var(--mono);font-size:7pt;letter-spacing:.14em;text-transform:uppercase;text-align:left;color:var(--ink);
+  border-bottom:1pt solid var(--ink);padding:4pt 6pt 4pt 0;font-weight:700}
+td{border-bottom:.5pt solid var(--rule);padding:5pt 6pt 5pt 0;vertical-align:top}
+td:first-child{color:var(--ink);font-weight:600}
+table.write td{height:24pt}
+table.write.tall td{height:40pt}
+.chip{display:inline-block;font-family:var(--mono);font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;padding:1.5pt 5pt;border-radius:7pt;color:#fff;font-weight:700}
+.chip.g{background:var(--green)}.chip.a{background:var(--amber)}.chip.r{background:var(--red)}.chip.n{background:var(--dim)}
+
+/* cover */
+.cover{page:cover;background:var(--night);color:#ECE7DB;height:297mm;width:210mm;position:relative;overflow:hidden;page-break-after:always}
+.cover .in{position:absolute;left:22mm;right:22mm;top:30mm;bottom:24mm}
+.cover .kicker{color:#E8B54D}.cover .kicker::before{background:#E8B54D}
+.cover h1{color:#ECE7DB;font-size:38pt;margin-top:14pt;line-height:1.08}
+.cover .t2{font-family:var(--serif);font-size:19pt;color:#E8B54D;margin-top:8pt}
+.cover .bottom{position:absolute;left:0;right:0;bottom:0;font-family:var(--mono);font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:rgba(236,231,219,.6)}
+.cover .rail{display:flex;gap:7pt;margin-top:40pt}
+.cover .rail div{flex:1;border-top:2.5pt solid;padding-top:6pt;font-family:var(--mono);font-size:7.6pt;letter-spacing:.16em;text-transform:uppercase}
+
+/* writing areas (workbook) */
+.lines{border-bottom:.5pt solid var(--rule);height:20pt}
+.area{border:.6pt solid var(--rule);border-radius:3pt;min-height:60pt;margin:4pt 0 10pt}
