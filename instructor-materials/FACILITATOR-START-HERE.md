@@ -20,7 +20,7 @@
 
 ## What You're Teaching
 
-This is a **hands-on skills workshop**, not a strategic masterclass. The other two courses in the series teach executives where to invest in AI and how to manage AI projects. This course teaches professionals how to actually use AI tools in their daily work.
+This is a **hands-on skills workshop**, not a strategic masterclass. It teaches professionals to use AI with judgement in their daily work. Two boundaries to hold out loud. Choosing which AI projects to fund is the companion course, AI in Strategy: Choosing Where to Invest. And delivering an AI project is project-scale material approved for the afternoon of future combined Human Edge runs. Today is desk scale, delivered in full. If the room pushes for project delivery content, name it as where this course goes next and keep moving.
 
 **The idea that runs through the day:** everyone has the same AI tools, so generic competence is the baseline. The edge is judgement, knowing what to ask for, when to trust the answer, and where a human stays in charge. The **trust tool** (Average/Precise × Small/Large) is how that judgement is taught: one grid, introduced in Session 1, reused in every exercise. Two framing phrases to keep returning to: **"a convincing average"** (why verification matters) and **"conversation, not delegation"** (prompting is briefing a capable junior colleague, not casting a spell).
 
@@ -202,7 +202,7 @@ You need to be a good facilitator who understands the frameworks. If an AI tool 
 
 - Give them 10 minutes of quiet time to fill it in, don't talk over this
 - Ask 2-3 volunteers to share their "this week" commitment
-- End with course feedback form and next-in-series pointers
+- End with workbook export, the feedback QR hold, and the two-scales pointer (project scale in future combined runs, AI in Strategy for funding choices)
 
 **Closing script:**
 
@@ -345,15 +345,17 @@ By end of day, you should observe:
 
 ---
 
-## Key Differences from the Other Courses in the Series
+## How this course sits beside AI in Strategy
 
-| | This Course | Business Innovation | Leadership & PM |
-|---|---|---|---|
-| **Facilitator style** | Coach / workshop leader | Strategic facilitator | Simulation director |
-| **Main activity type** | Hands-on practice with AI tools | Group frameworks + role-play | Crisis simulation + decision-making |
-| **Level of ambiguity** | Low, clear tasks, clear outputs | Medium, strategic judgment needed | High, no right answers |
-| **Participant emotion** | Curiosity, some anxiety | Confidence, strategic thinking | Pressure, intensity |
-| **Your biggest risk** | Tech issues, wide skill gap | Groups defaulting to safe choices | Groups rushing through crises |
+| | This course (desk scale) | AI in Strategy |
+|---|---|---|
+| **Facilitator style** | Coach / workshop leader | Strategic facilitator |
+| **Main activity type** | Hands-on practice with AI tools | Group frameworks + investment judgement |
+| **Level of ambiguity** | Low, clear tasks, clear outputs | Medium, strategic judgment needed |
+| **Participant emotion** | Curiosity, some anxiety | Confidence, strategic thinking |
+| **Your biggest risk** | Tech issues, wide skill gap | Groups defaulting to safe choices |
+
+Project-delivery teaching (pilot scoping, human checkpoints, scale/pivot/kill) is not a third course any more. Executive Education merged Practice and Delivery into this title for future runs. Until that afternoon is built, it is a closing-slide pointer in this run and nothing more.
 
 **Your biggest facilitation challenge:** Managing the skill gap. Some participants will fly through exercises while others are still setting up accounts. Plan for this. Have stretch challenges ready. Use experienced participants as peer mentors.
 

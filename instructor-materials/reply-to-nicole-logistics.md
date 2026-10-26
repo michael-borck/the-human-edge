@@ -12,7 +12,7 @@ Thanks for the reminder details. Everything is in hand at my end. One timing not
 
 **No printing or stationery needed.** The course materials live in a digital workbook on the course site. Worksheets, the frameworks reference, and the action plan are completed and exported on participants' own laptops, so there is nothing to print and no need for butcher's paper, post-its, or markers. Scrap paper and pens on the tables are fine if the room has them. Nothing gets collected on paper.
 
-**One related change.** The course now runs under the title "The Human Edge: Using and Delivering AI with Judgement". The slides open by striking through the marketed title, so participants cannot miss the change, and the learning outcomes on the course page are unchanged. The course site already carries the new title: https://michael-borck.github.io/ai-in-practice/ . If the Curtin course page can be updated at some point that would be ideal, but nothing on the day depends on it.
+**One related change.** The course now runs under the title "The Human Edge: Using and Delivering AI with Judgement". This is the combined direction Steve has approved (the old Practice and Delivery courses merged into one), and I understand Genevieve is coordinating the promotion side, so this should not be a surprise at your end. This run delivers the desk-level content participants booked. The slides open by striking through the marketed title, so participants cannot miss the change, and the learning outcomes on the course page are unchanged. The course site already carries the new title: https://michael-borck.github.io/ai-in-practice/ . If the Curtin course page can be updated at some point that would be ideal, but nothing on the day depends on it.
 
 **What I do need from the room:**
 

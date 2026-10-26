@@ -18,7 +18,7 @@ Present from `content/deck.html` (presenter copy with notes: N toggles notes, 1 
 | 2:30 | Afternoon tea |  |  |
 | 3:00 | Redesign, teach | 19 to 21 | Beyond chat plus memory safeguards, Opportunity Finder with sequencing, agents and skills. |
 | 3:20 | Exercise 4, your workflow | 22 | Repeat the IP line for real work, sanitised. One step gets tested live. No exceptions. |
-| 4:00 | Close, ladder and four moves | 23 to 24 | Three minutes only. The full leadership version belongs to Courses 2 and 3. Say so. |
+| 4:00 | Close, ladder and four moves | 23 to 24 | Three minutes only. The full leadership version is project-scale material for future combined runs. Say so in one line. |
 | 4:10 | Action plan | 25 | Ten quiet minutes. Specific task, tool, day. Two volunteers read the week line aloud. |
 | 4:22 | Close | 26 | Workbook export first, feedback QR second, hold the slide until phones go down. |
 

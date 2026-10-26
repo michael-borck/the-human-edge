@@ -9,4 +9,4 @@ A hands-on BYOD workshop: brief AI well, judge how far to trust it, verify data 
 
 **Audience:** professionals in any function. **Prerequisites:** laptop, an account on one AI tool (checked in the 72-hour reminder), pre-reading read. **Size:** 15–30, tables of 4–6.
 
-Series: Course 1 of 3 — see SERIES.md.
+Offerings: this masterclass plus AI in Strategy: Choosing Where to Invest. Practice and Delivery were merged into The Human Edge (desk scale this run, project scale in future combined runs). See SERIES.md.

@@ -1,7 +1,7 @@
 # The Human Edge: Using and Delivering AI with Judgement
 
 One-day BYOD masterclass, Curtin Business School Executive Education.
-Booked as *AI for Professionals: Building Everyday Capability* — the deck opens by striking that title through. Everything in this repo uses the new title; ask Curtin to update the marketing page when convenient. "Delivering" means delivering your work with AI, not delivering AI projects (Courses 2 and 3).
+Booked as *AI for Professionals: Building Everyday Capability* — the deck opens by striking that title through. Everything in this repo uses the new title; ask Curtin to update the marketing page when convenient. This run delivers the desk scale in full (delivering your work). The approved combined format takes the same judgement to project scale in future runs; see SERIES.md. Do not read the title as a promise of project-delivery content in this run.
 
 **The one idea:** everyone has the same AI tools, so generic competence is the baseline. The edge is judgement — brief well, decide how much to trust, verify from outside the tool, keep a human where precision meets high stakes.
 
