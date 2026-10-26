@@ -22,3 +22,7 @@ content/slide-deck.html
 content/slide-deck.pdf
 content/slide-deck.pptx
 print/._*
+
+# Build temp files
+handouts/.workbook.tmp.html
+__pycache__/

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The four tools · AI for professionals</title>
+<meta name="description" content="The trust tool, RTCF, the check loop
+and the Opportunity Finder: four tools for using AI with judgement.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">AI for <span>professionals</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html">Before the day</a>
+    <a href="tools.html" class="on">The four tools</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="prompt-builder.html">Prompt builder</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>The four tools</p>
+</div>
+<h1 id="one-question-each.-all-four-work-on-any-ai-tool.">One question
+each. <em>All four work on any AI tool.</em></h1>
+<div class="lede">
+<p>Each tool answers one question you’ll face every time you use AI at
+work. The full version, with examples and worked cases, is in the <a
+href="downloads/field-guide.pdf">field guide (PDF)</a>.</p>
+</div>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tool</th>
+<th>The question</th>
+<th>The move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#trust-tool">1 · Trust tool</a></td>
+<td>How much should I trust this output?</td>
+<td>Two questions place it in a corner; the corner sets the check.</td>
+</tr>
+<tr>
+<td><a href="#rtcf">2 · RTCF</a></td>
+<td>How do I ask for what I need?</td>
+<td>Brief it like a capable new colleague. Context does most of the
+work.</td>
+</tr>
+<tr>
+<td><a href="#check-loop">3 · Check loop</a></td>
+<td>How do I know it’s right?</td>
+<td>Frame, explore, verify from outside, then say what you checked.</td>
+</tr>
+<tr>
+<td><a href="#opportunity-finder">4 · Opportunity Finder</a></td>
+<td>Where does AI fit in my week?</td>
+<td>Spot the signals, decide who leads each step, start with quick
+wins.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="s1" id="trust-tool">1 · The trust tool</h2>
+<p>Ask two questions about any output before you act on it.</p>
+<ul>
+<li><strong>How exact must it be?</strong> <em>Average</em> means the
+ballpark is fine: a draft, a summary, ideas. <em>Precise</em> means
+there’s one right answer and close is the same as wrong: a figure, a
+name, a date, a citation.</li>
+<li><strong>What happens if it’s wrong?</strong> <em>Small</em> means
+cheap to fix and nobody harmed. <em>Large</em> means money, safety,
+reputation, or someone’s job or wellbeing.</li>
+</ul>
+<figure>
+<svg viewBox="0 0 640 400" role="img" aria-label="The trust tool: a two by two grid. Precision needed runs across, from average to precise. Consequences if wrong run up, from small to large. Bottom left: trust with light review. Top left: verify the load-bearing bits. Bottom right: verify before you ship. Top right: human in the loop.">
+<g font-family="Funnel Sans, sans-serif">
+<rect x="72" y="10" width="270" height="170" rx="10" fill="rgba(232,181,77,.10)" stroke="rgba(232,181,77,.5)"/>
+<rect x="350" y="10" width="270" height="170" rx="10" fill="rgba(229,116,90,.14)" stroke="rgba(229,116,90,.6)"/>
+<rect x="72" y="188" width="270" height="170" rx="10" fill="rgba(108,197,154,.10)" stroke="rgba(108,197,154,.5)"/>
+<rect x="350" y="188" width="270" height="170" rx="10" fill="rgba(232,181,77,.10)" stroke="rgba(232,181,77,.5)"/>
+<g font-family="Nanum Gothic Coding, monospace" font-size="11" font-weight="700" letter-spacing="1">
+<text x="88" y="38" fill="#E8B54D">VERIFY THE LOAD-BEARING BITS</text>
+<text x="366" y="38" fill="#E5745A">HUMAN IN THE LOOP</text>
+<text x="88" y="216" fill="#6CC59A">TRUST WITH LIGHT REVIEW</text>
+<text x="366" y="216" fill="#E8B54D">VERIFY BEFORE YOU SHIP</text> </g>
+<g font-size="15" fill="#ECE7DB"> <text x="88" y="62">Check the claims
+it rests on.</text> <text x="366" y="62">AI can help. A person
+decides.</text> <text x="88" y="240">Use it. Skim before it goes
+out.</text> <text x="366" y="240">Check every figure, name, date.</text>
+</g> <g font-size="13" fill="rgba(236,231,219,.6)">
+<text x="88" y="160">e.g. a strategy memo for the exec team</text>
+<text x="366" y="160">e.g. the figures in a board paper</text>
+<text x="88" y="338">e.g. a birthday message for a colleague</text>
+<text x="366" y="338">e.g. a statistic quoted in a newsletter</text>
+</g>
+<line x1="58" y1="358" x2="58" y2="12" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/><path d="M52 20 L58 8 L64 20" fill="none" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/>
+<line x1="72" y1="372" x2="622" y2="372" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/><path d="M614 366 L626 372 L614 378" fill="none" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/>
+<g font-family="Nanum Gothic Coding, monospace" font-size="11" letter-spacing="1.2" fill="rgba(236,231,219,.6)">
+<text transform="translate(44 184) rotate(-90)" text-anchor="middle">CONSEQUENCES
+IF WRONG</text> <text x="346" y="394" text-anchor="middle">PRECISION
+NEEDED</text> </g> </g>
+</svg>
+<figcaption>
+Same layout and corner names as the practice game below.
+</figcaption>
+</figure>
+<p><strong>Rule of thumb:</strong> lean in where about-right on low
+stakes is fine; keep a person in charge where exactly-right meets high
+stakes.</p>
+<p><strong>Check from outside the tool.</strong> Asking the AI “are you
+sure?” doesn’t count: it tends to agree with itself. The check comes
+from the data, the source document, a colleague who knows, or your own
+arithmetic. Better models move the corners. They never remove the
+check.</p>
+<h3 id="practise-it">Practise it</h3>
+<p>Ten scenarios from a domain you choose, with an explanation on every
+card. <a href="https://trusttool.borck.education/">Open the game in a
+new tab</a>.</p>
+<iframe src="https://trusttool.borck.education/" title="Trust tool practice game" height="760" loading="lazy">
+</iframe>
+<h2 class="s2" id="rtcf">2 · RTCF</h2>
+<p>Prompting is briefing, not spell-casting. Write the prompt the way
+you’d brief a smart, fast colleague who is new to your job.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Part</th>
+<th>Ask yourself</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Role</strong></td>
+<td>Who should it write as?</td>
+<td>A senior HR adviser in a mid-sized Australian firm</td>
+</tr>
+<tr>
+<td><strong>Task</strong></td>
+<td>What exactly, and how much?</td>
+<td>Draft a reply to the client. Under 200 words.</td>
+</tr>
+<tr>
+<td><strong>Context</strong></td>
+<td>What does it need to know?</td>
+<td>18-month client. Their board shifted priorities. I want a meeting,
+not a rewrite.</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td>What should it look like?</td>
+<td>Email. Acknowledge, explain, propose, close.</td>
+</tr>
+</tbody>
+</table>
+<p>Context does most of the work: it’s the only part the tool can’t
+guess. Role does the least.</p>
+<p><strong>Still weak? Add one upgrade</strong> before you rewrite from
+scratch. They help smaller, older and free-tier models the most.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Upgrade</th>
+<th>Line to add</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+ Example</td>
+<td><code>Match the length and tone of this example: [paste]</code></td>
+</tr>
+<tr>
+<td>+ Done</td>
+<td><code>Done means under 200 words, figures only from my notes, and anything you're unsure of marked [CHECK].</code></td>
+</tr>
+<tr>
+<td>+ Questions</td>
+<td><code>Before you start, ask me up to five questions.</code></td>
+</tr>
+<tr>
+<td>+ Steps</td>
+<td><code>Give me an outline only. We'll draft one section at a time.</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Agreeable is not honest.</strong> Models are tuned to please.
+Add the guardrail line:
+<code>Only change your assessment if I give you a new fact. Name the fact that changed it.</code>
+For an independent read, start a fresh chat.</p>
+<p><a href="prompt-builder.html">Build and save prompts with the prompt
+builder →</a></p>
+<h2 class="s3" id="check-loop">3 · The check loop</h2>
+<p>AI makes analysis fast. It doesn’t make it trustworthy.</p>
+<ol type="1">
+<li><strong>Frame.</strong> Write the question and the decision it
+feeds. Start a fresh chat.</li>
+<li><strong>Explore.</strong> Ask it to describe the data first: rows,
+columns, dates. Does that match what you know? Then go broad to
+deep.</li>
+<li><strong>Verify.</strong> If a number would change a decision, check
+it yourself: filter, recount, open the source. If it doesn’t hold, go
+back.</li>
+<li><strong>Shape.</strong> Write for the reader. End with one line
+saying what you checked and how.</li>
+</ol>
+<p><strong>Five ways a smooth answer goes wrong:</strong> miscounts
+after filtering; correlation sold as cause; missing rows skipped
+silently; numbers that can’t all be true; detail that isn’t in the
+file.</p>
+<h2 class="s4" id="opportunity-finder">4 · The Opportunity Finder</h2>
+<p><strong>1 · Spot.</strong> Look for four signals in your week: work
+you do often the same way (<em>Automate</em>); reading, gathering and
+comparing (<em>Assist</em>); writing from a blank page
+(<em>Generate</em>); hunting for meaning in numbers
+(<em>Analyse</em>).</p>
+<p><strong>2 · Assign who leads each step.</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>AI leads</th>
+<th>AI assists</th>
+<th>You lead</th>
+<th>Human only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI drafts it; you review and approve.</td>
+<td>You steer; AI does much of the work.</td>
+<td>You do the thinking; AI takes sub-tasks.</td>
+<td>Empathy, ethics, accountability.</td>
+</tr>
+<tr>
+<td>Minutes from your notes</td>
+<td>A client proposal</td>
+<td>A strategy paper</td>
+<td>Telling someone their role is going</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3 · Prioritise.</strong> Start with quick wins: high time
+saved, low effort to set up. Count the checking as effort. Quick wins
+usually sit in the trust tool’s green corner, because they’re cheap to
+check.</p>
+<div class="note">
+<p><strong>Keep practising.</strong> Pick one task that matters. Do a
+rough pass yourself, then ask AI for its version, and compare. Where it
+beat you shows your weak spot; where you beat it shows its limit. Decide
+what must stay human, practise there, trade what AI has proven, and
+revisit every few months. The line moves.</p>
+</div>
+</main>
+<footer><div class="in">
+  <span>AI for professionals: building everyday capability · Curtin Executive Education</span>
+  <span>Dr Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+</body>
+</html>

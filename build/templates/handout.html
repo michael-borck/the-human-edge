@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>$title$ · $subtitle$</title>
+<link rel="stylesheet" href="print.css">
+<style>
+.pb{page-break-before:always}
+h1{font-size:16pt;margin:16pt 0 6pt;padding-top:7pt;border-top:1.5pt solid var(--ink)}
+.pb + h1{margin-top:0}
+table td{height:22pt}
+table th{white-space:normal}
+blockquote{margin:6pt 0 10pt;padding:7pt 10pt;background:#F7F6F2;border-left:2.5pt solid var(--gold);font-family:var(--mono);font-size:8.4pt;line-height:1.55;color:var(--ink)}
+blockquote p{margin:0}
+code{font-family:var(--mono);font-size:8pt}
+.wb-head{border-bottom:1.5pt solid var(--ink);padding-bottom:10pt;margin-bottom:12pt}
+.wb-head h1{border:0;padding:0;margin:6pt 0 2pt;font-size:28pt}
+hr{border:0;border-top:.5pt solid var(--rule);margin:14pt 0}
+</style>
+</head>
+<body>
+<span class="doc-name">$subtitle$ · $title$</span>
+<header class="wb-head">
+  <div class="kicker">Curtin Executive Education</div>
+  <h1>$title$</h1>
+  <div class="tool-q">$subtitle$</div>
+</header>
+$body$
+</body>
+</html>

@@ -1,0 +1,129 @@
+---
+pagetitle: The four tools
+description: "The trust tool, RTCF, the check loop and the Opportunity Finder: four tools for using AI with judgement."
+nav-tools: true
+---
+
+::: kicker
+The four tools
+:::
+
+# One question each. <em>All four work on any AI tool.</em>
+
+::: lede
+Each tool answers one question you'll face every time you use AI at work. The full version, with examples and worked cases, is in the [field guide (PDF)](downloads/field-guide.pdf).
+:::
+
+| Tool | The question | The move |
+|---|---|---|
+| [1 · Trust tool](#trust-tool) | How much should I trust this output? | Two questions place it in a corner; the corner sets the check. |
+| [2 · RTCF](#rtcf) | How do I ask for what I need? | Brief it like a capable new colleague. Context does most of the work. |
+| [3 · Check loop](#check-loop) | How do I know it's right? | Frame, explore, verify from outside, then say what you checked. |
+| [4 · Opportunity Finder](#opportunity-finder) | Where does AI fit in my week? | Spot the signals, decide who leads each step, start with quick wins. |
+
+## 1 · The trust tool {#trust-tool .s1}
+
+Ask two questions about any output before you act on it.
+
+- **How exact must it be?** *Average* means the ballpark is fine: a draft, a summary, ideas. *Precise* means there's one right answer and close is the same as wrong: a figure, a name, a date, a citation.
+- **What happens if it's wrong?** *Small* means cheap to fix and nobody harmed. *Large* means money, safety, reputation, or someone's job or wellbeing.
+
+<figure>
+<svg viewBox="0 0 640 400" role="img" aria-label="The trust tool: a two by two grid. Precision needed runs across, from average to precise. Consequences if wrong run up, from small to large. Bottom left: trust with light review. Top left: verify the load-bearing bits. Bottom right: verify before you ship. Top right: human in the loop.">
+  <g font-family="Funnel Sans, sans-serif">
+    <rect x="72" y="10" width="270" height="170" rx="10" fill="rgba(232,181,77,.10)" stroke="rgba(232,181,77,.5)"/>
+    <rect x="350" y="10" width="270" height="170" rx="10" fill="rgba(229,116,90,.14)" stroke="rgba(229,116,90,.6)"/>
+    <rect x="72" y="188" width="270" height="170" rx="10" fill="rgba(108,197,154,.10)" stroke="rgba(108,197,154,.5)"/>
+    <rect x="350" y="188" width="270" height="170" rx="10" fill="rgba(232,181,77,.10)" stroke="rgba(232,181,77,.5)"/>
+    <g font-family="Nanum Gothic Coding, monospace" font-size="11" font-weight="700" letter-spacing="1">
+      <text x="88" y="38" fill="#E8B54D">VERIFY THE LOAD-BEARING BITS</text>
+      <text x="366" y="38" fill="#E5745A">HUMAN IN THE LOOP</text>
+      <text x="88" y="216" fill="#6CC59A">TRUST WITH LIGHT REVIEW</text>
+      <text x="366" y="216" fill="#E8B54D">VERIFY BEFORE YOU SHIP</text>
+    </g>
+    <g font-size="15" fill="#ECE7DB">
+      <text x="88" y="62">Check the claims it rests on.</text>
+      <text x="366" y="62">AI can help. A person decides.</text>
+      <text x="88" y="240">Use it. Skim before it goes out.</text>
+      <text x="366" y="240">Check every figure, name, date.</text>
+    </g>
+    <g font-size="13" fill="rgba(236,231,219,.6)">
+      <text x="88" y="160">e.g. a strategy memo for the exec team</text>
+      <text x="366" y="160">e.g. the figures in a board paper</text>
+      <text x="88" y="338">e.g. a birthday message for a colleague</text>
+      <text x="366" y="338">e.g. a statistic quoted in a newsletter</text>
+    </g>
+    <line x1="58" y1="358" x2="58" y2="12" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/><path d="M52 20 L58 8 L64 20" fill="none" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/>
+    <line x1="72" y1="372" x2="622" y2="372" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/><path d="M614 366 L626 372 L614 378" fill="none" stroke="rgba(236,231,219,.6)" stroke-width="1.5"/>
+    <g font-family="Nanum Gothic Coding, monospace" font-size="11" letter-spacing="1.2" fill="rgba(236,231,219,.6)">
+      <text transform="translate(44 184) rotate(-90)" text-anchor="middle">CONSEQUENCES IF WRONG</text>
+      <text x="346" y="394" text-anchor="middle">PRECISION NEEDED</text>
+    </g>
+  </g>
+</svg>
+<figcaption>Same layout and corner names as the practice game below.</figcaption>
+</figure>
+
+**Rule of thumb:** lean in where about-right on low stakes is fine; keep a person in charge where exactly-right meets high stakes.
+
+**Check from outside the tool.** Asking the AI "are you sure?" doesn't count: it tends to agree with itself. The check comes from the data, the source document, a colleague who knows, or your own arithmetic. Better models move the corners. They never remove the check.
+
+### Practise it
+
+Ten scenarios from a domain you choose, with an explanation on every card. [Open the game in a new tab](https://trusttool.borck.education/).
+
+<iframe src="https://trusttool.borck.education/" title="Trust tool practice game" height="760" loading="lazy"></iframe>
+
+## 2 · RTCF {#rtcf .s2}
+
+Prompting is briefing, not spell-casting. Write the prompt the way you'd brief a smart, fast colleague who is new to your job.
+
+| Part | Ask yourself | Example |
+|---|---|---|
+| **Role** | Who should it write as? | A senior HR adviser in a mid-sized Australian firm |
+| **Task** | What exactly, and how much? | Draft a reply to the client. Under 200 words. |
+| **Context** | What does it need to know? | 18-month client. Their board shifted priorities. I want a meeting, not a rewrite. |
+| **Format** | What should it look like? | Email. Acknowledge, explain, propose, close. |
+
+Context does most of the work: it's the only part the tool can't guess. Role does the least.
+
+**Still weak? Add one upgrade** before you rewrite from scratch. They help smaller, older and free-tier models the most.
+
+| Upgrade | Line to add |
+|---|---|
+| + Example | `Match the length and tone of this example: [paste]` |
+| + Done | `Done means under 200 words, figures only from my notes, and anything you're unsure of marked [CHECK].` |
+| + Questions | `Before you start, ask me up to five questions.` |
+| + Steps | `Give me an outline only. We'll draft one section at a time.` |
+
+**Agreeable is not honest.** Models are tuned to please. Add the guardrail line: `Only change your assessment if I give you a new fact. Name the fact that changed it.` For an independent read, start a fresh chat.
+
+[Build and save prompts with the prompt builder →](prompt-builder.html)
+
+## 3 · The check loop {#check-loop .s3}
+
+AI makes analysis fast. It doesn't make it trustworthy.
+
+1. **Frame.** Write the question and the decision it feeds. Start a fresh chat.
+2. **Explore.** Ask it to describe the data first: rows, columns, dates. Does that match what you know? Then go broad to deep.
+3. **Verify.** If a number would change a decision, check it yourself: filter, recount, open the source. If it doesn't hold, go back.
+4. **Shape.** Write for the reader. End with one line saying what you checked and how.
+
+**Five ways a smooth answer goes wrong:** miscounts after filtering; correlation sold as cause; missing rows skipped silently; numbers that can't all be true; detail that isn't in the file.
+
+## 4 · The Opportunity Finder {#opportunity-finder .s4}
+
+**1 · Spot.** Look for four signals in your week: work you do often the same way (*Automate*); reading, gathering and comparing (*Assist*); writing from a blank page (*Generate*); hunting for meaning in numbers (*Analyse*).
+
+**2 · Assign who leads each step.**
+
+| AI leads | AI assists | You lead | Human only |
+|---|---|---|---|
+| AI drafts it; you review and approve. | You steer; AI does much of the work. | You do the thinking; AI takes sub-tasks. | Empathy, ethics, accountability. |
+| Minutes from your notes | A client proposal | A strategy paper | Telling someone their role is going |
+
+**3 · Prioritise.** Start with quick wins: high time saved, low effort to set up. Count the checking as effort. Quick wins usually sit in the trust tool's green corner, because they're cheap to check.
+
+::: note
+**Keep practising.** Pick one task that matters. Do a rough pass yourself, then ask AI for its version, and compare. Where it beat you shows your weak spot; where you beat it shows its limit. Decide what must stay human, practise there, trade what AI has proven, and revisit every few months. The line moves.
+:::
