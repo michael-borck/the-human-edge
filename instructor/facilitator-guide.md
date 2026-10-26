@@ -2,6 +2,8 @@
 
 *The Human Edge: using and delivering AI with judgement.* One day, 9:00 to 4:30, four sessions, eight exercises. Some participants will have enrolled under the earlier title, *AI for professionals: building everyday capability*. The opening slide fades from that title to the new one.
 
+Curtin's course page (still under the old title) promises RTCF, the AI Opportunity Finder, workflow redesign, practical safeguards, a personal prompt library, four reusable decision tools, and a week/month/quarter action plan. All of these are delivered, as Exercises 3 and 4, 7, 4 and 8, and the desk card and field guide. The page also still lists the old three-course series; if asked, practice and delivery merged into The Human Edge, and "AI to drive business innovation" is now AI in Strategy.
+
 This guide isn't published: the build only publishes `docs/`. The repo itself is public, though, so don't add anything here you wouldn't want a participant to read.
 
 ## The design in one paragraph
