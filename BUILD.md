@@ -191,6 +191,15 @@ bash build/scripts/make-print.sh
 
 Regenerates the five participant PDFs in `print/` (frameworks reference sheet, all three worksheets, action plan). Run after editing any participant material; the committed PDFs in `print/` should always match the markdown sources.
 
+### Render the Slide Deck
+
+```bash
+cd content
+pandoc slide-deck.md -o slide-deck.pptx --lua-filter=../build/scripts/drop-images.lua
+```
+
+Produces `content/slide-deck.pptx` (37 slides, speaker notes included — pandoc turns `::: {.notes}` blocks into PowerPoint speaker notes). The lua filter drops the not-yet-created illustration images (see `content/images/IMAGE-SPECS.md`); the deck is text-plus-notes until those are drawn. The pptx is gitignored on purpose: it carries instructor speaker notes, so do not publish it to the public site.
+
 ---
 
 For detailed folder documentation, see FOLDER-STRUCTURE.md.
