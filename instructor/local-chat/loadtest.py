@@ -73,7 +73,7 @@ def stream_request(args, prompt, think, max_tokens):
     if args.api == "ollama":
         url = args.base_url.rstrip("/") + "/api/chat"
         body = {"model": args.model, "messages": [{"role": "user", "content": prompt}],
-                "stream": True, "keep_alive": "30m", "options": {"num_predict": max_tokens}}
+                "stream": True, "options": {"num_predict": max_tokens}}
         if args.num_ctx:
             body["options"]["num_ctx"] = args.num_ctx
         if think != "omit":
@@ -255,7 +255,7 @@ def analysis_test(args):
     if r["prompt_tokens"]:
         seen = r["prompt_tokens"]
         flag = "  <-- CUT: most of the CSV never reached the model. Raise num_ctx." if seen < 0.6 * est else ""
-        print(f"  the server read {seen} prompt tokens of ~{est}{flag}")
+        print(f"  the server read {seen} prompt tokens (rough estimate from length: ~{est}){flag}")
     print(f"  answered in {r['total']:.1f} s\n\n--- model's answer ---\n{r['text'].strip()}\n--- end ---\n")
     numbers = [float(n) for n in re.findall(r"\d+(?:\.\d+)?", r["text"])]
     score = 0
