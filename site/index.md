@@ -96,6 +96,14 @@ Twenty-seven prompts for briefing, pushing back, checking, delivering, rehearsin
 :::
 
 ::: card
+[Course days only]{.lab}
+
+### Class chat
+
+No approved AI tool, or want a second one to compare? A local model and Claude Sonnet, side by side. [Register](https://chat.locopuente.org/register) · [Log in](https://chat.locopuente.org/login). Chats are stored on the course server and deleted after the course: nothing confidential.
+:::
+
+::: card
 [Fill in on the day]{.lab}
 
 ### Workbook

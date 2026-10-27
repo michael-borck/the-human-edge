@@ -31,7 +31,7 @@ Copy the prompts from here and write your answers in the [digital workbook](work
 [25 min · solo, then tables]{.mins}
 
 1. **Your pass first.** Five minutes, no AI: sketch your own plan for the task below, in the workbook.
-2. **Then AI's.** Paste the task, unedited, into an AI tool (two tools if you have them).
+2. **Then AI's.** Paste the task, unedited, into an AI tool (two tools if you have them; the [class chat](https://chat.locopuente.org/register) has two, on course days).
 3. **Compare side by side.** Where did you beat it? Where did it beat you? What did it get confidently wrong?
 
 > I manage a team of 8 in a mid-sized company. One of my team, a strong performer for three years, has been late and missing deadlines for the past month. Others are starting to notice. Write me a plan to address this.

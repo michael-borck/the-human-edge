@@ -282,7 +282,7 @@ Why conversation works, if anyone asks for the evidence: a meta-analysis of 341 
 - **The context-window trap.** On Ollama's default setting, two-thirds of the RetailFlow CSV was silently dropped and the model still answered. Check the context length before trusting a long paste.
 - **Where to try it:** Msty Studio, on the Resources page.
 
-**The class chat: a fallback for the room.** chat.locopuente.org (LibreChat on puente) offers two models: llama3.1 8B, local, deliberately the "poor" model, and Claude Sonnet through the API, with a spend limit set at Anthropic. Anyone without an approved tool can use it for every exercise, and the two side by side make the local-versus-cloud point.
+**The class chat: a fallback for the room.** chat.locopuente.org (LibreChat on puente; the registration QR is on slide 1, and the link is on the home page, Before the day and Exercise 1) offers two models: llama3.1 8B, local, deliberately the "poor" model, and Claude Sonnet through the API, with a spend limit set at Anthropic. Anyone without an approved tool can use it for every exercise, and the two side by side make the local-versus-cloud point.
 
 Course-day setup on puente: Ollama pinned to the 3090 (normally the 4060 Ti; see the comments in `10-classroom.conf`), `OLLAMA_NUM_PARALLEL=4` in `20-course-day.conf`, llama3.1 and the qwen3.5:0.8b title model preloaded, other GPU tools stopped. Put it all back afterwards.
 
