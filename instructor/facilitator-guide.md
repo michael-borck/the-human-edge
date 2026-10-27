@@ -1,8 +1,8 @@
 # Facilitator guide
 
-*The Human Edge: using and delivering AI with judgement.* One day, 9:00 to 4:30, four sessions, eight exercises. Some participants will have enrolled under the earlier title, *AI for professionals: building everyday capability*. The opening slide fades from that title to the new one.
+*The Human Edge: using and delivering AI with judgement.* One day, 9:00 to 4:30, four sessions, nine exercises. Some participants will have enrolled under the earlier title, *AI for professionals: building everyday capability*. The opening slide fades from that title to the new one.
 
-Curtin's course page (still under the old title) promises RTCF, the AI Opportunity Finder, workflow redesign, practical safeguards, a personal prompt library, four reusable decision tools, and a week/month/quarter action plan. All of these are delivered, as Exercises 3 and 4, 7, 4 and 8, and the desk card and field guide. The page also still lists the old three-course series; if asked, practice and delivery merged into The Human Edge, and "AI to drive business innovation" is now AI in Strategy.
+Curtin's course page (still under the old title) promises RTCF, the AI Opportunity Finder, workflow redesign, practical safeguards, a personal prompt library, four reusable decision tools, and a week/month/quarter action plan. All of these are delivered, as Exercises 3 and 4, 8, 4 and 9, and the desk card and field guide. The page also still lists the old three-course series; if asked, practice and delivery merged into The Human Edge, and "AI to drive business innovation" is now AI in Strategy.
 
 This guide isn't published: the build only publishes `docs/`. The repo itself is public, though, so don't add anything here you wouldn't want a participant to read.
 
@@ -63,7 +63,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
 
-**Slide 25**, the verification answers, exists only in the repo copy. The public deck and the PDF skip it.
+**Slide 28**, the verification answers, exists only in the repo copy. The public deck and the PDF skip it.
 
 The deck uses local fonts, so it runs offline.
 
@@ -84,24 +84,27 @@ The deck uses local fonts, so it runs offline.
 | 11:50 | 19 | **Exercise 4** · Upgrade and save (library) | 25 |
 | 12:15 | | Debrief; download the CSV before lunch | 15 |
 | 12:30 | | Lunch | 45 |
-| **1:15** | 20–22 | Check loop; five failure modes and VET; the quiet defaults (5-min bias check) | 15 |
-| 1:30 | 23 | **Exercise 5** · RetailFlow | 30 |
-| 2:00 | 24 | **Exercise 6** · Verification challenge (pairs, then blind vote) | 15 |
-| 2:15 | 25 | Reveal; full debrief of Exercise 5 | 15 |
+| **1:15** | 20–22 | Check loop; five failure modes and VET; the quiet defaults (4-min bias check) | 11 |
+| 1:26 | 23 | **Exercise 5** · RetailFlow | 22 |
+| 1:48 | 24–25 | Hand it over; prove it blind | 5 |
+| 1:53 | 26 | **Exercise 6** · Decide like me | 20 |
+| 2:13 | 27 | **Exercise 7** · Verification challenge (pairs, then blind vote) | 12 |
+| 2:25 | 28 | Reveal; full debrief of Exercise 5 | 5 |
 | 2:30 | | Afternoon tea | 30 |
-| **3:00** | 26–31 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in; responsible by design | 17 |
-| 3:17 | 32 | **Exercise 7** · Plan the delivery of one workflow | 35 |
-| 3:52 | 33–34 | The 30-day gate; agents, harnesses, skills | 5 |
-| 3:57 | 35–38 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
-| 4:04 | 39 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
-| 4:16 | 40 | Close, the companion masterclasses, feedback form | 14 |
+| **3:00** | 29–34 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in; responsible by design | 17 |
+| 3:17 | 35 | **Exercise 8** · Plan the delivery of one workflow | 35 |
+| 3:52 | 36–37 | The 30-day gate; agents, harnesses, skills | 5 |
+| 3:57 | 38–41 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
+| 4:05 | 42 | **Exercise 9** · Action plan, two calendar entries, two or three shares | 12 |
+| 4:17 | 43 | Close, the companion masterclasses, feedback form | 13 |
 | 4:30 | | Finish | |
 
 **If you're running late,** cut in this order:
-1. Slide 37 (the corners move): say it in one sentence.
-2. The agents slide (34).
+1. Slide 40 (the corners move): say it in one sentence.
+2. The agents slide (37).
 3. The Exercise 4 push-back step.
-4. The "if you lead people" slide (38).
+4. The "if you lead people" slide (41).
+5. Exercise 6: drop to two test cases and skip the patch step (runs in 15).
 
 Never cut the verification challenge, the delivery plan or the action plan.
 
@@ -170,9 +173,17 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 
 **The quiet defaults (slide 22).** Five minutes. Run the senior manager / administrative officer pair live, or let tables run it. Look at names, warmth vs capability, and who holds authority. The longer version, other pairs and Survival of the Best Fit are on the Responsible use page.
 
-**Exercise 5.** If uploads are blocked, most tools accept pasted CSV text; the file is small. Watch for people skipping "describe the data first".
+**Exercise 5.** Now 22 minutes: 2 frame, 9 explore, 5 verify, 6 brief. If uploads are blocked, most tools accept pasted CSV text; the file is small. Watch for people skipping "describe the data first". Anyone who runs out of time finishes the brief during the verification challenge.
 
-**Exercise 6.** Give pairs 8 minutes to check the claims, then run a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 25, one claim per click. Expect B to fool the most people and C to split the room.
+**Hand it over and Decide like me (slides 24–26).** The capstone: one decision, externalised and proven. The sort question routes the extraction: *could you explain the why to a new hire, out loud?* Say it, interview it out, or mine it — then install lean, prove it blind, patch. The method is Dylan Davis's; the full protocol, with the mining and install prompts and the cold-rerun rule, is on the Hand it over page.
+
+- **Coach the pick, not the prompting.** Decision too big? Cut to one client type or one queue. Top-right corner? Pick another.
+- **The blind test only works if the outcomes stay hidden.** Anyone who skips writing their calls first should redo that step — from memory, before running the skill.
+- **Expect roughly four matches in five.** The mismatch is the payoff: a missing boundary rule, an unstated exception, or a rule the expert holds loosely applied as absolute. Name those classes in the debrief.
+- **It will praise its own skill.** Of course it will. The blind test is the defence; the fresh-chat rerun is the proof.
+- **Governance first:** described cases, no client names, approved tools only.
+
+**Exercise 7.** Give pairs 6 minutes to check the claims, then run a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 28, one claim per click. Expect B to fool the most people and C to split the room.
 
 ## Answer key: RetailFlow
 
@@ -226,31 +237,31 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **The point:** treat one redesigned workflow as a small AI project, and design the human checkpoints in from the start. Then keep practising on purpose, because routine work no longer trains you for free.
 
-**AI projects fail differently (slide 29).** Five assumptions that hold for normal projects and break for AI. Spend the time on "the demo is a trap" and "the data is the uncertainty"; they are the ones participants have seen happen. The full reading is in the field guide and on the Tools page.
+**AI projects fail differently (slide 32).** Five assumptions that hold for normal projects and break for AI. Spend the time on "the demo is a trap" and "the data is the uncertainty"; they are the ones participants have seen happen. The full reading is in the field guide and on the Tools page.
 
-**Design the human in (slide 30).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check. Staff them with someone who knows what right looks like (the evaluator's advantage), and keep at least one human step deliberately to build capability.
+**Design the human in (slide 33).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check. Staff them with someone who knows what right looks like (the evaluator's advantage), and keep at least one human step deliberately to build capability.
 
-**Responsible by design (slide 31).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
+**Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
 
-**Exercise 7.**
+**Exercise 8.**
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
-- The Map my workflow and Pre-mortem starter prompts help anyone who's stuck.
+- The Map my workflow and Pre-mortem starter prompts help anyone who's stuck. Exercise 6's decision skill can be one step in the plan — with the checkpoint attached.
 
-**The gate (slide 33).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
+**The gate (slide 36).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
-**The evidence (slide 35).** Lead with Australia and keep it balanced:
+**The evidence (slide 38).** Lead with Australia and keep it balanced:
 - **DEWR**, Office of the Chief Economist, *AI and employment in Australia*, July 2026. No broad AI-driven upheaval, and youth outcomes mostly held up. The occupations most exposed to AI automation have grown more slowly. The authors call this suggestive, not definitive.
 - **Jobs and Skills Australia**, *Generative AI Capacity Study*, 2025. Some employers shifted hiring towards experienced staff. The ReadyTech quote comes from this study via ACS Information Age, 15 September 2025. Entry-level roles haven't declined economy-wide; JSA says to monitor closely.
 - **Stanford**, Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine?", revised August 2026. Treat it as the US leading indicator: under-25s in AI-exposed jobs are 19% below trend, mostly through fewer hires.
 
 The message is fewer junior hires, not mass replacement.
 
-**Practice (slide 36).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
+**Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
-**Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
+**Exercise 9.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
 
-**Optional agent demo (slide 34).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky.
+**Optional agent demo (slide 37).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best right after the agents slide, and Exercise 6 has already given everyone the idea.
 
 ## What you'll hear, and how to respond
 
@@ -274,11 +285,11 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Product names** in "Before the day" and slide 34.
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
-- [ ] **Feedback form.** Slide 40 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
+- [ ] **Feedback form.** Slide 43 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day
 
-- Point participants to Go deeper, Responsible use and the quiz for after the day. The ethics dilemmas also work as a fast-finisher task in Exercise 7.
+- Point participants to Go deeper, Responsible use, Hand it over and the quiz for after the day. The ethics dilemmas also work as a fast-finisher task in Exercise 8.
 - Send participants the course site link and the desk card, and remind them to export their workbook if they haven't.
 - Note which exercises ran long and which scenarios split the room, and update the scenario list above. ClassPulse can export the votes to CSV for this.

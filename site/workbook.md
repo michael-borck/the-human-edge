@@ -1,6 +1,6 @@
 ---
 pagetitle: Workbook
-description: "Your digital workbook for The Human Edge: all eight exercises, your prompt library, delivery plan and action plan. Saves in your browser; export before you leave."
+description: "Your digital workbook for The Human Edge: all nine exercises, your prompt library, delivery plan and action plan. Saves in your browser; export before you leave."
 nav-workbook: true
 ---
 
@@ -151,7 +151,7 @@ Type straight into this page. It saves automatically in this browser on this dev
 </section>
 
 <section data-title="Exercise 5 · RetailFlow">
-  <div class="meta">Exercise 5 · Check · 30 min</div>
+  <div class="meta">Exercise 5 · Check · 22 min</div>
   <h2>Karen needs answers by Monday</h2>
   <p class="how"><a href="downloads/retailflow-customer-service-data.csv">Download the CSV</a>. Fresh chat. Upload blocked? Paste the first 50 rows, or describe the columns, and say so in your brief.</p>
   <div class="two">
@@ -167,8 +167,27 @@ Type straight into this page. It saves automatically in this browser on this dev
   <label>What I checked</label><textarea data-wb="e5-checked" data-label="What I checked"></textarea>
 </section>
 
-<section data-title="Exercise 6 · Verification challenge">
-  <div class="meta">Exercise 6 · Check · 15 min</div>
+<section data-title="Exercise 6 · Decide like me">
+  <div class="meta">Exercise 6 · Check · 20 min</div>
+  <h2>Teach it to decide like you</h2>
+  <p class="how">One decision you make twice — small, repeatable, explainable, and nothing from the top-right corner. Extract the rules, then prove the skill blind against your own past calls. Describe past cases; don't paste anything confidential.</p>
+  <div class="two">
+    <div><label>The decision</label><input type="text" data-wb="dlm-decision" data-label="The decision"></div>
+    <div><label>How I extracted it</label><select data-wb="dlm-path" data-label="Extraction path"><option></option><option>Said it out loud</option><option>Let it interview me</option><option>Mined my history</option></select></div>
+  </div>
+  <label>My decision rules <small>every if-then branch included</small></label>
+  <textarea class="big" data-wb="dlm-rules" data-label="Decision rules"></textarea>
+  <label>The blind test <small>write your calls before you run it — inputs only, outcomes hidden</small></label>
+  <table><thead><tr><th>Past case (inputs only)</th><th>My call at the time</th><th>Its call, and the rule it used</th><th>Match?</th></tr></thead>
+  <tbody data-table="dlm-test" data-cols="text,text,text,match" data-rows="3"></tbody></table>
+  <label>The mismatch I patched <small>a missing boundary rule, an unstated exception, or a rule you hold loosely applied as absolute</small></label>
+  <textarea data-wb="dlm-patch" data-label="Patched mismatch"></textarea>
+  <label>What I would never hand over, and why</label>
+  <textarea data-wb="dlm-keep" data-label="Never hand over"></textarea>
+</section>
+
+<section data-title="Exercise 7 · Verification challenge">
+  <div class="meta">Exercise 7 · Check · 12 min</div>
   <h2>Three claims. At least one is wrong.</h2>
   <table><thead><tr><th style="width:42%">Claim</th><th style="width:22%">Verdict</th><th>Evidence from the data</th></tr></thead><tbody>
     <tr><td>A. "Email is roughly three times slower than Live Chat."</td><td><select data-wb="e6-a" data-label="Claim A verdict"><option></option><option>Verified</option><option>Overstated</option><option>Refuted</option><option>Can't tell yet</option></select></td><td><input type="text" data-wb="e6-a-ev" data-label="Claim A evidence"></td></tr>
@@ -179,8 +198,8 @@ Type straight into this page. It saves automatically in this browser on this dev
   <textarea data-wb="e6-damage" data-label="Most damaging claim"></textarea>
 </section>
 
-<section data-title="Exercise 7 · Plan one delivery">
-  <div class="meta">Exercise 7 · Deliver · 35 min</div>
+<section data-title="Exercise 8 · Plan one delivery">
+  <div class="meta">Exercise 8 · Deliver · 35 min</div>
   <h2>My delivery plan</h2>
   <p class="how">One weekly task of 30 minutes or more, treated as a small AI project. Real work, sanitised.</p>
   <div class="two">
@@ -207,8 +226,8 @@ Type straight into this page. It saves automatically in this browser on this dev
   </div>
 </section>
 
-<section data-title="Exercise 8 · Your action plan">
-  <div class="meta">Exercise 8 · Deliver · 12 min</div>
+<section data-title="Exercise 9 · Your action plan">
+  <div class="meta">Exercise 9 · Deliver · 12 min</div>
   <h2>Your action plan</h2>
   <p class="how">One line each. Specific task, specific tool, specific day. Not "use AI more".</p>
   <div class="two">
@@ -232,7 +251,8 @@ Type straight into this page. It saves automatically in this browser on this dev
     pa: ['', 'Precise', 'Average'], ss: ['', 'Small', 'Large'],
     corner: ['', 'A · Light review', 'B · Load-bearing bits', 'C · Before you ship', 'D · Human in the loop'],
     lead: ['', 'AI leads', 'AI assists', 'You lead', 'Human only'],
-    result: ['', 'Right', 'Close', 'Wrong']
+    result: ['', 'Right', 'Close', 'Wrong'],
+    match: ['', 'Match', 'Mismatch']
   };
   var root = document.getElementById('wb'), state = document.getElementById('wb-state');
   var data = {};

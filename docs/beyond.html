@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond the day · The Human Edge</title>
+<meta name="description" content="What the course skipped: set your
+assistant up once (custom instructions, projects, Gems), the jargon
+decoded — MCP, harness, context window — images, audio and video, and
+the agent and terminal world.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="index.html">The <span>Human Edge</span></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="before.html">Before</a>
+    <a href="tools.html">Tools</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="workbook.html">Workbook</a>
+    <a href="prompts.html">Prompts</a>
+    <a href="prompt-builder.html">Builder</a>
+    <a href="resources.html" class="on">More</a>
+    <a href="deck/">Slides</a>
+  </nav>
+</div></header>
+<main>
+<div class="kicker">
+<p>Beyond the day</p>
+</div>
+<h1 id="the-course-was-tool-agnostic.-this-page-isnt.">The course was
+tool-agnostic. <em>This page isn’t.</em></h1>
+<div class="lede">
+<p>The four tools work on any AI, including the ones that ship next —
+that’s why the day named no vendor. This page is the map around them:
+where each product hides the standing brief, what the jargon in vendor
+pitches actually means, what the tools make beyond text, and where
+agents fit. The details here drift monthly. The four tools don’t.</p>
+</div>
+<h2 id="set-it-once">Set it once</h2>
+<p>All day you typed the brief fresh, every chat: role, task, context,
+format, and its check. Every major tool lets you save that as the
+standing brief it sends with every message. The generic name is a
+<strong>system prompt</strong>. The trade names differ.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tool (web)</th>
+<th>The setting is called</th>
+<th>Where it lives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT</td>
+<td>Custom instructions · Projects · Memory</td>
+<td>Settings → Personalisation; a Project carries its own
+instructions</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>Styles · Projects · Memory</td>
+<td>Settings; a Project holds its own instructions</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>Gems · Saved Info</td>
+<td>Gems in the sidebar; Saved Info in Settings</td>
+</tr>
+<tr>
+<td>Microsoft Copilot</td>
+<td>Custom instructions · Memory</td>
+<td>Settings → Personalisation</td>
+</tr>
+<tr>
+<td>Msty, LibreChat, Open WebUI</td>
+<td>System prompt</td>
+<td>Set per chat or per model — you edit it directly, which makes these
+the best place to learn the concept</td>
+</tr>
+</tbody>
+</table>
+<p>What goes in: your RTCF brief, your Done line, the check you attach.
+What doesn’t: anything confidential you wouldn’t paste into a chat.
+Review the saved brief each quarter — the corners move, and the standing
+brief should move with them. <a href="go-deeper.html">Make your voice
+persistent</a> is the worked example, and the <a
+href="hand-it-over.html">Hand it over</a> protocol is where a saved
+brief becomes a decision skill.</p>
+<div class="note">
+<p><strong>The names differ; the idea doesn’t.</strong> When a demo says
+the AI “understands you”, look for this setting. It’s a text box. You
+wrote a better one in Exercise 4.</p>
+</div>
+<h2 id="the-jargon-decoded">The jargon, decoded</h2>
+<p>You’ll hear these in every vendor pitch. None of them removes the
+check.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Term</th>
+<th>What it actually is</th>
+<th>What it changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MCP · Model Context Protocol</td>
+<td>A standard plug that lets a harness call outside tools and data:
+your calendar, your files, the web.</td>
+<td>Each connection widens what the harness can read and do. The stakes
+move up — re-place the work on the trust tool.</td>
+</tr>
+<tr>
+<td>Context window</td>
+<td>The model’s working memory.</td>
+<td>Long chats drift and old instructions fade. Why the two-chat
+workflow and the handover prompt work.</td>
+</tr>
+<tr>
+<td>RAG · “grounded on your documents”</td>
+<td>The tool reads your files first, then answers.</td>
+<td>Better grounding, new failure mode: check what it read, not just
+what it said.</td>
+</tr>
+<tr>
+<td>Harness</td>
+<td>The software around the model: standing instructions, what it can
+read, what tools it may call.</td>
+<td>You already use several. Configuring one well is “set it once”,
+above.</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>A model in a loop with tools: plans, acts, checks, retries.</td>
+<td>Automates the loop, not the standard. The check still comes from
+outside.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="beyond-text">Beyond text</h2>
+<p>The day worked in text because judgement shows clearest there. The
+same models make images, audio, music and video, and the trust tool
+moves straight over.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Output</th>
+<th>On the grid</th>
+<th>The check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Image mock-up, internal discussion</td>
+<td>Green corner</td>
+<td>Nothing formal — it’s a sketch</td>
+</tr>
+<tr>
+<td>Image in a client-facing deliverable</td>
+<td>Red corner</td>
+<td>Licence and rights, consent for any real likeness, a disclosure
+line</td>
+</tr>
+<tr>
+<td>Voice mode, drafting while you walk</td>
+<td>Green</td>
+<td>The names and figures it “heard” — re-check before sending</td>
+</tr>
+<tr>
+<td>Music or video for a public asset</td>
+<td>Amber to red</td>
+<td>Copyright here is unsettled; follow your organisation’s policy and
+disclose</td>
+</tr>
+</tbody>
+</table>
+<p>Two habits from the day transfer exactly: classify before you paste
+(a face is personal information), and tell people when AI made the thing
+they’re looking at (<a href="responsible-use.html">Responsible
+use</a>).</p>
+<h2 id="the-terminal-if-you-want-it">The terminal, if you want it</h2>
+<p>Everything above is the web interface on purpose: it’s where the
+judgement work happens, and where your account already is. When you’re
+ready, the same ideas wear developer clothes. Agent CLIs take a brief in
+your terminal and work in a loop — a skill with a keyboard, and your
+review still decides what ships. Local models (Msty with a local engine,
+LibreChat pointed at one) run on your laptop, which is the answer when
+your writing samples can’t leave it. None of this is required. It’s the
+same four tools, faster.</p>
+<div class="note">
+<p><strong>One thread through the whole page:</strong> a bigger harness
+is still a harness. Set the standing brief once, connect tools
+deliberately, and keep the check from outside the tool. More in <a
+href="resources.html">Resources</a>.</p>
+</div>
+</main>
+<footer><div class="in">
+  <span>The Human Edge: using and delivering AI with judgement · Curtin Executive Education</span>
+  <span><a href="go-deeper.html">Go deeper</a> · <a href="responsible-use.html">Responsible use</a> · <a href="beyond.html">Beyond the day</a> · <a href="hand-it-over.html">Hand it over</a> · <a href="https://michael-borck.github.io/conversation-not-delegation/">Conversation, Not Delegation</a> · <a href="https://bigpicture.borck.dev">bigpicture.borck.dev</a></span>
+  <span>Dr Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
+</div></footer>
+<script>
+document.querySelectorAll('main pre').forEach(function (pre) {
+  var b = document.createElement('button');
+  b.className = 'copy'; b.type = 'button'; b.textContent = 'Copy';
+  b.onclick = function () {
+    navigator.clipboard.writeText(pre.innerText).then(function () {
+      b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1200);
+    });
+  };
+  pre.appendChild(b);
+});
+</script>
+</body>
+</html>

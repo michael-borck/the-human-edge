@@ -1,6 +1,6 @@
 ---
 pagetitle: Exercises
-description: "The eight exercises, with copyable prompts, scenario cards and the RetailFlow data."
+description: "The nine exercises, with copyable prompts, scenario cards and the RetailFlow data."
 nav-exercises: true
 ---
 
@@ -8,7 +8,7 @@ nav-exercises: true
 Exercises
 :::
 
-# Eight exercises. <em>Mostly your own work.</em>
+# Nine exercises. <em>Mostly your own work.</em>
 
 ::: lede
 Copy the prompts from here and write your answers in the [digital workbook](workbook.html); it saves in your browser and exports before you leave. If your own work is confidential, use a [scenario card](#scenario-cards) instead.
@@ -20,10 +20,11 @@ Copy the prompts from here and write your answers in the [digital workbook](work
 | 2 | [Place it](#ex2) | Judge | 25 min |
 | 3 | [Brief it](#ex3) | Brief | 25 min |
 | 4 | [Upgrade and save](#ex4) | Brief | 25 min |
-| 5 | [RetailFlow: Karen needs answers](#ex5) | Check | 30 min |
-| 6 | [Verification challenge](#ex6) | Check | 15 min |
-| 7 | [Plan one delivery](#ex7) | Deliver | 35 min |
-| 8 | [Your action plan](#ex8) | Deliver | 12 min |
+| 5 | [RetailFlow: Karen needs answers](#ex5) | Check | 22 min |
+| 6 | [Decide like me](#ex6) | Check | 20 min |
+| 7 | [Verification challenge](#ex7) | Check | 12 min |
+| 8 | [Plan one delivery](#ex8) | Deliver | 35 min |
+| 9 | [Your action plan](#ex9) | Deliver | 12 min |
 
 ::: {.ex .s1}
 ## Exercise 1 · Your pass first {#ex1}
@@ -84,7 +85,7 @@ The [prompt builder](prompt-builder.html) assembles the four parts for you.
 ::: {.ex .s3}
 ## Exercise 5 · RetailFlow: Karen needs answers by Monday {#ex5}
 
-[30 min · solo or pairs]{.mins}
+[22 min · solo or pairs]{.mins}
 
 Karen manages customer service at RetailFlow, an online retailer. She has six months of ticket data and three questions:
 
@@ -108,9 +109,27 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 :::
 
 ::: {.ex .s3}
-## Exercise 6 · Verification challenge {#ex6}
+## Exercise 6 · Decide like me {#ex6}
 
-[15 min · pairs, then blind vote]{.mins}
+[20 min · solo, then tables]{.mins}
+
+Pick one decision you make twice — small, repeatable, explainable, and nothing from the top-right corner of the trust tool. Extract your rules, then prove the skill blind against your own record. Method after Dylan Davis; the [full protocol](hand-it-over.html) is on its own page.
+
+1. **Extract the rules.** Dictate the why, or let it interview you:
+
+> Interview me about how I make one decision: [the decision]. One question at a time, each answer shaping the next. Push until every answer is a clear if-then rule. Cap it at ten questions today. Then write out my decision rules, every branch included.
+
+2. **Write your last three calls** — the inputs only, and your call on each. This list is the blind test; write it before you run anything.
+3. **Prove it blind.** Give the skill the three cases, inputs only, and have it make each call and name the rule it used.
+4. **Patch one mismatch.** A mismatch is a rule you never said out loud: a missing boundary, an unstated exception, or a rule you hold loosely applied as absolute. Add it, then re-test that case in a fresh chat.
+
+Describe your past cases — don't paste anything confidential.
+:::
+
+::: {.ex .s3}
+## Exercise 7 · Verification challenge {#ex7}
+
+[12 min · pairs, then blind vote]{.mins}
 
 Three claims about the RetailFlow data are circulating. At least one is wrong. Check each against the data, not against how confident it sounds. Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it.
 
@@ -122,7 +141,7 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 :::
 
 ::: {.ex .s4}
-## Exercise 7 · Plan one delivery {#ex7}
+## Exercise 8 · Plan one delivery {#ex8}
 
 [35 min · solo, then tables]{.mins}
 
@@ -135,7 +154,7 @@ The [Map my workflow](prompts.html#map-my-workflow) and [Pre-mortem](prompts.htm
 :::
 
 ::: {.ex .s4}
-## Exercise 8 · Your action plan {#ex8}
+## Exercise 9 · Your action plan {#ex9}
 
 [12 min · quiet, then share]{.mins}
 

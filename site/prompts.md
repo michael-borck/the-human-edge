@@ -13,7 +13,7 @@ Starter prompts
 # Copy, adapt, <em>then check.</em>
 
 ::: lede
-Twenty-one prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
+Twenty-four prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
 :::
 
 Corners: **A** trust with light review · **B** verify the load-bearing bits · **C** verify before you ship · **D** human in the loop.
@@ -202,6 +202,34 @@ I need to get better at [skill or topic, e.g. reading a variance report, applyin
 
 ```text
 Here are two versions of the same [task]: mine (A) and an AI draft (B). [paste both]. Without flattering either, list where A is stronger, where B is stronger, and what both missed. Be specific.
+```
+
+## Hand it over
+
+Teach one decision you make twice to decide like you, then prove it blind. The full method — install, patch, the cold rerun — is on the [Hand it over](hand-it-over.html) page. Method after Dylan Davis.
+
+### 22 · Interview me into the rules
+
+*Use when you can't quite say the why out loud.* Check: your own record, next.
+
+```text
+Interview me about how I make one decision: [the decision]. Ask one question at a time, and use each answer to shape the next question. If any answer isn't clear enough to become a clear if-then rule, keep asking until it is. Cap the interview at fifteen to twenty questions. At the end, write out everything I told you as a set of decision rules, including every if-then branch.
+```
+
+### 23 · Mine my history
+
+*Use when the decisions are written down but the rules never were.* Check: B — it found patterns, you confirm they're yours.
+
+```text
+Read through these past decisions. For each, work out what was decided and why. Then write the decision rules I seem to follow, including rules I never stated anywhere. Flag any decisions that don't fit a pattern. Describe the cases if you can't share them: [descriptions].
+```
+
+### 24 · Blind test the skill
+
+*Run before any handover. You make the final call.* Check: D — the skill proposes, you decide.
+
+```text
+Here are the inputs from [three to five] past cases of this decision, outcomes hidden. For each, use the skill to make the call, name the rule you applied, and show your reasoning in three steps. Then stop — I'll compare your calls with what I actually decided.
 ```
 
 ::: note

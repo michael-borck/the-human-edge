@@ -65,7 +65,7 @@ Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draf
 1. Collect three or four things you've written that sound like you at your best: emails, reports, a proposal. Remove anything confidential.
 2. Ask a model to describe your style as a two-page brief: sentence length, structure, vocabulary, how you open and close, what you never do. [Style Mirror](https://stylemirror.eduserver.au) does this step for you.
 3. Read the brief critically. It will be slightly off, and slightly a parody. Edit it until it's right; that editing is your judgement.
-4. Paste it into your tool's custom instructions or a saved project. Every draft now starts closer to your voice.
+4. Paste it into your tool's custom instructions or a saved project. Every draft now starts closer to your voice. Where the setting lives in each tool: [Beyond the day](beyond.html).
 
 If your samples are sensitive, do step 2 with a local model so nothing leaves your laptop.
 
@@ -78,5 +78,5 @@ The day covers the practical side: classify before you paste, find the quiet def
 - Curtin Executive Education's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass, for governance, risk and regulation in depth.
 
 ::: note
-**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. More in [Resources](resources.html).
+**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. For the full protocol behind Exercise 6 — teaching one decision to decide like you — see [Hand it over](hand-it-over.html). For what the day didn't cover — customising your assistant, MCP, images, audio and video, agents — see [Beyond the day](beyond.html). More in [Resources](resources.html).
 :::

@@ -12,10 +12,10 @@ Everyone has the same AI tools now, so the edge is judgement. The day runs four 
 |---|---|---|---|---|
 | 1 · Judge | 9:00 | Trust tool | How much should I trust this output? | 1 Your pass first · 2 Place it (blind vote and game) |
 | 2 · Brief | 11:00 | RTCF and four upgrades | How do I ask for what I need? | 3 Brief it · 4 Upgrade and save |
-| 3 · Check | 1:15 | Check loop | How do I know it's right? | 5 RetailFlow analysis · 6 Verification challenge |
-| 4 · Deliver | 3:00 | Opportunity Finder (spot, assign, prioritise), Scale/Pivot/Kill | Where does it fit, and will it work every week? | 7 Plan one delivery · 8 Action plan |
+| 3 · Check | 1:15 | Check loop | How do I know it's right? | 5 RetailFlow analysis · 6 Decide like me · 7 Verification challenge |
+| 4 · Deliver | 3:00 | Opportunity Finder (spot, assign, prioritise), Scale/Pivot/Kill | Where does it fit, and will it work every week? | 8 Plan one delivery · 9 Action plan |
 
-What participants leave with: a personal prompt library (Exercise 4), four reusable decision tools (field guide and desk card), a delivery plan for one real workflow with human checkpoints and a 30-day gate (Exercise 7), and an action plan (Exercise 8).
+What participants leave with: a personal prompt library (Exercise 4), one decision taught to decide like them and proven blind against their own record (Exercise 6), four reusable decision tools (field guide and desk card), a delivery plan for one real workflow with human checkpoints and a 30-day gate (Exercise 8), and an action plan (Exercise 9).
 
 ## Layout
 
@@ -23,7 +23,7 @@ What participants leave with: a personal prompt library (Exercise 4), four reusa
 deck/            The slides: deck.html (with speaker notes), deck.css, deck.js
 handouts/        Field guide, desk card, optional voting cards (HTML, printed to PDF), print.css
 site/            Companion site pages (Markdown, rendered with pandoc): home, before, tools, exercises, workbook, prompts,
-                 prompt builder, go deeper, responsible use, resources, quiz. prompts.md also builds the starter prompt PDF
+                 prompt builder, go deeper, hand it over, beyond the day, responsible use, resources, quiz. prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
 data/            RetailFlow customer service dataset (Exercise 5)
 instructor/      Facilitator guide, optional agent demo kit (not published)
@@ -60,7 +60,7 @@ The trust tool's corner names and orientation (precision across, consequences up
 ## Sources and credits
 
 - Australian evidence: DEWR (2026) *AI and employment in Australia*; Jobs and Skills Australia (2025) *Generative AI Capacity Study*. US: Brynjolfsson, Chandar & Chen (rev. 2026) "Canaries in the Coal Mine?".
-- The "broken ladder" framing of the junior pipeline problem draws on Dylan Davis. Slides and text are original.
+- The "broken ladder" framing of the junior pipeline problem, and the decide-like-me handover method (Exercise 6 and the Hand it over page), draw on Dylan Davis. Slides and text are original.
 - "Gell-Mann amnesia" is Michael Crichton's term (2002).
 - The delivery-is-different table, data governance, the quiet-defaults activity, ethics dilemmas, go-deeper techniques and the quiz were carried over from the earlier Human Edge site, now archived at github.com/michael-borck/the-human-edge-archive.
 - The trust tool, RTCF and conversation-not-delegation ideas: *Conversation, Not Delegation* (michael-borck.github.io/conversation-not-delegation).
