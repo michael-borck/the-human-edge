@@ -6,8 +6,9 @@
 <title>Beyond the day · The Human Edge</title>
 <meta name="description" content="What the course skipped: setting your
 assistant up once (custom instructions, projects, Gems), the jargon
-decoded (MCP, harness, context window), images, audio and video, and
-agents in the terminal.">
+decoded (MCP, harness, context window), images, audio and video, agents
+in the terminal, local models, and the big questions: is AI just
+software, AGI and superintelligence.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -37,7 +38,8 @@ tool-agnostic. <em>This page isn’t.</em></h1>
 which is why the day named no vendor. This page names them: where each
 product keeps the standing brief, what the jargon in vendor pitches
 means, what the tools make beyond text, and where agents fit. The
-details here change monthly. The four tools don’t.</p>
+details here change monthly. The four tools don’t. At the end: the big
+questions that come up in the room but weren’t on the agenda.</p>
 </div>
 <h2 id="set-it-once">Set it once</h2>
 <p>All day you typed the brief fresh, every chat: role, task, context,
@@ -205,14 +207,99 @@ use</a>).</p>
 judgement work happens, and where your account already is. The same
 ideas carry over to developer tools. Agent CLIs take a brief in your
 terminal and work in a loop, and your review still decides what ships.
-Local models (Msty with a local engine, or LibreChat pointed at one) run
-on your laptop, which is the answer when your writing samples can’t
-leave it. None of this is required. It’s the same four tools,
-faster.</p>
+Local models run on your own laptop, which is the answer when your
+writing samples can’t leave it. <a
+href="https://msty.ai/products/studio/">Msty Studio</a> is the easiest
+start: one install, then a local model or your own API key. <a
+href="https://ollama.com">Ollama</a> is the engine many local apps run
+on, and <a href="https://openwebui.com">Open WebUI</a> and <a
+href="https://www.librechat.ai">LibreChat</a> are chat interfaces an IT
+team can host for a whole organisation. None of this is required. It’s
+the same four tools, faster.</p>
 <div class="note">
 <p><strong>Whatever the product,</strong> set the standing brief once,
 connect tools on purpose, and keep the check outside the tool. More in
 <a href="resources.html">Resources</a>.</p>
+</div>
+<h2 id="the-big-questions">The big questions</h2>
+<p>Not on the agenda, but they come up in the room. Short answers, and
+where to read more.</p>
+<h3 id="is-ai-just-software">Is AI just software?</h3>
+<p>For governance, yes. Procurement, privacy, security and a named owner
+apply as they do to any system. For testing, no. Nobody wrote its logic,
+so nobody can read it. The same input can give a different output. It
+fails fluently, and an agent can act without asking. That’s why the day
+put the check outside the tool and a gate before scale (<a
+href="tools.html#deliver-it-why-ai-projects-fail-differently">why AI
+projects fail differently</a>).</p>
+<h3 id="agi-and-superintelligence">AGI and superintelligence</h3>
+<p>AGI usually means a system that can do most work a person can.
+Superintelligence means one far better than people at nearly everything.
+Several AI labs say they are building towards it. Whether and when it
+arrives is disputed, and the disagreement runs through the field: in a
+survey of 2,778 published AI researchers, between 38% and 51% gave at
+least a 10% chance that advanced AI leads to outcomes as bad as human
+extinction (<a href="https://arxiv.org/abs/2401.02843">Grace and others,
+2024</a>).</p>
+<p>Two serious positions, both worth reading:</p>
+<ul>
+<li><strong>Take the risk seriously now.</strong> In 2023, Geoffrey
+Hinton, Yoshua Bengio and the heads of OpenAI, Google DeepMind and
+Anthropic signed a one-line <a
+href="https://www.safe.ai/work/statement-on-ai-risk">statement</a>:
+mitigating the risk of extinction from AI should be a global priority
+alongside pandemics and nuclear war. The <a
+href="https://internationalaisafetyreport.org">International AI Safety
+Report</a> (2026, led by Bengio, backed by more than 30 countries) is
+the measured version: what the evidence shows so far, and what it
+doesn’t.</li>
+<li><strong>Treat it as normal technology.</strong> Arvind Narayanan and
+Sayash Kapoor’s <a
+href="https://knightcolumbia.org/content/ai-as-normal-technology">AI as
+Normal Technology</a> (2025) argues that AI will change things the way
+electricity did: over decades, through institutions, and under human
+control. They think superintelligence, as usually described, doesn’t
+hold together, and that building resilience beats drastic
+intervention.</li>
+</ul>
+<h3 id="the-one-shot-argument">The one-shot argument</h3>
+<p>Most engineering improves by failing: ship it, watch it break, fix
+it. The worry about superintelligence is that this loop might not be
+there. A system far more capable than us, pursuing goals that aren’t
+quite ours, might not leave room for a second attempt. That is the core
+of the alignment argument, and it’s why some researchers want the safety
+work done before the capability arrives rather than after.</p>
+<p>The argument’s logic holds. It also rests on open questions: whether
+capability arrives in a jump or by degrees, whether these systems become
+agents with goals of their own, and whether we keep the ability to watch
+and correct them. Serious people answer those differently. Nobody knows
+yet.</p>
+<h3 id="youve-already-met-the-small-version">You’ve already met the
+small version</h3>
+<p>Alignment means getting a system to do what we actually want. Today
+you saw it fall short in small ways:</p>
+<ul>
+<li>a model tuned to please you, which folds when you push back with no
+new evidence</li>
+<li>mistakes that don’t look like mistakes, so your alarm stays
+quiet</li>
+<li>values nobody chose, in the quiet defaults</li>
+<li>an agent checking its own work and sharing its own blind spots</li>
+</ul>
+<p>The day’s answers were a check from outside the tool, a blind test
+before you rely on anything, and a gate where kill is a real option.
+Safety researchers ask for the same things at a much larger scale. The
+one-shot worry is about what happens if those habits stop being
+possible.</p>
+<div class="note">
+<p><strong>To follow it:</strong> the <a
+href="https://internationalaisafetyreport.org">International AI Safety
+Report</a> publishes yearly with updates in between. Australia’s <a
+href="https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/ai-safety-institute">AI
+Safety Institute</a> was announced in November 2025 to monitor and test
+emerging AI. For governance and regulation in depth, Curtin’s <a
+href="https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/">Ethics
+of artificial intelligence</a> masterclass.</p>
 </div>
 </main>
 <footer><div class="in">

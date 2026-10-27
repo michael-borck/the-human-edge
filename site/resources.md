@@ -38,7 +38,7 @@ A map of this site, the free tools worth trying, and where to go deeper after th
 
 ### Go further
 
-[Go deeper](go-deeper.html): VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, Write like me. [Responsible use](responsible-use.html): data governance, the quiet defaults, ethics dilemmas.
+[Go deeper](go-deeper.html): VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, Write like me. [Decide like me](decide-like-me.html): Exercise 6 in full. [Beyond the day](beyond.html): setting up your assistant, the jargon, local models, and the big questions. [Responsible use](responsible-use.html): data governance, the quiet defaults, ethics dilemmas.
 :::
 
 ::: card
@@ -56,6 +56,9 @@ A map of this site, the free tools worth trying, and where to go deeper after th
 - **[Google Teachable Machine](https://teachablemachine.withgoogle.com):** train a small image or sound classifier in your browser in two minutes. Machine learning beyond chat, from the "bigger pie" slide.
 - **[Survival of the Best Fit](https://www.survivalofthebestfit.com):** a 10-minute game in which an "objective" hiring algorithm amplifies the bias in its data.
 - **[Style Mirror](https://stylemirror.eduserver.au):** give it a sample of your writing and it produces a style brief for your custom instructions.
+- **[Msty Studio](https://msty.ai/products/studio/):** a desktop app that runs AI models on your own laptop, or online models through your own API key. One install, and the free plan covers everything in this course. The plainest way to see a system prompt, and to keep sensitive drafts off the cloud.
+- **[Ollama](https://ollama.com):** the engine many local AI apps run on. Install it, download an open model, and it runs on your machine. Msty can use it too.
+- **[Open WebUI](https://openwebui.com) and [LibreChat](https://www.librechat.ai):** chat interfaces your IT team can host for a whole organisation, in front of local or online models. They need some technical setup.
 - **[CiteSight](https://citesight.eduserver.au):** check references and catch the ones that don't exist. VET's "verify" step, for citations.
 - **[The trust tool game](https://trusttool.borck.education/):** ten scenarios per domain, with an explanation on every card.
 

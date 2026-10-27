@@ -13,7 +13,7 @@ Starter prompts
 # Copy, adapt, <em>then check.</em>
 
 ::: lede
-Twenty-four prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
+Twenty-seven prompts from the day, ready to adapt. Replace the [square brackets] with your own detail, which is where your edge goes in. Each one notes the trust tool corner its output usually lands in, so you know how hard to check it.
 :::
 
 Corners: **A** trust with light review · **B** verify the load-bearing bits · **C** verify before you ship · **D** human in the loop.
@@ -232,6 +232,34 @@ Here are past cases of one decision I make: what came in, and what I decided. [D
 Using the decision rules below, make the call on each of these [three to five] cases. I've left out what I decided. For each case, give your call, the rule you used, and your reasoning in two or three short steps. Then stop, and I'll compare your calls with mine.
 
 [Paste the rules, then the cases.]
+```
+
+## Write like me
+
+Teach it how you sound, then test it on a real draft. The partner to Decide like me: one teaches it your voice, the other your rules. The full method is [Write like me](go-deeper.html#write-like-me) on the Go deeper page, and [Style Mirror](https://stylemirror.eduserver.au) does prompts 26 and 27 for you.
+
+### 25 · Voice pass
+
+*Use on a draft that sounds like everyone.* Check: A. Read it aloud. Would you have said it?
+
+```text
+Here's about 100 words I wrote: [paste, with anything confidential removed]. Rewrite your last output in my voice, leading with the one thing only I would say.
+```
+
+### 26 · Describe my style
+
+*Use once, on three or four things you've written at your best.* Check: B. It will be slightly off, and slightly a parody. Edit it until it's you.
+
+```text
+Here are [three or four] things I've written: [paste, with anything confidential removed]. Describe my writing style as a brief another writer could follow: tone, sentence length and structure, vocabulary, how I open and close, the habits that make it sound like a person, and anything I never do. Quote a short example from my samples for each point.
+```
+
+### 27 · Write from my style brief
+
+*Use for a first draft in your voice. Save the brief in your custom instructions and you can skip pasting it.* Check: depends on the task.
+
+```text
+Here's my style brief: [paste]. Write [format] about [topic] for [audience]. Match the voice, not the content of my samples. Mark anything you're unsure I'd say with [CHECK].
 ```
 
 ::: note

@@ -72,9 +72,11 @@ Ask two questions about any output before you act on it.
 
 ### Practise it
 
-Ten scenarios from a domain you choose, with an explanation on every card. [Open the game in a new tab](https://trusttool.borck.education/).
+Ten scenarios from a domain you choose, with an explanation on every card. It runs full screen, on a laptop or a phone, with no login.
 
-<iframe src="https://trusttool.borck.education/" title="Trust tool practice game" height="760" loading="lazy"></iframe>
+::: btns
+[Play the trust tool game](https://trusttool.borck.education/){target="_blank" rel="noopener"}
+:::
 
 ## 2 · RTCF {#rtcf .s2}
 
@@ -88,6 +90,8 @@ Prompting is briefing, not spell-casting. Write the prompt the way you'd brief a
 | **Format** | What should it look like? | Email. Acknowledge, explain, propose, close. |
 
 Context does most of the work, because it's the only part the tool can't guess. Role does the least.
+
+**One task, or every task.** RTCF shapes the prompt you type for one job. It also shapes the standing brief you save once in custom instructions, a project or a Gem. The standing brief holds what's true every time: who it writes as, the context that doesn't change, your format and your Done line. The task stays in the chat. [Set it once](beyond.html#set-it-once) shows where each tool keeps it.
 
 **Still weak? Add one upgrade** before you rewrite from scratch. They help smaller, older and free-tier models the most.
 

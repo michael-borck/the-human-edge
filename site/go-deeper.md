@@ -60,7 +60,7 @@ Useful for anything that runs over several sessions: a proposal, a policy, a boa
 
 ## []{#make-your-voice-persistent}Write like me {#write-like-me}
 
-Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draft; this fixes every future one. It pairs with [Decide like me](decide-like-me.html): this teaches the tool how you sound, that teaches it how you choose. In both, it drafts and you decide.
+Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draft; this fixes every future one. It pairs with [Decide like me](decide-like-me.html): this teaches the tool how you sound, that teaches it how you choose. In both, it drafts and you decide. The prompts are [25 to 27](prompts.html#write-like-me) in the starter prompts.
 
 1. Collect three or four things you've written that sound like you at your best: emails, reports, a proposal. Remove anything confidential.
 2. Ask a model to describe your style as a two-page brief: sentence length, structure, vocabulary, how you open and close, what you never do. [Style Mirror](https://stylemirror.eduserver.au) does this step for you.

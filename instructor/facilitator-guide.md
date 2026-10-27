@@ -278,6 +278,8 @@ The message is fewer junior hires, not mass replacement.
 | "This will save me hours every week." | Overestimating | "Run it for 30 days and time it, including the checking. That's your gate." |
 | "My company won't let me use these." | A real constraint | "Take the tools and the thinking. When tools are approved, you'll be ready." |
 | "Which tool is best?" | Looking for a shortcut | "The one you're allowed to use. The skills transfer; the rankings change monthly." |
+| "Isn't AI just software?" | Testing it against what IT already knows | "For governance, yes. For testing, no: nobody wrote its logic, and it fails fluently. That's why the check sits outside the tool." |
+| "What about AGI?" or "Should we be worried about superintelligence?" | Curiosity, or real worry | "Serious people disagree, and the Beyond the day page has both sides. You've seen the small version today: a model tuned to please you, mistakes that don't look like mistakes. The habits for those are the ones that scale." Then move on; the page has the one-shot argument and the reading. |
 
 ## Before each run: update checklist
 
@@ -288,6 +290,8 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
 - [ ] **Product names** in "Before the day", slide 37, and the "Set it once" table on Beyond the day (menu names move often).
+- [ ] **The big questions** on Beyond the day: is there a newer International AI Safety Report or key update, and are the Australian AI Safety Institute's name and status still right?
+- [ ] **Local AI tools** on Resources and Beyond the day (Msty Studio, Ollama, Open WebUI, LibreChat): still free, still the easiest options?
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
 - [ ] **Feedback form.** Slide 43 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.

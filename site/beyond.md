@@ -1,6 +1,6 @@
 ---
 pagetitle: Beyond the day
-description: "What the course skipped: setting your assistant up once (custom instructions, projects, Gems), the jargon decoded (MCP, harness, context window), images, audio and video, and agents in the terminal."
+description: "What the course skipped: setting your assistant up once (custom instructions, projects, Gems), the jargon decoded (MCP, harness, context window), images, audio and video, agents in the terminal, local models, and the big questions: is AI just software, AGI and superintelligence."
 nav-more: true
 ---
 
@@ -11,7 +11,7 @@ Beyond the day
 # The course was tool-agnostic. <em>This page isn't.</em>
 
 ::: lede
-The four tools work on any AI, including the ones that ship next, which is why the day named no vendor. This page names them: where each product keeps the standing brief, what the jargon in vendor pitches means, what the tools make beyond text, and where agents fit. The details here change monthly. The four tools don't.
+The four tools work on any AI, including the ones that ship next, which is why the day named no vendor. This page names them: where each product keeps the standing brief, what the jargon in vendor pitches means, what the tools make beyond text, and where agents fit. The details here change monthly. The four tools don't. At the end: the big questions that come up in the room but weren't on the agenda.
 :::
 
 ## Set it once
@@ -61,8 +61,46 @@ Two habits from the day transfer exactly: classify before you paste (a face is p
 
 ## The terminal, if you want it
 
-Everything above is the web interface on purpose: it's where the judgement work happens, and where your account already is. The same ideas carry over to developer tools. Agent CLIs take a brief in your terminal and work in a loop, and your review still decides what ships. Local models (Msty with a local engine, or LibreChat pointed at one) run on your laptop, which is the answer when your writing samples can't leave it. None of this is required. It's the same four tools, faster.
+Everything above is the web interface on purpose: it's where the judgement work happens, and where your account already is. The same ideas carry over to developer tools. Agent CLIs take a brief in your terminal and work in a loop, and your review still decides what ships. Local models run on your own laptop, which is the answer when your writing samples can't leave it. [Msty Studio](https://msty.ai/products/studio/) is the easiest start: one install, then a local model or your own API key. [Ollama](https://ollama.com) is the engine many local apps run on, and [Open WebUI](https://openwebui.com) and [LibreChat](https://www.librechat.ai) are chat interfaces an IT team can host for a whole organisation. None of this is required. It's the same four tools, faster.
 
 ::: note
 **Whatever the product,** set the standing brief once, connect tools on purpose, and keep the check outside the tool. More in [Resources](resources.html).
+:::
+
+## The big questions
+
+Not on the agenda, but they come up in the room. Short answers, and where to read more.
+
+### Is AI just software?
+
+For governance, yes. Procurement, privacy, security and a named owner apply as they do to any system. For testing, no. Nobody wrote its logic, so nobody can read it. The same input can give a different output. It fails fluently, and an agent can act without asking. That's why the day put the check outside the tool and a gate before scale ([why AI projects fail differently](tools.html#deliver-it-why-ai-projects-fail-differently)).
+
+### AGI and superintelligence
+
+AGI usually means a system that can do most work a person can. Superintelligence means one far better than people at nearly everything. Several AI labs say they are building towards it. Whether and when it arrives is disputed, and the disagreement runs through the field: in a survey of 2,778 published AI researchers, between 38% and 51% gave at least a 10% chance that advanced AI leads to outcomes as bad as human extinction ([Grace and others, 2024](https://arxiv.org/abs/2401.02843)).
+
+Two serious positions, both worth reading:
+
+- **Take the risk seriously now.** In 2023, Geoffrey Hinton, Yoshua Bengio and the heads of OpenAI, Google DeepMind and Anthropic signed a one-line [statement](https://www.safe.ai/work/statement-on-ai-risk): mitigating the risk of extinction from AI should be a global priority alongside pandemics and nuclear war. The [International AI Safety Report](https://internationalaisafetyreport.org) (2026, led by Bengio, backed by more than 30 countries) is the measured version: what the evidence shows so far, and what it doesn't.
+- **Treat it as normal technology.** Arvind Narayanan and Sayash Kapoor's [AI as Normal Technology](https://knightcolumbia.org/content/ai-as-normal-technology) (2025) argues that AI will change things the way electricity did: over decades, through institutions, and under human control. They think superintelligence, as usually described, doesn't hold together, and that building resilience beats drastic intervention.
+
+### The one-shot argument
+
+Most engineering improves by failing: ship it, watch it break, fix it. The worry about superintelligence is that this loop might not be there. A system far more capable than us, pursuing goals that aren't quite ours, might not leave room for a second attempt. That is the core of the alignment argument, and it's why some researchers want the safety work done before the capability arrives rather than after.
+
+The argument's logic holds. It also rests on open questions: whether capability arrives in a jump or by degrees, whether these systems become agents with goals of their own, and whether we keep the ability to watch and correct them. Serious people answer those differently. Nobody knows yet.
+
+### You've already met the small version
+
+Alignment means getting a system to do what we actually want. Today you saw it fall short in small ways:
+
+- a model tuned to please you, which folds when you push back with no new evidence
+- mistakes that don't look like mistakes, so your alarm stays quiet
+- values nobody chose, in the quiet defaults
+- an agent checking its own work and sharing its own blind spots
+
+The day's answers were a check from outside the tool, a blind test before you rely on anything, and a gate where kill is a real option. Safety researchers ask for the same things at a much larger scale. The one-shot worry is about what happens if those habits stop being possible.
+
+::: note
+**To follow it:** the [International AI Safety Report](https://internationalaisafetyreport.org) publishes yearly with updates in between. Australia's [AI Safety Institute](https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/ai-safety-institute) was announced in November 2025 to monitor and test emerging AI. For governance and regulation in depth, Curtin's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass.
 :::

@@ -14,6 +14,10 @@ Tool 2 · RTCF
 Fill in the four parts, add an upgrade if the output is weak, and attach the check the output needs. Saved prompts stay in this browser only; nothing is sent anywhere. Export your library as a text file to keep it.
 :::
 
+::: note
+**One prompt, or a standing brief.** For one task, fill in all four parts. For a brief you save once in custom instructions, a project or a Gem, fill in Role, Context and Format with what's true every time, and leave the Task for each chat. [Set it once](beyond.html#set-it-once) shows where each tool keeps it.
+:::
+
 ```{=html}
 <style>
 .pb{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}

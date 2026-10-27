@@ -85,7 +85,6 @@ td{border-bottom:1px solid var(--hair);padding:10px 10px 10px 0;vertical-align:t
 .small{font-size:14px;color:var(--dim)}
 figure{margin:20px 0}
 figcaption{font-size:13.5px;color:var(--dim);margin-top:8px}
-iframe{width:100%;border:1px solid var(--hair);border-radius:12px;background:#fff}
 
 /* footer */
 footer{border-top:1px solid var(--hair);margin-top:40px}
