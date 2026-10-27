@@ -46,6 +46,19 @@ A proportionate approach:
 
 That's ordinary professional data hygiene, applied consistently.
 
+### Set it up safely
+
+A checklist for your own accounts. Your organisation's AI policy and privacy officer have the final say on what's approved.
+
+- **Two accounts: work and personal.** Client work only in a work account on a business plan your organisation has approved. Business plans generally don't train on your data and come with a data agreement. Keep personal use in a personal account, in a separate browser profile, so the two never share a login, history or connected apps.
+- **Turn off training on personal accounts.** Look under Settings, then Data controls or Privacy. The names vary: "Improve the model for everyone", "AI data usage", "Help improve".
+- **Memory off, or a temporary chat, for anything sensitive.** Memories are kept separately from chat history, so deleting a chat may not delete them.
+- **Connect only what you need.** Each connection to your email, files or calendar widens what the tool can read, and what [hidden instructions](beyond.html#try-it-a-document-that-talks-to-the-ai) in those files can reach.
+- **Regulated data stays out unless it's approved.** Information about children, health or finances of identifiable people only goes into a tool your organisation has approved for that kind of data, and even then without names. Your sector may have stricter rules.
+- **Check client agreements.** Some contracts and NDAs now say whether AI can be used on client material. If yours are silent, ask the client.
+- **Can't share it? Have it build the tool instead.** Describe the shape of the data and ask for spreadsheet formulas, a short script, or a single web page that runs on your own computer ([prompt 14](prompts.html#describe-the-shape-not-the-data)). The tool never sees the data. Test what it gives you on data where you know the answer first, and if you can't read the code, treat it as top-right.
+- **Any product you're unsure of:** ask three questions. Which plan am I on? Does it train on what I type? Is there a data agreement with my organisation? Perplexity, for example, uses personal searches to improve its models unless you turn off "AI Data Usage" in Settings ([Perplexity help](https://www.perplexity.ai/help-center/en/articles/10354855-what-data-does-perplexity-collect-about-me)), and says it doesn't train on enterprise customers' data.
+
 **If your team already uses AI on its own.** Unapproved use is common, and the data is already going somewhere. Banning it usually drives it out of sight. A better order: find out what people are using and for what, approve a tool that fits the work, teach the three rules before you paste, and make it easy to ask before pasting something borderline.
 
 ## Find the quiet defaults

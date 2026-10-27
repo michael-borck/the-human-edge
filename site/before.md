@@ -71,6 +71,7 @@ You don't need to master a particular product. The skills in this course (decidi
 - **Classify before you paste.** Public, internal, confidential or regulated? The real risk is where the data goes and who keeps it, the same as with email.
 - **Leave out what identifies people or clients.** If you can't share the data, describe its shape instead.
 - **Assistants remember.** Many keep saved memories and inferred preferences, separately from your chat history. Deleting a chat doesn't necessarily delete what was learned from it. A temporary or private chat avoids memory altogether.
+- **Keep work and personal apart.** The [Responsible use](responsible-use.html#set-it-up-safely) page has a short setup checklist: two accounts, training off, memory off for sensitive work.
 
 ### Eight words you'll hear on the day
 

@@ -46,7 +46,7 @@ Setting up your assistant once, the jargon, images and video, local models, prom
 
 ### [Responsible use](responsible-use.html)
 
-Australia's six practices, the privacy rule for automated decisions, proportionate data governance, the quiet defaults, four dilemmas.
+Australia's six practices, the privacy rule for automated decisions, a checklist for setting up your accounts safely, the quiet defaults, four dilemmas.
 :::
 ::::::
 

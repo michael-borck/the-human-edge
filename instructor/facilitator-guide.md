@@ -174,6 +174,7 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 **Exercise 5** runs 35 minutes across three slides. On slide 23: 2 min frame, 9 min explore, 6 min first brief (timer set to 17). On slide 24: 8 min checking the three claims in pairs. Then a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet), revealing on slide 25 one claim per click, about 6 min. Last 4 min: everyone fixes their brief and adds the What I checked line while you run the debrief. Expect B to fool the most people and C to split the room.
 
 - If uploads are blocked, most tools accept pasted CSV text; the file is small.
+- For anyone whose own data could never go into a tool, show the shape trick (prompt 14): describe the columns and have it write formulas, a short script or a single web page that runs in the browser. The AI never sees the data. Run it on RetailFlow first, where the answers are known. If they can't read the code, it's top-right, and a web page must not send the file anywhere.
 - Watch for people skipping "describe the data first".
 - The brief comes before the claims on purpose. People check the claims against their own first draft, and anyone whose brief repeated B or C finds out before Karen would have.
 
@@ -286,6 +287,16 @@ The message is fewer junior hires, not mass replacement.
 | "Could someone fake our CEO on a call?" | A fair worry | "It has happened: Arup lost about US$25.6 million in 2024 after a deepfaked video call. Any urgent request for money or credentials is top-right, however familiar the face. Check outside the channel it came in on." |
 | "What about AGI?" or "Should we be worried about superintelligence?" | Curiosity, or real worry | "Serious people disagree, and the Beyond the day page has both sides. You've seen the small version today: a model tuned to please you, mistakes that don't look like mistakes. The habits for those are the ones that scale." Then move on; the page has the one-shot argument and the reading. |
 
+## Confidentiality questions
+
+They come up every run, often at the first break. Short answers below; the full checklist is "Set it up safely" on the Responsible use page, so point people there.
+
+- **"How do I set it up so nothing leaks?"** Client work in a work account on an approved business plan. Training off on personal accounts. Memory off, or a temporary chat, for anything sensitive. Connect only what you need.
+- **"How do I keep work and personal apart?"** Two accounts, in separate browser profiles, so they never share a login, history or connected apps. Never client work in a personal account.
+- **"What about client, children's or health information?"** Regulated: only into a tool the organisation has approved for that data, and even then without names. Describe the shape instead, or use the shape trick from Exercise 5. Check client contracts and NDAs, which increasingly say whether AI can be used. Some sectors have stricter rules.
+- **"What do you think of Perplexity?"** (or any app a colleague swears by) The same three questions for any product: which plan, does it train on what you type, is there a data agreement. Perplexity is useful for public research because it shows its sources (still open them). Personal accounts train on searches unless "AI Data Usage" is off in Settings; Perplexity says it doesn't train on enterprise customers' data. Its Comet browser acts on pages and email, so the prompt injection warning applies.
+- Close with: your organisation's AI policy and privacy officer have the final say.
+
 ## Before each run: update checklist
 
 AI changes fast. Check these the week before; most take a minute.
@@ -297,6 +308,7 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Product names** in "Before the day", slide 37, and the "Set it once" table on Beyond the day (menu names move often).
 - [ ] **Privacy Act automated decisions** (APP 1.7 to 1.9, in force from 10 December 2026): any new OAIC guidance? Update slide 34's notes, the Responsible use page and the Decide like me page.
 - [ ] **The big questions** on Beyond the day: is there a newer International AI Safety Report or key update, and are the Australian AI Safety Institute's name and status still right?
+- [ ] **Data settings** named in "Set it up safely" (Responsible use) and the confidentiality answers above: still where the products put them, and Perplexity's training setting still called "AI Data Usage"?
 - [ ] **Local AI tools** on Resources and Beyond the day (Msty Studio, Ollama, Open WebUI, LibreChat): still free, still the easiest options?
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.

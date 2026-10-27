@@ -28,7 +28,7 @@ All day you typed the brief fresh, every chat: role, task, context, format, and 
 
 [Menu names checked October 2026. They move; if one has changed, search the tool's help for "instructions".]{.small}
 
-What goes in: your RTCF brief, your Done line, the check you attach. What doesn't: anything confidential you wouldn't paste into a chat. Review the saved brief each quarter, because the corners move and the brief should move with them. [Write like me](go-deeper.html#write-like-me) is a worked example. [Decide like me](decide-like-me.html) uses the same setting to save a set of decision rules.
+What goes in: your RTCF brief, your Done line, the check you attach. What doesn't: anything confidential you wouldn't paste into a chat. For the data side (training, memory, two accounts), see [Set it up safely](responsible-use.html#set-it-up-safely). Review the saved brief each quarter, because the corners move and the brief should move with them. [Write like me](go-deeper.html#write-like-me) is a worked example. [Decide like me](decide-like-me.html) uses the same setting to save a set of decision rules.
 
 ::: note
 **The names differ; the idea doesn't.** When a demo says the AI "understands you", look for this setting. It's a text box. You wrote a better one in Exercise 4.

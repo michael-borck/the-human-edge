@@ -111,6 +111,8 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 - **C.** "Sunday response times are more than double the overall average."
 
 Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it. Is any of them in your brief? Fix it, and end the brief with a line that starts *What I checked:*
+
+**Your own data can't go into a tool?** Describe its shape instead and have the AI write the formulas, a short script, or a single web page that runs on your computer ([prompt 14](prompts.html#describe-the-shape-not-the-data)). Try it on the RetailFlow data first, where you now know the answers.
 :::
 
 ::: {.ex .s3}

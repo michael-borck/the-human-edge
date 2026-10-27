@@ -136,10 +136,12 @@ TEST: Under what conditions, or for whom, would it be wrong?
 
 ### 14 · Describe the shape, not the data
 
-*Use when you can't share the real data.* Check: as the task.
+*Use when you can't share the real data. The tool never sees it.* Check: C. Run what it gives you on data where you know the answer before you trust it. If you can't read the code, treat it as top-right.
 
 ```text
-I can't share the data itself. Its structure is: [number] rows, columns [list them, with types and example values made up]. Write the steps or spreadsheet formulas I'd use to answer [question], so I can run them myself.
+I can't share the data itself. Its structure is: [number] rows, columns [list them, with types and made-up example values]. Write the steps or spreadsheet formulas I'd use to answer [question], so I can run them myself.
+
+Or: write a single HTML page that runs entirely in my browser, lets me open the file from my computer, and shows [the result]. It must not send the data anywhere.
 ```
 
 ## Deliver it
