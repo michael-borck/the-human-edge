@@ -44,9 +44,10 @@
 <!-- 1 · title: the registered name fades into the new one -->
 <section class="slide title" data-ch="0" data-steps="1" data-print-step="1" id="s-title" data-title="Title">
   <div class="k">Curtin Executive Education · One-day masterclass</div>
-  <div class="tstack">
-    <div class="old"><h1 class="t"><span class="strike">AI for professionals</span></h1><div class="t2">Building everyday capability</div></div>
-    <div class="new"><h1 class="t">The Human Edge</h1><div class="t2">Using and delivering AI with judgement</div></div>
+  <div class="rename">
+    <div class="was"><h1 class="t"><span class="strike">AI for professionals</span></h1><div class="t2">Building everyday capability</div></div>
+    <div class="sticker"><b>The Human Edge</b><span>Using and delivering AI with judgement</span></div>
+    <div class="note2">Same day. Better name.</div>
   </div>
   <div class="b">
     <div class="foot" style="display:flex;align-items:flex-end;justify-content:space-between">
@@ -65,21 +66,25 @@
     </div>
   </div>
   <style>
-    #s-title .tstack{display:grid;flex:none}
-    #s-title .tstack > div{grid-area:1/1}
+    #s-title .rename{position:relative;flex:none}
+    #s-title .was .t,#s-title .was .t2{transition:color .6s ease .4s}
     #s-title .strike{position:relative;display:inline-block}
-    #s-title .strike::after{content:"";position:absolute;left:-6px;top:54%;height:5px;width:0;background:var(--acc);border-radius:3px;transition:width .7s cubic-bezier(.3,.7,.2,1)}
-    #s-title .old{transition:opacity .9s ease .8s,filter .9s ease .8s}
-    #s-title .new{opacity:0;transform:translateY(12px);filter:blur(6px);transition:opacity 1s ease 1.2s,transform 1s ease 1.2s,filter 1s ease 1.2s}
-    #s-title[data-cur="1"] .strike::after{width:calc(100% + 12px)}
-    #s-title[data-cur="1"] .old{opacity:0;filter:blur(6px)}
-    #s-title[data-cur="1"] .new{opacity:1;transform:none;filter:none}
+    #s-title .strike::after{content:"";position:absolute;left:-8px;top:54%;height:6px;width:0;background:var(--red);border-radius:3px;transform:rotate(-2deg);transform-origin:left center;transition:width .6s cubic-bezier(.3,.7,.2,1)}
+    #s-title .sticker{position:absolute;left:300px;top:78px;padding:22px 34px 20px;background:var(--acc);border-radius:8px;box-shadow:0 18px 40px rgba(0,0,0,.5),0 0 0 1px rgba(0,0,0,.2) inset;opacity:0;transform:rotate(-2.5deg) scale(1.25) translateY(-30px);transition:opacity .2s ease 1s,transform .4s cubic-bezier(.2,1.5,.4,1) 1s}
+    #s-title .sticker::before{content:"";position:absolute;top:-12px;left:50%;width:96px;height:24px;margin-left:-48px;background:rgba(236,231,219,.38);transform:rotate(3deg)}
+    #s-title .sticker b{display:block;font-family:var(--serif);font-weight:600;font-size:68px;line-height:1.02;color:#0A0C10}
+    #s-title .sticker span{display:block;font-family:var(--serif);font-size:27px;margin-top:6px;color:#0A0C10}
+    #s-title .note2{position:absolute;left:300px;top:290px;font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);opacity:0;transition:opacity .5s ease 1.6s}
+    #s-title[data-cur="1"] .strike::after{width:calc(100% + 16px)}
+    #s-title[data-cur="1"] .was .t,#s-title[data-cur="1"] .was .t2{color:var(--faint)}
+    #s-title[data-cur="1"] .sticker{opacity:1;transform:rotate(-2.5deg) scale(1) translateY(0)}
+    #s-title[data-cur="1"] .note2{opacity:1}
   </style>
   <aside class="notes">
     <p><b>Before 9:00:</b> Wi-Fi on the whiteboard. ClassPulse session open in a second window, join screen ready, arrival poll first: "How do you use AI at work today?"</p>
     <ul>
       <li>Start on the old title: it's the name people enrolled under.</li>
-      <li><b>Click:</b> the strike and the fade. "You signed up for AI for professionals. Same day, new name. The Human Edge says what the day is actually about: using AI, and delivering work with it, with judgement."</li>
+      <li><b>Click:</b> the strike, then the new name stuck over the old one, as on the course site. "You signed up for AI for professionals. Same day, new name. The Human Edge says what the day is actually about: using AI, and delivering work with it, with judgement."</li>
       <li>The idea the day hangs on: everyone has the same AI, so generic AI skill is the baseline. The edge is what the tool can't supply: knowing what to ask, when to trust the answer, and where a person stays in charge.</li>
       <li>The QR opens the course site: exercises, data, prompt builder, field guide.</li>
       <li>The second QR registers for the class chat (chat.locopuente.org): a local model and Claude Sonnet side by side, for anyone with no approved tool or who wants a second one for Exercise 1. Open on course days only. Say the data line: chats are stored on the course server and deleted after the course, so nothing confidential.</li>

@@ -61,7 +61,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 
 **The arrival poll** ("How do you use AI at work today?") is your read on the room. Say the spread aloud. Mostly "Hardly at all" or "Tried it": slow the Exercise 1 setup and seat confident users next to newer ones. Mostly "Built into my work": point to the stretch steps early and expect sharper push-back in the debriefs. A mixed room is the most common, and the best one for the blind votes.
 
-**Slide 1** opens on the old title. One click strikes it through and fades in "The Human Edge".
+**Slide 1** opens on the old title. One click strikes it through and sticks "The Human Edge" over it, the same look as the course site's home page.
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
 
