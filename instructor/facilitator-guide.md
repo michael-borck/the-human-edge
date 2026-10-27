@@ -59,6 +59,8 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 | B | Blank the screen for discussion |
 | F | Full screen |
 
+**The arrival poll** ("How do you use AI at work today?") is your read on the room. Say the spread aloud. Mostly "Hardly at all" or "Tried it": slow the Exercise 1 setup and seat confident users next to newer ones. Mostly "Built into my work": point to the stretch steps early and expect sharper push-back in the debriefs. A mixed room is the most common, and the best one for the blind votes.
+
 **Slide 1** opens on the old title. One click strikes it through and fades in "The Human Edge".
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
@@ -128,19 +130,21 @@ Amplify comments like "I'd take its structure and my judgement". This is the two
 
 Scenarios, with the usual answer:
 
-1. Rewrite your out-of-office message to sound friendlier. *A.*
-2. Summarise a 40-page tender so your team can decide whether to bid. *B: the deadline, eligibility rules and budget carry the decision.*
-3. The publication year of a study you'll cite in an internal newsletter. *C.*
-4. Talking points for a difficult conversation with a team member. *Splits B and D. Let it: the argument is about stakes.*
-5. A letter telling a staff member their role is redundant. *D: entitlements, law, a livelihood.*
+1. Rewrite your out-of-office message to sound friendlier. *A: the ballpark is fine and a mistake is cheap. If anyone says B, ask what would actually go wrong.*
+2. Summarise a 40-page tender so your team can decide whether to bid. *B: the deadline, eligibility rules and budget carry the decision. If people say D, the decision to bid is already human; what needs checking is the three facts it rests on.*
+3. The publication year of a study you'll cite in an internal newsletter. *C: one right answer, and wrong in print means a correction and a dent in credibility. If the room says A because "it's only internal", ask who forwards newsletters.*
+4. Talking points for a difficult conversation with a team member. *Splits B and D. Let it: the argument is about stakes. B people see a draft to adapt; D people see a person's wellbeing. Both are right about something.*
+5. A letter telling a staff member their role is redundant. *D: entitlements, law, a livelihood. AI can help with structure; a person owns every word and figure.*
 
 Spares:
-- Meeting minutes from your own notes. *A.*
-- A dosage or safety figure in a site procedure. *D.*
-- The agenda for a team offsite. *A.*
-- A formula in a budget spreadsheet the CFO will use. *C or D, depending on who sees it next.*
+- Meeting minutes from your own notes. *A: you were there, so you'll spot what's wrong, and minutes get corrected at the next meeting.*
+- A dosage or safety figure in a site procedure. *D: precise meets safety. A person sources it and signs it.*
+- The agenda for a team offsite. *A: easy to fix, nobody harmed.*
+- A formula in a budget spreadsheet the CFO will use. *C or D, depending on who sees it next: C if you'll check it before it leaves you, D if it feeds a decision without another pair of eyes.*
 
 **Debrief line:** when the room splits, it's almost always about stakes, and stakes depend on who sees the output next.
+
+**The scatter (optional, after the five scenarios).** Everyone drops a dot for one task from their own week. Show it for a few seconds, then ask: is anyone's dot in the top-right? What check do you do on it now? That question leads straight into "Three rules before you paste".
 
 ### Session 2 · Brief
 
