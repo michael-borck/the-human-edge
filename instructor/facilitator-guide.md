@@ -76,7 +76,7 @@ The deck uses local fonts, so it runs offline.
 | 9:22 | 7 | **Exercise 1** · Your pass first | 25 |
 | 9:47 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
 | 10:00 | 11 | **Exercise 2** · Place it (blind vote, game, own tasks) | 22 |
-| 10:22 | 12 | Three rules before you paste; questions | 8 |
+| 10:22 | 12 | Three rules before you paste; two-minute settings check; questions | 8 |
 | 10:30 | | Morning tea | 30 |
 | **11:00** | 13–15 | Brief like a colleague; RTCF; live before/after demo | 15 |
 | 11:15 | 16 | **Exercise 3** · Brief it | 25 |
@@ -295,6 +295,8 @@ They come up every run, often at the first break. Short answers below; the full 
 - **"How do I keep work and personal apart?"** Two accounts, in separate browser profiles, so they never share a login, history or connected apps. Never client work in a personal account.
 - **"What about client, children's or health information?"** Regulated: only into a tool the organisation has approved for that data, and even then without names. Describe the shape instead, or use the shape trick from Exercise 5. Check client contracts and NDAs, which increasingly say whether AI can be used. Some sectors have stricter rules.
 - **"What do you think of Perplexity?"** (or any app a colleague swears by) The same three questions for any product: which plan, does it train on what you type, is there a data agreement. Perplexity is useful for public research because it shows its sources (still open them). Personal accounts train on searches unless "AI Data Usage" is off in Settings; Perplexity says it doesn't train on enterprise customers' data. Its Comet browser acts on pages and email, so the prompt injection warning applies.
+- **"Is this really a big deal?"** The regulator says so. The OAIC's guidance on commercially available AI products (October 2024, updated January 2025) says the Privacy Act applies to personal information put into an AI tool and to output that contains it, and recommends as best practice not entering personal information, especially sensitive information, into publicly available AI tools.
+- **Specialist questions** (overseas data storage, freedom of information and records, copyright): real, but beyond the day. Short answers. Where a provider stores data offshore is a question for whoever approves the tool; it's covered by the contract and the Privacy Act's rule on overseas disclosure (APP 8). In the public sector, AI chats may be official records, open to FOI and records law, so check with your records team. Pasting someone else's material is governed by the licence or agreement you got it under. Point to the Ethics of artificial intelligence masterclass for depth.
 - Close with: your organisation's AI policy and privacy officer have the final say.
 
 ## Before each run: update checklist

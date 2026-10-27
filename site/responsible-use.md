@@ -48,7 +48,7 @@ That's ordinary professional data hygiene, applied consistently.
 
 ### Set it up safely
 
-A checklist for your own accounts. Your organisation's AI policy and privacy officer have the final say on what's approved.
+A checklist for your own accounts. Your organisation's AI policy and privacy officer have the final say on what's approved. The regulator agrees with the cautious line: the OAIC's [guidance on commercially available AI products](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products) says the Privacy Act applies to personal information you put into an AI tool, and to output that contains it, and recommends as best practice not entering personal information, especially sensitive information, into publicly available AI tools.
 
 - **Two accounts: work and personal.** Client work only in a work account on a business plan your organisation has approved. Business plans generally don't train on your data and come with a data agreement. Keep personal use in a personal account, in a separate browser profile, so the two never share a login, history or connected apps.
 - **Turn off training on personal accounts.** Look under Settings, then Data controls or Privacy. The names vary: "Improve the model for everyone", "AI data usage", "Help improve".
