@@ -305,6 +305,6 @@ AI changes fast. Check these the week before; most take a minute.
 
 ## After the day
 
-- Point participants to Go deeper, Responsible use, Decide like me and the quiz for after the day. The ethics dilemmas also work as a fast-finisher task in Exercise 7.
-- Send participants the course site link and the desk card, and remind them to export their workbook if they haven't.
+- Point participants to the Resources page for after the day: it says what Go deeper, Decide like me, Beyond the day and Responsible use are each for, and has three things to read next. The ethics dilemmas also work as a fast-finisher task in Exercise 7.
+- Send participants the course site link (Resources page first) and the desk card, and remind them to export their workbook if they haven't.
 - Note which exercises ran long and which scenarios split the room, and update the scenario list above. ClassPulse can export the votes to CSV for this.

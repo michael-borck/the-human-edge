@@ -1,6 +1,6 @@
 ---
 pagetitle: Resources
-description: "Everything the course points to: this site's pages and tools, free AI tools, the companion book, Curtin's AI Skills Passport, and the masterclasses."
+description: "Start here after the day: what each page is for, three things to read next, free tools, Australian guidance, the companion book and the masterclasses."
 nav-more: true
 ---
 
@@ -8,85 +8,76 @@ nav-more: true
 Resources
 :::
 
-# Everything worth following, <em>in one place.</em>
+# After the day, <em>start here.</em>
 
 ::: lede
-A map of this site, the free tools worth trying, and where to go deeper after the day.
+What each page on this site is for, three things worth reading next, and the free tools. Everything else the course points to is at the bottom.
 :::
 
-## This site
+## After the day
 
 :::::: {.cards .two}
 ::: card
-[The day]{.lab}
+[Practise]{.lab}
 
-### Course pages
+### [Go deeper](go-deeper.html)
 
-[Before the day](before.html) · [The four tools](tools.html) · [Exercises](exercises.html) · [Your workbook](workbook.html) · [Slides](deck/)
+Five-minute extensions on your own work: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, Write like me.
 :::
 
 ::: card
-[Use them at work]{.lab}
+[Exercise 6 in full]{.lab}
 
-### Tools
+### [Decide like me](decide-like-me.html)
 
-[Starter prompts](prompts.html) · [Prompt builder](prompt-builder.html) · [Where's your edge? quiz](quiz.html) · [Trust tool game](https://trusttool.borck.education/)
+Write down how you make one decision, test the rules blind on your own past calls, and keep the call.
 :::
 
 ::: card
-[After the day]{.lab}
+[What we didn't cover]{.lab}
 
-### Go further
+### [Beyond the day](beyond.html)
 
-[Go deeper](go-deeper.html): VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, Write like me. [Decide like me](decide-like-me.html): Exercise 6 in full. [Beyond the day](beyond.html): setting up your assistant, the jargon, local models, and the big questions. [Responsible use](responsible-use.html): data governance, the quiet defaults, ethics dilemmas.
+Setting up your assistant once, the jargon, images and video, local models, prompt injection, and the big questions: AGI, energy, deepfakes.
 :::
 
 ::: card
-[Keep and print]{.lab}
+[Data, bias and ethics]{.lab}
 
-### Downloads
+### [Responsible use](responsible-use.html)
 
-[Desk card](downloads/desk-card.pdf) · [Field guide](downloads/field-guide.pdf) · [Starter prompts](downloads/starter-prompts.pdf) · [Slides](downloads/slides.pdf) · [RetailFlow data](downloads/retailflow-customer-service-data.csv)
+Australia's six practices, the privacy rule for automated decisions, proportionate data governance, the quiet defaults, four dilemmas.
 :::
 ::::::
 
+## Read next
+
+Three picks, one per angle. All are free.
+
+- **Practice.** [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/), the open book this course comes from. Start with [VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html) and [The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html).
+- **Safety.** The [International AI Safety Report 2026](https://internationalaisafetyreport.org), led by Yoshua Bengio. The three-page executive summary is enough to start.
+- **The sceptical view.** Arvind Narayanan and Sayash Kapoor, [AI as Normal Technology](https://knightcolumbia.org/content/ai-as-normal-technology) (2025): why change may come over decades, not years.
+
+## The day's materials
+
+[Before the day](before.html) · [The four tools](tools.html) · [Exercises](exercises.html) · [Your workbook](workbook.html) · [Starter prompts](prompts.html) · [Prompt builder](prompt-builder.html) · [Where's your edge? quiz](quiz.html) · [Slides](deck/)
+
+Downloads: [Desk card](downloads/desk-card.pdf) · [Field guide](downloads/field-guide.pdf) · [Starter prompts](downloads/starter-prompts.pdf) · [Slides](downloads/slides.pdf) · [RetailFlow data](downloads/retailflow-customer-service-data.csv)
+
 ## Free tools to explore
 
-- **[Google NotebookLM](https://notebooklm.google.com):** paste in your sources (a PDF, a web page, your notes) and ask questions grounded in them, or get a briefing document. A good way to feel the difference between source-grounded and general answers.
-- **[Google Teachable Machine](https://teachablemachine.withgoogle.com):** train a small image or sound classifier in your browser in two minutes. Machine learning beyond chat, from the "bigger pie" slide.
-- **[Survival of the Best Fit](https://www.survivalofthebestfit.com):** a 10-minute game in which an "objective" hiring algorithm amplifies the bias in its data.
-- **[Style Mirror](https://stylemirror.eduserver.au):** give it a sample of your writing and it produces a style brief for your custom instructions.
-- **[Msty Studio](https://msty.ai/products/studio/):** a desktop app that runs AI models on your own laptop, or online models through your own API key. One install, and the free plan covers everything in this course. The plainest way to see a system prompt, and to keep sensitive drafts off the cloud.
-- **[Ollama](https://ollama.com):** the engine many local AI apps run on. Install it, download an open model, and it runs on your machine. Msty can use it too.
-- **[Open WebUI](https://openwebui.com) and [LibreChat](https://www.librechat.ai):** chat interfaces your IT team can host for a whole organisation, in front of local or online models. They need some technical setup.
-- **[CiteSight](https://citesight.eduserver.au):** check references and catch the ones that don't exist. VET's "verify" step, for citations.
 - **[The trust tool game](https://trusttool.borck.education/):** ten scenarios per domain, with an explanation on every card.
+- **[Style Mirror](https://stylemirror.eduserver.au):** give it a sample of your writing and it produces a style brief for your custom instructions.
+- **[CiteSight](https://citesight.eduserver.au):** check references and catch the ones that don't exist. VET's "verify" step, for citations.
+- **[Google NotebookLM](https://notebooklm.google.com):** ask questions grounded in sources you provide. A good way to feel the difference between source-grounded and general answers.
+- **[Msty Studio](https://msty.ai/products/studio/):** runs AI models on your own laptop, or online models through your own API key. One install, and the free plan covers this course. The plainest way to see a system prompt, and to keep sensitive drafts off the cloud.
+- **[Ollama](https://ollama.com):** the engine many local AI apps run on. [Open WebUI](https://openwebui.com) and [LibreChat](https://www.librechat.ai) are chat interfaces an IT team can host in front of it.
+- **[Google Teachable Machine](https://teachablemachine.withgoogle.com):** train a small image or sound classifier in your browser. Machine learning beyond chat.
+- **[Survival of the Best Fit](https://www.survivalofthebestfit.com):** a 10-minute game in which an "objective" hiring algorithm amplifies the bias in its data.
 
-## Responsible AI guidance (Australia)
+## Also referenced
 
-- [Guidance for AI Adoption](https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices): the Australian Government's six essential practices for responsible AI use (October 2025), with an AI policy template.
-- [Australia's AI Ethics Principles](https://www.industry.gov.au/publications/australias-ai-ethics-principles): the earlier eight principles, now folded into the guidance above.
-
-## The companion book
-
-[*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/) is free and openly licensed, and the ideas behind this course come from it. Two chapters to start with:
-
-- [VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html): verify, explain, test.
-- [The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html): how to stay in the conversation instead of delegating it.
-
-## Curtin's AI Skills Passport
-
-Curtin's self-paced AI literacy hub. Some pages may ask for a Curtin login.
-
-- [AI Skills Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html)
-- [AI Toolkit](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/ai-toolkit.html)
-- [Three cognitive traps](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/three-cognitive-traps.html)
-- [Ethics, data governance and integrity](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/ethics-integrity.html)
-
-## The masterclasses
-
-The Human Edge and **AI in Strategy: Choosing where to invest** are Curtin Executive Education's AI masterclasses; the [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass goes deeper on governance and risk. Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
-
-## More from Michael Borck
-
-[bigpicture.borck.dev](https://bigpicture.borck.dev): a map of Michael's AI teaching, tools and research at Curtin, including what didn't work.
+- **Australian guidance.** [Guidance for AI Adoption](https://www.ai.gov.au/staying-safe-and-responsible/essential-ai-practices) (October 2025): six essential practices and an AI policy template. The [OAIC on automated decisions](https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making) in privacy policies, from 10 December 2026.
+- **Curtin's AI Skills Passport,** a self-paced AI literacy hub (some pages need a Curtin login): [the Passport](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/arrivals-hall.html) · [AI Toolkit](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/ai-toolkit.html) · [Three cognitive traps](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/three-cognitive-traps.html) · [Ethics, data governance and integrity](https://lms.curtin.edu.au/bbcswebdav/orgs/The_AI_Skills_Passport/downloads/ethics-integrity.html).
+- **The masterclasses.** The Human Edge and **AI in Strategy: Choosing where to invest** are Curtin Executive Education's AI masterclasses; [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) goes deeper on governance and risk. Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
+- **More from Michael Borck.** [bigpicture.borck.dev](https://bigpicture.borck.dev): a map of Michael's AI teaching, tools and research at Curtin, including what didn't work.

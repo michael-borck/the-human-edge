@@ -147,4 +147,9 @@ Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curt
 
 ## After the day
 
-[Go deeper](go-deeper.html) has five-minute extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and Write like me (teaching it your voice). [Responsible use](responsible-use.html) covers data governance, the quiet defaults in AI output, and four ethics dilemmas. [Beyond the day](beyond.html) maps what the course skipped: setting your assistant up once (the system prompt, by product), the jargon decoded, images, audio and video, agents, local models, and the big questions (is AI just software, AGI and superintelligence). [Decide like me](decide-like-me.html) is Exercise 6 in full: write down how you make one decision, then test the rules blind. Everything else is in [Resources](resources.html).
+Start at [Resources](resources.html). It says what each after-the-day page is for, with three things worth reading next:
+
+- [Go deeper](go-deeper.html): practise on your own work.
+- [Decide like me](decide-like-me.html): Exercise 6 in full.
+- [Beyond the day](beyond.html): what we didn't cover, and the big questions.
+- [Responsible use](responsible-use.html): data, bias and ethics.

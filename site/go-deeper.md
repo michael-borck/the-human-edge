@@ -27,6 +27,7 @@ The trust tool tells you *how much* to check. VET tells you *how*, for claims yo
 - **Verify:** can I find this independently? AI produces plausible references that don't exist, because a fake citation is generated the same way as any other text. [CiteSight](https://citesight.eduserver.au) checks references for you.
 - **Explain:** can I say it in my own words? Where you struggle to rephrase is where your understanding has a gap.
 - **Test:** does it survive a "what if"? Change a variable, try an edge case. Fragile answers break; robust ones flex.
+- **Verify the channel, not just the claim.** A voice or video asking for money, a password or new bank details gets checked outside the channel it came in on: hang up and call back on a number you already have. A familiar face on a call is no longer proof ([deepfakes on the trust tool](beyond.html#beyond-text)).
 
 Use it hardest when a decision hangs on the claim, or when people will assume you checked. [Full chapter: VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html).
 
@@ -78,5 +79,5 @@ The day covers the practical side: classify before you paste, find the quiet def
 - Curtin Executive Education's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass, for governance, risk and regulation in depth.
 
 ::: note
-**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. [Decide like me](decide-like-me.html) has the full method behind Exercise 6. [Beyond the day](beyond.html) covers what the day left out: setting up your assistant, MCP, images, audio and video, and agents. More in [Resources](resources.html).
+**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. [Decide like me](decide-like-me.html) has the full method behind Exercise 6. [Beyond the day](beyond.html) covers what the day left out: setting up your assistant, MCP, images, audio and video, and agents. Questions that come up but weren't on the agenda (energy, deepfakes, AGI, staff using unapproved tools) are answered in [the big questions](beyond.html#the-big-questions), the [deepfake row](beyond.html#beyond-text) and [Responsible use](responsible-use.html#data-governance-proportionate-not-prohibitive). More in [Resources](resources.html).
 :::
