@@ -1,6 +1,6 @@
 ---
 pagetitle: Go deeper
-description: "Self-paced extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and making your voice persistent."
+description: "Self-paced extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and Write like me: teaching it your voice."
 nav-more: true
 ---
 
@@ -58,9 +58,9 @@ Write a handover prompt that captures everything important from this conversatio
 
 Useful for anything that runs over several sessions: a proposal, a policy, a board paper.
 
-## Make your voice persistent
+## []{#make-your-voice-persistent}Write like me {#write-like-me}
 
-Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draft; this fixes every future one.
+Generic output sounds like everyone. The voice pass in Exercise 4 fixes one draft; this fixes every future one. It pairs with [Decide like me](decide-like-me.html): this teaches the tool how you sound, that teaches it how you choose. In both, it drafts and you decide.
 
 1. Collect three or four things you've written that sound like you at your best: emails, reports, a proposal. Remove anything confidential.
 2. Ask a model to describe your style as a two-page brief: sentence length, structure, vocabulary, how you open and close, what you never do. [Style Mirror](https://stylemirror.eduserver.au) does this step for you.
@@ -78,5 +78,5 @@ The day covers the practical side: classify before you paste, find the quiet def
 - Curtin Executive Education's [Ethics of artificial intelligence](https://www.curtin.edu.au/study/prof-development/ethics-of-artificial-intelligence/) masterclass, for governance, risk and regulation in depth.
 
 ::: note
-**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. For the full protocol behind Exercise 6 — teaching one decision to decide like you — see [Hand it over](hand-it-over.html). For what the day didn't cover — customising your assistant, MCP, images, audio and video, agents — see [Beyond the day](beyond.html). More in [Resources](resources.html).
+**One thread through all of these:** each one stops you accepting fluent, generic output. Verify it, separate thinking from building, argue against it, make it sound like you. [Decide like me](decide-like-me.html) has the full method behind Exercise 6. [Beyond the day](beyond.html) covers what the day left out: setting up your assistant, MCP, images, audio and video, and agents. More in [Resources](resources.html).
 :::

@@ -21,8 +21,9 @@ The day is hands-on from the first half hour. A little setup means you spend it 
 3. **Check you can upload a file** to that tool, or paste a few hundred lines of text into it.
 4. **Have a spreadsheet app** (Excel, Google Sheets or Numbers). You'll use it to check the AI's numbers.
 5. **Think of three tasks you do every week** that take 30 minutes or more. In the afternoon you'll plan how to deliver one of them with AI.
-6. **Find out what your organisation allows.** Which AI tools are approved, and what kinds of information can go into them?
-7. **Optional:** take the two-minute [Where's your edge?](quiz.html) self-check, and play the trust tool game once at [trusttool.borck.education](https://trusttool.borck.education/) (ten scenarios, about ten minutes).
+6. **Bring one decision you make over and over,** and three recent times you made it. Something small and routine: which enquiries get a same-day reply, which invoices you query, which requests go to a senior colleague. For each of the three, jot down what you knew at the time and what you decided. Leave out names and client details. In Exercise 6 you'll write down your rules and test them against these cases. If none of your work can go into an AI tool, use one of the [decision cards](exercises.html#decision-cards) instead.
+7. **Find out what your organisation allows.** Which AI tools are approved, and what kinds of information can go into them?
+8. **Optional:** take the two-minute [Where's your edge?](quiz.html) self-check, and play the trust tool game once at [trusttool.borck.education](https://trusttool.borck.education/) (ten scenarios, about ten minutes).
 
 ## AI in ten minutes
 
@@ -85,5 +86,5 @@ You don't need to master a particular product. The skills in this course (decidi
 | Skill | A saved, reusable brief that an agent or assistant loads when it's relevant. |
 
 ::: note
-That's it. Bring a recurring task, an open mind and a laptop. See you at 9:00.
+That's it. Bring a recurring task, a repeatable decision with three past cases, and a laptop. See you at 9:00.
 :::

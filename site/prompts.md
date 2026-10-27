@@ -204,32 +204,34 @@ I need to get better at [skill or topic, e.g. reading a variance report, applyin
 Here are two versions of the same [task]: mine (A) and an AI draft (B). [paste both]. Without flattering either, list where A is stronger, where B is stronger, and what both missed. Be specific.
 ```
 
-## Hand it over
+## Decide like me
 
-Teach one decision you make twice to decide like you, then prove it blind. The full method — install, patch, the cold rerun — is on the [Hand it over](hand-it-over.html) page. Method after Dylan Davis.
+Turn one decision you make over and over into if-then rules, then test them blind on your own past calls. The [Decide like me](decide-like-me.html) page has the full method, including how to save the rules and why the re-test goes in a new chat. Method after Dylan Davis.
 
-### 22 · Interview me into the rules
+### 22 · Interview me for my rules
 
-*Use when you can't quite say the why out loud.* Check: your own record, next.
+*Use when your answer to "why?" is "it depends".* Check: B.
 
 ```text
-Interview me about how I make one decision: [the decision]. Ask one question at a time, and use each answer to shape the next question. If any answer isn't clear enough to become a clear if-then rule, keep asking until it is. Cap the interview at fifteen to twenty questions. At the end, write out everything I told you as a set of decision rules, including every if-then branch.
+Help me write down the rules I use for one decision: [the decision]. Question me one at a time, choosing each question from my last answer. Each time I say "it depends" or stay vague, dig until you can state it as an if-then rule. Stop after fifteen to twenty questions and list the rules you've heard, every branch included, for me to check.
 ```
 
-### 23 · Mine my history
+### 23 · Find the rules in my past decisions
 
-*Use when the decisions are written down but the rules never were.* Check: B — it found patterns, you confirm they're yours.
+*Use when the decisions are on file but the reasons never were.* Check: B. Read every rule and ask whether you'd have said it.
 
 ```text
-Read through these past decisions. For each, work out what was decided and why. Then write the decision rules I seem to follow, including rules I never stated anywhere. Flag any decisions that don't fit a pattern. Describe the cases if you can't share them: [descriptions].
+Here are past cases of one decision I make: what came in, and what I decided. [Describe each case; leave out names and client details.] Work out which rules would explain these decisions, including any I've never written down. List them as if-then rules, and point out any case that doesn't fit them.
 ```
 
-### 24 · Blind test the skill
+### 24 · Blind test my rules
 
-*Run before any handover. You make the final call.* Check: D — the skill proposes, you decide.
+*Run in a new chat before you rely on the rules. You make the final call.* Check: D.
 
 ```text
-Here are the inputs from [three to five] past cases of this decision, outcomes hidden. For each, use the skill to make the call, name the rule you applied, and show your reasoning in three steps. Then stop — I'll compare your calls with what I actually decided.
+Using the decision rules below, make the call on each of these [three to five] cases. I've left out what I decided. For each case, give your call, the rule you used, and your reasoning in two or three short steps. Then stop, and I'll compare your calls with mine.
+
+[Paste the rules, then the cases.]
 ```
 
 ::: note

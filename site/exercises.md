@@ -1,6 +1,6 @@
 ---
 pagetitle: Exercises
-description: "The nine exercises, with copyable prompts, scenario cards and the RetailFlow data."
+description: "The eight exercises, with copyable prompts, scenario cards, decision cards and the RetailFlow data."
 nav-exercises: true
 ---
 
@@ -8,23 +8,22 @@ nav-exercises: true
 Exercises
 :::
 
-# Nine exercises. <em>Mostly your own work.</em>
+# Eight exercises. <em>Mostly your own work.</em>
 
 ::: lede
-Copy the prompts from here and write your answers in the [digital workbook](workbook.html); it saves in your browser and exports before you leave. If your own work is confidential, use a [scenario card](#scenario-cards) instead.
+Copy the prompts from here and write your answers in the [digital workbook](workbook.html); it saves in your browser and exports before you leave. If your own work is confidential, use a [scenario card](#scenario-cards) or a [decision card](#decision-cards) instead.
 :::
 
 | | Exercise | Session | Time |
 |---|---|---|---|
 | 1 | [Your pass first](#ex1) | Judge | 25 min |
-| 2 | [Place it](#ex2) | Judge | 25 min |
+| 2 | [Place it](#ex2) | Judge | 22 min |
 | 3 | [Brief it](#ex3) | Brief | 25 min |
 | 4 | [Upgrade and save](#ex4) | Brief | 25 min |
-| 5 | [RetailFlow: Karen needs answers](#ex5) | Check | 22 min |
-| 6 | [Decide like me](#ex6) | Check | 20 min |
-| 7 | [Verification challenge](#ex7) | Check | 12 min |
-| 8 | [Plan one delivery](#ex8) | Deliver | 35 min |
-| 9 | [Your action plan](#ex9) | Deliver | 12 min |
+| 5 | [RetailFlow: Karen needs answers](#ex5) | Check | 35 min |
+| 6 | [Decide like me](#ex6) | Check | 24 min |
+| 7 | [Plan one delivery](#ex7) | Deliver | 35 min |
+| 8 | [Your action plan](#ex8) | Deliver | 12 min |
 
 ::: {.ex .s1}
 ## Exercise 1 · Your pass first {#ex1}
@@ -41,7 +40,7 @@ Copy the prompts from here and write your answers in the [digital workbook](work
 ::: {.ex .s1}
 ## Exercise 2 · Place it {#ex2}
 
-[25 min · room, then solo]{.mins}
+[22 min · room, then solo]{.mins}
 
 1. **Blind vote.** The facilitator reads a scenario. Decide in silence, then vote on "three": in ClassPulse (scan the code on screen), or by showing 1 to 4 fingers for corners A to D.
 2. **Play the game** at [trusttool.borck.education](https://trusttool.borck.education/). Choose your domain and place all ten cards.
@@ -79,13 +78,13 @@ The [prompt builder](prompt-builder.html) assembles the four parts for you.
 > BOARD: Respond as a board: a CFO, a sceptical customer and a frontline manager. One paragraph each, then where they disagree.
 
 3. Save three prompts to your library: a name, when to use it, the prompt with [blanks], and the check it needs. Use the [workbook](workbook.html) or the [prompt builder](prompt-builder.html).
-4. **Stretch: the voice pass.** Paste about 100 words you actually wrote (sanitised), then ask: *"Rewrite your last output in my voice, leading with the one thing only I would say."* What changed? Optionally, ask it to summarise your style as a short brief and paste that into your tool's custom instructions.
+4. **Stretch: the voice pass.** Paste about 100 words you actually wrote (sanitised), then ask: *"Rewrite your last output in my voice, leading with the one thing only I would say."* What changed? Optionally, ask it to summarise your style as a short brief and paste that into your tool's custom instructions. Nothing you can paste? Write 100 words now, to a colleague, on why you came today. It's your voice, and it's safe. The full version is [Write like me](go-deeper.html#write-like-me).
 :::
 
 ::: {.ex .s3}
 ## Exercise 5 · RetailFlow: Karen needs answers by Monday {#ex5}
 
-[22 min · solo or pairs]{.mins}
+[35 min · solo or pairs, then blind vote]{.mins}
 
 Karen manages customer service at RetailFlow, an online retailer. She has six months of ticket data and three questions:
 
@@ -104,44 +103,37 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 
 > Describe this dataset: number of rows, columns, date range, and anything that looks incomplete. Don't analyse it yet.
 
-3. **Verify two numbers yourself** with a spreadsheet filter, recount or pivot table. Not "are you sure?"
-4. **Shape** a brief for Karen, under 300 words, ending with a line that starts *What I checked:*
-:::
-
-::: {.ex .s3}
-## Exercise 6 · Decide like me {#ex6}
-
-[20 min · solo, then tables]{.mins}
-
-Pick one decision you make twice — small, repeatable, explainable, and nothing from the top-right corner of the trust tool. Extract your rules, then prove the skill blind against your own record. Method after Dylan Davis; the [full protocol](hand-it-over.html) is on its own page.
-
-1. **Extract the rules.** Dictate the why, or let it interview you:
-
-> Interview me about how I make one decision: [the decision]. One question at a time, each answer shaping the next. Push until every answer is a clear if-then rule. Cap it at ten questions today. Then write out my decision rules, every branch included.
-
-2. **Write your last three calls** — the inputs only, and your call on each. This list is the blind test; write it before you run anything.
-3. **Prove it blind.** Give the skill the three cases, inputs only, and have it make each call and name the rule it used.
-4. **Patch one mismatch.** A mismatch is a rule you never said out loud: a missing boundary, an unstated exception, or a rule you hold loosely applied as absolute. Add it, then re-test that case in a fresh chat.
-
-Describe your past cases — don't paste anything confidential.
-:::
-
-::: {.ex .s3}
-## Exercise 7 · Verification challenge {#ex7}
-
-[12 min · pairs, then blind vote]{.mins}
-
-Three claims about the RetailFlow data are circulating. At least one is wrong. Check each against the data, not against how confident it sounds. Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it.
+3. **Shape** a first brief for Karen, under 300 words. Don't send it yet.
+4. **Verify.** Three claims about the data are doing the rounds, and at least one is wrong. Check each against the data with a spreadsheet filter, recount or pivot table. Not "are you sure?"
 
 - **A.** "Email is roughly three times slower than Live Chat."
 - **B.** "Account Issues has the lowest satisfaction of any category, which makes sense, because account problems are the most complex to resolve."
 - **C.** "Sunday response times are more than double the overall average."
 
-Which one would have done the most damage if forwarded to Karen unchecked?
+Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it. Is any of them in your brief? Fix it, and end the brief with a line that starts *What I checked:*
+:::
+
+::: {.ex .s3}
+## Exercise 6 · Decide like me {#ex6}
+
+[24 min · solo, then tables]{.mins}
+
+Pick one decision you make over and over: small, repeatable, explainable, and nothing from the top-right corner of the trust tool. Get your rules out of your head, then test them blind on your own past calls. Method after Dylan Davis; the [full method](decide-like-me.html) has its own page. If you followed [Before the day](before.html), you've brought the decision and three past cases. If not, or if your work can't go into an AI tool, take a [decision card](#decision-cards).
+
+1. **Get the rules out.** Talk the why through, or let it interview you:
+
+> Help me write down the rules I use for one decision: [the decision]. Question me one at a time, choosing each question from my last answer. Each time I say "it depends", dig until it becomes an if-then rule. Stop after ten questions and list my rules, every branch included.
+
+2. **Write down three past cases:** the inputs only, and your call on each. Do this before you run anything.
+3. **Test it blind.** In a new chat, give it the rules and the three cases, inputs only. Have it make each call and name the rule it used.
+4. **Fix one mismatch.** A mismatch is a rule you've never put into words: a threshold you didn't state, an exception you apply without noticing, or a loose preference the rules made strict. Add it as one if-then line, then re-test that case in a new chat.
+5. **Last question:** what would you never let it decide, and why? That list is the other half of the output.
+
+Describe your past cases. Don't paste anything confidential.
 :::
 
 ::: {.ex .s4}
-## Exercise 8 · Plan one delivery {#ex8}
+## Exercise 7 · Plan one delivery {#ex7}
 
 [35 min · solo, then tables]{.mins}
 
@@ -151,10 +143,12 @@ Which one would have done the most damage if forwarded to Karen unchecked?
 4. **Test** one AI step live with an RTCF brief. Then **set your 30-day gate**: what result would make you scale, pivot or kill?
 
 The [Map my workflow](prompts.html#map-my-workflow) and [Pre-mortem](prompts.html#pre-mortem) starter prompts help with steps 1 and 3.
+
+Mapping your workflow needs no data, only step names and minutes. If the inputs for the live test can't go into a tool, invent a few lines in the same shape (rule 2 from the morning: describe it, don't paste it). Can't use your own workflow at all? Plan [scenario card 3](#scenario-cards) (the Friday status update) or scenario card 6 (monthly invoicing), and test with the notes on the card.
 :::
 
 ::: {.ex .s4}
-## Exercise 9 · Your action plan {#ex9}
+## Exercise 8 · Your action plan {#ex8}
 
 [12 min · quiet, then share]{.mins}
 
@@ -170,7 +164,7 @@ Before you leave, put this week's line and your day-30 gate in your calendar.
 
 ## Scenario cards {#scenario-cards}
 
-Use one of these in Exercises 3 and 4 if your own work is confidential. Paste the details into your Context.
+Use one of these in Exercises 3 and 4 if your own work is confidential. Paste the details into your Context. Scenarios 3 and 6 also work as the workflow for Exercise 7.
 
 :::::: {.cards .two}
 ::: card
@@ -221,3 +215,118 @@ Renew, switch or insource your third-party logistics? Current provider: $1.8M a 
 You're the only person who knows monthly invoicing: export billable hours from Harvest, group by client in Excel, apply the rate card ($250 strategy, $180 execution, $120 support), create invoices in Xero, add PO numbers from the account managers' Google Sheet, send, update the tracker, then email Finance a summary with anything unusual. Write it so a colleague can do it while you're on leave.
 :::
 ::::::
+
+## Decision cards {#decision-cards}
+
+For Exercise 6, if you didn't bring a decision or your work can't go into an AI tool. The people and figures are invented, so everything here is safe to paste.
+
+Each card hands you someone else's decision. You're taking it over from the person who made it, and their record is below.
+
+1. **Read the record.** Then write your own call on test cases A to C before you run anything.
+2. **Get the rules out.** Mine the record with [prompt 23](prompts.html#decide-like-me), or say the rules you'd use if the job were yours.
+3. **Test it blind.** In a new chat, give it the rules and the three test cases (prompt 24).
+4. **Open the answer key.** Compare its calls, your calls and the record-holder's. One test case turns on a rule they never wrote down.
+
+::: {.card .s3}
+[Decision card 1]{.lab}
+
+### RetailFlow: does this ticket go to a senior agent?
+
+Priya leads Karen's customer service team. Each morning she sends some open tickets to one of the two senior agents and leaves the rest in the general queue.
+
+| # | Category | Channel | Amount | Waiting | Note | Priya's call |
+|---|---|---|---|---|---|---|
+| 1 | Returns & Refunds | Email | $340 | 6 h | First contact | Senior agent |
+| 2 | Order Tracking | Live Chat | $45 | 2 h | Customer marked it High priority | General queue |
+| 3 | Delivery Problems | Phone | $120 | 30 h | First contact | Senior agent |
+| 4 | Billing Queries | Email | $80 | 5 h | Second contact about the same charge | Senior agent |
+| 5 | Returns & Refunds | Live Chat | $150 | 3 h | First contact | General queue |
+| 6 | Delivery Problems | Email | $95 | 10 h | First contact | General queue |
+
+**Test cases, inputs only**
+
+| | Category | Channel | Amount | Waiting | Note |
+|---|---|---|---|---|---|
+| A | Returns & Refunds | Phone | $380 | 4 h | First contact |
+| B | Order Tracking | Email | $30 | 8 h | Customer marked it High priority |
+| C | Delivery Problems | Social Media | $90 | 3 h | Public post, 40 replies so far |
+
+<details><summary>Answer key: Priya's calls</summary>
+
+- **A · Senior agent.** Refunds over $200 go to a senior agent.
+- **B · General queue.** Priya ignores the priority customers set themselves; it's on almost every ticket.
+- **C · Senior agent.** Anything public on social media goes to a senior agent the same morning. It isn't in the record because it only happens a few times a year. That's an **unstated exception**.
+
+Her other rules: anything waiting over 24 hours, and any second contact about the same issue, goes to a senior agent.
+
+</details>
+:::
+
+::: {.card .s3}
+[Decision card 2]{.lab}
+
+### Expense claims: approve, or query first?
+
+Sam manages a small operations team and approves their expense claims. Most go straight through. Some get a query first.
+
+| # | Claim | Amount | Receipt | Age | Sam's call |
+|---|---|---|---|---|---|
+| 1 | Taxi to a client site | $38 | Yes | 5 days | Approve |
+| 2 | Team lunch, 4 people | $300 ($75 each) | Yes | 10 days | Approve |
+| 3 | Parking | $55 | No | 3 days | Query |
+| 4 | Dinner with a client, 2 people | $190 ($95 each) | Yes | 7 days | Query |
+| 5 | Train fare | $24 | No | 2 days | Approve |
+| 6 | Conference registration | $420 | Yes | 6 days | Approve |
+| 7 | Taxi home after a late event | $32 | Yes | 75 days | Query |
+
+**Test cases, inputs only**
+
+| | Claim | Amount | Receipt | Age |
+|---|---|---|---|---|
+| A | Coffee with a supplier, 2 people | $14 | No | 4 days |
+| B | Dinner after a site visit, 3 people | $330 ($110 each) | Yes | 12 days |
+| C | Laptop stand and keyboard | $640 | Yes | 9 days |
+
+<details><summary>Answer key: Sam's calls</summary>
+
+- **A · Approve.** No receipt is fine under $50.
+- **B · Query.** Meals over $80 a head get a query.
+- **C · Query.** Sam queries anything over $500, receipt or not, because equipment that size should go through IT purchasing. Nothing in the record was over $500, so the rule never showed. That's a **threshold never put into words**.
+
+Sam's other rule: claims more than 60 days old get a query.
+
+</details>
+:::
+
+::: {.card .s3}
+[Decision card 3]{.lab}
+
+### Meeting requests: accept, ask for an agenda, or send a delegate?
+
+Jo runs a team of nine and gets several meeting requests a day.
+
+| # | Request | Length | Jo is | Agenda | Jo's call |
+|---|---|---|---|---|---|
+| 1 | Weekly 1:1 with someone in Jo's team | 30 min | Required | None | Accept |
+| 2 | Product demo from a vendor's sales rep | 60 min | Required | None | Ask for an agenda |
+| 3 | Quarterly planning | 2 hours | Optional | Attached | Send a delegate |
+| 4 | Budget review with Jo's manager | 45 min | Required | Attached | Accept |
+| 5 | Cross-team workshop | 90 min | Required | Attached | Accept |
+| 6 | "Quick sync" from a peer in finance | 45 min | Required | None | Ask for an agenda |
+
+**Test cases, inputs only**
+
+| | Request | Length | Jo is | Agenda |
+|---|---|---|---|---|
+| A | Follow-up from the same vendor | 30 min | Required | None |
+| B | All-hands rehearsal | 2 hours | Optional | Attached |
+| C | "Quick question on the contract" from a peer in legal | 15 min | Required | None |
+
+<details><summary>Answer key: Jo's calls</summary>
+
+- **A · Ask for an agenda.** No agenda means Jo asks for one, unless it's her own team or her manager.
+- **B · Send a delegate.** Long meetings where she's optional get a delegate.
+- **C · Accept.** Jo holds the agenda rule loosely: for anything 15 minutes or shorter she just accepts. The rules made it strict. That's a **loose rule applied strictly**.
+
+</details>
+:::

@@ -38,7 +38,7 @@ A map of this site, the free tools worth trying, and where to go deeper after th
 
 ### Go further
 
-[Go deeper](go-deeper.html): VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, making your voice persistent. [Responsible use](responsible-use.html): data governance, the quiet defaults, ethics dilemmas.
+[Go deeper](go-deeper.html): VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, Write like me. [Responsible use](responsible-use.html): data governance, the quiet defaults, ethics dilemmas.
 :::
 
 ::: card

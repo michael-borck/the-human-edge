@@ -1,6 +1,6 @@
 ---
 pagetitle: Workbook
-description: "Your digital workbook for The Human Edge: all nine exercises, your prompt library, delivery plan and action plan. Saves in your browser; export before you leave."
+description: "Your digital workbook for The Human Edge: all eight exercises, your prompt library, decision rules, delivery plan and action plan. Saves in your browser; export before you leave."
 nav-workbook: true
 ---
 
@@ -93,7 +93,7 @@ Type straight into this page. It saves automatically in this browser on this dev
 </section>
 
 <section data-title="Exercise 2 · Place it">
-  <div class="meta">Exercise 2 · Judge · 25 min</div>
+  <div class="meta">Exercise 2 · Judge · 22 min</div>
   <h2>Place it</h2>
   <p class="how">Blind vote, then the game at trusttool.borck.education, then three tasks from your own week.</p>
   <div class="two">
@@ -136,9 +136,9 @@ Type straight into this page. It saves automatically in this browser on this dev
     <div><label>When I pushed back with no new evidence, it</label><select data-wb="e4-fold" data-label="Pushback, no evidence"><option></option><option>folded</option><option>held</option></select></div>
     <div><label>Push-back move I tried, and what happened</label><input type="text" data-wb="e4-move" data-label="Push-back move"></div>
   </div>
-  <label>Stretch · the voice pass <small>paste about 100 words you actually wrote (sanitised), then ask: "Rewrite your last output in my voice, leading with the one thing only I would say." What changed?</small></label>
+  <label>Stretch · the voice pass <small>paste about 100 words you actually wrote (sanitised), then ask: "Rewrite your last output in my voice, leading with the one thing only I would say." What changed? Nothing you can paste? Write 100 words now on why you came today.</small></label>
   <textarea data-wb="e4-voice" data-label="Voice pass"></textarea>
-  <label>Optional · my style brief <small>ask the tool to summarise your style from that sample; paste it into your tool's custom instructions tonight</small></label>
+  <label>Optional · my style brief <small>ask the tool to summarise your style from that sample; paste it into your tool's custom instructions tonight. The full method: <a href="go-deeper.html#write-like-me">Write like me</a></small></label>
   <textarea data-wb="e4-style" data-label="Style brief"></textarea>
 </section>
 
@@ -151,7 +151,7 @@ Type straight into this page. It saves automatically in this browser on this dev
 </section>
 
 <section data-title="Exercise 5 · RetailFlow">
-  <div class="meta">Exercise 5 · Check · 22 min</div>
+  <div class="meta">Exercise 5 · Check · 35 min</div>
   <h2>Karen needs answers by Monday</h2>
   <p class="how"><a href="downloads/retailflow-customer-service-data.csv">Download the CSV</a>. Fresh chat. Upload blocked? Paste the first 50 rows, or describe the columns, and say so in your brief.</p>
   <div class="two">
@@ -160,48 +160,45 @@ Type straight into this page. It saves automatically in this browser on this dev
   </div>
   <label>Top three drivers of dissatisfaction</label><textarea data-wb="e5-q1" data-label="Q1 drivers"></textarea>
   <label>When response times blow out</label><textarea data-wb="e5-q2" data-label="Q2 blow-outs"></textarea>
-  <label>Two numbers I verified myself</label>
-  <table><thead><tr><th>The AI said</th><th>I checked by</th><th>Result</th></tr></thead>
-  <tbody data-table="e5-verify" data-cols="text,text,result" data-rows="2"></tbody></table>
-  <label>My brief for Karen <small>under 300 words</small></label><textarea class="big" data-wb="e5-brief" data-label="Brief for Karen"></textarea>
-  <label>What I checked</label><textarea data-wb="e5-checked" data-label="What I checked"></textarea>
-</section>
-
-<section data-title="Exercise 6 · Decide like me">
-  <div class="meta">Exercise 6 · Check · 20 min</div>
-  <h2>Teach it to decide like you</h2>
-  <p class="how">One decision you make twice — small, repeatable, explainable, and nothing from the top-right corner. Extract the rules, then prove the skill blind against your own past calls. Describe past cases; don't paste anything confidential.</p>
-  <div class="two">
-    <div><label>The decision</label><input type="text" data-wb="dlm-decision" data-label="The decision"></div>
-    <div><label>How I extracted it</label><select data-wb="dlm-path" data-label="Extraction path"><option></option><option>Said it out loud</option><option>Let it interview me</option><option>Mined my history</option></select></div>
-  </div>
-  <label>My decision rules <small>every if-then branch included</small></label>
-  <textarea class="big" data-wb="dlm-rules" data-label="Decision rules"></textarea>
-  <label>The blind test <small>write your calls before you run it — inputs only, outcomes hidden</small></label>
-  <table><thead><tr><th>Past case (inputs only)</th><th>My call at the time</th><th>Its call, and the rule it used</th><th>Match?</th></tr></thead>
-  <tbody data-table="dlm-test" data-cols="text,text,text,match" data-rows="3"></tbody></table>
-  <label>The mismatch I patched <small>a missing boundary rule, an unstated exception, or a rule you hold loosely applied as absolute</small></label>
-  <textarea data-wb="dlm-patch" data-label="Patched mismatch"></textarea>
-  <label>What I would never hand over, and why</label>
-  <textarea data-wb="dlm-keep" data-label="Never hand over"></textarea>
-</section>
-
-<section data-title="Exercise 7 · Verification challenge">
-  <div class="meta">Exercise 7 · Check · 12 min</div>
-  <h2>Three claims. At least one is wrong.</h2>
+  <label>My brief for Karen <small>under 300 words; write a first draft, then fix it after checking the claims</small></label><textarea class="big" data-wb="e5-brief" data-label="Brief for Karen"></textarea>
+  <label>Verify: three claims are doing the rounds <small>check each against the data, not the confidence</small></label>
   <table><thead><tr><th style="width:42%">Claim</th><th style="width:22%">Verdict</th><th>Evidence from the data</th></tr></thead><tbody>
     <tr><td>A. "Email is roughly three times slower than Live Chat."</td><td><select data-wb="e6-a" data-label="Claim A verdict"><option></option><option>Verified</option><option>Overstated</option><option>Refuted</option><option>Can't tell yet</option></select></td><td><input type="text" data-wb="e6-a-ev" data-label="Claim A evidence"></td></tr>
     <tr><td>B. "Account Issues has the lowest satisfaction of any category, which makes sense, because account problems are the most complex to resolve."</td><td><select data-wb="e6-b" data-label="Claim B verdict"><option></option><option>Verified</option><option>Overstated</option><option>Refuted</option><option>Can't tell yet</option></select></td><td><input type="text" data-wb="e6-b-ev" data-label="Claim B evidence"></td></tr>
     <tr><td>C. "Sunday response times are more than double the overall average."</td><td><select data-wb="e6-c" data-label="Claim C verdict"><option></option><option>Verified</option><option>Overstated</option><option>Refuted</option><option>Can't tell yet</option></select></td><td><input type="text" data-wb="e6-c-ev" data-label="Claim C evidence"></td></tr>
   </tbody></table>
-  <label>Which would have done the most damage if forwarded unchecked? Why?</label>
+  <label>Was any of them in my first brief? Which would have done the most damage if Karen acted on it?</label>
   <textarea data-wb="e6-damage" data-label="Most damaging claim"></textarea>
+  <label>Other numbers I checked myself <small>optional</small></label>
+  <table><thead><tr><th>The AI said</th><th>I checked by</th><th>Result</th></tr></thead>
+  <tbody data-table="e5-verify" data-cols="text,text,result" data-rows="1"></tbody></table>
+  <label>What I checked <small>the last line of the brief</small></label><textarea data-wb="e5-checked" data-label="What I checked"></textarea>
 </section>
 
-<section data-title="Exercise 8 · Plan one delivery">
-  <div class="meta">Exercise 8 · Deliver · 35 min</div>
+<section data-title="Exercise 6 · Decide like me">
+  <div class="meta">Exercise 6 · Check · 24 min</div>
+  <h2>Teach it to decide like you</h2>
+  <p class="how">One decision you make over and over: small, repeatable, explainable, and nothing from the top-right corner. Get the rules out, then test them blind on your own past calls. Describe past cases; don't paste anything confidential. Can't use real work? Take a <a href="exercises.html#decision-cards">decision card</a>. <a href="decide-like-me.html">The full method</a>.</p>
+  <div class="two">
+    <div><label>The decision</label><input type="text" data-wb="dlm-decision" data-label="The decision"></div>
+    <div><label>How I got the rules out</label><select data-wb="dlm-path" data-label="Method"><option></option><option>Said it out loud</option><option>Let it interview me</option><option>Mined my history</option><option>Used a decision card</option></select></div>
+  </div>
+  <label>My decision rules <small>every if-then branch included</small></label>
+  <textarea class="big" data-wb="dlm-rules" data-label="Decision rules"></textarea>
+  <label>The blind test <small>write your calls before you run it; inputs only</small></label>
+  <table><thead><tr><th>Past case (inputs only)</th><th>My call at the time</th><th>Its call, and the rule it used</th><th>Match?</th></tr></thead>
+  <tbody data-table="dlm-test" data-cols="text,text,text,match" data-rows="3"></tbody></table>
+  <button type="button" class="add" data-add-row="dlm-test">+ Add a case</button>
+  <label>The mismatch I fixed <small>a threshold I never stated, an exception I apply without noticing, or a loose preference the rules made strict</small></label>
+  <textarea data-wb="dlm-patch" data-label="Fixed mismatch"></textarea>
+  <label>What I would never let it decide, and why</label>
+  <textarea data-wb="dlm-keep" data-label="What stays mine"></textarea>
+</section>
+
+<section data-title="Exercise 7 · Plan one delivery">
+  <div class="meta">Exercise 7 · Deliver · 35 min</div>
   <h2>My delivery plan</h2>
-  <p class="how">One weekly task of 30 minutes or more, treated as a small AI project. Real work, sanitised.</p>
+  <p class="how">One weekly task of 30 minutes or more, treated as a small AI project. Real work, sanitised. Can't use your own? Plan <a href="exercises.html#scenario-cards">scenario card</a> 3 or 6.</p>
   <div class="two">
     <div><label>The workflow</label><input type="text" data-wb="e7-wf" data-label="Workflow"></div>
     <div><label>Owner</label><input type="text" data-wb="e7-owner" data-label="Owner"></div>
@@ -226,8 +223,8 @@ Type straight into this page. It saves automatically in this browser on this dev
   </div>
 </section>
 
-<section data-title="Exercise 9 · Your action plan">
-  <div class="meta">Exercise 9 · Deliver · 12 min</div>
+<section data-title="Exercise 8 · Your action plan">
+  <div class="meta">Exercise 8 · Deliver · 12 min</div>
   <h2>Your action plan</h2>
   <p class="how">One line each. Specific task, specific tool, specific day. Not "use AI more".</p>
   <div class="two">

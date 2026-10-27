@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Beyond the day · The Human Edge</title>
-<meta name="description" content="What the course skipped: set your
+<meta name="description" content="What the course skipped: setting your
 assistant up once (custom instructions, projects, Gems), the jargon
-decoded — MCP, harness, context window — images, audio and video, and
-the agent and terminal world.">
+decoded (MCP, harness, context window), images, audio and video, and
+agents in the terminal.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/site.css">
 </head>
@@ -33,11 +33,11 @@ the agent and terminal world.">
 <h1 id="the-course-was-tool-agnostic.-this-page-isnt.">The course was
 tool-agnostic. <em>This page isn’t.</em></h1>
 <div class="lede">
-<p>The four tools work on any AI, including the ones that ship next —
-that’s why the day named no vendor. This page is the map around them:
-where each product hides the standing brief, what the jargon in vendor
-pitches actually means, what the tools make beyond text, and where
-agents fit. The details here drift monthly. The four tools don’t.</p>
+<p>The four tools work on any AI, including the ones that ship next,
+which is why the day named no vendor. This page names them: where each
+product keeps the standing brief, what the jargon in vendor pitches
+means, what the tools make beyond text, and where agents fit. The
+details here change monthly. The four tools don’t.</p>
 </div>
 <h2 id="set-it-once">Set it once</h2>
 <p>All day you typed the brief fresh, every chat: role, task, context,
@@ -61,39 +61,42 @@ standing brief it sends with every message. The generic name is a
 <tr>
 <td>ChatGPT</td>
 <td>Custom instructions · Projects · Memory</td>
-<td>Settings → Personalisation; a Project carries its own
+<td>Settings → Personalization; each Project has its own
 instructions</td>
 </tr>
 <tr>
 <td>Claude</td>
-<td>Styles · Projects · Memory</td>
-<td>Settings; a Project holds its own instructions</td>
+<td>Instructions · Projects · Memory</td>
+<td>Settings → Your Claude; each Project has its own instructions</td>
 </tr>
 <tr>
 <td>Gemini</td>
-<td>Gems · Saved Info</td>
-<td>Gems in the sidebar; Saved Info in Settings</td>
+<td>Instructions for Gemini · Gems</td>
+<td>Settings &amp; help → Personal Intelligence; Gems in the
+sidebar</td>
 </tr>
 <tr>
 <td>Microsoft Copilot</td>
 <td>Custom instructions · Memory</td>
-<td>Settings → Personalisation</td>
+<td>Settings → Personalization</td>
 </tr>
 <tr>
 <td>Msty, LibreChat, Open WebUI</td>
 <td>System prompt</td>
-<td>Set per chat or per model — you edit it directly, which makes these
-the best place to learn the concept</td>
+<td>Per chat or per model. You edit the prompt itself, so these show
+most plainly what a system prompt is</td>
 </tr>
 </tbody>
 </table>
+<p><span class="small">Menu names checked October 2026. They move; if
+one has changed, search the tool’s help for “instructions”.</span></p>
 <p>What goes in: your RTCF brief, your Done line, the check you attach.
 What doesn’t: anything confidential you wouldn’t paste into a chat.
-Review the saved brief each quarter — the corners move, and the standing
-brief should move with them. <a href="go-deeper.html">Make your voice
-persistent</a> is the worked example, and the <a
-href="hand-it-over.html">Hand it over</a> protocol is where a saved
-brief becomes a decision skill.</p>
+Review the saved brief each quarter, because the corners move and the
+brief should move with them. <a
+href="go-deeper.html#write-like-me">Write like me</a> is a worked
+example. <a href="decide-like-me.html">Decide like me</a> uses the same
+setting to save a set of decision rules.</p>
 <div class="note">
 <p><strong>The names differ; the idea doesn’t.</strong> When a demo says
 the AI “understands you”, look for this setting. It’s a text box. You
@@ -121,13 +124,14 @@ check.</p>
 <td>A standard plug that lets a harness call outside tools and data:
 your calendar, your files, the web.</td>
 <td>Each connection widens what the harness can read and do. The stakes
-move up — re-place the work on the trust tool.</td>
+go up, so place the work on the trust tool again.</td>
 </tr>
 <tr>
 <td>Context window</td>
 <td>The model’s working memory.</td>
-<td>Long chats drift and old instructions fade. Why the two-chat
-workflow and the handover prompt work.</td>
+<td>Long chats drift and early instructions fade. That’s why the
+two-chat workflow and the handover prompt on <a href="go-deeper.html">Go
+deeper</a> help.</td>
 </tr>
 <tr>
 <td>RAG · “grounded on your documents”</td>
@@ -171,7 +175,7 @@ moves straight over.</p>
 <tr>
 <td>Image mock-up, internal discussion</td>
 <td>Green corner</td>
-<td>Nothing formal — it’s a sketch</td>
+<td>Nothing formal. It’s a sketch</td>
 </tr>
 <tr>
 <td>Image in a client-facing deliverable</td>
@@ -182,7 +186,7 @@ line</td>
 <tr>
 <td>Voice mode, drafting while you walk</td>
 <td>Green</td>
-<td>The names and figures it “heard” — re-check before sending</td>
+<td>The names and figures it “heard”. Re-check before sending</td>
 </tr>
 <tr>
 <td>Music or video for a public asset</td>
@@ -198,23 +202,22 @@ they’re looking at (<a href="responsible-use.html">Responsible
 use</a>).</p>
 <h2 id="the-terminal-if-you-want-it">The terminal, if you want it</h2>
 <p>Everything above is the web interface on purpose: it’s where the
-judgement work happens, and where your account already is. When you’re
-ready, the same ideas wear developer clothes. Agent CLIs take a brief in
-your terminal and work in a loop — a skill with a keyboard, and your
-review still decides what ships. Local models (Msty with a local engine,
-LibreChat pointed at one) run on your laptop, which is the answer when
-your writing samples can’t leave it. None of this is required. It’s the
-same four tools, faster.</p>
+judgement work happens, and where your account already is. The same
+ideas carry over to developer tools. Agent CLIs take a brief in your
+terminal and work in a loop, and your review still decides what ships.
+Local models (Msty with a local engine, or LibreChat pointed at one) run
+on your laptop, which is the answer when your writing samples can’t
+leave it. None of this is required. It’s the same four tools,
+faster.</p>
 <div class="note">
-<p><strong>One thread through the whole page:</strong> a bigger harness
-is still a harness. Set the standing brief once, connect tools
-deliberately, and keep the check from outside the tool. More in <a
-href="resources.html">Resources</a>.</p>
+<p><strong>Whatever the product,</strong> set the standing brief once,
+connect tools on purpose, and keep the check outside the tool. More in
+<a href="resources.html">Resources</a>.</p>
 </div>
 </main>
 <footer><div class="in">
   <span>The Human Edge: using and delivering AI with judgement · Curtin Executive Education</span>
-  <span><a href="go-deeper.html">Go deeper</a> · <a href="responsible-use.html">Responsible use</a> · <a href="beyond.html">Beyond the day</a> · <a href="hand-it-over.html">Hand it over</a> · <a href="https://michael-borck.github.io/conversation-not-delegation/">Conversation, Not Delegation</a> · <a href="https://bigpicture.borck.dev">bigpicture.borck.dev</a></span>
+  <span><a href="go-deeper.html">Go deeper</a> · <a href="responsible-use.html">Responsible use</a> · <a href="beyond.html">Beyond the day</a> · <a href="decide-like-me.html">Decide like me</a> · <a href="https://michael-borck.github.io/conversation-not-delegation/">Conversation, Not Delegation</a> · <a href="https://bigpicture.borck.dev">bigpicture.borck.dev</a></span>
   <span>Dr Michael Borck · <a href="mailto:michael.borck@curtin.edu.au">michael.borck@curtin.edu.au</a></span>
 </div></footer>
 <script>

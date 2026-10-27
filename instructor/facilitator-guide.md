@@ -1,8 +1,8 @@
 # Facilitator guide
 
-*The Human Edge: using and delivering AI with judgement.* One day, 9:00 to 4:30, four sessions, nine exercises. Some participants will have enrolled under the earlier title, *AI for professionals: building everyday capability*. The opening slide fades from that title to the new one.
+*The Human Edge: using and delivering AI with judgement.* One day, 9:00 to 4:30, four sessions, eight exercises. Some participants will have enrolled under the earlier title, *AI for professionals: building everyday capability*. The opening slide fades from that title to the new one.
 
-Curtin's course page (still under the old title) promises RTCF, the AI Opportunity Finder, workflow redesign, practical safeguards, a personal prompt library, four reusable decision tools, and a week/month/quarter action plan. All of these are delivered, as Exercises 3 and 4, 8, 4 and 9, and the desk card and field guide. The page also still lists the old three-course series; if asked, practice and delivery merged into The Human Edge, and "AI to drive business innovation" is now AI in Strategy.
+Curtin's course page (still under the old title) promises RTCF, the AI Opportunity Finder, workflow redesign, practical safeguards, a personal prompt library, four reusable decision tools, and a week/month/quarter action plan. All of these are delivered, as Exercises 3 and 4, 7, 4 and 8, and the desk card and field guide. The page also still lists the old three-course series; if asked, practice and delivery merged into The Human Edge, and "AI to drive business innovation" is now AI in Strategy.
 
 This guide isn't published: the build only publishes `docs/`. The repo itself is public, though, so don't add anything here you wouldn't want a participant to read.
 
@@ -63,7 +63,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
 
-**Slide 28**, the verification answers, exists only in the repo copy. The public deck and the PDF skip it.
+**Slide 25**, the answers to the three claims in Exercise 5, exists only in the repo copy. The public deck and the PDF skip it.
 
 The deck uses local fonts, so it runs offline.
 
@@ -85,17 +85,15 @@ The deck uses local fonts, so it runs offline.
 | 12:15 | | Debrief; download the CSV before lunch | 15 |
 | 12:30 | | Lunch | 45 |
 | **1:15** | 20–22 | Check loop; five failure modes and VET; the quiet defaults (4-min bias check) | 11 |
-| 1:26 | 23 | **Exercise 5** · RetailFlow | 22 |
-| 1:48 | 24–25 | Hand it over; prove it blind | 5 |
-| 1:53 | 26 | **Exercise 6** · Decide like me | 20 |
-| 2:13 | 27 | **Exercise 7** · Verification challenge (pairs, then blind vote) | 12 |
-| 2:25 | 28 | Reveal; full debrief of Exercise 5 | 5 |
+| 1:26 | 23–25 | **Exercise 5** · RetailFlow: analyse, first brief, check the three claims, blind vote, reveal, fix the brief and debrief | 35 |
+| 2:01 | 26–27 | Decide like me; test it blind | 5 |
+| 2:06 | 28 | **Exercise 6** · Decide like me | 24 |
 | 2:30 | | Afternoon tea | 30 |
 | **3:00** | 29–34 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in; responsible by design | 17 |
-| 3:17 | 35 | **Exercise 8** · Plan the delivery of one workflow | 35 |
+| 3:17 | 35 | **Exercise 7** · Plan the delivery of one workflow | 35 |
 | 3:52 | 36–37 | The 30-day gate; agents, harnesses, skills | 5 |
 | 3:57 | 38–41 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
-| 4:05 | 42 | **Exercise 9** · Action plan, two calendar entries, two or three shares | 12 |
+| 4:05 | 42 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
 | 4:17 | 43 | Close, the companion masterclasses, feedback form | 13 |
 | 4:30 | | Finish | |
 
@@ -104,9 +102,9 @@ The deck uses local fonts, so it runs offline.
 2. The agents slide (37).
 3. The Exercise 4 push-back step.
 4. The "if you lead people" slide (41).
-5. Exercise 6: drop to two test cases and skip the patch step (runs in 15).
+5. Exercise 6: drop to two test cases and skip the fix step (runs in 15).
 
-Never cut the verification challenge, the delivery plan or the action plan.
+Never cut the three claims in Exercise 5, the delivery plan or the action plan.
 
 ## Session notes
 
@@ -158,7 +156,7 @@ Spares:
 
 **Push back (slide 18).** Three moves: the fact-gated guardrail, devil's advocate, and board of directors. In Exercise 4, everyone tries at least one.
 
-**Exercise 4.** Fast finishers can do the voice pass (in the workbook): the tool rewrites its output in their voice from a 100-word sample, and optionally writes a style brief for their custom instructions. The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library.
+**Exercise 4.** Fast finishers can do the voice pass (in the workbook): the tool rewrites its output in their voice from a 100-word sample (anyone with nothing they can paste writes 100 words on why they came today), and optionally writes a style brief for their custom instructions. The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library. The full version is Write like me on the Go deeper page, the partner to Decide like me in Session 3: one teaches the tool how they sound, the other how they choose.
 
 ### Session 3 · Check
 
@@ -171,19 +169,25 @@ Spares:
 
 It's the practical answer to Gell-Mann amnesia from the morning. The starter prompt pack has a copyable VET prompt.
 
-**The quiet defaults (slide 22).** Five minutes. Run the senior manager / administrative officer pair live, or let tables run it. Look at names, warmth vs capability, and who holds authority. The longer version, other pairs and Survival of the Best Fit are on the Responsible use page.
+**The quiet defaults (slide 22).** Four minutes. Run the senior manager / administrative officer pair live, or let tables run it. Look at names, warmth vs capability, and who holds authority. The longer version, other pairs and Survival of the Best Fit are on the Responsible use page.
 
-**Exercise 5.** Now 22 minutes: 2 frame, 9 explore, 5 verify, 6 brief. If uploads are blocked, most tools accept pasted CSV text; the file is small. Watch for people skipping "describe the data first". Anyone who runs out of time finishes the brief during the verification challenge.
+**Exercise 5** runs 35 minutes across three slides. On slide 23: 2 min frame, 9 min explore, 6 min first brief (timer set to 17). On slide 24: 8 min checking the three claims in pairs. Then a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet), revealing on slide 25 one claim per click, about 6 min. Last 4 min: everyone fixes their brief and adds the What I checked line while you run the debrief. Expect B to fool the most people and C to split the room.
 
-**Hand it over and Decide like me (slides 24–26).** The capstone: one decision, externalised and proven. The sort question routes the extraction: *could you explain the why to a new hire, out loud?* Say it, interview it out, or mine it — then install lean, prove it blind, patch. The method is Dylan Davis's; the full protocol, with the mining and install prompts and the cold-rerun rule, is on the Hand it over page.
+- If uploads are blocked, most tools accept pasted CSV text; the file is small.
+- Watch for people skipping "describe the data first".
+- The brief comes before the claims on purpose. People check the claims against their own first draft, and anyone whose brief repeated B or C finds out before Karen would have.
 
-- **Coach the pick, not the prompting.** Decision too big? Cut to one client type or one queue. Top-right corner? Pick another.
-- **The blind test only works if the outcomes stay hidden.** Anyone who skips writing their calls first should redo that step — from memory, before running the skill.
-- **Expect roughly four matches in five.** The mismatch is the payoff: a missing boundary rule, an unstated exception, or a rule the expert holds loosely applied as absolute. Name those classes in the debrief.
-- **It will praise its own skill.** Of course it will. The blind test is the defence; the fresh-chat rerun is the proof.
-- **Governance first:** described cases, no client names, approved tools only.
+**Decide like me (slides 26 to 28).** Write down how you make one decision as if-then rules, then test them on past calls. The new-starter question picks the method: *could you tell a new starter, out loud, why you decide the way you do?* SIM: Say, Interview or Mine. Then save the rules, test them blind, fix a mismatch. The method is Dylan Davis's; the Decide like me page on the site has the full version, with the mining and save prompts and the reason the re-test goes in a new chat.
 
-**Exercise 7.** Give pairs 6 minutes to check the claims, then run a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet). Reveal on slide 28, one claim per click. Expect B to fool the most people and C to split the room.
+The slide title is "Teach it your rules. Keep the call." The rules draft the call and the participant still makes it. That keeps the exercise in line with "never surrender" at the close. Davis's method goes further and lets the tool decide alone once it passes; say so if anyone has seen it.
+
+- **People should arrive prepared.** The Before the day page asks for one decision and three past cases. Anyone who didn't bring them, or whose work can't go into a tool, takes a decision card from the Exercises page. Each card has a short record of past calls, three test cases and an answer key. Each key plants a different kind of mismatch: card 1 an unstated exception, card 2 a threshold never put into words, card 3 a loose rule applied strictly. Pair up people on the same card for the debrief.
+- **Coach the choice of decision, not the prompting.** Too big? Cut it to one client type or one queue. Top-right corner? Pick another.
+- **The test only works while the answers stay hidden.** Anyone who skipped writing their calls first goes back and does it before running the rules.
+- **Expect about four matches in five.** Name the three kinds of mismatch in the debrief: a threshold never put into words, an exception applied without noticing, a loose preference the rules made strict.
+- **It will praise its own rules.** That's why the test is blind, and why the re-test goes in a new chat.
+- **Land the last debrief question.** "What would you never let it decide?" is the day's argument in one line: the rules that pass can draft the call, and the cases no rule caught are where judgement earns its keep.
+- **Governance:** described cases, no client names, approved tools only.
 
 ## Answer key: RetailFlow
 
@@ -218,7 +222,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 | Over 8 hours | 2.09 | 123 |
 | Over 12 hours | 1.64 | 69 |
 
-**Verification challenge**
+**The three claims (Exercise 5)**
 
 - **A · Verified.** Email 13.2 h vs Live Chat 4.0 h: 3.3 times. The true claim sounded no more confident than the false ones.
 - **B · Refuted, twice.** The lowest category is Returns & Refunds (1.56); Account Issues is mid-table (3.06). And Account Issues has the *highest* resolution rate (96%), so "most complex" collapses too. This is the convincing fake: a plausible reason, a professional tone, wrong twice. Forwarded to Karen, she'd fix the wrong thing.
@@ -243,10 +247,11 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
 
-**Exercise 8.**
+**Exercise 7.**
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
-- The Map my workflow and Pre-mortem starter prompts help anyone who's stuck. Exercise 6's decision skill can be one step in the plan — with the checkpoint attached.
+- Mapping needs no data. If the live-test inputs can't go into a tool, people invent a few lines in the same shape. Anyone who can't use their own workflow plans scenario card 3 (Friday status update) or 6 (monthly invoicing).
+- The Map my workflow and Pre-mortem starter prompts help anyone who's stuck. Anyone whose Exercise 6 rules passed the blind test can make them one step in the plan, with a corner and a checkpoint like any other step.
 
 **The gate (slide 36).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
@@ -259,7 +264,7 @@ The message is fewer junior hires, not mass replacement.
 
 **Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
-**Exercise 9.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
+**Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
 
 **Optional agent demo (slide 37).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best right after the agents slide, and Exercise 6 has already given everyone the idea.
 
@@ -278,11 +283,11 @@ The message is fewer junior hires, not mass replacement.
 
 AI changes fast. Check these the week before; most take a minute.
 
-- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 35, the field guide's practice page and these notes.
+- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 38, the field guide's practice page and these notes.
 - [ ] **Jobs and Skills Australia**: any newer AI transition release?
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
-- [ ] **Product names** in "Before the day" and slide 34.
+- [ ] **Product names** in "Before the day", slide 37, and the "Set it once" table on Beyond the day (menu names move often).
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
 - [ ] **Feedback form.** Slide 43 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
@@ -290,6 +295,6 @@ AI changes fast. Check these the week before; most take a minute.
 
 ## After the day
 
-- Point participants to Go deeper, Responsible use, Hand it over and the quiz for after the day. The ethics dilemmas also work as a fast-finisher task in Exercise 8.
+- Point participants to Go deeper, Responsible use, Decide like me and the quiz for after the day. The ethics dilemmas also work as a fast-finisher task in Exercise 7.
 - Send participants the course site link and the desk card, and remind them to export their workbook if they haven't.
 - Note which exercises ran long and which scenarios split the room, and update the scenario list above. ClassPulse can export the votes to CSV for this.

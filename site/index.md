@@ -54,7 +54,7 @@ How do I ask for what I need? **RTCF.** You leave with your own prompt library.
 
 ### Check
 
-How do I know it's right? **Check loop.** You leave with an analysis you have verified yourself — and one decision taught to decide like you, proven blind against your own record.
+How do I know it's right? **Check loop.** You leave with an analysis you have verified yourself, and the rules behind one of your own decisions, tested blind against calls you've already made.
 :::
 
 ::: {.card .s4}
@@ -92,7 +92,7 @@ The four tools, delivering with checkpoints, safeguards and practice, in ten pag
 
 ### Starter prompts
 
-Twenty-one prompts for briefing, pushing back, checking, delivering and rehearsing. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
+Twenty-four prompts for briefing, pushing back, checking, delivering and rehearsing. [Page](prompts.html) · [PDF](downloads/starter-prompts.pdf)
 :::
 
 ::: card
@@ -100,7 +100,7 @@ Twenty-one prompts for briefing, pushing back, checking, delivering and rehearsi
 
 ### Workbook
 
-All nine exercises, your prompt library, decision skill, delivery plan and action plan. Saves in your browser; export before you leave. [Open](workbook.html)
+All eight exercises, your prompt library, decision rules, delivery plan and action plan. Saves in your browser; export before you leave. [Open](workbook.html)
 :::
 
 ::: card
@@ -147,4 +147,4 @@ Dates and enrolment: [Curtin Executive Education masterclasses](https://www.curt
 
 ## After the day
 
-[Go deeper](go-deeper.html) has five-minute extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and making your voice persistent. [Responsible use](responsible-use.html) covers data governance, the quiet defaults in AI output, and four ethics dilemmas. [Beyond the day](beyond.html) maps what the course skipped: setting your assistant up once (the system prompt, by product), the jargon decoded, images, audio and video, and agents. [Hand it over](hand-it-over.html) is the full protocol from Exercise 6: teach one decision to decide like you, then prove it blind. Everything else is in [Resources](resources.html).
+[Go deeper](go-deeper.html) has five-minute extensions: VET in depth, the three cognitive traps, the two-chat workflow, the handover prompt, and Write like me (teaching it your voice). [Responsible use](responsible-use.html) covers data governance, the quiet defaults in AI output, and four ethics dilemmas. [Beyond the day](beyond.html) maps what the course skipped: setting your assistant up once (the system prompt, by product), the jargon decoded, images, audio and video, and agents. [Decide like me](decide-like-me.html) is Exercise 6 in full: write down how you make one decision, then test the rules blind. Everything else is in [Resources](resources.html).
