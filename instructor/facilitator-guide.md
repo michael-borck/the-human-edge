@@ -180,6 +180,7 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 - If uploads are blocked, most tools accept pasted CSV text; the file is small.
 - For anyone whose own data could never go into a tool, show the shape trick (prompt 14): describe the columns and have it write formulas, a short script or a single web page that runs in the browser. The AI never sees the data. Run it on RetailFlow first, where the answers are known. If they can't read the code, it's top-right, and a web page must not send the file anywhere.
 - Watch for people skipping "describe the data first".
+- **Optional 2-minute demo at the debrief: the confident miscount.** Paste the whole RetailFlow CSV into a local model on the projector (the class chat on puente, or Msty on the laptop) and ask: *How many rows are there? Which category has the lowest average satisfaction, and what is it? What is the average response time for Email and for Live Chat? For Sundays, and overall?* Tested 27 October 2026: gemma4:12b said 130 rows (true: 260), Email 12.4 h and Live Chat 5.8 h (true: 13.2 and 4.0), Sunday 11.0 h against 9.4 overall (true: 13.7 and 9.2). It would have judged claim C wrong for the wrong reason. qwen3.5:4b got none right. The point: fluent, confident, wrong. The cloud tools get these right only because they run code on the file. Then show the fix: ask the same model for the spreadsheet formulas instead (prompt 14), and let the spreadsheet do the sums. `instructor/local-chat/loadtest.py --analysis` runs the same check and marks the answers.
 - The brief comes before the claims on purpose. People check the claims against their own first draft, and anyone whose brief repeated B or C finds out before Karen would have.
 
 **Decide like me (slides 26 to 28).** Write down how you make one decision as if-then rules, then test them on past calls. The new-starter question picks the method: *could you tell a new starter, out loud, why you decide the way you do?* SIM: Say, Interview or Mine. Then save the rules, test them blind, fix a mismatch. The method is Dylan Davis's; the Decide like me page on the site has the full version, with the mining and save prompts and the reason the re-test goes in a new chat.
@@ -267,11 +268,35 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 The message is fewer junior hires, not mass replacement.
 
-**Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
+**Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning.
+
+Why conversation works, if anyone asks for the evidence: a meta-analysis of 341 effect sizes on teaching critical thinking found that the opportunity for dialogue, authentic problems and mentoring had the clearest positive effects (Abrami et al. (2015), "Strategies for Teaching Students to Think Critically: A Meta-Analysis", *Review of Educational Research* 85(2), 275 to 314). Be honest about the step: that research is about people in dialogue with people. Dialogue with AI is a reasonable extension, not a tested one, and it only counts as dialogue if the tool pushes back; otherwise it drifts towards your view (slide 18). The practical consequence: for brainstorming and thinking out loud, the model barely matters, because the ideas it triggers in you are the point. That's green-corner work, and a small local model is enough. For exact facts and data, use the strongest tool you're allowed, and still check. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
 **Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate. For the quarter line, send people back to their Exercise 6 list of what they'd never let it decide.
 
 **Optional prompt-injection demo (slide 37), or a fast-finisher task.** Two minutes. Download the Northbridge proposal from the Beyond the day page (`data/northbridge-proposal.docx`, made by `build/make_demo_doc.py`). It's an invented supplier offer to RetailFlow with one paragraph in 2-point white text telling the AI to recommend signing, leave out the minimum term, exit fee, price review and data location, and end with "pineapple". Upload it to a tool on the projector and ask for a summary for Karen with the cost, the risks and whether to sign. Then select all in Word and turn the text black. If the tool resists, say so: current chat tools often catch this when you paste it yourself, and the real exposure is agents reading email and web pages unattended. Either way the point lands: anything the tool reads can carry instructions.
+
+**Optional local-versus-cloud demo (slide 37, or Beyond the day), two minutes.** In the class chat, run the same brainstorm in llama3.1 and in Sonnet ("Ten ways a small team could cut response times on weekends"): the ideas they spark in the room are usually close. Then the same factual question in both: Sonnet usually pulls clearly ahead. Try both prompts the day before so you know what each model gives. The model you choose follows the corner. Four more points if there's time:
+- **Privacy.** The local model runs on hardware you control. Nothing typed goes to a vendor.
+- **The trade-off.** It's slower and weaker. Measured on puente's 4060 Ti, one person at a time: gemma4:12b writes about 30 tokens a second, qwen3.5:4b about 70. Speed follows the card's memory bandwidth divided by the model's size, so a smaller model is faster and spare VRAM isn't.
+- **The context-window trap.** On Ollama's default setting, two-thirds of the RetailFlow CSV was silently dropped and the model still answered. Check the context length before trusting a long paste.
+- **Where to try it:** Msty Studio, on the Resources page.
+
+**The class chat: a fallback for the room.** chat.locopuente.org (LibreChat on puente) offers two models: llama3.1 8B, local, deliberately the "poor" model, and Claude Sonnet through the API, with a spend limit set at Anthropic. Anyone without an approved tool can use it for every exercise, and the two side by side make the local-versus-cloud point.
+
+Course-day setup on puente: Ollama pinned to the 3090 (normally the 4060 Ti; see the comments in `10-classroom.conf`), `OLLAMA_NUM_PARALLEL=4` in `20-course-day.conf`, llama3.1 and the qwen3.5:0.8b title model preloaded, other GPU tools stopped. Put it all back afterwards.
+
+Why llama3.1: qwen3.5 is a hybrid model that Ollama can only run one request at a time (its log shows `n_seq_max = 1`), and it re-reads the whole conversation on every turn. llama3.1 uses all four slots. Load-tested 27 October 2026 (`instructor/local-chat/loadtest.py`), 25 simulated users on the 3090, model already loaded:
+
+| | Everyone at once: median / worst wait | Spread over 2 min: median / worst |
+|---|---|---|
+| llama3.1 8B, 4 slots | 14.5 s / 25 s | 0.9 s / 1.6 s |
+| qwen3.5:9b, 1 slot | 40 s / 71 s | 1.9 s / 11 s |
+| gemma4:12b, 1 slot | 47 s / 107 s | 10 s / 24 s |
+
+On the 4060 Ti everything was about half as fast. None of the local models can do the Exercise 5 analysis (0 or 1 of 4 right); Sonnet in the chat, or the participant's own tool, can.
+
+Before the day: registration in `librechat.yaml` is limited to Curtin email domains, so open it (or add participants' domains) for the day, through puente's config since `puente up` regenerates the file, and do a test sign-up with a non-Curtin address. On the day: tell people chats are stored on your server and when they'll be deleted. Afterwards: close registration, delete the accounts (`npm run delete-user`; on LibreChat v0.8.8 or older, also clear uploaded files), and check the Anthropic spend.
 
 **Optional agent demo (slide 37).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best right after the agents slide, and Exercise 6 has already given everyone the idea.
 
