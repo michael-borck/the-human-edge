@@ -25,7 +25,7 @@ handouts/        Field guide, desk card, optional voting cards (HTML, printed to
 site/            Companion site pages (Markdown, rendered with pandoc): home, before, tools, exercises, workbook, prompts,
                  prompt builder, go deeper, decide like me, beyond the day, responsible use, resources, quiz. prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
-data/            RetailFlow customer service dataset (Exercise 5)
+data/            RetailFlow customer service dataset (Exercise 5); prompt-injection demo document (build/make_demo_doc.py)
 instructor/      Facilitator guide, optional agent demo kit (not published)
 build/           build.py, screens.py, pandoc templates
 docs/            Generated site, served by GitHub Pages. Don't edit; rebuild.

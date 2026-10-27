@@ -82,7 +82,7 @@ At work, hold the rules to the full standard: every case in the batch matches, i
 The rules draft the call. You still make it. The source method goes a step further and lets the tool decide on its own once it passes. This course stops short of that.
 
 - **Place every new case on the trust tool.** The rules came from you, and so does the accountability.
-- **Keep a human checkpoint where the stakes are higher,** and tell people when an AI tool drafted a decision that affects them.
+- **Keep a human checkpoint where the stakes are higher,** and tell people when an AI tool drafted a decision that affects them. In Australia that is also law from 10 December 2026: if rules like these make or substantially inform a decision that could significantly affect someone, using their personal information, your organisation's privacy policy has to say so (Privacy Act, APP 1.7 to 1.9; [OAIC guidance](https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making)). Tell whoever owns it.
 - **Set a 30-day gate,** as for any workflow. Is it holding up? Does checking it cost more than it saves? Scale, pivot or kill.
 - **Re-test each quarter.** Models change, and so do your rules. When the corners move, run the blind test again.
 

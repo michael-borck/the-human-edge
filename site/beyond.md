@@ -45,6 +45,18 @@ You'll hear these in every vendor pitch. None of them removes the check.
 | RAG · "grounded on your documents" | The tool reads your files first, then answers. | Better grounding, new failure mode: check what it read, not just what it said. |
 | Harness | The software around the model: standing instructions, what it can read, what tools it may call. | You already use several. Configuring one well is "set it once", above. |
 | Agent | A model in a loop with tools: plans, acts, checks, retries. | Automates the loop, not the standard. The check still comes from outside. |
+| Prompt injection | Instructions hidden in something the tool reads: a web page, an email, a document, often in white or tiny text. | The tool may follow them as if you wrote them. The risk grows with every connection, and is highest for agents that read and act with nobody watching. Keep a person between what it reads and what it does. [Try it](#try-it-a-document-that-talks-to-the-ai). |
+
+### Try it: a document that talks to the AI
+
+[Download the Northbridge proposal](downloads/northbridge-proposal.docx), an invented supplier offer to RetailFlow (Karen's company from Exercise 5) for weekend and email support. It looks ordinary.
+
+1. **Read it yourself first.** Note what Karen should know before she signs.
+2. **Give it to an AI tool.** Upload it, or select all, copy and paste. Ask: *"Summarise this proposal for Karen, including the cost and the risks. Should she sign?"*
+3. **Compare.** Did the summary cover the contract terms and where customer data is stored? Did it push her to sign? Did it end with a piece of fruit?
+4. **Look for the trick.** In Word, select all and change the font colour to black.
+
+If the tool ignored the hidden note, that's partly good news: many tools now resist it when you paste a document yourself. The risk is highest when an agent reads email, web pages or shared files on its own, with nobody checking what went in. And don't use the trick on real documents. It gets found, and it costs trust.
 
 ## Beyond text
 
@@ -56,6 +68,7 @@ The day worked in text because judgement shows clearest there. The same models m
 | Image in a client-facing deliverable | Red corner | Licence and rights, consent for any real likeness, a disclosure line |
 | Voice mode, drafting while you walk | Green | The names and figures it "heard". Re-check before sending |
 | Music or video for a public asset | Amber to red | Copyright here is unsettled; follow your organisation's policy and disclose |
+| A voice or video call asking for a payment, a password or a change of bank details | Red, however familiar the face | Check outside the channel it arrived on: hang up and call back on a number you already have. In 2024 an Arup employee in Hong Kong paid out about US$25.6 million after a video call in which every other "colleague" was a deepfake ([CNN](https://www.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk)). |
 
 Two habits from the day transfer exactly: classify before you paste (a face is personal information), and tell people when AI made the thing they're looking at ([Responsible use](responsible-use.html)).
 
@@ -89,6 +102,10 @@ Two serious positions, both worth reading:
 Most engineering improves by failing: ship it, watch it break, fix it. The worry about superintelligence is that this loop might not be there. A system far more capable than us, pursuing goals that aren't quite ours, might not leave room for a second attempt. That is the core of the alignment argument, and it's why some researchers want the safety work done before the capability arrives rather than after.
 
 The argument's logic holds. It also rests on open questions: whether capability arrives in a jump or by degrees, whether these systems become agents with goals of their own, and whether we keep the ability to watch and correct them. Serious people answer those differently. Nobody knows yet.
+
+### What about the energy cost?
+
+Real, and growing fast in total, but smaller per question than most people guess. Google measured its median Gemini text prompt at 0.24 Wh, about nine seconds of television ([Google, 2025](https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference)); that's the vendor's own figure for one product. Across the world, data centres used about 1.5% of electricity in 2024, and the International Energy Agency expects that to more than double by 2030, with AI the main driver ([IEA, Energy and AI](https://www.iea.org/reports/energy-and-ai/executive-summary)). Images, video, long reasoning and agents use far more than a short text prompt. The habits that help: use a smaller model for small jobs, don't regenerate for the sake of it, and ask vendors for their numbers.
 
 ### You've already met the small version
 

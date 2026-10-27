@@ -12,7 +12,7 @@ Needs: pandoc, weasyprint, and Python playwright with Google Chrome installed
     handouts/*.html      -> docs/downloads/*.pdf    (weasyprint)
     site/workbook.md     -> docs/workbook.html (digital workbook: autosave, export, print)
     site/prompts.md      -> docs/prompts.html and docs/downloads/starter-prompts.pdf
-    data/*.csv           -> docs/downloads/
+    data/*.csv, *.docx   -> docs/downloads/   (the .docx is made by build/make_demo_doc.py)
 """
 import pathlib
 import re
@@ -71,7 +71,7 @@ def main():
     print(f"  {n_all} slides in source, {n_pub} public; notes removed")
 
     print("data")
-    for f in (f for f in (ROOT / "data").glob("*.csv") if not f.name.startswith("._")):
+    for f in (f for f in (ROOT / "data").iterdir() if f.suffix in (".csv", ".docx") and not f.name.startswith("._")):
         shutil.copy2(f, DL / f.name)
 
     if not PDF:

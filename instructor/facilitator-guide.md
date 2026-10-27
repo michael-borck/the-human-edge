@@ -245,7 +245,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **Design the human in (slide 33).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check. Staff them with someone who knows what right looks like (the evaluator's advantage), and keep at least one human step deliberately to build capability.
 
-**Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
+**Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. It is now law as well as good practice: from 10 December 2026, the Privacy Act (APP 1.7 to 1.9) requires an organisation's privacy policy to disclose where a computer program makes, or substantially and directly informs, decisions that could significantly affect people, using their personal information. The OAIC published guidance on 30 September 2026. The practical question for the room: who is updating your privacy policy, and do they know about the AI tools your teams already use? If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
 
 **Exercise 7.**
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
@@ -264,7 +264,9 @@ The message is fewer junior hires, not mass replacement.
 
 **Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
-**Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate.
+**Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate. For the quarter line, send people back to their Exercise 6 list of what they'd never let it decide.
+
+**Optional prompt-injection demo (slide 37), or a fast-finisher task.** Two minutes. Download the Northbridge proposal from the Beyond the day page (`data/northbridge-proposal.docx`, made by `build/make_demo_doc.py`). It's an invented supplier offer to RetailFlow with one paragraph in 2-point white text telling the AI to recommend signing, leave out the minimum term, exit fee, price review and data location, and end with "pineapple". Upload it to a tool on the projector and ask for a summary for Karen with the cost, the risks and whether to sign. Then select all in Word and turn the text black. If the tool resists, say so: current chat tools often catch this when you paste it yourself, and the real exposure is agents reading email and web pages unattended. Either way the point lands: anything the tool reads can carry instructions.
 
 **Optional agent demo (slide 37).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best right after the agents slide, and Exercise 6 has already given everyone the idea.
 
@@ -279,6 +281,9 @@ The message is fewer junior hires, not mass replacement.
 | "My company won't let me use these." | A real constraint | "Take the tools and the thinking. When tools are approved, you'll be ready." |
 | "Which tool is best?" | Looking for a shortcut | "The one you're allowed to use. The skills transfer; the rankings change monthly." |
 | "Isn't AI just software?" | Testing it against what IT already knows | "For governance, yes. For testing, no: nobody wrote its logic, and it fails fluently. That's why the check sits outside the tool." |
+| "My team already uses ChatGPT on their own." | Unapproved use, already happening | "Then the data is already going somewhere. Find out what they use it for, approve a tool that fits, and teach the three rules before you paste. Banning it usually drives it out of sight." The Responsible use page has the longer answer. |
+| "Isn't AI terrible for the environment?" | A values question, often from someone with ESG responsibility | "The total is real and growing fast; one short text prompt is small. Use the smallest tool that does the job and ask vendors for their numbers." Beyond the day has the IEA and Google figures. |
+| "Could someone fake our CEO on a call?" | A fair worry | "It has happened: Arup lost about US$25.6 million in 2024 after a deepfaked video call. Any urgent request for money or credentials is top-right, however familiar the face. Check outside the channel it came in on." |
 | "What about AGI?" or "Should we be worried about superintelligence?" | Curiosity, or real worry | "Serious people disagree, and the Beyond the day page has both sides. You've seen the small version today: a model tuned to please you, mistakes that don't look like mistakes. The habits for those are the ones that scale." Then move on; the page has the one-shot argument and the reading. |
 
 ## Before each run: update checklist
@@ -290,6 +295,7 @@ AI changes fast. Check these the week before; most take a minute.
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
 - [ ] **Product names** in "Before the day", slide 37, and the "Set it once" table on Beyond the day (menu names move often).
+- [ ] **Privacy Act automated decisions** (APP 1.7 to 1.9, in force from 10 December 2026): any new OAIC guidance? Update slide 34's notes, the Responsible use page and the Decide like me page.
 - [ ] **The big questions** on Beyond the day: is there a newer International AI Safety Report or key update, and are the Australian AI Safety Institute's name and status still right?
 - [ ] **Local AI tools** on Resources and Beyond the day (Msty Studio, Ollama, Open WebUI, LibreChat): still free, still the easiest options?
 - [ ] **Trust tool game** is up, and its corner names still match the deck.

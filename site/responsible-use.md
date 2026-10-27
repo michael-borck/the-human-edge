@@ -23,9 +23,13 @@ In October 2025 the Australian Government's [Guidance for AI Adoption](https://w
 | 1 · Decide who is accountable | Every AI-assisted workflow has a named owner. Your name goes on the output, not the tool's. |
 | 2 · Understand impacts and plan accordingly | Ask who is affected, and who could be treated unfairly (see the quiet defaults below). |
 | 3 · Measure and manage risks | Classify data before you paste it. Place each output on the trust tool. |
-| 4 · Share essential information | Tell people when AI drafted or decided something that affects them. Check what your organisation's AI policy says about disclosure. |
+| 4 · Share essential information | Tell people when AI drafted or decided something that affects them. Check what your organisation's AI policy says about disclosure, and see the privacy rule below. |
 | 5 · Test and monitor | Check from outside the tool (the check loop, VET), and review at a gate. |
 | 6 · Maintain human control | Human checkpoints at every amber or red step; some work stays human only. |
+
+::: note
+**Practice 4 is now also law.** From 10 December 2026, the Privacy Act requires an organisation's privacy policy to say where it uses a computer program to make a decision, or to do something substantially and directly related to making one, when the decision could significantly affect a person's rights or interests and uses their personal information (APP 1.7 to 1.9). The policy must name the kinds of personal information used and the kinds of decisions. AI scoring, triage and saved decision rules can all fall inside it. The [OAIC's guidance and flowchart](https://www.oaic.gov.au/news/media-centre/new-resources-on-transparency-for-use-of-ai-and-automated-decision-making) set out the test. If your team uses AI on decisions about people, tell whoever owns your privacy policy.
+:::
 
 ## Data governance: proportionate, not prohibitive
 
@@ -41,6 +45,8 @@ A proportionate approach:
 4. **Drop the imaginary one.** Stop treating "model extraction" as a likely threat, and put the effort where the exposure actually is.
 
 That's ordinary professional data hygiene, applied consistently.
+
+**If your team already uses AI on its own.** Unapproved use is common, and the data is already going somewhere. Banning it usually drives it out of sight. A better order: find out what people are using and for what, approve a tool that fits the work, teach the three rules before you paste, and make it easy to ask before pasting something borderline.
 
 ## Find the quiet defaults
 

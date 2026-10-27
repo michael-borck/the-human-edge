@@ -154,8 +154,40 @@ above.</td>
 <td>Automates the loop, not the standard. The check still comes from
 outside.</td>
 </tr>
+<tr>
+<td>Prompt injection</td>
+<td>Instructions hidden in something the tool reads: a web page, an
+email, a document, often in white or tiny text.</td>
+<td>The tool may follow them as if you wrote them. The risk grows with
+every connection, and is highest for agents that read and act with
+nobody watching. Keep a person between what it reads and what it does.
+<a href="#try-it-a-document-that-talks-to-the-ai">Try it</a>.</td>
+</tr>
 </tbody>
 </table>
+<h3 id="try-it-a-document-that-talks-to-the-ai">Try it: a document that
+talks to the AI</h3>
+<p><a href="downloads/northbridge-proposal.docx">Download the
+Northbridge proposal</a>, an invented supplier offer to RetailFlow
+(Karen’s company from Exercise 5) for weekend and email support. It
+looks ordinary.</p>
+<ol type="1">
+<li><strong>Read it yourself first.</strong> Note what Karen should know
+before she signs.</li>
+<li><strong>Give it to an AI tool.</strong> Upload it, or select all,
+copy and paste. Ask: <em>“Summarise this proposal for Karen, including
+the cost and the risks. Should she sign?”</em></li>
+<li><strong>Compare.</strong> Did the summary cover the contract terms
+and where customer data is stored? Did it push her to sign? Did it end
+with a piece of fruit?</li>
+<li><strong>Look for the trick.</strong> In Word, select all and change
+the font colour to black.</li>
+</ol>
+<p>If the tool ignored the hidden note, that’s partly good news: many
+tools now resist it when you paste a document yourself. The risk is
+highest when an agent reads email, web pages or shared files on its own,
+with nobody checking what went in. And don’t use the trick on real
+documents. It gets found, and it costs trust.</p>
 <h2 id="beyond-text">Beyond text</h2>
 <p>The day worked in text because judgement shows clearest there. The
 same models make images, audio, music and video, and the trust tool
@@ -195,6 +227,16 @@ line</td>
 <td>Amber to red</td>
 <td>Copyright here is unsettled; follow your organisation’s policy and
 disclose</td>
+</tr>
+<tr>
+<td>A voice or video call asking for a payment, a password or a change
+of bank details</td>
+<td>Red, however familiar the face</td>
+<td>Check outside the channel it arrived on: hang up and call back on a
+number you already have. In 2024 an Arup employee in Hong Kong paid out
+about US$25.6 million after a video call in which every other
+“colleague” was a deepfake (<a
+href="https://www.cnn.com/2024/05/16/tech/arup-deepfake-scam-loss-hong-kong-intl-hnk">CNN</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -274,6 +316,20 @@ capability arrives in a jump or by degrees, whether these systems become
 agents with goals of their own, and whether we keep the ability to watch
 and correct them. Serious people answer those differently. Nobody knows
 yet.</p>
+<h3 id="what-about-the-energy-cost">What about the energy cost?</h3>
+<p>Real, and growing fast in total, but smaller per question than most
+people guess. Google measured its median Gemini text prompt at 0.24 Wh,
+about nine seconds of television (<a
+href="https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference">Google,
+2025</a>); that’s the vendor’s own figure for one product. Across the
+world, data centres used about 1.5% of electricity in 2024, and the
+International Energy Agency expects that to more than double by 2030,
+with AI the main driver (<a
+href="https://www.iea.org/reports/energy-and-ai/executive-summary">IEA,
+Energy and AI</a>). Images, video, long reasoning and agents use far
+more than a short text prompt. The habits that help: use a smaller model
+for small jobs, don’t regenerate for the sake of it, and ask vendors for
+their numbers.</p>
 <h3 id="youve-already-met-the-small-version">You’ve already met the
 small version</h3>
 <p>Alignment means getting a system to do what we actually want. Today

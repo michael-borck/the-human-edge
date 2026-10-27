@@ -233,7 +233,7 @@ Type straight into this page. It saves automatically in this browser on this dev
     <div><label>Day 30 · Gate <small>scale, pivot or kill</small></label><textarea data-wb="e8-gate" data-label="Day 30 (gate)"></textarea></div>
     <div><label>This quarter · Revisit <small>what stays human; have the corners moved?</small></label><textarea data-wb="e8-quarter" data-label="This quarter (revisit)"></textarea></div>
   </div>
-  <label>What must human eyes still judge in my work?</label><textarea data-wb="e8-human" data-label="What stays human"></textarea>
+  <label>What must human eyes still judge in my work? <small>start from your Exercise 6 list of what you'd never let it decide</small></label><textarea data-wb="e8-human" data-label="What stays human"></textarea>
   <div class="chk">
     <label><input type="checkbox" data-wb="e8-cal1" data-label="This week's line is in my calendar"> This week's line is in my calendar</label>
     <label><input type="checkbox" data-wb="e8-cal2" data-label="Day-30 gate is in my calendar"> My day-30 gate is in my calendar</label>
