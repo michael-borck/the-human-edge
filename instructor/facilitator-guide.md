@@ -30,14 +30,15 @@ The close covers why deliberate practice matters now that routine work goes to A
 
 The course is fully digital: participants need only a laptop or phone. Nothing has to be printed.
 
-- **Set up ClassPulse** (classpulse.borck.education). One session, these questions in order:
-  1. *Multiple choice:* "How do you use AI at work today?" Hardly at all / Tried it / Most weeks / It's built into my work.
-  2. to 6. *Grid, 2×2*, one per Exercise 2 scenario (below). X axis "Precision needed", ends "Average" and "Precise". Y axis "Consequences if wrong", ends "Small" and "Large". The heatmap shows where the room clustered and where it split.
-  7. *Scatter plot (optional)*, same axes: "Drop a dot for one task from your own week." Anonymous, and a good debrief picture.
-  8. *Multiple choice* (Exercise 3 debrief): "Which part of RTCF moved your score most?" Role / Task / Context / Format.
-  9. to 11. *Multiple choice*, one per verification claim A, B and C: Verified / Overstated / Refuted / Can't tell yet.
-  12. *Word cloud or open text* (opens Session 4): "What did you do last Tuesday that took more than 30 minutes?" If ClassPulse has no word cloud, use open text and read a few aloud.
-  13. *Multiple choice, several answers allowed* (slide 32): "Which of these have you seen happen on a project?" No agreed "done" / The demo looked finished but wasn't / The data turned out to be the problem / Checking was added after something went wrong / We bought the same tool as everyone else and expected an edge.
+- **Set up ClassPulse** (classpulse.borck.education). One session, these questions in order (type names as ClassPulse shows them). Build it once; for later runs use **New session from this**, which copies every question, with a fresh join code and no responses.
+  1. *Multiple Choice:* "How do you use AI at work today?" Hardly at all / Tried it / Most weeks / It's built into my work.
+  2. to 6. *Grid / Matrix, 2×2*, one per Exercise 2 scenario (below). Horizontal axis "Precision needed", ends "Average" and "Precise". Vertical axis "Consequences if wrong", ends "Small" and "Large". The heatmap shows where the room clustered and where it split.
+  7. *Scatter Plot (optional)*, same axes and end labels, quadrant lines on, colour dimension on: "Drop a dot for one task from your own week. Colour: green if you check it properly now, amber if you skim it, red if you don't really check." (The palette has other colours; the question text gives the three that mean something.) A red dot in the top-right is the point of Session 1, made with the room's own work.
+  8. *Multiple Choice* (Exercise 3 debrief): "Which part of RTCF moved your score most?" Role / Task / Context / Format. Optional pair before it: two *Numeric* questions, "Your Round 1 score" and "Your Round 2 score" (range 1 to 5); the two averages show the room's jump.
+  9. to 11. *Multiple Choice with a quiz answer*, one per claim: Verified / Overstated / Refuted / Can't tell yet. Quiz answers: A Verified, B Refuted, C Overstated. In Present the results stay hidden until you press **R** (Reveal answer), so the vote is blind without you having to remember; revealing shows the correct answer in green and the percentage who got it right, then closes the question. Then click to slide 26 for the reasons.
+  12. *Word Cloud* (opens Session 4): "What did you do last Tuesday that took more than 30 minutes?" Each answer stays a whole phrase, so "weekly report" stays together.
+  13. *Select All* (slide 32): "Which of these have you seen happen on a project?" No agreed "done" / The demo looked finished but wasn't / The data turned out to be the problem / Checking was added after something went wrong / We bought the same tool as everyone else and expected an edge.
+- **Optional: a question parking lot.** Turn on **Cohort mode** (Audience proposals) for the session. Participants can anonymously propose questions and upvote each other's all day; proposals pass a keyword filter and you approve what goes live. Check the top-voted ones at lunch and answer two or three at the close. It catches the "what about AGI?" and "can I use this with client data?" questions without derailing a session.
 
 - **Fallback for no Wi-Fi:** fingers on "three" (1 to 4 for corners A to D) and thumbs for verdicts (up verified, sideways overstated, down refuted, fist can't tell yet). It's still blind and simultaneous, and needs no paper.
 - **Optional paper.** The voting cards (`docs/downloads/voting-cards.pdf`, duplex, long-edge flip, four cards per A4) are worth it only if the organiser can reliably print *and* cut them. The desk card and field guide can be printed for anyone who wants paper.
@@ -162,7 +163,7 @@ Spares:
 
 **Debrief line:** when the room splits, it's almost always about stakes, and stakes depend on who sees the output next.
 
-**The scatter (optional, after the five scenarios).** Everyone drops a dot for one task from their own week. Show it for a few seconds, then ask: is anyone's dot in the top-right? What check do you do on it now? That question leads straight into "Three rules before you paste".
+**The scatter (optional, after the five scenarios).** Everyone drops a dot for one task from their own week, coloured by how they check it now: green properly, amber skim, red not really. Show it for a few seconds, then ask: "Who's top-right and red? What would it take to check it?" That question leads straight into "Three rules before you paste".
 
 ### Session 2 · Brief
 
