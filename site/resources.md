@@ -60,7 +60,7 @@ Three picks, one per angle. All are free.
 
 ## The day's materials
 
-[Before the day](before.html) · [The four tools](tools.html) · [Exercises](exercises.html) · [Your workbook](workbook.html) · [Starter prompts](prompts.html) · [Prompt builder](prompt-builder.html) · [Where's your edge? quiz](quiz.html) · [Slides](deck/)
+[Before the day](before.html) · [The four tools](tools.html) · [Exercises](exercises.html) · [Scenario cards](exercises.html#scenario-cards) · [Decision cards](exercises.html#decision-cards) · [Your workbook](workbook.html) · [Starter prompts](prompts.html) · [Prompt builder](prompt-builder.html) · [Where's your edge? quiz](quiz.html) · [Slides](deck/)
 
 Downloads: [Desk card](downloads/desk-card.pdf) · [Field guide](downloads/field-guide.pdf) · [Starter prompts](downloads/starter-prompts.pdf) · [Slides](downloads/slides.pdf) · [RetailFlow data](downloads/retailflow-customer-service-data.csv)
 

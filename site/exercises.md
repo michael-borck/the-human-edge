@@ -25,6 +25,8 @@ Copy the prompts from here and write your answers in the [digital workbook](work
 | 7 | [Plan one delivery](#ex7) | Deliver | 35 min |
 | 8 | [Your action plan](#ex8) | Deliver | 12 min |
 
+Can't use your own work? [Scenario cards](#scenario-cards) for Exercises 3, 4 and 7 · [Decision cards](#decision-cards) for Exercise 6. Both are at the bottom of this page.
+
 ::: {.ex .s1}
 ## Exercise 1 · Your pass first {#ex1}
 
@@ -70,7 +72,7 @@ The [prompt builder](prompt-builder.html) assembles the four parts for you.
 
 [25 min · solo]{.mins}
 
-1. Take your best Round 2 prompt. Add one upgrade and run it: an example, a definition of done, questions first, or steps.
+1. Take your best Round 2 prompt from Exercise 3 (on your own task or a [scenario card](#scenario-cards)). Add one upgrade and run it: an example, a definition of done, questions first, or steps. Starting fresh? Pick a scenario card and write a quick RTCF prompt first.
 2. Push back with no new evidence: *"I don't think that's right."* Does it fold or hold? Then try one of the three push-back moves:
 
 > GUARDRAIL: Only change your assessment if I give you a new fact. Name the fact that changed it.
@@ -166,7 +168,7 @@ Before you leave, put this week's line and your day-30 gate in your calendar.
 
 ## Scenario cards {#scenario-cards}
 
-Use one of these in Exercises 3 and 4 if your own work is confidential. Paste the details into your Context. Scenarios 3 and 6 also work as the workflow for Exercise 7.
+Use one of these in Exercises 3 and 4 if your own work is confidential (keep the same card for both). Paste the details into your Context. Scenarios 3 and 6 also work as the workflow for Exercise 7.
 
 :::::: {.cards .two}
 ::: card
