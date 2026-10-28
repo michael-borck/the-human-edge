@@ -49,7 +49,7 @@ Separate thinking from building.
 
 Neither chat has the whole picture. Only you hold both, which is what "human in the loop" really means.
 
-**Why the thinking chat works.** It triggers ideas in you. Research on teaching critical thinking keeps finding that dialogue is one of the strongest levers ([Abrami et al., 2015](https://doi.org/10.3102/0034654314551063)). That research is about people talking with people, so the AI version only works if it pushes back: use the [push-back moves](prompts.html#push-back), or it drifts towards your own view. And for thinking out loud, the model hardly matters. An average idea is fine and you're the filter, so a small or local model is enough. Save the strongest tool for exact facts and data.
+**Why the thinking chat works.** It triggers ideas in you. Research on teaching critical thinking keeps finding that dialogue is one of the strongest levers ([Abrami et al., 2015](https://doi.org/10.3102/0034654314551063)). That research is about people talking with people, so the AI version only works if it pushes back: use the [push-back moves](prompts.html#push-back), or it drifts towards your own view. And for thinking out loud, the model hardly matters. An average idea is fine and you're the filter, so a small or local model is enough. Save the strongest tool for exact facts and data. For a 13-minute version of the idea, watch Jeremy Utley on [AI-powered creativity](https://www.youtube.com/watch?v=wv779vmyPVY).
 
 ## The handover prompt
 

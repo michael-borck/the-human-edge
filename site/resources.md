@@ -1,6 +1,6 @@
 ---
 pagetitle: Resources
-description: "Start here after the day: what each page is for, three things to read next, free tools, Australian guidance, the companion book and the masterclasses."
+description: "Start here after the day: what each page is for, three things to read next, a video and the course notebook, free tools, Australian guidance, the companion book and the masterclasses."
 nav-more: true
 ---
 
@@ -57,6 +57,11 @@ Three picks, one per angle. All are free.
 - **Practice.** [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/), the open book this course comes from. Start with [VET your AI](https://michael-borck.github.io/conversation-not-delegation/chapters/vet-your-ai.html) and [The conversation loop](https://michael-borck.github.io/conversation-not-delegation/chapters/the-conversation-loop.html).
 - **Safety.** The [International AI Safety Report 2026](https://internationalaisafetyreport.org), led by Yoshua Bengio. The three-page executive summary is enough to start.
 - **The sceptical view.** Arvind Narayanan and Sayash Kapoor, [AI as Normal Technology](https://knightcolumbia.org/content/ai-as-normal-technology) (2025): why change may come over decades, not years.
+
+## Watch and explore
+
+- **Watch.** Jeremy Utley, [How to Master AI Powered Creativity in Just 13 Minutes](https://www.youtube.com/watch?v=wv779vmyPVY) (EO, YouTube). Treat AI as a teammate, not a vending machine: let it ask you questions and push back. The same idea as the Questions upgrade and the thinking chat.
+- **Explore.** [The course notebook](https://notebook.google.com/notebook/74dbce82-68d7-4a46-bbc7-3ede1609f637) in Google NotebookLM. Ask questions of the course material and get answers grounded in it. Needs a Google account.
 
 ## The day's materials
 
