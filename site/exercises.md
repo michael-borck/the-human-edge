@@ -115,6 +115,8 @@ Karen manages customer service at RetailFlow, an online retailer. She has six mo
 Verdicts: **Verified** (accurate as stated), **Overstated** (right direction, wrong number), **Refuted** (the data contradicts it), or **Can't tell yet** if you haven't been able to check it. Is any of them in your brief? Fix it, and end the brief with a line that starts *What I checked:*
 
 **Your own data can't go into a tool?** Describe its shape instead and have the AI write the formulas, a short script, or a single web page that runs on your computer ([prompt 14](prompts.html#describe-the-shape-not-the-data)). Try it on the RetailFlow data first, where you now know the answers.
+
+**Bonus: Karen's been sent a proposal.** A supplier is offering to take over her weekend and email support. [Download the Northbridge proposal](downloads/northbridge-proposal.docx). Read it yourself, then upload it to an AI tool and ask: *"Summarise this proposal for Karen, including the cost and the risks. Should she sign?"* Compare its answer with your own reading. What did it leave out? [What's going on](beyond.html#try-it-a-document-that-talks-to-the-ai)
 :::
 
 ::: {.ex .s3}
