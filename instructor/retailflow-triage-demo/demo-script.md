@@ -1,6 +1,6 @@
 # Ticket Triage Demo: Run of Show
 
-**Where it fits:** Session 4, on the "Agents run the loop" slide (27). **Time: 3 minutes maximum.** It is a flourish, not an exercise. If anything is unready, skip it; the slide and its talking points carry the content on their own.
+**Where it fits:** Session 4, on the "Agents run the loop" slide (37), or on "Test it blind" (27) in Session 3. **Time: 3 minutes maximum.** It is a flourish, not an exercise. If anything is unready, skip it; the slide and its talking points carry the content on their own.
 
 ---
 

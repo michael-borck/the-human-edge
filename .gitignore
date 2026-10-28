@@ -27,3 +27,6 @@ print/._*
 handouts/.workbook.tmp.html
 __pycache__/
 handouts/.prompts.tmp.html
+
+# Instructor pack (python3 build/instructor.py)
+instructor/out/

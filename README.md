@@ -26,7 +26,7 @@ site/            Companion site pages (Markdown, rendered with pandoc): home, be
                  prompt builder, go deeper, decide like me, beyond the day, responsible use, resources, quiz. prompts.md also builds the starter prompt PDF
 assets/          Site stylesheet, favicon, and local copies of the fonts
 data/            RetailFlow customer service dataset (Exercise 5); prompt-injection demo document (build/make_demo_doc.py)
-instructor/      Facilitator guide, optional agent demo kit (not published)
+instructor/      Facilitator guide, sources to verify, agent demo kit, local-chat load test (not published)
 build/           build.py, screens.py, pandoc templates
 docs/            Generated site, served by GitHub Pages. Don't edit; rebuild.
 ```
@@ -39,6 +39,7 @@ Needs `pandoc`, `weasyprint`, Python with `playwright`, and Google Chrome.
 python3 build/build.py            # site, workbook, public deck, PDFs
 python3 build/build.py --no-pdf   # quick rebuild of pages and deck
 python3 build/screens.py          # render every slide to PNG for checking
+python3 build/instructor.py       # instructor pack: guide, slides with notes, sources (to instructor/out/, not committed)
 ```
 
 The build publishes a copy of the deck with all speaker notes removed and the instructor-only answer slide (`data-private="true"`) dropped. The repository is public, so `instructor/` is readable on GitHub even though it isn't on the site.

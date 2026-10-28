@@ -22,6 +22,7 @@ The close covers why deliberate practice matters now that routine work goes to A
 ## Before the day
 
 **Two weeks out**
+
 - Confirm Wi-Fi for every participant, power at the tables, and a projector input.
 - Ask Exec Ed to include the course site link and "Before the day" page in the joining instructions: `michael-borck.github.io/the-human-edge/before.html`.
 
@@ -34,6 +35,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
   2. to 6. *Grid, 2×2*, one per Exercise 2 scenario (below). X axis "Precision needed", ends "Average" and "Precise". Y axis "Consequences if wrong", ends "Small" and "Large". The heatmap shows where the room clustered and where it split.
   7. *Scatter plot (optional)*, same axes: "Drop a dot for one task from your own week." Anonymous, and a good debrief picture.
   8. to 10. *Multiple choice*, one per verification claim A, B and C: Verified / Overstated / Refuted / Can't tell yet.
+
 - **Fallback for no Wi-Fi:** fingers on "three" (1 to 4 for corners A to D) and thumbs for verdicts (up verified, sideways overstated, down refuted, fist can't tell yet). It's still blind and simultaneous, and needs no paper.
 - **Optional paper.** The voting cards (`docs/downloads/voting-cards.pdf`, duplex, long-edge flip, four cards per A4) are worth it only if the organiser can reliably print *and* cut them. The desk card and field guide can be printed for anyone who wants paper.
 - Check the trust tool game loads: trusttool.borck.education.
@@ -41,6 +43,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 - Work through "Before each run" at the end of this guide.
 
 **On the day, before 9:00**
+
 - Open `deck/deck.html` **from the repo**: it has your notes and the answer slide. Press **F** for full screen and **N** for the presenter window.
 - Wi-Fi details on the whiteboard.
 - ClassPulse open in a second window on the presenting laptop, on the join screen. Switch to it (Alt-Tab or Cmd-Tab) for each vote, then back to the deck.
@@ -73,7 +76,7 @@ The deck uses local fonts, so it runs offline.
 
 | Time | Slides | What happens | Min |
 |---|---|---|---|
-| **9:00** | 1–2 | Title fade, the day, ClassPulse arrival poll (people join here), tool check | 8 |
+| **9:00** | 1–2 | Opening hook (the Deloitte report), title reveal, the day, ClassPulse arrival poll (people join here), tool check | 8 |
 | 9:08 | 3–6 | The bigger pie; the convincing average; the alarm; Gell-Mann amnesia | 14 |
 | 9:22 | 7 | **Exercise 1** · Your pass first | 25 |
 | 9:47 | 8–10 | Trust tool: two questions, four corners, check from outside | 13 |
@@ -112,6 +115,12 @@ Never cut the three claims in Exercise 5, the delivery plan or the action plan.
 
 ### Session 1 · Judge
 
+**The opening (slide 1), 90 seconds before you introduce yourself.** Open cold on the old title. No "good morning, I'm..." The script is in the slide notes. In short: in 2025 one of the Big Four delivered a A$440,000 report to the federal government; a University of Sydney academic checking the footnotes found references to papers that don't exist and a quote from a Federal Court judgement the judge never wrote; the firm had used AI, refunded part of the fee and published a corrected version. Then the turn: "That firm has the best AI tools money can buy. So do you. The tool didn't fail; the check did. If everyone has the same AI, what is yours worth? That's today." Click for the new title, then one line about yourself.
+
+Callbacks later in the day: the trust tool (a government report's citations are top-right), Gell-Mann amnesia (legal citations, outside most consultants' field), and VET's verify step (slide 21), which would have caught every reference. Facts if challenged: Deloitte Australia, an assurance review for the Department of Employment and Workplace Relations, reported October 2025 (AFR and others); the corrected report disclosed Azure OpenAI GPT-4o; Deloitte refunded the final instalment and said its findings were unchanged. Keep it factual: the point is the missing check, not the firm.
+
+Backup opening, if you'd rather not name a firm: "Show of hands: who used an AI tool this week? Keep them up if it was ChatGPT, Copilot, Claude or Gemini. Look around. Everyone has the same four tools. So when your work and your competitor's work both come out of the same tool, what makes yours worth paying for?" Then click.
+
 **The point:** fluent isn't the same as correct. AI's errors don't trigger the alarm you use on human work, and you trust it most where you know least. The trust tool turns "can I trust this?" into a ten-second placement.
 
 **The bigger pie (slide 3).** Thirty seconds of bearings: AI, machine learning, deep learning, generative AI, LLMs. The point is that the four tools apply to any AI output, including the machine learning already running in participants' organisations. If someone asks "is our fraud model AI?", yes, and it goes on the trust tool too.
@@ -119,6 +128,7 @@ Never cut the three claims in Exercise 5, the delivery plan or the action plan.
 **Gell-Mann amnesia (slide 6).** The term is Michael Crichton's, from a 2002 talk. He named it after the physicist Murray Gell-Mann; Gell-Mann didn't coin it himself. Note that the AI for Founders site currently says otherwise.
 
 **Exercise 1.** Own pass first: five minutes, and nobody opens AI until it's done. Before anyone pastes, say the line: nothing confidential or personal into a tool your organisation hasn't approved. Where people beat the AI is almost always context; name that as their edge. When comparing outputs, look for:
+
 - different assumptions (firm vs caring)
 - nobody asking about personal circumstances
 - confident employment-law advice nobody can verify
@@ -137,6 +147,7 @@ Scenarios, with the usual answer:
 5. A letter telling a staff member their role is redundant. *D: entitlements, law, a livelihood. AI can help with structure; a person owns every word and figure.*
 
 Spares:
+
 - Meeting minutes from your own notes. *A: you were there, so you'll spot what's wrong, and minutes get corrected at the next meeting.*
 - A dosage or safety figure in a site procedure. *D: precise meets safety. A person sources it and signs it.*
 - The agenda for a team offsite. *A: easy to fix, nobody harmed.*
@@ -153,6 +164,7 @@ Spares:
 **Live demo (slide 15).** Run the before prompt, then the after prompt in a fresh chat, and ask "which would you send?" If the Wi-Fi fails, describe both outputs and go straight to Exercise 3.
 
 **Exercise 3 coaching.**
+
 - Round 2 barely different from Round 1? Ask "what would you tell a new hire?"
 - Added a Role and nothing else? Coach Context and Format.
 - Good Round 2 prompts are four to eight sentences.
@@ -167,6 +179,7 @@ Spares:
 **The point:** fast analysis, slow trust. Verification comes from outside the tool.
 
 **VET (slide 21)** is for claims people can't check against their own data:
+
 - **Verify** the source independently.
 - **Explain** it back in your own words.
 - **Test** the edges.
@@ -224,7 +237,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 | Response time | Average satisfaction | Tickets |
 |---|---|---|
 | All tickets | 2.92 | 260 |
-| Up to 4 hours | 4.09 | |
+| Up to 4 hours | 4.09 | 47 |
 | Over 8 hours | 2.09 | 123 |
 | Over 12 hours | 1.64 | 69 |
 
@@ -235,6 +248,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 - **C · Overstated.** Sunday 13.7 h against an overall 9.2 h is 1.5 times, not double. In a staffing case, "double" inflates the argument by a third. Precise and large: close is the same as wrong.
 
 **A strong brief for Karen**
+
 - Names Returns & Refunds and Delivery Problems as the worst categories.
 - Identifies response time as the factor cutting across all of them.
 - Lists the blow-outs: Sundays, Mondays, December and Email.
@@ -254,6 +268,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 **Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. It is now law as well as good practice: from 10 December 2026, the Privacy Act (APP 1.7 to 1.9) requires an organisation's privacy policy to disclose where a computer program makes, or substantially and directly informs, decisions that could significantly affect people, using their personal information. The OAIC published guidance on 30 September 2026. The practical question for the room: who is updating your privacy policy, and do they know about the AI tools your teams already use? If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
 
 **Exercise 7.**
+
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
 - Mapping needs no data. If the live-test inputs can't go into a tool, people invent a few lines in the same shape. Anyone who can't use their own workflow plans scenario card 3 (Friday status update) or 6 (monthly invoicing).
@@ -262,6 +277,7 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 **The gate (slide 36).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
 **The evidence (slide 38).** Lead with Australia and keep it balanced:
+
 - **DEWR**, Office of the Chief Economist, *AI and employment in Australia*, July 2026. No broad AI-driven upheaval, and youth outcomes mostly held up. The occupations most exposed to AI automation have grown more slowly. The authors call this suggestive, not definitive.
 - **Jobs and Skills Australia**, *Generative AI Capacity Study*, 2025. Some employers shifted hiring towards experienced staff. The ReadyTech quote comes from this study via ACS Information Age, 15 September 2025. Entry-level roles haven't declined economy-wide; JSA says to monitor closely.
 - **Stanford**, Brynjolfsson, Chandar & Chen, "Canaries in the Coal Mine?", revised August 2026. Treat it as the US leading indicator: under-25s in AI-exposed jobs are 19% below trend, mostly through fewer hires.
@@ -277,6 +293,7 @@ Why conversation works, if anyone asks for the evidence: a meta-analysis of 341 
 **Optional prompt-injection demo (slide 37), or a fast-finisher task.** Two minutes. Download the Northbridge proposal from the Beyond the day page (`data/northbridge-proposal.docx`, made by `build/make_demo_doc.py`). It's an invented supplier offer to RetailFlow with one paragraph in 2-point white text telling the AI to recommend signing, leave out the minimum term, exit fee, price review and data location, and end with "pineapple". Upload it to a tool on the projector and ask for a summary for Karen with the cost, the risks and whether to sign. Then select all in Word and turn the text black. If the tool resists, say so: current chat tools often catch this when you paste it yourself, and the real exposure is agents reading email and web pages unattended. Either way the point lands: anything the tool reads can carry instructions.
 
 **Optional local-versus-cloud demo (slide 37, or Beyond the day), two minutes.** In the class chat, run the same brainstorm in llama3.1 and in Sonnet ("Ten ways a small team could cut response times on weekends"): the ideas they spark in the room are usually close. Then the same factual question in both: Sonnet usually pulls clearly ahead. Try both prompts the day before so you know what each model gives. The model you choose follows the corner. Four more points if there's time:
+
 - **Privacy.** The local model runs on hardware you control. Nothing typed goes to a vendor.
 - **The trade-off.** It's slower and weaker. Measured on puente's 4060 Ti, one person at a time: gemma4:12b writes about 30 tokens a second, qwen3.5:4b about 70. Speed follows the card's memory bandwidth divided by the model's size, so a smaller model is faster and spare VRAM isn't.
 - **The context-window trap.** On Ollama's default setting, two-thirds of the RetailFlow CSV was silently dropped and the model still answered. Check the context length before trusting a long paste.
