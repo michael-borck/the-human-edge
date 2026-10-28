@@ -1,7 +1,7 @@
 /* AI for professionals: deck engine
    Keys: → / Space / PageDown next · ← / PageUp back · 1-4 jump to session
-         N presenter window · T start/pause exercise timer · R reset timer
-         B blank screen · F fullscreen · Home / End
+         N presenter window · M notes on this screen (rehearsal) · T start/pause exercise timer
+         R reset timer · B blank screen · F fullscreen · Home / End
    URL:  #12 opens slide 12 · ?print lays out every slide for PDF export */
 (function () {
   const CH = [
@@ -63,6 +63,28 @@
   if (h >= 1 && h <= slides.length) i = h - 1;
   s = minOf(slides[i]);
 
+  /* ---------- notes drawer (M): notes on the main screen, for rehearsal ---------- */
+  const drawer = document.createElement('div');
+  drawer.id = 'notes-drawer';
+  document.body.appendChild(drawer);
+  const toast = document.createElement('div');
+  toast.id = 'deck-toast';
+  document.body.appendChild(toast);
+  let toastT = null;
+  function say(msg) {
+    toast.textContent = msg; toast.classList.add('on');
+    clearTimeout(toastT); toastT = setTimeout(() => toast.classList.remove('on'), 6000);
+  }
+  const anyNotes = !!document.querySelector('aside.notes');
+  function updateDrawer() {
+    if (!drawer.classList.contains('on')) return;
+    const n = $('aside.notes', slides[i]);
+    drawer.innerHTML = '<div class="dh">' + (i + 1) + ' · ' + titleOf(slides[i]) + ' <span>M to hide</span></div>' +
+      (n ? n.innerHTML : (anyNotes ? '<p>No notes for this slide.</p>'
+        : '<p>This copy of the deck has no speaker notes. Open <b>deck/deck.html</b> from the course repo instead: the site\'s copy has them removed.</p>'));
+  }
+  function toggleDrawer() { drawer.classList.toggle('on'); updateDrawer(); }
+
   function render() {
     const sl = slides[i], ci = chOf(sl);
     document.documentElement.style.setProperty('--acc', CH[ci].acc);
@@ -73,6 +95,7 @@
     history.replaceState(null, '', '#' + (i + 1));
     showTimer();
     updatePresenter();
+    updateDrawer();
   }
   function go(dir) {
     const sl = slides[i];
@@ -135,8 +158,9 @@
   <footer>NEXT &nbsp; <span id="nx"></span></footer></body></html>`;
 
   function openPresenter() {
+    if (!anyNotes) { say('No speaker notes in this copy. Open deck/deck.html from the course repo; the site copy has them removed.'); return; }
     pw = window.open('', 'ai-presenter', 'width=1000,height=720');
-    if (!pw) return;
+    if (!pw) { say('The presenter window was blocked. Allow pop-ups for this page and press N again, or press M to show the notes here.'); return; }
     pw.document.open(); pw.document.write(PRESENTER); pw.document.close();
     pw.document.addEventListener('keydown', onKey);
     pw.document.getElementById('rs').onclick = () => { t0 = Date.now(); };
@@ -177,6 +201,7 @@
     else if (k === 'End') jump(slides.length - 1);
     else if (/^[1-4]$/.test(k)) jump(chStart[+k - 1]);
     else if (k === 'n' || k === 'N') openPresenter();
+    else if (k === 'm' || k === 'M') toggleDrawer();
     else if (k === 't' || k === 'T') toggleTimer();
     else if (k === 'r' || k === 'R') resetTimer();
     else if (k === 'b' || k === 'B' || k === '.') $('#blank').classList.toggle('on');

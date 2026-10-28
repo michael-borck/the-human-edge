@@ -158,3 +158,13 @@ body.print #stage{transform:none!important;width:1280px;height:auto;overflow:vis
 body.print #stage::after,body.print #halo,body.print #nav,body.print #counter,body.print #timer,body.print #blank{display:none}
 body.print .slide{position:relative;opacity:1;width:1280px;height:720px;break-after:page;overflow:hidden;background:var(--bg);transition:none}
 body.print .slide *{transition:none!important}
+
+/* notes drawer (M) and messages: outside the scaled stage, never printed */
+#notes-drawer{position:fixed;left:0;right:0;bottom:0;max-height:42vh;overflow:auto;z-index:30;background:rgba(10,12,16,.96);border-top:1px solid var(--hair);padding:14px 28px 18px;font:16px/1.5 var(--sans);color:var(--ink);transform:translateY(100%);transition:transform .25s ease}
+#notes-drawer.on{transform:none}
+#notes-drawer .dh{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:6px}
+#notes-drawer .dh span{color:var(--faint);margin-left:12px}
+#notes-drawer ul{padding-left:20px;margin:4px 0}#notes-drawer li{margin:4px 0}#notes-drawer p{margin:6px 0}
+#deck-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:31;max-width:760px;background:var(--card2);border:1px solid var(--hair);border-radius:10px;padding:12px 18px;font:15px/1.45 var(--sans);color:var(--ink);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+#deck-toast.on{opacity:1;transform:translate(-50%,0)}
+body.print #notes-drawer,body.print #deck-toast{display:none}

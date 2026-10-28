@@ -56,7 +56,8 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 | → / Space / PageDown | Next step or slide (works with a clicker) |
 | ← / PageUp | Back |
 | 1 2 3 4 | Jump to the start of a session |
-| N | Presenter window: notes, next slide, elapsed time, clock, exercise timer |
+| N | Presenter window: notes, next slide, elapsed time, clock, exercise timer. Allow pop-ups for the file if nothing opens |
+| M | Notes on the main screen, for rehearsal (not while projecting) |
 | T | Start or pause the exercise timer (exercise slides only) |
 | R | Reset the timer |
 | B | Blank the screen for discussion |

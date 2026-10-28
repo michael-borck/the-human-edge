@@ -48,7 +48,7 @@ Preview locally with `python3 -m http.server -d docs`.
 
 ## Presenting
 
-Open `deck/deck.html` from the repo (not the site): it has the notes and the answer slide. Keys: arrows, Space or a clicker to advance; `1` to `4` to jump to a session; `N` for the presenter window; `T` to start the exercise timer; `B` to blank the screen; `F` for full screen. It uses local fonts and runs offline. See `instructor/facilitator-guide.md` for the run sheet, card-vote scenarios and answer keys.
+Open `deck/deck.html` from the repo (not the site): it has the notes and the answer slide. Keys: arrows, Space or a clicker to advance; `1` to `4` to jump to a session; `N` for the presenter window (allow pop-ups); `M` to show the notes on the main screen for rehearsal; `T` to start the exercise timer; `B` to blank the screen; `F` for full screen. It uses local fonts and runs offline. See `instructor/facilitator-guide.md` for the run sheet, card-vote scenarios and answer keys.
 
 ## Editing
 
