@@ -139,7 +139,11 @@ Swap with a neighbour: where do you disagree, and why?</li>
 <h2>Exercise 3 · Brief it</h2>
 <p><span class="mins">25 min · solo</span></p>
 <ol type="1">
-<li>Pick a real task from your week, or a scenario card below.</li>
+<li>Pick a real task from your week: one of the three weekly tasks from
+<a href="before.html">Before the day</a>. Use a <a
+href="#scenario-cards">scenario card</a> only if your work is
+confidential. With a card, Round 1 uses just the short ask at the top;
+Round 2 adds what’s under “What you know”.</li>
 <li><strong>Round 1:</strong> write the prompt the way you normally
 would. Run it. Score the output from 1 (unusable) to 5 (ready to
 use).</li>
@@ -296,10 +300,13 @@ and why? That list is the other half of the output.</li>
 <section id="ex7" class="ex s4">
 <h2>Exercise 7 · Plan one delivery</h2>
 <p><span class="mins">35 min · solo, then tables</span></p>
+<p>You’re writing the plan you’ll judge in 30 days. The gate in step 4
+is the test it has to pass, so set it now, before you’re invested.</p>
 <ol type="1">
-<li><strong>Map</strong> a task you do weekly that takes 30 minutes or
-more. Five to eight steps, with honest minutes for each. Note the owner,
-a success measure and today’s baseline.</li>
+<li><strong>Map</strong> a quick win: a task you do weekly that takes 30
+minutes or more, saves real time, and is cheap to check. Five to eight
+steps, with honest minutes for each. Note the owner, a success measure
+and today’s baseline.</li>
 <li><strong>Assign</strong> each step: who leads (AI leads, AI assists,
 you lead, human only) and its trust corner.</li>
 <li><strong>Design the checkpoints.</strong> Who checks each amber or
@@ -307,7 +314,10 @@ red step, and how? Pick someone who knows what right looks like. Who is
 affected, who has to agree, and who will do the checking?</li>
 <li><strong>Test</strong> one AI step live with an RTCF brief. Then
 <strong>set your 30-day gate</strong>: what result would make you scale,
-pivot or kill?</li>
+pivot or kill? Make each one a number you could check, for example
+“scale if it needs two edits or fewer; kill if a figure is wrong twice”.
+<a href="tools.html#opportunity-finder">Scale, pivot or kill</a>
+explains each.</li>
 </ol>
 <p>The <a href="prompts.html#map-my-workflow">Map my workflow</a> and <a
 href="prompts.html#pre-mortem">Pre-mortem</a> starter prompts help with
@@ -322,7 +332,7 @@ card.</p>
 </section>
 <section id="ex8" class="ex s4">
 <h2>Exercise 8 · Your action plan</h2>
-<p><span class="mins">12 min · quiet, then share</span></p>
+<p><span class="mins">12 min · quiet, then pairs</span></p>
 <p>One line each: a specific task, tool and day.</p>
 <ul>
 <li><strong>This week (practise):</strong> two-pass one task that
@@ -339,66 +349,137 @@ calendar.</p>
 </section>
 <h2 id="scenario-cards">Scenario cards</h2>
 <p>Use one of these in Exercises 3 and 4 if your own work is
-confidential (keep the same card for both). Paste the details into your
-Context. Scenarios 3 and 6 also work as the workflow for Exercise 7.</p>
+confidential, and keep the same card for both. Each card starts with the
+ask, the way most people would type it. <strong>Round 1:</strong> prompt
+with the ask only. <strong>Round 2:</strong> open “What you know” and
+put it into your Context with RTCF. In Exercise 4, try the Questions
+upgrade first (“Before you start, ask me up to five questions”) and see
+how much of “What you know” it asks for. Scenarios 3 and 6 also work as
+the workflow for Exercise 7.</p>
 <div class="cards two">
 <div class="card">
 <p><span class="lab">Scenario 1</span></p>
 <h3 id="the-difficult-client-email">The difficult client email</h3>
-<p>Your client, David Chen (VP Operations, GreenLeaf Industries), says
-your latest deliverable is “too generic”. The work is solid, but his
-board changed priorities at a meeting you weren’t in. It’s an 18-month,
-mostly positive relationship. You want to acknowledge his frustration
-without conceding the work is poor, and propose a one-hour alignment
-meeting.</p>
+<p><strong>The ask:</strong> “Write a reply to a client who says our
+latest deliverable is too generic.”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>The client is David Chen, VP Operations at GreenLeaf
+Industries.</li>
+<li>The relationship is 18 months old and mostly positive.</li>
+<li>The work is solid. His board changed priorities at a meeting you
+weren’t in.</li>
+<li>You want to acknowledge his frustration without conceding the work
+is poor.</li>
+<li>The goal is a one-hour alignment meeting, not a rewrite.</li>
+<li>Under 200 words.</li>
+</ul>
+</details>
 </div>
 <div class="card">
 <p><span class="lab">Scenario 2</span></p>
 <h3 id="the-policy-summary">The policy summary</h3>
-<p>A new 22-page flexible work policy needs to become an email your
-12-person marketing team will actually read: how many days from home,
-how to request changes, busy periods, and part-time rules. Friendly,
-practical, under 400 words. (Paste any policy you have, or ask the AI to
-invent a plausible one first.)</p>
+<p><strong>The ask:</strong> “Turn our new flexible work policy into an
+email for my team.”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>The policy is 22 pages. Paste one if you have it, or ask the AI to
+invent a plausible one first.</li>
+<li>The team is 12 people in marketing, and most won’t read the
+policy.</li>
+<li>They care about: how many days from home, how to request changes,
+busy periods, and part-time rules.</li>
+<li>Friendly and practical. Under 400 words.</li>
+</ul>
+</details>
 </div>
 <div class="card">
 <p><span class="lab">Scenario 3</span></p>
 <h3 id="the-friday-status-update">The Friday status update</h3>
-<p>CRM migration for a steering committee (CIO, sponsor, two business
-leads). Notes: data batch 2 done but 3 days late (2,300 duplicate
-records, Sarah leading review); vendor hasn’t confirmed training dates;
-UAT going well, 2 minor bugs; $12K under budget; 68% complete against a
-72% target. They want RAG status, wins, risks, next steps. No
-surprises.</p>
+<p><strong>The ask:</strong> “Write this week’s status update on our CRM
+migration.”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>Audience: the steering committee (CIO, sponsor, two business leads).
+They want no surprises.</li>
+<li>Data batch 2 is done but 3 days late: 2,300 duplicate records, Sarah
+leading the review.</li>
+<li>The vendor hasn’t confirmed training dates.</li>
+<li>UAT is going well: 2 minor bugs.</li>
+<li>$12K under budget. 68% complete against a 72% target.</li>
+<li>Format: RAG status, wins, risks, next steps. Under 250 words.</li>
+</ul>
+</details>
 </div>
 <div class="card">
 <p><span class="lab">Scenario 4</span></p>
 <h3 id="the-interview-questions">The interview questions</h3>
-<p>Hiring a mid-level Digital Marketing Coordinator for a 5-person B2B
-team: social campaigns, Google Analytics and Meta Ads, agency
-coordination, monthly reports to leadership. 45-minute panel with the
-Marketing Director. HR’s generic questions won’t tell you whether they
-can do the job. You want behavioural and situational questions.</p>
+<p><strong>The ask:</strong> “Write interview questions for a marketing
+coordinator role.”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>Mid-level Digital Marketing Coordinator in a 5-person B2B team.</li>
+<li>The job: social campaigns, Google Analytics and Meta Ads, agency
+coordination, monthly reports to leadership.</li>
+<li>45-minute panel with the Marketing Director.</li>
+<li>HR’s generic questions won’t show whether they can do the job. You
+want behavioural and situational questions, with what a good answer
+sounds like.</li>
+</ul>
+</details>
 </div>
 <div class="card">
 <p><span class="lab">Scenario 5</span></p>
 <h3 id="the-logistics-decision">The logistics decision</h3>
-<p>Renew, switch or insource your third-party logistics? Current
-provider: $1.8M a year, 96.2% on time (benchmark 97%), 2.1% damage
-(benchmark 1.5%), slow on volume spikes, just raised prices 8%.
-Competitor: $1.65M, promises 97.5%. In-house: $2.5M upfront, $1.2M a
-year, 12 months to set up. 15,000 orders a month, growing 20% a year. A
-discussion starter for leadership, not the decision.</p>
+<p><strong>The ask:</strong> “Should we renew our logistics
+provider?”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>Current provider: $1.8M a year, 96.2% on time (benchmark 97%), 2.1%
+damage (benchmark 1.5%), slow on volume spikes, just raised prices
+8%.</li>
+<li>Competitor: $1.65M a year, promises 97.5% on time.</li>
+<li>In-house: $2.5M upfront, then $1.2M a year, 12 months to set
+up.</li>
+<li>15,000 orders a month, growing 20% a year.</li>
+<li>This is a discussion starter for leadership, not the decision.</li>
+</ul>
+</details>
 </div>
 <div class="card">
 <p><span class="lab">Scenario 6</span></p>
 <h3 id="the-process-document">The process document</h3>
-<p>You’re the only person who knows monthly invoicing: export billable
-hours from Harvest, group by client in Excel, apply the rate card ($250
-strategy, $180 execution, $120 support), create invoices in Xero, add PO
-numbers from the account managers’ Google Sheet, send, update the
-tracker, then email Finance a summary with anything unusual. Write it so
-a colleague can do it while you’re on leave.</p>
+<p><strong>The ask:</strong> “Write up how I do our monthly invoicing so
+someone else can do it.”</p>
+<details>
+<summary>
+What you know (add it in Round 2)
+</summary>
+<ul>
+<li>You’re the only person who knows it, and you’re going on leave.</li>
+<li>Export billable hours from Harvest, group by client in Excel, apply
+the rate card ($250 strategy, $180 execution, $120 support).</li>
+<li>Create invoices in Xero, add PO numbers from the account managers’
+Google Sheet, send them, update the tracker.</li>
+<li>Email Finance a summary with anything unusual.</li>
+<li>Written so a colleague can follow it step by step.</li>
+</ul>
+</details>
 </div>
 </div>
 <h2 id="decision-cards">Decision cards</h2>

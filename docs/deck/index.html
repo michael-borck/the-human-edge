@@ -613,10 +613,56 @@
         <div class="h">Which upgrade helped most?</div>
         <div class="h">Whose model folded? Which push-back move helped?</div>
         <div class="h">What check did you attach to each prompt?</div>
-        <div class="p" style="margin-top:18px">A saved prompt with its check attached is the first draft of a skill. More on that this afternoon.</div>
+        <div class="p" style="margin-top:18px">A saved prompt with its check attached is the first draft of a skill. More on that next.</div>
       </div></div>
     </div>
   </div></div>
+</section>
+
+<!-- agents, harnesses, skills: the bridge from the prompt library -->
+<section class="slide" data-ch="1" data-title="Agents and skills">
+  <div class="k">Beyond chat</div>
+  <h2 class="t">Agents run the loop. <em>You set the standard.</em></h2>
+  <div class="b">
+    <svg viewBox="0 0 980 400">
+      <rect x="10" y="20" width="560" height="320" rx="16" fill="#0D1118" stroke="var(--hair)"/>
+      <text class="mn" x="34" y="50">THE HARNESS</text>
+      <text class="s2" x="34" y="70">instructions · what it can read · tools it can use · the model</text>
+      <!-- loop -->
+      <circle cx="380" cy="200" r="88" fill="none" stroke="color-mix(in srgb,var(--acc) 50%,transparent)" stroke-width="1.6"/>
+      <path d="M459 160 L468 172 L455 176" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <path d="M301 240 L292 228 L305 224" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <rect x="342" y="184" width="76" height="32" rx="16" fill="none" stroke="var(--dim)" stroke-width="1.3"/>
+      <text class="mn" x="380" y="205" text-anchor="middle">MODEL</text>
+      <rect x="340" y="96" width="80" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="380" y="114" text-anchor="middle">PLAN</text>
+      <rect x="430" y="270" width="76" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="468" y="288" text-anchor="middle">ACT</text>
+      <rect x="250" y="270" width="84" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="292" y="288" text-anchor="middle">CHECK</text>
+      <!-- skill -->
+      <path d="M48 140 h92 l20 20 v110 h-112 z" fill="color-mix(in srgb,var(--acc) 8%,var(--card))" stroke="var(--acc)" stroke-width="1.4"/>
+      <line x1="66" y1="186" x2="140" y2="186" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="66" y1="206" x2="130" y2="206" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="66" y1="226" x2="138" y2="226" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <text class="mn mna" x="104" y="166" text-anchor="middle">SKILL</text>
+      <text class="s2" x="104" y="300" text-anchor="middle">your saved brief</text>
+      <line x1="166" y1="200" x2="282" y2="200" stroke="var(--acc)" stroke-width="2"/>
+      <path d="M274 193 L286 200 L274 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <!-- standard -->
+      <rect class="gl" x="650" y="120" width="310" height="150" rx="14" fill="color-mix(in srgb,var(--acc) 10%,var(--card))" stroke="var(--acc)" stroke-width="1.5"/>
+      <text class="mn mna" x="674" y="154">THE STANDARD · YOURS</text>
+      <text class="l1" x="674" y="190">Your test. Your data.</text>
+      <text class="l1" x="674" y="218">Your reviewer.</text>
+      <text class="s2" x="674" y="250">an agent checking itself shares its blind spots</text>
+      <path d="M570 200 L640 200" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 5"/>
+      <path d="M632 193 L644 200 L632 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <text class="s1 st" data-s="1" x="490" y="378" text-anchor="middle" style="fill:var(--ink)">Your prompt library is the first draft of a skill.</text>
+      <g class="st" data-s="2">
+        <text class="mn mna" x="490" y="396" text-anchor="middle">SET IT ONCE AS A SYSTEM PROMPT · CUSTOM INSTRUCTIONS · PROJECTS · GEMS</text>
+      </g>
+    </svg>
+  </div>
 </section>
 
 <!-- =====================================================================
@@ -735,7 +781,7 @@
       <div class="card"><div class="lab a">Claim C</div><div class="h" style="font-family:var(--serif);font-weight:500">"Sunday response times are more than double the overall average."</div></div>
     </div>
     <div class="foot" style="display:flex;justify-content:space-between;align-items:center">
-      <span>Check against the data, not the confidence. Is any of them in your brief?</span>
+      <span>Check outside the tool: the data, the source, your own sum. Is any of them in your brief?</span>
       <span><span class="chip" style="border-color:var(--green);color:var(--green)">Verified</span> <span class="chip" style="border-color:var(--amber);color:var(--amber)">Overstated</span> <span class="chip" style="border-color:var(--red);color:var(--red)">Refuted</span></span>
     </div>
   </div>
@@ -770,7 +816,7 @@
     <div class="row c2" style="height:300px">
       <div class="card st" data-s="1"><div class="lab a">Save it</div>
         <div class="h">Same chat: "Write these rules up so I can reuse them."</div>
-        <div class="p">Rules, not stories: take out the names, clients and figures. Save it where your tool keeps standing instructions. Agent tools call a saved brief like this a skill. More on that at the end of the day.</div></div>
+        <div class="p">Rules, not stories: take out the names, clients and figures. Save it where your tool keeps standing instructions. Agent tools call a saved brief like this a skill, as on the agents slide before lunch.</div></div>
       <div class="card st" data-s="2"><div class="lab a">Then the blind test</div>
         <div class="h">Three past cases. Inputs only. Your calls written first.</div>
         <div class="p">It makes each call and names the rule it used. A mismatch is a rule you've never put into words. Add it, then re-test in a new chat: the chat you built it in already knows your answers.</div></div>
@@ -814,6 +860,7 @@
      ===================================================================== -->
 
 <!-- 23 · spot -->
+<!-- opportunity finder 1: spot -->
 <section class="slide" data-ch="3" data-title="Opportunity Finder · spot">
   <div class="k">Session 4 · Deliver · Opportunity Finder · 1 Spot</div>
   <h2 class="t">Four signals <em>in your week.</em></h2>
@@ -828,9 +875,9 @@
   </div>
 </section>
 
-<!-- 24 · assign -->
+<!-- opportunity finder 2 and 3: assign, then prioritise -->
 <section class="slide" data-ch="3" data-title="Opportunity Finder · who leads">
-  <div class="k">Tool 4 · Opportunity Finder · 2 Assign</div>
+  <div class="k">Tool 4 · Opportunity Finder · 2 Assign · 3 Prioritise</div>
   <h2 class="t">Decide <em>who leads</em> each step.</h2>
   <div class="b">
     <div class="row c4" style="height:290px">
@@ -843,44 +890,11 @@
       <div class="card"><div class="lab a">Human only</div><div class="split"><i style="width:0%"></i></div>
         <div class="h" style="font-size:18px">Empathy, ethics, accountability.</div><div class="p">Telling someone their role is going.</div></div>
     </div>
-    <div class="foot">Then the trust tool sets how hard you check each step.</div>
+    <div class="foot"><b>Then prioritise:</b> start with a quick win. Real time saved, cheap to check. The trust tool sets how hard you check each step.</div>
   </div>
 </section>
 
-<!-- 25 · prioritise -->
-<section class="slide" data-ch="3" data-title="Opportunity Finder · prioritise">
-  <div class="k">Tool 4 · Opportunity Finder · 3 Prioritise</div>
-  <h2 class="t">Start with <em>the quick wins.</em></h2>
-  <div class="b">
-    <svg viewBox="0 0 980 420">
-      <rect x="113" y="13" width="264" height="179" rx="10" fill="color-mix(in srgb,var(--acc) 16%,transparent)" stroke="var(--acc)" stroke-width="1.4"/>
-      <rect x="383" y="13" width="264" height="179" rx="10" fill="var(--card)" stroke="var(--hair)"/>
-      <rect x="113" y="198" width="264" height="179" rx="10" fill="var(--card)" stroke="var(--hair)"/>
-      <rect x="383" y="198" width="264" height="179" rx="10" fill="#0D1016" stroke="var(--hair)" stroke-dasharray="4 6"/>
-      <text class="mn mna" x="131" y="44">QUICK WINS</text><text class="l1" x="131" y="76">Do these first.</text>
-      <text class="mn" x="401" y="44">BIG WINS</text><text class="l1 l1d" x="401" y="76">Plan for these.</text>
-      <text class="mn" x="131" y="229">SMALL WINS</text><text class="l1 l1d" x="131" y="261">Fill spare moments.</text>
-      <text class="mn mnf" x="401" y="229">SKIP FOR NOW</text><text class="l1 l1d" x="401" y="261">Revisit next quarter.</text>
-      <line x1="100" y1="382" x2="100" y2="12" stroke="var(--dim)" stroke-width="1.5"/>
-      <path d="M94 20 L100 8 L106 20" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <line x1="108" y1="392" x2="652" y2="392" stroke="var(--dim)" stroke-width="1.5"/>
-      <path d="M644 386 L656 392 L644 398" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <text class="mn" transform="translate(86 195) rotate(-90)" text-anchor="middle">TIME SAVED EACH WEEK</text>
-      <text class="mn" x="380" y="418" text-anchor="middle">EFFORT TO SET UP</text>
-      <text class="mn mnf" x="113" y="418">LOW</text>
-      <text class="mn mnf" x="647" y="418" text-anchor="end">HIGH</text>
-      <text class="mn mna" x="700" y="44">A SHORTCUT</text>
-      <text class="s1" x="700" y="72" style="fill:var(--ink)">Quick wins usually sit in the</text>
-      <text class="s1" x="700" y="94" style="fill:var(--ink)">trust tool's green corner.</text>
-      <text class="s1" x="700" y="124">Cheap to check, so the time</text>
-      <text class="s1" x="700" y="146">saved is real.</text>
-      <text class="s1" x="700" y="196">Big wins need a redesigned</text>
-      <text class="s1" x="700" y="218">workflow. That's next.</text>
-    </svg>
-  </div>
-</section>
-
-<!-- AI projects fail differently -->
+<!-- AI projects fail differently (a ClassPulse vote) -->
 <section class="slide" data-ch="3" data-mode="spot" data-title="AI projects fail differently" id="s-diff">
   <div class="k">Deliver · Why AI delivery is different</div>
   <h2 class="t">AI projects don't fail more. <em>They fail differently.</em></h2>
@@ -918,7 +932,57 @@
   </div>
 </section>
 
-<!-- responsible by design: Australia's six essential practices -->
+<!-- the 30-day gate, taught before the plan that sets it -->
+<section class="slide" data-ch="3" data-mode="spot" data-title="Scale, pivot or kill">
+  <div class="k">Deliver · The 30-day gate</div>
+  <h2 class="t">Scale. Pivot. <em>Or kill.</em></h2>
+  <div class="sub">Judge the workflow against the criteria you set before you started.</div>
+  <div class="b">
+    <div class="row c3" style="height:250px">
+      <div class="card st" data-s="1" style="border-top:3px solid var(--green)"><div class="lab" style="color:var(--green)">Scale</div><div class="h">It met the measure with a light review.</div><div class="p">Hand it over for good. Keep the check its corner calls for.</div></div>
+      <div class="card st" data-s="2" style="border-top:3px solid var(--amber)"><div class="lab" style="color:var(--amber)">Pivot</div><div class="h">Close, but the check costs too much.</div><div class="p">Change the brief, the step, or who leads. Run another month.</div></div>
+      <div class="card st" data-s="3" style="border-top:3px solid var(--red)"><div class="lab" style="color:var(--red)">Kill</div><div class="h">It missed, or the errors mattered.</div><div class="p">Keep it human. Revisit next quarter; the tools will have moved.</div></div>
+    </div>
+    <div class="foot">Killing is a good outcome. You found where the line is, cheaply.</div>
+  </div>
+</section>
+
+<!-- EXERCISE 7 · delivery plan -->
+<section class="slide ex" data-ch="3" data-min="35" data-steps="1" data-print-step="0" data-title="Exercise 7 · Plan one delivery">
+  <div class="exbar"><span class="pill">Exercise 7</span><span class="mins">35 MIN · SOLO, THEN TABLES</span></div>
+  <h2 class="t">Plan the delivery of <em>one real workflow.</em></h2>
+  <div class="b"><div class="exgrid">
+    <ol class="steps">
+      <li>Map a quick win: a weekly task of 30 minutes or more.<span>Five to eight steps, honest minutes. Can't use real work? Scenario card 3 or 6.</span></li>
+      <li>Assign each step: who leads, and its trust corner.</li>
+      <li>Design the checkpoints.<span>Who checks each amber or red step, and how? Who needs to know?</span></li>
+      <li>Test one AI step live. Then set your 30-day gate.<span>The test this plan must pass: what result means scale, pivot or kill?</span></li>
+    </ol>
+    <div class="stack">
+      <div class="mat">
+        <div class="card"><div class="lab a">Example · weekly team update</div>
+<div class="tbl" style="margin-top:10px"><span class="hd">STEP               MIN  WHO LEADS   CHECKPOINT</span>
+Gather updates      15  You lead    <span class="dm">-</span>
+Draft the summary   20  AI leads    Me: light review
+Calculate metrics   15  You lead    Me: recount totals
+Send to sponsor      5  Human only  <span class="dm">-</span>
+<span class="hd">Gate, 30 days: scale if two edits or fewer;</span>
+<span class="hd">kill if a figure is wrong twice</span></div>
+        </div>
+        <div class="out"><b>OUTPUT</b>A one-page delivery plan you'll run this month.</div>
+      </div>
+      <div class="deb"><div class="card hi">
+        <div class="lab a">Debrief</div>
+        <div class="h">Where did you put a person, and why?</div>
+        <div class="h">What's your kill criterion?</div>
+        <div class="h">Who needs to know before you start?</div>
+        <div class="p" style="margin-top:18px">Credible beats impressive. Nobody saves 90% in week one.</div>
+      </div></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- responsible by design (recap of the day) -->
 <section class="slide" data-ch="3" data-mode="spot" data-title="Responsible by design" id="s-resp">
   <div class="k">Deliver · Responsible by design</div>
   <h2 class="t">Australia's six essential practices. <em>You've done five today.</em></h2>
@@ -946,101 +1010,6 @@
   </style>
 </section>
 
-<!-- EXERCISE 7 · delivery plan -->
-<section class="slide ex" data-ch="3" data-min="35" data-steps="1" data-print-step="0" data-title="Exercise 7 · Plan one delivery">
-  <div class="exbar"><span class="pill">Exercise 7</span><span class="mins">35 MIN · SOLO, THEN TABLES</span></div>
-  <h2 class="t">Plan the delivery of <em>one real workflow.</em></h2>
-  <div class="b"><div class="exgrid">
-    <ol class="steps">
-      <li>Map a task you do weekly that takes 30 minutes or more.<span>Five to eight steps, honest minutes. Can't use real work? Scenario card 3 or 6.</span></li>
-      <li>Assign each step: who leads, and its trust corner.</li>
-      <li>Design the checkpoints.<span>Who checks each amber or red step, and how? Who needs to know?</span></li>
-      <li>Test one AI step live. Then set your 30-day gate.<span>What result would make you scale, pivot or kill?</span></li>
-    </ol>
-    <div class="stack">
-      <div class="mat">
-        <div class="card"><div class="lab a">Example · weekly team update</div>
-<div class="tbl" style="margin-top:10px"><span class="hd">STEP               MIN  WHO LEADS   CHECKPOINT</span>
-Gather updates      15  You lead    <span class="dm">-</span>
-Draft the summary   20  AI leads    Me: light review
-Calculate metrics   15  You lead    Me: recount totals
-Send to sponsor      5  Human only  <span class="dm">-</span>
-<span class="hd">Gate, 30 days: scale if two edits or fewer</span></div>
-        </div>
-        <div class="out"><b>OUTPUT</b>A one-page delivery plan you'll run this month.</div>
-      </div>
-      <div class="deb"><div class="card hi">
-        <div class="lab a">Debrief</div>
-        <div class="h">Where did you put a person, and why?</div>
-        <div class="h">What's your kill criterion?</div>
-        <div class="h">Who needs to know before you start?</div>
-        <div class="p" style="margin-top:18px">Credible beats impressive. Nobody saves 90% in week one.</div>
-      </div></div>
-    </div>
-  </div></div>
-</section>
-
-<!-- the 30-day gate -->
-<section class="slide" data-ch="3" data-mode="spot" data-title="Scale, pivot or kill">
-  <div class="k">Deliver · The 30-day gate</div>
-  <h2 class="t">Scale. Pivot. <em>Or kill.</em></h2>
-  <div class="sub">Judge the workflow against the criteria you set before you started.</div>
-  <div class="b">
-    <div class="row c3" style="height:250px">
-      <div class="card st" data-s="1" style="border-top:3px solid var(--green)"><div class="lab" style="color:var(--green)">Scale</div><div class="h">It met the measure with a light review.</div><div class="p">Hand it over for good. Keep the check its corner calls for.</div></div>
-      <div class="card st" data-s="2" style="border-top:3px solid var(--amber)"><div class="lab" style="color:var(--amber)">Pivot</div><div class="h">Close, but the check costs too much.</div><div class="p">Change the brief, the step, or who leads. Run another month.</div></div>
-      <div class="card st" data-s="3" style="border-top:3px solid var(--red)"><div class="lab" style="color:var(--red)">Kill</div><div class="h">It missed, or the errors mattered.</div><div class="p">Keep it human. Revisit next quarter; the tools will have moved.</div></div>
-    </div>
-    <div class="foot">Killing is a good outcome. You found where the line is, cheaply.</div>
-  </div>
-</section>
-
-<!-- 27 · agents -->
-<section class="slide" data-ch="3" data-title="Agents and skills">
-  <div class="k">Beyond chat</div>
-  <h2 class="t">Agents run the loop. <em>You set the standard.</em></h2>
-  <div class="b">
-    <svg viewBox="0 0 980 400">
-      <rect x="10" y="20" width="560" height="320" rx="16" fill="#0D1118" stroke="var(--hair)"/>
-      <text class="mn" x="34" y="50">THE HARNESS</text>
-      <text class="s2" x="34" y="70">instructions · what it can read · tools it can use · the model</text>
-      <!-- loop -->
-      <circle cx="380" cy="200" r="88" fill="none" stroke="color-mix(in srgb,var(--acc) 50%,transparent)" stroke-width="1.6"/>
-      <path d="M459 160 L468 172 L455 176" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <path d="M301 240 L292 228 L305 224" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <rect x="342" y="184" width="76" height="32" rx="16" fill="none" stroke="var(--dim)" stroke-width="1.3"/>
-      <text class="mn" x="380" y="205" text-anchor="middle">MODEL</text>
-      <rect x="340" y="96" width="80" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="380" y="114" text-anchor="middle">PLAN</text>
-      <rect x="430" y="270" width="76" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="468" y="288" text-anchor="middle">ACT</text>
-      <rect x="250" y="270" width="84" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="292" y="288" text-anchor="middle">CHECK</text>
-      <!-- skill -->
-      <path d="M48 140 h92 l20 20 v110 h-112 z" fill="color-mix(in srgb,var(--acc) 8%,var(--card))" stroke="var(--acc)" stroke-width="1.4"/>
-      <line x1="66" y1="186" x2="140" y2="186" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="66" y1="206" x2="130" y2="206" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="66" y1="226" x2="138" y2="226" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <text class="mn mna" x="104" y="166" text-anchor="middle">SKILL</text>
-      <text class="s2" x="104" y="300" text-anchor="middle">your saved brief</text>
-      <line x1="166" y1="200" x2="282" y2="200" stroke="var(--acc)" stroke-width="2"/>
-      <path d="M274 193 L286 200 L274 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <!-- standard -->
-      <rect class="gl" x="650" y="120" width="310" height="150" rx="14" fill="color-mix(in srgb,var(--acc) 10%,var(--card))" stroke="var(--acc)" stroke-width="1.5"/>
-      <text class="mn mna" x="674" y="154">THE STANDARD · YOURS</text>
-      <text class="l1" x="674" y="190">Your test. Your data.</text>
-      <text class="l1" x="674" y="218">Your reviewer.</text>
-      <text class="s2" x="674" y="250">an agent checking itself shares its blind spots</text>
-      <path d="M570 200 L640 200" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 5"/>
-      <path d="M632 193 L644 200 L632 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <text class="s1 st" data-s="1" x="490" y="378" text-anchor="middle" style="fill:var(--ink)">Your prompt library is the first draft of a skill.</text>
-      <g class="st" data-s="2">
-        <text class="mn mna" x="490" y="396" text-anchor="middle">SET IT ONCE AS A SYSTEM PROMPT · CUSTOM INSTRUCTIONS · PROJECTS · GEMS</text>
-      </g>
-    </svg>
-  </div>
-</section>
-
 <!-- evidence: fewer junior hires, not mass replacement -->
 <section class="slide" data-ch="3" data-title="Fewer junior hires">
   <div class="k">Why practice matters now</div>
@@ -1061,7 +1030,7 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
   </div>
 </section>
 
-<!-- practice on purpose: conversation, not delegation -->
+<!-- practice on purpose, and if you lead people -->
 <section class="slide" data-ch="3" data-title="Delegate the task, keep the learning">
   <div class="k">Practise · On purpose</div>
   <h2 class="t">Delegate the task. <em>Keep the learning.</em></h2>
@@ -1079,8 +1048,6 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
     <div class="foot">The two-pass habit. Half an hour a week, on a task that matters.</div>
   </div>
 </section>
-
-
 
 <!-- the corners move, the check stays -->
 <section class="slide" data-ch="3" data-steps="2" id="s-corners" data-title="The corners move">
@@ -1126,25 +1093,9 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
   </style>
 </section>
 
-
-
-<!-- 33 · if you lead people -->
-<section class="slide" data-ch="3" data-title="If you lead people">
-  <div class="k">If you lead people</div>
-  <h2 class="t">Your juniors lost <em>the easy reps.</em></h2>
-  <div class="b">
-    <div class="row c3" style="height:250px">
-      <div class="card"><div class="h">Say the reasoning out loud.</div><div class="p">When you fix their work, explain why the standard is the standard. They used to absorb that through repetition.</div></div>
-      <div class="card"><div class="h">Run side-by-side drills.</div><div class="p">By hand first, then with AI, then compare what each one missed.</div></div>
-      <div class="card"><div class="h">Choose what stays human.</div><div class="p">Decide which fundamentals your team keeps practising on purpose. Revisit as the tools improve.</div></div>
-    </div>
-    <div class="foot">Delivering AI includes growing the people who can check it.</div>
-  </div>
-</section>
-
 <!-- EXERCISE 8 · action plan -->
 <section class="slide ex" data-ch="3" data-min="12" data-title="Exercise 8 · Your action plan">
-  <div class="exbar"><span class="pill">Exercise 8</span><span class="mins">12 MIN · QUIET, THEN SHARE</span></div>
+  <div class="exbar"><span class="pill">Exercise 8</span><span class="mins">12 MIN · QUIET, THEN PAIRS</span></div>
   <h2 class="t">Your action plan. <em>One line each.</em></h2>
   <div class="b">
     <div class="row c4" style="height:220px">

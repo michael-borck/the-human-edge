@@ -34,7 +34,10 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
   1. *Multiple choice:* "How do you use AI at work today?" Hardly at all / Tried it / Most weeks / It's built into my work.
   2. to 6. *Grid, 2×2*, one per Exercise 2 scenario (below). X axis "Precision needed", ends "Average" and "Precise". Y axis "Consequences if wrong", ends "Small" and "Large". The heatmap shows where the room clustered and where it split.
   7. *Scatter plot (optional)*, same axes: "Drop a dot for one task from your own week." Anonymous, and a good debrief picture.
-  8. to 10. *Multiple choice*, one per verification claim A, B and C: Verified / Overstated / Refuted / Can't tell yet.
+  8. *Multiple choice* (Exercise 3 debrief): "Which part of RTCF moved your score most?" Role / Task / Context / Format.
+  9. to 11. *Multiple choice*, one per verification claim A, B and C: Verified / Overstated / Refuted / Can't tell yet.
+  12. *Word cloud or open text* (opens Session 4): "What did you do last Tuesday that took more than 30 minutes?" If ClassPulse has no word cloud, use open text and read a few aloud.
+  13. *Multiple choice, several answers allowed* (slide 32): "Which of these have you seen happen on a project?" No agreed "done" / The demo looked finished but wasn't / The data turned out to be the problem / Checking was added after something went wrong / We bought the same tool as everyone else and expected an edge.
 
 - **Fallback for no Wi-Fi:** fingers on "three" (1 to 4 for corners A to D) and thumbs for verdicts (up verified, sideways overstated, down refuted, fist can't tell yet). It's still blind and simultaneous, and needs no paper.
 - **Optional paper.** The voting cards (`docs/downloads/voting-cards.pdf`, duplex, long-edge flip, four cards per A4) are worth it only if the organiser can reliably print *and* cut them. The desk card and field guide can be printed for anyone who wants paper.
@@ -69,7 +72,7 @@ The course is fully digital: participants need only a laptop or phone. Nothing h
 
 **Exercise slides** have two states: the instructions, then (one click) the debrief questions.
 
-**Slide 25**, the answers to the three claims in Exercise 5, exists only in the repo copy. The public deck and the PDF skip it.
+**Slide 26**, the answers to the three claims in Exercise 5, exists only in the repo copy. The public deck and the PDF skip it.
 
 The deck uses local fonts, so it runs offline.
 
@@ -87,28 +90,31 @@ The deck uses local fonts, so it runs offline.
 | **11:00** | 13–15 | Brief like a colleague; RTCF; live before/after demo | 15 |
 | 11:15 | 16 | **Exercise 3** · Brief it | 25 |
 | 11:40 | 17–18 | Four upgrades; push back three ways | 10 |
-| 11:50 | 19 | **Exercise 4** · Upgrade and save (library) | 25 |
-| 12:15 | | Debrief; download the CSV before lunch | 15 |
+| 11:50 | 19 | **Exercise 4** · Upgrade and save (library), room-wide push-back | 25 |
+| 12:15 | 20 | Agents, harnesses, skills: the saved prompt becomes a skill; optional demo (prompt injection, local vs cloud, or the triage skill) | 8 |
+| 12:23 | | Debrief; download the CSV before lunch | 7 |
 | 12:30 | | Lunch | 45 |
-| **1:15** | 20–22 | Check loop; five failure modes and VET; the quiet defaults (4-min bias check) | 11 |
-| 1:26 | 23–25 | **Exercise 5** · RetailFlow: analyse, first brief, check the three claims, blind vote, reveal, fix the brief and debrief | 35 |
-| 2:01 | 26–27 | Decide like me; test it blind | 5 |
-| 2:06 | 28 | **Exercise 6** · Decide like me | 24 |
+| **1:15** | 21–23 | Check loop; five failure modes and VET; the quiet defaults (4-min bias check) | 11 |
+| 1:26 | 24–26 | **Exercise 5** · RetailFlow: 60-second outside check, analyse, first brief, check the three claims, blind vote, reveal, fix the brief and debrief | 35 |
+| 2:01 | 27–28 | Decide like me; test it blind | 5 |
+| 2:06 | 29 | **Exercise 6** · Decide like me | 24 |
 | 2:30 | | Afternoon tea | 30 |
-| **3:00** | 29–34 | Opportunity Finder (spot, assign, prioritise); AI projects fail differently; design the human in; responsible by design | 17 |
-| 3:17 | 35 | **Exercise 7** · Plan the delivery of one workflow | 35 |
-| 3:52 | 36–37 | The 30-day gate; agents, harnesses, skills | 5 |
-| 3:57 | 38–41 | Why practice matters (Australian evidence), delegate the task and keep the learning, the corners move, if you lead people | 8 |
-| 4:05 | 42 | **Exercise 8** · Action plan, two calendar entries, two or three shares | 12 |
-| 4:17 | 43 | Close, the companion masterclasses, feedback form | 13 |
+| **3:00** | 30–31 | Word cloud of the room's own tasks (ClassPulse); Opportunity Finder: spot, assign, prioritise | 8 |
+| 3:08 | 32–34 | AI projects fail differently (ClassPulse vote and stories); design the human in; scale, pivot or kill | 10 |
+| 3:18 | 35 | **Exercise 7** · Plan the delivery of one workflow: the plan you'll judge at the gate | 35 |
+| 3:53 | 36–39 | Responsible by design (recap); fewer junior hires; delegate the task, with the leaders' table question; the corners move | 10 |
+| 4:03 | 40 | **Exercise 8** · Action plan: quiet, then pairs, two calendar entries | 12 |
+| 4:15 | 41 | Close: the Deloitte callback, what you're taking away, feedback form, companion masterclasses | 15 |
 | 4:30 | | Finish | |
 
 **If you're running late,** cut in this order:
-1. Slide 40 (the corners move): say it in one sentence.
-2. The agents slide (37).
-3. The Exercise 4 push-back step.
-4. The "if you lead people" slide (41).
+1. Slide 39 (the corners move): say it in one sentence.
+2. The leaders' table question on slide 38: say the three moves instead.
+3. The slide 32 vote: click through the table instead.
+4. The Exercise 4 push-back step.
 5. Exercise 6: drop to two test cases and skip the fix step (runs in 15).
+
+If you're running early, as the first run did in Session 2: use the optional demos on the agents slide (20), extend the Exercise 3 show-and-tell, or bank the time for Session 3, which has none to spare.
 
 Never cut the three claims in Exercise 5, the delivery plan or the action plan.
 
@@ -118,7 +124,7 @@ Never cut the three claims in Exercise 5, the delivery plan or the action plan.
 
 **The opening (slide 1), 90 seconds before you introduce yourself.** Open cold on the old title. No "good morning, I'm..." The script is in the slide notes. In short: in 2025 one of the Big Four delivered a A$440,000 report to the federal government; a University of Sydney academic checking the footnotes found references to papers that don't exist and a quote from a Federal Court judgement the judge never wrote; the firm had used AI, refunded part of the fee and published a corrected version. Then the turn: "That firm has the best AI tools money can buy. So do you. The tool didn't fail; the check did. If everyone has the same AI, what is yours worth? That's today." Click for the new title, then one line about yourself.
 
-Callbacks later in the day: the trust tool (a government report's citations are top-right), Gell-Mann amnesia (legal citations, outside most consultants' field), and VET's verify step (slide 21), which would have caught every reference. Facts if challenged: Deloitte Australia, an assurance review for the Department of Employment and Workplace Relations, reported October 2025 (AFR and others); the corrected report disclosed Azure OpenAI GPT-4o; Deloitte refunded the final instalment and said its findings were unchanged. Keep it factual: the point is the missing check, not the firm.
+Callbacks later in the day: the trust tool (a government report's citations are top-right), Gell-Mann amnesia (legal citations, outside most consultants' field), and VET's verify step (slide 22), which would have caught every reference. Facts if challenged: Deloitte Australia, an assurance review for the Department of Employment and Workplace Relations, reported October 2025 (AFR and others); the corrected report disclosed Azure OpenAI GPT-4o; Deloitte refunded the final instalment and said its findings were unchanged. Keep it factual: the point is the missing check, not the firm.
 
 Backup opening, if you'd rather not name a firm: "Show of hands: who used an AI tool this week? Keep them up if it was ChatGPT, Copilot, Claude or Gemini. Look around. Everyone has the same four tools. So when your work and your competitor's work both come out of the same tool, what makes yours worth paying for?" Then click.
 
@@ -166,12 +172,18 @@ Spares:
 
 **Exercise 3 coaching.**
 
-- Round 2 barely different from Round 1? Ask "what would you tell a new hire?"
-- Added a Role and nothing else? Coach Context and Format.
-- Good Round 2 prompts are four to eight sentences.
-- Push people towards real work; the scenario cards are a fallback.
+- **Push for real work at the start.** "Use one of your three weekly tasks from the Before the day list. Cards are only for confidential work." In the first run most people took scenario cards, Round 2 added little, and the session finished 20 minutes early.
+- **Card users:** Round 1 uses only the short ask at the top of the card; Round 2 adds what's under "What you know". The cards now hold the context back on purpose, so the gap between the scores is the lesson.
+- **Call checkpoints as you walk:** "You should be running Round 1." "Round 2 goes in a fresh chat." "Two minutes: score it before you stop."
+- **One question per table:** "What would you tell a new hire about this task?" or "Show me your Context line."
+- Round 2 barely different from Round 1? Ask "what would you tell a new hire?" Added a Role and nothing else? Coach Context and Format. Good Round 2 prompts are four to eight sentences.
+- **Debrief with real prompts.** Two volunteers put their Round 1 and Round 2 on the projector; the room scores both. Then ClassPulse poll 8, "Which part of RTCF moved your score most?". It usually shows Context winning, which proves slide 14 with the room's own numbers.
 
 **Push back (slide 18).** Three moves: the fact-gated guardrail, devil's advocate, and board of directors. In Exercise 4, everyone tries at least one.
+
+**Exercise 4: run the push-back as a room.** Everyone types "I don't think that's right" at the same moment, then thumbs up if their model held, down if it folded. Two minutes, a laugh, and it sets up the guardrail. Card users try the Questions upgrade first ("ask me up to five questions") and count how much of "What you know" it asks for.
+
+**Agents and skills (slide 20), before lunch.** Moved here from Session 4: the saved prompt with its check is the first draft of a skill, and Session 2 had time to spare. Five minutes, plus one optional demo if the room is ahead (prompt injection, local versus cloud, or the triage skill; all below under Session 4's optional demos).
 
 **Exercise 4.** Fast finishers can do the voice pass (in the workbook): the tool rewrites its output in their voice from a 100-word sample (anyone with nothing they can paste writes 100 words on why they came today), and optionally writes a style brief for their custom instructions. The upgrades matter most for people whose workplace has approved an older or cheaper model. Make sure everyone leaves for lunch with three saved prompts, each with its check. That's the promised prompt library. The full version is Write like me on the Go deeper page, the partner to Decide like me in Session 3: one teaches the tool how they sound, the other how they choose.
 
@@ -179,7 +191,7 @@ Spares:
 
 **The point:** fast analysis, slow trust. Verification comes from outside the tool.
 
-**VET (slide 21)** is for claims people can't check against their own data:
+**VET (slide 22)** is for claims people can't check against their own data:
 
 - **Verify** the source independently.
 - **Explain** it back in your own words.
@@ -187,9 +199,11 @@ Spares:
 
 It's the practical answer to Gell-Mann amnesia from the morning. The starter prompt pack has a copyable VET prompt.
 
-**The quiet defaults (slide 22).** Four minutes. Run the senior manager / administrative officer pair live, or let tables run it. Look at names, warmth vs capability, and who holds authority. The longer version, other pairs and Survival of the Best Fit are on the Responsible use page.
+**The quiet defaults (slide 23).** Four minutes. Run the senior manager / administrative officer pair live, or let tables run it. Look at names, warmth vs capability, and who holds authority. The longer version, other pairs and Survival of the Best Fit are on the Responsible use page.
 
-**Exercise 5** runs 35 minutes across three slides. On slide 23: 2 min frame, 9 min explore, 6 min first brief (timer set to 17). On slide 24: 8 min checking the three claims in pairs. Then a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet), revealing on slide 25 one claim per click, about 6 min. Last 4 min: everyone fixes their brief and adds the What I checked line while you run the debrief. Expect B to fool the most people and C to split the room.
+**The 60-second outside check, before Exercise 5.** Checking from outside the tool was the hardest habit in the first run: people kept asking the AI again. So show it once. On the projector, ask the AI "How many Returns & Refunds tickets are there?", then filter the spreadsheet yourself (48). "That's outside: the data, the source, a person who knows, your own sum. Not asking it again." The claims slide's footer now names the outside checks too. In the debrief, call back the opening: where would an outside check have caught the Deloitte footnotes? (The source: one search per reference.)
+
+**Exercise 5** runs 35 minutes across three slides. On slide 24, first the 60-second outside check (below), then 2 min frame, 9 min explore, 6 min first brief (timer set to 17). On slide 25: 8 min checking the three claims in pairs. Then a blind vote one claim at a time in ClassPulse or with thumbs (Verified, Overstated, Refuted, or Can't tell yet), revealing on slide 26 one claim per click, about 6 min. Last 4 min: everyone fixes their brief and adds the What I checked line while you run the debrief. Expect B to fool the most people and C to split the room.
 
 - If uploads are blocked, most tools accept pasted CSV text; the file is small.
 - For anyone whose own data could never go into a tool, show the shape trick (prompt 14): describe the columns and have it write formulas, a short script or a single web page that runs in the browser. The AI never sees the data. Run it on RetailFlow first, where the answers are known. If they can't read the code, it's top-right, and a web page must not send the file anywhere.
@@ -197,7 +211,7 @@ It's the practical answer to Gell-Mann amnesia from the morning. The starter pro
 - **Optional 2-minute demo at the debrief: the confident miscount.** Paste the whole RetailFlow CSV into a local model on the projector (the class chat on puente, or Msty on the laptop) and ask: *How many rows are there? Which category has the lowest average satisfaction, and what is it? What is the average response time for Email and for Live Chat? For Sundays, and overall?* Tested 27 October 2026: gemma4:12b said 130 rows (true: 260), Email 12.4 h and Live Chat 5.8 h (true: 13.2 and 4.0), Sunday 11.0 h against 9.4 overall (true: 13.7 and 9.2). It would have judged claim C wrong for the wrong reason. qwen3.5:4b got none right. The point: fluent, confident, wrong. The cloud tools get these right only because they run code on the file. Then show the fix: ask the same model for the spreadsheet formulas instead (prompt 14), and let the spreadsheet do the sums. `instructor/local-chat/loadtest.py --analysis` runs the same check and marks the answers.
 - The brief comes before the claims on purpose. People check the claims against their own first draft, and anyone whose brief repeated B or C finds out before Karen would have.
 
-**Decide like me (slides 26 to 28).** Write down how you make one decision as if-then rules, then test them on past calls. The new-starter question picks the method: *could you tell a new starter, out loud, why you decide the way you do?* SIM: Say, Interview or Mine. Then save the rules, test them blind, fix a mismatch. The method is Dylan Davis's; the Decide like me page on the site has the full version, with the mining and save prompts and the reason the re-test goes in a new chat.
+**Decide like me (slides 27 to 29).** Write down how you make one decision as if-then rules, then test them on past calls. The new-starter question picks the method: *could you tell a new starter, out loud, why you decide the way you do?* SIM: Say, Interview or Mine. Then save the rules, test them blind, fix a mismatch. The method is Dylan Davis's; the Decide like me page on the site has the full version, with the mining and save prompts and the reason the re-test goes in a new chat.
 
 The slide title is "Teach it your rules. Keep the call." The rules draft the call and the participant still makes it. That keeps the exercise in line with "never surrender" at the close. Davis's method goes further and lets the tool decide alone once it passes; say so if anyone has seen it.
 
@@ -262,22 +276,25 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 **The point:** treat one redesigned workflow as a small AI project, and design the human checkpoints in from the start. Then keep practising on purpose, because routine work no longer trains you for free.
 
-**AI projects fail differently (slide 32).** Five assumptions that hold for normal projects and break for AI. Spend the time on "the demo is a trap" and "the data is the uncertainty"; they are the ones participants have seen happen. The full reading is in the field guide and on the Tools page.
+**Open with the room (slides 30 and 31).** Session 4 felt flattest in the first run: the slides came straight after afternoon tea with no vote. Start with ClassPulse poll 12, a word cloud of "What did you do last Tuesday that took more than 30 minutes?", then sort a few answers into the four signals. Prioritise is now the foot line of slide 31 (start with a quick win: real time saved, cheap to check) rather than its own slide; the full grid is in the field guide.
+
+**AI projects fail differently (slide 32).** Run ClassPulse poll 13 first ("Which of these have you seen happen?", several answers allowed), ask the biggest group for one story, then click through. Five assumptions that hold for normal projects and break for AI. Spend the time on "the demo is a trap" and "the data is the uncertainty"; they are the ones participants have seen happen. The full reading is in the field guide and on the Tools page.
 
 **Design the human in (slide 33).** The four moves (scope, checkpoints, people, gate) are the same ones that make large AI projects succeed. Checkpoints come straight from the trust tool: every amber or red step gets a named person and a specific check. Staff them with someone who knows what right looks like (the evaluator's advantage), and keep at least one human step deliberately to build capability.
 
-**Responsible by design (slide 34).** The ethics slide, two minutes. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. It is now law as well as good practice: from 10 December 2026, the Privacy Act (APP 1.7 to 1.9) requires an organisation's privacy policy to disclose where a computer program makes, or substantially and directly informs, decisions that could significantly affect people, using their personal information. The OAIC published guidance on 30 September 2026. The practical question for the room: who is updating your privacy policy, and do they know about the AI tools your teams already use? If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
+**Responsible by design (slide 36, straight after Exercise 7).** The ethics slide, two minutes, and now a recap of the whole day. Australia's Guidance for AI Adoption (October 2025) replaced the eight AI Ethics Principles with six essential practices; click through to show the course has practised five. Spend the time on number 4, telling people when AI drafted or decided something that affects them, and ask what their organisation's policy says. It is now law as well as good practice: from 10 December 2026, the Privacy Act (APP 1.7 to 1.9) requires an organisation's privacy policy to disclose where a computer program makes, or substantially and directly informs, decisions that could significantly affect people, using their personal information. The OAIC published guidance on 30 September 2026. The practical question for the room: who is updating your privacy policy, and do they know about the AI tools your teams already use? If there's time, use the chatbot-policy dilemma from the notes. Point to the Responsible use page and the Ethics of artificial intelligence masterclass.
 
-**Exercise 7.**
+**Exercise 7.** In the first run the purpose wasn't clear, partly because the gate slide came after the exercise. Now it comes before, and you say the purpose before the timer starts: "You're writing the plan you'll judge in 30 days. The gate at the end is the test. Write the kill criterion now, while you're not invested in it."
 
+- **Debrief:** two people read their kill criterion aloud. Vague ("if it doesn't work")? Ask "what number would tell you?" The worked example now has one: "scale if two edits or fewer; kill if a figure is wrong twice".
 - **Strong plans** mix AI and human steps, put a named check before anything leaves the building, claim realistic savings, and set a gate with a real kill criterion.
 - **Push back on** "every step AI-led", missing checkpoints, untested plans, and "we'll see how it goes" as a gate.
 - Mapping needs no data. If the live-test inputs can't go into a tool, people invent a few lines in the same shape. Anyone who can't use their own workflow plans scenario card 3 (Friday status update) or 6 (monthly invoicing).
 - The Map my workflow and Pre-mortem starter prompts help anyone who's stuck. Anyone whose Exercise 6 rules passed the blind test can make them one step in the plan, with a corner and a checkpoint like any other step.
 
-**The gate (slide 36).** Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
+**The gate (slide 34, before Exercise 7).** Teach it before the exercise, because the exercise ends by setting one: "The last thing you'll write is what result in 30 days would make you scale, pivot or kill. That's the test your plan has to pass." Name the three gate mistakes: sunk cost, cherry-picking, and treating "not perfect" as "broken". Killing is a good outcome. The expensive version is a workflow nobody trusts and nobody switches off.
 
-**The evidence (slide 38).** Lead with Australia and keep it balanced:
+**The evidence (slide 37).** Lead with Australia and keep it balanced:
 
 - **DEWR**, Office of the Chief Economist, *AI and employment in Australia*, July 2026. No broad AI-driven upheaval, and youth outcomes mostly held up. The occupations most exposed to AI automation have grown more slowly. The authors call this suggestive, not definitive.
 - **Jobs and Skills Australia**, *Generative AI Capacity Study*, 2025. Some employers shifted hiring towards experienced staff. The ReadyTech quote comes from this study via ACS Information Age, 15 September 2025. Entry-level roles haven't declined economy-wide; JSA says to monitor closely.
@@ -285,15 +302,19 @@ Checked against `data/retailflow-customer-service-data.csv`: 260 rows, 3 July to
 
 The message is fewer junior hires, not mass replacement.
 
-**Practice (slide 39).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning.
+**If you lead people: a 2-minute table question on slide 38** (it replaced the leaders' slide). "Your juniors lost the easy reps. Which of these will you do?" Say the reasoning out loud when you fix their work (the Say method from Exercise 6); run side-by-side drills, by hand then with AI; choose which fundamentals your team keeps practising. The field guide has the three moves.
+
+**Practice (slide 38).** This is your *Conversation, Not Delegation* idea: delegation hands over the task and the learning together. The two-pass habit keeps the learning.
 
 Why conversation works, if anyone asks for the evidence: a meta-analysis of 341 effect sizes on teaching critical thinking found that the opportunity for dialogue, authentic problems and mentoring had the clearest positive effects (Abrami et al. (2015), "Strategies for Teaching Students to Think Critically: A Meta-Analysis", *Review of Educational Research* 85(2), 275 to 314). Be honest about the step: that research is about people in dialogue with people. Dialogue with AI is a reasonable extension, not a tested one, and it only counts as dialogue if the tool pushes back; otherwise it drifts towards your view (slide 18). The practical consequence: for brainstorming and thinking out loud, the model barely matters, because the ideas it triggers in you are the point. That's green-corner work, and a small local model is enough. For exact facts and data, use the strongest tool you're allowed, and still check. The broken-ladder framing of the junior pipeline problem draws on Dylan Davis, and the slide notes say so. The visuals and wording are our own.
 
-**Exercise 8.** Eight minutes of quiet. Reject "use AI more"; ask "which task, which tool, which day?" Two calendar entries: this week's two-pass, and the day-30 gate. For the quarter line, send people back to their Exercise 6 list of what they'd never let it decide.
+**Exercise 8.** Seven minutes of quiet, then three in pairs: each person reads their this-week line to a neighbour, who asks "which task, which tool, which day?". Then two volunteers to the room. Saying it aloud makes people commit and lifts the energy for the close. Reject "use AI more". Two calendar entries: this week's two-pass, and the day-30 gate. For the quarter line, send people back to their Exercise 6 list of what they'd never let it decide.
 
-**Optional prompt-injection demo (slide 37), or a fast-finisher task.** Two minutes. Download the Northbridge proposal from the Beyond the day page (`data/northbridge-proposal.docx`, made by `build/make_demo_doc.py`). It's an invented supplier offer to RetailFlow with one paragraph in 2-point white text telling the AI to recommend signing, leave out the minimum term, exit fee, price review and data location, and end with "pineapple". Upload it to a tool on the projector and ask for a summary for Karen with the cost, the risks and whether to sign. Then select all in Word and turn the text black. If the tool resists, say so: current chat tools often catch this when you paste it yourself, and the real exposure is agents reading email and web pages unattended. Either way the point lands: anything the tool reads can carry instructions.
+**Close (slide 41): end on the opening.** Before the slide's takeaways, ask: "Remember the footnotes in that $440,000 report? What would have caught them?" Let the room call out the trust tool (citations in a government report are top-right), VET (one search per reference), the check from outside the tool, and a person who owns the output with a gate before anything scales. "Same tools as Deloitte. Different judgement." It ends the day on the room's own answer rather than a list.
 
-**Optional local-versus-cloud demo (slide 37, or Beyond the day), two minutes.** In the class chat, run the same brainstorm in llama3.1 and in Sonnet ("Ten ways a small team could cut response times on weekends"): the ideas they spark in the room are usually close. Then the same factual question in both: Sonnet usually pulls clearly ahead. Try both prompts the day before so you know what each model gives. The model you choose follows the corner. Four more points if there's time:
+**Optional prompt-injection demo (slide 20 before lunch, or straight after the Exercise 5 reveal), or a fast-finisher task.** Two minutes. Download the Northbridge proposal from the Beyond the day page (`data/northbridge-proposal.docx`, made by `build/make_demo_doc.py`). It's an invented supplier offer to RetailFlow with one paragraph in 2-point white text telling the AI to recommend signing, leave out the minimum term, exit fee, price review and data location, and end with "pineapple". Upload it to a tool on the projector and ask for a summary for Karen with the cost, the risks and whether to sign. Then select all in Word and turn the text black. If the tool resists, say so: current chat tools often catch this when you paste it yourself, and the real exposure is agents reading email and web pages unattended. Either way the point lands: anything the tool reads can carry instructions.
+
+**Optional local-versus-cloud demo (slide 20, or Beyond the day), two minutes.** In the class chat, run the same brainstorm in llama3.1 and in Sonnet ("Ten ways a small team could cut response times on weekends"): the ideas they spark in the room are usually close. Then the same factual question in both: Sonnet usually pulls clearly ahead. Try both prompts the day before so you know what each model gives. The model you choose follows the corner. Four more points if there's time:
 
 - **Privacy.** The local model runs on hardware you control. Nothing typed goes to a vendor.
 - **The trade-off.** It's slower and weaker. Measured on puente's 4060 Ti, one person at a time: gemma4:12b writes about 30 tokens a second, qwen3.5:4b about 70. Speed follows the card's memory bandwidth divided by the model's size, so a smaller model is faster and spare VRAM isn't.
@@ -316,7 +337,7 @@ On the 4060 Ti everything was about half as fast. None of the local models can d
 
 Before the day: registration in `librechat.yaml` is limited to Curtin email domains, so open it (or add participants' domains) for the day, through puente's config since `puente up` regenerates the file, and do a test sign-up with a non-Curtin address. On the day: tell people chats are stored on your server and when they'll be deleted. Afterwards: close registration, delete the accounts (`npm run delete-user`; on LibreChat v0.8.8 or older, also clear uploaded files), and check the Anthropic spend.
 
-**Optional agent demo (slide 37).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best right after the agents slide, and Exercise 6 has already given everyone the idea.
+**Optional agent demo (slide 20).** The kit is in `instructor/retailflow-triage-demo/`. It takes three minutes: the same prompt before and after a skill file exists. Skip it if anything is flaky. It lands best on the agents slide, right after everyone has saved prompts with their checks in Exercise 4.
 
 ## What you'll hear, and how to respond
 
@@ -350,18 +371,18 @@ They come up every run, often at the first break. Short answers below; the full 
 
 AI changes fast. Check these the week before; most take a minute.
 
-- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 38, the field guide's practice page and these notes.
+- [ ] **DEWR** "AI and employment in Australia" monitoring: any update? Revise slide 37, the field guide's practice page and these notes.
 - [ ] **Jobs and Skills Australia**: any newer AI transition release?
 - [ ] **Stanford** "Canaries in the Coal Mine?": a newer revision? Is the 19% figure still current?
 - [ ] **Training defaults.** Data and training defaults for consumer vs business plans of the main tools. Slide 12, the field guide and the pre-reading speak in general terms; make sure that's still true.
-- [ ] **Product names** in "Before the day", slide 37, and the "Set it once" table on Beyond the day (menu names move often).
-- [ ] **Privacy Act automated decisions** (APP 1.7 to 1.9, in force from 10 December 2026): any new OAIC guidance? Update slide 34's notes, the Responsible use page and the Decide like me page.
+- [ ] **Product names** in "Before the day", slide 20 (agents), and the "Set it once" table on Beyond the day (menu names move often).
+- [ ] **Privacy Act automated decisions** (APP 1.7 to 1.9, in force from 10 December 2026): any new OAIC guidance? Update slide 36's notes, the Responsible use page and the Decide like me page.
 - [ ] **The big questions** on Beyond the day: is there a newer International AI Safety Report or key update, and are the Australian AI Safety Institute's name and status still right?
 - [ ] **Data settings** named in "Set it up safely" (Responsible use) and the confidentiality answers above: still where the products put them, and Perplexity's training setting still called "AI Data Usage"?
 - [ ] **Local AI tools** on Resources and Beyond the day (Msty Studio, Ollama, Open WebUI, LibreChat): still free, still the easiest options?
 - [ ] **Trust tool game** is up, and its corner names still match the deck.
 - [ ] **ClassPulse** is up, the session is built, and the join QR scans from the back of the room.
-- [ ] **Feedback form.** Slide 43 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
+- [ ] **Feedback form.** Slide 41 carries Curtin's Qualtrics QR (form SV_aWzWbW4l34bk2Am). Confirm it's still the right form for this run.
 - [ ] **Rebuild:** `python3 build/build.py`, then commit `docs/`.
 
 ## After the day

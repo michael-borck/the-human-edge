@@ -696,7 +696,10 @@
   <aside class="notes">
     <p><b>Timing:</b> 3 min choosing, 8 min Round 1, 10 min Round 2, 4 min debrief.</p>
     <ul>
-      <li>Push people towards real work. The scenario cards are a fallback, not the default.</li>
+      <li>Push people towards real work. The scenario cards are a fallback, not the default: "Use one of your three weekly tasks from the Before the day list. Cards are only for confidential work." Most of the first room took cards and finished early.</li>
+      <li>Card users: Round 1 uses only the short ask at the top of the card. Round 2 adds what's in "What you know". The gap between the two scores is the lesson.</li>
+      <li>Call checkpoints as you walk: "You should be running Round 1." "Round 2 goes in a fresh chat." "Two minutes: score it before you stop." At each table ask one question: "What would you tell a new hire about this task?" or "Show me your Context line."</li>
+      <li>Debrief with real prompts: two volunteers paste their Round 1 and Round 2 onto the projector, and the room scores both. Then the ClassPulse poll "Which part moved your score most?" (Role, Task, Context, Format). It usually shows Context winning, which proves slide 14 with the room's own numbers.</li>
       <li>Coaching cues: Round 2 barely different from Round 1? Ask "what would you tell a new hire?" Added a Role and nothing else? Coach Context and Format.</li>
       <li>Good Round 2 prompts are four to eight sentences, not one and not twenty.</li>
     </ul>
@@ -784,17 +787,78 @@
         <div class="h">Which upgrade helped most?</div>
         <div class="h">Whose model folded? Which push-back move helped?</div>
         <div class="h">What check did you attach to each prompt?</div>
-        <div class="p" style="margin-top:18px">A saved prompt with its check attached is the first draft of a skill. More on that this afternoon.</div>
+        <div class="p" style="margin-top:18px">A saved prompt with its check attached is the first draft of a skill. More on that next.</div>
       </div></div>
     </div>
   </div></div>
   <aside class="notes">
     <p><b>Timing:</b> 8 min upgrade, 5 min pushback, 8 min saving, 4 min debrief. Lunch at 12:30.</p>
     <ul>
+      <li>Run the push-back step as a room: everyone types "I don't think that's right" at the same moment, then thumbs up if their model held, down if it folded. It takes two minutes, gets a laugh, and sets up the guardrail.</li>
+      <li>Fast finishers get a specific task, not "you can stop": the voice pass, or prompts 25 to 27 (Write like me).</li>
       <li>The library is a promised takeaway. Make sure everyone saves three before lunch, in the digital workbook or the prompt builder.</li>
       <li>The CHECK line matters: it links each prompt back to the trust tool.</li>
       <li>Fast finishers: the voice pass. Paste about 100 words they actually wrote (sanitised), or write 100 fresh words on why they came today, and ask "Rewrite your last output in my voice, leading with the one thing only I would say." Generic competence sounds like everyone; this is how output starts sounding like them. The full version is Write like me on the Go deeper page. It pairs with Decide like me this afternoon: one teaches the tool how they sound, the other how they choose.</li>
       <li>Before lunch: download the RetailFlow CSV from the course site so you're ready at 1:15.</li>
+    </ul>
+  </aside>
+</section>
+
+<!-- agents, harnesses, skills: the bridge from the prompt library -->
+<section class="slide" data-ch="1" data-title="Agents and skills">
+  <div class="k">Beyond chat</div>
+  <h2 class="t">Agents run the loop. <em>You set the standard.</em></h2>
+  <div class="b">
+    <svg viewBox="0 0 980 400">
+      <rect x="10" y="20" width="560" height="320" rx="16" fill="#0D1118" stroke="var(--hair)"/>
+      <text class="mn" x="34" y="50">THE HARNESS</text>
+      <text class="s2" x="34" y="70">instructions · what it can read · tools it can use · the model</text>
+      <!-- loop -->
+      <circle cx="380" cy="200" r="88" fill="none" stroke="color-mix(in srgb,var(--acc) 50%,transparent)" stroke-width="1.6"/>
+      <path d="M459 160 L468 172 L455 176" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <path d="M301 240 L292 228 L305 224" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <rect x="342" y="184" width="76" height="32" rx="16" fill="none" stroke="var(--dim)" stroke-width="1.3"/>
+      <text class="mn" x="380" y="205" text-anchor="middle">MODEL</text>
+      <rect x="340" y="96" width="80" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="380" y="114" text-anchor="middle">PLAN</text>
+      <rect x="430" y="270" width="76" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="468" y="288" text-anchor="middle">ACT</text>
+      <rect x="250" y="270" width="84" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
+      <text class="mn mna" x="292" y="288" text-anchor="middle">CHECK</text>
+      <!-- skill -->
+      <path d="M48 140 h92 l20 20 v110 h-112 z" fill="color-mix(in srgb,var(--acc) 8%,var(--card))" stroke="var(--acc)" stroke-width="1.4"/>
+      <line x1="66" y1="186" x2="140" y2="186" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="66" y1="206" x2="130" y2="206" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <line x1="66" y1="226" x2="138" y2="226" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
+      <text class="mn mna" x="104" y="166" text-anchor="middle">SKILL</text>
+      <text class="s2" x="104" y="300" text-anchor="middle">your saved brief</text>
+      <line x1="166" y1="200" x2="282" y2="200" stroke="var(--acc)" stroke-width="2"/>
+      <path d="M274 193 L286 200 L274 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <!-- standard -->
+      <rect class="gl" x="650" y="120" width="310" height="150" rx="14" fill="color-mix(in srgb,var(--acc) 10%,var(--card))" stroke="var(--acc)" stroke-width="1.5"/>
+      <text class="mn mna" x="674" y="154">THE STANDARD · YOURS</text>
+      <text class="l1" x="674" y="190">Your test. Your data.</text>
+      <text class="l1" x="674" y="218">Your reviewer.</text>
+      <text class="s2" x="674" y="250">an agent checking itself shares its blind spots</text>
+      <path d="M570 200 L640 200" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 5"/>
+      <path d="M632 193 L644 200 L632 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
+      <text class="s1 st" data-s="1" x="490" y="378" text-anchor="middle" style="fill:var(--ink)">Your prompt library is the first draft of a skill.</text>
+      <g class="st" data-s="2">
+        <text class="mn mna" x="490" y="396" text-anchor="middle">SET IT ONCE AS A SYSTEM PROMPT · CUSTOM INSTRUCTIONS · PROJECTS · GEMS</text>
+      </g>
+    </svg>
+  </div>
+  <aside class="notes">
+    <ul>
+      <li>Three words you'll hear all year. An <b>agent</b> is a model in a loop with tools: it plans, acts, checks, and tries again until the job is done.</li>
+      <li>The <b>harness</b> is the software around the model: its standing instructions, what it can read, what tools it may call. ChatGPT, Copilot in Outlook, a booking system that drafts replies: all harnesses.</li>
+      <li>A <b>skill</b> is a plain-text brief the harness loads when your request matches it. It's your RTCF prompt plus its check, written once. Because it's text, it moves between tools.</li>
+      <li>An agent automates the loop, not the standard. If the loop checks its own work, it shares the model's blind spots. The standard still comes from outside.</li>
+      <li>Timing: 5 minutes, straight after Exercise 4. It sits here because the saved prompt with its check is the first draft of a skill, and because Session 4 is already the densest.</li>
+      <li>The new risk agents bring: prompt injection. Anything the agent reads (an email, a web page, a supplier's document) can carry hidden instructions, and the agent may follow them as if you wrote them. Connect tools on purpose, and keep a person between what it reads and what it does. Optional 2-minute demo: the Northbridge proposal on the Beyond the day page, which has a hidden instruction in white text.</li>
+      <li><b>Click:</b> the bridge. Everything you just typed per chat (role, task, context, format, its check) can be saved once as the standing brief. Your prompt library from Exercise 4 is the first draft. This afternoon's decision rules (Exercise 6) are the same idea again. Trade names differ: custom instructions (ChatGPT), instructions and projects (Claude), Instructions for Gemini and Gems (Gemini). The generic name is a system prompt. The Beyond the day page on the site shows where the setting lives in each tool, and covers MCP and the rest of the jargon.</li>
+      <li>Optional 3-minute demo: instructor/retailflow-triage-demo.</li>
+      <li>Optional 2-minute local-versus-cloud demo in the class chat: the same brainstorm in llama3.1 and in Sonnet (the ideas they spark are usually close), then the same factual question in both (Sonnet usually pulls clearly ahead). The model you choose follows the corner. Also: privacy, the speed and quality trade-off, the context-window trap. Facilitator guide has the numbers.</li>
     </ul>
   </aside>
 </section>
@@ -930,6 +994,7 @@
     </div>
   </div></div>
   <aside class="notes">
+    <p><b>Before the timer: 60 seconds of "outside", live.</b> On the projector, ask the AI one count from the CSV ("How many Returns &amp; Refunds tickets are there?"), then filter the spreadsheet yourself (48). "That's what checking from outside means: the data, the source, a person who knows, your own sum. Not asking it again." Checking outside the tool is the hardest habit of the day; seeing it once makes it concrete.</p>
     <p><b>Timing, 35 minutes in all:</b> on this slide 2 min frame, 9 min explore, 6 min first brief (the timer is set to 17). Then the claims slide: 8 min checking in pairs, about 6 min for three votes and the reveal, 4 min to fix the brief and debrief.</p>
     <ul>
       <li>Expected findings: Returns &amp; Refunds lowest satisfaction (1.6), Delivery Problems next (2.2). Response time cuts across everything: satisfaction falls below 1.7 when response exceeds 12 hours.</li>
@@ -953,7 +1018,7 @@
       <div class="card"><div class="lab a">Claim C</div><div class="h" style="font-family:var(--serif);font-weight:500">"Sunday response times are more than double the overall average."</div></div>
     </div>
     <div class="foot" style="display:flex;justify-content:space-between;align-items:center">
-      <span>Check against the data, not the confidence. Is any of them in your brief?</span>
+      <span>Check outside the tool: the data, the source, your own sum. Is any of them in your brief?</span>
       <span><span class="chip" style="border-color:var(--green);color:var(--green)">Verified</span> <span class="chip" style="border-color:var(--amber);color:var(--amber)">Overstated</span> <span class="chip" style="border-color:var(--red);color:var(--red)">Refuted</span></span>
     </div>
   </div>
@@ -997,6 +1062,7 @@
       <li>B is the one to remember. Forwarded to Karen, she'd fix the wrong thing. That's what AI failure looks like: not nonsense, but the form of insight without the substance.</li>
       <li>C maps straight onto the trust tool: the sentence sounds casual, but the decision it feeds is in the top-right corner.</li>
       <li>Optional 2 minutes in the debrief: paste the whole CSV into a local model on the projector and ask the row count and three averages. Tested: gemma4:12b said 130 rows (260), Sunday 11.0 h (13.7). Fluent, confident, wrong; the cloud tools only get it right by running code. Then ask it for the formulas instead (prompt 14). Details in the facilitator guide.</li>
+      <li>Callback while they fix their briefs: "Where would an outside check have caught the Deloitte footnotes?" (The source itself: one search per reference.)</li>
       <li>Then 4 minutes: fix the brief and add the What I checked line. Debrief as they write. Did every table find the same top driver? Whose first brief repeated B or C? What should Karen do on Monday? Close on: if you didn't verify it, you don't know it.</li>
     </ul>
   </aside>
@@ -1042,7 +1108,7 @@
     <div class="row c2" style="height:300px">
       <div class="card st" data-s="1"><div class="lab a">Save it</div>
         <div class="h">Same chat: "Write these rules up so I can reuse them."</div>
-        <div class="p">Rules, not stories: take out the names, clients and figures. Save it where your tool keeps standing instructions. Agent tools call a saved brief like this a skill. More on that at the end of the day.</div></div>
+        <div class="p">Rules, not stories: take out the names, clients and figures. Save it where your tool keeps standing instructions. Agent tools call a saved brief like this a skill, as on the agents slide before lunch.</div></div>
       <div class="card st" data-s="2"><div class="lab a">Then the blind test</div>
         <div class="h">Three past cases. Inputs only. Your calls written first.</div>
         <div class="p">It makes each call and names the rule it used. A mismatch is a rule you've never put into words. Add it, then re-test in a new chat: the chat you built it in already knows your answers.</div></div>
@@ -1058,7 +1124,7 @@
       <li>Why a new chat for the re-test: the chat where the rules were built has watched you decide, so it can pass on memory. A new chat with only the rules loaded tests the rules.</li>
       <li>Expect four matches in five. The fifth is where they learn a rule they didn't know they had. Don't chase five out of five in the room.</li>
       <li>Models aren't deterministic: the same case can come back with a different call on a rerun. Judge the batch, not one case.</li>
-      <li>Optional 3-minute demo here or on the agents slide: instructor/retailflow-triage-demo, before and after a skill file exists.</li>
+      <li>Optional 3-minute demo here: instructor/retailflow-triage-demo, before and after a skill file exists. It also runs on the agents slide before lunch.</li>
     </ul>
   </aside>
 </section>
@@ -1110,6 +1176,7 @@
      ===================================================================== -->
 
 <!-- 23 · spot -->
+<!-- opportunity finder 1: spot -->
 <section class="slide" data-ch="3" data-title="Opportunity Finder · spot">
   <div class="k">Session 4 · Deliver · Opportunity Finder · 1 Spot</div>
   <h2 class="t">Four signals <em>in your week.</em></h2>
@@ -1124,16 +1191,16 @@
   </div>
   <aside class="notes">
     <ul>
+      <li><b>Open Session 4 with the room, not the slide.</b> Before showing the four signals, run a ClassPulse word cloud (or open text): "What did you do last Tuesday that took more than 30 minutes?" Give it a minute, show the cloud, then click to the slide and sort a few of their answers into the four signals. Their week becomes the examples. No Wi-Fi: three or four people call theirs out.</li>
       <li>Tool four has three steps: spot, assign, prioritise. Step one is noticing.</li>
       <li>The four signals are prompts for your memory, not boxes to file things in. A weekly report can be Automate and Generate at once; that's fine.</li>
-      <li>Ask: what did you do last Tuesday that took more than 30 minutes?</li>
     </ul>
   </aside>
 </section>
 
-<!-- 24 · assign -->
+<!-- opportunity finder 2 and 3: assign, then prioritise -->
 <section class="slide" data-ch="3" data-title="Opportunity Finder · who leads">
-  <div class="k">Tool 4 · Opportunity Finder · 2 Assign</div>
+  <div class="k">Tool 4 · Opportunity Finder · 2 Assign · 3 Prioritise</div>
   <h2 class="t">Decide <em>who leads</em> each step.</h2>
   <div class="b">
     <div class="row c4" style="height:290px">
@@ -1146,7 +1213,7 @@
       <div class="card"><div class="lab a">Human only</div><div class="split"><i style="width:0%"></i></div>
         <div class="h" style="font-size:18px">Empathy, ethics, accountability.</div><div class="p">Telling someone their role is going.</div></div>
     </div>
-    <div class="foot">Then the trust tool sets how hard you check each step.</div>
+    <div class="foot"><b>Then prioritise:</b> start with a quick win. Real time saved, cheap to check. The trust tool sets how hard you check each step.</div>
   </div>
   <aside class="notes">
     <ul>
@@ -1154,51 +1221,12 @@
       <li>This answers a different question from the trust tool. Trust tool: how much do I check this output? Spectrum: who leads this step, and should AI be involved at all?</li>
       <li>Human only is a real zone. Some work needs a person's empathy, judgement and accountability, even if the AI could produce words for it.</li>
       <li>When in doubt, start with more human involvement and hand over as the AI proves itself.</li>
+      <li>Step 3, prioritise, is the foot line: two questions per task, how much time it saves each week and how much effort it takes to set up. The hidden cost is checking: a task that saves 30 minutes but needs 25 minutes of verification is not a quick win, which is why quick wins tend to be green-corner work. The full grid is in the field guide.</li>
     </ul>
   </aside>
 </section>
 
-<!-- 25 · prioritise -->
-<section class="slide" data-ch="3" data-title="Opportunity Finder · prioritise">
-  <div class="k">Tool 4 · Opportunity Finder · 3 Prioritise</div>
-  <h2 class="t">Start with <em>the quick wins.</em></h2>
-  <div class="b">
-    <svg viewBox="0 0 980 420">
-      <rect x="113" y="13" width="264" height="179" rx="10" fill="color-mix(in srgb,var(--acc) 16%,transparent)" stroke="var(--acc)" stroke-width="1.4"/>
-      <rect x="383" y="13" width="264" height="179" rx="10" fill="var(--card)" stroke="var(--hair)"/>
-      <rect x="113" y="198" width="264" height="179" rx="10" fill="var(--card)" stroke="var(--hair)"/>
-      <rect x="383" y="198" width="264" height="179" rx="10" fill="#0D1016" stroke="var(--hair)" stroke-dasharray="4 6"/>
-      <text class="mn mna" x="131" y="44">QUICK WINS</text><text class="l1" x="131" y="76">Do these first.</text>
-      <text class="mn" x="401" y="44">BIG WINS</text><text class="l1 l1d" x="401" y="76">Plan for these.</text>
-      <text class="mn" x="131" y="229">SMALL WINS</text><text class="l1 l1d" x="131" y="261">Fill spare moments.</text>
-      <text class="mn mnf" x="401" y="229">SKIP FOR NOW</text><text class="l1 l1d" x="401" y="261">Revisit next quarter.</text>
-      <line x1="100" y1="382" x2="100" y2="12" stroke="var(--dim)" stroke-width="1.5"/>
-      <path d="M94 20 L100 8 L106 20" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <line x1="108" y1="392" x2="652" y2="392" stroke="var(--dim)" stroke-width="1.5"/>
-      <path d="M644 386 L656 392 L644 398" fill="none" stroke="var(--dim)" stroke-width="1.5"/>
-      <text class="mn" transform="translate(86 195) rotate(-90)" text-anchor="middle">TIME SAVED EACH WEEK</text>
-      <text class="mn" x="380" y="418" text-anchor="middle">EFFORT TO SET UP</text>
-      <text class="mn mnf" x="113" y="418">LOW</text>
-      <text class="mn mnf" x="647" y="418" text-anchor="end">HIGH</text>
-      <text class="mn mna" x="700" y="44">A SHORTCUT</text>
-      <text class="s1" x="700" y="72" style="fill:var(--ink)">Quick wins usually sit in the</text>
-      <text class="s1" x="700" y="94" style="fill:var(--ink)">trust tool's green corner.</text>
-      <text class="s1" x="700" y="124">Cheap to check, so the time</text>
-      <text class="s1" x="700" y="146">saved is real.</text>
-      <text class="s1" x="700" y="196">Big wins need a redesigned</text>
-      <text class="s1" x="700" y="218">workflow. That's next.</text>
-    </svg>
-  </div>
-  <aside class="notes">
-    <ul>
-      <li>Two questions per candidate task: how much time would it save each week, and how much effort to set up?</li>
-      <li>Hidden cost: checking. A task that saves 30 minutes but needs 25 minutes of verification is not a quick win. That's why quick wins tend to be green-corner work.</li>
-      <li>Don't try to automate your whole job on day one. One quick win this week builds the habit.</li>
-    </ul>
-  </aside>
-</section>
-
-<!-- AI projects fail differently -->
+<!-- AI projects fail differently (a ClassPulse vote) -->
 <section class="slide" data-ch="3" data-mode="spot" data-title="AI projects fail differently" id="s-diff">
   <div class="k">Deliver · Why AI delivery is different</div>
   <h2 class="t">AI projects don't fail more. <em>They fail differently.</em></h2>
@@ -1221,6 +1249,7 @@
   </style>
   <aside class="notes">
     <ul>
+      <li><b>Make it a vote first.</b> Before clicking through, run the ClassPulse multiple choice (several answers allowed): "Which of these have you seen happen on a project?" Options: no agreed "done"; the demo looked finished but wasn't; the data turned out to be the problem; checking was added after something went wrong; we bought the same tool as everyone else and expected an edge. Show the bars, then ask the biggest group for one story. Their stories carry the slide. Then click through quickly. No Wi-Fi: hands up for each.</li>
       <li>Most of your delivery instincts still work: stakeholders, budgets, the awkward sponsor conversation. Five things behave differently, and each quietly breaks an assumption.</li>
       <li>1. Outputs vary, so manage a spread: decide what "good enough" looks like for this use before you start.</li>
       <li>2. The demo is a trap. The gap between an impressive demo and a dependable system is wide; don't let the demo set the timeline.</li>
@@ -1257,7 +1286,78 @@
   </aside>
 </section>
 
-<!-- responsible by design: Australia's six essential practices -->
+<!-- the 30-day gate, taught before the plan that sets it -->
+<section class="slide" data-ch="3" data-mode="spot" data-title="Scale, pivot or kill">
+  <div class="k">Deliver · The 30-day gate</div>
+  <h2 class="t">Scale. Pivot. <em>Or kill.</em></h2>
+  <div class="sub">Judge the workflow against the criteria you set before you started.</div>
+  <div class="b">
+    <div class="row c3" style="height:250px">
+      <div class="card st" data-s="1" style="border-top:3px solid var(--green)"><div class="lab" style="color:var(--green)">Scale</div><div class="h">It met the measure with a light review.</div><div class="p">Hand it over for good. Keep the check its corner calls for.</div></div>
+      <div class="card st" data-s="2" style="border-top:3px solid var(--amber)"><div class="lab" style="color:var(--amber)">Pivot</div><div class="h">Close, but the check costs too much.</div><div class="p">Change the brief, the step, or who leads. Run another month.</div></div>
+      <div class="card st" data-s="3" style="border-top:3px solid var(--red)"><div class="lab" style="color:var(--red)">Kill</div><div class="h">It missed, or the errors mattered.</div><div class="p">Keep it human. Revisit next quarter; the tools will have moved.</div></div>
+    </div>
+    <div class="foot">Killing is a good outcome. You found where the line is, cheaply.</div>
+  </div>
+  <aside class="notes">
+    <ul>
+      <li><b>This now comes before Exercise 7 on purpose.</b> Say it: "In a minute you'll plan one workflow. The last thing you'll write is this: what result in 30 days would make you scale it, pivot it or kill it. That gate is the test your plan has to pass."</li>
+      <li>The same go/no-go logic used for big AI projects, at the scale of one workflow.</li>
+      <li>Scale: it hit the measure and the checking stayed light. Pivot: promising, but the checking eats the saving, so change something specific. Kill: it missed, or the checks found errors that mattered.</li>
+      <li>Killing early is cheap learning. The expensive version is a workflow nobody trusts that nobody switches off.</li>
+      <li>Three common mistakes at the gate: sunk cost ("we've put a month into it"), cherry-picking (ignoring the measure that failed), and treating "not perfect" as "broken". A small gap is a pivot, not a kill.</li>
+    </ul>
+  </aside>
+</section>
+
+<!-- EXERCISE 7 · delivery plan -->
+<section class="slide ex" data-ch="3" data-min="35" data-steps="1" data-print-step="0" data-title="Exercise 7 · Plan one delivery">
+  <div class="exbar"><span class="pill">Exercise 7</span><span class="mins">35 MIN · SOLO, THEN TABLES</span></div>
+  <h2 class="t">Plan the delivery of <em>one real workflow.</em></h2>
+  <div class="b"><div class="exgrid">
+    <ol class="steps">
+      <li>Map a quick win: a weekly task of 30 minutes or more.<span>Five to eight steps, honest minutes. Can't use real work? Scenario card 3 or 6.</span></li>
+      <li>Assign each step: who leads, and its trust corner.</li>
+      <li>Design the checkpoints.<span>Who checks each amber or red step, and how? Who needs to know?</span></li>
+      <li>Test one AI step live. Then set your 30-day gate.<span>The test this plan must pass: what result means scale, pivot or kill?</span></li>
+    </ol>
+    <div class="stack">
+      <div class="mat">
+        <div class="card"><div class="lab a">Example · weekly team update</div>
+<div class="tbl" style="margin-top:10px"><span class="hd">STEP               MIN  WHO LEADS   CHECKPOINT</span>
+Gather updates      15  You lead    <span class="dm">-</span>
+Draft the summary   20  AI leads    Me: light review
+Calculate metrics   15  You lead    Me: recount totals
+Send to sponsor      5  Human only  <span class="dm">-</span>
+<span class="hd">Gate, 30 days: scale if two edits or fewer;</span>
+<span class="hd">kill if a figure is wrong twice</span></div>
+        </div>
+        <div class="out"><b>OUTPUT</b>A one-page delivery plan you'll run this month.</div>
+      </div>
+      <div class="deb"><div class="card hi">
+        <div class="lab a">Debrief</div>
+        <div class="h">Where did you put a person, and why?</div>
+        <div class="h">What's your kill criterion?</div>
+        <div class="h">Who needs to know before you start?</div>
+        <div class="p" style="margin-top:18px">Credible beats impressive. Nobody saves 90% in week one.</div>
+      </div></div>
+    </div>
+  </div></div>
+  <aside class="notes">
+    <p><b>Timing:</b> 10 min map, 5 min assign, 8 min checkpoints and people, 7 min test and gate, 5 min share.</p>
+    <p><b>Say the purpose before the timer starts:</b> "You're writing the plan you'll judge in 30 days. Steps, who leads, corners and checkpoints are what you'll be judging. The gate at the end is the test. Write the kill criterion now, while you're not invested in it."</p>
+    <ul>
+      <li>This time it's a whole workflow from their own week. Stuck? Weekly report, meeting prep, invoicing, recruitment shortlists, monthly reporting.</li>
+      <li>Mapping needs no data, only step names and minutes. If the inputs for the live test can't go into a tool, they invent a few lines in the same shape. Can't use their own workflow at all: scenario card 3 (Friday status update) or 6 (monthly invoicing).</li>
+      <li>Anyone whose Exercise 6 rules passed the blind test can make them one step in the plan, with a corner and a checkpoint like any other step.</li>
+      <li>Debrief: ask two people to read their kill criterion aloud. If it's vague ("if it doesn't work"), ask "what number would tell you?"</li>
+      <li>Strong plans mix AI and human steps, put a named check before anything external, claim realistic savings, and have a gate with a real kill criterion.</li>
+      <li>Weak signs: every step AI-led, no checkpoints, nothing tested, "we'll see how it goes" as the gate.</li>
+    </ul>
+  </aside>
+</section>
+
+<!-- responsible by design (recap of the day) -->
 <section class="slide" data-ch="3" data-mode="spot" data-title="Responsible by design" id="s-resp">
   <div class="k">Deliver · Responsible by design</div>
   <h2 class="t">Australia's six essential practices. <em>You've done five today.</em></h2>
@@ -1294,131 +1394,6 @@
   </aside>
 </section>
 
-<!-- EXERCISE 7 · delivery plan -->
-<section class="slide ex" data-ch="3" data-min="35" data-steps="1" data-print-step="0" data-title="Exercise 7 · Plan one delivery">
-  <div class="exbar"><span class="pill">Exercise 7</span><span class="mins">35 MIN · SOLO, THEN TABLES</span></div>
-  <h2 class="t">Plan the delivery of <em>one real workflow.</em></h2>
-  <div class="b"><div class="exgrid">
-    <ol class="steps">
-      <li>Map a task you do weekly that takes 30 minutes or more.<span>Five to eight steps, honest minutes. Can't use real work? Scenario card 3 or 6.</span></li>
-      <li>Assign each step: who leads, and its trust corner.</li>
-      <li>Design the checkpoints.<span>Who checks each amber or red step, and how? Who needs to know?</span></li>
-      <li>Test one AI step live. Then set your 30-day gate.<span>What result would make you scale, pivot or kill?</span></li>
-    </ol>
-    <div class="stack">
-      <div class="mat">
-        <div class="card"><div class="lab a">Example · weekly team update</div>
-<div class="tbl" style="margin-top:10px"><span class="hd">STEP               MIN  WHO LEADS   CHECKPOINT</span>
-Gather updates      15  You lead    <span class="dm">-</span>
-Draft the summary   20  AI leads    Me: light review
-Calculate metrics   15  You lead    Me: recount totals
-Send to sponsor      5  Human only  <span class="dm">-</span>
-<span class="hd">Gate, 30 days: scale if two edits or fewer</span></div>
-        </div>
-        <div class="out"><b>OUTPUT</b>A one-page delivery plan you'll run this month.</div>
-      </div>
-      <div class="deb"><div class="card hi">
-        <div class="lab a">Debrief</div>
-        <div class="h">Where did you put a person, and why?</div>
-        <div class="h">What's your kill criterion?</div>
-        <div class="h">Who needs to know before you start?</div>
-        <div class="p" style="margin-top:18px">Credible beats impressive. Nobody saves 90% in week one.</div>
-      </div></div>
-    </div>
-  </div></div>
-  <aside class="notes">
-    <p><b>Timing:</b> 10 min map, 5 min assign, 8 min checkpoints and people, 7 min test and gate, 5 min share.</p>
-    <ul>
-      <li>This time it's a whole workflow from their own week. Stuck? Weekly report, meeting prep, invoicing, recruitment shortlists, monthly reporting.</li>
-      <li>Mapping needs no data, only step names and minutes. If the inputs for the live test can't go into a tool, they invent a few lines in the same shape. Can't use their own workflow at all: scenario card 3 (Friday status update) or 6 (monthly invoicing).</li>
-      <li>Anyone whose Exercise 6 rules passed the blind test can make them one step in the plan, with a corner and a checkpoint like any other step.</li>
-      <li>Strong plans mix AI and human steps, put a named check before anything external, claim realistic savings, and have a gate with a real kill criterion.</li>
-      <li>Weak signs: every step AI-led, no checkpoints, nothing tested, "we'll see how it goes" as the gate.</li>
-    </ul>
-  </aside>
-</section>
-
-<!-- the 30-day gate -->
-<section class="slide" data-ch="3" data-mode="spot" data-title="Scale, pivot or kill">
-  <div class="k">Deliver · The 30-day gate</div>
-  <h2 class="t">Scale. Pivot. <em>Or kill.</em></h2>
-  <div class="sub">Judge the workflow against the criteria you set before you started.</div>
-  <div class="b">
-    <div class="row c3" style="height:250px">
-      <div class="card st" data-s="1" style="border-top:3px solid var(--green)"><div class="lab" style="color:var(--green)">Scale</div><div class="h">It met the measure with a light review.</div><div class="p">Hand it over for good. Keep the check its corner calls for.</div></div>
-      <div class="card st" data-s="2" style="border-top:3px solid var(--amber)"><div class="lab" style="color:var(--amber)">Pivot</div><div class="h">Close, but the check costs too much.</div><div class="p">Change the brief, the step, or who leads. Run another month.</div></div>
-      <div class="card st" data-s="3" style="border-top:3px solid var(--red)"><div class="lab" style="color:var(--red)">Kill</div><div class="h">It missed, or the errors mattered.</div><div class="p">Keep it human. Revisit next quarter; the tools will have moved.</div></div>
-    </div>
-    <div class="foot">Killing is a good outcome. You found where the line is, cheaply.</div>
-  </div>
-  <aside class="notes">
-    <ul>
-      <li>The same go/no-go logic used for big AI projects, at the scale of one workflow.</li>
-      <li>Scale: it hit the measure and the checking stayed light. Pivot: promising, but the checking eats the saving, so change something specific. Kill: it missed, or the checks found errors that mattered.</li>
-      <li>Killing early is cheap learning. The expensive version is a workflow nobody trusts that nobody switches off.</li>
-      <li>Three common mistakes at the gate: sunk cost ("we've put a month into it"), cherry-picking (ignoring the measure that failed), and treating "not perfect" as "broken". A small gap is a pivot, not a kill.</li>
-    </ul>
-  </aside>
-</section>
-
-<!-- 27 · agents -->
-<section class="slide" data-ch="3" data-title="Agents and skills">
-  <div class="k">Beyond chat</div>
-  <h2 class="t">Agents run the loop. <em>You set the standard.</em></h2>
-  <div class="b">
-    <svg viewBox="0 0 980 400">
-      <rect x="10" y="20" width="560" height="320" rx="16" fill="#0D1118" stroke="var(--hair)"/>
-      <text class="mn" x="34" y="50">THE HARNESS</text>
-      <text class="s2" x="34" y="70">instructions · what it can read · tools it can use · the model</text>
-      <!-- loop -->
-      <circle cx="380" cy="200" r="88" fill="none" stroke="color-mix(in srgb,var(--acc) 50%,transparent)" stroke-width="1.6"/>
-      <path d="M459 160 L468 172 L455 176" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <path d="M301 240 L292 228 L305 224" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <rect x="342" y="184" width="76" height="32" rx="16" fill="none" stroke="var(--dim)" stroke-width="1.3"/>
-      <text class="mn" x="380" y="205" text-anchor="middle">MODEL</text>
-      <rect x="340" y="96" width="80" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="380" y="114" text-anchor="middle">PLAN</text>
-      <rect x="430" y="270" width="76" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="468" y="288" text-anchor="middle">ACT</text>
-      <rect x="250" y="270" width="84" height="26" rx="13" fill="var(--bg)" stroke="var(--acc)"/>
-      <text class="mn mna" x="292" y="288" text-anchor="middle">CHECK</text>
-      <!-- skill -->
-      <path d="M48 140 h92 l20 20 v110 h-112 z" fill="color-mix(in srgb,var(--acc) 8%,var(--card))" stroke="var(--acc)" stroke-width="1.4"/>
-      <line x1="66" y1="186" x2="140" y2="186" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="66" y1="206" x2="130" y2="206" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <line x1="66" y1="226" x2="138" y2="226" stroke="var(--faint)" stroke-width="3" stroke-linecap="round"/>
-      <text class="mn mna" x="104" y="166" text-anchor="middle">SKILL</text>
-      <text class="s2" x="104" y="300" text-anchor="middle">your saved brief</text>
-      <line x1="166" y1="200" x2="282" y2="200" stroke="var(--acc)" stroke-width="2"/>
-      <path d="M274 193 L286 200 L274 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <!-- standard -->
-      <rect class="gl" x="650" y="120" width="310" height="150" rx="14" fill="color-mix(in srgb,var(--acc) 10%,var(--card))" stroke="var(--acc)" stroke-width="1.5"/>
-      <text class="mn mna" x="674" y="154">THE STANDARD · YOURS</text>
-      <text class="l1" x="674" y="190">Your test. Your data.</text>
-      <text class="l1" x="674" y="218">Your reviewer.</text>
-      <text class="s2" x="674" y="250">an agent checking itself shares its blind spots</text>
-      <path d="M570 200 L640 200" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 5"/>
-      <path d="M632 193 L644 200 L632 207" fill="none" stroke="var(--acc)" stroke-width="2"/>
-      <text class="s1 st" data-s="1" x="490" y="378" text-anchor="middle" style="fill:var(--ink)">Your prompt library is the first draft of a skill.</text>
-      <g class="st" data-s="2">
-        <text class="mn mna" x="490" y="396" text-anchor="middle">SET IT ONCE AS A SYSTEM PROMPT · CUSTOM INSTRUCTIONS · PROJECTS · GEMS</text>
-      </g>
-    </svg>
-  </div>
-  <aside class="notes">
-    <ul>
-      <li>Three words you'll hear all year. An <b>agent</b> is a model in a loop with tools: it plans, acts, checks, and tries again until the job is done.</li>
-      <li>The <b>harness</b> is the software around the model: its standing instructions, what it can read, what tools it may call. ChatGPT, Copilot in Outlook, a booking system that drafts replies: all harnesses.</li>
-      <li>A <b>skill</b> is a plain-text brief the harness loads when your request matches it. It's your RTCF prompt plus its check, written once. Because it's text, it moves between tools.</li>
-      <li>An agent automates the loop, not the standard. If the loop checks its own work, it shares the model's blind spots. The standard still comes from outside.</li>
-      <li>The new risk agents bring: prompt injection. Anything the agent reads (an email, a web page, a supplier's document) can carry hidden instructions, and the agent may follow them as if you wrote them. Connect tools on purpose, and keep a person between what it reads and what it does. Optional 2-minute demo: the Northbridge proposal on the Beyond the day page, which has a hidden instruction in white text.</li>
-      <li><b>Click:</b> the bridge. Everything typed per chat today (role, task, context, format, its check) can be saved once as the standing brief. The decision rules from Exercise 6 are the same thing. Trade names differ: custom instructions (ChatGPT), instructions and projects (Claude), Instructions for Gemini and Gems (Gemini). The generic name is a system prompt. The Beyond the day page on the site shows where the setting lives in each tool, and covers MCP and the rest of the jargon.</li>
-      <li>Optional 3-minute demo: instructor/retailflow-triage-demo.</li>
-      <li>Optional 2-minute local-versus-cloud demo in the class chat: the same brainstorm in llama3.1 and in Sonnet (the ideas they spark are usually close), then the same factual question in both (Sonnet usually pulls clearly ahead). The model you choose follows the corner. Also: privacy, the speed and quality trade-off, the context-window trap. Facilitator guide has the numbers.</li>
-    </ul>
-  </aside>
-</section>
-
 <!-- evidence: fewer junior hires, not mass replacement -->
 <section class="slide" data-ch="3" data-title="Fewer junior hires">
   <div class="k">Why practice matters now</div>
@@ -1448,7 +1423,7 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
   </aside>
 </section>
 
-<!-- practice on purpose: conversation, not delegation -->
+<!-- practice on purpose, and if you lead people -->
 <section class="slide" data-ch="3" data-title="Delegate the task, keep the learning">
   <div class="k">Practise · On purpose</div>
   <h2 class="t">Delegate the task. <em>Keep the learning.</em></h2>
@@ -1472,11 +1447,10 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
       <li>You did exactly this in Exercise 1. The habit is doing it weekly, on a task that matters.</li>
       <li>It applies at every level, not only to juniors. Anyone whose routine work is now done by AI has lost the practice that came with it.</li>
       <li>Credit: the "broken ladder" framing of this problem draws on Dylan Davis's work.</li>
+      <li><b>If you lead people, 2 minutes at tables.</b> (This replaces the old leaders' slide.) "Your juniors lost the easy reps. Which of these will you do?" One: say the reasoning out loud when you fix their work, which is the Say method from Exercise 6; their mismatches are the parts worth explaining in person. Two: run side-by-side drills, by hand first, then with AI, then compare what each missed. Three: choose which fundamentals your team keeps practising on purpose. Delivering AI includes growing the people who can check it. The field guide has the three moves.</li>
     </ul>
   </aside>
 </section>
-
-
 
 <!-- the corners move, the check stays -->
 <section class="slide" data-ch="3" data-steps="2" id="s-corners" data-title="The corners move">
@@ -1530,33 +1504,9 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
   </aside>
 </section>
 
-
-
-<!-- 33 · if you lead people -->
-<section class="slide" data-ch="3" data-title="If you lead people">
-  <div class="k">If you lead people</div>
-  <h2 class="t">Your juniors lost <em>the easy reps.</em></h2>
-  <div class="b">
-    <div class="row c3" style="height:250px">
-      <div class="card"><div class="h">Say the reasoning out loud.</div><div class="p">When you fix their work, explain why the standard is the standard. They used to absorb that through repetition.</div></div>
-      <div class="card"><div class="h">Run side-by-side drills.</div><div class="p">By hand first, then with AI, then compare what each one missed.</div></div>
-      <div class="card"><div class="h">Choose what stays human.</div><div class="p">Decide which fundamentals your team keeps practising on purpose. Revisit as the tools improve.</div></div>
-    </div>
-    <div class="foot">Delivering AI includes growing the people who can check it.</div>
-  </div>
-  <aside class="notes">
-    <ul>
-      <li>One slide for the managers in the room. If you lead people, the junior pipeline problem is yours to solve.</li>
-      <li>Firms are rebuilding graduate programmes around reviewing rather than producing: finding the mistake and explaining why it's wrong.</li>
-      <li>This is part of delivering AI well: if the routine work goes to AI, someone still has to grow the people who can judge its output.</li>
-      <li>"Say the reasoning out loud" is the Say method from Exercise 6. The decision rules they wrote today are also something a junior can learn from, and the mismatches are the parts worth explaining in person.</li>
-    </ul>
-  </aside>
-</section>
-
 <!-- EXERCISE 8 · action plan -->
 <section class="slide ex" data-ch="3" data-min="12" data-title="Exercise 8 · Your action plan">
-  <div class="exbar"><span class="pill">Exercise 8</span><span class="mins">12 MIN · QUIET, THEN SHARE</span></div>
+  <div class="exbar"><span class="pill">Exercise 8</span><span class="mins">12 MIN · QUIET, THEN PAIRS</span></div>
   <h2 class="t">Your action plan. <em>One line each.</em></h2>
   <div class="b">
     <div class="row c4" style="height:220px">
@@ -1569,7 +1519,7 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
     <div class="foot">Specific task, tool and day. <b>Put this week's line and your day-30 gate in your calendar before you leave.</b></div>
   </div>
   <aside class="notes">
-    <p><b>Timing:</b> 8 min quiet writing (don't talk over it), 4 min for two or three volunteers to read their this-week line.</p>
+    <p><b>Timing:</b> 7 min quiet writing (don't talk over it), 3 min in pairs: read your this-week line to your neighbour, who asks "which task, which tool, which day?", 2 min for two volunteers to read theirs to the room. Saying it to someone makes people commit, and lifts the room for the close.</p>
     <ul>
       <li>Reject "use AI more". Ask: which task, which tool, which day?</li>
       <li>For the quarter line, point them back to Exercise 6: the list of what they'd never let it decide is a ready-made start on "what must stay human".</li>
@@ -1605,6 +1555,7 @@ Send to sponsor      5  Human only  <span class="dm">-</span>
   </div>
   <aside class="notes">
     <ul>
+      <li><b>First, close the loop on the opening.</b> "Remember the footnotes in that $440,000 report? What would have caught them?" Let the room call it out, then name what they've got: the trust tool (citations in a government report are top-right), VET (one search per reference), the check from outside the tool, and a person who owns the output, with a gate before anything scales. "Same tools as Deloitte. Different judgement." Then the slide.</li>
       <li>Close the loop on what was promised: your prompt library (Exercise 4); one set of decision rules tested blind, with a list of what stays yours (Exercise 6); four reusable decision tools (desk card and field guide); and an action plan for this week, this month and this quarter (Exercise 8). All of it is in the workbook export.</li>
       <li>If anyone mentions Curtin's web page listing three courses: the series has been consolidated into two. Practice and delivery merged into The Human Edge; "AI to drive business innovation" is now AI in Strategy: Choosing where to invest.</li>
       <li>Direct it: you set the brief and the standard. Don't delegate: keep the learning and the judgement. Never surrender: the decision stays yours.</li>

@@ -54,7 +54,7 @@ Can't use your own work? [Scenario cards](#scenario-cards) for Exercises 3, 4 an
 
 [25 min · solo]{.mins}
 
-1. Pick a real task from your week, or a scenario card below.
+1. Pick a real task from your week: one of the three weekly tasks from [Before the day](before.html). Use a [scenario card](#scenario-cards) only if your work is confidential. With a card, Round 1 uses just the short ask at the top; Round 2 adds what's under "What you know".
 2. **Round 1:** write the prompt the way you normally would. Run it. Score the output from 1 (unusable) to 5 (ready to use).
 3. **Round 2:** rewrite it with RTCF and run it in a fresh chat. Score it again.
 4. Note which part moved the score most.
@@ -143,10 +143,12 @@ Describe your past cases. Don't paste anything confidential.
 
 [35 min · solo, then tables]{.mins}
 
-1. **Map** a task you do weekly that takes 30 minutes or more. Five to eight steps, with honest minutes for each. Note the owner, a success measure and today's baseline.
+You're writing the plan you'll judge in 30 days. The gate in step 4 is the test it has to pass, so set it now, before you're invested.
+
+1. **Map** a quick win: a task you do weekly that takes 30 minutes or more, saves real time, and is cheap to check. Five to eight steps, with honest minutes for each. Note the owner, a success measure and today's baseline.
 2. **Assign** each step: who leads (AI leads, AI assists, you lead, human only) and its trust corner.
 3. **Design the checkpoints.** Who checks each amber or red step, and how? Pick someone who knows what right looks like. Who is affected, who has to agree, and who will do the checking?
-4. **Test** one AI step live with an RTCF brief. Then **set your 30-day gate**: what result would make you scale, pivot or kill?
+4. **Test** one AI step live with an RTCF brief. Then **set your 30-day gate**: what result would make you scale, pivot or kill? Make each one a number you could check, for example "scale if it needs two edits or fewer; kill if a figure is wrong twice". [Scale, pivot or kill](tools.html#opportunity-finder) explains each.
 
 The [Map my workflow](prompts.html#map-my-workflow) and [Pre-mortem](prompts.html#pre-mortem) starter prompts help with steps 1 and 3.
 
@@ -156,7 +158,7 @@ Mapping your workflow needs no data, only step names and minutes. If the inputs 
 ::: {.ex .s4}
 ## Exercise 8 · Your action plan {#ex8}
 
-[12 min · quiet, then share]{.mins}
+[12 min · quiet, then pairs]{.mins}
 
 One line each: a specific task, tool and day.
 
@@ -170,7 +172,7 @@ Before you leave, put this week's line and your day-30 gate in your calendar.
 
 ## Scenario cards {#scenario-cards}
 
-Use one of these in Exercises 3 and 4 if your own work is confidential (keep the same card for both). Paste the details into your Context. Scenarios 3 and 6 also work as the workflow for Exercise 7.
+Use one of these in Exercises 3 and 4 if your own work is confidential, and keep the same card for both. Each card starts with the ask, the way most people would type it. **Round 1:** prompt with the ask only. **Round 2:** open "What you know" and put it into your Context with RTCF. In Exercise 4, try the Questions upgrade first ("Before you start, ask me up to five questions") and see how much of "What you know" it asks for. Scenarios 3 and 6 also work as the workflow for Exercise 7.
 
 :::::: {.cards .two}
 ::: card
@@ -178,7 +180,18 @@ Use one of these in Exercises 3 and 4 if your own work is confidential (keep the
 
 ### The difficult client email
 
-Your client, David Chen (VP Operations, GreenLeaf Industries), says your latest deliverable is "too generic". The work is solid, but his board changed priorities at a meeting you weren't in. It's an 18-month, mostly positive relationship. You want to acknowledge his frustration without conceding the work is poor, and propose a one-hour alignment meeting.
+**The ask:** "Write a reply to a client who says our latest deliverable is too generic."
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- The client is David Chen, VP Operations at GreenLeaf Industries.
+- The relationship is 18 months old and mostly positive.
+- The work is solid. His board changed priorities at a meeting you weren't in.
+- You want to acknowledge his frustration without conceding the work is poor.
+- The goal is a one-hour alignment meeting, not a rewrite.
+- Under 200 words.
+
+</details>
 :::
 
 ::: card
@@ -186,7 +199,16 @@ Your client, David Chen (VP Operations, GreenLeaf Industries), says your latest 
 
 ### The policy summary
 
-A new 22-page flexible work policy needs to become an email your 12-person marketing team will actually read: how many days from home, how to request changes, busy periods, and part-time rules. Friendly, practical, under 400 words. (Paste any policy you have, or ask the AI to invent a plausible one first.)
+**The ask:** "Turn our new flexible work policy into an email for my team."
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- The policy is 22 pages. Paste one if you have it, or ask the AI to invent a plausible one first.
+- The team is 12 people in marketing, and most won't read the policy.
+- They care about: how many days from home, how to request changes, busy periods, and part-time rules.
+- Friendly and practical. Under 400 words.
+
+</details>
 :::
 
 ::: card
@@ -194,7 +216,18 @@ A new 22-page flexible work policy needs to become an email your 12-person marke
 
 ### The Friday status update
 
-CRM migration for a steering committee (CIO, sponsor, two business leads). Notes: data batch 2 done but 3 days late (2,300 duplicate records, Sarah leading review); vendor hasn't confirmed training dates; UAT going well, 2 minor bugs; $12K under budget; 68% complete against a 72% target. They want RAG status, wins, risks, next steps. No surprises.
+**The ask:** "Write this week's status update on our CRM migration."
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- Audience: the steering committee (CIO, sponsor, two business leads). They want no surprises.
+- Data batch 2 is done but 3 days late: 2,300 duplicate records, Sarah leading the review.
+- The vendor hasn't confirmed training dates.
+- UAT is going well: 2 minor bugs.
+- $12K under budget. 68% complete against a 72% target.
+- Format: RAG status, wins, risks, next steps. Under 250 words.
+
+</details>
 :::
 
 ::: card
@@ -202,7 +235,16 @@ CRM migration for a steering committee (CIO, sponsor, two business leads). Notes
 
 ### The interview questions
 
-Hiring a mid-level Digital Marketing Coordinator for a 5-person B2B team: social campaigns, Google Analytics and Meta Ads, agency coordination, monthly reports to leadership. 45-minute panel with the Marketing Director. HR's generic questions won't tell you whether they can do the job. You want behavioural and situational questions.
+**The ask:** "Write interview questions for a marketing coordinator role."
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- Mid-level Digital Marketing Coordinator in a 5-person B2B team.
+- The job: social campaigns, Google Analytics and Meta Ads, agency coordination, monthly reports to leadership.
+- 45-minute panel with the Marketing Director.
+- HR's generic questions won't show whether they can do the job. You want behavioural and situational questions, with what a good answer sounds like.
+
+</details>
 :::
 
 ::: card
@@ -210,7 +252,17 @@ Hiring a mid-level Digital Marketing Coordinator for a 5-person B2B team: social
 
 ### The logistics decision
 
-Renew, switch or insource your third-party logistics? Current provider: $1.8M a year, 96.2% on time (benchmark 97%), 2.1% damage (benchmark 1.5%), slow on volume spikes, just raised prices 8%. Competitor: $1.65M, promises 97.5%. In-house: $2.5M upfront, $1.2M a year, 12 months to set up. 15,000 orders a month, growing 20% a year. A discussion starter for leadership, not the decision.
+**The ask:** "Should we renew our logistics provider?"
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- Current provider: $1.8M a year, 96.2% on time (benchmark 97%), 2.1% damage (benchmark 1.5%), slow on volume spikes, just raised prices 8%.
+- Competitor: $1.65M a year, promises 97.5% on time.
+- In-house: $2.5M upfront, then $1.2M a year, 12 months to set up.
+- 15,000 orders a month, growing 20% a year.
+- This is a discussion starter for leadership, not the decision.
+
+</details>
 :::
 
 ::: card
@@ -218,7 +270,17 @@ Renew, switch or insource your third-party logistics? Current provider: $1.8M a 
 
 ### The process document
 
-You're the only person who knows monthly invoicing: export billable hours from Harvest, group by client in Excel, apply the rate card ($250 strategy, $180 execution, $120 support), create invoices in Xero, add PO numbers from the account managers' Google Sheet, send, update the tracker, then email Finance a summary with anything unusual. Write it so a colleague can do it while you're on leave.
+**The ask:** "Write up how I do our monthly invoicing so someone else can do it."
+
+<details><summary>What you know (add it in Round 2)</summary>
+
+- You're the only person who knows it, and you're going on leave.
+- Export billable hours from Harvest, group by client in Excel, apply the rate card ($250 strategy, $180 execution, $120 support).
+- Create invoices in Xero, add PO numbers from the account managers' Google Sheet, send them, update the tracker.
+- Email Finance a summary with anything unusual.
+- Written so a colleague can follow it step by step.
+
+</details>
 :::
 ::::::
 
