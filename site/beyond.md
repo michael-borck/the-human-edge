@@ -24,9 +24,10 @@ All day you typed the brief fresh, every chat: role, task, context, format, and 
 | Claude | Instructions · Projects · Memory | Settings → Your Claude; each Project has its own instructions |
 | Gemini | Instructions for Gemini · Gems | Settings & help → Personal Intelligence; Gems in the sidebar |
 | Microsoft Copilot | Custom instructions · Memory | Settings → Personalization |
+| Grok | Custom Instructions · Workspaces · Memory | Settings in the sidebar; each Workspace carries its own instructions and files |
 | Msty, LibreChat, Open WebUI | System prompt | Per chat or per model. You edit the prompt itself, so these show most plainly what a system prompt is |
 
-[Menu names checked October 2026. They move; if one has changed, search the tool's help for "instructions".]{.small}
+[Menu names checked October 2026 (Grok from third-party guides only; xAI's help pages are behind a login). They move; if one has changed, search the tool's help for "instructions".]{.small}
 
 What goes in: your RTCF brief, your Done line, the check you attach. What doesn't: anything confidential you wouldn't paste into a chat. For the data side (training, memory, two accounts), see [Set it up safely](responsible-use.html#set-it-up-safely). Review the saved brief each quarter, because the corners move and the brief should move with them. [Write like me](go-deeper.html#write-like-me) is a worked example. [Decide like me](decide-like-me.html) uses the same setting to save a set of decision rules.
 
